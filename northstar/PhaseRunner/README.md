@@ -1,3 +1,14 @@
+# Phase Runner 1.4.0 for Northstar
+
+Restores frozen Apex screen artwork and display colours alongside the authored gold tunnel paint. Includes source out-of-bounds areas and a fall kill volume, team spawns, CTF, Amped Hardpoint and Fastball. Existing collision, lighting and catwalks are preserved. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.
+
+The texture pass is checked with matched native screenshots and same-process
+map reloads. See BANNER_DISPLAYS.md for the source channels, exact scope and
+limitations. Geometry submission budgets, collision, visibility, world lights
+and character probes remain unchanged.
+
+## Previous release notes
+
 # Phase Runner 1.3.0 for Northstar
 Restores authored RGB paint on 66,208 existing vertices with native
 Titanfall colour-aware PBR shaders. Geometry, collision, lighting, visibility

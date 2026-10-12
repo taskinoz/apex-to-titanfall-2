@@ -1,0 +1,54 @@
+{
+  "map": "phase-runner",
+  "changed_lumps": [
+    2,
+    35,
+    43,
+    44,
+    73,
+    82
+  ],
+  "banner_vertices": 0,
+  "console_uv_vertices": 10264,
+  "frozen_front_faces": 24,
+  "geometry_collision_visibility_lighting_preserved": true,
+  "full_srgb_mip_chains": true,
+  "streaming_columns_preserved": true,
+  "index_padding": {
+    "meshes": 4982,
+    "render_triangles": 972628,
+    "odd_meshes_padded": 2100,
+    "pair_reads_within_declared_vertex_ranges": true,
+    "padding_triangles_degenerate": true,
+    "six_index_alignment_verified": true
+  },
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\northstar\\PhaseRunner\\mod\\maps\\mp_phase_runner.bsp",
+    "meshes": 4982,
+    "real_triangles": 972628,
+    "native_padded_indices": 2924184,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4982,
+    "prefix_indices": 2924184,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4947,
+      4947,
+      4982
+    ],
+    "static_batch_runs": 479,
+    "unique_static_draw_keys": 479,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "resident_bytes": 14345159,
+  "rpak_sha256": "8a9eba4e4e15c708e55cf8a58fd105388c8f181366e31864cb66c4e011762748",
+  "version": "1.4.0",
+  "native_validation": "docs/banner-display-textures-2026-10-12.md"
+}

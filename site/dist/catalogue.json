@@ -13,9 +13,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Authored RGB paint is recovered on existing surfaces. Control-room colours, display artwork and some scenery remain incomplete. Intro and evac are disabled.",
+      "notes": "Northstar banner artwork and frozen Apex display textures are added. Authored RGB paint is recovered on existing surfaces. Animated Hammond graphics, some control-room colouring and scenery remain incomplete. Intro and evac are disabled.",
       "download": null,
-      "version": "0.7.0",
+      "version": "0.8.0",
       "source_offset": [
         0,
         0,
@@ -619,9 +619,175 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-12-banner-displays",
+          "version": "0.8.0",
+          "shots": [
+            {
+              "name": "court-overview",
+              "origin": [
+                0,
+                2200,
+                900
+              ],
+              "angles": [
+                22,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The existing banner panels now show complete, upright Northstar graphics.",
+                "The original geometry, collision, lighting and visibility remain intact."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/court-overview-r5r.png",
+                "sha256": "16e1f6c5f1601c1c06efd101fa0b7454d4d99b33046a82a45f7573bb8cd4cdb7",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771300.5818188
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/court-overview-northstar.png",
+                "sha256": "feb22ae5c240169f113fcde1e35edd2fc46eff296cd20f9e48f0b0659c74df98",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791804766.82444
+              }
+            },
+            {
+              "name": "west-control",
+              "origin": [
+                -1917.1,
+                631.305,
+                256.031
+              ],
+              "angles": [
+                -20,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The control-room wall and doorway retain their previous appearance.",
+                "The source animated Hammond wall display and red runtime wall colouring are still not reproduced."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/west-control-r5r.png",
+                "sha256": "643c4ec4133117c24f70e50143782263de4e6560dac374bcbebfad9b141ca5cc",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771340.581923
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/west-control-northstar.png",
+                "sha256": "e6567095881559db57ae4522cf676e7c850dec186b0db01a5e811be22094dd5f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791804774.7243898
+              }
+            },
+            {
+              "name": "east-control",
+              "origin": [
+                1917.1,
+                631.305,
+                256.031
+              ],
+              "angles": [
+                -20,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The mirrored control-room wall and doorway remain present.",
+                "The animated Hammond wall display and source blue runtime wall colouring remain incomplete."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/east-control-r5r.png",
+                "sha256": "afd682d2d4080e393489194f9649bc988f3f3a7a5761df65e9f1480cc860c574",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771500.4784148
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/east-control-northstar.png",
+                "sha256": "b03a6da7ac179cac9ce2f61d64f3cd025d4b1e0b212bc3b5fcf06f30430204c1",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791804782.6309888
+              }
+            },
+            {
+              "name": "central-window",
+              "origin": [
+                65,
+                3400,
+                480
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The source screen frames and static blue display surfaces are present.",
+                "Animated Hammond logos and the source's brighter lower-court lighting remain different."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/central-window-r5r.png",
+                "sha256": "aa86f0b326700ff10080dac20a15e34da00053f56029ce84e91b96fe98e0db2b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771580.5724974
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/central-window-northstar.png",
+                "sha256": "5abbf7034f944e92f60e3d2b6103152c7991c6c786d9f2f57e5d78d2e94f6a13",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791804790.7969873
+              }
+            },
+            {
+              "name": "west-banner",
+              "origin": [
+                -2568,
+                3650,
+                1600
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Northstar artwork appears on the banner faces with the existing mounting beams.",
+                "This close, oblique camera partially crops the banners; the court view shows the complete artwork."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/west-banner-r5r.png",
+                "sha256": "a0719200193b46ed4686c9c7d5d67af5ce1443887d046a753f4a41202941d48d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771740.601017
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-12-banner-displays/west-banner-northstar.png",
+                "sha256": "fe166257b167a45e8836bf845687e4d470825a07a94c4e4ff52374f80c3e2e51",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791804798.9656572
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-12-area-survey"
+      "latest": "2026-10-12-banner-displays"
     },
     {
       "id": "phase-runner",
@@ -637,9 +803,9 @@
         "Hardpoint",
         "Fastball"
       ],
-      "notes": "Gold tunnel paint is recovered. Some source scenery and layered materials remain approximated. The tunnel catwalks are a Titanfall addition.",
+      "notes": "Green Apex building displays and additional source display textures are restored as static artwork. Gold tunnel paint is recovered. Some scenery and layered materials remain approximated. The tunnel catwalks are a Titanfall addition.",
       "download": null,
-      "version": "1.3.0",
+      "version": "1.4.0",
       "source_offset": [
         26000,
         19000,
@@ -1183,9 +1349,111 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-12-banner-displays",
+          "version": "1.4.0",
+          "shots": [
+            {
+              "name": "arena-overview",
+              "origin": [
+                0,
+                -5000,
+                1400
+              ],
+              "angles": [
+                28,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The exterior geometry, lighting, tunnels, cranes and grounded firs retain their prior appearance.",
+                "Source foliage density, terrain layers and omitted banner geometry remain incomplete."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-12-banner-displays/arena-overview-r5r.png",
+                "sha256": "efc92e57b6d037a83b1ce9b6e1645f2950610d7c1b9df63014063d0f862926d6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773285.1644835
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-12-banner-displays/arena-overview-northstar.png",
+                "sha256": "aae9f222abeb27c2647e5b07022461cbaee7e79c48fbaa1112bfcb7973cde241",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791804577.684582
+              }
+            },
+            {
+              "name": "west-building",
+              "origin": [
+                -6080,
+                -1530.2,
+                -773.9
+              ],
+              "angles": [
+                10,
+                90,
+                0
+              ],
+              "fov": 75,
+              "findings": [
+                "Both large display panels now show green Apex technical artwork instead of the striped placeholder surfaces.",
+                "The artwork is frozen; source animation and exact emissive behaviour are approximated. Room lighting remains unchanged."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-12-banner-displays/west-building-r5r.png",
+                "sha256": "bd0cdd33ef01a19aea2b0d8369fbf828d3f436750e6c4c001823c5f5ac17cf31",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773364.982922
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-12-banner-displays/west-building-northstar.png",
+                "sha256": "c2a97803aa1f697142ad8df011c7f49974f7bd90f12ee95e7145521929b9f39d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791804585.946698
+              }
+            },
+            {
+              "name": "east-building",
+              "origin": [
+                6283.9,
+                -1417,
+                -773.9
+              ],
+              "angles": [
+                10,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The mirrored building also shows complete green Apex display artwork.",
+                "The original console body and PBR sampling are retained. Screen animation is not ported."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-12-banner-displays/east-building-r5r.png",
+                "sha256": "e18f87254bff59ce46020ee20adcb09bd50de8e0d7ffcfb3fb2549e6b6e12247",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773869.4671693
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-12-banner-displays/east-building-northstar.png",
+                "sha256": "ec6df25f3e0802295a251f6f83dff09c85b4e98cfea1a3bb51e98b0019d1859c",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791804593.8786354
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-12-area-survey"
+      "latest": "2026-10-12-banner-displays"
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "map": "drop-off",
+  "changed_lumps": [
+    2,
+    35,
+    43,
+    44,
+    73,
+    82
+  ],
+  "banner_vertices": 396,
+  "console_uv_vertices": 12960,
+  "frozen_front_faces": 24,
+  "geometry_collision_visibility_lighting_preserved": true,
+  "full_srgb_mip_chains": true,
+  "streaming_columns_preserved": true,
+  "index_padding": {
+    "meshes": 3024,
+    "render_triangles": 942146,
+    "odd_meshes_padded": 1364,
+    "pair_reads_within_declared_vertex_ranges": true,
+    "padding_triangles_degenerate": true,
+    "six_index_alignment_verified": true
+  },
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\northstar\\ArenaComposite\\mod\\maps\\mp_arena_composite.bsp",
+    "meshes": 3024,
+    "real_triangles": 942146,
+    "native_padded_indices": 2830530,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 3024,
+    "prefix_indices": 2830530,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      2892,
+      2892,
+      3024
+    ],
+    "static_batch_runs": 353,
+    "unique_static_draw_keys": 353,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "resident_bytes": 16794162,
+  "rpak_sha256": "4b1e07a0b477fc6d3686320ca496019e743d1e1f5a86f60a120061bcb6ae20ed",
+  "version": "0.8.0",
+  "native_validation": "docs/banner-display-textures-2026-10-12.md"
+}

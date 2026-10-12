@@ -1,0 +1,38 @@
+{
+  "drop-off": {
+    "court-overview": [
+      "The existing banner panels now show complete, upright Northstar graphics.",
+      "The original geometry, collision, lighting and visibility remain intact."
+    ],
+    "west-control": [
+      "The control-room wall and doorway retain their previous appearance.",
+      "The source animated Hammond wall display and red runtime wall colouring are still not reproduced."
+    ],
+    "east-control": [
+      "The mirrored control-room wall and doorway remain present.",
+      "The animated Hammond wall display and source blue runtime wall colouring remain incomplete."
+    ],
+    "central-window": [
+      "The source screen frames and static blue display surfaces are present.",
+      "Animated Hammond logos and the source's brighter lower-court lighting remain different."
+    ],
+    "west-banner": [
+      "Northstar artwork appears on the banner faces with the existing mounting beams.",
+      "This close, oblique camera partially crops the banners; the court view shows the complete artwork."
+    ]
+  },
+  "phase-runner": {
+    "arena-overview": [
+      "The exterior geometry, lighting, tunnels, cranes and grounded firs retain their prior appearance.",
+      "Source foliage density, terrain layers and omitted banner geometry remain incomplete."
+    ],
+    "west-building": [
+      "Both large display panels now show green Apex technical artwork instead of the striped placeholder surfaces.",
+      "The artwork is frozen; source animation and exact emissive behaviour are approximated. Room lighting remains unchanged."
+    ],
+    "east-building": [
+      "The mirrored building also shows complete green Apex display artwork.",
+      "The original console body and PBR sampling are retained. Screen animation is not ported."
+    ]
+  }
+}

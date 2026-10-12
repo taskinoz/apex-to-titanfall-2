@@ -1,8 +1,8 @@
 {
   "Name": "PhaseRunner",
-  "Version": "1.3.0",
+  "Version": "1.4.0",
   "LoadPriority": 10,
-  "Description": "Phase Runner with recovered gold tunnel paint, native PBR, team modes, grounded firs and tunnel catwalks.",
+  "Description": "Phase Runner with source display colours, native PBR, team modes, grounded firs and tunnel catwalks.",
   "ConVars": [
     {
       "Name": "phase_runner_local_test",

@@ -58,6 +58,8 @@ def stage(map_id):
     package,mapname,_,_=CONFIG[map_id];mod=ROOT/'northstar'/package
     work=ROOT/'output/banner-display-repair'/map_id;work.mkdir(parents=True,exist_ok=True)
     if (work/'receipt.json').exists():raise ValueError('Already applied')
+    expected_version='0.7.0' if map_id=='drop-off' else '1.3.0'
+    if json.loads((mod/'mod.json').read_text())['Version']!=expected_version:raise ValueError('Restore the verified '+expected_version+' baseline before applying this texture pass')
     backup=ROOT/'output/banner-display-repair/backups'/package
     def preserve(source,target):
         try:os.link(source,target)

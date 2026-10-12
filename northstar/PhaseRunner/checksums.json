@@ -11,13 +11,21 @@
     "bytes": 2882,
     "sha256": "cf7ec2cb8110d0ad0b268dc6b78fa2dcf53b3a93e76b1892c6437ac25548dc17"
   },
+  "banner-display-validation.json": {
+    "bytes": 1928,
+    "sha256": "635b3a1c2bed58aa98d77569527bf699145e24e395fdb9a67119272f4ab160aa"
+  },
+  "BANNER_DISPLAYS.md": {
+    "bytes": 5709,
+    "sha256": "7e8a6d390ca41cc878167447863a4e09981f50d21f2163e66aacaae88cc75e67"
+  },
   "batch-order.json": {
     "bytes": 104856,
     "sha256": "c1a13ee1606164b05231b3f10c68815f34596a54fd9171bc884aa43185725f74"
   },
   "build-status.json": {
-    "bytes": 45703779,
-    "sha256": "0d30c409bd3bce3dc4184736d18389baaacce6d82dc026adc9438b9b5fa3a8f2"
+    "bytes": 45705843,
+    "sha256": "b78220b381999589eb86f654de3b2993368e1c01fcac8e2c1360e1b9324a9591"
   },
   "catwalks.json": {
     "bytes": 12192643,
@@ -352,12 +360,12 @@
     "sha256": "940a32000656d2c0b05bb13a0d4b3dfb031542632eddcacc24494324d6afe3d9"
   },
   "mod/maps/mp_phase_runner.bsp": {
-    "bytes": 1154691184,
-    "sha256": "df250cc0a946ab5948c4d48c736f0531d352fa7ec005a889bb8a0f5a09960552"
+    "bytes": 1154691616,
+    "sha256": "7e720e20bda5b2d466f974bc1873e3ab06894ae56d7cc9f537b971c592380eef"
   },
   "mod/maps/mp_phase_runner.stbsp": {
-    "bytes": 106877,
-    "sha256": "5cca3c9a230216be148fcc9052e006dd9f353e827ddfdf7c73f9ea39784f03d3"
+    "bytes": 107655,
+    "sha256": "a44df1862af6a3b2f39ba1e123096a75f6b0c84fc6cbab8bd3575875cc3bf798"
   },
   "mod/models/vistas/grave_se.mdl": {
     "bytes": 2557,
@@ -428,8 +436,8 @@
     "sha256": "4d1446b3aad53f2e8792bfd7cef4d2114f3713e65631455e5b3297790f36b7de"
   },
   "mod.json": {
-    "bytes": 658,
-    "sha256": "b78bffe2247191675d7f9ce868ff81c26ca7e57f221b8c47b22dded20efe7f89"
+    "bytes": 653,
+    "sha256": "ede98c1dd58c1e9904c4e9192022a5411a3d025d8e8c70d949a3550e59d3934f"
   },
   "nessie-support-proof.json": {
     "bytes": 196,
@@ -438,6 +446,10 @@
   "paks/phase_runner_art_supports.rpak": {
     "bytes": 46274220,
     "sha256": "c0cc8471ff0f5916eda1d308e26c19dcc4c74051c248fed2495c6b96f2219fd0"
+  },
+  "paks/phase_runner_banner_displays.rpak": {
+    "bytes": 14345159,
+    "sha256": "8a9eba4e4e15c708e55cf8a58fd105388c8f181366e31864cb66c4e011762748"
   },
   "paks/phase_runner_detail.rpak": {
     "bytes": 21634145,
@@ -464,8 +476,8 @@
     "sha256": "c44e8a792ed0c7011a9b880021f3a33bb23d9c1b35543278be8e77ddca4be73e"
   },
   "paks/rpak.json": {
-    "bytes": 557,
-    "sha256": "fc5663a984badae665164e3d04b74001059e010ae2b0f84624aeec8630db46a8"
+    "bytes": 619,
+    "sha256": "52cd090a1c2133f5d8076c18559fbb636e9f2204ce90650b19a5cb30877ba45b"
   },
   "pbr-audit.json": {
     "bytes": 664,
@@ -520,8 +532,8 @@
     "sha256": "dd7fa1104b7e6216562e799a5aac1d0aaba4284a3c8a923e33ac01895b75f61e"
   },
   "README.md": {
-    "bytes": 2871,
-    "sha256": "147f7bf5f457b9b2b1bbe88ae9704089f9d6d13a7015376099f8b02eac22d4a8"
+    "bytes": 3587,
+    "sha256": "02a403cf4215bb2f5839afbdd0606bcbab82ba0fe6df40af49c614f88e3e9c15"
   },
   "recovered-materials.json": {
     "bytes": 1901,

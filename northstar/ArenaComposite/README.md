@@ -1,3 +1,14 @@
+# Drop-Off 0.8.0 for Northstar
+
+Preview for Skirmish, Pilots vs Pilots and Free For All. Adds Northstar banner artwork and frozen Apex display colours, with recovered RGB paint on pipes, cargo and structural surfaces. Preserves equipment supports, lighting-chart fixes, banner supports, room closures, safety volumes and two zipline pairs. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.
+
+The texture pass is checked with matched native screenshots and same-process
+map reloads. See BANNER_DISPLAYS.md for the source channels, exact scope and
+limitations. Geometry submission budgets, collision, visibility, world lights
+and character probes remain unchanged.
+
+## Previous release notes
+
 # Drop-Off 0.7.0 for Northstar
 Restores authored RGB paint on 190,916 existing vertices with native
 Titanfall colour-aware PBR shaders. Geometry, collision, lighting, visibility

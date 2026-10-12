@@ -1,9 +1,12 @@
 # Apex to Titanfall 2 map ports
 
-Current builds: **Phase Runner 1.3.0** and **Drop-Off 0.7.0**. Both retain the
-working geometry, collision and gameplay, with recovered source RGB paint and
-native colour-aware PBR materials. Seven matched R5R/Northstar views and seven
-focused regression checks verify this incremental repair. The wider area survey
+Current builds: **Phase Runner 1.4.0** and **Drop-Off 0.8.0**. Drop-Off adds
+Northstar banner artwork, and both maps restore frozen Apex display textures.
+The source console front faces now show complete green graphics. Geometry,
+collision, lighting, visibility and draw budgets remain unchanged. Eight new
+matched views, binary/PBR checks and 31 harness checks verify the texture pass.
+See [the texture repair notes](docs/banner-display-textures-2026-10-12.md).
+The retained wider area survey
 now includes 23 matched views with reviewed notes, covering both buildings,
 tunnel bends, upper platforms, stairs, cargo, rocks and terrain.
 
@@ -16,8 +19,8 @@ tunnel bends, upper platforms, stairs, cargo, rocks and terrain.
 - [Phase Runner repair](docs/phase-runner-vertex-paint-2026-10-12.md).
 - [Drop-Off repair](docs/drop-off-vertex-paint-2026-10-12.md).
 
-Clean player downloads are in `output/PhaseRunner-1.3.0-Northstar.zip` and
-`output/ArenaComposite-0.7.0-Northstar.zip`. Prior ZIPs and map snapshots remain
+Clean player downloads are in `output/PhaseRunner-1.4.0-Northstar.zip` and
+`output/ArenaComposite-0.8.0-Northstar.zip`. Prior ZIPs and map snapshots remain
 available for rollback. The comparison site is saved locally; it has not been
 deployed. Adding more maps uses the registry in `site/maps.json`.
 

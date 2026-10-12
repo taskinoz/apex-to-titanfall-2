@@ -16,7 +16,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Authored RGB paint is recovered on existing surfaces. Control-room colours, display artwork and some scenery remain incomplete. Intro and evac are disabled.",
+      "notes": "Northstar banner artwork and frozen Apex display textures are added. Authored RGB paint is recovered on existing surfaces. Animated Hammond graphics, some control-room colouring and scenery remain incomplete. Intro and evac are disabled.",
       "download": null
     },
     {
@@ -36,7 +36,7 @@
         "Hardpoint",
         "Fastball"
       ],
-      "notes": "Gold tunnel paint is recovered. Some source scenery and layered materials remain approximated. The tunnel catwalks are a Titanfall addition.",
+      "notes": "Green Apex building displays and additional source display textures are restored as static artwork. Gold tunnel paint is recovered. Some scenery and layered materials remain approximated. The tunnel catwalks are a Titanfall addition.",
       "download": null
     }
   ]

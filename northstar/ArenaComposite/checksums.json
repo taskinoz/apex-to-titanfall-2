@@ -1,7 +1,15 @@
 {
+  "banner-display-validation.json": {
+    "bytes": 1932,
+    "sha256": "a30d4f5b3ec4820e4423d11db107d35af1c6add76c1c1a5c9a0165fe456621c6"
+  },
+  "BANNER_DISPLAYS.md": {
+    "bytes": 5709,
+    "sha256": "7e8a6d390ca41cc878167447863a4e09981f50d21f2163e66aacaae88cc75e67"
+  },
   "build-status.json": {
-    "bytes": 186560,
-    "sha256": "14d7a7ba3fbd79aee4de0155011046f747b4427dc4d379bc02ee7c088d5a1bcc"
+    "bytes": 188628,
+    "sha256": "b07c4f1890525b439e336314a609c2d4a14aa50bc053a5b93136928d821a99e1"
   },
   "docs/binary-layouts.json": {
     "bytes": 102518,
@@ -68,12 +76,12 @@
     "sha256": "9f2478b997774cefeab9102f3f32ac247dd9010195080bb5be7a5de7c268247b"
   },
   "mod/maps/mp_arena_composite.bsp": {
-    "bytes": 606299156,
-    "sha256": "e9e9c6ed3ee5771cb6f83af69a9f41d51d0fe7dda1f89fd0d9e993f02a754c18"
+    "bytes": 606299668,
+    "sha256": "2c27f434cdb835fa50433bada46530afd7c9d4f1112dcca78dbbf44971099299"
   },
   "mod/maps/mp_arena_composite.stbsp": {
-    "bytes": 107632,
-    "sha256": "0520a86540c965cb7921e220d722dcc2992ff337c9bd7c86a3e18a3139af695f"
+    "bytes": 108536,
+    "sha256": "86c0117e8024ca27d2d3e38b58dc9911ec7589d2144f8911968fecc711749548"
   },
   "mod/resource/composite_english.txt": {
     "bytes": 436,
@@ -127,13 +135,17 @@
     "bytes": 438,
     "sha256": "a4748ae679e1dcfe2850b2d5815615619bdfe571d27fde31af4492e05302d4a3"
   },
+  "mod/resource/northstar-banner-license.txt": {
+    "bytes": 1089,
+    "sha256": "c3602933b43e5350b06f3cde496d3925ac6792238903ee774215d1681f3f09ca"
+  },
   "mod/scripts/vscripts/_arena_composite.nut": {
     "bytes": 1024,
     "sha256": "bc57ae1e483a88d5731e516044b4c7488cb7f69ce14226968cfae093d796f3f0"
   },
   "mod.json": {
-    "bytes": 467,
-    "sha256": "9b29d399f3afbcdca5d38ca7adbc3d3a1ae7e73c911c19b48ab2582c8dab4d24"
+    "bytes": 453,
+    "sha256": "c4b279565c67668240672f002f9d78fae82f7ae346f19ffe58e792cda71b6aa7"
   },
   "paks/composite_presentation.rpak": {
     "bytes": 3689263,
@@ -143,17 +155,21 @@
     "bytes": 548292563,
     "sha256": "d78beb25473402fb3d00ccc04b4da167de57638496b085fd215eb694635c7701"
   },
+  "paks/drop_off_banner_displays.rpak": {
+    "bytes": 16794162,
+    "sha256": "4b1e07a0b477fc6d3686320ca496019e743d1e1f5a86f60a120061bcb6ae20ed"
+  },
   "paks/drop_off_vertex_paint.rpak": {
     "bytes": 54114670,
     "sha256": "1d7ae4041d0230ee66fd587208dce4ae0e7adf78a396f3309c064f1a1b15aa83"
   },
   "paks/rpak.json": {
-    "bytes": 327,
-    "sha256": "652cb7fdb6ad4cc4424a2606ae0a67882c667e8df5c3b35c208a177b87977339"
+    "bytes": 385,
+    "sha256": "e335a3f4869b24d86166947dd0dc27cf9a5ceaad2eff332c036ba0ad1188f32e"
   },
   "README.md": {
-    "bytes": 1361,
-    "sha256": "e5f9c6604fe8ee95f0b3da1e1af385bde8e69505563c9da040a57d404f25d335"
+    "bytes": 2120,
+    "sha256": "d993e93ebf659d4305e63adf3f4d345460a777a8a837b1e45d518d29d5bb79c2"
   },
   "vertex-paint-validation.json": {
     "bytes": 2710,
