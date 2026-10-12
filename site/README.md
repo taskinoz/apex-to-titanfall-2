@@ -19,13 +19,13 @@ selector keeps earlier captures available for comparison. `--drop-off` and
 `--phase-runner` override the input gallery paths for a development build.
 Only whitelisted camera metadata and hash-verified PNGs leave private harness
 output. Generated `dist/` is deliberately retained as the portable site.
-The current export retains the baseline and recovered-paint snapshots, plus an
-**Area survey** with 12 Drop-Off views and 11 Phase Runner views. That adds 16
-areas beyond the earlier seven repair cameras. Each survey view has reviewed
-notes; the western Phase Runner bend explicitly records an unresolved black
-source capture rather than claiming a port defect. All 72 native PNGs remain
-available across the three snapshot sets. Choose a new snapshot label when
-making further changes.
+The current export includes **Scenery recovery** with 12 Drop-Off views and
+11 Phase Runner views. These are the verified 0.10.0 / 1.6.0 candidates at
+97.06% / 97.04% of native world index capacity. The 134 archived native PNG paths
+retain previous comparison snapshots. R5R references are hash-verified saved
+captures; the new Northstar views use the same camera poses. The western
+Phase Runner bend keeps the known black source-reference limitation in its
+reviewed notes. Use a new snapshot label for further changes.
 
 `--findings` accepts plain-text observations keyed by map ID and shot name.
 The viewer renders these as text, not HTML. Do not change notes in an archived

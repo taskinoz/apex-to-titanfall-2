@@ -300,7 +300,31 @@ void function MTH_Execute( string raw )
             table counts = {}
             foreach ( name in [ "info_spawnpoint_human_start", "info_spawnpoint_human", "info_spawnpoint_titan_start", "info_spawnpoint_titan", "info_spawnpoint_flag", "info_hardpoint", "trigger_out_of_bounds", "trigger_hurt", "move_rope", "keyframe_rope" ] )
                 counts[name] <- GetEntArrayByClass_Expensive( name ).len()
-            answer.data <- { map = GetMapName(), mode = GAMETYPE, entities = counts }
+            array spawnChecks = []
+            foreach ( string spawnClass in [ "info_spawnpoint_human_start", "info_spawnpoint_human", "info_spawnpoint_titan_start", "info_spawnpoint_titan" ] )
+            {
+                foreach ( entity spawnEntity in GetEntArrayByClass_Expensive( spawnClass ) )
+                {
+                    vector spawnOrigin = spawnEntity.GetOrigin()
+                    bool isTitanSpawn = spawnClass.find( "titan" ) != null
+                    vector hullMins = isTitanSpawn ? < -100, -100, 0 > : < -16, -16, 0 >
+                    vector hullMaxs = isTitanSpawn ? < 100, 100, 400 > : < 16, 16, 72 >
+                    TraceResults clearanceTrace = TraceHull( spawnOrigin, spawnOrigin + < 0, 0, 1 >, hullMins, hullMaxs, null, TRACE_MASK_SOLID_BRUSHONLY, TRACE_COLLISION_GROUP_NONE )
+                    TraceResults supportTrace = TraceLine( spawnOrigin, spawnOrigin - < 0, 0, 32 >, null, TRACE_MASK_SOLID_BRUSHONLY, TRACE_COLLISION_GROUP_NONE )
+                    spawnChecks.append( { classname = spawnClass, team = spawnEntity.GetTeam(), origin = [ spawnOrigin.x, spawnOrigin.y, spawnOrigin.z ],
+                        clear = !clearanceTrace.startSolid && clearanceTrace.fraction >= 0.99,
+                        supported = !supportTrace.startSolid && supportTrace.fraction < 1.0 } )
+                }
+            }
+            array objectiveChecks = []
+            if ( GAMETYPE == "ctf" )
+                foreach ( string flagName in [ "imcFlag", "milFlag" ] )
+                    objectiveChecks.append( { name = flagName, valid = IsValid( GetGlobalNetEnt( flagName ) ) } )
+            if ( GAMETYPE == "cp" )
+                foreach ( string pointName in [ "A", "B", "C" ] )
+                    objectiveChecks.append( { name = pointName, valid = IsValid( GetGlobalNetEnt( "objective" + pointName + "Ent" ) ) } )
+            answer.data <- { map = GetMapName(), mode = GAMETYPE, entities = counts, liveSpawns = spawnChecks,
+                objectives = objectiveChecks, panels = GetEntArrayByClass_Expensive( "prop_control_panel" ).len() }
         }
         else if ( op == "respawn" )
         {

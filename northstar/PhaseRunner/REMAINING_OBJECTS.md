@@ -1,5 +1,10 @@
-# Remaining source objects â€” 1.0.0
+# Remaining source objects — 1.6.0
 
-5,425 of 16,376 arena placements are rendered. 10,951 remain omitted: 9,537 vegetation and 1,414 other items across 68 model types. Another 486 placements lie outside the imported arena.
+5,857 of 16,376 local arena placements are rendered; 10,519 remain omitted.
+Another 486 placements lie outside the imported arena. This pass adds
+432 placements to the historical 5,425-object baseline.
 
-See [full omission ledger](docs/conversion/MISSING_CONTENT.md) for every model and placement, plus dynamic/behavioral omissions.
+The complete historical source inventory is in `docs/conversion/`.
+Merge the added source indices in `docs/scenery-fill/phase-runner-recovered-placements.json`
+when interpreting that baseline's omissions. See `SCENERY_FILL.md` for current
+native rendering capacity, collision and gameplay checks.

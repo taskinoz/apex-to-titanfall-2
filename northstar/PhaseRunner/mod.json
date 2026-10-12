@@ -1,6 +1,6 @@
 {
   "Name": "PhaseRunner",
-  "Version": "1.5.0",
+  "Version": "1.6.0",
   "LoadPriority": 10,
   "Description": "Phase Runner with native minimap, source display artwork, PBR and preserved collision.",
   "ConVars": [

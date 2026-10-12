@@ -450,7 +450,8 @@ class Controller:
         dest = self.run/'game.log'
         dest.write_text(text.replace(self.session['token'], '[session-token]'), encoding='utf-8')
         errors = [s for s in text.splitlines() if 'SCRIPT ERROR' in s or 'COMPILE ERROR' in s or 'ERROR: Script' in s]
-        return dict(path=str(dest), script_errors=errors)
+        crashes = [s for s in text.splitlines() if 'Northstar has crashed!' in s]
+        return dict(path=str(dest), script_errors=errors, native_crashes=crashes)
 
 
 def serve(args):

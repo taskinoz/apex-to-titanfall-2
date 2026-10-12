@@ -98,7 +98,7 @@ def retain_scene(l,keys):
     if any(remaining.values()) or removed!=sum(keys.values()):raise ValueError('Old path not matched exactly')
     return {0x50:meshes,0x4f:indices,0x51:bounds},np.asarray(scene,'<f4'),np.asarray(caster,np.uint8),mapping,removed
 
-def bake_catwalks(scene,casters,newtri,corner_normals=None,new_casters=None):
+def bake_catwalks(scene,casters,newtri,corner_normals=None,new_casters=None,ambient_rgb=(.025,.027,.032),ambient_visibility=(.4,.6)):
     BAKE.mkdir(parents=True,exist_ok=True);norm=np.cross(newtri[:,1]-newtri[:,0],newtri[:,2]-newtri[:,0]);norm/=np.linalg.norm(norm,axis=1)[:,None]
     normals=np.broadcast_to(norm[:,None,:],newtri.shape) if corner_normals is None else np.asarray(corner_normals,dtype='<f4')
     if normals.shape!=newtri.shape or not np.all(np.isfinite(normals)) or not np.allclose(np.linalg.norm(normals,axis=2),1,atol=1e-5):
@@ -130,7 +130,7 @@ def bake_catwalks(scene,casters,newtri,corner_normals=None,new_casters=None):
     for k in range(pages):
         if not valid[k].any():raise ValueError('Empty new lightmap page')
         nearest=distance_transform_edt(~valid[k],return_distances=False,return_indices=True);values=sunlight[k][tuple(nearest)];lv=local[k][tuple(nearest)]
-        ambient=np.array([.025,.027,.032])*(.4+.6*np.maximum(values[...,1,None],0))+lv['fill'];a=encode_rgbm(ambient);b=np.empty((h,w,4),np.uint8)
+        ambient=np.array(ambient_rgb)*(ambient_visibility[0]+ambient_visibility[1]*np.maximum(values[...,1,None],0))+lv['fill'];a=encode_rgbm(ambient);b=np.empty((h,w,4),np.uint8)
         b[...,:3]=np.rint(np.clip((values[...,2:5]+1)/2.007874,0,1)*255).astype(np.uint8);b[...,3]=255;sky.extend(a.tobytes());sky.extend(b.tobytes())
         ids=np.full((h,w),0x00ffffc0,'<u4');vis=np.zeros((h,w,4),np.uint8);vis[...,0]=np.rint(np.clip(values[...,0],0,1)*255).astype(np.uint8)
         active=lv['vis'][...,1:].any(-1);ids[active]=(ids[active]&0xff00003f)|(lv['ids'][active]&0x00ffffc0);vis[...,1:][active]=lv['vis'][...,1:][active]

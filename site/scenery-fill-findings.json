@@ -1,0 +1,18 @@
+{
+  "phase-runner": {
+    "arena-overview": ["Restores 432 original placements with more detailed ground cover, flowers, small rock clusters and power equipment. Existing trees, tunnel catwalks, lighting and minimap are retained."],
+    "central-rocks": ["Additional supported plant and grass patches use authored source LODs. Dense vegetation and layered terrain shading still differ from Apex."],
+    "west-tunnel": ["Tunnel walls and the added Titanfall catwalk remain visible. No rendering portals were added in this pass."],
+    "west-tunnel-bend": ["The saved R5R reference at this bend is black, so it cannot establish a lighting difference. The port capture shows the tunnel surfaces and catwalk."],
+    "terrain-seam": ["Original terrain layers remain approximate; this pass adds objects rather than reconstructing Apex's layered terrain shader."],
+    "west-building": ["Existing green Apex display artwork is retained as a static texture. Animated display behaviour is not reproduced."]
+  },
+  "drop-off": {
+    "court-overview": ["Restores 366 utility, storage, furniture and structural placements across the gameplay area. Northstar banners, native minimap and previous display fixes are retained."],
+    "west-cargo": ["Additional source tanks, crates and storage details retain their original positions. Added surfaces use Drop-Off's existing ambient lighting settings."],
+    "north-platform": ["Additional conduits and equipment supports are restored. Working ziplines and deliberate room closures remain unchanged."],
+    "north-closure": ["The translucent closure remains intentional; the room is not a new gameplay route."],
+    "upper-west": ["Safety volumes and platform access remain unchanged. No geometry loading portals were introduced."],
+    "west-control": ["Original building textures and the previously corrected lighting are retained. Apex-specific animated and layered shader effects remain approximated."]
+  }
+}

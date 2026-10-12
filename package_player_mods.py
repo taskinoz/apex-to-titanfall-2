@@ -14,14 +14,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 RELEASES = {
     'PhaseRunner': {
-        'version': '1.5.0', 'map': 'mp_phase_runner', 'title': 'Phase Runner',
-        'screenshot': 'output/minimaps/runtime/PhaseRunner/center-north.png',
-        'notes': 'Adds the original Apex minimap artwork with Titanfall radar scaling and the port coordinate offset. Includes frozen Apex displays, authored gold tunnel paint, source out-of-bounds areas, a fall kill volume, team spawns, CTF, Amped Hardpoint and Fastball. Existing collision, lighting and catwalks are preserved. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.',
+        'version': '1.6.0', 'map': 'mp_phase_runner', 'title': 'Phase Runner',
+        'screenshot': 'output/arena-fill/phase-runner/comparison/arena-overview-northstar.png',
+        'notes': 'Restores 432 source scenery placements, including supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves the Apex minimap, displays, paint, safety areas, team spawns, CTF, Hardpoint, Fastball, lighting and catwalks. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.',
     },
     'ArenaComposite': {
-        'version': '0.9.0', 'map': 'mp_arena_composite', 'title': 'Drop-Off',
-        'screenshot': 'output/minimaps/runtime/ArenaComposite/center-north.png',
-        'notes': 'Preview for Skirmish, Pilots vs Pilots and Free For All. Adds the original Apex minimap with Titanfall radar scaling. Includes Northstar banners, frozen Apex displays and recovered RGB paint. Preserves equipment supports, lighting-chart fixes, banner supports, room closures, safety volumes and two zipline pairs. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.',
+        'version': '0.10.0', 'map': 'mp_arena_composite', 'title': 'Drop-Off',
+        'screenshot': 'output/arena-fill/drop-off/comparison/south-overview-northstar.png',
+        'notes': 'Preview for Skirmish, Pilots vs Pilots and Free For All. Restores 366 source placements: utility conduits, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves the Apex minimap, Northstar banners, displays, paint, lighting, room closures, safety volumes and ziplines. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.',
     },
 }
 

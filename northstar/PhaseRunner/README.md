@@ -1,3 +1,9 @@
+# Phase Runner 1.6.0 for Northstar
+
+Adds 432 original scenery placements. Uses 97.04% of the native world index capacity with no added dynamic entities. Existing minimaps, gameplay, collision exclusions and tunnel visibility are preserved. See SCENERY_FILL.md for measured budgets and validation. AI navigation remains incomplete.
+
+## Previous release notes
+
 # Phase Runner 1.5.0 for Northstar
 
 Adds the original Apex minimap artwork with Titanfall radar scaling and the port coordinate offset. Includes frozen Apex displays, authored gold tunnel paint, source out-of-bounds areas, a fall kill volume, team spawns, CTF, Amped Hardpoint and Fastball. Existing collision, lighting and catwalks are preserved. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.

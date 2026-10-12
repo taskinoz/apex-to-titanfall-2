@@ -13,9 +13,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Includes the original Apex minimap, corrected for Titanfall radar scale and port coordinates. Northstar banner artwork and frozen Apex display textures are added. Authored RGB paint is recovered on existing surfaces. Animated Hammond graphics, some control-room colouring and scenery remain incomplete. Intro and evac are disabled.",
+      "notes": "Adds 366 source placements: conduits, clamps, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves minimap, Northstar banners, displays, paint, lighting, safety volumes and ziplines. Some scenery and animated materials remain incomplete. Intro and evac are disabled.",
       "download": null,
-      "version": "0.9.0",
+      "version": "0.10.0",
       "source_offset": [
         0,
         0,
@@ -785,9 +785,369 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-13-scenery-fill",
+          "version": "0.10.0",
+          "shots": [
+            {
+              "name": "court-overview",
+              "origin": [
+                0,
+                2200,
+                900
+              ],
+              "angles": [
+                22,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Restores 366 utility, storage, furniture and structural placements across the gameplay area. Northstar banners, native minimap and previous display fixes are retained."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/court-overview-r5r.png",
+                "sha256": "16e1f6c5f1601c1c06efd101fa0b7454d4d99b33046a82a45f7573bb8cd4cdb7",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771300.5818188
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/court-overview-northstar.png",
+                "sha256": "6384bd867e8d418271fda0fe98cd2a8577aba095ac747a36d5090d9e26348371",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847805.168051
+              }
+            },
+            {
+              "name": "west-control",
+              "origin": [
+                -1917.1,
+                631.305,
+                256.031
+              ],
+              "angles": [
+                -20,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Original building textures and the previously corrected lighting are retained. Apex-specific animated and layered shader effects remain approximated."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/west-control-r5r.png",
+                "sha256": "643c4ec4133117c24f70e50143782263de4e6560dac374bcbebfad9b141ca5cc",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771340.581923
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/west-control-northstar.png",
+                "sha256": "e0cbbe9ea37a55877e32486352ffa4e5e94fb48b6c2ad57dd2d8fb68bea4da96",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847810.1619058
+              }
+            },
+            {
+              "name": "north-platform",
+              "origin": [
+                0,
+                5000,
+                450
+              ],
+              "angles": [
+                -10,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Additional conduits and equipment supports are restored. Working ziplines and deliberate room closures remain unchanged."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/north-platform-r5r.png",
+                "sha256": "a548fdc7123cbc40304a35f58d70125128d4f1ad75d9cbab901f4d907ba8f7aa",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771380.630876
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/north-platform-northstar.png",
+                "sha256": "566abcdd7677c4be8c38dd72cb2521cc4f22ceea682a7742849add1436cafc4e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847815.0799885
+              }
+            },
+            {
+              "name": "west-cargo",
+              "origin": [
+                -1656,
+                1300,
+                260
+              ],
+              "angles": [
+                10,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Additional source tanks, crates and storage details retain their original positions. Added surfaces use Drop-Off's existing ambient lighting settings."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/west-cargo-r5r.png",
+                "sha256": "e9383633ffabd9b0d995d5e644a2e6ee0d82a9e0cb44a5c44eca2dffd11750e9",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771420.5576925
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/west-cargo-northstar.png",
+                "sha256": "5e4d0b5da38bfe4f0ea1eede2b9b181d6377f2bc1c73e75012ece46e91b9d8ab",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847820.2295814
+              }
+            },
+            {
+              "name": "south-overview",
+              "origin": [
+                0,
+                -1200,
+                1450
+              ],
+              "angles": [
+                18,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/south-overview-r5r.png",
+                "sha256": "ff0378cff222caffea77a1394efa8d8fee563429729a92da6fb9a7e58895e9cb",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771460.5304701
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/south-overview-northstar.png",
+                "sha256": "b2340fefbe46dfa2d626fa80f2ee470674168ebd28497bc1dad93baec5e70e33",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847824.989014
+              }
+            },
+            {
+              "name": "east-control",
+              "origin": [
+                1917.1,
+                631.305,
+                256.031
+              ],
+              "angles": [
+                -20,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/east-control-r5r.png",
+                "sha256": "afd682d2d4080e393489194f9649bc988f3f3a7a5761df65e9f1480cc860c574",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771500.4784148
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/east-control-northstar.png",
+                "sha256": "cadde031cebaff5e0010d5de1b163e7096985845c80a238d3ebcf9b0a06da9e2",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847830.288511
+              }
+            },
+            {
+              "name": "lower-court",
+              "origin": [
+                0,
+                1962,
+                6
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/lower-court-r5r.png",
+                "sha256": "6d20914a9aa68d1fdb50b83b1de82d581b74cdef1dcfc425c2aa3db2161c21fa",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771540.4820054
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/lower-court-northstar.png",
+                "sha256": "72dcdbf06acdc5966b9adaca16902cb989be14ad5b173a3a75eb95a3581ca819",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847835.4155703
+              }
+            },
+            {
+              "name": "central-window",
+              "origin": [
+                65,
+                3400,
+                480
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/central-window-r5r.png",
+                "sha256": "aa86f0b326700ff10080dac20a15e34da00053f56029ce84e91b96fe98e0db2b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771580.5724974
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/central-window-northstar.png",
+                "sha256": "54f2c148b9ebadea29065ebf0b93ef8c8def80e42bd7df0bade906e43534ab14",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847840.5586693
+              }
+            },
+            {
+              "name": "north-closure",
+              "origin": [
+                20,
+                5534,
+                144
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The translucent closure remains intentional; the room is not a new gameplay route."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/north-closure-r5r.png",
+                "sha256": "7dda3500b9f6cd02a82569bb183063230fa8685b9b98c8ed275bb16fbbece203",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771620.5237563
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/north-closure-northstar.png",
+                "sha256": "a2610863533598d0280fa4e125ee824f29970f8db815a0f0c0f88e47d844059e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847845.9873831
+              }
+            },
+            {
+              "name": "upper-west",
+              "origin": [
+                -2500,
+                5300,
+                1450
+              ],
+              "angles": [
+                10,
+                40,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Safety volumes and platform access remain unchanged. No geometry loading portals were introduced."
+              ],
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/upper-west-r5r.png",
+                "sha256": "41d19dacf1926ab8a76a92bc75b14898e2ec76d4c21c4f4d077495d004c5aa56",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771660.6547453
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/upper-west-northstar.png",
+                "sha256": "1b98cca349fea498149532e9e000f775672c8b0684e1be6f3ea595584fcbbd8f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847851.470479
+              }
+            },
+            {
+              "name": "upper-east",
+              "origin": [
+                2600,
+                5400,
+                1450
+              ],
+              "angles": [
+                10,
+                135,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/upper-east-r5r.png",
+                "sha256": "02936be242dfc97100a388ff76f8fb728dd1438a1424c6f0b903aeb050c52938",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771700.5297678
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/upper-east-northstar.png",
+                "sha256": "17aed65be774f3d23ec52d1ce68cee65bfa93f9ddd29a82beaa959cd97c44212",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847856.8030834
+              }
+            },
+            {
+              "name": "west-banner",
+              "origin": [
+                -2568,
+                3650,
+                1600
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/west-banner-r5r.png",
+                "sha256": "a0719200193b46ed4686c9c7d5d67af5ce1443887d046a753f4a41202941d48d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771740.601017
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-13-scenery-fill/west-banner-northstar.png",
+                "sha256": "37cc503fdb9e2f87e2001588763bcabd151a310c321fa43289bf9b2425addb0a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847862.021127
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-12-banner-displays"
+      "latest": "2026-10-13-scenery-fill"
     },
     {
       "id": "phase-runner",
@@ -803,9 +1163,9 @@
         "Hardpoint",
         "Fastball"
       ],
-      "notes": "Includes the original Apex minimap, corrected for Titanfall radar scale and port coordinates. Green Apex building displays and additional source display textures are restored as static artwork. Gold tunnel paint is recovered. Some scenery and layered materials remain approximated. The tunnel catwalks are a Titanfall addition.",
+      "notes": "Adds 432 source scenery placements: supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves minimap, displays, paint, lighting, team modes and catwalks. AI navigation and some layered/animated materials remain incomplete.",
       "download": null,
-      "version": "1.5.0",
+      "version": "1.6.0",
       "source_offset": [
         26000,
         19000,
@@ -1451,9 +1811,341 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-13-scenery-fill",
+          "version": "1.6.0",
+          "shots": [
+            {
+              "name": "arena-overview",
+              "origin": [
+                0,
+                -5000,
+                1400
+              ],
+              "angles": [
+                28,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Restores 432 original placements with more detailed ground cover, flowers, small rock clusters and power equipment. Existing trees, tunnel catwalks, lighting and minimap are retained."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/arena-overview-r5r.png",
+                "sha256": "efc92e57b6d037a83b1ce9b6e1645f2950610d7c1b9df63014063d0f862926d6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773285.1644835
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/arena-overview-northstar.png",
+                "sha256": "33e1e92596a123ea20c138c4b39dd933fc0a7ea9522aa5f7b5339212b8b85016",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847331.5315645
+              }
+            },
+            {
+              "name": "west-tunnel",
+              "origin": [
+                -1819.8,
+                3017.7,
+                -382.4
+              ],
+              "angles": [
+                0,
+                0,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Tunnel walls and the added Titanfall catwalk remain visible. No rendering portals were added in this pass."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/west-tunnel-r5r.png",
+                "sha256": "f175d4a6af728e3818615ac7c706a406f2339c1e9b88e95f82901cd2d647e9ce",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773324.9647355
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/west-tunnel-northstar.png",
+                "sha256": "9352a12fb35129c77ee01584287ea6de5bb4e574524d78a6bc0d2312cc597f9c",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847336.9280298
+              }
+            },
+            {
+              "name": "west-building",
+              "origin": [
+                -6080,
+                -1530.2,
+                -773.9
+              ],
+              "angles": [
+                10,
+                90,
+                0
+              ],
+              "fov": 75,
+              "findings": [
+                "Existing green Apex display artwork is retained as a static texture. Animated display behaviour is not reproduced."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/west-building-r5r.png",
+                "sha256": "bd0cdd33ef01a19aea2b0d8369fbf828d3f436750e6c4c001823c5f5ac17cf31",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773364.982922
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/west-building-northstar.png",
+                "sha256": "87a3be5e5ff948352fa40fedb97759d6f7f9416a063954ae4d8129a56c100467",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847342.0654116
+              }
+            },
+            {
+              "name": "east-building",
+              "origin": [
+                6283.9,
+                -1417,
+                -773.9
+              ],
+              "angles": [
+                10,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/east-building-r5r.png",
+                "sha256": "e18f87254bff59ce46020ee20adcb09bd50de8e0d7ffcfb3fb2549e6b6e12247",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773869.4671693
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/east-building-northstar.png",
+                "sha256": "4d48e55bca1261de87f4fdaac83b333e23d2483bbb39fc8a938a7e56f6e6b65f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847346.7659934
+              }
+            },
+            {
+              "name": "east-tunnel",
+              "origin": [
+                1940.5,
+                3016.9,
+                -376
+              ],
+              "angles": [
+                0,
+                180,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/east-tunnel-r5r.png",
+                "sha256": "841e819ac7ef38e3c759dfee133dc8db1530f51aa69cfbcde850fad9ed0d5250",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773904.349024
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/east-tunnel-northstar.png",
+                "sha256": "23575358cc58961ad09e66c2f3f16e38390edf213947d03263cfcdf15ea88ee9",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847352.14397
+              }
+            },
+            {
+              "name": "west-tunnel-bend",
+              "origin": [
+                -4412.6,
+                613.2,
+                -645.7
+              ],
+              "angles": [
+                0,
+                45,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The saved R5R reference at this bend is black, so it cannot establish a lighting difference. The port capture shows the tunnel surfaces and catwalk."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/west-tunnel-bend-r5r.png",
+                "sha256": "bfb7b62e43ea484b9ccd8fbb0fe85c3ef9bd5a71370e511d7d1a7933688559a7",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774664.2257445
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/west-tunnel-bend-northstar.png",
+                "sha256": "c8cb659842ff73afc2ce6b292a49ccaf50da46f88bbfdf12943e4925b120796d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847357.4588118
+              }
+            },
+            {
+              "name": "east-tunnel-bend",
+              "origin": [
+                4636.4,
+                734.9,
+                -683.3
+              ],
+              "angles": [
+                0,
+                135,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/east-tunnel-bend-r5r.png",
+                "sha256": "facf455b430eff99e421bd604ed4f1236c0b65dd0285950caf030d0dc45da138",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774704.3914013
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/east-tunnel-bend-northstar.png",
+                "sha256": "1e35e379ef6e112e1dbe9e76cecc538bd885711f5ea22e3ea58f58d90a082ee9",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847363.1591287
+              }
+            },
+            {
+              "name": "central-rocks",
+              "origin": [
+                1839.9,
+                -782,
+                -1136.7
+              ],
+              "angles": [
+                0,
+                180,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Additional supported plant and grass patches use authored source LODs. Dense vegetation and layered terrain shading still differ from Apex."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/central-rocks-r5r.png",
+                "sha256": "13cfbc7089145f34732e6c70f2526497c84307a83ac7970c60b05f20da6ddf25",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774024.3638887
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/central-rocks-northstar.png",
+                "sha256": "2eb1fda7f6f85a1a67806043ab290612828738d055facfd7370152509c8dbba2",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847368.225023
+              }
+            },
+            {
+              "name": "west-stairs",
+              "origin": [
+                -4176.4,
+                -1463.9,
+                -950.6
+              ],
+              "angles": [
+                10,
+                180,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/west-stairs-r5r.png",
+                "sha256": "60b06be76afd765ae53cbda2fb51a73cd360964d47c887afe86b389250b57412",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774064.4523482
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/west-stairs-northstar.png",
+                "sha256": "120ce9f389a417f20215aef9b2a6eece5e6eb67abaf310e265de95cc8cb7161d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847373.7743645
+              }
+            },
+            {
+              "name": "nessie-rocks",
+              "origin": [
+                3200,
+                700,
+                -850
+              ],
+              "angles": [
+                30,
+                145,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/nessie-rocks-r5r.png",
+                "sha256": "54f97a50a8c817ea0e8ea371d1de9f6bc6dab82a0cafa4adb6f685888b8e8a08",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774104.3270504
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/nessie-rocks-northstar.png",
+                "sha256": "325498b4869ec36836d2483f2b747e8f9a90ef45886ed278cbffa3c997d1e363",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847378.9841335
+              }
+            },
+            {
+              "name": "terrain-seam",
+              "origin": [
+                0,
+                -2650,
+                -1180
+              ],
+              "angles": [
+                30,
+                0,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Original terrain layers remain approximate; this pass adds objects rather than reconstructing Apex's layered terrain shader."
+              ],
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/terrain-seam-r5r.png",
+                "sha256": "eed21333bfe1bc1b92bd9394c289f132a1823ca33442ca288ffce73ea95174f2",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774144.342471
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-13-scenery-fill/terrain-seam-northstar.png",
+                "sha256": "2e94de6c63ef14e8ff9b01041344cf8c22c263e7ae9152b0f068629822ee6931",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791847384.4307802
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-12-banner-displays"
+      "latest": "2026-10-13-scenery-fill"
     }
   ]
 }

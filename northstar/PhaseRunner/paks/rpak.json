@@ -12,6 +12,7 @@
     "phase_runner_firs.rpak": "mp_coliseum.rpak",
     "phase_runner_vertex_paint.rpak": "mp_coliseum.rpak",
     "phase_runner_banner_displays.rpak": "mp_coliseum.rpak",
-    "phase_runner_minimap.rpak": "common.rpak"
+    "phase_runner_minimap.rpak": "common.rpak",
+    "phase_runner_fill.rpak": "mp_coliseum.rpak"
   }
 }

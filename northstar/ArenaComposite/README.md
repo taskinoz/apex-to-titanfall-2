@@ -1,3 +1,9 @@
+# Drop-Off 0.10.0 for Northstar
+
+Adds 366 original scenery placements. Uses 97.06% of the native world index capacity with no added dynamic entities. Existing minimaps, gameplay, collision exclusions and tunnel visibility are preserved. See SCENERY_FILL.md for measured budgets and validation. AI navigation remains incomplete.
+
+## Previous release notes
+
 # Drop-Off 0.9.0 for Northstar
 
 Preview for Skirmish, Pilots vs Pilots and Free For All. Adds the original Apex minimap with Titanfall radar scaling. Includes Northstar banners, frozen Apex displays and recovered RGB paint. Preserves equipment supports, lighting-chart fixes, banner supports, room closures, safety volumes and two zipline pairs. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.

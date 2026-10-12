@@ -1,0 +1,598 @@
+{
+  "version": "0.10.0",
+  "map": "mp_arena_composite",
+  "baseline_version": "0.9.0",
+  "bsp_sha256": "577831c03fb6174bef94e02e0f8fb7c89cfd05d3d26cb86221ee64774720d1cb",
+  "added_placements": 366,
+  "local_source_placements": 6472,
+  "rendered_source_placements": 4630,
+  "remaining_local_placements": 1842,
+  "added_render_triangles": 74003,
+  "added_collision_triangles": 42468,
+  "model_counts": {
+    "btown_whouse_prop_rack_arm_01": 34,
+    "chair_IMC_01": 6,
+    "chair_IMC_02": 4,
+    "citymodern_interior_planter_01": 4,
+    "citymodern_planter_128x128_72_squared_a": 1,
+    "container_medium_tanks_blue": 44,
+    "farmland_crate_md_80x64x72_01": 1,
+    "farmland_crate_md_80x64x72_03": 8,
+    "farmland_crate_plastic_01_red": 6,
+    "mendoko_desk_01": 6,
+    "office_desk_accessories_clipboard": 4,
+    "office_desk_accessories_papers": 2,
+    "office_desk_accessories_pen_holder": 2,
+    "office_desk_lamp": 2,
+    "olympus_connector_clamp_01": 9,
+    "power_cell_64": 11,
+    "power_cell_64_single_01": 2,
+    "slumcity_oxygen_tank_blue": 30,
+    "slumcity_oxygen_tank_red": 25,
+    "underbelly_cargo_container_256_red_01": 1,
+    "beacon_crane_wall_panel_corner_256_01": 30,
+    "conduit_bend_16_IMC_01": 18,
+    "conduit_bend_16_IMC_02": 16,
+    "conduit_str_16_IMC_01": 1,
+    "conduit_str_32_IMC_01": 11,
+    "conduit_str_32_IMC_02": 35,
+    "conduit_str_64_IMC_01": 52,
+    "composite_room_07_top_roof": 1
+  },
+  "world_fraction": 0.9705657958984375,
+  "remaining_world_indices": 92592,
+  "static_batch_reserve": 1669,
+  "budget": {
+    "meshes": 3475,
+    "real_triangles": 1016149,
+    "native_padded_indices": 3053136,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 3475,
+    "prefix_indices": 3053136,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      3343,
+      3343,
+      3475
+    ],
+    "static_batch_runs": 379,
+    "unique_static_draw_keys": 379,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "collision": {
+    "new_headers": 443,
+    "new_triangles": 42468,
+    "first_new_header": 3468,
+    "existing_active_collision_preserved": true,
+    "existing_disabled_collision_not_reactivated": true
+  },
+  "lighting": {
+    "pages": 1,
+    "width": 1024,
+    "height": 1024,
+    "valid_luxels": 97092,
+    "local_lit_luxels": 14374,
+    "old_lightmaps_byte_preserved": true,
+    "existing_fixture_count": 60,
+    "static_sun_sky_and_existing_fixtures_baked": true
+  },
+  "native_comparison_views": 12,
+  "angle_checks": 8,
+  "new_prop_collision_contacts": [
+    {
+      "source_index": 8019,
+      "model": "mdl/boomtown/btown_whouse_prop_rack_arm_01.rmdl",
+      "expected_surface": [
+        819.3058471679688,
+        4155.03369140625,
+        47.270511627197266
+      ],
+      "fraction": 0.38156837224960327
+    },
+    {
+      "source_index": 8032,
+      "model": "mdl/boomtown/btown_whouse_prop_rack_arm_01.rmdl",
+      "expected_surface": [
+        235.2403564453125,
+        5122.68017578125,
+        192.16127014160156
+      ],
+      "fraction": 0.4990234375
+    },
+    {
+      "source_index": 5664,
+      "model": "mdl/city_modern/citymodern_interior_planter_01.rmdl",
+      "expected_surface": [
+        1361.1014404296875,
+        621.9221801757812,
+        201.21319580078125
+      ],
+      "fraction": 0.4990234375
+    },
+    {
+      "source_index": 5665,
+      "model": "mdl/city_modern/citymodern_interior_planter_01.rmdl",
+      "expected_surface": [
+        -1152.1270751953125,
+        949.1585083007812,
+        201.3372039794922
+      ],
+      "fraction": 0.49902215600013733
+    },
+    {
+      "source_index": 5270,
+      "model": "mdl/containers/container_medium_tanks_blue.rmdl",
+      "expected_surface": [
+        630.834228515625,
+        737.1476440429688,
+        252.69825744628906
+      ],
+      "fraction": 0.4844648241996765
+    },
+    {
+      "source_index": 5254,
+      "model": "mdl/containers/container_medium_tanks_blue.rmdl",
+      "expected_surface": [
+        899.02099609375,
+        4601.66650390625,
+        140.23716735839844
+      ],
+      "fraction": 0.49902838468551636
+    },
+    {
+      "source_index": 5215,
+      "model": "mdl/colony/farmland_crate_md_80x64x72_03.rmdl",
+      "expected_surface": [
+        1619.01171875,
+        3869.638427734375,
+        83.73966217041016
+      ],
+      "fraction": 0.49902600049972534
+    },
+    {
+      "source_index": 5216,
+      "model": "mdl/colony/farmland_crate_md_80x64x72_03.rmdl",
+      "expected_surface": [
+        1561.30078125,
+        3880.860107421875,
+        20.268869400024414
+      ],
+      "fraction": 0.49902257323265076
+    },
+    {
+      "source_index": 8213,
+      "model": "mdl/furniture/office_desk_accessories_clipboard.rmdl",
+      "expected_surface": [
+        1170.7611083984375,
+        661.81689453125,
+        213.9206085205078
+      ],
+      "fraction": 0.49902409315109253
+    },
+    {
+      "source_index": 8210,
+      "model": "mdl/furniture/office_desk_accessories_clipboard.rmdl",
+      "expected_surface": [
+        -1183.3468017578125,
+        661.4362182617188,
+        213.7598114013672
+      ],
+      "fraction": 0.4990205764770508
+    },
+    {
+      "source_index": 4665,
+      "model": "mdl/furniture/office_desk_accessories_papers.rmdl",
+      "expected_surface": [
+        1181.8773193359375,
+        692.9563598632812,
+        206.4987030029297
+      ],
+      "fraction": 0.4990236163139343
+    },
+    {
+      "source_index": 4664,
+      "model": "mdl/furniture/office_desk_accessories_papers.rmdl",
+      "expected_surface": [
+        -1178.2274169921875,
+        897.113525390625,
+        206.4987030029297
+      ],
+      "fraction": 0.4990234375
+    },
+    {
+      "source_index": 2953,
+      "model": "mdl/olympus/olympus_connector_clamp_01.rmdl",
+      "expected_surface": [
+        176.73785400390625,
+        1720.771484375,
+        504.7530822753906
+      ],
+      "fraction": 0.3935936987400055
+    },
+    {
+      "source_index": 2955,
+      "model": "mdl/olympus/olympus_connector_clamp_01.rmdl",
+      "expected_surface": [
+        1.7099500894546509,
+        1703.7904052734375,
+        490.9929504394531
+      ],
+      "fraction": 0.40055185556411743
+    },
+    {
+      "source_index": 3521,
+      "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+      "expected_surface": [
+        423.3404846191406,
+        994.182861328125,
+        161.70596313476562
+      ],
+      "fraction": 0.4990238547325134
+    },
+    {
+      "source_index": 3513,
+      "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+      "expected_surface": [
+        1855.9334716796875,
+        4653.53271484375,
+        208.0804901123047
+      ],
+      "fraction": 0.49901899695396423
+    },
+    {
+      "source_index": 3536,
+      "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+      "expected_surface": [
+        645.6317749023438,
+        245.0531463623047,
+        208.0804901123047
+      ],
+      "fraction": 0.4990234971046448
+    },
+    {
+      "source_index": 3539,
+      "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+      "expected_surface": [
+        1558.240234375,
+        106.52581787109375,
+        303.0675048828125
+      ],
+      "fraction": 0.4756399691104889
+    },
+    {
+      "source_index": 7914,
+      "model": "mdl/containers/underbelly_cargo_container_256_red_01.rmdl",
+      "expected_surface": [
+        3692.169921875,
+        4104.69384765625,
+        61.9918098449707
+      ],
+      "fraction": 0.4990234375
+    },
+    {
+      "source_index": 4681,
+      "model": "mdl/IMC_base/conduit_bend_16_IMC_01.rmdl",
+      "expected_surface": [
+        959.3349609375,
+        974.826904296875,
+        757.0984497070312
+      ],
+      "fraction": 0.4611157178878784
+    },
+    {
+      "source_index": 4687,
+      "model": "mdl/IMC_base/conduit_bend_16_IMC_01.rmdl",
+      "expected_surface": [
+        299.32080078125,
+        1645.3233642578125,
+        -33.95216369628906
+      ],
+      "fraction": 0.45733970403671265
+    },
+    {
+      "source_index": 4756,
+      "model": "mdl/IMC_base/conduit_bend_16_IMC_02.rmdl",
+      "expected_surface": [
+        553.0831909179688,
+        131.6001739501953,
+        342.2652893066406
+      ],
+      "fraction": 0.49902403354644775
+    },
+    {
+      "source_index": 4769,
+      "model": "mdl/IMC_base/conduit_bend_16_IMC_02.rmdl",
+      "expected_surface": [
+        985.6904907226562,
+        1054.56005859375,
+        338.8132629394531
+      ],
+      "fraction": 0.4055176377296448
+    },
+    {
+      "source_index": 4689,
+      "model": "mdl/IMC_base/conduit_str_16_IMC_01.rmdl",
+      "expected_surface": [
+        -291.6076965332031,
+        1643.8631591796875,
+        -36.98322296142578
+      ],
+      "fraction": 0.40766632556915283
+    },
+    {
+      "source_index": 4658,
+      "model": "mdl/IMC_base/conduit_str_32_IMC_01.rmdl",
+      "expected_surface": [
+        904.8424682617188,
+        974.9810180664062,
+        765.6818237304688
+      ],
+      "fraction": 0.4658385217189789
+    },
+    {
+      "source_index": 4653,
+      "model": "mdl/IMC_base/conduit_str_32_IMC_01.rmdl",
+      "expected_surface": [
+        298.4742736816406,
+        1642.9754638671875,
+        -7.738138675689697
+      ],
+      "fraction": 0.43954071402549744
+    },
+    {
+      "source_index": 4712,
+      "model": "mdl/IMC_base/conduit_str_32_IMC_02.rmdl",
+      "expected_surface": [
+        119.47087860107422,
+        190.9852294921875,
+        136.38096618652344
+      ],
+      "fraction": 0.49902331829071045
+    },
+    {
+      "source_index": 4720,
+      "model": "mdl/IMC_base/conduit_str_32_IMC_02.rmdl",
+      "expected_surface": [
+        581.412841796875,
+        1386.6209716796875,
+        364.2764892578125
+      ],
+      "fraction": 0.4990229606628418
+    },
+    {
+      "source_index": 4419,
+      "model": "mdl/IMC_base/conduit_str_64_IMC_01.rmdl",
+      "expected_surface": [
+        753.8383178710938,
+        972.798583984375,
+        760.9645385742188
+      ],
+      "fraction": 0.49901577830314636
+    },
+    {
+      "source_index": 4474,
+      "model": "mdl/IMC_base/conduit_str_64_IMC_01.rmdl",
+      "expected_surface": [
+        1274.3924560546875,
+        590.9750366210938,
+        618.288330078125
+      ],
+      "fraction": 0.4656490087509155
+    }
+  ],
+  "team_spawns_checked": [
+    2,
+    3
+  ],
+  "binary_validation": {
+    "map": "mp_arena_composite",
+    "version": "0.10.0",
+    "checks": 147,
+    "passed": [
+      "Baseline package signature",
+      "Candidate package signature",
+      "Untouched lump 00",
+      "Untouched lump 01",
+      "Untouched lump 04",
+      "Untouched lump 06",
+      "Untouched lump 07",
+      "Untouched lump 08",
+      "Untouched lump 09",
+      "Untouched lump 0a",
+      "Untouched lump 0b",
+      "Untouched lump 0c",
+      "Untouched lump 0d",
+      "Untouched lump 0f",
+      "Untouched lump 10",
+      "Untouched lump 11",
+      "Untouched lump 12",
+      "Untouched lump 13",
+      "Untouched lump 14",
+      "Untouched lump 15",
+      "Untouched lump 16",
+      "Untouched lump 17",
+      "Untouched lump 18",
+      "Untouched lump 19",
+      "Untouched lump 1a",
+      "Untouched lump 1b",
+      "Untouched lump 1c",
+      "Untouched lump 1d",
+      "Untouched lump 1f",
+      "Untouched lump 20",
+      "Untouched lump 21",
+      "Untouched lump 22",
+      "Untouched lump 24",
+      "Untouched lump 25",
+      "Untouched lump 26",
+      "Untouched lump 27",
+      "Untouched lump 28",
+      "Untouched lump 29",
+      "Untouched lump 2a",
+      "Untouched lump 2d",
+      "Untouched lump 2e",
+      "Untouched lump 2f",
+      "Untouched lump 30",
+      "Untouched lump 31",
+      "Untouched lump 32",
+      "Untouched lump 33",
+      "Untouched lump 34",
+      "Untouched lump 35",
+      "Untouched lump 36",
+      "Untouched lump 37",
+      "Untouched lump 38",
+      "Untouched lump 39",
+      "Untouched lump 3a",
+      "Untouched lump 3b",
+      "Untouched lump 3c",
+      "Untouched lump 3d",
+      "Untouched lump 3e",
+      "Untouched lump 3f",
+      "Untouched lump 40",
+      "Untouched lump 41",
+      "Untouched lump 43",
+      "Untouched lump 46",
+      "Untouched lump 47",
+      "Untouched lump 48",
+      "Untouched lump 4a",
+      "Untouched lump 4b",
+      "Untouched lump 4c",
+      "Untouched lump 4d",
+      "Untouched lump 4e",
+      "Untouched lump 54",
+      "Untouched lump 5b",
+      "Untouched lump 5c",
+      "Untouched lump 5d",
+      "Untouched lump 5e",
+      "Untouched lump 5f",
+      "Untouched lump 63",
+      "Untouched lump 64",
+      "Untouched lump 65",
+      "Untouched lump 66",
+      "Untouched lump 67",
+      "Untouched lump 68",
+      "Untouched lump 6a",
+      "Untouched lump 6b",
+      "Untouched lump 6c",
+      "Untouched lump 6d",
+      "Untouched lump 6e",
+      "Untouched lump 6f",
+      "Untouched lump 70",
+      "Untouched lump 71",
+      "Untouched lump 72",
+      "Untouched lump 73",
+      "Untouched lump 74",
+      "Untouched lump 75",
+      "Untouched lump 76",
+      "Untouched lump 7a",
+      "Untouched lump 7d",
+      "Game-lump contents preserved after absolute-pointer relocation",
+      "Original attribute/collision/light/shadow prefix 02",
+      "Original attribute/collision/light/shadow prefix 03",
+      "Original attribute/collision/light/shadow prefix 1e",
+      "Original attribute/collision/light/shadow prefix 2b",
+      "Original attribute/collision/light/shadow prefix 2c",
+      "Original attribute/collision/light/shadow prefix 42",
+      "Original attribute/collision/light/shadow prefix 44",
+      "Original attribute/collision/light/shadow prefix 45",
+      "Original attribute/collision/light/shadow prefix 49",
+      "Original attribute/collision/light/shadow prefix 4f",
+      "Original attribute/collision/light/shadow prefix 52",
+      "Original attribute/collision/light/shadow prefix 53",
+      "Original attribute/collision/light/shadow prefix 60",
+      "Original attribute/collision/light/shadow prefix 62",
+      "Original attribute/collision/light/shadow prefix 69",
+      "Original attribute/collision/light/shadow prefix 7c",
+      "Original attribute/collision/light/shadow prefix 7e",
+      "Original attribute/collision/light/shadow prefix 7f",
+      "Every old mesh, attribute reference and geometric bound retained",
+      "Old collision exclusions retained exactly",
+      "No additional gameplay entities or altered spawn/objective definitions",
+      "Character lighting and probe tree retained",
+      "Native padded index bounds",
+      "Complete native visibility-reference coverage",
+      "97% target with at least 2.5% native index reserve",
+      "Static batch reserve for dynamic-light splitting",
+      "Entire map fits simultaneous world submission",
+      "Conservative local vertex indexing",
+      "Collision primitive index reserve",
+      "No duplicate recovered source placements",
+      "Original horizontal source coordinates",
+      "Ground-contact adjustment bounded and documented",
+      "Decorative foliage cannot block players or AI",
+      "Full new colliders clear existing spawn and objective hulls: []",
+      "Existing scripts, loading art, minimaps and material packs retained",
+      "Only one new resident scenery package",
+      "sRGB authored albedo: btown_whouse_rack_arm_01_albedo.dds",
+      "sRGB authored albedo: crate_plastic_large_albedo.dds",
+      "sRGB authored albedo: glass_plant_tank_albedo.dds",
+      "sRGB authored albedo: imc_chair_01_albedo.dds",
+      "sRGB authored albedo: office_desk_accessories_albedo.dds",
+      "sRGB authored albedo: office_desk_lamp_albedo.dds",
+      "sRGB authored albedo: pipe_ceiling_med_imc_01_albedo.dds",
+      "sRGB authored albedo: plant_tropical_ground_leafy_01_albedo.dds",
+      "sRGB authored albedo: research_cabinets_mendoko_01_albedo.dds",
+      "sRGB authored albedo: research_cabinets_mendoko_02_albedo.dds",
+      "sRGB authored albedo: slum_city_oxygen_tank_01_albedo.dds",
+      "sRGB authored albedo: slum_city_oxygen_tank_02_albedo.dds",
+      "sRGB authored albedo: thaw_dirt_01_albedo.dds",
+      "sRGB authored albedo: thaw_ground_plant_01_albedo.dds"
+    ],
+    "added_placements": 366,
+    "renderer": {
+      "meshes": 3475,
+      "real_triangles": 1016149,
+      "native_padded_indices": 3053136,
+      "world_index_capacity": 3145728,
+      "all_meshes_fit_simultaneously": true,
+      "maximum_all_visible_mesh_prefix": 3475,
+      "prefix_indices": 3053136,
+      "first_mesh_excluded_when_all_visible": null,
+      "mesh_partitions": [
+        3343,
+        3343,
+        3475
+      ],
+      "static_batch_runs": 379,
+      "unique_static_draw_keys": 379,
+      "world_batch_capacity": 2048,
+      "static_batches_fit_simultaneously": true,
+      "first_mesh_excluded_by_static_batch_limit": null,
+      "dynamic_light_masks_can_split_static_batches": true,
+      "native_batch_limit_instruction": "engine.dll+0xb7304",
+      "native_batch_limit_exit": "engine.dll+0xb74c9",
+      "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+    },
+    "visibility": {
+      "nodes": 15,
+      "references": 3475,
+      "reachable_meshes": 3475,
+      "all_parent_and_object_bounds_verified": true,
+      "contiguous_subtree_ranges_verified": true
+    },
+    "entity_lump_byte_identical": true,
+    "world_fraction": 0.9705657958984375,
+    "remaining_native_indices": 92592,
+    "native_runtime_verified": false,
+    "ai_navigation_added": false
+  },
+  "native_mode_checks": [
+    "ps",
+    "ffa"
+  ],
+  "same_process_postmatch_and_reload": true,
+  "native_runtime_verified": true,
+  "dynamic_entities_added": 0,
+  "new_portals": 0,
+  "limitations": [
+    "Single-client initialization and hull tests do not establish multiplayer frame times.",
+    "AI navigation and live Attrition waves are not added or validated.",
+    "World geometry reserve is separate from model, texture, dynamic entity and AI budgets."
+  ]
+}

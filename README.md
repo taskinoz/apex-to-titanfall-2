@@ -1,31 +1,24 @@
 # Apex to Titanfall 2 map ports
 
-Current builds: **Phase Runner 1.5.0** and **Drop-Off 0.9.0**. Both maps now
-include their original Apex minimaps, scaled and positioned for Titanfall's
-native radar. Eleven native screenshots check the artwork, player positions,
-heading changes and a same-process Drop-Off → Phase Runner → Drop-Off reload.
-Each resident overview image adds about 1 MiB. Geometry, collision, lighting,
-visibility, world materials and draw budgets remain unchanged.
-See [the minimap conversion and verification notes](docs/arena-minimaps-2026-10-13.md).
-The prior [texture repair](docs/banner-display-textures-2026-10-12.md) includes
-Northstar banners and complete green Apex console graphics.
-The retained wider area survey
-now includes 23 matched views with reviewed notes, covering both buildings,
-tunnel bends, upper platforms, stairs, cargo, rocks and terrain.
+Current builds: **Phase Runner 1.6.0** and **Drop-Off 0.10.0**. Restore
+432 and 366 source scenery placements respectively, reaching 97.04% and
+97.06% of the native world index capacity. No dynamic entities are added.
+Existing minimaps, lighting, gameplay, collision exclusions and catwalks remain.
+AI navigation is still incomplete. See [budgets, recovery and validation](docs/arena-scenery-fill-2026-10-13.md),
+including the initial test failures and the scope of subsequent native checks.
 
-- Open [the map comparison site](site/dist/index.html). It includes archived
-  baseline captures, repaired builds, side-by-side, wipe and overlay modes.
-- [Site source and release export instructions](site/README.md).
-- [Repository contents and restoring local dependencies](REPOSITORY.md).
-- [R5R harness guide](r5-harness/README.md).
-- [Wider area survey and remaining differences](docs/area-survey-2026-10-12.md).
-- [Phase Runner repair](docs/phase-runner-vertex-paint-2026-10-12.md).
-- [Drop-Off repair](docs/drop-off-vertex-paint-2026-10-12.md).
+- [Saved map comparison site](site/dist/index.html): 23 matching wider-area
+  views of these builds, with earlier snapshots retained.
+- [Site source and release export](site/README.md).
+- [Repository contents and local dependencies](REPOSITORY.md).
+- [Northstar harness](test-harness/README.md) and [R5R harness](r5-harness/README.md).
+- [Native minimap conversion](docs/arena-minimaps-2026-10-13.md).
+- [Northstar banners and Apex displays](docs/banner-display-textures-2026-10-12.md).
 
-Clean player downloads are in `output/PhaseRunner-1.5.0-Northstar.zip` and
-`output/ArenaComposite-0.9.0-Northstar.zip`. Prior ZIPs and map snapshots remain
-available for rollback. The comparison site is saved locally; it has not been
-deployed. Adding more maps uses the registry in `site/maps.json`.
+Clean downloads: `output/PhaseRunner-1.6.0-Northstar.zip` and
+`output/ArenaComposite-0.10.0-Northstar.zip`. Previous 1.5.0 / 0.9.0 ZIPs,
+runtime snapshots and installed copies remain available for rollback.
+The comparison site is local and has not been deployed.
 
 The investigation history below records earlier previews and their limitations;
 those version-specific notes do not describe the current installed builds.
