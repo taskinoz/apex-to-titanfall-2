@@ -8,6 +8,7 @@
 !/.gitignore
 !/.gitattributes
 !/docs/
+!/art/
 !/site/
 !/r5-harness/
 !/test-harness/

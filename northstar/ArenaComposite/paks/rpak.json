@@ -6,6 +6,7 @@
   "Postload": {
     "composite_world.rpak": "mp_coliseum.rpak",
     "composite_presentation.rpak": "common.rpak",
-    "drop_off_vertex_paint.rpak": "mp_coliseum.rpak"
+    "drop_off_vertex_paint.rpak": "mp_coliseum.rpak",
+    "drop_off_banner_displays.rpak": "mp_coliseum.rpak"
   }
 }

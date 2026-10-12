@@ -1,0 +1,57 @@
+{
+  "title": "Phase Runner source / port comparison \u2014 wider area survey",
+  "source_map": "mp_rr_arena_phase_runner",
+  "target_map": "mp_phase_runner",
+  "source_offset": [
+    26000,
+    19000,
+    0
+  ],
+  "shots": [
+    {
+      "name": "arena-overview",
+      "origin": [
+        0,
+        -5000,
+        1400
+      ],
+      "angles": [
+        28,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "west-building",
+      "origin": [
+        -6080,
+        -1530.2,
+        -773.9
+      ],
+      "angles": [
+        10,
+        90,
+        0
+      ],
+      "fov": 75,
+      "settle": 5
+    },
+    {
+      "name": "east-building",
+      "origin": [
+        6283.9,
+        -1417,
+        -773.9
+      ],
+      "angles": [
+        10,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    }
+  ]
+}
