@@ -1,0 +1,25 @@
+{
+  "version": "1.5.0",
+  "native_runtime_verified": true,
+  "native_screenshots": 5,
+  "unchanged_existing_runtime_files": 27,
+  "pack": {
+    "ui_image": "overviews/mp_phase_runner",
+    "size": [
+      1024,
+      1024
+    ],
+    "bytes": 1049260,
+    "sha256": "c2630d9dcc59e2a7c09bd85652672b42c2aa17e895c478ace05337db1492f4ee",
+    "asset_types": [
+      "txtr",
+      "uimg"
+    ]
+  },
+  "corner": [
+    -8099,
+    7514
+  ],
+  "scale": 16.015625,
+  "configuration_query": "-8099 7514 16.0156"
+}

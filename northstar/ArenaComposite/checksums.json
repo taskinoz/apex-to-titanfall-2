@@ -8,8 +8,8 @@
     "sha256": "7e8a6d390ca41cc878167447863a4e09981f50d21f2163e66aacaae88cc75e67"
   },
   "build-status.json": {
-    "bytes": 188628,
-    "sha256": "b07c4f1890525b439e336314a609c2d4a14aa50bc053a5b93136928d821a99e1"
+    "bytes": 189209,
+    "sha256": "5cd586bd27af44ada73fe3bf217919823009ac4299fb0e74bd136ebc1251d519"
   },
   "docs/binary-layouts.json": {
     "bytes": 102518,
@@ -75,6 +75,14 @@
     "bytes": 24862,
     "sha256": "9f2478b997774cefeab9102f3f32ac247dd9010195080bb5be7a5de7c268247b"
   },
+  "minimap-validation.json": {
+    "bytes": 517,
+    "sha256": "86b7466184e2c3ab2286f2160190c6b16036e8417cc7a7a88797c03b24f27299"
+  },
+  "MINIMAPS.md": {
+    "bytes": 5401,
+    "sha256": "0dfa75c089baeee79eeea3e4c8c2c063a4a9db5137d4d6558fc8706159ac375d"
+  },
   "mod/maps/mp_arena_composite.bsp": {
     "bytes": 606299668,
     "sha256": "2c27f434cdb835fa50433bada46530afd7c9d4f1112dcca78dbbf44971099299"
@@ -139,13 +147,17 @@
     "bytes": 1089,
     "sha256": "c3602933b43e5350b06f3cde496d3925ac6792238903ee774215d1681f3f09ca"
   },
+  "mod/resource/overviews/mp_arena_composite.txt": {
+    "bytes": 276,
+    "sha256": "cb21a97f28c743ea23d74cf2ee5691a41a09a82493c90142df0b724eec92f585"
+  },
   "mod/scripts/vscripts/_arena_composite.nut": {
     "bytes": 1024,
     "sha256": "bc57ae1e483a88d5731e516044b4c7488cb7f69ce14226968cfae093d796f3f0"
   },
   "mod.json": {
-    "bytes": 453,
-    "sha256": "c4b279565c67668240672f002f9d78fae82f7ae346f19ffe58e792cda71b6aa7"
+    "bytes": 435,
+    "sha256": "c69338323f48811da99d21df34e8c6d1a2a7e0e985c3e0efab0b170bdf63ea05"
   },
   "paks/composite_presentation.rpak": {
     "bytes": 3689263,
@@ -159,17 +171,21 @@
     "bytes": 16794162,
     "sha256": "4b1e07a0b477fc6d3686320ca496019e743d1e1f5a86f60a120061bcb6ae20ed"
   },
+  "paks/drop_off_minimap.rpak": {
+    "bytes": 1049266,
+    "sha256": "24c03ca1e1500d7f9ebaf09b2ddfab5fbbe902043e3dade83c52f13f221c1d92"
+  },
   "paks/drop_off_vertex_paint.rpak": {
     "bytes": 54114670,
     "sha256": "1d7ae4041d0230ee66fd587208dce4ae0e7adf78a396f3309c064f1a1b15aa83"
   },
   "paks/rpak.json": {
-    "bytes": 385,
-    "sha256": "e335a3f4869b24d86166947dd0dc27cf9a5ceaad2eff332c036ba0ad1188f32e"
+    "bytes": 432,
+    "sha256": "56796804c00a420f7958f53a7754362be885a9df31eb461d66b0f17f30d2c825"
   },
   "README.md": {
-    "bytes": 2120,
-    "sha256": "d993e93ebf659d4305e63adf3f4d345460a777a8a837b1e45d518d29d5bb79c2"
+    "bytes": 2740,
+    "sha256": "ce251ee5421c1f5e5ef556dc055d436bed26a5551dec08cd58bad86cc07c95d9"
   },
   "vertex-paint-validation.json": {
     "bytes": 2710,

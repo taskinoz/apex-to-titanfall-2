@@ -6,7 +6,7 @@ comparison site. It does not contain a Titanfall 2 or R5R installation, extracte
 game assets, compiled map packages, private harness sessions or build backups.
 Those files remain in the original workspace and are excluded by `.gitignore`.
 
-The current player packages are Phase Runner 1.4.0 and Drop-Off 0.8.0. Local ZIPs
+The current player packages are Phase Runner 1.5.0 and Drop-Off 0.9.0. Local ZIPs
 are in `output/`; they are not Git contents. Opening `site/dist/index.html` needs
 no game assets or server. Native screenshot archives are included in the site.
 

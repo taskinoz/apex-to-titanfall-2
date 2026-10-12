@@ -1,3 +1,11 @@
+# Drop-Off 0.9.0 for Northstar
+
+Preview for Skirmish, Pilots vs Pilots and Free For All. Adds the original Apex minimap with Titanfall radar scaling. Includes Northstar banners, frozen Apex displays and recovered RGB paint. Preserves equipment supports, lighting-chart fixes, banner supports, room closures, safety volumes and two zipline pairs. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.
+
+The minimap uses the original Apex artwork with corrected native radar scale. See MINIMAPS.md for conversion details and checks.
+
+## Previous release notes
+
 # Drop-Off 0.8.0 for Northstar
 
 Preview for Skirmish, Pilots vs Pilots and Free For All. Adds Northstar banner artwork and frozen Apex display colours, with recovered RGB paint on pipes, cargo and structural surfaces. Preserves equipment supports, lighting-chart fixes, banner supports, room closures, safety volumes and two zipline pairs. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.

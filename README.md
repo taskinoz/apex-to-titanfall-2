@@ -1,11 +1,14 @@
 # Apex to Titanfall 2 map ports
 
-Current builds: **Phase Runner 1.4.0** and **Drop-Off 0.8.0**. Drop-Off adds
-Northstar banner artwork, and both maps restore frozen Apex display textures.
-The source console front faces now show complete green graphics. Geometry,
-collision, lighting, visibility and draw budgets remain unchanged. Eight new
-matched views, binary/PBR checks and 31 harness checks verify the texture pass.
-See [the texture repair notes](docs/banner-display-textures-2026-10-12.md).
+Current builds: **Phase Runner 1.5.0** and **Drop-Off 0.9.0**. Both maps now
+include their original Apex minimaps, scaled and positioned for Titanfall's
+native radar. Eleven native screenshots check the artwork, player positions,
+heading changes and a same-process Drop-Off → Phase Runner → Drop-Off reload.
+Each resident overview image adds about 1 MiB. Geometry, collision, lighting,
+visibility, world materials and draw budgets remain unchanged.
+See [the minimap conversion and verification notes](docs/arena-minimaps-2026-10-13.md).
+The prior [texture repair](docs/banner-display-textures-2026-10-12.md) includes
+Northstar banners and complete green Apex console graphics.
 The retained wider area survey
 now includes 23 matched views with reviewed notes, covering both buildings,
 tunnel bends, upper platforms, stairs, cargo, rocks and terrain.
@@ -19,8 +22,8 @@ tunnel bends, upper platforms, stairs, cargo, rocks and terrain.
 - [Phase Runner repair](docs/phase-runner-vertex-paint-2026-10-12.md).
 - [Drop-Off repair](docs/drop-off-vertex-paint-2026-10-12.md).
 
-Clean player downloads are in `output/PhaseRunner-1.4.0-Northstar.zip` and
-`output/ArenaComposite-0.8.0-Northstar.zip`. Prior ZIPs and map snapshots remain
+Clean player downloads are in `output/PhaseRunner-1.5.0-Northstar.zip` and
+`output/ArenaComposite-0.9.0-Northstar.zip`. Prior ZIPs and map snapshots remain
 available for rollback. The comparison site is saved locally; it has not been
 deployed. Adding more maps uses the registry in `site/maps.json`.
 

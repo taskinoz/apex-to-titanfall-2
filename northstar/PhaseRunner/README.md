@@ -1,3 +1,11 @@
+# Phase Runner 1.5.0 for Northstar
+
+Adds the original Apex minimap artwork with Titanfall radar scaling and the port coordinate offset. Includes frozen Apex displays, authored gold tunnel paint, source out-of-bounds areas, a fall kill volume, team spawns, CTF, Amped Hardpoint and Fastball. Existing collision, lighting and catwalks are preserved. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.
+
+The minimap uses the original Apex artwork with corrected native radar scale. See MINIMAPS.md for conversion details and checks.
+
+## Previous release notes
+
 # Phase Runner 1.4.0 for Northstar
 
 Restores frozen Apex screen artwork and display colours alongside the authored gold tunnel paint. Includes source out-of-bounds areas and a fall kill volume, team spawns, CTF, Amped Hardpoint and Fastball. Existing collision, lighting and catwalks are preserved. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.

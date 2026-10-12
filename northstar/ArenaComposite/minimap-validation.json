@@ -1,0 +1,25 @@
+{
+  "version": "0.9.0",
+  "native_runtime_verified": true,
+  "native_screenshots": 5,
+  "unchanged_existing_runtime_files": 21,
+  "pack": {
+    "ui_image": "overviews/mp_arena_composite",
+    "size": [
+      1024,
+      1024
+    ],
+    "bytes": 1049266,
+    "sha256": "24c03ca1e1500d7f9ebaf09b2ddfab5fbbe902043e3dade83c52f13f221c1d92",
+    "asset_types": [
+      "txtr",
+      "uimg"
+    ]
+  },
+  "corner": [
+    -7196,
+    10181
+  ],
+  "scale": 14,
+  "configuration_query": "-7196 10181 14"
+}

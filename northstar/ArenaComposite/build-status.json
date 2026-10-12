@@ -1,7 +1,7 @@
 {
   "source_map": "mp_rr_arena_composite",
   "map": "mp_arena_composite",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "render_triangles": 942146,
   "render_repair": {
     "world_meshes": 2837
@@ -5664,5 +5664,30 @@
     "rpak_sha256": "4b1e07a0b477fc6d3686320ca496019e743d1e1f5a86f60a120061bcb6ae20ed",
     "version": "0.8.0",
     "native_validation": "docs/banner-display-textures-2026-10-12.md"
+  },
+  "minimap": {
+    "version": "0.9.0",
+    "native_runtime_verified": true,
+    "native_screenshots": 5,
+    "unchanged_existing_runtime_files": 21,
+    "pack": {
+      "ui_image": "overviews/mp_arena_composite",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 1049266,
+      "sha256": "24c03ca1e1500d7f9ebaf09b2ddfab5fbbe902043e3dade83c52f13f221c1d92",
+      "asset_types": [
+        "txtr",
+        "uimg"
+      ]
+    },
+    "corner": [
+      -7196,
+      10181
+    ],
+    "scale": 14,
+    "configuration_query": "-7196 10181 14"
   }
 }

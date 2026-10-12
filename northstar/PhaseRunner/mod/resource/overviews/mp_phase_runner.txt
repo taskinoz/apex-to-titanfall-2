@@ -1,0 +1,14 @@
+"mp_phase_runner"
+{
+    "assets"
+    {
+        "minimap" "overviews/mp_phase_runner"
+    }
+    "pos_x" "-8099"
+    "pos_y" "7514"
+    "scale" "16.015625"
+    "displayDist" "2048"
+    "threatMaxDist" "2500"
+    "threatNearDist" "500"
+    "threatFarDist" "2000"
+}

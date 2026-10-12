@@ -1,0 +1,14 @@
+"mp_arena_composite"
+{
+    "assets"
+    {
+        "minimap" "overviews/mp_arena_composite"
+    }
+    "pos_x" "-7196"
+    "pos_y" "10181"
+    "scale" "14"
+    "displayDist" "2048"
+    "threatMaxDist" "2500"
+    "threatNearDist" "500"
+    "threatFarDist" "2000"
+}

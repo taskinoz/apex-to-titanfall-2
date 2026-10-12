@@ -24,8 +24,8 @@
     "sha256": "c1a13ee1606164b05231b3f10c68815f34596a54fd9171bc884aa43185725f74"
   },
   "build-status.json": {
-    "bytes": 45705843,
-    "sha256": "b78220b381999589eb86f654de3b2993368e1c01fcac8e2c1360e1b9324a9591"
+    "bytes": 45706431,
+    "sha256": "0080c048e20db8fb2d642c5dcaf92495132ee9c305d31de9551be6b2b8e79c51"
   },
   "catwalks.json": {
     "bytes": 12192643,
@@ -359,6 +359,14 @@
     "bytes": 1984,
     "sha256": "940a32000656d2c0b05bb13a0d4b3dfb031542632eddcacc24494324d6afe3d9"
   },
+  "minimap-validation.json": {
+    "bytes": 524,
+    "sha256": "116395a9e1e8ffff6d0b7dd5437dbd3d987dfbf0ee4739060dcdae786e6dad64"
+  },
+  "MINIMAPS.md": {
+    "bytes": 5401,
+    "sha256": "0dfa75c089baeee79eeea3e4c8c2c063a4a9db5137d4d6558fc8706159ac375d"
+  },
   "mod/maps/mp_phase_runner.bsp": {
     "bytes": 1154691616,
     "sha256": "7e720e20bda5b2d466f974bc1873e3ab06894ae56d7cc9f537b971c592380eef"
@@ -374,6 +382,10 @@
   "mod/models/vistas/planet_blue_sun.mdl": {
     "bytes": 253197,
     "sha256": "9b90184c7219909017dce3064968d1fbaede436eff2de42472a3bac4ad85d2fb"
+  },
+  "mod/resource/overviews/mp_phase_runner.txt": {
+    "bytes": 276,
+    "sha256": "4a0f2d6fc41a27503301ee4655ff094481890b6439b8382241759d9628692343"
   },
   "mod/resource/phase_runner_english.txt": {
     "bytes": 750,
@@ -436,8 +448,8 @@
     "sha256": "4d1446b3aad53f2e8792bfd7cef4d2114f3713e65631455e5b3297790f36b7de"
   },
   "mod.json": {
-    "bytes": 653,
-    "sha256": "ede98c1dd58c1e9904c4e9192022a5411a3d025d8e8c70d949a3550e59d3934f"
+    "bytes": 641,
+    "sha256": "665d51de0fd74dee19996b08a6b0179ff7a136609babb58f8026e2f0548aa2a7"
   },
   "nessie-support-proof.json": {
     "bytes": 196,
@@ -463,6 +475,10 @@
     "bytes": 12367512,
     "sha256": "6db6040cb6f89989e19fbff373d73f47fabd9e49f75a2d0e91604420a37d1d59"
   },
+  "paks/phase_runner_minimap.rpak": {
+    "bytes": 1049260,
+    "sha256": "c2630d9dcc59e2a7c09bd85652672b42c2aa17e895c478ace05337db1492f4ee"
+  },
   "paks/phase_runner_presentation.rpak": {
     "bytes": 3689242,
     "sha256": "82be6bd84bdb4cd008d025a310916694f9760cc23b3027f9dcf85745419bde95"
@@ -476,8 +492,8 @@
     "sha256": "c44e8a792ed0c7011a9b880021f3a33bb23d9c1b35543278be8e77ddca4be73e"
   },
   "paks/rpak.json": {
-    "bytes": 619,
-    "sha256": "52cd090a1c2133f5d8076c18559fbb636e9f2204ce90650b19a5cb30877ba45b"
+    "bytes": 670,
+    "sha256": "d62075e9ccb5403d0ee825d48af18855caaf4606376ea2cf5001f2d592bd8382"
   },
   "pbr-audit.json": {
     "bytes": 664,
@@ -532,8 +548,8 @@
     "sha256": "dd7fa1104b7e6216562e799a5aac1d0aaba4284a3c8a923e33ac01895b75f61e"
   },
   "README.md": {
-    "bytes": 3587,
-    "sha256": "02a403cf4215bb2f5839afbdd0606bcbab82ba0fe6df40af49c614f88e3e9c15"
+    "bytes": 4207,
+    "sha256": "137a950188430addd5d8b294e488956877cb0d2306be3170bfaf8140ebcf6cba"
   },
   "recovered-materials.json": {
     "bytes": 1901,

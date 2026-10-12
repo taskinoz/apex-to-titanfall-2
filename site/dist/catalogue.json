@@ -13,9 +13,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Northstar banner artwork and frozen Apex display textures are added. Authored RGB paint is recovered on existing surfaces. Animated Hammond graphics, some control-room colouring and scenery remain incomplete. Intro and evac are disabled.",
+      "notes": "Includes the original Apex minimap, corrected for Titanfall radar scale and port coordinates. Northstar banner artwork and frozen Apex display textures are added. Authored RGB paint is recovered on existing surfaces. Animated Hammond graphics, some control-room colouring and scenery remain incomplete. Intro and evac are disabled.",
       "download": null,
-      "version": "0.8.0",
+      "version": "0.9.0",
       "source_offset": [
         0,
         0,
@@ -803,9 +803,9 @@
         "Hardpoint",
         "Fastball"
       ],
-      "notes": "Green Apex building displays and additional source display textures are restored as static artwork. Gold tunnel paint is recovered. Some scenery and layered materials remain approximated. The tunnel catwalks are a Titanfall addition.",
+      "notes": "Includes the original Apex minimap, corrected for Titanfall radar scale and port coordinates. Green Apex building displays and additional source display textures are restored as static artwork. Gold tunnel paint is recovered. Some scenery and layered materials remain approximated. The tunnel catwalks are a Titanfall addition.",
       "download": null,
-      "version": "1.4.0",
+      "version": "1.5.0",
       "source_offset": [
         26000,
         19000,

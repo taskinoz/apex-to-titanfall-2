@@ -2867766,7 +2867766,7 @@
       "Native Titan spawn hulls/markers are checked; not every live Titan drop trajectory is tested."
     ]
   },
-  "version": "1.4.0",
+  "version": "1.5.0",
   "safety": {
     "added_counts": {
       "trigger_out_of_bounds": 82,
@@ -2867927,5 +2867927,30 @@
     "rpak_sha256": "8a9eba4e4e15c708e55cf8a58fd105388c8f181366e31864cb66c4e011762748",
     "version": "1.4.0",
     "native_validation": "docs/banner-display-textures-2026-10-12.md"
+  },
+  "minimap": {
+    "version": "1.5.0",
+    "native_runtime_verified": true,
+    "native_screenshots": 5,
+    "unchanged_existing_runtime_files": 27,
+    "pack": {
+      "ui_image": "overviews/mp_phase_runner",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 1049260,
+      "sha256": "c2630d9dcc59e2a7c09bd85652672b42c2aa17e895c478ace05337db1492f4ee",
+      "asset_types": [
+        "txtr",
+        "uimg"
+      ]
+    },
+    "corner": [
+      -8099,
+      7514
+    ],
+    "scale": 16.015625,
+    "configuration_query": "-8099 7514 16.0156"
   }
 }

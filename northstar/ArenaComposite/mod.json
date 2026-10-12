@@ -1,8 +1,8 @@
 {
   "Name": "ArenaComposite",
-  "Version": "0.8.0",
+  "Version": "0.9.0",
   "LoadPriority": 10,
-  "Description": "Drop-Off with Northstar banners, source display colours, native PBR, ziplines and preserved collision.",
+  "Description": "Drop-Off with native minimap, source display artwork, PBR and preserved collision.",
   "Scripts": [
     {
       "Path": "_arena_composite.nut",

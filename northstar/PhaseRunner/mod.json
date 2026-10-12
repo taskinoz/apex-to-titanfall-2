@@ -1,8 +1,8 @@
 {
   "Name": "PhaseRunner",
-  "Version": "1.4.0",
+  "Version": "1.5.0",
   "LoadPriority": 10,
-  "Description": "Phase Runner with source display colours, native PBR, team modes, grounded firs and tunnel catwalks.",
+  "Description": "Phase Runner with native minimap, source display artwork, PBR and preserved collision.",
   "ConVars": [
     {
       "Name": "phase_runner_local_test",

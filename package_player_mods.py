@@ -14,14 +14,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 RELEASES = {
     'PhaseRunner': {
-        'version': '1.4.0', 'map': 'mp_phase_runner', 'title': 'Phase Runner',
-        'screenshot': 'r5-harness/output/phase-runner-banner-displays/arena-overview-northstar.png',
-        'notes': 'Restores frozen Apex screen artwork and display colours alongside the authored gold tunnel paint. Includes source out-of-bounds areas and a fall kill volume, team spawns, CTF, Amped Hardpoint and Fastball. Existing collision, lighting and catwalks are preserved. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.',
+        'version': '1.5.0', 'map': 'mp_phase_runner', 'title': 'Phase Runner',
+        'screenshot': 'output/minimaps/runtime/PhaseRunner/center-north.png',
+        'notes': 'Adds the original Apex minimap artwork with Titanfall radar scaling and the port coordinate offset. Includes frozen Apex displays, authored gold tunnel paint, source out-of-bounds areas, a fall kill volume, team spawns, CTF, Amped Hardpoint and Fastball. Existing collision, lighting and catwalks are preserved. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.',
     },
     'ArenaComposite': {
-        'version': '0.8.0', 'map': 'mp_arena_composite', 'title': 'Drop-Off',
-        'screenshot': 'r5-harness/output/drop-off-banner-displays/court-overview-northstar.png',
-        'notes': 'Preview for Skirmish, Pilots vs Pilots and Free For All. Adds Northstar banner artwork and frozen Apex display colours, with recovered RGB paint on pipes, cargo and structural surfaces. Preserves equipment supports, lighting-chart fixes, banner supports, room closures, safety volumes and two zipline pairs. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.',
+        'version': '0.9.0', 'map': 'mp_arena_composite', 'title': 'Drop-Off',
+        'screenshot': 'output/minimaps/runtime/ArenaComposite/center-north.png',
+        'notes': 'Preview for Skirmish, Pilots vs Pilots and Free For All. Adds the original Apex minimap with Titanfall radar scaling. Includes Northstar banners, frozen Apex displays and recovered RGB paint. Preserves equipment supports, lighting-chart fixes, banner supports, room closures, safety volumes and two zipline pairs. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.',
     },
 }
 
