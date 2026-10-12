@@ -1,0 +1,539 @@
+{
+  "lights": [
+    {
+      "kind": "building",
+      "source_light_index": 79,
+      "origin": [
+        -5507.5,
+        -991.599609375,
+        -757.927978515625
+      ],
+      "colour": [
+        0.2908465000511159,
+        0.7028818949458683,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 2
+    },
+    {
+      "kind": "building",
+      "source_light_index": 83,
+      "origin": [
+        -5528.30078125,
+        -1655.400390625,
+        -738.6099853515625
+      ],
+      "colour": [
+        0.2908465099911606,
+        0.7028818918126472,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 3
+    },
+    {
+      "kind": "building",
+      "source_light_index": 88,
+      "origin": [
+        -5716.599609375,
+        -1458.30078125,
+        -738.6099853515625
+      ],
+      "colour": [
+        0.2908465000511159,
+        0.7028818949458683,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 4
+    },
+    {
+      "kind": "building",
+      "source_light_index": 98,
+      "origin": [
+        -5526.30078125,
+        -1291.400390625,
+        -738.6099853515625
+      ],
+      "colour": [
+        0.2908465099911606,
+        0.7028818918126472,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 5
+    },
+    {
+      "kind": "building",
+      "source_light_index": 85,
+      "origin": [
+        -6000.69921875,
+        -1447.599609375,
+        -712.927001953125
+      ],
+      "colour": [
+        0.85,
+        0.2707648558306092,
+        0.15680377919276287
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 6
+    },
+    {
+      "kind": "building",
+      "source_light_index": 82,
+      "origin": [
+        -5352.599609375,
+        -1460.30078125,
+        -738.6099853515625
+      ],
+      "colour": [
+        0.2908465099911606,
+        0.7028818918126472,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 7
+    },
+    {
+      "kind": "building",
+      "source_light_index": 115,
+      "origin": [
+        5731.5,
+        -1920.400390625,
+        -757.926025390625
+      ],
+      "colour": [
+        0.2908465000511159,
+        0.7028818949458683,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 8
+    },
+    {
+      "kind": "building",
+      "source_light_index": 89,
+      "origin": [
+        5750.30078125,
+        -1620.599609375,
+        -738.6079711914062
+      ],
+      "colour": [
+        0.2908465099911606,
+        0.7028818918126472,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 9
+    },
+    {
+      "kind": "building",
+      "source_light_index": 93,
+      "origin": [
+        5940.599609375,
+        -1453.69921875,
+        -738.6079711914062
+      ],
+      "colour": [
+        0.2908465000511159,
+        0.7028818949458683,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 10
+    },
+    {
+      "kind": "building",
+      "source_light_index": 80,
+      "origin": [
+        5752.30078125,
+        -1256.599609375,
+        -738.6079711914062
+      ],
+      "colour": [
+        0.2908465099911606,
+        0.7028818918126472,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 11
+    },
+    {
+      "kind": "building",
+      "source_light_index": 92,
+      "origin": [
+        6224.69921875,
+        -1464.400390625,
+        -712.9249877929688
+      ],
+      "colour": [
+        0.85,
+        0.2707648558306092,
+        0.15680377919276287
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 12
+    },
+    {
+      "kind": "building",
+      "source_light_index": 94,
+      "origin": [
+        5576.599609375,
+        -1451.69921875,
+        -738.6079711914062
+      ],
+      "colour": [
+        0.2908465099911606,
+        0.7028818918126472,
+        0.85
+      ],
+      "radius": 620,
+      "provenance": "Original Apex interior POINT fixture; colour normalized for native preview exposure",
+      "hardware_index": 13
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 160.0,
+      "origin": [
+        -4656.177361310887,
+        80.7256128587118,
+        -601.5291879125454
+      ],
+      "colour": [
+        1.05,
+        0.78,
+        0.48
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 14
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 720.0,
+      "origin": [
+        -4430.309332050301,
+        549.583977515005,
+        -656.0055648909624
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 15
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 1280.0,
+      "origin": [
+        -4205.107447247275,
+        1054.131407423861,
+        -636.4849530370691
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 16
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 1840.0,
+      "origin": [
+        -3985.5434878282917,
+        1567.2595817771494,
+        -590.8556250843875
+      ],
+      "colour": [
+        1.05,
+        0.78,
+        0.48
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 17
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 2400.0,
+      "origin": [
+        -3729.81232131398,
+        2062.7014421975364,
+        -544.5308863804793
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 18
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 2960.0,
+      "origin": [
+        -3366.271681160678,
+        2482.7063571402223,
+        -496.73503900908906
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 19
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 3520.0,
+      "origin": [
+        -2877.2631337943653,
+        2745.677377361198,
+        -442.30672281944305
+      ],
+      "colour": [
+        1.05,
+        0.78,
+        0.48
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 20
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 4080.0,
+      "origin": [
+        -2361.7642440780205,
+        2950.9551086308725,
+        -373.0405590297326
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 21
+    },
+    {
+      "kind": "tunnel",
+      "route": 0,
+      "distance": 4640.0,
+      "origin": [
+        -1851.171357907295,
+        3006.787166894856,
+        -295.76698407530785
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 22
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 160.0,
+      "origin": [
+        4876.5726919662,
+        77.66334661948642,
+        -601.5282683200423
+      ],
+      "colour": [
+        1.05,
+        0.78,
+        0.48
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 23
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 720.0,
+      "origin": [
+        4662.233443476661,
+        551.9291577237466,
+        -655.9861458295944
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 24
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 1280.0,
+      "origin": [
+        4435.7840370034755,
+        1055.068179452161,
+        -634.4636373964901
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 25
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 1840.0,
+      "origin": [
+        4229.484686180902,
+        1573.306186564083,
+        -585.3965035544554
+      ],
+      "colour": [
+        1.05,
+        0.78,
+        0.48
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 26
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 2400.0,
+      "origin": [
+        3970.04554987222,
+        2066.3246573903275,
+        -535.5351628962006
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 27
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 2960.0,
+      "origin": [
+        3602.340297941866,
+        2482.639419419535,
+        -484.8293632453625
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 28
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 3520.0,
+      "origin": [
+        3119.495865075203,
+        2758.9783272222994,
+        -441.2674477837305
+      ],
+      "colour": [
+        1.05,
+        0.78,
+        0.48
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 29
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 4080.0,
+      "origin": [
+        2595.197965949354,
+        2936.460289147497,
+        -376.4256234622765
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 30
+    },
+    {
+      "kind": "tunnel",
+      "route": 1,
+      "distance": 4640.0,
+      "origin": [
+        2071.2477462084034,
+        3006.3855776060277,
+        -300.76698407530785
+      ],
+      "colour": [
+        0.85,
+        0.92,
+        1.05
+      ],
+      "radius": 650,
+      "provenance": "New traversal adaptation, 120 units above the confirmed walkway",
+      "hardware_index": 31
+    }
+  ],
+  "count": 30,
+  "maximum_light_table_index": 31,
+  "sun_and_menu_indices_preserved": [
+    0,
+    1
+  ],
+  "no_runtime_dynamic_light_entities": true
+}

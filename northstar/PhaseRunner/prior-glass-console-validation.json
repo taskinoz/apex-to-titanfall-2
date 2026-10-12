@@ -1,0 +1,63 @@
+{
+  "version": "0.1.42",
+  "bsp_sha256": "c7d4724f511b1a350c327d56adfacf29981786a99d551258a15b9a3cbb6d8f4f",
+  "native_server_loaded": true,
+  "load_seconds": 31.8220256,
+  "native_checks_passed": 4134,
+  "regression_tests": 9,
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\glass-console\\mp_phase_runner.bsp",
+    "meshes": 4846,
+    "real_triangles": 939346,
+    "native_padded_indices": 2824326,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4846,
+    "prefix_indices": 2824326,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4815,
+      4815,
+      4846
+    ],
+    "static_batch_runs": 467,
+    "unique_static_draw_keys": 467,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "remaining_objects": {
+    "arena_static_placements": 16376,
+    "rendered_in_arena": 5383,
+    "unrendered_arena_placements": 10993,
+    "unrendered_arena_distinct_models": 73,
+    "remaining_arena_categories": {
+      "vehicles_r5": 21,
+      "foliage": 9557,
+      "thunderdome": 60,
+      "utilities": 145,
+      "mendoko": 3,
+      "signs": 234,
+      "IMC_base": 28,
+      "industrial": 339,
+      "pipes": 5,
+      "slum_city": 16,
+      "test": 3,
+      "rocks": 527,
+      "containers": 18,
+      "fixtures": 2,
+      "robots": 2,
+      "levels_terrain": 1,
+      "decals": 23,
+      "water": 9
+    }
+  },
+  "prior_full_backup": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\installed-backups\\PhaseRunner.Preview-0.1.41-before-glass-console",
+  "prior_files_verified": 63,
+  "client_appearance_verified": false,
+  "limitation": "Dedicated validation cannot verify GPU glass appearance. Console dark glass uses its recovered primary blend layer. Baked lighting is retained."
+}

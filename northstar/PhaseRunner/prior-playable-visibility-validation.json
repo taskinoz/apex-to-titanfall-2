@@ -1,0 +1,108 @@
+{
+  "version": "0.1.39",
+  "map_name": "mp_phase_runner",
+  "bsp_sha256": "05daf006a04f467cbf3e1ce2511add31ab8a50a2a2fea5abcdcb6f6fd2245b08",
+  "native_server_loaded": true,
+  "load_seconds": 33.1556423,
+  "regression_tests": 5,
+  "existing_collision_checks": 927,
+  "catwalk_checks": {
+    "floor": 102,
+    "rail": 204,
+    "route": 1449,
+    "route_floor": 1449
+  },
+  "visibility_repair": {
+    "version": "0.1.39",
+    "source_version": "0.1.38",
+    "nodes": 19,
+    "references": 4586,
+    "reachable_meshes": 4586,
+    "all_parent_and_object_bounds_verified": true,
+    "contiguous_subtree_ranges_verified": true,
+    "camera_domain": [
+      [
+        -12288.0,
+        -12288.0,
+        -4096.0
+      ],
+      [
+        12288.0,
+        12288.0,
+        4096.0
+      ]
+    ],
+    "flat_leaf_limit": 255,
+    "maximum_pending_nodes": 18,
+    "reference_order_preserved": true,
+    "geometric_mesh_bounds_preserved": true,
+    "all_draw_geometry_preserved": true,
+    "character_probes_collision_lights_lightmaps_and_portals_byte_preserved": true,
+    "new_portal_connections": 0,
+    "budget": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\character-lighting\\mp_phase_runner.bsp",
+      "meshes": 4586,
+      "real_triangles": 881966,
+      "native_padded_indices": 2652150,
+      "world_index_capacity": 3145728,
+      "all_meshes_fit_simultaneously": true,
+      "maximum_all_visible_mesh_prefix": 4586,
+      "prefix_indices": 2652150,
+      "first_mesh_excluded_when_all_visible": null,
+      "mesh_partitions": [
+        4586,
+        4586,
+        4586
+      ],
+      "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+    },
+    "compaction": {
+      "original_bytes": 1059780836,
+      "compact_bytes": 1059773284,
+      "non_game_lumps_byte_identical": false,
+      "unchanged_lumps_byte_verified": true,
+      "replaced_lumps": [
+        119,
+        121
+      ],
+      "game_lump_offsets_relocated": true,
+      "checks": {
+        "version": 37,
+        "bytes": 1059773284,
+        "nonempty_lumps": 60,
+        "collision_geosets": 546,
+        "structural_checks_passed": true,
+        "in_game_verified": false,
+        "native_triangle_pair_validation": null
+      }
+    },
+    "native_reader": "client.dll+0x2e9983 camera-inside acceptance; +0x2e9dcf emits references",
+    "client_lighting_and_presentation_confirmed_by_user": true,
+    "client_geometry_verified": false,
+    "limitation": "Removes access-path selectivity inside the supported camera domain. Actual client geometry visibility and performance require an in-game check. Native renderer still uses exact geometric mesh bounds."
+  },
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\playable-visibility\\mp_phase_runner.bsp",
+    "meshes": 4586,
+    "real_triangles": 881966,
+    "native_padded_indices": 2652150,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4586,
+    "prefix_indices": 2652150,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4586,
+      4586,
+      4586
+    ],
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "old_full_backup": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\installed-backups\\PhaseRunner.Preview-0.1.38-before-visibility-recovery",
+  "old_backup_files_verified": 52,
+  "prior_evidence": "prior-character-lighting-validation.json",
+  "prior_character_lighting_and_presentation_client_confirmed": true,
+  "client_geometry_verified": false,
+  "client_performance_verified": false,
+  "limitation": "CPU visibility checks and dedicated loading do not verify client GPU visibility or frame rate."
+}

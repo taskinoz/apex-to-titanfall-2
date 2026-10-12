@@ -1,0 +1,61 @@
+{
+  "version": "0.1.41",
+  "map_name": "mp_phase_runner",
+  "bsp_sha256": "653c7829dacd168817ed210ae78ae2aad3ab9fcc7f11f789836881568e2c0659",
+  "native_server_loaded": true,
+  "load_seconds": 29.7063877,
+  "regression_tests": 11,
+  "existing_native_checks": 4131,
+  "new_truck_checks": 3,
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\center-detail\\mp_phase_runner.bsp",
+    "meshes": 4816,
+    "real_triangles": 939346,
+    "native_padded_indices": 2824290,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4816,
+    "prefix_indices": 2824290,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4816,
+      4816,
+      4816
+    ],
+    "static_batch_runs": 463,
+    "unique_static_draw_keys": 463,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "restored_trucks": 3,
+  "restored_small_rockclusters": 206,
+  "nessie_triangles_before": 59,
+  "nessie_triangles_after": 1442,
+  "prior_client_confirmed_version": "0.1.40",
+  "prior_client_report": "Solid version; no pop-in or pop-out.",
+  "full_prior_backup": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\installed-backups\\PhaseRunner.Preview-0.1.40-before-center-detail",
+  "old_backup_files_verified": 57,
+  "native_probe_adjustment": {
+    "index": 213,
+    "original_target_preserved": true,
+    "start": [
+      2900.677714,
+      906.42906,
+      -561.568352
+    ],
+    "end": [
+      2900.677714,
+      906.42906,
+      -1061.568352
+    ],
+    "reason": "Original diagnostic start intersects restored truck; new start is above the original Nessie target."
+  },
+  "client_geometry_verified": false,
+  "client_performance_verified": false,
+  "limitation": "Dedicated validation cannot verify GPU appearance. New props have separate lightmaps; existing surface/probe lightmaps remain intact. Truck windows use the native opaque world-shader approximation. Small rock clusters retain original non-solid flags."
+}

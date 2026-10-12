@@ -1,0 +1,36 @@
+{
+  "map_name": "mp_phase_runner",
+  "display_name": "Phase Runner",
+  "art_source": "Locally installed Apex mp_rr_arena_phase_runner_loadscreen.rpak",
+  "art_png_sha256": "70039cf566eb2db6b244855062a5ce6b489d2ec8966988a150d4709ab60640c6",
+  "width": 2560,
+  "height": 1440,
+  "texture_format": "BC7_UNORM_SRGB, resident",
+  "native_loading_shader_guid": "0xa5b8d4e9a3364655",
+  "native_shader_suffix": "gen",
+  "native_loading_material_states_and_buffer_verified": true,
+  "common_shader_dependency_verified": true,
+  "loading_materials": [
+    "material/loadscreens/mp_phase_runner_widescreen_gen.rpak",
+    "material/loadscreens/mp_phase_runner_gen.rpak",
+    "material/loadscreens/mp_phase_runner_lobby_gen.rpak"
+  ],
+  "lobby_atlas_images": 3,
+  "localization_languages": [
+    "english",
+    "french",
+    "german",
+    "italian",
+    "japanese",
+    "mspanish",
+    "polish",
+    "portuguese",
+    "russian",
+    "spanish",
+    "tchinese",
+    "schinese",
+    "korean"
+  ],
+  "rpak_sha256": "82be6bd84bdb4cd008d025a310916694f9760cc23b3027f9dcf85745419bde95",
+  "client_presentation_verified": false
+}

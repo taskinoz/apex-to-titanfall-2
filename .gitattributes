@@ -1,0 +1,18 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.nut text eol=lf
+*.gnut text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.proto text eol=lf
+*.patch text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary

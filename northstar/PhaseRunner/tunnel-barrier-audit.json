@@ -1,0 +1,278 @@
+{
+  "supplied_positions": 9,
+  "collision_version": "0.1.27",
+  "exact_source_ownership_candidates": [
+    {
+      "point": [
+        -4704.6,
+        16.5,
+        -735.5
+      ],
+      "triangles": [],
+      "brushes": [
+        {
+          "brush": 4304,
+          "source_prop": 12235,
+          "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl"
+        },
+        {
+          "brush": 4305,
+          "source_prop": 12235,
+          "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl"
+        }
+      ]
+    },
+    {
+      "point": [
+        -4412.6,
+        613.2,
+        -829.7
+      ],
+      "triangles": [
+        {
+          "triangle": 2330404,
+          "distance": 16.02766789930406,
+          "source_prop": 16730,
+          "model": "mdl/levels_terrain/mp_rr_phase_runner/phase_runner_tunnel_02.rmdl",
+          "vertices": [
+            [
+              -4486.63671875,
+              425.103515625,
+              -757.5860595703125
+            ],
+            [
+              -4382.541015625,
+              664.5225830078125,
+              -852.859130859375
+            ],
+            [
+              -4432.345703125,
+              684.34326171875,
+              -848.4058837890625
+            ]
+          ]
+        }
+      ],
+      "brushes": [
+        {
+          "brush": 4362,
+          "source_prop": 12238,
+          "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl"
+        },
+        {
+          "brush": 4364,
+          "source_prop": 12238,
+          "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl"
+        }
+      ]
+    },
+    {
+      "point": [
+        -2476.4,
+        2824.9,
+        -644.2
+      ],
+      "triangles": [],
+      "brushes": []
+    },
+    {
+      "point": [
+        -2413.6,
+        2933.2,
+        -542.2
+      ],
+      "triangles": [
+        {
+          "triangle": 84127,
+          "distance": 16.005404095405847,
+          "source_prop": "world",
+          "model": "world",
+          "vertices": [
+            [
+              -2413.765625,
+              2978.484375,
+              -90.5151138305664
+            ],
+            [
+              -2365.76953125,
+              2852.84375,
+              -605.4276733398438
+            ],
+            [
+              -2413.765625,
+              2978.484375,
+              -640.5588989257812
+            ]
+          ]
+        }
+      ],
+      "brushes": [
+        {
+          "brush": 6331,
+          "source_prop": 13492,
+          "model": "mdl/pipes/hollow_pipe_modular_painted_red_corner.rmdl"
+        },
+        {
+          "brush": 6334,
+          "source_prop": 13493,
+          "model": "mdl/pipes/hollow_pipe_modular_painted_red_corner.rmdl"
+        },
+        {
+          "brush": 6335,
+          "source_prop": 13493,
+          "model": "mdl/pipes/hollow_pipe_modular_painted_red_corner.rmdl"
+        }
+      ]
+    },
+    {
+      "point": [
+        -1819.8,
+        3017.7,
+        -446.4
+      ],
+      "triangles": [
+        {
+          "triangle": 87684,
+          "distance": 15.992503560245979,
+          "source_prop": "world",
+          "model": "world",
+          "vertices": [
+            [
+              -1794.0,
+              2858.0,
+              -448.0
+            ],
+            [
+              -1812.0,
+              3152.0,
+              -176.0
+            ],
+            [
+              -1812.0,
+              3152.0,
+              -448.0
+            ]
+          ]
+        },
+        {
+          "triangle": 2363367,
+          "distance": 16.045977204851305,
+          "source_prop": 16730,
+          "model": "mdl/levels_terrain/mp_rr_phase_runner/phase_runner_tunnel_02.rmdl",
+          "vertices": [
+            [
+              -1724.246826171875,
+              3013.17236328125,
+              -444.8841857910156
+            ],
+            [
+              -1724.515380859375,
+              3042.661865234375,
+              -440.572509765625
+            ],
+            [
+              -2192.403564453125,
+              2982.2880859375,
+              -461.17022705078125
+            ]
+          ]
+        }
+      ],
+      "brushes": []
+    },
+    {
+      "point": [
+        1940.5,
+        3016.9,
+        -440.0
+      ],
+      "triangles": [],
+      "brushes": [
+        {
+          "brush": 4522,
+          "source_prop": 12246,
+          "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl"
+        },
+        {
+          "brush": 4524,
+          "source_prop": 12246,
+          "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl"
+        }
+      ]
+    },
+    {
+      "point": [
+        2627.1,
+        2884.2,
+        -517.4
+      ],
+      "triangles": [
+        {
+          "triangle": 148091,
+          "distance": 15.983335350197708,
+          "source_prop": "world",
+          "model": "world",
+          "vertices": [
+            [
+              2644.169921875,
+              2769.0,
+              -610.4276733398438
+            ],
+            [
+              2642.26953125,
+              2970.611328125,
+              -103.8311996459961
+            ],
+            [
+              2642.26953125,
+              2970.611328125,
+              -637.2427978515625
+            ]
+          ]
+        }
+      ],
+      "brushes": [
+        {
+          "brush": 4395,
+          "source_prop": 12240,
+          "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl"
+        },
+        {
+          "brush": 4402,
+          "source_prop": 12240,
+          "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl"
+        }
+      ]
+    },
+    {
+      "point": [
+        4636.4,
+        734.9,
+        -867.3
+      ],
+      "triangles": [],
+      "brushes": [
+        {
+          "brush": 5767,
+          "source_prop": 13075,
+          "model": "mdl/pipes/hollow_pipe_modular_painted_red_256.rmdl"
+        },
+        {
+          "brush": 5948,
+          "source_prop": 13178,
+          "model": "mdl/pipes/hollow_pipe_modular_painted_red_128.rmdl"
+        }
+      ]
+    },
+    {
+      "point": [
+        4866.9,
+        137.4,
+        -746.4
+      ],
+      "triangles": [],
+      "brushes": []
+    }
+  ],
+  "limitation": "These are contacts at approximate player positions, including floor contacts. Expanded convex-plane proximity is not a native sweep or proof of which piece blocks travel. No collision is removed in the visibility diagnostic."
+}

@@ -1,0 +1,442 @@
+{
+  "result": {
+    "tools": [
+      {
+        "name": "gravemind_search",
+        "title": "Search Gravemind",
+        "description": "Search shared knowledge by keywords, a natural-language question, tags, or meaning. Returns snippets with document ids, paths, revisions and relevance scores. Call this before starting unfamiliar work.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Keywords or a natural-language question. Quote \"exact phrases\"."
+            },
+            "collection": {
+              "description": "Restrict to a collection (folder), e.g. projects/example-app",
+              "type": "string"
+            },
+            "tags": {
+              "description": "Only documents having all of these tags",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "draft",
+                "proposed",
+                "verified",
+                "archived"
+              ]
+            },
+            "mode": {
+              "description": "Defaults to hybrid when semantic search is enabled",
+              "type": "string",
+              "enum": [
+                "keyword",
+                "semantic",
+                "hybrid"
+              ]
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          },
+          "required": [
+            "query"
+          ]
+        },
+        "annotations": {
+          "readOnlyHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "gravemind_read",
+        "title": "Read a document",
+        "description": "Read a document by id or path. Optionally return only one section (by heading). The response includes the revision you must pass when updating.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Document id (gm_\u2026) or path relative to the knowledge root"
+            },
+            "section": {
+              "description": "Heading text of a section to return instead of the full document",
+              "type": "string"
+            },
+            "include_links": {
+              "description": "Include outgoing links and backlinks",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        },
+        "annotations": {
+          "readOnlyHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "gravemind_create",
+        "title": "Create knowledge",
+        "description": "Create a new knowledge document. Search first and prefer gravemind_update when related knowledge exists. Returns warnings about possible duplicates. Never include secrets.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Document title"
+            },
+            "content": {
+              "type": "string",
+              "description": "Markdown body (frontmatter optional)"
+            },
+            "collection": {
+              "description": "Folder to create the document in, e.g. projects/example-app",
+              "type": "string"
+            },
+            "path": {
+              "description": "Explicit relative path (overrides collection + title)",
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "project": {
+              "type": "string"
+            },
+            "status": {
+              "description": "Defaults to draft for agents",
+              "type": "string",
+              "enum": [
+                "draft",
+                "proposed",
+                "verified"
+              ]
+            },
+            "message": {
+              "description": "Why this knowledge is being recorded / its source",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "content"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "gravemind_update",
+        "title": "Update knowledge",
+        "description": "Modify an existing document. expected_revision must equal the revision from your latest read; stale updates are rejected with a conflict so you can re-read and merge. Provide exactly one of content, body, section or append, and/or metadata fields.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Document id or path"
+            },
+            "expected_revision": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991,
+              "description": "Revision you read; required for optimistic concurrency"
+            },
+            "content": {
+              "description": "Full replacement Markdown; frontmatter merges with existing",
+              "type": "string"
+            },
+            "body": {
+              "description": "Replace the body, keep the frontmatter",
+              "type": "string"
+            },
+            "section": {
+              "description": "Replace one section (include its heading line)",
+              "type": "object",
+              "properties": {
+                "heading": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "heading",
+                "content"
+              ]
+            },
+            "append": {
+              "description": "Markdown to append to the end of the document",
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "draft",
+                "proposed",
+                "verified",
+                "archived"
+              ]
+            },
+            "path": {
+              "description": "Move/rename the document",
+              "type": "string"
+            },
+            "message": {
+              "description": "Summary of the change and its source",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "expected_revision"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "gravemind_list",
+        "title": "Browse collections and documents",
+        "description": "List collections (folders) and the documents in a collection. Without arguments returns the collection tree and the most recently updated documents.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "collection": {
+              "type": "string"
+            },
+            "tag": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "sort": {
+              "type": "string",
+              "enum": [
+                "path",
+                "updated",
+                "title"
+              ]
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200
+            },
+            "offset": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            }
+          }
+        },
+        "annotations": {
+          "readOnlyHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "gravemind_link",
+        "title": "Inspect or create relationships",
+        "description": "Inspect a document's links and backlinks, or add/remove a typed relationship (related, supports, supersedes, superseded_by, contradicts, depends_on) to another document. Adding or removing requires expected_revision.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Source document id or path"
+            },
+            "action": {
+              "default": "inspect",
+              "type": "string",
+              "enum": [
+                "inspect",
+                "add",
+                "remove"
+              ]
+            },
+            "target": {
+              "description": "Target document id, path or title",
+              "type": "string"
+            },
+            "relation": {
+              "description": "Relationship type (default related)",
+              "type": "string",
+              "enum": [
+                "related",
+                "supports",
+                "supersedes",
+                "superseded_by",
+                "contradicts",
+                "depends_on"
+              ]
+            },
+            "expected_revision": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "id"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "gravemind_history",
+        "title": "Document revision history",
+        "description": "List revisions of a document (who changed it, when, why), or fetch the content of one revision.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Document id"
+            },
+            "revision": {
+              "description": "Return the content of this revision",
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "id"
+          ]
+        },
+        "annotations": {
+          "readOnlyHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "gravemind_context",
+        "title": "Get relevant knowledge for a task",
+        "description": "Describe the task you are about to do and receive the most relevant knowledge excerpts with citations (ids, paths, revisions). The best first call at the start of a task.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "task": {
+              "type": "string",
+              "description": "What you are about to work on, in natural language"
+            },
+            "collection": {
+              "type": "string"
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20
+            },
+            "max_chars": {
+              "type": "integer",
+              "minimum": 1000,
+              "maximum": 60000
+            }
+          },
+          "required": [
+            "task"
+          ]
+        },
+        "annotations": {
+          "readOnlyHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "gravemind_propose",
+        "title": "Propose a change for review",
+        "description": "Submit a proposed change (new content for an existing document, or a new document) for human review instead of applying it directly. Use when unsure or when changing verified knowledge.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "document_id": {
+              "type": "string"
+            },
+            "path": {
+              "description": "Path for a proposed new document",
+              "type": "string"
+            },
+            "content": {
+              "type": "string",
+              "description": "Full proposed Markdown"
+            },
+            "base_revision": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            },
+            "reason": {
+              "type": "string",
+              "description": "Why the change is needed, with sources"
+            }
+          },
+          "required": [
+            "content",
+            "reason"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

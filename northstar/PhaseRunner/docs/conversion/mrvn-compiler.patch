@@ -1,0 +1,85 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 3453364..3b2a6c8 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -117,7 +117,9 @@ else() # Msys / Linux
+     pkg_check_modules(JPEG libjpeg REQUIRED)
+ endif()
+ 
+-find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets OpenGL OpenGLWidgets)
++if(BUILD_RADIANT OR BUILD_PLUGINS)
++    find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets OpenGL OpenGLWidgets)
++endif()
+ find_package(Threads REQUIRED)
+ 
+ # Global include dirs
+diff --git a/libs/CMakeLists.txt b/libs/CMakeLists.txt
+index 06d6bdf..9a654dc 100644
+--- a/libs/CMakeLists.txt
++++ b/libs/CMakeLists.txt
+@@ -24,7 +24,9 @@ add_subdirectory(assimp)
+ # These are static
+ add_subdirectory(ddslib)
+ add_subdirectory(mathlib)
+-add_subdirectory(gtkutil)
++if(BUILD_RADIANT OR BUILD_PLUGINS)
++    add_subdirectory(gtkutil)
++endif()
+ add_subdirectory(l_net)
+ add_subdirectory(profile)
+ add_subdirectory(quickhull)
+diff --git a/tools/remap/source/bspfile_shared.cpp b/tools/remap/source/bspfile_shared.cpp
+index c3e08d2..cf5de63 100644
+--- a/tools/remap/source/bspfile_shared.cpp
++++ b/tools/remap/source/bspfile_shared.cpp
+@@ -23,6 +23,7 @@
+ 
+ #include "remap.h"
+ #include "bspfile_abstract.h"
++#include "model.h"
+ 
+ 
+ /*
+@@ -162,6 +163,42 @@ void Shared::MakeMeshes(const entity_t &e) {
+         mesh_index++;
+     }
+ 
++    // Local porting extension: bake an inspection OBJ into world render meshes.
++    // Collision is supplied separately by map brushes; this does not infer it.
++    const char *geometry = e.valueForKey("_geometry");
++    if(geometry && geometry[0]) {
++        const char *material = e.valueForKey("_geometry_material");
++        shaderInfo_t *importShader = ShaderInfoForShader(material && material[0] ? material : "tools/toolsblack");
++        auto walkers = LoadModelWalker(geometry, 0);
++        if(walkers.empty()) Error("Failed to load port geometry: %s", geometry);
++        std::size_t importedTriangles = 0;
++        Shared::Mesh_t *importMesh = nullptr;
++        for(const auto walker : walkers) {
++            walker->forEachFace([&](const Vector3 (&xyz)[3], const Vector2 (&st)[3]) {
++                if(!importMesh || importMesh->vertices.size() + 3 > 30000) {
++                    importMesh = &Shared::meshes.emplace_back();
++                    importMesh->shaderInfo = importShader;
++                    importMesh->lightmapPage = -1;
++                }
++                Vector3 normal = vector3_cross(xyz[1] - xyz[0], xyz[2] - xyz[0]);
++                VectorNormalize(normal);
++                for(int corner = 0; corner < 3; ++corner) {
++                    importMesh->triangles.emplace_back(importMesh->vertices.size());
++                    Shared::Vertex_t &vertex = importMesh->vertices.emplace_back();
++                    vertex.xyz = xyz[corner];
++                    vertex.normal = normal;
++                    vertex.textureUV = st[corner];
++                    vertex.colour = {0xFF, 0xFF, 0xFF, 0xFF};
++                    vertex.lightmapUV = {0.0f, 0.0f};
++                    vertex.lightmapStep = {0.0f, 0.0f};
++                    importMesh->minmax.extend(xyz[corner]);
++                }
++                ++importedTriangles;
++            });
++        }
++        Sys_Printf("Imported %zu port geometry triangles\n", importedTriangles);
++    }
++
+     // Recalculate lightmapUVs for all vertices
+     // Shared::MakeLightmapUVs();  /* causes heap corruption */
+ 

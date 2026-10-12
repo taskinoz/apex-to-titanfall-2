@@ -1,0 +1,13 @@
+{
+  "all_source_model_physics_verified": true,
+  "checked": {
+    "model_triangles": 2170866,
+    "placements": 5024,
+    "convex_pieces": 7623
+  },
+  "errors": [],
+  "visual_fallback_placements": [
+    11900,
+    11903
+  ]
+}

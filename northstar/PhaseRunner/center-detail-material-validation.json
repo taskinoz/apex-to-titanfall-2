@@ -1,0 +1,14 @@
+{
+  "native_v12_verified": true,
+  "materials": 6,
+  "assets": 18,
+  "all_dependencies_present": true,
+  "missing_external_guids": [],
+  "channels": [
+    "albedo",
+    "normal",
+    "gloss",
+    "specular"
+  ],
+  "textures_resident": true
+}

@@ -1,0 +1,45 @@
+{
+  "version": "1.1.0",
+  "modes": [
+    "aitdm",
+    "cp",
+    "ctf",
+    "fastball",
+    "ffa",
+    "lts",
+    "mfd",
+    "ps",
+    "tdm",
+    "ttdm"
+  ],
+  "spawn_markers_checked_per_mode": 86,
+  "pilot_start_selection_tested": [
+    "tdm",
+    "ps",
+    "ctf",
+    "cp",
+    "aitdm",
+    "mfd"
+  ],
+  "hardpoint_capture_tests": [
+    "A",
+    "B",
+    "C"
+  ],
+  "ctf_flags_created": 2,
+  "fastball_panels_created": 3,
+  "regression_tests": 11,
+  "geometry_and_collision_preserved": true,
+  "screenshots": [
+    "evidence/militia-ctf-base-f51f45ca.png",
+    "evidence/hardpoint-captured-df7007ab.png",
+    "evidence/fastball-native-intro-d9af553c.png"
+  ],
+  "native_bsp_sha256": "50f6fb7ce22f6f2327dbec8102bd4355946943f14e9c2bd37a68f2b1cf522986",
+  "known_harness_failure": "An earlier LTS hot switch hit the stock Titan-menu BUTTON_BACK deregistration assertion. Titan-only switches now use a fresh owned process. The failed run is retained in test-harness/output/20261006-145515.",
+  "limitations": [
+    "Single-client functional testing; multiplayer balance and full team matches remain unverified.",
+    "Attrition AI navigation is absent.",
+    "Native Titan spawn hulls/markers are checked; not every live Titan drop trajectory is tested."
+  ]
+}

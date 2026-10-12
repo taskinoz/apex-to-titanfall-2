@@ -1,0 +1,157 @@
+{
+  "source_map": "mp_rr_arena_composite",
+  "target_map": "mp_arena_composite",
+  "placements": {
+    "Included": 4264,
+    "Native all-visible draw budget": 2051,
+    "Excluded remote origin / menu or backdrop region": 1884,
+    "Asset not recovered": 147,
+    "Detached wind shield at reported floating geometry location; removed with collider": 1,
+    "Orphan lamp removed with missing wind shield attachment": 1,
+    "No rendered sections after atmosphere / glow filters": 8
+  },
+  "collision_missing": [
+    {
+      "index": 0,
+      "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+      "method": "IRPS",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 1,
+      "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+      "method": "IRPS",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 2,
+      "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+      "method": "IRPS",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 3,
+      "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+      "method": "IRPS",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 4,
+      "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+      "method": "IRPS",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 5,
+      "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+      "method": "IRPS",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 6,
+      "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+      "method": "IRPS",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 7,
+      "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+      "method": "IRPS",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 8152,
+      "model": "mdl/decals/puddle_floor_decal_flat_04.rmdl",
+      "method": "BVH",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 8153,
+      "model": "mdl/decals/puddle_floor_decal_flat_04.rmdl",
+      "method": "BVH",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 8154,
+      "model": "mdl/decals/puddle_floor_decal_flat_04.rmdl",
+      "method": "BVH",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 2371,
+      "model": "mdl/haven/haven_bamboo_tree_01.rmdl",
+      "method": "BVH",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 2372,
+      "model": "mdl/haven/haven_bamboo_tree_01.rmdl",
+      "method": "BVH",
+      "brushes": 0,
+      "headers": 0
+    },
+    {
+      "index": 2373,
+      "model": "mdl/haven/haven_bamboo_tree_01.rmdl",
+      "method": "BVH",
+      "brushes": 0,
+      "headers": 0
+    }
+  ],
+  "missing_materials": {
+    "world/dev/dev_gray_512": 0,
+    "world/metal/metal_painted_white_01": 0,
+    "world/decal/signage_building_02": 564,
+    "empty_model": 1,
+    "composite_sky": 0
+  },
+  "entity_classes": {
+    "mp_rr_arena_composite_env.ent": {
+      "sky_camera": 1,
+      "light_spot": 383,
+      "light": 210,
+      "color_correction": 1,
+      "fog_volume": 2,
+      "light_environment": 1,
+      "env_fog_controller": 1
+    },
+    "mp_rr_arena_composite_fx.ent": {
+      "info_particle_system": 115
+    },
+    "mp_rr_arena_composite_script.ent": {
+      "info_player_start": 2,
+      "info_target_clientside": 44,
+      "trigger_hurt": 5,
+      "prop_door": 8,
+      "info_target": 35,
+      "trigger_no_zipline": 19,
+      "trigger_out_of_bounds": 21,
+      "script_ref": 17,
+      "prop_dynamic": 28,
+      "prop_dynamic_lightweight": 3,
+      "func_brush": 11,
+      "zipline": 2,
+      "zipline_end": 2,
+      "trigger_slip": 10,
+      "script_mover_train_node": 40,
+      "script_mover": 2
+    },
+    "mp_rr_arena_composite_snd.ent": {
+      "ambient_generic": 93,
+      "trigger_soundscape": 8
+    },
+    "mp_rr_arena_composite_spawn.ent": {}
+  }
+}

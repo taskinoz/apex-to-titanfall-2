@@ -1,0 +1,41 @@
+# Map comparison and release site
+
+Open `dist/index.html` directly, or serve `site/dist/` with any static host.
+The catalogue is embedded for local file access; there is no backend, account,
+dependency installation, analytics or external asset request.
+For the Codex browser or browsers that restrict local files, run
+`./Run-MapSite.ps1` from the repo and open its printed local URL. This binds to
+127.0.0.1 only. Close the preview with Ctrl+C; the saved site remains intact.
+
+Register another map in `maps.json`, generate its matched harness captures,
+then run from the workspace:
+
+```powershell
+python publish_comparison_site.py --snapshot 2026-10-12-area-survey --findings site/survey-findings.json
+```
+
+Capture sets are immutable. Use a new snapshot name after each repair. The build
+selector keeps earlier captures available for comparison. `--drop-off` and
+`--phase-runner` override the input gallery paths for a development build.
+Only whitelisted camera metadata and hash-verified PNGs leave private harness
+output. Generated `dist/` is deliberately retained as the portable site.
+The current export retains the baseline and recovered-paint snapshots, plus an
+**Area survey** with 12 Drop-Off views and 11 Phase Runner views. That adds 16
+areas beyond the earlier seven repair cameras. Each survey view has reviewed
+notes; the western Phase Runner bend explicitly records an unresolved black
+source capture rather than claiming a port defect. All 72 native PNGs remain
+available across the three snapshot sets. Choose a new snapshot label when
+making further changes.
+
+`--findings` accepts plain-text observations keyed by map ID and shot name.
+The viewer renders these as text, not HTML. Do not change notes in an archived
+snapshot; create a new snapshot if the observations or captures change.
+
+Set a map's `download` to its public release URL when ready. Runtime ZIPs remain
+separate from the site and retain the existing clean Northstar mod packaging.
+Alternatively, append `--include-downloads` after packaging current versions:
+the exporter verifies the clean player ZIP hashes and copies them into the
+static site's `downloads/` directory. This optional release export adds roughly
+a gigabyte with the current two maps; the comparison-only site stays compact.
+Publish the static directory once the release catalogue is ready; this task
+does not deploy the site. Keep original asset attribution in the footer.

@@ -1,0 +1,52 @@
+{
+  "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-125249\\screenshots\\tree-root-release-2da8de08.png",
+  "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-125249\\screenshots\\tree-root-release-2da8de08.tga",
+  "width": 1280,
+  "height": 720,
+  "captured": 1791252770.1558454,
+  "sha256": "5739154cbb198ecc553b837dc551d4c91553272388259f62fbf9317805fc0bdf",
+  "state": {
+    "game_running": true,
+    "game_pid": 22052,
+    "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+    "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-125249",
+    "contexts": {
+      "ui": {
+        "loading": false,
+        "generation": "4eaff0a8792f42b5a9b2e2df6746e1b5",
+        "ready": true,
+        "level": "mp_phase_runner",
+        "context": "ui",
+        "received": 1791252768.3296492
+      },
+      "server": {
+        "loading": false,
+        "generation": "4eaff0a8792f42b5a9b2e2df6746e1b5",
+        "players": 1,
+        "ready": true,
+        "level": "mp_phase_runner",
+        "context": "server",
+        "received": 1791252768.383563
+      },
+      "client": {
+        "angles": [
+          40.0,
+          180.0,
+          0.0
+        ],
+        "origin": [
+          -3150.0,
+          -277.0,
+          -1010.0
+        ],
+        "context": "client",
+        "loading": false,
+        "generation": "4eaff0a8792f42b5a9b2e2df6746e1b5",
+        "level": "mp_phase_runner",
+        "camera": true,
+        "ready": true,
+        "received": 1791252768.3311617
+      }
+    }
+  }
+}

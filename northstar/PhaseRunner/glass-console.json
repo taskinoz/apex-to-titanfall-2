@@ -1,0 +1,313 @@
+{
+  "version": "0.1.42",
+  "source_version": "0.1.41",
+  "source_surfaces_rebound": {
+    "ts_window01_dark_cracked_bm": 240,
+    "s2s_bridge_glass_cracked_04": 72,
+    "truck_mod_common_lrg_01_glass": 82
+  },
+  "opaque_meshes": 4815,
+  "transparent_meshes": 31,
+  "native_partition_boundaries": [
+    4815,
+    4815,
+    4846
+  ],
+  "budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\glass-console\\mp_phase_runner.bsp",
+    "meshes": 4846,
+    "real_triangles": 939346,
+    "native_padded_indices": 2824326,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4846,
+    "prefix_indices": 2824326,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4815,
+      4815,
+      4846
+    ],
+    "static_batch_runs": 467,
+    "unique_static_draw_keys": 467,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "resident_sidecar": {
+    "added_materials": [
+      "world/phase_runner_preview/truck_mod_common_lrg_01_glass_transparent",
+      "world/phase_runner_preview/s2s_bridge_glass_cracked_04_transparent",
+      "world/phase_runner_preview/ts_window01_dark_cracked_bm_transparent"
+    ],
+    "column_payloads_preserved": true
+  },
+  "materials": {
+    "native_shader": {
+      "native_shader_set": "0x92a558802becb2d5",
+      "vertex_guid": "0xf93913c7915690bf",
+      "pixel_guid": "0x1675e75e60ffb061",
+      "pixel_buffers": [
+        {
+          "index": 0,
+          "bytes": 31792,
+          "input_flags": "20720000023012000000000000000000"
+        },
+        {
+          "index": 1,
+          "bytes": 31428,
+          "input_flags": "20720000023012000000000000000000"
+        },
+        {
+          "index": 4,
+          "bytes": 82036,
+          "input_flags": "20720000023012000000000000000000"
+        },
+        {
+          "index": 5,
+          "bytes": 81444,
+          "input_flags": "20720000023012000000000000000000"
+        },
+        {
+          "index": 8,
+          "bytes": 31796,
+          "input_flags": "20720000023012000000000000000000"
+        },
+        {
+          "index": 9,
+          "bytes": 31428,
+          "input_flags": "20720000023012000000000000000000"
+        },
+        {
+          "index": 12,
+          "bytes": 82036,
+          "input_flags": "20720000023012000000000000000000"
+        },
+        {
+          "index": 13,
+          "bytes": 81448,
+          "input_flags": "20720000023012000000000000000000"
+        }
+      ],
+      "vertex_buffers": [
+        {
+          "index": 0,
+          "bytes": 9632,
+          "input_flags": "20420000120000002072000002301200"
+        },
+        {
+          "index": 1,
+          "bytes": 9844,
+          "input_flags": "20420000120000002073000002301200"
+        },
+        {
+          "index": 2,
+          "bytes": 10092,
+          "input_flags": "a042000012000000a072000002301200"
+        },
+        {
+          "index": 3,
+          "bytes": 10376,
+          "input_flags": "a042000012000000a073000002301200"
+        },
+        {
+          "index": 4,
+          "bytes": 9636,
+          "input_flags": "20420000120000002072000002301200"
+        },
+        {
+          "index": 5,
+          "bytes": 9848,
+          "input_flags": "20420000120000002073000002301200"
+        },
+        {
+          "index": 6,
+          "bytes": 10088,
+          "input_flags": "a042000012000000a072000002301200"
+        },
+        {
+          "index": 7,
+          "bytes": 10372,
+          "input_flags": "a042000012000000a073000002301200"
+        },
+        {
+          "index": 8,
+          "bytes": 11944,
+          "input_flags": "25020000120000002072000002301200"
+        },
+        {
+          "index": 9,
+          "bytes": 12064,
+          "input_flags": "25020000120000002073000002301200"
+        },
+        {
+          "index": 10,
+          "bytes": 12360,
+          "input_flags": "a502000012000000a072000002301200"
+        },
+        {
+          "index": 11,
+          "bytes": 12568,
+          "input_flags": "a502000012000000a073000002301200"
+        },
+        {
+          "index": 12,
+          "bytes": 11944,
+          "input_flags": "25020000120000002072000002301200"
+        },
+        {
+          "index": 13,
+          "bytes": 12064,
+          "input_flags": "25020000120000002073000002301200"
+        },
+        {
+          "index": 14,
+          "bytes": 12356,
+          "input_flags": "a502000012000000a072000002301200"
+        },
+        {
+          "index": 15,
+          "bytes": 12576,
+          "input_flags": "a502000012000000a073000002301200"
+        },
+        {
+          "index": 16,
+          "bytes": 11384,
+          "input_flags": "24020000120000002072000002301200"
+        },
+        {
+          "index": 17,
+          "bytes": 11580,
+          "input_flags": "24020000120000002073000002301200"
+        },
+        {
+          "index": 18,
+          "bytes": 11928,
+          "input_flags": "a402000012000000a072000002301200"
+        },
+        {
+          "index": 19,
+          "bytes": 12136,
+          "input_flags": "a402000012000000a073000002301200"
+        },
+        {
+          "index": 20,
+          "bytes": 11384,
+          "input_flags": "24020000120000002072000002301200"
+        },
+        {
+          "index": 21,
+          "bytes": 11576,
+          "input_flags": "24020000120000002073000002301200"
+        },
+        {
+          "index": 22,
+          "bytes": 11924,
+          "input_flags": "a402000012000000a072000002301200"
+        },
+        {
+          "index": 23,
+          "bytes": 12132,
+          "input_flags": "a402000012000000a073000002301200"
+        },
+        {
+          "index": 24,
+          "bytes": 11828,
+          "input_flags": "3c020000120000002072000002301200"
+        },
+        {
+          "index": 25,
+          "bytes": 12044,
+          "input_flags": "3c020000120000002073000002301200"
+        },
+        {
+          "index": 26,
+          "bytes": 12384,
+          "input_flags": "bc02000012000000a072000002301200"
+        },
+        {
+          "index": 27,
+          "bytes": 12576,
+          "input_flags": "bc02000012000000a073000002301200"
+        },
+        {
+          "index": 28,
+          "bytes": 11840,
+          "input_flags": "3c020000120000002072000002301200"
+        },
+        {
+          "index": 29,
+          "bytes": 12044,
+          "input_flags": "3c020000120000002073000002301200"
+        },
+        {
+          "index": 30,
+          "bytes": 12380,
+          "input_flags": "bc02000012000000a072000002301200"
+        },
+        {
+          "index": 31,
+          "bytes": 12580,
+          "input_flags": "bc02000012000000a073000002301200"
+        }
+      ],
+      "vertex_textures": 0,
+      "pixel_textures": 14,
+      "samplers": 3,
+      "unchanged_native_bytecode": true
+    },
+    "assets": 21,
+    "all_dependencies_present": true,
+    "all_textures_resident": true,
+    "native_world_glass_template": "0x92b5ba61a3bf2e7a",
+    "all_materials_depth_read_without_depth_write": true
+  },
+  "shadow": {
+    "removed_old_path_triangles": 394,
+    "new_shadow_meshes": 59,
+    "new_shadow_triangles": 934984
+  },
+  "original_geometry_uvs_normals_lightmaps_and_collision_preserved": true,
+  "new_connected_portals": 0,
+  "client_appearance_verified": false,
+  "limitation": "Apex two-layer console glass uses its recovered primary layer. Existing baked lightmaps remain intact; glass is removed only from live opaque shadow casters.",
+  "elapsed_seconds": 23.170999999998457,
+  "compaction": {
+    "original_bytes": 1092521492,
+    "compact_bytes": 1092514900,
+    "non_game_lumps_byte_identical": false,
+    "unchanged_lumps_byte_verified": true,
+    "replaced_lumps": [
+      2,
+      5,
+      14,
+      43,
+      44,
+      79,
+      80,
+      81,
+      82,
+      119,
+      120,
+      121,
+      123,
+      124,
+      126,
+      127
+    ],
+    "game_lump_offsets_relocated": true,
+    "checks": {
+      "version": 37,
+      "bytes": 1092514900,
+      "nonempty_lumps": 60,
+      "collision_geosets": 546,
+      "structural_checks_passed": true,
+      "in_game_verified": false,
+      "native_triangle_pair_validation": null
+    }
+  }
+}

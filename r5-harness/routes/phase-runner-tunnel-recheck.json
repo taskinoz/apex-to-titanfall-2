@@ -1,0 +1,42 @@
+{
+  "title": "Phase Runner tunnel bend viewpoint recheck",
+  "source_map": "mp_rr_arena_phase_runner",
+  "target_map": "mp_phase_runner",
+  "source_offset": [
+    26000,
+    19000,
+    0
+  ],
+  "shots": [
+    {
+      "name": "west-tunnel-bend",
+      "origin": [
+        -4412.6,
+        613.2,
+        -645.7
+      ],
+      "angles": [
+        0,
+        45,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "east-tunnel-bend",
+      "origin": [
+        4636.4,
+        734.9,
+        -683.3
+      ],
+      "angles": [
+        0,
+        135,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    }
+  ]
+}

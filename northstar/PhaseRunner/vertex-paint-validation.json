@@ -1,0 +1,65 @@
+{
+  "version": "1.3.0",
+  "previous_version": "1.2.0",
+  "changed_vertices": 66208,
+  "native_shader_materials": 5,
+  "paint_pack_bytes": 25768814,
+  "preserved": [
+    "collision",
+    "geometry",
+    "UVs",
+    "normals",
+    "lightmaps",
+    "character probes",
+    "render visibility",
+    "gameplay entities"
+  ],
+  "native_visual_comparison": [
+    {
+      "view": "arena-overview",
+      "source_sha256": "3019ad9fd62ce4c1c71d1062069e19c117b95b9aafb2f2b393ae8c2c707fd12f",
+      "port_sha256": "c7637d99f62dbe5de65b09639d6ace007fa91079f59b3b33aa6e74ed0836119c"
+    },
+    {
+      "view": "west-tunnel",
+      "source_sha256": "2b05a4463915448e96e5eec215e04d2707e28a0b8fba5427607ef9d5d3f47b7a",
+      "port_sha256": "50582b0166ecf1bfabc68e7e82ecdf83c5f6df777fafc2221f442756df10693a"
+    },
+    {
+      "view": "west-building",
+      "source_sha256": "7c1802e6a91cad68d539cd740a5e9271613328262f8d67d1bb4a31d91a1c2233",
+      "port_sha256": "e9f140a6adbada3d5d634d16556511aafa69723fe370f8a27f8703363dca4530"
+    }
+  ],
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\northstar\\PhaseRunner\\mod\\maps\\mp_phase_runner.bsp",
+    "meshes": 4982,
+    "real_triangles": 972628,
+    "native_padded_indices": 2924184,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4982,
+    "prefix_indices": 2924184,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4947,
+      4947,
+      4982
+    ],
+    "static_batch_runs": 479,
+    "unique_static_draw_keys": 479,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "source_captures_reused_with_hash_verification": true,
+  "limitations": [
+    "Vertex alpha and Apex terrain layer blending remain approximated.",
+    "Animated banners and source scenery omissions remain.",
+    "Paired captures do not establish multiplayer frame times."
+  ]
+}

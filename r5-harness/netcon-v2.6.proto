@@ -1,0 +1,20 @@
+// Wire layout observed and exercised against the installed R5R v2.6.52.
+// Older upstream R5SDK netcon.proto uses a DIFFERENT envelope.
+syntax = "proto3";
+package r5h;
+message Header { uint64 sequence = 1; uint64 nonce64 = 2; }
+message Envelope { Header header = 1; bytes nonce = 2; bytes tag = 3; bytes data = 4; }
+message Request {
+  optional int32 messageId = 1;
+  optional int32 messageType = 2;
+  optional int32 requestType = 3;
+  optional string requestMsg = 4;
+  optional string requestVal = 5;
+}
+message Response {
+  optional int32 messageId = 1;
+  optional int32 messageType = 2;
+  optional int32 responseType = 3;
+  optional string responseMsg = 4;
+  optional string responseVal = 5;
+}

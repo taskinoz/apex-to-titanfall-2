@@ -1,0 +1,72 @@
+[
+  {
+    "point": [
+      -761,
+      -4444,
+      -991
+    ],
+    "nearby_upward_faces": 1165,
+    "valid_samples": 1165,
+    "sun_unoccluded_mean": 0.1167382001876831,
+    "prior_sun_mean": 0.0,
+    "sky_visibility_mean": 0.32900571823120117,
+    "prior_sky_mean": 0.0,
+    "limitation": "Triangle-center nearest texel samples; not a client rendering check or a trace at the exact point."
+  },
+  {
+    "point": [
+      -2163,
+      3016,
+      -974
+    ],
+    "nearby_upward_faces": 1466,
+    "valid_samples": 1466,
+    "sun_unoccluded_mean": 0.15484310686588287,
+    "prior_sun_mean": 0.0,
+    "sky_visibility_mean": 0.03660754859447479,
+    "prior_sky_mean": 0.0,
+    "limitation": "Triangle-center nearest texel samples; not a client rendering check or a trace at the exact point."
+  },
+  {
+    "point": [
+      1839,
+      -782,
+      -1201
+    ],
+    "nearby_upward_faces": 280,
+    "valid_samples": 280,
+    "sun_unoccluded_mean": 0.2321428507566452,
+    "prior_sun_mean": 0.0,
+    "sky_visibility_mean": 0.2488095462322235,
+    "prior_sky_mean": 0.0,
+    "limitation": "Triangle-center nearest texel samples; not a client rendering check or a trace at the exact point."
+  },
+  {
+    "point": [
+      186,
+      -5211,
+      -955
+    ],
+    "nearby_upward_faces": 2163,
+    "valid_samples": 2163,
+    "sun_unoccluded_mean": 0.23116043210029602,
+    "prior_sun_mean": 0.0,
+    "sky_visibility_mean": 0.18402297794818878,
+    "prior_sky_mean": 0.0,
+    "limitation": "Triangle-center nearest texel samples; not a client rendering check or a trace at the exact point."
+  },
+  {
+    "point": [
+      -1716,
+      -3994,
+      -963
+    ],
+    "nearby_upward_faces": 1918,
+    "valid_samples": 1918,
+    "sun_unoccluded_mean": 0.13503649830818176,
+    "prior_sun_mean": 0.0,
+    "sky_visibility_mean": 0.14318300783634186,
+    "prior_sky_mean": 0.0,
+    "limitation": "Triangle-center nearest texel samples; not a client rendering check or a trace at the exact point."
+  }
+]

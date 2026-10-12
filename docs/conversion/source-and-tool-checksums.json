@@ -1,0 +1,362 @@
+[
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp",
+    "bytes": 2064,
+    "sha256": "94bcf346e4072fe3e1eb1b3f571c9e8d6bff191f23e5d13de43071c44207dd88"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0000.bsp_lump",
+    "bytes": 7718,
+    "sha256": "646b6ce788f024b90ab8b738c2669a4ce0014540c5a417657b72f2d1ac67488d"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0001.bsp_lump",
+    "bytes": 288,
+    "sha256": "7011d512c5d76aaa131c9212425824c1fd3c3449395f75bf98866c3a8f8c9ebc"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0002.bsp_lump",
+    "bytes": 1408,
+    "sha256": "c548c9f909b9286506e974f93e5c48b584dde0433be2d371b976e70937611a2f"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0003.bsp_lump",
+    "bytes": 1515672,
+    "sha256": "b85c3ba6543ea228c4ee9381a0eab7edd5cde43a2a219df7956343ce5bd1b3db"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0004.bsp_lump",
+    "bytes": 28,
+    "sha256": "e62cc92232a9990c81b96f883933fb0241c551a9258d11137258a032a49456c6"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0005.bsp_lump",
+    "bytes": 36,
+    "sha256": "7fe037ce29aa084208dcd06127589054b50f5a1c824ba35b4b1b3cb339ac42bc"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.000e.bsp_lump",
+    "bytes": 12480,
+    "sha256": "5e2dee36a735c7c04d435e87cc201a1a94f47dcaa0c97e81f174364eab87a112"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.000f.bsp_lump",
+    "bytes": 4045,
+    "sha256": "5bcd9972b3dc3820f47ec2cc78d3154f269534b8e7af37ee7eb59c571a9d4e4c"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0010.bsp_lump",
+    "bytes": 128,
+    "sha256": "25552a264dd8b1cbc64a1ab1cd3ee50cd2edd056d2737c9311d0f394d47155e7"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0011.bsp_lump",
+    "bytes": 768,
+    "sha256": "e957439b66a14e05ac5e5d7e1d1d9e8f66cd69e0b7b23388e2b0ed2fe87a6a25"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0012.bsp_lump",
+    "bytes": 1749952,
+    "sha256": "ae460fac183ca2a8a0f4b93e9c0a2889d635c4b3a9358ea692ef0e37afaec2fe"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0013.bsp_lump",
+    "bytes": 1231556,
+    "sha256": "24edfc609f45c618040778356dd295bc45deb8376dc4b167c377b55957334abe"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0014.bsp_lump",
+    "bytes": 432,
+    "sha256": "b65d65c98db4e1409b9b8117c581e9ca4e2cb2544ec156e541f328b67f03fcb4"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0018.bsp_lump",
+    "bytes": 28,
+    "sha256": "1fd69f97cdaeb3f16757df4f66de161387eae54cd56babfefc64e7fd8ae7055d"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.001e.bsp_lump",
+    "bytes": 2542152,
+    "sha256": "618edc76f38543b3d68e535c636374aebd2073705f4e8fcd000a7341abf76a91"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0023.bsp_lump",
+    "bytes": 1113896,
+    "sha256": "a2d0908082b43983cd93e2a710c1a4a451c553cba461d3827a844e16758edfe0"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0025.bsp_lump",
+    "bytes": 3616,
+    "sha256": "28d343fd7773f452f557565e3e56490f35ba84e9b51d70f650e1d5ffa13c1f6a"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0026.bsp_lump",
+    "bytes": 12840,
+    "sha256": "f03433d94276c3747398dc37e7d6eb717314891c21287ca886bb9907d0c310ca"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0027.bsp_lump",
+    "bytes": 2088,
+    "sha256": "72a856e91ccde3e757211b2edc83f72644587055624e186e5547f36d9c4b7800"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0028.bsp_lump",
+    "bytes": 567,
+    "sha256": "8487865dfda9878a3e2cdb8f7fb09eb6c2ea757534b8ded949d6f77f43f75374"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.002a.bsp_lump",
+    "bytes": 112,
+    "sha256": "650bf935789b92ffe9393d42df13017a592894846d20b95b228df28f0f3de79a"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.002b.bsp_lump",
+    "bytes": 28,
+    "sha256": "3addfb141cd7c9c4c6543a82191a3707ac29c7a041217782e61d4d91c691aee8"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0036.bsp_lump",
+    "bytes": 21280,
+    "sha256": "d770ddba43eedba3f24824ff3bd61735ba3e91163fbeb2a2ea89e5d7e10f316d"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0047.bsp_lump",
+    "bytes": 8160,
+    "sha256": "2321aa8da04aa86a4fac004ad1dbd8a5648ad8188e1e1ee83860294f2a9a7598"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0049.bsp_lump",
+    "bytes": 8105920,
+    "sha256": "9eff24603dcbc7f73577eae4b7c2ff1ffcd326254855410f5fbf454bb0aefb85"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.004a.bsp_lump",
+    "bytes": 97056,
+    "sha256": "c111f1737ff7aaad3fee1575d983c5864982d15049c5f192edf30d75f6924b14"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.004f.bsp_lump",
+    "bytes": 1371012,
+    "sha256": "f2274e98b1a34198066e12e57f4c0264f1bc404de09cfae3dce432399ddd3499"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0050.bsp_lump",
+    "bytes": 68208,
+    "sha256": "483c95ffd725e689a7b082fded14e618aaa324e0b5143b5fe06c90fed56841f8"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0051.bsp_lump",
+    "bytes": 77952,
+    "sha256": "41cd30be41a5107c01136caf52e7af4eee0f4894541009706f467ec01e463b8a"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0052.bsp_lump",
+    "bytes": 1056,
+    "sha256": "5dece09bed0bdce9f6d81e8cdd7d2a566cbe5aed1e52e874488373ee0c9c82c4"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0053.bsp_lump",
+    "bytes": 8,
+    "sha256": "62f87cbf4e8df2c541dc80cf4a7f0c148902f191b6f367f8fe64f9d611ae3f6b"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0055.bsp_lump",
+    "bytes": 184,
+    "sha256": "76e2b49923178a65804cf61322d7104bfd3a52b6eee45379b5b02e0036b5dbd7"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0061.bsp_lump",
+    "bytes": 1704960,
+    "sha256": "16ed147513eb934472d71b66d3addc32efa91375e42f043060377f2d4495b537"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0062.bsp_lump",
+    "bytes": 6819840,
+    "sha256": "42bc4370f1e78deaf1e8ca5df9a476d3f9db6790f0b52c4d659bda9348e69d4e"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0063.bsp_lump",
+    "bytes": 211552,
+    "sha256": "cffbee5793775adedafde2d08faff9048bb07225204b2a47055333e4eb45e2fe"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0064.bsp_lump",
+    "bytes": 57288,
+    "sha256": "301fb671217ad36cd63d8a6d259339b9fec17cd05aabad9473c753ae3960dcbb"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0065.bsp_lump",
+    "bytes": 1877088,
+    "sha256": "943da2e28cdba0cd86de1ba60cd8fa51848d590ea88bdce06366667a6b3b3102"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0066.bsp_lump",
+    "bytes": 67448,
+    "sha256": "5e2439d6338daba1beff9bfc3c33782ddea89f7d2964add33574f649b25b5574"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0067.bsp_lump",
+    "bytes": 46920,
+    "sha256": "f280bd3ff837f5eaac4631cd82bb4e1678ba888b14532032388ba944680aec4e"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0068.bsp_lump",
+    "bytes": 454500,
+    "sha256": "0f09083ba54d3ec67ca5a75f825e1b71674df5438a6844c637aa452a34ed42d8"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0069.bsp_lump",
+    "bytes": 5114880,
+    "sha256": "52704898748067a60ac27db1ddd530190c064828757db87a631bf7b7fa027c3e"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.006a.bsp_lump",
+    "bytes": 56,
+    "sha256": "325c34e2c24b8655398af0486abf1b1d4fa1e9790ec051e0725db56c8dbc41d9"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.006b.bsp_lump",
+    "bytes": 32,
+    "sha256": "03922578505606c8808930e05058649e5073b4959487ca97546b8d8f4ab75955"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.006c.bsp_lump",
+    "bytes": 216,
+    "sha256": "3556e7257272c1b07d46ef228e3343331fb4dc66d0d7da088e8280296e9d8390"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.006d.bsp_lump",
+    "bytes": 876,
+    "sha256": "cdb3c77e0ffea77193b88c48d28376c4d897dca0d1d88604356da5221f2eb74a"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.006e.bsp_lump",
+    "bytes": 144,
+    "sha256": "226307f180f06f88b160e07e44041a0ef368ce92de21949801d46e8ca16be2dd"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.006f.bsp_lump",
+    "bytes": 1168,
+    "sha256": "54b66e2b7d15b141f98397bba21667d41d34fec89619eaa3c3637474f45f54e7"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0070.bsp_lump",
+    "bytes": 144,
+    "sha256": "1f7de2435443f7779b187e27c3e00d7e1f1487ac3248e5cc9ee2e178eec2542a"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0071.bsp_lump",
+    "bytes": 144,
+    "sha256": "36abbefa4a8735e52a470292c1fe37677a97bdfcdeceb912d2eaa1b7d3312fcd"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0072.bsp_lump",
+    "bytes": 576,
+    "sha256": "f3822369e466237655c2a757372ab90733fe096dd7d751bca420ad446a05a909"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0073.bsp_lump",
+    "bytes": 576,
+    "sha256": "09706cbf296ebfa17ff2ad34f961e01d86195b04cdd33f201eeedbd05312ad33"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0074.bsp_lump",
+    "bytes": 288,
+    "sha256": "f6671bef43b55fbe8419bb9bb54167e025dc817052688e16819dc0a4e8a39123"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0077.bsp_lump",
+    "bytes": 33408,
+    "sha256": "1a0ac5d4039fc38d815aeb1eb09975143368b0df469e96e01f7a253d1545e282"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0078.bsp_lump",
+    "bytes": 76984,
+    "sha256": "94b49ae146c9bf0319d96e7dc72cb3ddb1716c7ddde2325fff68e1b3c621d180"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.0079.bsp_lump",
+    "bytes": 615872,
+    "sha256": "c2c0c56983377aff0dab81c2f0572c49d2c6a820d4a25464cac01f57cbe78c6f"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.007a.bsp_lump",
+    "bytes": 378,
+    "sha256": "b2a0102821abc6b1b434ca221c482972b26077f7fc24175925b1b7c90493f629"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.007b.bsp_lump",
+    "bytes": 36,
+    "sha256": "81f0c9d7ad2cc2984687fb43ce3b15e9cfdfbe05a984b6f3eae44f23b2ad450f"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.007c.bsp_lump",
+    "bytes": 566796,
+    "sha256": "de01d0584cc12ac297cf21cc32e9637483903db48289146517dfacd75757c06b"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.007d.bsp_lump",
+    "bytes": 31020,
+    "sha256": "9be073b7583cbb239913ba4117d2ee5af96cf251eeb1b0da9a8c455735bf6d2d"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.007e.bsp_lump",
+    "bytes": 409434,
+    "sha256": "26cb471981d373617e02bc767373eb5b6c09e43ec8353536e8639c360b7da0d8"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner.bsp.007f.bsp_lump",
+    "bytes": 264,
+    "sha256": "b2e033569441095e292f39deb058ef16c446d0ba3c177960ef58a5aa5be17627"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner_env.ent",
+    "bytes": 78422,
+    "sha256": "517c9cf92ccc7977f726a8c334f12e7272da7a470d75b5fb87b4688d9435e67e"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner_fx.ent",
+    "bytes": 13541,
+    "sha256": "55c3352c3991cdbf5de77010188218462609a756230c1b6b3bf0029232399f7a"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner_script.ent",
+    "bytes": 221796,
+    "sha256": "6fe89bd35a661727b96278c599418c07b383e7b633c5819b48a6d290e3b9fd48"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner_snd.ent",
+    "bytes": 25772,
+    "sha256": "be6d9f2af97edd3f9965fdff9cdd3a6e720b30cd6fe9e3e305e660f14ec438c7"
+  },
+  {
+    "path": "inputs/extracted-client/maps/mp_rr_arena_phase_runner_spawn.ent",
+    "bytes": 26,
+    "sha256": "696e078573ca19b53fe7088b21bae252ef84a909eff8b1f406eada5a80100e96"
+  },
+  {
+    "path": "tools/repak/RePak.exe",
+    "bytes": 1199616,
+    "sha256": "20eb97ca25c7a54cc8eabdaeb863ebee529794d47bcb6d40881129a8361629ac"
+  },
+  {
+    "path": "tools/mrvn-radiant/install/Release/remap.exe",
+    "bytes": 538624,
+    "sha256": "29426fbda8384944b5178efee73a1edc3d633833190a26cde1ec5b36582b8b9d"
+  },
+  {
+    "path": "tools/bake_phase_environment.exe",
+    "bytes": 100322,
+    "sha256": "df5544a81cdb2a696fa23dd33f8cf41088a8b1e5d8e98c84f0aa481d4f559fe1"
+  },
+  {
+    "path": "tools/bake_interior_lighting.exe",
+    "bytes": 115744,
+    "sha256": "9723e7bf718f7a9bb4ee61a2a494f88381c3862ae37abc3f42d17dc1cc8e81fc"
+  },
+  {
+    "path": "tools/bake_character_probes.exe",
+    "bytes": 2632130,
+    "sha256": "dca2d296a5dfd97c566c4e85b78a099a09115a50de55ae26adf6eaa970cecc26"
+  }
+]

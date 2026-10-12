@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "bsp_sha256": "d806a21a1de916d14bb8a956391b1c5d7f17b07d9335a2d1e56ef4ef9494a0bf",
+  "regression_tests": 7,
+  "native_checks_per_load": 4196,
+  "validated_map_loads": 3,
+  "native_markers": {
+    "floor checks: 102/102 passed": 3,
+    "rail checks: 204/204 passed": 3,
+    "route checks: 1449/1449 passed": 3,
+    "route_floor checks: 1449/1449 passed": 3,
+    "center truck checks: 3/3 passed": 3,
+    "art support checks: 22/22 passed": 3,
+    "tree checks: 40/40 passed": 3,
+    "collision probes: 565/565 hit": 3,
+    "prop hull probes: 352/352 hit": 3,
+    "edge clearance probes: 10/10 clear": 3
+  },
+  "runtime_route": [
+    "cold_launch",
+    "same_map_reload",
+    "mp_coliseum",
+    "mp_phase_runner"
+  ],
+  "screenshots": 9,
+  "reported_tree_visual_verified": true,
+  "all_twenty_tree_roots_structurally_verified": true,
+  "initial_reload_failure": "An earlier run with an active custom camera produced a stock loadout/server exception. The harness now clears its camera before disconnect. The subsequent three loads and stock-map return passed; the precise native failure cause is not established.",
+  "limitations": [
+    "Sampled native traces do not prove every trajectory.",
+    "No exhaustive multiplayer/game-mode certification.",
+    "Source animation, selective portals and full streaming are incomplete."
+  ]
+}

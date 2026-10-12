@@ -1,0 +1,18 @@
+{
+  "Name": "ArenaComposite",
+  "Version": "0.7.0",
+  "LoadPriority": 10,
+  "Description": "Drop-Off arena port with recovered native vertex paint, source equipment, screens, ziplines and preserved collision.",
+  "Scripts": [
+    {
+      "Path": "_arena_composite.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "ArenaComposite_Init"
+      }
+    }
+  ],
+  "Localisation": [
+    "resource/composite_%language%.txt"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Apex arenas. Titanfall movement.",
+  "maps": [
+    {
+      "id": "drop-off",
+      "name": "Drop-Off",
+      "package": "ArenaComposite",
+      "source_map": "mp_rr_arena_composite",
+      "target_map": "mp_arena_composite",
+      "route": "r5-harness/routes/drop-off-survey.json",
+      "comparison": "r5-harness/output/drop-off-survey",
+      "status": "Playable preview",
+      "description": "An industrial rooftop arena with control rooms, elevated platforms and working ziplines.",
+      "modes": [
+        "Skirmish",
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Authored RGB paint is recovered on existing surfaces. Control-room colours, display artwork and some scenery remain incomplete. Intro and evac are disabled.",
+      "download": null
+    },
+    {
+      "id": "phase-runner",
+      "name": "Phase Runner",
+      "package": "PhaseRunner",
+      "source_map": "mp_rr_arena_phase_runner",
+      "target_map": "mp_phase_runner",
+      "route": "r5-harness/routes/phase-runner-survey.json",
+      "comparison": "r5-harness/output/phase-runner-survey",
+      "status": "Playable port",
+      "description": "Snow, rock and industrial tunnels connect opposing bases beneath the phase machinery.",
+      "modes": [
+        "Skirmish",
+        "Pilots vs Pilots",
+        "CTF",
+        "Hardpoint",
+        "Fastball"
+      ],
+      "notes": "Gold tunnel paint is recovered. Some source scenery and layered materials remain approximated. The tunnel catwalks are a Titanfall addition.",
+      "download": null
+    }
+  ]
+}

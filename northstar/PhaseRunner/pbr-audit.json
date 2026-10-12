@@ -1,0 +1,29 @@
+{
+  "counts": {
+    "primary_materials": 190,
+    "albedo_recovered": 190,
+    "normal_native_fallback": 3,
+    "gloss_native_fallback": 6,
+    "specular_native_fallback": 48,
+    "normal_recovered": 187,
+    "gloss_recovered": 184,
+    "specular_recovered": 142
+  },
+  "shader_sets": [
+    "0x52BE72F84BF38F30"
+  ],
+  "material_rpak_unchanged": false,
+  "existing_materials_preserved": true,
+  "normal_encoding_not_modified": true,
+  "new_materials": [
+    "white_floor_tile_mendoko",
+    "s2s_roof_panel_01",
+    "barrel_latch_blue"
+  ],
+  "native_bindings": {
+    "albedo": 0,
+    "normal": 1,
+    "gloss": 2,
+    "specular": 3
+  }
+}

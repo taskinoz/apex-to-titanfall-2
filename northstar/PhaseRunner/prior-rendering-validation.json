@@ -1,0 +1,79 @@
+{
+  "version": "0.1.36",
+  "bsp_sha256": "d5a3c2f03f6a9b64ea811d1ffcb19aa6662577166eba36261b4dad5ec937e6eb",
+  "native_server_loaded": true,
+  "load_seconds": 21.513418299999998,
+  "regression_tests": 7,
+  "collision_checks": 927,
+  "point_checks": 565,
+  "player_hull_checks": 352,
+  "clearance_checks": 10,
+  "visibility": {
+    "nodes": 255,
+    "references": 4561,
+    "reachable_meshes": 4561,
+    "all_parent_and_object_bounds_verified": true,
+    "contiguous_subtree_ranges_verified": true
+  },
+  "portal_records_restored_from": "0.1.34",
+  "new_portal_connections": 0,
+  "withdrawn_version": "0.1.35",
+  "withdrawal_reason": "User reported sky culling and hall of mirrors.",
+  "sky_and_tunnel_cpu_camera_coverage_checked": true,
+  "render_sharing": {
+    "old_vertices": 2619054,
+    "new_vertices": 2421148,
+    "old_vertex_bytes": 115238376,
+    "new_vertex_bytes": 106530512,
+    "old_material_sorts": 4561,
+    "new_material_sorts": 337,
+    "unique_material_lightmap_bindings": 326,
+    "vertex_bytes_saved": 8707864,
+    "normal_and_position_buffers_preserved": true,
+    "exact_values_only": true,
+    "tangents_not_averaged": true,
+    "max_local_vertices": 60000,
+    "index_padding": {
+      "meshes": 4561,
+      "render_triangles": 873018,
+      "odd_meshes_padded": 2084,
+      "pair_reads_within_declared_vertex_ranges": true,
+      "padding_triangles_degenerate": true,
+      "six_index_alignment_verified": true
+    }
+  },
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\northstar\\PhaseRunner.PortalfreeRelease\\mod\\maps\\mp_phase_runner_preview.bsp",
+    "meshes": 4561,
+    "real_triangles": 873018,
+    "native_padded_indices": 2625306,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4561,
+    "prefix_indices": 2625306,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4561,
+      4561,
+      4561
+    ],
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "draw_headroom_percent": 16.54376983642578,
+  "all_rendered_corner_attributes_and_material_bindings_exact": true,
+  "positions_normals_real_mesh_bounds_collision_lightmaps_lights_shadow_geometry_walkways_preserved": true,
+  "unchanged_asset_hashes_verified": [
+    "paks/phase_runner_world.rpak",
+    "paks/rpak.json",
+    "mod/maps/mp_phase_runner_preview.stbsp",
+    "mod/models/vistas/grave_se.mdl",
+    "mod/models/vistas/planet_blue_sun.mdl",
+    "mod/scripts/vscripts/_phase_runner_preview.nut"
+  ],
+  "prior_client_lighting_confirmed": "0.1.34",
+  "prior_lighting_evidence": "prior-lighting-validation.json",
+  "rollback_archive": "PhaseRunner.Preview-0.1.34.zip",
+  "client_rendering_verified": false,
+  "client_performance_verified": false,
+  "limitation": "Dedicated loading does not exercise client PVS, view-angle rendering, GPU draw submission or frame rate. Render data savings are measured; FPS improvement is not measured. Texture mips remain resident; no spatial streaming is added."
+}

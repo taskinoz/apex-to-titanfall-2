@@ -1,0 +1,793 @@
+{
+  "tdm": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "tdm",
+      "objectives": []
+    },
+    "teams": {
+      "2": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 2,
+        "spawnTeam": 2,
+        "origin": [
+          -5790.0,
+          -1200.0,
+          -867.4412841796875
+        ]
+      },
+      "3": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 3,
+        "spawnTeam": 3,
+        "origin": [
+          6010.0,
+          -1360.0,
+          -870.0661010742188
+        ]
+      }
+    }
+  },
+  "ps": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "ps",
+      "objectives": []
+    },
+    "teams": {
+      "2": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 2,
+        "spawnTeam": 2,
+        "origin": [
+          -5790.0,
+          -1200.0,
+          -867.4412841796875
+        ]
+      },
+      "3": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 3,
+        "spawnTeam": 3,
+        "origin": [
+          6010.0,
+          -1360.0,
+          -870.0661010742188
+        ]
+      }
+    }
+  },
+  "ctf": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "ctf",
+      "objectives": [
+        {
+          "valid": true,
+          "name": "imcFlag"
+        },
+        {
+          "valid": true,
+          "name": "milFlag"
+        }
+      ]
+    },
+    "teams": {
+      "2": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 2,
+        "spawnTeam": 2,
+        "origin": [
+          -5790.0,
+          -1200.0,
+          -867.4412841796875
+        ]
+      },
+      "3": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 3,
+        "spawnTeam": 3,
+        "origin": [
+          6010.0,
+          -1360.0,
+          -870.0661010742188
+        ]
+      }
+    },
+    "screenshot": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515\\screenshots\\militia-ctf-base-f51f45ca.png",
+      "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515\\screenshots\\militia-ctf-base-f51f45ca.tga",
+      "width": 1280,
+      "height": 720,
+      "captured": 1791259042.5144272,
+      "sha256": "4ad469606da5bd4260dcdb3e163bdd7c3073db4fbf4f79c96bb42ef9604b790c",
+      "state": {
+        "game_running": true,
+        "game_pid": 14044,
+        "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+        "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515",
+        "contexts": {
+          "ui": {
+            "loading": false,
+            "generation": "c523609192574b5fa09c690e30757fd2",
+            "ready": true,
+            "level": "mp_phase_runner",
+            "context": "ui",
+            "received": 1791259040.6581557
+          },
+          "server": {
+            "loading": false,
+            "generation": "c523609192574b5fa09c690e30757fd2",
+            "players": 1,
+            "ready": true,
+            "level": "mp_phase_runner",
+            "context": "server",
+            "received": 1791259040.6591556
+          },
+          "client": {
+            "angles": [
+              0.0,
+              180.0,
+              0.0
+            ],
+            "origin": [
+              6010.0,
+              -1360.0,
+              -810.0661010742188
+            ],
+            "context": "client",
+            "loading": false,
+            "generation": "c523609192574b5fa09c690e30757fd2",
+            "level": "mp_phase_runner",
+            "camera": false,
+            "ready": true,
+            "received": 1791259040.8768048
+          }
+        }
+      }
+    }
+  },
+  "cp": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "cp",
+      "objectives": [
+        {
+          "group": "A",
+          "progress": 0.0,
+          "valid": true,
+          "team": 0
+        },
+        {
+          "group": "B",
+          "progress": 0.0,
+          "valid": true,
+          "team": 0
+        },
+        {
+          "group": "C",
+          "progress": 0.0,
+          "valid": true,
+          "team": 0
+        }
+      ]
+    },
+    "teams": {
+      "2": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 2,
+        "spawnTeam": 2,
+        "origin": [
+          -5930.0,
+          -1520.0,
+          -837.896484375
+        ]
+      },
+      "3": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 3,
+        "spawnTeam": 3,
+        "origin": [
+          6150.0,
+          -1520.0,
+          -837.8944702148438
+        ]
+      }
+    },
+    "capture_tests": {
+      "A": {
+        "group": "A",
+        "progress": 1.3646138906478882,
+        "valid": true,
+        "team": 2
+      },
+      "B": {
+        "group": "B",
+        "progress": 1.1925709247589111,
+        "valid": true,
+        "team": 2
+      },
+      "C": {
+        "group": "C",
+        "progress": 1.1925709247589111,
+        "valid": true,
+        "team": 3
+      }
+    },
+    "screenshot": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515\\screenshots\\hardpoint-captured-df7007ab.png",
+      "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515\\screenshots\\hardpoint-captured-df7007ab.tga",
+      "width": 1280,
+      "height": 720,
+      "captured": 1791259104.179004,
+      "sha256": "21fb9be635b8b0462e3a8c779c8037ce5aa8a2f8616a598a7d7ee770bb7d5d75",
+      "state": {
+        "game_running": true,
+        "game_pid": 14044,
+        "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+        "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515",
+        "contexts": {
+          "ui": {
+            "loading": false,
+            "generation": "71057ee7eab94c088f5b50b65b1fae7f",
+            "ready": true,
+            "level": "mp_phase_runner",
+            "context": "ui",
+            "received": 1791259102.537065
+          },
+          "server": {
+            "loading": false,
+            "generation": "71057ee7eab94c088f5b50b65b1fae7f",
+            "players": 1,
+            "ready": true,
+            "level": "mp_phase_runner",
+            "context": "server",
+            "received": 1791259102.3630784
+          },
+          "client": {
+            "angles": [
+              0.0,
+              90.0,
+              0.0
+            ],
+            "origin": [
+              4670.0,
+              -1700.0,
+              -832.0
+            ],
+            "context": "client",
+            "loading": false,
+            "generation": "71057ee7eab94c088f5b50b65b1fae7f",
+            "level": "mp_phase_runner",
+            "camera": false,
+            "ready": true,
+            "received": 1791259102.5385776
+          }
+        }
+      }
+    }
+  },
+  "aitdm": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "aitdm",
+      "objectives": []
+    },
+    "teams": {
+      "2": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 2,
+        "spawnTeam": 2,
+        "origin": [
+          -5790.0,
+          -1360.0,
+          -867.3994750976562
+        ]
+      },
+      "3": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 3,
+        "spawnTeam": 3,
+        "origin": [
+          6290.0,
+          -1232.0,
+          -837.96875
+        ]
+      }
+    }
+  },
+  "fastball": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "ok": true,
+      "blocked": [],
+      "panels": 3,
+      "unsupported": [],
+      "mode": "fastball",
+      "objectives": []
+    },
+    "teams": {},
+    "after_intro": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "ok": true,
+      "blocked": [],
+      "panels": 3,
+      "unsupported": [],
+      "mode": "fastball",
+      "objectives": []
+    },
+    "screenshot": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515\\screenshots\\fastball-native-intro-d9af553c.png",
+      "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515\\screenshots\\fastball-native-intro-d9af553c.tga",
+      "width": 1280,
+      "height": 720,
+      "captured": 1791259150.7946866,
+      "sha256": "44956dd7b5144ed0ffcfd18d03a5e8e82ff7455096e9583713734f44eb39fa25",
+      "state": {
+        "game_running": true,
+        "game_pid": 14044,
+        "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+        "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261006-145515",
+        "contexts": {
+          "ui": {
+            "loading": false,
+            "generation": "792d7a7e1c444d6b839be861a9757373",
+            "ready": true,
+            "level": "mp_phase_runner",
+            "context": "ui",
+            "received": 1791259149.0081618
+          },
+          "server": {
+            "loading": false,
+            "generation": "792d7a7e1c444d6b839be861a9757373",
+            "players": 1,
+            "ready": true,
+            "level": "mp_phase_runner",
+            "context": "server",
+            "received": 1791259148.7284908
+          },
+          "client": {
+            "angles": [
+              -0.8562246561050415,
+              1.8837882280349731,
+              0.0
+            ],
+            "origin": [
+              -2164.03955078125,
+              -1691.160400390625,
+              -1431.30078125
+            ],
+            "context": "client",
+            "loading": false,
+            "generation": "792d7a7e1c444d6b839be861a9757373",
+            "level": "mp_phase_runner",
+            "camera": false,
+            "ready": true,
+            "received": 1791259149.0101714
+          }
+        }
+      }
+    }
+  },
+  "lts": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "lts",
+      "objectives": []
+    },
+    "teams": {}
+  },
+  "ttdm": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "ttdm",
+      "objectives": []
+    },
+    "teams": {}
+  },
+  "mfd": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "mfd",
+      "objectives": []
+    },
+    "teams": {
+      "2": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 2,
+        "spawnTeam": 2,
+        "origin": [
+          -5790.0,
+          -1360.0,
+          -867.3994750976562
+        ]
+      },
+      "3": {
+        "classname": "info_spawnpoint_human_start",
+        "team": 3,
+        "spawnTeam": 3,
+        "origin": [
+          6290.0,
+          -1232.0,
+          -837.96875
+        ]
+      }
+    }
+  },
+  "ffa": {
+    "check": {
+      "spawns": {
+        "info_spawnpoint_human": {
+          "imc": 0,
+          "neutral": 42,
+          "militia": 0,
+          "total": 42
+        },
+        "info_spawnpoint_titan": {
+          "imc": 0,
+          "neutral": 12,
+          "militia": 0,
+          "total": 12
+        },
+        "info_spawnpoint_human_start": {
+          "imc": 12,
+          "neutral": 0,
+          "militia": 12,
+          "total": 24
+        },
+        "info_spawnpoint_flag": {
+          "imc": 1,
+          "neutral": 0,
+          "militia": 1,
+          "total": 2
+        },
+        "info_spawnpoint_titan_start": {
+          "imc": 3,
+          "neutral": 0,
+          "militia": 3,
+          "total": 6
+        }
+      },
+      "blocked": [],
+      "ok": true,
+      "unsupported": [],
+      "mode": "ffa",
+      "objectives": []
+    },
+    "teams": {}
+  }
+}

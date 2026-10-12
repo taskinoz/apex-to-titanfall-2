@@ -1,0 +1,100 @@
+[
+  {
+    "index": 0,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+    "method": "IRPS",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 1,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+    "method": "IRPS",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 2,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+    "method": "IRPS",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 3,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+    "method": "IRPS",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 4,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+    "method": "IRPS",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 5,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+    "method": "IRPS",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 6,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+    "method": "IRPS",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 7,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_stopper_01.rmdl",
+    "method": "IRPS",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 8152,
+    "model": "mdl/decals/puddle_floor_decal_flat_04.rmdl",
+    "method": "BVH",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 8153,
+    "model": "mdl/decals/puddle_floor_decal_flat_04.rmdl",
+    "method": "BVH",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 8154,
+    "model": "mdl/decals/puddle_floor_decal_flat_04.rmdl",
+    "method": "BVH",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 2371,
+    "model": "mdl/haven/haven_bamboo_tree_01.rmdl",
+    "method": "BVH",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 2372,
+    "model": "mdl/haven/haven_bamboo_tree_01.rmdl",
+    "method": "BVH",
+    "brushes": 0,
+    "headers": 0
+  },
+  {
+    "index": 2373,
+    "model": "mdl/haven/haven_bamboo_tree_01.rmdl",
+    "method": "BVH",
+    "brushes": 0,
+    "headers": 0
+  }
+]

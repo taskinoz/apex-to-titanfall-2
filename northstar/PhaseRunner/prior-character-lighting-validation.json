@@ -1,0 +1,129 @@
+{
+  "version": "0.1.38",
+  "map_name": "mp_phase_runner",
+  "bsp_sha256": "a0a6fef4aa6151d6120195fa63c4daf9915f2055deff483c19daf06b6084f84b",
+  "native_server_loaded": true,
+  "load_seconds": 31.456186199999998,
+  "regression_tests": 7,
+  "existing_collision_checks": 927,
+  "catwalk_checks": {
+    "floor": 102,
+    "rail": 204,
+    "route": 1449,
+    "route_floor": 1449
+  },
+  "character_lighting": {
+    "version": "0.1.38",
+    "source_version": "0.1.37",
+    "map_name": "mp_phase_runner",
+    "gameplay_probes": 39819,
+    "menu_probes": 2,
+    "total_probes": 39821,
+    "sunlit_probes": 17923,
+    "local_lit_probes": 3532,
+    "tree_nodes": 16383,
+    "probe_bytes": 1911408,
+    "probe_lookup": "Native KD fallback; optional BSP accelerator remains absent.",
+    "native_decoder_scale": 0.0001220703125,
+    "native_ambient_layout": "Three signed fixed-point XYZ/W directional ambient coefficients, one set per RGB channel.",
+    "native_probe_stride": 48,
+    "sky_and_sun_visibility_baked": true,
+    "maximum_local_lights": 4,
+    "local_light_indices": "Filtered native hardware world lights; loader adds reserved dynamic-light offset 32.",
+    "sky_decorative_geometry_excluded": true,
+    "bsp_unchanged_except": [
+      4,
+      101,
+      103,
+      104
+    ],
+    "world_geometry_collision_visibility_and_surface_lighting_preserved": true,
+    "probes_include_both_complete_catwalks_buildings_and_ejection_space": true,
+    "fixture_count": 30,
+    "native_evidence": [
+      "logs/native-reader-engine-0xcd050.txt",
+      "logs/native-reader-engine-0xc7a90.txt",
+      "logs/native-range-0xc7e74.txt",
+      "logs/native-range-0xc8fc0.txt"
+    ],
+    "compaction": {
+      "original_bytes": 1056941892,
+      "compact_bytes": 1059780836,
+      "non_game_lumps_byte_identical": false,
+      "unchanged_lumps_byte_verified": true,
+      "replaced_lumps": [
+        4,
+        101,
+        103,
+        104
+      ],
+      "game_lump_offsets_relocated": true,
+      "checks": {
+        "version": 37,
+        "bytes": 1059780836,
+        "nonempty_lumps": 60,
+        "collision_geosets": 546,
+        "structural_checks_passed": true,
+        "in_game_verified": false,
+        "native_triangle_pair_validation": null
+      }
+    },
+    "elapsed_seconds": 6.031000000075437,
+    "client_lighting_verified": false,
+    "limitations": "Direct sun/sky and local visibility with small artistic ambient fill; no bounced GI or new reflection cubemaps. Interior and airborne samples need client visual confirmation."
+  },
+  "independent_probe_query_validation": {
+    "queries": 707,
+    "maximum_tested_references": 93,
+    "maximum_pending_nodes": 14
+  },
+  "native_local_light_index_audit": {
+    "homestead": {
+      "raw": {
+        "links": 1002,
+        "within_radius": 184,
+        "median_distance_to_radius": 3.3289140092976663
+      },
+      "filtered": {
+        "links": 1002,
+        "within_radius": 957,
+        "median_distance_to_radius": 0.7054501800650197
+      }
+    },
+    "colony": {
+      "raw": {
+        "links": 1002,
+        "within_radius": 147,
+        "median_distance_to_radius": 8.221279463637696
+      },
+      "filtered": {
+        "links": 1002,
+        "within_radius": 962,
+        "median_distance_to_radius": 0.5162758903829203
+      }
+    }
+  },
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\character-lighting\\mp_phase_runner.bsp",
+    "meshes": 4586,
+    "real_triangles": 881966,
+    "native_padded_indices": 2652150,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4586,
+    "prefix_indices": 2652150,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4586,
+      4586,
+      4586
+    ],
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "old_full_backup": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\installed-backups\\PhaseRunner.Preview-0.1.37-before-character-lighting",
+  "old_backup_files_verified": 49,
+  "prior_evidence": "prior-catwalk-validation.json",
+  "client_lighting_verified": false,
+  "client_performance_verified": false,
+  "limitation": "Dedicated loading and CPU probes do not verify GPU character/weapon illumination, reflection appearance or frame rate."
+}

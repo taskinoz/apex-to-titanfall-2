@@ -1,0 +1,220 @@
+{
+  "native_shader_set": "0x92a558802becb2d5",
+  "vertex_guid": "0xf93913c7915690bf",
+  "pixel_guid": "0x1675e75e60ffb061",
+  "pixel_buffers": [
+    {
+      "index": 0,
+      "bytes": 31792,
+      "input_flags": "20720000023012000000000000000000"
+    },
+    {
+      "index": 1,
+      "bytes": 31428,
+      "input_flags": "20720000023012000000000000000000"
+    },
+    {
+      "index": 4,
+      "bytes": 82036,
+      "input_flags": "20720000023012000000000000000000"
+    },
+    {
+      "index": 5,
+      "bytes": 81444,
+      "input_flags": "20720000023012000000000000000000"
+    },
+    {
+      "index": 8,
+      "bytes": 31796,
+      "input_flags": "20720000023012000000000000000000"
+    },
+    {
+      "index": 9,
+      "bytes": 31428,
+      "input_flags": "20720000023012000000000000000000"
+    },
+    {
+      "index": 12,
+      "bytes": 82036,
+      "input_flags": "20720000023012000000000000000000"
+    },
+    {
+      "index": 13,
+      "bytes": 81448,
+      "input_flags": "20720000023012000000000000000000"
+    }
+  ],
+  "vertex_buffers": [
+    {
+      "index": 0,
+      "bytes": 9632,
+      "input_flags": "20420000120000002072000002301200"
+    },
+    {
+      "index": 1,
+      "bytes": 9844,
+      "input_flags": "20420000120000002073000002301200"
+    },
+    {
+      "index": 2,
+      "bytes": 10092,
+      "input_flags": "a042000012000000a072000002301200"
+    },
+    {
+      "index": 3,
+      "bytes": 10376,
+      "input_flags": "a042000012000000a073000002301200"
+    },
+    {
+      "index": 4,
+      "bytes": 9636,
+      "input_flags": "20420000120000002072000002301200"
+    },
+    {
+      "index": 5,
+      "bytes": 9848,
+      "input_flags": "20420000120000002073000002301200"
+    },
+    {
+      "index": 6,
+      "bytes": 10088,
+      "input_flags": "a042000012000000a072000002301200"
+    },
+    {
+      "index": 7,
+      "bytes": 10372,
+      "input_flags": "a042000012000000a073000002301200"
+    },
+    {
+      "index": 8,
+      "bytes": 11944,
+      "input_flags": "25020000120000002072000002301200"
+    },
+    {
+      "index": 9,
+      "bytes": 12064,
+      "input_flags": "25020000120000002073000002301200"
+    },
+    {
+      "index": 10,
+      "bytes": 12360,
+      "input_flags": "a502000012000000a072000002301200"
+    },
+    {
+      "index": 11,
+      "bytes": 12568,
+      "input_flags": "a502000012000000a073000002301200"
+    },
+    {
+      "index": 12,
+      "bytes": 11944,
+      "input_flags": "25020000120000002072000002301200"
+    },
+    {
+      "index": 13,
+      "bytes": 12064,
+      "input_flags": "25020000120000002073000002301200"
+    },
+    {
+      "index": 14,
+      "bytes": 12356,
+      "input_flags": "a502000012000000a072000002301200"
+    },
+    {
+      "index": 15,
+      "bytes": 12576,
+      "input_flags": "a502000012000000a073000002301200"
+    },
+    {
+      "index": 16,
+      "bytes": 11384,
+      "input_flags": "24020000120000002072000002301200"
+    },
+    {
+      "index": 17,
+      "bytes": 11580,
+      "input_flags": "24020000120000002073000002301200"
+    },
+    {
+      "index": 18,
+      "bytes": 11928,
+      "input_flags": "a402000012000000a072000002301200"
+    },
+    {
+      "index": 19,
+      "bytes": 12136,
+      "input_flags": "a402000012000000a073000002301200"
+    },
+    {
+      "index": 20,
+      "bytes": 11384,
+      "input_flags": "24020000120000002072000002301200"
+    },
+    {
+      "index": 21,
+      "bytes": 11576,
+      "input_flags": "24020000120000002073000002301200"
+    },
+    {
+      "index": 22,
+      "bytes": 11924,
+      "input_flags": "a402000012000000a072000002301200"
+    },
+    {
+      "index": 23,
+      "bytes": 12132,
+      "input_flags": "a402000012000000a073000002301200"
+    },
+    {
+      "index": 24,
+      "bytes": 11828,
+      "input_flags": "3c020000120000002072000002301200"
+    },
+    {
+      "index": 25,
+      "bytes": 12044,
+      "input_flags": "3c020000120000002073000002301200"
+    },
+    {
+      "index": 26,
+      "bytes": 12384,
+      "input_flags": "bc02000012000000a072000002301200"
+    },
+    {
+      "index": 27,
+      "bytes": 12576,
+      "input_flags": "bc02000012000000a073000002301200"
+    },
+    {
+      "index": 28,
+      "bytes": 11840,
+      "input_flags": "3c020000120000002072000002301200"
+    },
+    {
+      "index": 29,
+      "bytes": 12044,
+      "input_flags": "3c020000120000002073000002301200"
+    },
+    {
+      "index": 30,
+      "bytes": 12380,
+      "input_flags": "bc02000012000000a072000002301200"
+    },
+    {
+      "index": 31,
+      "bytes": 12580,
+      "input_flags": "bc02000012000000a073000002301200"
+    }
+  ],
+  "vertex_textures": 0,
+  "pixel_textures": 14,
+  "samplers": 3,
+  "unchanged_native_bytecode": true,
+  "old_external_shader": "0x5bbbf75fe4eadb81",
+  "new_embedded_shader": "0xc0f822522d0cba1e",
+  "new_pixel_guid": "0xdf1f5c640ba9d050",
+  "new_vertex_guid": "0x11bbb0f865c61ce0",
+  "material_only_repair": true,
+  "geometry_and_collision_unchanged": true,
+  "rpak_sha256": "c0cc8471ff0f5916eda1d308e26c19dcc4c74051c248fed2495c6b96f2219fd0"
+}

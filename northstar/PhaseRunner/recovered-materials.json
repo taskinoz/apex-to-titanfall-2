@@ -1,0 +1,38 @@
+{
+  "white_floor_tile_mendoko": {
+    "name": "world/phase_runner_preview/white_floor_tile_mendoko",
+    "width": 1024,
+    "height": 1024,
+    "channels": {
+      "albedo": "tools\\legion\\exported_files\\images\\0x386cb750af398a6a.dds",
+      "normal": "tools\\legion\\exported_files\\images\\0x4bb097f2155e482e.dds",
+      "gloss": "tools\\legion\\exported_files\\images\\0x55eb53793a40a6e1.dds",
+      "spec": "tools\\legion\\exported_files\\materials\\white_floor_tile_mendoko_02_colpass\\0x1cd2b9f508f46a7e.dds"
+    },
+    "provenance": "Exact Apex material GUID texture bindings"
+  },
+  "s2s_roof_panel_01": {
+    "name": "world/phase_runner_preview/s2s_roof_panel_01",
+    "width": 1024,
+    "height": 1024,
+    "channels": {
+      "albedo": "tools\\legion\\exported_files\\materials\\s2s_roof_panel_01\\s2s_roof_panel_01_col.dds",
+      "normal": "tools\\legion\\exported_files\\materials\\s2s_roof_panel_01\\s2s_roof_panel_01_nml.dds",
+      "gloss": "tools\\legion\\exported_files\\materials\\s2s_roof_panel_01\\s2s_roof_panel_01_gls.dds",
+      "spec": "tools\\legion\\exported_files\\materials\\s2s_roof_panel_01\\s2s_roof_panel_01_spc.dds"
+    },
+    "provenance": "Matching Titanfall roof source"
+  },
+  "barrel_latch_blue": {
+    "name": "world/phase_runner_preview/barrel_latch_blue",
+    "width": 512,
+    "height": 512,
+    "channels": {
+      "albedo": "tools\\legion\\exported_files\\materials\\barrel_latch_blue\\barrel_latch_blue_col.dds",
+      "normal": "tools\\legion\\exported_files\\materials\\barrel_latch_blue\\barrel_latch_blue_nml.dds",
+      "gloss": "tools\\legion\\exported_files\\materials\\barrel_latch_blue\\barrel_latch_blue_gls.dds",
+      "spec": "tools\\legion\\exported_files\\materials\\barrel_latch_blue\\barrel_latch_blue_spc.dds"
+    },
+    "provenance": "Exact Apex barrel source with shader-labelled channels"
+  }
+}

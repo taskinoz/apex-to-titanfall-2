@@ -1,0 +1,70 @@
+{
+  "version": "0.7.0",
+  "previous_version": "0.6.0",
+  "changed_vertices": 190916,
+  "native_shader_materials": 17,
+  "paint_pack_bytes": 54114670,
+  "preserved": [
+    "collision",
+    "geometry",
+    "UVs",
+    "normals",
+    "lightmaps",
+    "character probes",
+    "render visibility",
+    "gameplay entities"
+  ],
+  "native_visual_comparison": [
+    {
+      "view": "court-overview",
+      "source_sha256": "c6edcfe0cb2af09b03430d441b843ee606a47579fb601921783fadc5f4272f0e",
+      "port_sha256": "df8277d0a0fbbd95c94af3649b5c042b35196d608c4a2af4d09835e5df4f210b"
+    },
+    {
+      "view": "west-control",
+      "source_sha256": "0c000d77480c9ff38aadb270cf08ffadc820d80732f58330e69376685669d14a",
+      "port_sha256": "23b13281a1a723cf469bb9b77dafc8fa8604d640746b6825a41e8dd90d22415b"
+    },
+    {
+      "view": "north-platform",
+      "source_sha256": "67f94d66d4aa9acbf0eef6b37cb795349f6f6a22010adabbceb118513680cd14",
+      "port_sha256": "6ccc0f2b4b6ae92cee5d8da19cecd903447e3b443215fad708bcb4029a70e3ad"
+    },
+    {
+      "view": "west-cargo",
+      "source_sha256": "d2263afe8483b8c679443c1f5efc27a0f1e90a15cd117f6b74bc211a59c39473",
+      "port_sha256": "63c787dd251b242c31ab7b2d12cfab5cf804cb32530fdde4700b005955a05d9f"
+    }
+  ],
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\northstar\\ArenaComposite\\mod\\maps\\mp_arena_composite.bsp",
+    "meshes": 3024,
+    "real_triangles": 942146,
+    "native_padded_indices": 2830530,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 3024,
+    "prefix_indices": 2830530,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      2892,
+      2892,
+      3024
+    ],
+    "static_batch_runs": 353,
+    "unique_static_draw_keys": 353,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "source_captures_reused_with_hash_verification": true,
+  "limitations": [
+    "Vertex alpha and Apex terrain layer blending remain approximated.",
+    "Animated banners and source scenery omissions remain.",
+    "Paired captures do not establish multiplayer frame times."
+  ]
+}

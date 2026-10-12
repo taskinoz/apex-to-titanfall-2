@@ -1,0 +1,21 @@
+{
+  "Name": "MapTest.Harness",
+  "Version": "0.1.0",
+  "LoadPriority": 100,
+  "Description": "Opt-in local map testing: HTTP control, cameras, player placement and captures.",
+  "ConVars": [
+    {"Name":"map_harness_enabled","DefaultValue":"0"},
+    {"Name":"map_harness_port","DefaultValue":"39131"},
+    {"Name":"map_harness_generation","DefaultValue":""},
+    {"Name":"map_harness_token","DefaultValue":""}
+  ],
+  "Scripts": [
+    {
+      "Path":"_map_test_harness.nut",
+      "RunOn":"UI || (CLIENT && MP) || (SERVER && MP)",
+      "UICallback":{"After":"MapTestHarness_Init"},
+      "ClientCallback":{"After":"MapTestHarness_Init"},
+      "ServerCallback":{"After":"MapTestHarness_Init"}
+    }
+  ]
+}

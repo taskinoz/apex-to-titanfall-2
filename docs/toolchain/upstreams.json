@@ -1,0 +1,135 @@
+{
+  "upstreams": [
+    {
+      "directory": "tools/bsp_regen",
+      "url": "https://github.com/RoyalBlue1/bsp_regen.git",
+      "commit": "5b761e6bad2751051218928195c6e54edcd3480a",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/bsp_regen/LICENSE.txt"
+      ]
+    },
+    {
+      "directory": "tools/bsp_regen_upstream",
+      "url": "https://github.com/snake-biscuits/bsp_regen.git",
+      "commit": "bdbaec7fbc865e3738267e41903533e4020b5e7c",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/bsp_regen_upstream/LICENSE.txt"
+      ]
+    },
+    {
+      "directory": "tools/bsp_tool",
+      "url": "https://github.com/snake-biscuits/bsp_tool.git",
+      "commit": "655627ea8704353ac14bd753df8ca05c15838eda",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/bsp_tool/LICENSE.txt"
+      ]
+    },
+    {
+      "directory": "tools/legion-source",
+      "url": "https://github.com/r-ex/LegionPlus.git",
+      "commit": "a0344e34cb16d82bd1d79e0d6cc0ef999f614d2a",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/legion-source/LICENSE"
+      ]
+    },
+    {
+      "directory": "tools/mdlshit",
+      "url": "https://github.com/headassbtw/mdlshit.git",
+      "commit": "18fe99af370b35ace20c3deeea955caf9c789bb9",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/mdlshit/LICENSE"
+      ]
+    },
+    {
+      "directory": "tools/meshoptimizer",
+      "url": "https://github.com/zeux/meshoptimizer.git",
+      "commit": "4c203430ca565cb59a468a91922c76c208169536",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/meshoptimizer/LICENSE.md"
+      ]
+    },
+    {
+      "directory": "tools/mrvn-radiant",
+      "url": "https://github.com/MRVN-Radiant/MRVN-Radiant.git",
+      "commit": "8022aefcf9506786fe9edf138dbf48cde0fa82f6",
+      "patch": "docs/toolchain/patches/mrvn-radiant.patch",
+      "patched_files": [
+        "CMakeLists.txt",
+        "libs/CMakeLists.txt",
+        "tools/remap/source/bspfile_shared.cpp"
+      ],
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/mrvn-radiant/LICENSE"
+      ]
+    },
+    {
+      "directory": "tools/northstar-launcher",
+      "url": "https://github.com/R2Northstar/NorthstarLauncher.git",
+      "commit": "f698c8a90b9d3d6d1740eda57101db7011d051d2",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/northstar-launcher/LICENSE"
+      ]
+    },
+    {
+      "directory": "tools/r5bsp-viewer",
+      "url": "https://github.com/mrsteyk/r5bsp-viewer-cpp.git",
+      "commit": "e232fd6a685384413102ed82f4cfb2ef1afdd76e",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/r5bsp-viewer/LICENSE"
+      ]
+    },
+    {
+      "directory": "tools/r5launcher",
+      "url": "https://github.com/zeex64/r5reloaded_launcher.git",
+      "commit": "86c5d8ebd87c55487c25192213d09434edb1e3db",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/r5launcher/LICENSE"
+      ]
+    },
+    {
+      "directory": "tools/r5sdk",
+      "url": "https://github.com/Mauler125/r5sdk.git",
+      "commit": "c49e0d2123bc3ddb53419005ddd7c6ef73925faf",
+      "excluded_changed_non_source_files": [],
+      "licenses": []
+    },
+    {
+      "directory": "tools/r5vpk",
+      "url": "https://github.com/r-ex/r5vpk.git",
+      "commit": "48e64fa220f5ffff9d0a9cce8dffe9048bc82e7e",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/r5vpk/LICENSE"
+      ]
+    },
+    {
+      "directory": "tools/repak-source",
+      "url": "https://github.com/r-ex/RePak.git",
+      "commit": "adc52f775942ac63503ebbbed93f25fb1257bd58",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/repak-source/LICENSE"
+      ]
+    },
+    {
+      "directory": "tools/rsx-source",
+      "url": "https://github.com/r-ex/rsx.git",
+      "commit": "6014ca814b945c52b991f2914d7bb665e1588272",
+      "excluded_changed_non_source_files": [],
+      "licenses": [
+        "docs/toolchain/licenses/rsx-source/LICENSE"
+      ]
+    }
+  ],
+  "excluded": "Downloaded binaries, game inputs, build directories and untracked runtime files remain local."
+}

@@ -1,0 +1,98 @@
+{
+  "drop-off": {
+    "court-overview": [
+      "The ramps, cargo and banner mounting frames are present. The source character artwork is replaced by dark banner surfaces.",
+      "The port's lower court is much darker than the original at this camera."
+    ],
+    "west-control": [
+      "The large Hammond wall display is absent, although the surrounding wall and doorway are present.",
+      "The source's red wall appearance is not reproduced. This view alone does not distinguish material tint from lighting."
+    ],
+    "north-platform": [
+      "The Distribution Center sign, tower panels and elevated approaches are present.",
+      "The original's distant city and cloud backdrop is replaced by the port's simplified sky."
+    ],
+    "west-cargo": [
+      "The stacked containers and yellow railings line up with the original.",
+      "The foreground panels retain paint variation, but the surrounding walls and cargo are darker and less colourful."
+    ],
+    "south-overview": [
+      "The central hanging cylinder and surrounding structural columns are present.",
+      "The equipment below the cylinder lacks much of the source's illuminated screen detail and red/cyan lighting."
+    ],
+    "east-control": [
+      "The second Hammond wall display is also absent. The doorway and wall panel geometry are present.",
+      "The source has blue wall panels and bright local fixtures; the port is more neutral and dimmer."
+    ],
+    "lower-court": [
+      "Both stair approaches, foreground cargo and thin overhead zipline ropes are present.",
+      "Bright overhead lighting, distant displays and atmospheric light shafts differ substantially from the source."
+    ],
+    "central-window": [
+      "The overhead beams, central ramps and equipment stations are present.",
+      "Several source screens show Hammond graphics; corresponding port screens are flat blue. The underside lighting is also much darker."
+    ],
+    "north-closure": [
+      "A cyan grid-textured blocker crosses the port's hallway. The original shows the hallway panels and a Hammond-marked object farther inside.",
+      "This is a deliberately closed room: retain its access restriction while replacing the visible blocker with a suitable surface."
+    ],
+    "upper-west": [
+      "The raised walkway, roof dome and tall wall structure are present.",
+      "Small rooftop equipment and red warning lights visible in the source are absent; distant city scenery is simplified."
+    ],
+    "upper-east": [
+      "The mirrored upper walkway and roof structure are present.",
+      "Small rooftop fixtures and the source's city/cloud backdrop remain missing or approximated."
+    ],
+    "west-banner": [
+      "The banner support beams are visible in both engines at this angle.",
+      "The port's banners have no character artwork and remain substantially darker than the original."
+    ]
+  },
+  "phase-runner": {
+    "arena-overview": [
+      "The two large tunnels, cranes, roads and central rock structures are present.",
+      "The source has much denser foliage and broad green/purple terrain patches. The port shows more exposed rock and snow. Source banner artwork is absent."
+    ],
+    "west-tunnel": [
+      "The Titanfall catwalk and railings are present; they are an intentional addition to the original tube.",
+      "The bright ring lights and red colouring on the overhead pipes differ from the source."
+    ],
+    "west-building": [
+      "The console housings and large monitor frame are present, but the source's green monitor graphics are missing.",
+      "Console surface appearances still differ, and smaller clutter visible in the original is absent."
+    ],
+    "east-building": [
+      "The opposite building has the same blank large monitor. Console surfaces and some smaller equipment differ from the original.",
+      "The port's red interior lighting is stronger at this camera than in the source."
+    ],
+    "east-tunnel": [
+      "The outer tube, support platform, railings and central machinery are visible.",
+      "The source's overhead pipes have red paint; the corresponding port pipes are predominantly grey/white. Nearby foliage is also much sparser."
+    ],
+    "west-tunnel-bend": [
+      "The port's tunnel walls, red service pipes, catwalk and railings are visible from the raised camera.",
+      "R5R produced a black scene at this location at both tested heights. Its cause is unresolved, so this view cannot establish a faithful source/port lighting or geometry difference."
+    ],
+    "east-tunnel-bend": [
+      "Both games show the curved tunnel shell, service pipes and fixtures. The added Titanfall catwalk and railings are clearly visible from the raised camera.",
+      "The source fixtures are brighter. The port's catwalk changes the interior silhouette, as intended."
+    ],
+    "central-rocks": [
+      "The large foreground rocks and nearby truck are present.",
+      "The source's dense ground plants and green terrain treatment are missing or approximated. The port's trees also have a visibly different pale/snowy appearance."
+    ],
+    "west-stairs": [
+      "The staircase is visible at this fixed camera and matches the main step layout.",
+      "This static view does not test the previously reported disappearance when standing on the stairs and turning."
+    ],
+    "nessie-rocks": [
+      "The truck, nearby container and road are present. Much of the source's surrounding foliage is absent and the ground treatment differs.",
+      "The doll itself is obscured at this angle, so this view does not verify Nessie's detail or support placement."
+    ],
+    "terrain-seam": [
+      "The roadway and curb are present, but leaf litter, dirty surface blending and painted markings differ substantially.",
+      "The port has a cleaner cracked-road appearance with much less ground foliage at the edge."
+    ]
+  }
+}

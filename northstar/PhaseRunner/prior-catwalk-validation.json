@@ -1,0 +1,103 @@
+{
+  "version": "0.1.37",
+  "map_name": "mp_phase_runner",
+  "bsp_sha256": "96972610fb050f500f4f434bb68a07cc055508f4d6524a48527b53cba888fc7e",
+  "native_server_loaded": true,
+  "load_seconds": 31.120179800000003,
+  "regression_tests": 9,
+  "existing_collision_checks": 927,
+  "catwalk_checks": {
+    "floor": 102,
+    "rail": 204,
+    "route": 1449,
+    "route_floor": 1449
+  },
+  "catwalk_routes_checked_both_directions": true,
+  "player_route_step_clearance": 18,
+  "visibility": {
+    "nodes": 255,
+    "references": 4586,
+    "reachable_meshes": 4586,
+    "all_parent_and_object_bounds_verified": true,
+    "contiguous_subtree_ranges_verified": true
+  },
+  "new_portal_connections": 0,
+  "tunnel_guards_cover_all_objects_from_both_routes": true,
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\northstar\\PhaseRunner.CatwalkRelease\\mod\\maps\\mp_phase_runner.bsp",
+    "meshes": 4586,
+    "real_triangles": 881966,
+    "native_padded_indices": 2652150,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4586,
+    "prefix_indices": 2652150,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4586,
+      4586,
+      4586
+    ],
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "draw_headroom_percent": 15.690422058105469,
+  "catwalk_geometry": 14744,
+  "replaced_path_geometry": 5796,
+  "catwalk_light_bake": {
+    "pages": 1,
+    "width": 1024,
+    "height": 1024,
+    "valid_luxels": 37790,
+    "local_lit_luxels": 19928,
+    "old_lightmaps_byte_preserved": true,
+    "static_sun_sky_and_existing_30_point_lights_baked": true
+  },
+  "unrelated_drawn_corner_attributes_materials_and_lightmaps_exact": true,
+  "unrelated_collision_and_active_ownership_preserved": true,
+  "original_routes_and_elevations_exact": true,
+  "world_rpak_and_stbsp_content_unchanged": true,
+  "presentation": {
+    "map_name": "mp_phase_runner",
+    "display_name": "Phase Runner",
+    "art_source": "Locally installed Apex mp_rr_arena_phase_runner_loadscreen.rpak",
+    "art_png_sha256": "70039cf566eb2db6b244855062a5ce6b489d2ec8966988a150d4709ab60640c6",
+    "width": 2560,
+    "height": 1440,
+    "texture_format": "BC7_UNORM_SRGB, resident",
+    "native_loading_shader_guid": "0xa5b8d4e9a3364655",
+    "native_shader_suffix": "gen",
+    "native_loading_material_states_and_buffer_verified": true,
+    "common_shader_dependency_verified": true,
+    "loading_materials": [
+      "material/loadscreens/mp_phase_runner_widescreen_gen.rpak",
+      "material/loadscreens/mp_phase_runner_gen.rpak",
+      "material/loadscreens/mp_phase_runner_lobby_gen.rpak"
+    ],
+    "lobby_atlas_images": 3,
+    "localization_languages": [
+      "english",
+      "french",
+      "german",
+      "italian",
+      "japanese",
+      "mspanish",
+      "polish",
+      "portuguese",
+      "russian",
+      "spanish",
+      "tchinese",
+      "schinese",
+      "korean"
+    ],
+    "rpak_sha256": "82be6bd84bdb4cd008d025a310916694f9760cc23b3027f9dcf85745419bde95",
+    "client_presentation_verified": false
+  },
+  "old_build_backup": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\installed-backups\\PhaseRunner.Preview-0.1.36-before-catwalks",
+  "old_build_backup_files": 30,
+  "old_build_archive": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\PhaseRunner.Preview-0.1.36.zip",
+  "prior_evidence": "prior-rendering-validation.json",
+  "client_rendering_verified": false,
+  "client_presentation_verified": false,
+  "client_performance_verified": false,
+  "limitation": "Native dedicated checks validate collision and loading but do not exercise client rendering, UI artwork, localization display or frame rate. Conservative tunnel guards may increase draw work."
+}

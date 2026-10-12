@@ -1,0 +1,15 @@
+> Historical stage notes. For the current 1.0.0 state, use README.md and docs/conversion/APEX_TO_TITANFALL2.md. Earlier counts and validation flags below describe that stage.
+
+# Phase Runner art and lighting notes
+
+User feedback after 0.1.30: the map looks good and is playable. All props remain visible. Preserve that build's geometry, collision, and rendering budget during the lighting pass.
+
+- The user authorized replacing both tunnel walkways with industrial catwalks and railings in 0.1.37. Keep the original route elevations and the complete 0.1.36 backup. Do not remove the catwalks without a later request.
+- In 0.1.41, Nessie uses original full LOD0 (1,442 triangles, previously 59). Its original truck support is restored at placement 16850; the two matching center trucks and 206 omitted small rock clusters are restored too. Check the client appearance at the reported location `(2921.4, 893.7, -1067.0)`.
+- Current priority: proper surface response (normal/gloss/specular PBR channels), spatial lightmaps, and lighting/shadows. Document actual shader and lightmap encodings before installing a lighting change.
+- Current 0.1.30 walkways and geometry are confirmed by the user; retain its archive for rollback.
+- The user confirmed 0.1.33 lighting looks good. Preserve its outdoor sun/sky appearance while adding local building/tunnel illumination and reducing texture/shadow overhead. Texture popping was reported; its exact cause still needs client confirmation.
+- The user confirmed 0.1.34 light levels are good. Current priority is whole geometry disappearing inside tunnels (including the walkway), plus intermittent outside walls, fences and small rocks. Retain the confirmed lighting/material package and walkways while rebuilding native visibility. Client rendering and performance must still be checked.
+- 0.1.35 is withdrawn: the user reports the generated portals cull the skybox and cause hall-of-mirrors rendering. Restore the exact 0.1.34 single-cell lookup/portal records. Do not reintroduce the portal experiment in later builds; prefer exact render sharing and local visibility bounds while retaining the confirmed lighting and physics.
+- In 0.1.36, the user reports much better prop rendering, but looking across the map from inside either pipe can still hide geometry. In 0.1.37, every visibility object contains both tunnel camera envelopes; unrelated real mesh bounds and the original cell/portal data remain intact. Confirm this change on the client before further visibility tuning.
+- The user confirmed 0.1.40 is solid with no pop-in or pop-out. Preserve its native material/channel draw ordering and full playable-camera guards during future art passes. Current priority is missing original props in the center and beneath Nessie. 0.1.41 preserves those rendering choices and unrelated lighting/collision; see CENTER_DETAIL.md.

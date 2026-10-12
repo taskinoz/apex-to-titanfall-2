@@ -1,0 +1,3444 @@
+{
+  "version": "0.1.30",
+  "modified_world_triangles": 200,
+  "disabled_world_headers": [
+    777,
+    784,
+    789,
+    793,
+    796,
+    800,
+    860,
+    868,
+    876,
+    912,
+    913,
+    927,
+    928,
+    1505,
+    1542,
+    1607,
+    1611,
+    1615,
+    1620,
+    1628,
+    1637
+  ],
+  "world_header_replacements": {
+    "777": {
+      "first_header": 25046,
+      "headers": 2,
+      "triangles": 126
+    },
+    "784": {
+      "first_header": 25048,
+      "headers": 3,
+      "triangles": 228
+    },
+    "789": {
+      "first_header": 25051,
+      "headers": 2,
+      "triangles": 159
+    },
+    "793": {
+      "first_header": 25053,
+      "headers": 1,
+      "triangles": 93
+    },
+    "796": {
+      "first_header": 25054,
+      "headers": 2,
+      "triangles": 104
+    },
+    "800": {
+      "first_header": 25056,
+      "headers": 2,
+      "triangles": 111
+    },
+    "860": {
+      "first_header": 25058,
+      "headers": 1,
+      "triangles": 93
+    },
+    "868": {
+      "first_header": 25059,
+      "headers": 2,
+      "triangles": 99
+    },
+    "876": {
+      "first_header": 25061,
+      "headers": 1,
+      "triangles": 79
+    },
+    "912": {
+      "first_header": 25062,
+      "headers": 2,
+      "triangles": 148
+    },
+    "913": {
+      "first_header": 25064,
+      "headers": 2,
+      "triangles": 152
+    },
+    "927": {
+      "first_header": 25066,
+      "headers": 2,
+      "triangles": 156
+    },
+    "928": {
+      "first_header": 25068,
+      "headers": 2,
+      "triangles": 144
+    },
+    "1505": {
+      "first_header": 25070,
+      "headers": 4,
+      "triangles": 312
+    },
+    "1542": {
+      "first_header": 25074,
+      "headers": 1,
+      "triangles": 52
+    },
+    "1607": {
+      "first_header": 25075,
+      "headers": 1,
+      "triangles": 89
+    },
+    "1611": {
+      "first_header": 25076,
+      "headers": 2,
+      "triangles": 118
+    },
+    "1615": {
+      "first_header": 25078,
+      "headers": 2,
+      "triangles": 169
+    },
+    "1620": {
+      "first_header": 25080,
+      "headers": 4,
+      "triangles": 307
+    },
+    "1628": {
+      "first_header": 25084,
+      "headers": 3,
+      "triangles": 196
+    },
+    "1637": {
+      "first_header": 25087,
+      "headers": 2,
+      "triangles": 114
+    }
+  },
+  "cap_adaptations": [
+    {
+      "triangle": 74644,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12235
+      ],
+      "retained_triangles": 31
+    },
+    {
+      "triangle": 75312,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12235
+      ],
+      "retained_triangles": 32
+    },
+    {
+      "triangle": 75313,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12235
+      ],
+      "retained_triangles": 25
+    },
+    {
+      "triangle": 75314,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12235
+      ],
+      "retained_triangles": 26
+    },
+    {
+      "triangle": 75319,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12235
+      ],
+      "retained_triangles": 27
+    },
+    {
+      "triangle": 75320,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12235
+      ],
+      "retained_triangles": 27
+    },
+    {
+      "triangle": 75760,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12235
+      ],
+      "retained_triangles": 29
+    },
+    {
+      "triangle": 75769,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12235
+      ],
+      "retained_triangles": 29
+    },
+    {
+      "triangle": 75773,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12239
+      ],
+      "retained_triangles": 17
+    },
+    {
+      "triangle": 75780,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 75781,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 75782,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 75783,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 75784,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 75787,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 75788,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 75789,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 75790,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76149,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 1
+    },
+    {
+      "triangle": 76150,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 5
+    },
+    {
+      "triangle": 76151,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 1
+    },
+    {
+      "triangle": 76152,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76153,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76154,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76155,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76156,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76157,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76160,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76494,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 7
+    },
+    {
+      "triangle": 76495,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 5
+    },
+    {
+      "triangle": 76496,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 5
+    },
+    {
+      "triangle": 76499,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76500,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76501,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76502,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76503,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76504,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76828,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76829,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 4
+    },
+    {
+      "triangle": 76830,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 11
+    },
+    {
+      "triangle": 76832,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 1
+    },
+    {
+      "triangle": 76833,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76835,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 5
+    },
+    {
+      "triangle": 76836,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 3
+    },
+    {
+      "triangle": 76839,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 76840,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12234
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 82611,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 82612,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 82613,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83353,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83356,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83357,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83358,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83359,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83360,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83363,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83364,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83365,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83366,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83367,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83368,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83369,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83371,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 1
+    },
+    {
+      "triangle": 83372,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 2
+    },
+    {
+      "triangle": 83373,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83374,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 3
+    },
+    {
+      "triangle": 83375,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83376,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 83380,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 5
+    },
+    {
+      "triangle": 83381,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 9
+    },
+    {
+      "triangle": 83382,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 5
+    },
+    {
+      "triangle": 84108,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84109,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84110,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84111,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84112,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84113,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84114,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84115,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84116,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84119,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84120,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84121,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84122,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84123,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84126,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84127,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12243,
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 84128,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12244
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 87640,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12232
+      ],
+      "retained_triangles": 27
+    },
+    {
+      "triangle": 87641,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12232
+      ],
+      "retained_triangles": 27
+    },
+    {
+      "triangle": 87684,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12232
+      ],
+      "retained_triangles": 29
+    },
+    {
+      "triangle": 87685,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12232
+      ],
+      "retained_triangles": 29
+    },
+    {
+      "triangle": 89083,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12232
+      ],
+      "retained_triangles": 31
+    },
+    {
+      "triangle": 89084,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12232
+      ],
+      "retained_triangles": 31
+    },
+    {
+      "triangle": 89115,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12232
+      ],
+      "retained_triangles": 25
+    },
+    {
+      "triangle": 89116,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12232
+      ],
+      "retained_triangles": 25
+    },
+    {
+      "triangle": 144507,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12246
+      ],
+      "retained_triangles": 29
+    },
+    {
+      "triangle": 144508,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12246
+      ],
+      "retained_triangles": 29
+    },
+    {
+      "triangle": 144509,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12246
+      ],
+      "retained_triangles": 24
+    },
+    {
+      "triangle": 144510,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12246
+      ],
+      "retained_triangles": 24
+    },
+    {
+      "triangle": 144556,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12246
+      ],
+      "retained_triangles": 32
+    },
+    {
+      "triangle": 144557,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12246
+      ],
+      "retained_triangles": 32
+    },
+    {
+      "triangle": 144560,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12246
+      ],
+      "retained_triangles": 27
+    },
+    {
+      "triangle": 144561,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12246
+      ],
+      "retained_triangles": 27
+    },
+    {
+      "triangle": 148069,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148074,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148075,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148076,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148077,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148078,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148079,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148080,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148081,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148082,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148083,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148084,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148085,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148088,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148089,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148090,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148091,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148092,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148093,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148094,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148095,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148096,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148097,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148100,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148101,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148102,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148103,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148104,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148105,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148106,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148108,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148109,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148110,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148111,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148112,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148113,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148114,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12240,
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148115,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148116,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148117,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148118,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148119,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148120,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 148125,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12249
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154307,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154308,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154309,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154312,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154313,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154314,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154315,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154658,
+      "materials": [
+        "TOOLS\\TOOLSCLIP_HUMAN"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 18
+    },
+    {
+      "triangle": 154661,
+      "materials": [
+        "TOOLS\\TOOLSCLIP_HUMAN"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 15
+    },
+    {
+      "triangle": 154664,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154667,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154668,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154669,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154670,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154671,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154672,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154673,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 154674,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155087,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 22
+    },
+    {
+      "triangle": 155092,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 6
+    },
+    {
+      "triangle": 155093,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 19
+    },
+    {
+      "triangle": 155094,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 23
+    },
+    {
+      "triangle": 155095,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155096,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 8
+    },
+    {
+      "triangle": 155097,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 8
+    },
+    {
+      "triangle": 155098,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155099,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155102,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155103,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155104,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155105,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155578,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12248
+      ],
+      "retained_triangles": 30
+    },
+    {
+      "triangle": 155579,
+      "materials": [
+        "TOOLS\\TOOLSCLIP",
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12248
+      ],
+      "retained_triangles": 30
+    },
+    {
+      "triangle": 155580,
+      "materials": [
+        "TOOLS\\TOOLSCLIP",
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12248
+      ],
+      "retained_triangles": 30
+    },
+    {
+      "triangle": 155587,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12248
+      ],
+      "retained_triangles": 30
+    },
+    {
+      "triangle": 155593,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 22
+    },
+    {
+      "triangle": 155596,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 39
+    },
+    {
+      "triangle": 155602,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 1
+    },
+    {
+      "triangle": 155603,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 23
+    },
+    {
+      "triangle": 155604,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155605,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 3
+    },
+    {
+      "triangle": 155606,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 6
+    },
+    {
+      "triangle": 155607,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 1
+    },
+    {
+      "triangle": 155608,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155609,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 9
+    },
+    {
+      "triangle": 155610,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12226,
+        12233
+      ],
+      "retained_triangles": 0
+    },
+    {
+      "triangle": 155611,
+      "materials": [
+        "tools\\toolsblack"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 3
+    },
+    {
+      "triangle": 156342,
+      "materials": [
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12248
+      ],
+      "retained_triangles": 26
+    },
+    {
+      "triangle": 156343,
+      "materials": [
+        "TOOLS\\TOOLSCLIP",
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12248
+      ],
+      "retained_triangles": 26
+    },
+    {
+      "triangle": 156344,
+      "materials": [
+        "TOOLS\\TOOLSCLIP",
+        "TOOLS\\TOOLSNODRAW"
+      ],
+      "rings": [
+        12248
+      ],
+      "retained_triangles": 26
+    },
+    {
+      "triangle": 156352,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12248
+      ],
+      "retained_triangles": 26
+    },
+    {
+      "triangle": 157203,
+      "materials": [
+        "TOOLS\\TOOLSCLIP"
+      ],
+      "rings": [
+        12233
+      ],
+      "retained_triangles": 19
+    }
+  ],
+  "portal_frame_replacements": [
+    {
+      "index": 12224,
+      "old": {
+        "index": 12224,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4072,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12224,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4072,
+        "brushes": 0,
+        "first_header": 25089,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12225,
+      "old": {
+        "index": 12225,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4092,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12225,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4092,
+        "brushes": 0,
+        "first_header": 25113,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12226,
+      "old": {
+        "index": 12226,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4112,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12226,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4112,
+        "brushes": 0,
+        "first_header": 25137,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12227,
+      "old": {
+        "index": 12227,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4132,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12227,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4132,
+        "brushes": 0,
+        "first_header": 25161,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12228,
+      "old": {
+        "index": 12228,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4152,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12228,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4152,
+        "brushes": 0,
+        "first_header": 25185,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12229,
+      "old": {
+        "index": 12229,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4172,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12229,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4172,
+        "brushes": 0,
+        "first_header": 25209,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12230,
+      "old": {
+        "index": 12230,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4192,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12230,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4192,
+        "brushes": 0,
+        "first_header": 25233,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12231,
+      "old": {
+        "index": 12231,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4212,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12231,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4212,
+        "brushes": 0,
+        "first_header": 25257,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12232,
+      "old": {
+        "index": 12232,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4232,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12232,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4232,
+        "brushes": 0,
+        "first_header": 25281,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12233,
+      "old": {
+        "index": 12233,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4252,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12233,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4252,
+        "brushes": 0,
+        "first_header": 25305,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12234,
+      "old": {
+        "index": 12234,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4272,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12234,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4272,
+        "brushes": 0,
+        "first_header": 25329,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12235,
+      "old": {
+        "index": 12235,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4292,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12235,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4292,
+        "brushes": 0,
+        "first_header": 25353,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12236,
+      "old": {
+        "index": 12236,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4312,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12236,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4312,
+        "brushes": 0,
+        "first_header": 25377,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12237,
+      "old": {
+        "index": 12237,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4332,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12237,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4332,
+        "brushes": 0,
+        "first_header": 25401,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12238,
+      "old": {
+        "index": 12238,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4352,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12238,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4352,
+        "brushes": 0,
+        "first_header": 25425,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12239,
+      "old": {
+        "index": 12239,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4372,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12239,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4372,
+        "brushes": 0,
+        "first_header": 25449,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12240,
+      "old": {
+        "index": 12240,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4392,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12240,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4392,
+        "brushes": 0,
+        "first_header": 25473,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12241,
+      "old": {
+        "index": 12241,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4412,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12241,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4412,
+        "brushes": 0,
+        "first_header": 25497,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12242,
+      "old": {
+        "index": 12242,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4432,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12242,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4432,
+        "brushes": 0,
+        "first_header": 25521,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12243,
+      "old": {
+        "index": 12243,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4452,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12243,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4452,
+        "brushes": 0,
+        "first_header": 25545,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12244,
+      "old": {
+        "index": 12244,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4472,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12244,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4472,
+        "brushes": 0,
+        "first_header": 25569,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12245,
+      "old": {
+        "index": 12245,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4492,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12245,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4492,
+        "brushes": 0,
+        "first_header": 25593,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12246,
+      "old": {
+        "index": 12246,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4512,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12246,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4512,
+        "brushes": 0,
+        "first_header": 25617,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12247,
+      "old": {
+        "index": 12247,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4532,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12247,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4532,
+        "brushes": 0,
+        "first_header": 25641,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12248,
+      "old": {
+        "index": 12248,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4552,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12248,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4552,
+        "brushes": 0,
+        "first_header": 25665,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    },
+    {
+      "index": 12249,
+      "old": {
+        "index": 12249,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "IRPS",
+        "first_brush": 4572,
+        "brushes": 20,
+        "first_header": 23999,
+        "headers": 0,
+        "triangles": 0,
+        "source_faces": 120
+      },
+      "replacement": {
+        "index": 12249,
+        "model": "mdl/canyonlands/wraith_tt_portal_large.rmdl",
+        "method": "visual_frame_surface_replacement",
+        "first_brush": 4572,
+        "brushes": 0,
+        "first_header": 25689,
+        "headers": 24,
+        "triangles": 2304,
+        "source_faces": 2304
+      },
+      "energy_disk_nonsolid": true
+    }
+  ],
+  "disabled_convex_brushes": [
+    4072,
+    4073,
+    4074,
+    4075,
+    4076,
+    4077,
+    4078,
+    4079,
+    4080,
+    4081,
+    4082,
+    4083,
+    4084,
+    4085,
+    4086,
+    4087,
+    4088,
+    4089,
+    4090,
+    4091,
+    4092,
+    4093,
+    4094,
+    4095,
+    4096,
+    4097,
+    4098,
+    4099,
+    4100,
+    4101,
+    4102,
+    4103,
+    4104,
+    4105,
+    4106,
+    4107,
+    4108,
+    4109,
+    4110,
+    4111,
+    4112,
+    4113,
+    4114,
+    4115,
+    4116,
+    4117,
+    4118,
+    4119,
+    4120,
+    4121,
+    4122,
+    4123,
+    4124,
+    4125,
+    4126,
+    4127,
+    4128,
+    4129,
+    4130,
+    4131,
+    4132,
+    4133,
+    4134,
+    4135,
+    4136,
+    4137,
+    4138,
+    4139,
+    4140,
+    4141,
+    4142,
+    4143,
+    4144,
+    4145,
+    4146,
+    4147,
+    4148,
+    4149,
+    4150,
+    4151,
+    4152,
+    4153,
+    4154,
+    4155,
+    4156,
+    4157,
+    4158,
+    4159,
+    4160,
+    4161,
+    4162,
+    4163,
+    4164,
+    4165,
+    4166,
+    4167,
+    4168,
+    4169,
+    4170,
+    4171,
+    4172,
+    4173,
+    4174,
+    4175,
+    4176,
+    4177,
+    4178,
+    4179,
+    4180,
+    4181,
+    4182,
+    4183,
+    4184,
+    4185,
+    4186,
+    4187,
+    4188,
+    4189,
+    4190,
+    4191,
+    4192,
+    4193,
+    4194,
+    4195,
+    4196,
+    4197,
+    4198,
+    4199,
+    4200,
+    4201,
+    4202,
+    4203,
+    4204,
+    4205,
+    4206,
+    4207,
+    4208,
+    4209,
+    4210,
+    4211,
+    4212,
+    4213,
+    4214,
+    4215,
+    4216,
+    4217,
+    4218,
+    4219,
+    4220,
+    4221,
+    4222,
+    4223,
+    4224,
+    4225,
+    4226,
+    4227,
+    4228,
+    4229,
+    4230,
+    4231,
+    4232,
+    4233,
+    4234,
+    4235,
+    4236,
+    4237,
+    4238,
+    4239,
+    4240,
+    4241,
+    4242,
+    4243,
+    4244,
+    4245,
+    4246,
+    4247,
+    4248,
+    4249,
+    4250,
+    4251,
+    4252,
+    4253,
+    4254,
+    4255,
+    4256,
+    4257,
+    4258,
+    4259,
+    4260,
+    4261,
+    4262,
+    4263,
+    4264,
+    4265,
+    4266,
+    4267,
+    4268,
+    4269,
+    4270,
+    4271,
+    4272,
+    4273,
+    4274,
+    4275,
+    4276,
+    4277,
+    4278,
+    4279,
+    4280,
+    4281,
+    4282,
+    4283,
+    4284,
+    4285,
+    4286,
+    4287,
+    4288,
+    4289,
+    4290,
+    4291,
+    4292,
+    4293,
+    4294,
+    4295,
+    4296,
+    4297,
+    4298,
+    4299,
+    4300,
+    4301,
+    4302,
+    4303,
+    4304,
+    4305,
+    4306,
+    4307,
+    4308,
+    4309,
+    4310,
+    4311,
+    4312,
+    4313,
+    4314,
+    4315,
+    4316,
+    4317,
+    4318,
+    4319,
+    4320,
+    4321,
+    4322,
+    4323,
+    4324,
+    4325,
+    4326,
+    4327,
+    4328,
+    4329,
+    4330,
+    4331,
+    4332,
+    4333,
+    4334,
+    4335,
+    4336,
+    4337,
+    4338,
+    4339,
+    4340,
+    4341,
+    4342,
+    4343,
+    4344,
+    4345,
+    4346,
+    4347,
+    4348,
+    4349,
+    4350,
+    4351,
+    4352,
+    4353,
+    4354,
+    4355,
+    4356,
+    4357,
+    4358,
+    4359,
+    4360,
+    4361,
+    4362,
+    4363,
+    4364,
+    4365,
+    4366,
+    4367,
+    4368,
+    4369,
+    4370,
+    4371,
+    4372,
+    4373,
+    4374,
+    4375,
+    4376,
+    4377,
+    4378,
+    4379,
+    4380,
+    4381,
+    4382,
+    4383,
+    4384,
+    4385,
+    4386,
+    4387,
+    4388,
+    4389,
+    4390,
+    4391,
+    4392,
+    4393,
+    4394,
+    4395,
+    4396,
+    4397,
+    4398,
+    4399,
+    4400,
+    4401,
+    4402,
+    4403,
+    4404,
+    4405,
+    4406,
+    4407,
+    4408,
+    4409,
+    4410,
+    4411,
+    4412,
+    4413,
+    4414,
+    4415,
+    4416,
+    4417,
+    4418,
+    4419,
+    4420,
+    4421,
+    4422,
+    4423,
+    4424,
+    4425,
+    4426,
+    4427,
+    4428,
+    4429,
+    4430,
+    4431,
+    4432,
+    4433,
+    4434,
+    4435,
+    4436,
+    4437,
+    4438,
+    4439,
+    4440,
+    4441,
+    4442,
+    4443,
+    4444,
+    4445,
+    4446,
+    4447,
+    4448,
+    4449,
+    4450,
+    4451,
+    4452,
+    4453,
+    4454,
+    4455,
+    4456,
+    4457,
+    4458,
+    4459,
+    4460,
+    4461,
+    4462,
+    4463,
+    4464,
+    4465,
+    4466,
+    4467,
+    4468,
+    4469,
+    4470,
+    4471,
+    4472,
+    4473,
+    4474,
+    4475,
+    4476,
+    4477,
+    4478,
+    4479,
+    4480,
+    4481,
+    4482,
+    4483,
+    4484,
+    4485,
+    4486,
+    4487,
+    4488,
+    4489,
+    4490,
+    4491,
+    4492,
+    4493,
+    4494,
+    4495,
+    4496,
+    4497,
+    4498,
+    4499,
+    4500,
+    4501,
+    4502,
+    4503,
+    4504,
+    4505,
+    4506,
+    4507,
+    4508,
+    4509,
+    4510,
+    4511,
+    4512,
+    4513,
+    4514,
+    4515,
+    4516,
+    4517,
+    4518,
+    4519,
+    4520,
+    4521,
+    4522,
+    4523,
+    4524,
+    4525,
+    4526,
+    4527,
+    4528,
+    4529,
+    4530,
+    4531,
+    4532,
+    4533,
+    4534,
+    4535,
+    4536,
+    4537,
+    4538,
+    4539,
+    4540,
+    4541,
+    4542,
+    4543,
+    4544,
+    4545,
+    4546,
+    4547,
+    4548,
+    4549,
+    4550,
+    4551,
+    4552,
+    4553,
+    4554,
+    4555,
+    4556,
+    4557,
+    4558,
+    4559,
+    4560,
+    4561,
+    4562,
+    4563,
+    4564,
+    4565,
+    4566,
+    4567,
+    4568,
+    4569,
+    4570,
+    4571,
+    4572,
+    4573,
+    4574,
+    4575,
+    4576,
+    4577,
+    4578,
+    4579,
+    4580,
+    4581,
+    4582,
+    4583,
+    4584,
+    4585,
+    4586,
+    4587,
+    4588,
+    4589,
+    4590,
+    4591
+  ],
+  "active_convex_brushes": 7103,
+  "active_triangle_headers": 25692,
+  "appended_triangle_headers": 667,
+  "cut_radius_source_units": 193.5,
+  "cut_half_depth_source_units": 250,
+  "cut_sides": 32,
+  "allowed_materials": [
+    "tools/toolsblack",
+    "tools/toolsclip",
+    "tools/toolsclip_human",
+    "tools/toolsnodraw"
+  ],
+  "unmodified_world_and_model_collision_records_byte_preserved": true,
+  "original_position_prefix_byte_preserved": true,
+  "original_tunnel_physics_preserved": true,
+  "rendering_lumps_byte_unchanged": true,
+  "compaction": {
+    "original_bytes": 713251340,
+    "compact_bytes": 716598956,
+    "non_game_lumps_byte_identical": false,
+    "unchanged_lumps_byte_verified": true,
+    "replaced_lumps": [
+      3,
+      66,
+      68,
+      69,
+      86,
+      87,
+      88,
+      89,
+      90,
+      96
+    ],
+    "game_lump_offsets_relocated": true,
+    "checks": {
+      "version": 37,
+      "bytes": 716598956,
+      "nonempty_lumps": 51,
+      "collision_geosets": 544,
+      "structural_checks_passed": true,
+      "in_game_verified": false,
+      "native_triangle_pair_validation": null
+    }
+  },
+  "engine_passage_sweeps_verified": false,
+  "client_movement_verified": false,
+  "elapsed_seconds": 5.905999999959022
+}

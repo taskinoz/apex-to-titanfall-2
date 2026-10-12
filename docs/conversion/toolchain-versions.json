@@ -1,0 +1,17 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "repositories": {
+    "bsp_tool": "655627ea8704353ac14bd753df8ca05c15838eda",
+    "mrvn-radiant": "8022aefcf9506786fe9edf138dbf48cde0fa82f6",
+    "repak-source": "adc52f775942ac63503ebbbed93f25fb1257bd58",
+    "rsx-source": "6014ca814b945c52b991f2914d7bb665e1588272",
+    "legion-source": "a0344e34cb16d82bd1d79e0d6cc0ef999f614d2a",
+    "mdlshit": "18fe99af370b35ace20c3deeea955caf9c789bb9"
+  },
+  "libraries": {
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0",
+    "scipy": "1.18.1",
+    "xatlas": "0.0.11"
+  }
+}

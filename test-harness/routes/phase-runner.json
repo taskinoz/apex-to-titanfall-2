@@ -1,0 +1,12 @@
+{
+  "map": "mp_phase_runner",
+  "mode": "tdm",
+  "shots": [
+    {"name":"center-firs","origin":[180,-1200,-1000],"angles":[-22,90,0],"fov":90,"settle":3},
+    {"name":"arena-overview","origin":[0,-5000,1400],"angles":[28,90,0],"fov":90,"settle":3},
+    {"name":"west-tunnel","origin":[-1819.8,3017.7,-382.4],"angles":[0,0,0],"fov":90,"settle":3},
+    {"name":"east-tunnel","origin":[1940.5,3016.9,-376.0],"angles":[0,180,0],"fov":90,"settle":3},
+    {"name":"west-building","origin":[-6080,-1530.2,-773.9],"angles":[10,90,0],"fov":75,"settle":3},
+    {"name":"east-building","origin":[6283.9,-1417,-773.9],"angles":[10,90,0],"fov":75,"settle":3}
+  ]
+}

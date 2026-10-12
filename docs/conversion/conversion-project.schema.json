@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:phase-runner:proposed-conversion-ir:1",
+  "title": "Proposed Apex to Titanfall conversion project IR",
+  "description": "Design contract, not the serialization used by all historical scripts. Geometry blobs are hashed external assets. All original source records remain immutable.",
+  "type": "object",
+  "required": ["schema_version", "source", "target", "transform", "placements", "materials", "collision", "visibility", "lighting", "stages", "limits", "omissions"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "source": {"$ref": "#/$defs/format"},
+    "target": {"$ref": "#/$defs/format"},
+    "transform": {"type": "object", "required": ["axis_mapping", "translation"], "properties": {"axis_mapping": {"const": "XYZ unchanged"}, "translation": {"$ref": "#/$defs/vector"}}},
+    "placements": {"type": "array", "items": {"type": "object", "required": ["id", "source_origin", "target_origin", "angles", "scale", "skin", "model", "disposition"], "properties": {
+      "id": {"type": "string"}, "source_origin": {"$ref": "#/$defs/vector"}, "target_origin": {"$ref": "#/$defs/vector"}, "angles": {"$ref": "#/$defs/vector"}, "scale": {"type": "number", "exclusiveMinimum": 0}, "skin": {"type": "integer", "minimum": 0}, "model": {"type": "string"}, "disposition": {"enum": ["world_baked", "native_model", "omitted", "outside_selection"]}, "lod": {"type": "integer", "minimum": 0}, "geometry": {"$ref": "#/$defs/artifact"}, "intentional_adjustment": {"type": "object", "required": ["reason", "delta"], "properties": {"reason": {"type": "string"}, "delta": {"$ref": "#/$defs/vector"}}}}}},
+    "entities": {"type": "array", "items": {"type": "object", "required": ["id", "original_keyvalues", "disposition"], "properties": {"id": {"type": "string"}, "original_keyvalues": {"type": "array", "items": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2}}, "disposition": {"enum": ["rebuilt", "behavior_adapted", "geometry_only", "unsupported", "unchanged_verified"]}}}},
+    "materials": {"type": "array", "items": {"type": "object", "required": ["id", "source", "target_guid", "shader", "channels", "dependencies"], "properties": {"id": {"type": "string"}, "source": {"type": "string"}, "target_guid": {"type": "string", "pattern": "^[0-9a-fA-F]{16}$"}, "shader": {"$ref": "#/$defs/artifact"}, "channels": {"type": "object"}, "dependencies": {"type": "array", "items": {"type": "string"}}, "alpha_mode": {"enum": ["opaque", "cutout", "blend"]}, "adaptations": {"type": "array", "items": {"type": "string"}}}}},
+    "collision": {"type": "array", "items": {"type": "object", "required": ["id", "owner", "source_kind", "target_kind", "active", "contents", "geometry"], "properties": {"id": {"type": "string"}, "owner": {"type": "string"}, "source_kind": {"enum": ["world_bvh", "inline_star", "irps", "embedded_model_bvh", "visual_fallback", "adaptation"]}, "target_kind": {"enum": ["brush", "triangle_surface", "compound", "native_model"]}, "active": {"type": "boolean"}, "contents": {"type": "integer", "minimum": 0}, "geometry": {"$ref": "#/$defs/artifact"}, "disabled_reason": {"type": "string"}}}},
+    "visibility": {"type": "object", "required": ["mode", "camera_mins", "camera_maxs"], "properties": {"mode": {"enum": ["conservative", "validated_portals"]}, "camera_mins": {"$ref": "#/$defs/vector"}, "camera_maxs": {"$ref": "#/$defs/vector"}, "graph": {"$ref": "#/$defs/artifact"}}},
+    "lighting": {"type": "object", "required": ["lights", "probe_data", "lightmap_data", "menu_environment_separate"], "properties": {"lights": {"type": "array"}, "probe_data": {"$ref": "#/$defs/artifact"}, "lightmap_data": {"$ref": "#/$defs/artifact"}, "menu_environment_separate": {"type": "boolean"}, "hardware_light_remap": {"type": "object"}}},
+    "stages": {"type": "array", "items": {"type": "object", "required": ["name", "implementation_hash", "inputs", "outputs", "status"], "properties": {"name": {"type": "string"}, "implementation_hash": {"$ref": "#/$defs/hash"}, "inputs": {"type": "array", "items": {"$ref": "#/$defs/artifact"}}, "outputs": {"type": "array", "items": {"$ref": "#/$defs/artifact"}}, "status": {"enum": ["pending", "complete", "failed", "unsupported"]}, "diagnostics": {"type": "array", "items": {"type": "string"}}}}},
+    "limits": {"type": "array", "items": {"type": "object", "required": ["name", "kind", "value", "observed", "evidence"], "properties": {"name": {"type": "string"}, "kind": {"enum": ["native_capacity", "serialized_range", "project_policy"]}, "value": {"type": "number"}, "observed": {"type": "number"}, "evidence": {"type": "string"}}}},
+    "omissions": {"type": "array", "items": {"type": "object", "required": ["source_id", "reason", "details"], "properties": {"source_id": {"type": "string"}, "reason": {"enum": ["budget", "missing_source", "unsupported_layout", "unsupported_behavior", "outside_selection", "deliberate_adaptation", "unverified"]}, "details": {"type": "string"}, "recovery_requirements": {"type": "array", "items": {"type": "string"}}}}},
+    "runtime_evidence": {"type": "array", "items": {"$ref": "#/$defs/artifact"}}
+  },
+  "$defs": {
+    "vector": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3},
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "artifact": {"type": "object", "required": ["path", "sha256"], "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/hash"}}},
+    "format": {"type": "object", "required": ["game", "map", "bsp_version", "inputs"], "properties": {"game": {"type": "string"}, "map": {"type": "string"}, "bsp_version": {"type": "integer"}, "inputs": {"type": "array", "items": {"$ref": "#/$defs/artifact"}}, "binary_hashes": {"type": "object", "additionalProperties": {"$ref": "#/$defs/hash"}}}}
+  }
+}

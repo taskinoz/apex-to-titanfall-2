@@ -1,0 +1,3927 @@
+{
+  "endianness": "little",
+  "bsp_magic": "rBSP",
+  "bsp_header_bytes": 2064,
+  "source_bsp_version": 47,
+  "target_bsp_version": 37,
+  "lump_slots": [
+    {
+      "index": 0,
+      "hex_index": "0x00",
+      "source_name": "ENTITIES",
+      "target_name": "ENTITIES",
+      "source_bytes": 7718,
+      "source_lump_version": 0,
+      "target_bytes": 1997,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "Entities",
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "Entities",
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 1,
+      "hex_index": "0x01",
+      "source_name": "PLANES",
+      "target_name": "PLANES",
+      "source_bytes": 288,
+      "source_lump_version": 0,
+      "target_bytes": 3197744,
+      "target_lump_version": 1,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Plane",
+        "format": "4f",
+        "record_bytes": 16,
+        "fields": [
+          "normal",
+          "distance"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Plane",
+        "format": "4f",
+        "record_bytes": 16,
+        "fields": [
+          "normal",
+          "distance"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 2,
+      "hex_index": "0x02",
+      "source_name": "TEXTURE_DATA",
+      "target_name": "TEXTURE_DATA",
+      "source_bytes": 1408,
+      "source_lump_version": 0,
+      "target_bytes": 11484,
+      "target_lump_version": 1,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "TextureData",
+        "format": "4i",
+        "record_bytes": 16,
+        "fields": [
+          "name_index",
+          "size",
+          "flags"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "TextureData",
+        "format": "3f6i",
+        "record_bytes": 36,
+        "fields": [
+          "reflectivity",
+          "name_index",
+          "size",
+          "view",
+          "flags"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 3,
+      "hex_index": "0x03",
+      "source_name": "VERTICES",
+      "target_name": "VERTICES",
+      "source_bytes": 1515672,
+      "source_lump_version": 0,
+      "target_bytes": 162620244,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 4,
+      "hex_index": "0x04",
+      "source_name": "LIGHTPROBE_PARENT_INFOS",
+      "target_name": "LIGHTPROBE_PARENT_INFOS",
+      "source_bytes": 28,
+      "source_lump_version": 0,
+      "target_bytes": 28,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightProbeParentInfo",
+        "format": "i6I",
+        "record_bytes": 28,
+        "fields": [
+          "index",
+          "first_probe",
+          "num_probes",
+          "first_reference",
+          "num_references",
+          "first_tree",
+          "num_trees"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightProbeParentInfo",
+        "format": "i6I",
+        "record_bytes": 28,
+        "fields": [
+          "index",
+          "first_probe",
+          "num_probes",
+          "first_reference",
+          "num_references",
+          "first_tree",
+          "num_trees"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 5,
+      "hex_index": "0x05",
+      "source_name": "SHADOW_ENVIRONMENTS",
+      "target_name": "SHADOW_ENVIRONMENTS",
+      "source_bytes": 36,
+      "source_lump_version": 0,
+      "target_bytes": 72,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "ShadowEnvironment",
+        "format": "6i3f",
+        "record_bytes": 36,
+        "fields": [
+          "first_csm_aabb_node",
+          "first_csm_obj_reference",
+          "first_shadow_mesh",
+          "last_csm_aabb_node",
+          "last_csm_obj_reference",
+          "last_shadow_mesh",
+          "sun_normal"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "ShadowEnvironment",
+        "format": "6i3f",
+        "record_bytes": 36,
+        "fields": [
+          "first_csm_aabb_node",
+          "first_csm_obj_reference",
+          "first_shadow_mesh",
+          "last_csm_aabb_node",
+          "last_csm_obj_reference",
+          "last_shadow_mesh",
+          "sun_normal"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 6,
+      "hex_index": "0x06",
+      "source_name": "UNUSED_6",
+      "target_name": "LIGHTPROBE_BSP_NODES",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 7,
+      "hex_index": "0x07",
+      "source_name": "UNUSED_7",
+      "target_name": "LIGHTPROBE_BSP_REF_IDS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 8,
+      "hex_index": "0x08",
+      "source_name": "UNUSED_8",
+      "target_name": "UNUSED_8",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 9,
+      "hex_index": "0x09",
+      "source_name": "UNUSED_9",
+      "target_name": "UNUSED_9",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 10,
+      "hex_index": "0x0a",
+      "source_name": "UNUSED_10",
+      "target_name": "UNUSED_10",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 11,
+      "hex_index": "0x0b",
+      "source_name": "UNUSED_11",
+      "target_name": "UNUSED_11",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 12,
+      "hex_index": "0x0c",
+      "source_name": "UNUSED_12",
+      "target_name": "UNUSED_12",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 13,
+      "hex_index": "0x0d",
+      "source_name": "UNUSED_13",
+      "target_name": "UNUSED_13",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 14,
+      "hex_index": "0x0e",
+      "source_name": "MODELS",
+      "target_name": "MODELS",
+      "source_bytes": 12480,
+      "source_lump_version": 0,
+      "target_bytes": 32,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Model",
+        "format": "6f2I4i4f",
+        "record_bytes": 64,
+        "fields": [
+          "mins",
+          "maxs",
+          "first_mesh",
+          "num_meshes",
+          "bvh_node",
+          "bvh_leaf",
+          "first_vertex",
+          "vertex_flags",
+          "packed_vertex_offset",
+          "node_scale"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Model",
+        "format": "6f2I",
+        "record_bytes": 32,
+        "fields": [
+          "mins",
+          "maxs",
+          "first_mesh",
+          "num_meshes"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 15,
+      "hex_index": "0x0f",
+      "source_name": "SURFACE_NAMES",
+      "target_name": "UNUSED_15",
+      "source_bytes": 4045,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "TextureDataStringData",
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 16,
+      "hex_index": "0x10",
+      "source_name": "CONTENTS_MASKS",
+      "target_name": "UNUSED_16",
+      "source_bytes": 128,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedInts",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 17,
+      "hex_index": "0x11",
+      "source_name": "SURFACE_PROPERTIES",
+      "target_name": "UNUSED_17",
+      "source_bytes": 768,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "SurfaceProperty",
+        "format": "h2bi",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 18,
+      "hex_index": "0x12",
+      "source_name": "BVH_NODES",
+      "target_name": "UNUSED_18",
+      "source_bytes": 1749952,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "BVHNode",
+        "format": "24h4I",
+        "record_bytes": 64,
+        "fields": [
+          "x",
+          "y",
+          "z",
+          "index"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 19,
+      "hex_index": "0x13",
+      "source_name": "BVH_LEAF_DATA",
+      "target_name": "UNUSED_19",
+      "source_bytes": 1231556,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedInts",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 20,
+      "hex_index": "0x14",
+      "source_name": "PACKED_VERTICES",
+      "target_name": "UNUSED_20",
+      "source_bytes": 432,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "PackedVertex",
+        "format": "3h",
+        "record_bytes": 6,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 21,
+      "hex_index": "0x15",
+      "source_name": "HEIGHTFIELDS",
+      "target_name": "UNUSED_21",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "HeightField",
+        "format": "10I",
+        "record_bytes": 40,
+        "fields": [
+          "unknown"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 22,
+      "hex_index": "0x16",
+      "source_name": "HEIGHTFIELD_SAMPLES",
+      "target_name": "UNUSED_22",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 23,
+      "hex_index": "0x17",
+      "source_name": "UNUSED_23",
+      "target_name": "UNUSED_23",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 24,
+      "hex_index": "0x18",
+      "source_name": "ENTITY_PARTITIONS",
+      "target_name": "ENTITY_PARTITIONS",
+      "source_bytes": 28,
+      "source_lump_version": 0,
+      "target_bytes": 4,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "EntityPartitions",
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "EntityPartitions",
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 25,
+      "hex_index": "0x19",
+      "source_name": "UNUSED_25",
+      "target_name": "UNUSED_25",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 26,
+      "hex_index": "0x1a",
+      "source_name": "UNUSED_26",
+      "target_name": "UNUSED_26",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 27,
+      "hex_index": "0x1b",
+      "source_name": "UNUSED_27",
+      "target_name": "UNUSED_27",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 28,
+      "hex_index": "0x1c",
+      "source_name": "UNUSED_28",
+      "target_name": "UNUSED_28",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 29,
+      "hex_index": "0x1d",
+      "source_name": "UNUSED_29",
+      "target_name": "PHYSICS_COLLIDE",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 30,
+      "hex_index": "0x1e",
+      "source_name": "VERTEX_NORMALS",
+      "target_name": "VERTEX_NORMALS",
+      "source_bytes": 2542152,
+      "source_lump_version": 0,
+      "target_bytes": 134263812,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 31,
+      "hex_index": "0x1f",
+      "source_name": "UNUSED_31",
+      "target_name": "UNUSED_31",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 32,
+      "hex_index": "0x20",
+      "source_name": "UNUSED_32",
+      "target_name": "UNUSED_32",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 33,
+      "hex_index": "0x21",
+      "source_name": "UNUSED_33",
+      "target_name": "UNUSED_33",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 34,
+      "hex_index": "0x22",
+      "source_name": "UNUSED_34",
+      "target_name": "UNUSED_34",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 35,
+      "hex_index": "0x23",
+      "source_name": "GAME_LUMP",
+      "target_name": "GAME_LUMP",
+      "source_bytes": 1113896,
+      "source_lump_version": 0,
+      "target_bytes": 40,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 36,
+      "hex_index": "0x24",
+      "source_name": "UNUSED_36",
+      "target_name": "LEAF_WATER_DATA",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 1,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LeafWaterData",
+        "format": "2fI",
+        "record_bytes": 12,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 37,
+      "hex_index": "0x25",
+      "source_name": "UNKNOWN_37",
+      "target_name": "UNUSED_37",
+      "source_bytes": 3616,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 38,
+      "hex_index": "0x26",
+      "source_name": "UNKNOWN_38",
+      "target_name": "UNUSED_38",
+      "source_bytes": 12840,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedInts",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 39,
+      "hex_index": "0x27",
+      "source_name": "UNKNOWN_39",
+      "target_name": "UNUSED_39",
+      "source_bytes": 2088,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "Shorts",
+        "format": "h",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 40,
+      "hex_index": "0x28",
+      "source_name": "PAKFILE",
+      "target_name": "PAKFILE",
+      "source_bytes": 567,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "Zip",
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "Zip",
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 41,
+      "hex_index": "0x29",
+      "source_name": "UNUSED_41",
+      "target_name": "UNUSED_41",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 42,
+      "hex_index": "0x2a",
+      "source_name": "CUBEMAPS",
+      "target_name": "CUBEMAPS",
+      "source_bytes": 112,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Cubemap",
+        "format": "3iI",
+        "record_bytes": 16,
+        "fields": [
+          "origin",
+          "unknown"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Cubemap",
+        "format": "3iI",
+        "record_bytes": 16,
+        "fields": [
+          "origin",
+          "unknown"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 43,
+      "hex_index": "0x2b",
+      "source_name": "CUBEMAPS_AMBIENT_RCP",
+      "target_name": "TEXTURE_DATA_STRING_DATA",
+      "source_bytes": 28,
+      "source_lump_version": 0,
+      "target_bytes": 16719,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "Floats",
+        "format": "f",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "TextureDataStringData",
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 44,
+      "hex_index": "0x2c",
+      "source_name": "WATER_BODIES",
+      "target_name": "TEXTURE_DATA_STRING_TABLE",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 1276,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "WaterBody",
+        "format": "10f6IQ2f",
+        "record_bytes": 80,
+        "fields": [
+          "origin",
+          "height",
+          "bounds",
+          "first_center",
+          "num_centers",
+          "first_vertex",
+          "first_index",
+          "num_vertices",
+          "num_indices",
+          "targetname_hash",
+          "uv_scale",
+          "node_size"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedInts",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 45,
+      "hex_index": "0x2d",
+      "source_name": "WATER_BODY_CENTERS",
+      "target_name": "UNUSED_45",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "WaterBodyVertex",
+        "format": "5f4B",
+        "record_bytes": 24,
+        "fields": [
+          "position",
+          "uv",
+          "colour"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 46,
+      "hex_index": "0x2e",
+      "source_name": "WATER_BODY_VERTICES",
+      "target_name": "UNUSED_46",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "WaterBodyVertex",
+        "format": "5f4B",
+        "record_bytes": 24,
+        "fields": [
+          "position",
+          "uv",
+          "colour"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 47,
+      "hex_index": "0x2f",
+      "source_name": "WATER_BODY_INDICES",
+      "target_name": "UNUSED_47",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 48,
+      "hex_index": "0x30",
+      "source_name": "WAVE_DATA",
+      "target_name": "UNUSED_48",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 49,
+      "hex_index": "0x31",
+      "source_name": "UNUSED_49",
+      "target_name": "UNUSED_49",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 50,
+      "hex_index": "0x32",
+      "source_name": "UNUSED_50",
+      "target_name": "UNUSED_50",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 51,
+      "hex_index": "0x33",
+      "source_name": "UNUSED_51",
+      "target_name": "UNUSED_51",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 52,
+      "hex_index": "0x34",
+      "source_name": "UNUSED_52",
+      "target_name": "UNUSED_52",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 53,
+      "hex_index": "0x35",
+      "source_name": "UNUSED_53",
+      "target_name": "UNUSED_53",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 54,
+      "hex_index": "0x36",
+      "source_name": "WORLD_LIGHTS",
+      "target_name": "WORLD_LIGHTS",
+      "source_bytes": 21280,
+      "source_lump_version": 0,
+      "target_bytes": 3808,
+      "target_lump_version": 3,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "WorldLightv3",
+        "format": "12f3i7f3i3f",
+        "record_bytes": 112,
+        "fields": [
+          "origin",
+          "intensity",
+          "normal",
+          "shadow_offset",
+          "viscluster",
+          "type",
+          "style",
+          "stop_dot",
+          "stop_dot2",
+          "exponent",
+          "radius",
+          "constant",
+          "linear",
+          "quadratic",
+          "flags",
+          "texture_data",
+          "parent",
+          "unknown_1",
+          "unknown_2",
+          "unknown_3"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "WorldLightv3",
+        "format": "12f3i7f3i3f",
+        "record_bytes": 112,
+        "fields": [
+          "origin",
+          "intensity",
+          "normal",
+          "shadow_offset",
+          "viscluster",
+          "type",
+          "style",
+          "stop_dot",
+          "stop_dot2",
+          "exponent",
+          "radius",
+          "constant",
+          "linear",
+          "quadratic",
+          "flags",
+          "texture_data",
+          "parent",
+          "unknown_1",
+          "unknown_2",
+          "unknown_3"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 55,
+      "hex_index": "0x37",
+      "source_name": "WORLD_LIGHT_PARENT_INFOS",
+      "target_name": "WORLD_LIGHT_PARENT_INFOS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 3,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "WorldLightParentInfo",
+        "format": "18f2h",
+        "record_bytes": 76,
+        "fields": [
+          "matrix",
+          "origin",
+          "unknown_2",
+          "unknown_3",
+          "world_light"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 56,
+      "hex_index": "0x38",
+      "source_name": "UNUSED_56",
+      "target_name": "UNUSED_56",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 57,
+      "hex_index": "0x39",
+      "source_name": "UNUSED_57",
+      "target_name": "UNUSED_57",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 58,
+      "hex_index": "0x3a",
+      "source_name": "UNUSED_58",
+      "target_name": "UNUSED_58",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 59,
+      "hex_index": "0x3b",
+      "source_name": "UNUSED_59",
+      "target_name": "UNUSED_59",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 60,
+      "hex_index": "0x3c",
+      "source_name": "UNUSED_60",
+      "target_name": "UNUSED_60",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 61,
+      "hex_index": "0x3d",
+      "source_name": "UNUSED_61",
+      "target_name": "UNUSED_61",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 62,
+      "hex_index": "0x3e",
+      "source_name": "UNUSED_62",
+      "target_name": "UNUSED_62",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 63,
+      "hex_index": "0x3f",
+      "source_name": "UNUSED_63",
+      "target_name": "UNUSED_63",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 64,
+      "hex_index": "0x40",
+      "source_name": "UNUSED_64",
+      "target_name": "UNUSED_64",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 65,
+      "hex_index": "0x41",
+      "source_name": "UNUSED_65",
+      "target_name": "UNUSED_65",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 66,
+      "hex_index": "0x42",
+      "source_name": "UNUSED_66",
+      "target_name": "TRICOLL_TRIANGLES",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 9806480,
+      "target_lump_version": 2,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "TricollTriangle",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 67,
+      "hex_index": "0x43",
+      "source_name": "UNUSED_67",
+      "target_name": "UNUSED_67",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 68,
+      "hex_index": "0x44",
+      "source_name": "UNUSED_68",
+      "target_name": "TRICOLL_NODES",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 26152384,
+      "target_lump_version": 1,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Bounds",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "origin",
+          "negative_cos",
+          "extents",
+          "positive_sin"
+        ]
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 69,
+      "hex_index": "0x45",
+      "source_name": "UNUSED_69",
+      "target_name": "TRICOLL_HEADERS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 1141712,
+      "target_lump_version": 1,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "TricollHeader",
+        "format": "6h4i4f",
+        "record_bytes": 44,
+        "fields": [
+          "flags",
+          "texture_flags",
+          "texture_data",
+          "num_vertices",
+          "num_triangles",
+          "num_bevel_indices",
+          "first_vertex",
+          "first_triangle",
+          "first_node",
+          "first_bevel_index",
+          "origin",
+          "scale"
+        ]
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 70,
+      "hex_index": "0x46",
+      "source_name": "UNUSED_70",
+      "target_name": "UNUSED_70",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 71,
+      "hex_index": "0x47",
+      "source_name": "VERTEX_UNLIT",
+      "target_name": "VERTEX_UNLIT",
+      "source_bytes": 8160,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexUnlit",
+        "format": "2i2fi",
+        "record_bytes": 20,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "unknown"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexUnlit",
+        "format": "2I2f4B",
+        "record_bytes": 20,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "colour"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 72,
+      "hex_index": "0x48",
+      "source_name": "VERTEX_LIT_FLAT",
+      "target_name": "VERTEX_LIT_FLAT",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 1,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexLitFlat",
+        "format": "2I2fi",
+        "record_bytes": 20,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "unknown"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexLitFlat",
+        "format": "2I2f4B4f",
+        "record_bytes": 36,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "colour",
+          "lightmap"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 73,
+      "hex_index": "0x49",
+      "source_name": "VERTEX_LIT_BUMP",
+      "target_name": "VERTEX_LIT_BUMP",
+      "source_bytes": 8105920,
+      "source_lump_version": 0,
+      "target_bytes": 120459548,
+      "target_lump_version": 1,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexLitBump",
+        "format": "2I2fi2f4B",
+        "record_bytes": 32,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "negative_one",
+          "lightmap_uv",
+          "colour"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexLitBump",
+        "format": "2I2f4B4f2i",
+        "record_bytes": 44,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "colour",
+          "lightmap",
+          "tangent"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 74,
+      "hex_index": "0x4a",
+      "source_name": "VERTEX_UNLIT_TS",
+      "target_name": "VERTEX_UNLIT_TS",
+      "source_bytes": 97056,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexUnlitTS",
+        "format": "2I2f2i",
+        "record_bytes": 24,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "unknown"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexUnlitTS",
+        "format": "2I2f4B2i",
+        "record_bytes": 28,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "colour",
+          "tangent"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 75,
+      "hex_index": "0x4b",
+      "source_name": "VERTEX_BLINN_PHONG",
+      "target_name": "VERTEX_BLINN_PHONG",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexBlinnPhong",
+        "format": "2I4f",
+        "record_bytes": 24,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "albedo_uv",
+          "lightmap_uv"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "VertexBlinnPhong",
+        "format": "2I4B20f",
+        "record_bytes": 92,
+        "fields": [
+          "position_index",
+          "normal_index",
+          "colour",
+          "albedo_uv",
+          "lightmap",
+          "tangent"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 76,
+      "hex_index": "0x4c",
+      "source_name": "VERTEX_RESERVED_5",
+      "target_name": "VERTEX_RESERVED_5",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 77,
+      "hex_index": "0x4d",
+      "source_name": "VERTEX_RESERVED_6",
+      "target_name": "VERTEX_RESERVED_6",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 78,
+      "hex_index": "0x4e",
+      "source_name": "VERTEX_RESERVED_7",
+      "target_name": "VERTEX_RESERVED_7",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 79,
+      "hex_index": "0x4f",
+      "source_name": "MESH_INDICES",
+      "target_name": "MESH_INDICES",
+      "source_bytes": 1371012,
+      "source_lump_version": 0,
+      "target_bytes": 5848368,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 80,
+      "hex_index": "0x50",
+      "source_name": "MESHES",
+      "target_name": "MESHES",
+      "source_bytes": 68208,
+      "source_lump_version": 0,
+      "target_bytes": 139496,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Mesh",
+        "format": "IH8hHI",
+        "record_bytes": 28,
+        "fields": [
+          "first_mesh_index",
+          "num_triangles",
+          "unknown",
+          "material_sort",
+          "flags"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Mesh",
+        "format": "I3H6b2h2BHI",
+        "record_bytes": 28,
+        "fields": [
+          "first_mesh_index",
+          "num_triangles",
+          "first_vertex",
+          "num_vertices",
+          "vertex_type",
+          "cubemap",
+          "styles",
+          "luxel_origin",
+          "luxel_offset_max",
+          "material_sort",
+          "flags"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 81,
+      "hex_index": "0x51",
+      "source_name": "MESH_BOUNDS",
+      "target_name": "MESH_BOUNDS",
+      "source_bytes": 77952,
+      "source_lump_version": 0,
+      "target_bytes": 159424,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "MeshBounds",
+        "format": "8f",
+        "record_bytes": 32,
+        "fields": [
+          "origin",
+          "radius",
+          "extents",
+          "tan_yaw"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "MeshBounds",
+        "format": "8f",
+        "record_bytes": 32,
+        "fields": [
+          "origin",
+          "radius",
+          "extents",
+          "tan_yaw"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 82,
+      "hex_index": "0x52",
+      "source_name": "MATERIAL_SORTS",
+      "target_name": "MATERIAL_SORTS",
+      "source_bytes": 1056,
+      "source_lump_version": 0,
+      "target_bytes": 5796,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "MaterialSort",
+        "format": "4hI",
+        "record_bytes": 12,
+        "fields": [
+          "texture_data",
+          "lightmap_index",
+          "unknown",
+          "vertex_offset"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "MaterialSort",
+        "format": "4hi",
+        "record_bytes": 12,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 83,
+      "hex_index": "0x53",
+      "source_name": "LIGHTMAP_HEADERS",
+      "target_name": "LIGHTMAP_HEADERS",
+      "source_bytes": 8,
+      "source_lump_version": 0,
+      "target_bytes": 56,
+      "target_lump_version": 1,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightmapHeader",
+        "format": "I2H",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightmapHeader",
+        "format": "I2H",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 84,
+      "hex_index": "0x54",
+      "source_name": "UNUSED_84",
+      "target_name": "UNUSED_84",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 85,
+      "hex_index": "0x55",
+      "source_name": "TWEAK_LIGHTS",
+      "target_name": "CM_GRID",
+      "source_bytes": 184,
+      "source_lump_version": 0,
+      "target_bytes": 28,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "Grid",
+        "format": "f6i",
+        "record_bytes": 28,
+        "fields": [
+          "scale",
+          "offset",
+          "count",
+          "num_straddle_groups",
+          "first_brush_plane"
+        ]
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 86,
+      "hex_index": "0x56",
+      "source_name": "UNUSED_86",
+      "target_name": "CM_GRID_CELLS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 20,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "GridCell",
+        "format": "2H",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 87,
+      "hex_index": "0x57",
+      "source_name": "UNUSED_87",
+      "target_name": "CM_GEO_SETS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 4368,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "GeoSet",
+        "format": "2HI",
+        "record_bytes": 8,
+        "fields": [
+          "straddle_group",
+          "num_primitives",
+          "primitive"
+        ]
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 88,
+      "hex_index": "0x58",
+      "source_name": "UNUSED_88",
+      "target_name": "CM_GEO_SET_BOUNDS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 8736,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Bounds",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "origin",
+          "negative_cos",
+          "extents",
+          "positive_sin"
+        ]
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 89,
+      "hex_index": "0x59",
+      "source_name": "UNUSED_89",
+      "target_name": "CM_PRIMITIVES",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 132000,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "Primitive",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 90,
+      "hex_index": "0x5a",
+      "source_name": "UNUSED_90",
+      "target_name": "CM_PRIMITIVE_BOUNDS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 528000,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Bounds",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "origin",
+          "negative_cos",
+          "extents",
+          "positive_sin"
+        ]
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 91,
+      "hex_index": "0x5b",
+      "source_name": "UNUSED_91",
+      "target_name": "CM_UNIQUE_CONTENTS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 4,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedInts",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 92,
+      "hex_index": "0x5c",
+      "source_name": "UNUSED_92",
+      "target_name": "CM_BRUSHES",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 244928,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Brush",
+        "format": "3f2Bh3fi",
+        "record_bytes": 32,
+        "fields": [
+          "origin",
+          "num_non_axial_no_discard",
+          "num_plane_offsets",
+          "index",
+          "extents",
+          "brush_side_offset"
+        ]
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 93,
+      "hex_index": "0x5d",
+      "source_name": "UNUSED_93",
+      "target_name": "CM_BRUSH_SIDE_PLANE_OFFSETS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 399716,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 94,
+      "hex_index": "0x5e",
+      "source_name": "UNUSED_94",
+      "target_name": "CM_BRUSH_SIDE_PROPERTIES",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 491564,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "BrushSideProperty",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 95,
+      "hex_index": "0x5f",
+      "source_name": "UNUSED_95",
+      "target_name": "CM_BRUSH_SIDE_TEXTURE_VECTORS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 7865024,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "TextureVector",
+        "format": "8f",
+        "record_bytes": 32,
+        "fields": [
+          "s",
+          "t"
+        ]
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 96,
+      "hex_index": "0x60",
+      "source_name": "UNUSED_96",
+      "target_name": "TRICOLL_BEVEL_STARTS",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 4903240,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 97,
+      "hex_index": "0x61",
+      "source_name": "LIGHTMAP_DATA_UNKNOWN",
+      "target_name": "TRICOLL_BEVEL_INDICES",
+      "source_bytes": 1704960,
+      "source_lump_version": 0,
+      "target_bytes": 8,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedInts",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "classification": "repurposed_slot"
+    },
+    {
+      "index": 98,
+      "hex_index": "0x62",
+      "source_name": "LIGHTMAP_DATA_SKY",
+      "target_name": "LIGHTMAP_DATA_SKY",
+      "source_bytes": 6819840,
+      "source_lump_version": 0,
+      "target_bytes": 310378496,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 99,
+      "hex_index": "0x63",
+      "source_name": "CSM_AABB_NODES",
+      "target_name": "CSM_AABB_NODES",
+      "source_bytes": 211552,
+      "source_lump_version": 0,
+      "target_bytes": 64,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "CSMAABBNode",
+        "format": "3fI3fI",
+        "record_bytes": 32,
+        "fields": [
+          "mins",
+          "children",
+          "maxs",
+          "unknown"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "AABBNode",
+        "format": "3f2BH3f2H",
+        "record_bytes": 32,
+        "fields": [
+          "mins",
+          "num_children",
+          "num_obj_refs",
+          "total_obj_refs",
+          "maxs",
+          "first_child",
+          "first_obj_ref"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 100,
+      "hex_index": "0x64",
+      "source_name": "CSM_OBJ_REFERENCES",
+      "target_name": "CSM_OBJ_REFERENCES",
+      "source_bytes": 57288,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedInts",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 101,
+      "hex_index": "0x65",
+      "source_name": "LIGHTPROBES",
+      "target_name": "LIGHTPROBES",
+      "source_bytes": 1877088,
+      "source_lump_version": 0,
+      "target_bytes": 1911408,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightProbe",
+        "format": "24B4h4B4hI",
+        "record_bytes": 48,
+        "fields": [
+          "cube",
+          "sky_dir_sun_vis",
+          "static_light",
+          "padding"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightProbe",
+        "format": "24B4h4B4hI",
+        "record_bytes": 48,
+        "fields": [
+          "cube",
+          "sky_dir_sun_vis",
+          "static_light",
+          "padding"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 102,
+      "hex_index": "0x66",
+      "source_name": "STATIC_PROP_LIGHTPROBE_INDICES",
+      "target_name": "STATIC_PROP_LIGHTPROBE_INDICES",
+      "source_bytes": 67448,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 103,
+      "hex_index": "0x67",
+      "source_name": "LIGHTPROBE_TREE",
+      "target_name": "LIGHTPROBE_TREE",
+      "source_bytes": 46920,
+      "source_lump_version": 0,
+      "target_bytes": 131064,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightProbeTree",
+        "format": "2I",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightProbeTree",
+        "format": "2I",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 104,
+      "hex_index": "0x68",
+      "source_name": "LIGHTPROBE_REFERENCES",
+      "target_name": "LIGHTPROBE_REFERENCES",
+      "source_bytes": 454500,
+      "source_lump_version": 0,
+      "target_bytes": 796420,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightProbeRef",
+        "format": "3fIi",
+        "record_bytes": 20,
+        "fields": [
+          "origin",
+          "lightprobe",
+          "unknown"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightProbeRef",
+        "format": "3fIi",
+        "record_bytes": 20,
+        "fields": [
+          "origin",
+          "lightprobe",
+          "unknown"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 105,
+      "hex_index": "0x69",
+      "source_name": "LIGHTMAP_DATA_REAL_TIME_LIGHTS",
+      "target_name": "LIGHTMAP_DATA_REAL_TIME_LIGHTS",
+      "source_bytes": 5541120,
+      "source_lump_version": 0,
+      "target_bytes": 349175808,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 106,
+      "hex_index": "0x6a",
+      "source_name": "CELL_BSP_NODES",
+      "target_name": "CELL_BSP_NODES",
+      "source_bytes": 56,
+      "source_lump_version": 0,
+      "target_bytes": 8,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "CellBSPNode",
+        "format": "iI",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "CellBSPNode",
+        "format": "iI",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 107,
+      "hex_index": "0x6b",
+      "source_name": "CELLS",
+      "target_name": "CELLS",
+      "source_bytes": 32,
+      "source_lump_version": 0,
+      "target_bytes": 8,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Cell",
+        "format": "3Hh",
+        "record_bytes": 8,
+        "fields": [
+          "num_portals",
+          "first_portal",
+          "flags",
+          "leaf_water_data"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Cell",
+        "format": "3Hh",
+        "record_bytes": 8,
+        "fields": [
+          "num_portals",
+          "first_portal",
+          "flags",
+          "leaf_water_data"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 108,
+      "hex_index": "0x6c",
+      "source_name": "PORTALS",
+      "target_name": "PORTALS",
+      "source_bytes": 216,
+      "source_lump_version": 0,
+      "target_bytes": 12,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Portal",
+        "format": "4B2HI",
+        "record_bytes": 12,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Portal",
+        "format": "4B2HI",
+        "record_bytes": 12,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 109,
+      "hex_index": "0x6d",
+      "source_name": "PORTAL_VERTICES",
+      "target_name": "PORTAL_VERTICES",
+      "source_bytes": 876,
+      "source_lump_version": 0,
+      "target_bytes": 60,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 110,
+      "hex_index": "0x6e",
+      "source_name": "PORTAL_EDGES",
+      "target_name": "PORTAL_EDGES",
+      "source_bytes": 144,
+      "source_lump_version": 0,
+      "target_bytes": 16,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 111,
+      "hex_index": "0x6f",
+      "source_name": "PORTAL_VERTEX_EDGES",
+      "target_name": "PORTAL_VERTEX_EDGES",
+      "source_bytes": 1168,
+      "source_lump_version": 0,
+      "target_bytes": 80,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "IndexSet",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "indices"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "IndexSet",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "indices"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 112,
+      "hex_index": "0x70",
+      "source_name": "PORTAL_VERTEX_REFERENCES",
+      "target_name": "PORTAL_VERTEX_REFERENCES",
+      "source_bytes": 144,
+      "source_lump_version": 0,
+      "target_bytes": 8,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 113,
+      "hex_index": "0x71",
+      "source_name": "PORTAL_EDGE_REFERENCES",
+      "target_name": "PORTAL_EDGE_REFERENCES",
+      "source_bytes": 144,
+      "source_lump_version": 0,
+      "target_bytes": 8,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 114,
+      "hex_index": "0x72",
+      "source_name": "PORTAL_EDGE_INTERSECT_EDGE",
+      "target_name": "PORTAL_EDGE_INTERSECT_EDGE",
+      "source_bytes": 576,
+      "source_lump_version": 0,
+      "target_bytes": 64,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "IndexSet",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "indices"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "IndexSet",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "indices"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 115,
+      "hex_index": "0x73",
+      "source_name": "PORTAL_EDGE_INTERSECT_VERTEX",
+      "target_name": "PORTAL_EDGE_INTERSECT_VERTEX",
+      "source_bytes": 576,
+      "source_lump_version": 0,
+      "target_bytes": 64,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "IndexSet",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "indices"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "IndexSet",
+        "format": "8h",
+        "record_bytes": 16,
+        "fields": [
+          "indices"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 116,
+      "hex_index": "0x74",
+      "source_name": "PORTAL_EDGE_INTERSECT_HEADER",
+      "target_name": "PORTAL_EDGE_INTERSECT_HEADER",
+      "source_bytes": 288,
+      "source_lump_version": 0,
+      "target_bytes": 32,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "IntersectHeader",
+        "format": "2I",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "IntersectHeader",
+        "format": "2I",
+        "record_bytes": 8,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 117,
+      "hex_index": "0x75",
+      "source_name": "OCCLUSION_MESH_VERTICES",
+      "target_name": "OCCLUSION_MESH_VERTICES",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 118,
+      "hex_index": "0x76",
+      "source_name": "OCCLUSION_MESH_INDICES",
+      "target_name": "OCCLUSION_MESH_INDICES",
+      "source_bytes": 0,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "Shorts",
+        "format": "h",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "Shorts",
+        "format": "h",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 119,
+      "hex_index": "0x77",
+      "source_name": "CELL_AABB_NODES",
+      "target_name": "CELL_AABB_NODES",
+      "source_bytes": 33408,
+      "source_lump_version": 0,
+      "target_bytes": 672,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "CellAABBNode",
+        "format": "3fI3fI",
+        "record_bytes": 32,
+        "fields": [
+          "mins",
+          "children",
+          "maxs",
+          "unknown"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "AABBNode",
+        "format": "3f2BH3f2H",
+        "record_bytes": 32,
+        "fields": [
+          "mins",
+          "num_children",
+          "num_obj_refs",
+          "total_obj_refs",
+          "maxs",
+          "first_child",
+          "first_obj_ref"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 120,
+      "hex_index": "0x78",
+      "source_name": "OBJ_REFERENCES",
+      "target_name": "OBJ_REFERENCES",
+      "source_bytes": 76984,
+      "source_lump_version": 0,
+      "target_bytes": 9964,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedInts",
+        "format": "I",
+        "record_bytes": 4,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 121,
+      "hex_index": "0x79",
+      "source_name": "OBJ_REFERENCE_BOUNDS",
+      "target_name": "OBJ_REFERENCE_BOUNDS",
+      "source_bytes": 615872,
+      "source_lump_version": 0,
+      "target_bytes": 159424,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "ObjRefBounds",
+        "format": "3fi3fi",
+        "record_bytes": 32,
+        "fields": [
+          "mins",
+          "mins_zero",
+          "maxs",
+          "maxs_zero"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "ObjRefBounds",
+        "format": "3fi3fi",
+        "record_bytes": 32,
+        "fields": [
+          "mins",
+          "mins_zero",
+          "maxs",
+          "maxs_zero"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 122,
+      "hex_index": "0x7a",
+      "source_name": "LIGHTMAP_DATA_RTL_PAGES",
+      "target_name": "LIGHTMAP_DATA_RTL_PAGES",
+      "source_bytes": 378,
+      "source_lump_version": 0,
+      "target_bytes": 126,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "raw/unsupported",
+        "type": null,
+        "format": null,
+        "record_bytes": null,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "LightmapPage",
+        "format": "63h",
+        "record_bytes": 126,
+        "fields": [
+          "indices"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 123,
+      "hex_index": "0x7b",
+      "source_name": "LEVEL_INFO",
+      "target_name": "LEVEL_INFO",
+      "source_bytes": 36,
+      "source_lump_version": 0,
+      "target_bytes": 28,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "LevelInfo",
+        "format": "5I3fI",
+        "record_bytes": 36,
+        "fields": [
+          "unknown",
+          "num_static_props",
+          "sun_normal",
+          "num_entity_models"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "SPECIAL_LUMP_CLASSES",
+        "type": "LevelInfo",
+        "format": "4I3f",
+        "record_bytes": 28,
+        "fields": [
+          "first_decal_mesh",
+          "first_transparent_mesh",
+          "first_sky_mesh",
+          "num_static_props",
+          "sun_normal"
+        ]
+      },
+      "classification": "rebuild_or_validate"
+    },
+    {
+      "index": 124,
+      "hex_index": "0x7c",
+      "source_name": "SHADOW_MESH_OPAQUE_VERTICES",
+      "target_name": "SHADOW_MESH_OPAQUE_VERTICES",
+      "source_bytes": 566796,
+      "source_lump_version": 0,
+      "target_bytes": 7774824,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "Vertex",
+        "format": "3f",
+        "record_bytes": 12,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 125,
+      "hex_index": "0x7d",
+      "source_name": "SHADOW_MESH_ALPHA_VERTICES",
+      "target_name": "SHADOW_MESH_ALPHA_VERTICES",
+      "source_bytes": 31020,
+      "source_lump_version": 0,
+      "target_bytes": 0,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "ShadowMeshAlphaVertex",
+        "format": "5f",
+        "record_bytes": 20,
+        "fields": [
+          "position",
+          "uv"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "ShadowMeshAlphaVertex",
+        "format": "5f",
+        "record_bytes": 20,
+        "fields": [
+          "position",
+          "uv"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 126,
+      "hex_index": "0x7e",
+      "source_name": "SHADOW_MESH_INDICES",
+      "target_name": "SHADOW_MESH_INDICES",
+      "source_bytes": 409434,
+      "source_lump_version": 0,
+      "target_bytes": 5691492,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "target_parser_schema": {
+        "kind": "BASIC_LUMP_CLASSES",
+        "type": "UnsignedShorts",
+        "format": "H",
+        "record_bytes": 2,
+        "fields": []
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    },
+    {
+      "index": 127,
+      "hex_index": "0x7f",
+      "source_name": "SHADOW_MESHES",
+      "target_name": "SHADOW_MESHES",
+      "source_bytes": 264,
+      "source_lump_version": 0,
+      "target_bytes": 720,
+      "target_lump_version": 0,
+      "source_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "ShadowMesh",
+        "format": "2I2h",
+        "record_bytes": 12,
+        "fields": [
+          "vertex_offset",
+          "num_triangles",
+          "is_opaque",
+          "material_sort"
+        ]
+      },
+      "target_parser_schema": {
+        "kind": "LUMP_CLASSES",
+        "type": "ShadowMesh",
+        "format": "2I2h",
+        "record_bytes": 12,
+        "fields": [
+          "vertex_offset",
+          "num_triangles",
+          "is_opaque",
+          "material_sort"
+        ]
+      },
+      "classification": "record_format_match_requires_semantic_checks"
+    }
+  ],
+  "observed_writer_layouts": [
+    {
+      "name": "BspHeaderPrefix",
+      "format": "<4s3I",
+      "bytes": 16,
+      "lump": null,
+      "fields": [
+        "magic",
+        "version",
+        "revision",
+        "last_lump_index"
+      ]
+    },
+    {
+      "name": "LumpHeader",
+      "format": "<4I",
+      "bytes": 16,
+      "lump": null,
+      "fields": [
+        "offset",
+        "length",
+        "version",
+        "fourcc"
+      ]
+    },
+    {
+      "name": "LitBumpVertex",
+      "format": "<2I2f4B4f2I",
+      "bytes": 44,
+      "lump": 73,
+      "fields": [
+        "position_index",
+        "normal_index",
+        "albedo_u",
+        "albedo_v",
+        "rgba[4]",
+        "lightmap_uv_and_reserved[4]",
+        "tangent_index_with_mirror_bit",
+        "extra"
+      ]
+    },
+    {
+      "name": "Mesh",
+      "format": "<I3H6b2h2BHI",
+      "bytes": 28,
+      "lump": 80,
+      "fields": [
+        "first_index",
+        "triangles",
+        "first_vertex",
+        "vertex_span",
+        "vertex_type",
+        "cubemap",
+        "styles[4]",
+        "luxel_origin[2]",
+        "luxel_max[2]",
+        "material_sort",
+        "flags"
+      ]
+    },
+    {
+      "name": "MeshBounds",
+      "format": "<8f",
+      "bytes": 32,
+      "lump": 81,
+      "fields": [
+        "center[3]",
+        "radius",
+        "half_extent[3]",
+        "unused"
+      ]
+    },
+    {
+      "name": "MaterialSort",
+      "format": "<3hHI",
+      "bytes": 12,
+      "lump": 82,
+      "fields": [
+        "texture_data",
+        "lightmap",
+        "cubemap",
+        "last_local_vertex",
+        "vertex_base"
+      ]
+    },
+    {
+      "name": "LightmapHeader",
+      "format": "<I2H",
+      "bytes": 8,
+      "lump": 83,
+      "fields": [
+        "count",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "name": "CMBrush",
+      "format": "<3f2BH3fI",
+      "bytes": 32,
+      "lump": 92,
+      "fields": [
+        "center[3]",
+        "cut_plane_count",
+        "cut_plus_bevel_count",
+        "brush_index",
+        "half_extent[3]",
+        "plane_offset_index"
+      ]
+    },
+    {
+      "name": "CMGeoSet",
+      "format": "<HHI",
+      "bytes": 8,
+      "lump": 87,
+      "fields": [
+        "group",
+        "primitive_count",
+        "packed_primitive_or_range"
+      ]
+    },
+    {
+      "name": "CMGridCell",
+      "format": "<2H",
+      "bytes": 4,
+      "lump": 86,
+      "fields": [
+        "first_geoset",
+        "geosets"
+      ]
+    },
+    {
+      "name": "PackedCollisionBounds",
+      "format": "<3hH3hH",
+      "bytes": 16,
+      "lump": 88,
+      "fields": [
+        "center[3]",
+        "flags",
+        "half_extent[3]",
+        "unused"
+      ]
+    },
+    {
+      "name": "TriCollHeader",
+      "format": "<6h4i4f",
+      "bytes": 44,
+      "lump": 69,
+      "fields": [
+        "flags",
+        "texture_flags",
+        "texture",
+        "vertices",
+        "triangles",
+        "bevels",
+        "first_vertex",
+        "first_triangle",
+        "first_node",
+        "first_bevel",
+        "origin[3]",
+        "scale"
+      ]
+    },
+    {
+      "name": "CellAABBNode",
+      "format": "<3f2BH3f2H",
+      "bytes": 32,
+      "lump": 119,
+      "fields": [
+        "mins[3]",
+        "children",
+        "direct_references",
+        "subtree_references",
+        "maxs[3]",
+        "first_child",
+        "first_reference"
+      ]
+    },
+    {
+      "name": "ObjectReferenceBounds",
+      "format": "<3fI3fI",
+      "bytes": 32,
+      "lump": 121,
+      "fields": [
+        "mins[3]",
+        "reserved0",
+        "maxs[3]",
+        "reserved1"
+      ]
+    },
+    {
+      "name": "ShadowMesh",
+      "format": "<2I2h",
+      "bytes": 12,
+      "lump": 127,
+      "fields": [
+        "vertex_base",
+        "triangles",
+        "opaque",
+        "material_sort"
+      ]
+    },
+    {
+      "name": "LightProbe",
+      "format": "<16h4B4hI",
+      "bytes": 48,
+      "lump": 101,
+      "fields": [
+        "ambient_coefficients[16]",
+        "visibility[4]",
+        "local_light_indices[4]",
+        "reserved"
+      ]
+    },
+    {
+      "name": "LightProbeRef",
+      "format": "<3fIi",
+      "bytes": 20,
+      "lump": 104,
+      "fields": [
+        "origin[3]",
+        "probe_index",
+        "reserved"
+      ]
+    },
+    {
+      "name": "LightProbeParent",
+      "format": "<i6I",
+      "bytes": 28,
+      "lump": 4,
+      "fields": [
+        "index",
+        "first_probe",
+        "probes",
+        "first_reference",
+        "references",
+        "first_tree",
+        "tree_nodes"
+      ]
+    },
+    {
+      "name": "StaticPropV13",
+      "format": "<7fH2B2H4f4b4B2H",
+      "bytes": 64,
+      "lump": null,
+      "fields": [
+        "origin[3]",
+        "angles_yzx[3]",
+        "scale",
+        "model_index",
+        "solid",
+        "flags",
+        "skin",
+        "cubemap",
+        "fade",
+        "lighting_origin[3]",
+        "cpu_gpu_levels[4]",
+        "diffuse_modulation[4]",
+        "collision_flags[2]"
+      ]
+    },
+    {
+      "name": "StbspMaterialInfo",
+      "format": "<2IQ2I",
+      "bytes": 24,
+      "lump": null,
+      "fields": [
+        "string_offset",
+        "unknown",
+        "guid",
+        "unknown2",
+        "unknown3"
+      ]
+    },
+    {
+      "name": "StbspColumn",
+      "format": "<QIf4h",
+      "bytes": 24,
+      "lump": null,
+      "fields": [
+        "payload_offset",
+        "payload_length",
+        "coverage_scale",
+        "bounds_xy[4]"
+      ]
+    }
+  ],
+  "limitations": "Parser labels and unknown fields are not guaranteed engine semantics; writer-observed records take precedence. All offsets must be bounds-checked, and formats are version-specific."
+}

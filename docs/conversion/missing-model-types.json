@@ -1,0 +1,546 @@
+[
+  {
+    "model": "mdl/foliage/ground_plant_desertlands_01_group_01.rmdl",
+    "placements": 3621,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/icelandic_moss_grass_01.rmdl",
+    "placements": 2944,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/flowers_ground_01.rmdl",
+    "placements": 679,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/moss_green_hanging_large_02_dark.rmdl",
+    "placements": 626,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/foliage_ground_plants.rmdl",
+    "placements": 614,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/rocks/icelandic_rockcluster_03.rmdl",
+    "placements": 455,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/icelandic_ground_plant_01.rmdl",
+    "placements": 327,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/industrial/modular_railing_trim_long.rmdl",
+    "placements": 237,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/moss_green_hanging_large_01_dark.rmdl",
+    "placements": 221,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/tree_brush_yellow_large_03.rmdl",
+    "placements": 153,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+    "placements": 150,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/plant_icelandic_02.rmdl",
+    "placements": 128,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/industrial/modular_railing_trim_a.rmdl",
+    "placements": 93,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/rocks/icelandic_rockcluster_01.rmdl",
+    "placements": 59,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/tree_acacia_small_01.rmdl",
+    "placements": 53,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/utilities/power_cell_64.rmdl",
+    "placements": 52,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/moss_green_hanging_large_04_dark.rmdl",
+    "placements": 51,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/moss_green_hanging_large_04.rmdl",
+    "placements": 49,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/signs/sign_service_shaft_02.rmdl",
+    "placements": 36,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/utilities/ceiling_vent_metal.rmdl",
+    "placements": 34,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/signs/sign_caution_chemical.rmdl",
+    "placements": 34,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/utilities/power_gen1.rmdl",
+    "placements": 30,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/thunderdome/survival_modular_flexscreens_frame_01.rmdl",
+    "placements": 24,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/thunderdome/survival_modular_flexscreens_04.rmdl",
+    "placements": 24,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/decals/grime_dirty_floor_decal_01.rmdl",
+    "placements": 23,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/ground_plant_desertlands_01.rmdl",
+    "placements": 22,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/tree_acacia_small_03.rmdl",
+    "placements": 20,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/containers/barrel.rmdl",
+    "placements": 18,
+    "compiled_available": false,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/tree_fir_large_arenas_01.rmdl",
+    "placements": 15,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/utilities/wires_hanging_64.rmdl",
+    "placements": 14,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+    "placements": 12,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/industrial/modular_railing_trim_mid.rmdl",
+    "placements": 9,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/water/water_puddle_decal_01.rmdl",
+    "placements": 9,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/IMC_base/ceiling_plugs_IMC_02.rmdl",
+    "placements": 8,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/grass_burnt_yellow_03.rmdl",
+    "placements": 8,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/rocks/icelandic_snow_rockcluster_02.rmdl",
+    "placements": 8,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/utilities/wire_ground_coils_02.rmdl",
+    "placements": 7,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/signs/street_sign_arrow.rmdl",
+    "placements": 6,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/IMC_base/light_wall_IMC_01_on.rmdl",
+    "placements": 6,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/ground_plant_beacon_01.rmdl",
+    "placements": 5,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/vehicles_r5/land/msc_truck_mod_lrg/veh_land_msc_truck_mod_police_lrg_01_closed_static.rmdl",
+    "placements": 5,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/utilities/wall_Waterpipe.rmdl",
+    "placements": 4,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/signs/sign_caution_pump_warning.rmdl",
+    "placements": 4,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/IMC_base/monitor_command_imc_01.rmdl",
+    "placements": 4,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/IMC_base/monitor_command_small_imc_01.rmdl",
+    "placements": 4,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/IMC_base/imc_antenna_01.rmdl",
+    "placements": 4,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/slum_city/slumcity_column01_40x128_dirty_a.rmdl",
+    "placements": 4,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/mendoko/mendoko_wire_ground_coils_03.rmdl",
+    "placements": 3,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/test/josh_test/farmland_crate_plastic_test_yellow_01.rmdl",
+    "placements": 3,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/rocks/icelandic_rockcluster_02.rmdl",
+    "placements": 3,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/vehicles_r5/land/msc_forklift_imc_v2/veh_land_msc_forklift_imc_v2_static.rmdl",
+    "placements": 2,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/utilities/wire_ceiling_mounts_straight.rmdl",
+    "placements": 2,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/utilities/power_cell_64_single_01.rmdl",
+    "placements": 2,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/signs/sign_service_shaft_01.rmdl",
+    "placements": 2,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/pipes/pipe_modular_painted_grey_corner.rmdl",
+    "placements": 2,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/pipes/pipe_modular_painted_grey_8.rmdl",
+    "placements": 2,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/rocks/rock_lava_cluster_desertlands_03.rmdl",
+    "placements": 2,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/IMC_base/imc_antenna_02.rmdl",
+    "placements": 2,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/fixtures/stasis_light_01_warm.rmdl",
+    "placements": 2,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/signs/arenas_big_screen_01.rmdl",
+    "placements": 2,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/robots/marvin/marvin_death5_static.rmdl",
+    "placements": 2,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/pipes/pipe_modular_painted_grey_32_valve.rmdl",
+    "placements": 1,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/slum_city/slumcity_industrial_scaffolding_128x128_tarp_b.rmdl",
+    "placements": 1,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/slum_city/slumcity_industrial_scaffolding_128x128_tarp_a.rmdl",
+    "placements": 1,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/slum_city/slumcity_industrial_scaffolding_128x128_tarp_d.rmdl",
+    "placements": 1,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/slum_city/slumcity_industrial_scaffolding_32x128_tarp_c.rmdl",
+    "placements": 1,
+    "compiled_available": true,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/foliage/tree_fir_large_01.rmdl",
+    "placements": 1,
+    "compiled_available": true,
+    "exported_qc_available": true,
+    "physics_file_available": true,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  },
+  {
+    "model": "mdl/levels_terrain/mp_lobby/mp_lobby_marvin_hanging1.rmdl",
+    "placements": 1,
+    "compiled_available": false,
+    "exported_qc_available": false,
+    "physics_file_available": false,
+    "omission_reason": "Not selected for the bounded world-baked release; availability does not establish compatible skins, shaders or collision."
+  }
+]

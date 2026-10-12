@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "source_static_placements": 16862,
+  "arena_static_placements": 16376,
+  "rendered_arena_static_placements": 5425,
+  "missing_arena_static_placements": 10951,
+  "missing_model_types": 68,
+  "missing_categories": {
+    "vehicles_r5": 7,
+    "foliage": 9537,
+    "thunderdome": 60,
+    "utilities": 145,
+    "mendoko": 3,
+    "signs": 234,
+    "IMC_base": 28,
+    "industrial": 339,
+    "pipes": 5,
+    "slum_city": 8,
+    "test": 3,
+    "rocks": 527,
+    "containers": 18,
+    "fixtures": 2,
+    "robots": 2,
+    "levels_terrain": 1,
+    "decals": 23,
+    "water": 9
+  },
+  "outside_arena_placements": 486,
+  "omitted_model_types_with_compiled_files": 58,
+  "omitted_placements_with_compiled_files": 10583,
+  "source_entities": 701,
+  "entity_status_counts": {
+    "matching_target_identity_semantics_unverified": 2,
+    "no_matching_target_entity": 505,
+    "brush_model_geometry_exported_behavior_unverified": 194
+  },
+  "dynamic_render_prop_placements": 27,
+  "dynamic_render_props_converted": 0
+}

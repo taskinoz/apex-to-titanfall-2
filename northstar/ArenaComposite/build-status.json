@@ -1,0 +1,5614 @@
+{
+  "source_map": "mp_rr_arena_composite",
+  "map": "mp_arena_composite",
+  "version": "0.6.0",
+  "render_triangles": 942146,
+  "render_repair": {
+    "world_meshes": 2837
+  },
+  "geometry": [
+    [
+      -22000.0,
+      -22000.0,
+      -24312.40234375
+    ],
+    [
+      22000.0,
+      22000.0,
+      22000.0
+    ]
+  ],
+  "draw_budget": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\composite\\mp_arena_composite.bsp",
+    "meshes": 3024,
+    "real_triangles": 942146,
+    "native_padded_indices": 2830530,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 3024,
+    "prefix_indices": 2830530,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      2892,
+      2892,
+      3024
+    ],
+    "static_batch_runs": 353,
+    "unique_static_draw_keys": 353,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "build": {
+    "original_bytes": 1154690688,
+    "compact_bytes": 606297604,
+    "non_game_lumps_byte_identical": false,
+    "unchanged_lumps_byte_verified": true,
+    "replaced_lumps": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      14,
+      24,
+      30,
+      43,
+      44,
+      54,
+      66,
+      68,
+      69,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      126,
+      127
+    ],
+    "game_lump_offsets_relocated": true,
+    "checks": {
+      "version": 37,
+      "bytes": 606297604,
+      "nonempty_lumps": 46,
+      "collision_geosets": 135,
+      "structural_checks_passed": true,
+      "in_game_verified": true,
+      "native_triangle_pair_validation": null
+    }
+  },
+  "source_props": 4264,
+  "missing_props": 2200,
+  "client_verified": true,
+  "lighting": {
+    "surface_pages": 4,
+    "chart_resolution": "Four texels per triangle",
+    "source_sky_projection": "Photographic sphere approximation",
+    "interior_lights": 60,
+    "character_probes": 2907,
+    "team_starts": 24,
+    "titan_starts": 6,
+    "lightmap_stats": [
+      {
+        "page": 0,
+        "sunlit": 0.04568163678050041,
+        "local_luxels": 1210073
+      },
+      {
+        "page": 1,
+        "sunlit": 0.024583181366324425,
+        "local_luxels": 549216
+      },
+      {
+        "page": 2,
+        "sunlit": 0.009290695190429688,
+        "local_luxels": 1031168
+      },
+      {
+        "page": 3,
+        "sunlit": 0.04889804869890213,
+        "local_luxels": 913037
+      }
+    ],
+    "limitations": [
+      "No bounced GI or new reflection cubemaps",
+      "Source spot lights approximated as points",
+      "Native alpha approximation; multilayer glass and source vertex colours not yet reproduced"
+    ]
+  },
+  "collision": {
+    "world_triangles": 329602,
+    "removed_obsolete_clip_triangles": {},
+    "brushes": 4412,
+    "triangle_headers": 3468,
+    "triangles": 529156,
+    "restored_source_clip_triangles": {
+      "diagonal_room_boundary": 24,
+      "north_room_boundary": 12,
+      "upper_platform_exclusion": 34
+    },
+    "detail_collision_triangles": 1524
+  },
+  "streaming_sidecar": {
+    "version": "8.0",
+    "materials": 231,
+    "columns": 1600,
+    "bytes": 104896,
+    "native_parser_round_trip": true,
+    "material_guids_verified": true,
+    "coverage": "Native empty columns for resident textures",
+    "client_load_verified": true,
+    "limitation": "No spatial mip coverage or starpak-backed texture streaming yet."
+  },
+  "safety": {
+    "added_counts": {
+      "trigger_hurt": 5,
+      "trigger_out_of_bounds": 21,
+      "move_rope": 2,
+      "keyframe_rope": 2
+    },
+    "volume_bounds": "Source convex pieces intersected with native +/-16,000 world domain",
+    "ziplines": [
+      {
+        "source": true,
+        "start": [
+          -390.012,
+          4178.35,
+          283.789
+        ],
+        "end": [
+          -754.951,
+          2764.85,
+          341.27
+        ]
+      },
+      {
+        "source": true,
+        "start": [
+          393.988,
+          4174.35,
+          283.789
+        ],
+        "end": [
+          758.429,
+          2764.76,
+          341.27
+        ]
+      }
+    ]
+  },
+  "repair_record": "docs/composite/local-repairs-2026-10-07.md",
+  "validation_evidence": [
+    "output/composite/detail-recovery/runtime.json",
+    "logs/composite-detail-recovery-tests.log"
+  ],
+  "validation": {
+    "version": "0.6.0",
+    "final_client_verified": true,
+    "conversion_tests": 35,
+    "native_repair_evidence": "output/composite/local-repair/runtime.json",
+    "source_recovery": "output/composite/local-repair/result.json",
+    "draw_budget": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\composite\\mp_arena_composite.bsp",
+      "meshes": 3024,
+      "real_triangles": 942146,
+      "native_padded_indices": 2830530,
+      "world_index_capacity": 3145728,
+      "all_meshes_fit_simultaneously": true,
+      "maximum_all_visible_mesh_prefix": 3024,
+      "prefix_indices": 2830530,
+      "first_mesh_excluded_when_all_visible": null,
+      "mesh_partitions": [
+        2892,
+        2892,
+        3024
+      ],
+      "static_batch_runs": 353,
+      "unique_static_draw_keys": 353,
+      "world_batch_capacity": 2048,
+      "static_batches_fit_simultaneously": true,
+      "first_mesh_excluded_by_static_batch_limit": null,
+      "dynamic_light_masks_can_split_static_batches": true,
+      "native_batch_limit_instruction": "engine.dll+0xb7304",
+      "native_batch_limit_exit": "engine.dll+0xb74c9",
+      "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+    },
+    "runtime": {
+      "version": "0.6.0",
+      "pid_before": 20484,
+      "views": [
+        {
+          "name": "wall",
+          "capture": {
+            "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-wall-38775988.png",
+            "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-wall-38775988.tga",
+            "width": 1280,
+            "height": 720,
+            "captured": 1791343708.649156,
+            "sha256": "f256dd127eadd4a7bbfe791454ca6ee9d301ea4e3fd9afca7c508d1b58b1cffc",
+            "state": {
+              "game_running": true,
+              "game_pid": 20484,
+              "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+              "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+              "contexts": {
+                "ui": {
+                  "loading": false,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "ready": true,
+                  "level": "mp_arena_composite",
+                  "context": "ui",
+                  "received": 1791343706.504217
+                },
+                "server": {
+                  "loading": false,
+                  "players": 1,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "level": "mp_arena_composite",
+                  "ready": true,
+                  "mode": "ps",
+                  "context": "server",
+                  "received": 1791343706.6654491
+                },
+                "client": {
+                  "outOfBoundsDeadTime": 0.0,
+                  "time": 118.57722473144531,
+                  "angles": [
+                    -30.0,
+                    135.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -1917.0,
+                    631.0,
+                    252.0
+                  ],
+                  "context": "client",
+                  "loading": false,
+                  "health": 100,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "alive": true,
+                  "level": "mp_arena_composite",
+                  "camera": true,
+                  "ready": true,
+                  "received": 1791343706.452656
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "wall-wide",
+          "capture": {
+            "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-wall-wide-42b66668.png",
+            "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-wall-wide-42b66668.tga",
+            "width": 1280,
+            "height": 720,
+            "captured": 1791343712.101414,
+            "sha256": "71e3ae93582d0e9feb875b89c768baae619e7c7dda45201867608cc37f330bc7",
+            "state": {
+              "game_running": true,
+              "game_pid": 20484,
+              "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+              "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+              "contexts": {
+                "ui": {
+                  "loading": false,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "ready": true,
+                  "level": "mp_arena_composite",
+                  "context": "ui",
+                  "received": 1791343710.492012
+                },
+                "server": {
+                  "loading": false,
+                  "players": 1,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "level": "mp_arena_composite",
+                  "ready": true,
+                  "mode": "ps",
+                  "context": "server",
+                  "received": 1791343710.5471222
+                },
+                "client": {
+                  "outOfBoundsDeadTime": 0.0,
+                  "time": 122.34273529052734,
+                  "angles": [
+                    -15.0,
+                    90.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -1917.0,
+                    631.0,
+                    252.0
+                  ],
+                  "context": "client",
+                  "loading": false,
+                  "health": 100,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "alive": true,
+                  "level": "mp_arena_composite",
+                  "camera": true,
+                  "ready": true,
+                  "received": 1791343710.494028
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "east-wall",
+          "capture": {
+            "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-east-wall-c0caf1e2.png",
+            "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-east-wall-c0caf1e2.tga",
+            "width": 1280,
+            "height": 720,
+            "captured": 1791343715.7801816,
+            "sha256": "94c49e1a5d79a4fc0c87905883376fe8650e099ef355d4d0a4ba0d757b85a481",
+            "state": {
+              "game_running": true,
+              "game_pid": 20484,
+              "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+              "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+              "contexts": {
+                "ui": {
+                  "loading": false,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "ready": true,
+                  "level": "mp_arena_composite",
+                  "context": "ui",
+                  "received": 1791343713.9932337
+                },
+                "server": {
+                  "loading": false,
+                  "players": 1,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "level": "mp_arena_composite",
+                  "ready": true,
+                  "mode": "ps",
+                  "context": "server",
+                  "received": 1791343714.1428382
+                },
+                "client": {
+                  "outOfBoundsDeadTime": 0.0,
+                  "time": 125.84555053710938,
+                  "angles": [
+                    -30.0,
+                    45.0,
+                    0.0
+                  ],
+                  "origin": [
+                    1917.0,
+                    631.0,
+                    252.0
+                  ],
+                  "context": "client",
+                  "loading": false,
+                  "health": 100,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "alive": true,
+                  "level": "mp_arena_composite",
+                  "camera": true,
+                  "ready": true,
+                  "received": 1791343713.9846115
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "lamp",
+          "capture": {
+            "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-lamp-12fbb499.png",
+            "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-lamp-12fbb499.tga",
+            "width": 1280,
+            "height": 720,
+            "captured": 1791343719.5074565,
+            "sha256": "be28a45b21ca7d41643079651f427559fdc0b5d2fdb69b0787b4685a7f2ecf1c",
+            "state": {
+              "game_running": true,
+              "game_pid": 20484,
+              "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+              "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+              "contexts": {
+                "ui": {
+                  "loading": false,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "ready": true,
+                  "level": "mp_arena_composite",
+                  "context": "ui",
+                  "received": 1791343717.718407
+                },
+                "server": {
+                  "loading": false,
+                  "players": 1,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "level": "mp_arena_composite",
+                  "ready": true,
+                  "mode": "ps",
+                  "context": "server",
+                  "received": 1791343717.717407
+                },
+                "client": {
+                  "outOfBoundsDeadTime": 0.0,
+                  "time": 129.583251953125,
+                  "angles": [
+                    20.0,
+                    -90.0,
+                    0.0
+                  ],
+                  "origin": [
+                    0.0,
+                    2420.0,
+                    140.0
+                  ],
+                  "context": "client",
+                  "loading": false,
+                  "health": 100,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "alive": true,
+                  "level": "mp_arena_composite",
+                  "camera": true,
+                  "ready": true,
+                  "received": 1791343717.718407
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "west-support",
+          "capture": {
+            "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-west-support-0c8d0a62.png",
+            "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-west-support-0c8d0a62.tga",
+            "width": 1280,
+            "height": 720,
+            "captured": 1791343723.046778,
+            "sha256": "55b6ae04bf0004f430eee832706decce45eda9636379ca1e18707d00f968b9c9",
+            "state": {
+              "game_running": true,
+              "game_pid": 20484,
+              "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+              "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+              "contexts": {
+                "ui": {
+                  "loading": false,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "ready": true,
+                  "level": "mp_arena_composite",
+                  "context": "ui",
+                  "received": 1791343721.4528105
+                },
+                "server": {
+                  "loading": false,
+                  "players": 1,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "level": "mp_arena_composite",
+                  "ready": true,
+                  "mode": "ps",
+                  "context": "server",
+                  "received": 1791343721.3456326
+                },
+                "client": {
+                  "outOfBoundsDeadTime": 0.0,
+                  "time": 133.34982299804688,
+                  "angles": [
+                    3.0,
+                    -165.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -420.0,
+                    190.0,
+                    177.0
+                  ],
+                  "context": "client",
+                  "loading": false,
+                  "health": 100,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "alive": true,
+                  "level": "mp_arena_composite",
+                  "camera": true,
+                  "ready": true,
+                  "received": 1791343721.5075586
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "east-support",
+          "capture": {
+            "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-east-support-35f2a629.png",
+            "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-east-support-35f2a629.tga",
+            "width": 1280,
+            "height": 720,
+            "captured": 1791343726.9607406,
+            "sha256": "86f76f04bb5c7040df5d14f5510f877e69c710aae8e92c3023a24a3c52bf508b",
+            "state": {
+              "game_running": true,
+              "game_pid": 20484,
+              "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+              "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+              "contexts": {
+                "ui": {
+                  "loading": false,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "ready": true,
+                  "level": "mp_arena_composite",
+                  "context": "ui",
+                  "received": 1791343725.2142076
+                },
+                "server": {
+                  "loading": false,
+                  "players": 1,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "level": "mp_arena_composite",
+                  "ready": true,
+                  "mode": "ps",
+                  "context": "server",
+                  "received": 1791343725.2132008
+                },
+                "client": {
+                  "outOfBoundsDeadTime": 0.0,
+                  "time": 137.11314392089844,
+                  "angles": [
+                    3.0,
+                    -15.0,
+                    0.0
+                  ],
+                  "origin": [
+                    420.0,
+                    190.0,
+                    177.0
+                  ],
+                  "context": "client",
+                  "loading": false,
+                  "health": 100,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "alive": true,
+                  "level": "mp_arena_composite",
+                  "camera": true,
+                  "ready": true,
+                  "received": 1791343725.278278
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "tanks",
+          "capture": {
+            "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-tanks-00b84989.png",
+            "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-tanks-00b84989.tga",
+            "width": 1280,
+            "height": 720,
+            "captured": 1791343730.6008277,
+            "sha256": "6aa856439a96c228d02bfc419b42240c4889595b41fa7d72a5ec5b1353c45c67",
+            "state": {
+              "game_running": true,
+              "game_pid": 20484,
+              "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+              "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+              "contexts": {
+                "ui": {
+                  "loading": false,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "ready": true,
+                  "level": "mp_arena_composite",
+                  "context": "ui",
+                  "received": 1791343728.9939754
+                },
+                "server": {
+                  "loading": false,
+                  "players": 1,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "level": "mp_arena_composite",
+                  "ready": true,
+                  "mode": "ps",
+                  "context": "server",
+                  "received": 1791343729.1027315
+                },
+                "client": {
+                  "outOfBoundsDeadTime": 0.0,
+                  "time": 140.8950653076172,
+                  "angles": [
+                    10.0,
+                    146.0,
+                    0.0
+                  ],
+                  "origin": [
+                    100.0,
+                    1900.0,
+                    -45.0
+                  ],
+                  "context": "client",
+                  "loading": false,
+                  "health": 100,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "alive": true,
+                  "level": "mp_arena_composite",
+                  "camera": true,
+                  "ready": true,
+                  "received": 1791343729.0505257
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "court",
+          "capture": {
+            "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-court-a45e0837.png",
+            "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-court-a45e0837.tga",
+            "width": 1280,
+            "height": 720,
+            "captured": 1791343734.4446738,
+            "sha256": "48c49aa7097c89115605263793da157d668b142a9d8bfed9315b31c3850ce5b7",
+            "state": {
+              "game_running": true,
+              "game_pid": 20484,
+              "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+              "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+              "contexts": {
+                "ui": {
+                  "loading": false,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "ready": true,
+                  "level": "mp_arena_composite",
+                  "context": "ui",
+                  "received": 1791343732.726853
+                },
+                "server": {
+                  "loading": false,
+                  "players": 1,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "level": "mp_arena_composite",
+                  "ready": true,
+                  "mode": "ps",
+                  "context": "server",
+                  "received": 1791343732.7278519
+                },
+                "client": {
+                  "outOfBoundsDeadTime": 0.0,
+                  "time": 144.63792419433594,
+                  "angles": [
+                    -6.0,
+                    90.0,
+                    0.0
+                  ],
+                  "origin": [
+                    0.0,
+                    1950.0,
+                    300.0
+                  ],
+                  "context": "client",
+                  "loading": false,
+                  "health": 100,
+                  "generation": "fce0c8cbb43848bca45454faaf228997",
+                  "alive": true,
+                  "level": "mp_arena_composite",
+                  "camera": true,
+                  "ready": true,
+                  "received": 1791343732.7806554
+                }
+              }
+            }
+          }
+        }
+      ],
+      "traces": [
+        {
+          "name": "upper-tank",
+          "trace": {
+            "ok": true,
+            "id": "0c128217d86545e4af9b70641906c69b",
+            "data": {
+              "fraction": 0.32530972361564636,
+              "startSolid": false,
+              "end": [
+                -19.0,
+                1962.0,
+                -58.55575180053711
+              ]
+            },
+            "context": "server"
+          }
+        },
+        {
+          "name": "lower-tank",
+          "trace": {
+            "ok": true,
+            "id": "faa151afa0ec4c8daf657bbd4271fd54",
+            "data": {
+              "fraction": 0.6109277606010437,
+              "startSolid": false,
+              "end": [
+                -38.907222747802734,
+                1962.0,
+                -125.0
+              ]
+            },
+            "context": "server"
+          }
+        },
+        {
+          "name": "west-floor",
+          "trace": {
+            "ok": true,
+            "id": "d1882532805a4610b8cc410e3510649e",
+            "data": {
+              "fraction": 0.5070933103561401,
+              "startSolid": false,
+              "end": [
+                -438.0,
+                132.0,
+                129.57440185546875
+              ]
+            },
+            "context": "server"
+          }
+        }
+      ],
+      "counts": {
+        "ok": true,
+        "id": "2294e72e3a364e4b828420809f870882",
+        "data": {
+          "entities": {
+            "info_spawnpoint_flag": 0,
+            "info_spawnpoint_titan": 6,
+            "info_spawnpoint_human_start": 24,
+            "info_hardpoint": 0,
+            "keyframe_rope": 2,
+            "info_spawnpoint_titan_start": 6,
+            "info_spawnpoint_human": 24,
+            "trigger_out_of_bounds": 21,
+            "move_rope": 2,
+            "trigger_hurt": 5
+          },
+          "mode": "ps",
+          "map": "mp_arena_composite"
+        },
+        "context": "server"
+      },
+      "postmatch": {
+        "level": "mp_lobby",
+        "pid": 20484
+      },
+      "stock_reload": {
+        "level": "mp_coliseum",
+        "pid": 20484
+      },
+      "pid_after": 20484,
+      "reload_capture": {
+        "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-reloaded-wall-d019d32f.png",
+        "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\screenshots\\dropoff-060-release-reloaded-wall-d019d32f.tga",
+        "width": 1280,
+        "height": 720,
+        "captured": 1791343767.286128,
+        "sha256": "768edd2a6a343714626c16df62fa8aa68cbe5d4b9ad91791002453d3e882d66e",
+        "state": {
+          "game_running": true,
+          "game_pid": 20484,
+          "profile": "D:\\Games\\Titanfall2\\R2MapHarness",
+          "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409",
+          "contexts": {
+            "ui": {
+              "loading": false,
+              "generation": "769fa2fbac144acf8beec787192c84b4",
+              "ready": true,
+              "level": "mp_arena_composite",
+              "context": "ui",
+              "received": 1791343765.7139971
+            },
+            "server": {
+              "loading": false,
+              "players": 1,
+              "generation": "769fa2fbac144acf8beec787192c84b4",
+              "level": "mp_arena_composite",
+              "ready": true,
+              "mode": "ps",
+              "context": "server",
+              "received": 1791343765.6070695
+            },
+            "client": {
+              "outOfBoundsDeadTime": 0.0,
+              "time": 4.999587059020996,
+              "angles": [
+                -30.0,
+                135.0,
+                0.0
+              ],
+              "origin": [
+                -1917.0,
+                631.0,
+                252.0
+              ],
+              "context": "client",
+              "loading": false,
+              "health": 100,
+              "generation": "769fa2fbac144acf8beec787192c84b4",
+              "alive": true,
+              "level": "mp_arena_composite",
+              "camera": true,
+              "ready": true,
+              "received": 1791343765.5540943
+            }
+          }
+        }
+      },
+      "logs": {
+        "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261007-123409\\game.log",
+        "script_errors": []
+      }
+    },
+    "remaining": [
+      "Recovered containers and supports use complete source LOD3; source collision stays higher fidelity.",
+      "Four-texel charts remain elsewhere; this is not a full production lighting bake.",
+      "Single-client photographs and reloads do not establish multiplayer performance."
+    ]
+  },
+  "source_layout_repair": {
+    "restored_source_clip_triangles": {
+      "diagonal_room_boundary": 24,
+      "north_room_boundary": 12,
+      "upper_platform_exclusion": 34
+    },
+    "temporary_spawn_cover_triangles": 108,
+    "temporary_shadow_triangles": 108,
+    "spawn_cover_collision_note": "Six native crossing traces already clear; covers were visual barriers, not matching collision triangles",
+    "render_positions_preserved": true,
+    "lightmap_charts_preserved": true,
+    "backup": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\repair-backups\\20261007-source-layout"
+  },
+  "active_render_triangles": 942014,
+  "detail_recovery": {
+    "version": "0.4.0",
+    "added_props": 95,
+    "added_triangles": 35986,
+    "placements": [
+      {
+        "index": 1651,
+        "model": "mdl/industrial/zipline_arm.rmdl",
+        "origin": [
+          449.7669982910156,
+          4176.06005859375,
+          292.0190124511719
+        ],
+        "angles": [
+          0.0,
+          88.5999984741211,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\shared-assets\\models\\zipline_arm",
+        "triangles": 2306,
+        "recovery": "Source SMD/QC",
+        "collision_recovery": "Exact source SMD surface",
+        "collision_triangles": 2306
+      },
+      {
+        "index": 1652,
+        "model": "mdl/industrial/zipline_arm.rmdl",
+        "origin": [
+          -445.78900146484375,
+          4176.64013671875,
+          292.0190124511719
+        ],
+        "angles": [
+          0.0,
+          -91.4000015258789,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\shared-assets\\models\\zipline_arm",
+        "triangles": 2306,
+        "recovery": "Source SMD/QC",
+        "collision_recovery": "Exact source SMD surface",
+        "collision_triangles": 2306
+      },
+      {
+        "index": 1669,
+        "model": "mdl/industrial/zipline_arm.rmdl",
+        "origin": [
+          -702.0549926757812,
+          2750.530029296875,
+          350.0
+        ],
+        "angles": [
+          0.0,
+          72.31330108642578,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\shared-assets\\models\\zipline_arm",
+        "triangles": 2306,
+        "recovery": "Source SMD/QC",
+        "collision_recovery": "Exact source SMD surface",
+        "collision_triangles": 2306
+      },
+      {
+        "index": 1670,
+        "model": "mdl/industrial/zipline_arm.rmdl",
+        "origin": [
+          706.8820190429688,
+          2746.14990234375,
+          350.0
+        ],
+        "angles": [
+          0.0,
+          -72.68699645996094,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\shared-assets\\models\\zipline_arm",
+        "triangles": 2306,
+        "recovery": "Source SMD/QC",
+        "collision_recovery": "Exact source SMD surface",
+        "collision_triangles": 2306
+      },
+      {
+        "index": 4960,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          453.7659912109375,
+          4175.9599609375,
+          113.0
+        ],
+        "angles": [
+          0.0,
+          -1.3995000123977661,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4974,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -449.7879943847656,
+          4176.740234375,
+          113.0
+        ],
+        "angles": [
+          0.0,
+          178.6009979248047,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4994,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          706.8820190429688,
+          2746.14990234375,
+          190.0
+        ],
+        "angles": [
+          0.0,
+          -162.68600463867188,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4995,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -702.0549926757812,
+          2750.530029296875,
+          190.0
+        ],
+        "angles": [
+          0.0,
+          -17.68600082397461,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4935,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          3234.389892578125,
+          6716.490234375,
+          1383.510009765625
+        ],
+        "angles": [
+          0.0,
+          126.24600219726562,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4940,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          2945.739990234375,
+          5545.64013671875,
+          1119.06005859375
+        ],
+        "angles": [
+          0.0,
+          -85.93499755859375,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4947,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          1290.3399658203125,
+          6971.93994140625,
+          1116.0999755859375
+        ],
+        "angles": [
+          0.0,
+          -52.32500076293945,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4949,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          2410.679931640625,
+          7363.2900390625,
+          1419.5999755859375
+        ],
+        "angles": [
+          0.0,
+          -17.489999771118164,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4950,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          3515.409912109375,
+          6331.6201171875,
+          1386.010009765625
+        ],
+        "angles": [
+          0.0,
+          -53.23099899291992,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4951,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -2410.8798828125,
+          7405.68994140625,
+          1391.8499755859375
+        ],
+        "angles": [
+          0.0,
+          -152.0679931640625,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4952,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -379.7120056152344,
+          5460.02001953125,
+          1156.280029296875
+        ],
+        "angles": [
+          0.0,
+          -45.78499984741211,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4953,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -3914.72998046875,
+          4821.64013671875,
+          5116.3798828125
+        ],
+        "angles": [
+          -0.06183389946818352,
+          120.63999938964844,
+          0.04039610177278519
+        ],
+        "scale": 6.715620040893555,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4959,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -3487.39990234375,
+          6310.919921875,
+          1388.0999755859375
+        ],
+        "angles": [
+          0.0,
+          -152.0679931640625,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4961,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          3927.330078125,
+          4799.22998046875,
+          5107.2998046875
+        ],
+        "angles": [
+          -0.06183389946818352,
+          120.63999938964844,
+          0.04039610177278519
+        ],
+        "scale": 6.715620040893555,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4962,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -3207.449951171875,
+          6691.14013671875,
+          1389.719970703125
+        ],
+        "angles": [
+          0.0,
+          64.19429779052734,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4970,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          376.2879943847656,
+          5460.02001953125,
+          1156.280029296875
+        ],
+        "angles": [
+          0.0,
+          -45.78499984741211,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4977,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -3036.5,
+          2585.280029296875,
+          4933.06982421875
+        ],
+        "angles": [
+          -0.040396399796009064,
+          73.06829833984375,
+          -0.0618336983025074
+        ],
+        "scale": 4.66441011428833,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4978,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -2986.419921875,
+          2870.77001953125,
+          4933.259765625
+        ],
+        "angles": [
+          -0.06183389946818352,
+          -16.930999755859375,
+          0.04039610177278519
+        ],
+        "scale": 3.9142799377441406,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4979,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -2819.89990234375,
+          2517.300048828125,
+          4933.31982421875
+        ],
+        "angles": [
+          -0.06183389946818352,
+          -16.930999755859375,
+          0.04039610177278519
+        ],
+        "scale": 3.9142799377441406,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4982,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -1283.199951171875,
+          6967.18994140625,
+          1117.8299560546875
+        ],
+        "angles": [
+          0.0,
+          2.667799949645996,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4984,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -2943.840087890625,
+          5539.64013671875,
+          1120.0999755859375
+        ],
+        "angles": [
+          0.0,
+          5.480500221252441,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 12
+      },
+      {
+        "index": 4990,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -1599.8299560546875,
+          2151.14990234375,
+          4934.8798828125
+        ],
+        "angles": [
+          -0.040396399796009064,
+          -6.540900230407715,
+          -0.0618336983025074
+        ],
+        "scale": 4.07027006149292,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4991,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          -936.7169799804688,
+          2364.10009765625,
+          4935.2001953125
+        ],
+        "angles": [
+          -0.040396399796009064,
+          -76.99600219726562,
+          -0.0618336983025074
+        ],
+        "scale": 4.191870212554932,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4992,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          591.3809814453125,
+          2068.89990234375,
+          4929.52978515625
+        ],
+        "angles": [
+          -0.040396399796009064,
+          4.372300148010254,
+          -0.0618336983025074
+        ],
+        "scale": 4.573820114135742,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4993,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          1241.43994140625,
+          2315.070068359375,
+          4929.919921875
+        ],
+        "angles": [
+          -0.040396399796009064,
+          -66.08300018310547,
+          -0.0618336983025074
+        ],
+        "scale": 4.282569885253906,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 5006,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          2891.340087890625,
+          2834.02001953125,
+          4940.18017578125
+        ],
+        "angles": [
+          -0.06183389946818352,
+          120.63999938964844,
+          0.04039610177278519
+        ],
+        "scale": 3.9142799377441406,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 5007,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          3005.35009765625,
+          2637.7099609375,
+          4939.93017578125
+        ],
+        "angles": [
+          -0.040396399796009064,
+          -149.36099243164062,
+          -0.0618336983025074
+        ],
+        "scale": 5.115660190582275,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 5008,
+        "model": "mdl/industrial/security_fence_post.rmdl",
+        "origin": [
+          2775.77001953125,
+          2460.77001953125,
+          4940.1201171875
+        ],
+        "angles": [
+          -0.06183389946818352,
+          120.63999938964844,
+          0.04039610177278519
+        ],
+        "scale": 3.9142799377441406,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\security_fence_post",
+        "triangles": 418,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 715,
+        "model": "mdl/containers/box_med_cardboard_01.rmdl",
+        "origin": [
+          -2457.3701171875,
+          564.1489868164062,
+          226.03399658203125
+        ],
+        "angles": [
+          0.0,
+          -99.74199676513672,
+          0.0
+        ],
+        "scale": 0.8199999928474426,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\box_med_cardboard_01",
+        "triangles": 12,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 716,
+        "model": "mdl/containers/box_med_cardboard_01.rmdl",
+        "origin": [
+          -2480.260009765625,
+          570.2930297851562,
+          226.03399658203125
+        ],
+        "angles": [
+          0.0,
+          -173.34800720214844,
+          0.0
+        ],
+        "scale": 0.8199999928474426,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\box_med_cardboard_01",
+        "triangles": 12,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 717,
+        "model": "mdl/containers/box_med_cardboard_01.rmdl",
+        "origin": [
+          -2060.530029296875,
+          396.3320007324219,
+          212.63499450683594
+        ],
+        "angles": [
+          4.3522501073312014e-05,
+          -156.50100708007812,
+          5.0290200306335464e-05
+        ],
+        "scale": 0.8199999928474426,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\box_med_cardboard_01",
+        "triangles": 12,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 718,
+        "model": "mdl/containers/box_med_cardboard_01.rmdl",
+        "origin": [
+          -2058.02001953125,
+          395.052001953125,
+          192.0
+        ],
+        "angles": [
+          1.7572700016899034e-05,
+          -130.947998046875,
+          6.414439849322662e-05
+        ],
+        "scale": 0.8199999928474426,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\box_med_cardboard_01",
+        "triangles": 12,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1251,
+        "model": "mdl/containers/plastic_pallet_01.rmdl",
+        "origin": [
+          2143.409912109375,
+          3778.429931640625,
+          -74.02079772949219
+        ],
+        "angles": [
+          -0.10097700357437134,
+          -41.439998626708984,
+          67.28410339355469
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\plastic_pallet_01",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1252,
+        "model": "mdl/containers/plastic_pallet_01.rmdl",
+        "origin": [
+          2138.139892578125,
+          3770.969970703125,
+          -109.0009994506836
+        ],
+        "angles": [
+          0.0073025100864470005,
+          -41.57099914550781,
+          -0.12580899894237518
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\plastic_pallet_01",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1254,
+        "model": "mdl/containers/plastic_pallet_01.rmdl",
+        "origin": [
+          -2167.179931640625,
+          3608.919921875,
+          -73.05079650878906
+        ],
+        "angles": [
+          -0.11349300295114517,
+          51.69329833984375,
+          72.98819732666016
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\plastic_pallet_01",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1263,
+        "model": "mdl/containers/plastic_pallet_01.rmdl",
+        "origin": [
+          -2157.909912109375,
+          3601.929931640625,
+          -74.02079772949219
+        ],
+        "angles": [
+          -0.10097599774599075,
+          51.7047004699707,
+          67.28410339355469
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\plastic_pallet_01",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1267,
+        "model": "mdl/containers/plastic_pallet_01.rmdl",
+        "origin": [
+          -2150.159912109375,
+          3597.070068359375,
+          -109.0009994506836
+        ],
+        "angles": [
+          0.00730249984189868,
+          51.573299407958984,
+          -0.12580899894237518
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\plastic_pallet_01",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1295,
+        "model": "mdl/containers/plastic_pallet_01.rmdl",
+        "origin": [
+          -2603.080078125,
+          3006.510009765625,
+          -99.99949645996094
+        ],
+        "angles": [
+          0.0,
+          17.26650047302246,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\plastic_pallet_01",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1296,
+        "model": "mdl/containers/plastic_pallet_01.rmdl",
+        "origin": [
+          2733.4599609375,
+          3118.699951171875,
+          -107.6259994506836
+        ],
+        "angles": [
+          0.0,
+          152.19700622558594,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\plastic_pallet_01",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1511,
+        "model": "mdl/olympus/olympus_docks_gate_sign_01.rmdl",
+        "origin": [
+          -2665.6201171875,
+          352.1470031738281,
+          208.58799743652344
+        ],
+        "angles": [
+          0.0,
+          52.5,
+          0.0
+        ],
+        "scale": 0.20000000298023224,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\olympus_docks_gate_sign_01",
+        "triangles": 126,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1512,
+        "model": "mdl/olympus/olympus_docks_gate_sign_01.rmdl",
+        "origin": [
+          -2138.510009765625,
+          -52.31520080566406,
+          208.58799743652344
+        ],
+        "angles": [
+          0.0,
+          52.5,
+          0.0
+        ],
+        "scale": 0.20000000298023224,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\olympus_docks_gate_sign_01",
+        "triangles": 126,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1513,
+        "model": "mdl/olympus/olympus_docks_gate_sign_01.rmdl",
+        "origin": [
+          -2543.93994140625,
+          258.77801513671875,
+          208.58799743652344
+        ],
+        "angles": [
+          0.0,
+          52.5,
+          0.0
+        ],
+        "scale": 0.20000000298023224,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\olympus_docks_gate_sign_01",
+        "triangles": 126,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 1514,
+        "model": "mdl/olympus/olympus_docks_gate_sign_01.rmdl",
+        "origin": [
+          -2259.739990234375,
+          40.71120071411133,
+          208.58799743652344
+        ],
+        "angles": [
+          0.0,
+          52.5,
+          0.0
+        ],
+        "scale": 0.20000000298023224,
+        "skin": 0,
+        "solid": 0,
+        "flags": 36,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\olympus_docks_gate_sign_01",
+        "triangles": 126,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 3134,
+        "model": "mdl/utilities/wire_ground_coils_02.rmdl",
+        "origin": [
+          -102.10900115966797,
+          64.86499786376953,
+          129.54200744628906
+        ],
+        "angles": [
+          -6.362000021908898e-06,
+          141.53500366210938,
+          2.7066701022704365e-06
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\wire_ground_coils_02",
+        "triangles": 82,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 3135,
+        "model": "mdl/utilities/wire_ground_coils_02.rmdl",
+        "origin": [
+          2326.489990234375,
+          222.08700561523438,
+          191.99899291992188
+        ],
+        "angles": [
+          0.0,
+          114.64900207519531,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\wire_ground_coils_02",
+        "triangles": 82,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 3136,
+        "model": "mdl/utilities/wire_ground_coils_02.rmdl",
+        "origin": [
+          -1900.5899658203125,
+          -148.05799865722656,
+          192.0
+        ],
+        "angles": [
+          3.720059976330958e-05,
+          165.0,
+          -9.967940059141256e-06
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 2,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\wire_ground_coils_02",
+        "triangles": 82,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 3137,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          -1232.9300537109375,
+          4256.75,
+          0.003425670089200139
+        ],
+        "angles": [
+          0.0008642430184409022,
+          37.654598236083984,
+          -0.0037716799415647984
+        ],
+        "scale": 1.237280011177063,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3138,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          -952.9229736328125,
+          4090.4599609375,
+          -31.500999450683594
+        ],
+        "angles": [
+          -0.00013088200648780912,
+          -9.11359977722168,
+          3.154090154566802e-05
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3139,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          353.7959899902344,
+          4294.7099609375,
+          127.98799896240234
+        ],
+        "angles": [
+          -0.0009544820059090853,
+          -120.35900115966797,
+          -0.0008670230163261294
+        ],
+        "scale": 1.237280011177063,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3140,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          721.7960205078125,
+          5470.9501953125,
+          -33.00600051879883
+        ],
+        "angles": [
+          6.7613600549520925e-06,
+          -101.38999938964844,
+          1.3147399840818252e-05
+        ],
+        "scale": 1.237280011177063,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3141,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          2036.3699951171875,
+          4466.27978515625,
+          191.99400329589844
+        ],
+        "angles": [
+          1.0774499969556928e-05,
+          102.09100341796875,
+          1.0123299944098108e-05
+        ],
+        "scale": 1.237280011177063,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3142,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          1270.300048828125,
+          4367.1201171875,
+          128.49899291992188
+        ],
+        "angles": [
+          -0.00013088200648780912,
+          167.57000732421875,
+          3.154090154566802e-05
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3143,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          -1025.699951171875,
+          4367.1201171875,
+          128.49899291992188
+        ],
+        "angles": [
+          -0.00013088200648780912,
+          167.57000732421875,
+          3.154090154566802e-05
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3144,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          -2113.280029296875,
+          4345.47998046875,
+          191.99400329589844
+        ],
+        "angles": [
+          -1.0052000106952619e-05,
+          82.67949676513672,
+          1.084100040316116e-05
+        ],
+        "scale": 1.237280011177063,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3145,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          1469.1800537109375,
+          93.69270324707031,
+          192.4669952392578
+        ],
+        "angles": [
+          -5.2166400564601645e-05,
+          113.91799926757812,
+          0.00012411100033205003
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3146,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          2416.5400390625,
+          428.864013671875,
+          193.4669952392578
+        ],
+        "angles": [
+          -5.2166400564601645e-05,
+          71.28990173339844,
+          0.00012411100033205003
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3147,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          -3070.89990234375,
+          3147.989990234375,
+          192.01800537109375
+        ],
+        "angles": [
+          0.0,
+          -132.95599365234375,
+          0.0
+        ],
+        "scale": 1.237280011177063,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3148,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          848.6199951171875,
+          2570.10009765625,
+          191.99400329589844
+        ],
+        "angles": [
+          6.7613600549520925e-06,
+          -90.24199676513672,
+          1.3147399840818252e-05
+        ],
+        "scale": 1.237280011177063,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 3149,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "origin": [
+          2212.530029296875,
+          2974.56005859375,
+          192.7469940185547
+        ],
+        "angles": [
+          0.0,
+          -173.6300048828125,
+          0.0
+        ],
+        "scale": 0.8974279761314392,
+        "skin": 0,
+        "solid": 6,
+        "flags": 20,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\beacon_wire_ground_coils_02",
+        "triangles": 1032,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "BVH surface",
+        "collision_triangles": 1032
+      },
+      {
+        "index": 4545,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -261.04400634765625,
+          5089.8701171875,
+          69.12339782714844
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          -90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4546,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -260.8630065917969,
+          5089.8701171875,
+          215.27000427246094
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          -90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4547,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          257.2430114746094,
+          5132.52978515625,
+          211.5330047607422
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4548,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          257.2430114746094,
+          5132.52978515625,
+          264.8599853515625
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4549,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -260.8699951171875,
+          5132.52978515625,
+          215.27000427246094
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4550,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -260.8630065917969,
+          5089.8701171875,
+          268.59698486328125
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          -90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4551,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          257.4960021972656,
+          5132.52978515625,
+          68.87740325927734
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4552,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          257.239990234375,
+          5089.85986328125,
+          211.5330047607422
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          -90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4553,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -261.04998779296875,
+          5132.52978515625,
+          69.12339782714844
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4554,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -260.8699951171875,
+          5132.52978515625,
+          268.59698486328125
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4555,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          257.489013671875,
+          5089.8701171875,
+          68.87740325927734
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          -90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4556,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          257.239990234375,
+          5089.85986328125,
+          264.8599853515625
+        ],
+        "angles": [
+          -1.961150019269553e-06,
+          -90.0,
+          180.0
+        ],
+        "scale": 0.666579008102417,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4557,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -2964.080078125,
+          2281.300048828125,
+          246.03199768066406
+        ],
+        "angles": [
+          0.0,
+          136.68299865722656,
+          180.0
+        ],
+        "scale": 1.072350025177002,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4558,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -3575.18994140625,
+          2811.06005859375,
+          234.73599243164062
+        ],
+        "angles": [
+          0.0,
+          -44.845001220703125,
+          -180.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4559,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          3021.969970703125,
+          2219.0400390625,
+          246.03199768066406
+        ],
+        "angles": [
+          0.0,
+          38.71969985961914,
+          180.0
+        ],
+        "scale": 1.072350025177002,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4560,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          3524.3798828125,
+          2862.1298828125,
+          235.68099975585938
+        ],
+        "angles": [
+          2.3516100554843433e-05,
+          -135.15499877929688,
+          0.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4561,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          3576.22998046875,
+          2810.010009765625,
+          234.57200622558594
+        ],
+        "angles": [
+          2.3516100554843433e-05,
+          -135.15499877929688,
+          0.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4562,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          2965.699951171875,
+          2281.699951171875,
+          246.82400512695312
+        ],
+        "angles": [
+          0.0,
+          41.64569854736328,
+          180.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4563,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -3524.610107421875,
+          2861.909912109375,
+          234.36199951171875
+        ],
+        "angles": [
+          0.004611549898982048,
+          -44.845001220703125,
+          -2.8237598987572246e-19
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4564,
+        "model": "mdl/signs/signage_plates_metal/sign_plate_c.rmdl",
+        "origin": [
+          -3023.699951171875,
+          2216.989990234375,
+          246.82400512695312
+        ],
+        "angles": [
+          0.0,
+          136.9980010986328,
+          180.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 5,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\sign_plate_c",
+        "triangles": 6,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 14
+      },
+      {
+        "index": 4864,
+        "model": "mdl/furniture/office_keyboard_plastic.rmdl",
+        "origin": [
+          -2398.550048828125,
+          557.9819946289062,
+          226.03399658203125
+        ],
+        "angles": [
+          0.0,
+          94.5822982788086,
+          0.0
+        ],
+        "scale": 0.75,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\office_keyboard_plastic",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4865,
+        "model": "mdl/furniture/office_keyboard_plastic.rmdl",
+        "origin": [
+          -2028.449951171875,
+          353.8030090332031,
+          226.03399658203125
+        ],
+        "angles": [
+          0.0,
+          37.64149856567383,
+          0.0
+        ],
+        "scale": 0.75,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\office_keyboard_plastic",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4866,
+        "model": "mdl/furniture/office_keyboard_plastic.rmdl",
+        "origin": [
+          -1923.02001953125,
+          264.66900634765625,
+          226.03399658203125
+        ],
+        "angles": [
+          0.0,
+          47.83440017700195,
+          0.0
+        ],
+        "scale": 0.75,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\office_keyboard_plastic",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 4867,
+        "model": "mdl/furniture/office_keyboard_plastic.rmdl",
+        "origin": [
+          -2324.169921875,
+          556.6409912109375,
+          226.03399658203125
+        ],
+        "angles": [
+          0.0,
+          87.0770034790039,
+          0.0
+        ],
+        "scale": 0.75,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 0,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\office_keyboard_plastic",
+        "triangles": 20,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      },
+      {
+        "index": 5386,
+        "model": "mdl/industrial/traffic_barrel_01.rmdl",
+        "origin": [
+          3467.1201171875,
+          6901.4599609375,
+          1387.0799560546875
+        ],
+        "angles": [
+          0.0,
+          43.5432014465332,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 3,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\traffic_barrel_01",
+        "triangles": 34,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 38
+      },
+      {
+        "index": 5388,
+        "model": "mdl/industrial/traffic_barrel_01.rmdl",
+        "origin": [
+          -1337.8599853515625,
+          4720.56982421875,
+          128.197998046875
+        ],
+        "angles": [
+          -0.012384999543428421,
+          -160.86900329589844,
+          0.041920099407434464
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 3,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\traffic_barrel_01",
+        "triangles": 34,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 38
+      },
+      {
+        "index": 5389,
+        "model": "mdl/industrial/traffic_barrel_01.rmdl",
+        "origin": [
+          1333.6099853515625,
+          4724.16015625,
+          127.47899627685547
+        ],
+        "angles": [
+          0.3998749852180481,
+          -160.86199951171875,
+          0.8247920274734497
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 3,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\traffic_barrel_01",
+        "triangles": 34,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 38
+      },
+      {
+        "index": 5390,
+        "model": "mdl/industrial/traffic_barrel_01.rmdl",
+        "origin": [
+          -1099.1500244140625,
+          1566.6600341796875,
+          192.7270050048828
+        ],
+        "angles": [
+          -2.9227599043224473e-06,
+          -61.92300033569336,
+          8.683329724590294e-06
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 3,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\traffic_barrel_01",
+        "triangles": 34,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 38
+      },
+      {
+        "index": 5391,
+        "model": "mdl/industrial/traffic_tube_01.rmdl",
+        "origin": [
+          -1314.18994140625,
+          1562.989990234375,
+          192.48500061035156
+        ],
+        "angles": [
+          0.00818520039319992,
+          43.715301513671875,
+          0.007826140150427818
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\traffic_tube_01",
+        "triangles": 107,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 48
+      },
+      {
+        "index": 5392,
+        "model": "mdl/industrial/traffic_tube_01.rmdl",
+        "origin": [
+          1600.800048828125,
+          2711.39990234375,
+          191.98599243164062
+        ],
+        "angles": [
+          -5.075020089861937e-05,
+          -96.57599639892578,
+          0.0001632329949643463
+        ],
+        "scale": 1.149999976158142,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\traffic_tube_01",
+        "triangles": 107,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 48
+      },
+      {
+        "index": 5393,
+        "model": "mdl/industrial/traffic_tube_01.rmdl",
+        "origin": [
+          1318.8699951171875,
+          1559.5899658203125,
+          192.48500061035156
+        ],
+        "angles": [
+          0.0023572200443595648,
+          121.60900115966797,
+          0.0014506999868899584
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\traffic_tube_01",
+        "triangles": 107,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "IRPS surface",
+        "collision_triangles": 48
+      },
+      {
+        "index": 5397,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "origin": [
+          -426.6499938964844,
+          5386.31982421875,
+          -32.05039978027344
+        ],
+        "angles": [
+          0.006021429784595966,
+          -92.63300323486328,
+          0.15236100554466248
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 0,
+        "flags": 4,
+        "lod": 1,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\traffic_cone_01",
+        "triangles": 47,
+        "recovery": "Source VG author LOD",
+        "collision_recovery": "Source non-solid",
+        "collision_triangles": 0
+      }
+    ],
+    "skipped": [
+      {
+        "index": 3150,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3151,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3152,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3154,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3155,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3156,
+        "model": "mdl/beacon/beacon_wire_ground_coils_02.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3158,
+        "model": "mdl/beacon/mendoko_wire_ground_coils_02.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3159,
+        "model": "mdl/beacon/mendoko_wire_ground_coils_02.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5394,
+        "model": "mdl/industrial/traffic_tube_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5395,
+        "model": "mdl/industrial/traffic_tube_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5396,
+        "model": "mdl/industrial/traffic_tube_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5398,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5399,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5400,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5401,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5402,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5403,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5404,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5405,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5406,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5407,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5408,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5409,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5410,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5411,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5412,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5413,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5414,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5415,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5416,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5417,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5418,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5419,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5420,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5421,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5422,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5423,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5424,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5425,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5426,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5427,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5428,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5429,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5430,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5431,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5432,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5433,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5434,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5435,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5436,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5437,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5438,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5439,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5440,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5441,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5442,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5443,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5444,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5445,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5446,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5447,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5448,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5449,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5450,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5451,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5452,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5453,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5454,
+        "model": "mdl/industrial/traffic_cone_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5557,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5558,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5559,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5560,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5561,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5562,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5563,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5564,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5565,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5566,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5567,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5568,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5569,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5570,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5571,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5572,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5574,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5575,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5576,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5577,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5578,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5580,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5583,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 5585,
+        "model": "mdl/electricalboxes/fusebox_small_a.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7700,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7701,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7702,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7703,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7704,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7705,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7710,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7711,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7712,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7713,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7714,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7715,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7720,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7721,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7722,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7723,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7724,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7725,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7732,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7733,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7734,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7735,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7759,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7760,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7785,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7789,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7792,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7797,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7798,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 7799,
+        "model": "mdl/beacon/beacon_crane_wall_panel_corner_256_01.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3498,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3499,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3500,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3501,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3502,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3503,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3504,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3505,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3506,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3507,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3508,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3509,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3510,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3511,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3512,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3513,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3514,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3515,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3516,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3517,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3518,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3519,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3520,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3521,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3522,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3523,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3524,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3525,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3526,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3527,
+        "model": "mdl/containers/slumcity_oxygen_tank_blue.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3529,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3530,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3531,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3532,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3533,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3534,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3535,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3536,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3537,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3538,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3539,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3540,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3541,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3542,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3543,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3544,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3545,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3546,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3547,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3548,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3549,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3550,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3552,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3556,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3557,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3558,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3559,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      },
+      {
+        "index": 3560,
+        "model": "mdl/containers/slumcity_oxygen_tank_red.rmdl",
+        "reason": "Recovery budget reserved at 36,000 additional triangles"
+      }
+    ],
+    "source_anchor_indices": [
+      1651,
+      1652,
+      1669,
+      1670,
+      4960,
+      4974,
+      4994,
+      4995
+    ],
+    "policy": "Existing scene retained; source attachments first; recovered textures only; 36,000 additional triangle ceiling",
+    "draw_budget": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\composite\\mp_arena_composite.details.bsp",
+      "meshes": 2952,
+      "real_triangles": 935974,
+      "native_padded_indices": 2811912,
+      "world_index_capacity": 3145728,
+      "all_meshes_fit_simultaneously": true,
+      "maximum_all_visible_mesh_prefix": 2952,
+      "prefix_indices": 2811912,
+      "first_mesh_excluded_when_all_visible": null,
+      "mesh_partitions": [
+        2824,
+        2824,
+        2952
+      ],
+      "static_batch_runs": 333,
+      "unique_static_draw_keys": 333,
+      "world_batch_capacity": 2048,
+      "static_batches_fit_simultaneously": true,
+      "first_mesh_excluded_by_static_batch_limit": null,
+      "dynamic_light_masks_can_split_static_batches": true,
+      "native_batch_limit_instruction": "engine.dll+0xb7304",
+      "native_batch_limit_exit": "engine.dll+0xb74c9",
+      "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+    },
+    "lighting": "New 4x4 charts ray-baked against the full scene; old charts and character probes retained",
+    "previous_version": "0.3.0"
+  },
+  "screen_repair": {
+    "version": "0.5.0",
+    "added_props": 43,
+    "added_triangles": 5262,
+    "placements": [
+      {
+        "index": 5647,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          -2713.22998046875,
+          3674.610107421875,
+          1598.489990234375
+        ],
+        "angles": [
+          0.0,
+          -44.692100524902344,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5648,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          -2954.800048828125,
+          3907.840087890625,
+          1701.739990234375
+        ],
+        "angles": [
+          0.0,
+          -44.692100524902344,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5649,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          -3191.6298828125,
+          4142.1298828125,
+          1809.6199951171875
+        ],
+        "angles": [
+          0.0,
+          -44.692100524902344,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5650,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          2715.050048828125,
+          3674.550048828125,
+          1598.489990234375
+        ],
+        "angles": [
+          0.0,
+          45.12670135498047,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5651,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          2950.090087890625,
+          3910.6298828125,
+          1701.739990234375
+        ],
+        "angles": [
+          0.0,
+          45.12670135498047,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5652,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          3184.070068359375,
+          4151.47021484375,
+          1809.6199951171875
+        ],
+        "angles": [
+          0.0,
+          45.12670135498047,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5653,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          -0.45502200722694397,
+          2953.1298828125,
+          1107.25
+        ],
+        "angles": [
+          0.0,
+          -180.0,
+          0.0
+        ],
+        "scale": 0.7030979990959167,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5654,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          -237.83799743652344,
+          2953.1298828125,
+          1192.5
+        ],
+        "angles": [
+          0.0,
+          -180.0,
+          0.0
+        ],
+        "scale": 0.7030979990959167,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5655,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          2494.14990234375,
+          2559.77001953125,
+          1413.0799560546875
+        ],
+        "angles": [
+          0.0,
+          143.3730010986328,
+          0.0
+        ],
+        "scale": 0.8999999761581421,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5656,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          2757.3798828125,
+          2369.0400390625,
+          1306.7099609375
+        ],
+        "angles": [
+          0.0,
+          143.3730010986328,
+          0.0
+        ],
+        "scale": 0.8999999761581421,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5657,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          3016.199951171875,
+          2176.64990234375,
+          1411.1600341796875
+        ],
+        "angles": [
+          0.0,
+          143.3730010986328,
+          0.0
+        ],
+        "scale": 0.8999999761581421,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5658,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          -2501.75,
+          2555.27001953125,
+          1399.010009765625
+        ],
+        "angles": [
+          0.0,
+          -143.64599609375,
+          0.0
+        ],
+        "scale": 0.8999999761581421,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5659,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          -3008.610107421875,
+          2177.3701171875,
+          1400.8900146484375
+        ],
+        "angles": [
+          0.0,
+          -143.64599609375,
+          0.0
+        ],
+        "scale": 0.8999999761581421,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5660,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          -2755.330078125,
+          2368.6201171875,
+          1297.0400390625
+        ],
+        "angles": [
+          0.0,
+          -143.64599609375,
+          0.0
+        ],
+        "scale": 0.8999999761581421,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 5661,
+        "model": "mdl/thunderdome/thunderdome_screen_tower_arm_01.rmdl",
+        "origin": [
+          237.01600646972656,
+          2953.1298828125,
+          1192.5
+        ],
+        "angles": [
+          0.0,
+          -180.0,
+          0.0
+        ],
+        "scale": 0.7030979990959167,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\thunderdome_screen_tower_arm_01",
+        "lod": 2,
+        "triangles": 114,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 60,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7236,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          -2511.43994140625,
+          3889.949951171875,
+          1639.489990234375
+        ],
+        "angles": [
+          0.0,
+          135.30799865722656,
+          0.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7237,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          -2750.3798828125,
+          4125.85009765625,
+          1741.739990234375
+        ],
+        "angles": [
+          0.0,
+          135.30799865722656,
+          0.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7238,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          -2985.6201171875,
+          4361.740234375,
+          1850.6199951171875
+        ],
+        "angles": [
+          0.0,
+          135.30799865722656,
+          0.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7239,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          2969.3701171875,
+          4353.93994140625,
+          1850.6199951171875
+        ],
+        "angles": [
+          0.0,
+          -134.8730010986328,
+          0.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7240,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          2496.10009765625,
+          3881.25,
+          1639.489990234375
+        ],
+        "angles": [
+          0.0,
+          -134.8730010986328,
+          0.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7241,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          2732.72998046875,
+          4115.740234375,
+          1741.739990234375
+        ],
+        "angles": [
+          0.0,
+          -134.8730010986328,
+          0.0
+        ],
+        "scale": 1.25,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7242,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          -232.21299743652344,
+          2745.719970703125,
+          1221.3299560546875
+        ],
+        "angles": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.8788719773292542,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7243,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          2602.75,
+          2148.9599609375,
+          1342.7099609375
+        ],
+        "angles": [
+          0.0,
+          -36.62699890136719,
+          0.0
+        ],
+        "scale": 1.125,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7244,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          2341.530029296875,
+          2342.39990234375,
+          1449.97998046875
+        ],
+        "angles": [
+          0.0,
+          -36.62699890136719,
+          0.0
+        ],
+        "scale": 1.125,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7245,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          5.169760227203369,
+          2743.080078125,
+          1135.3699951171875
+        ],
+        "angles": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.8788719773292542,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7246,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          -2845.429931640625,
+          1967.81005859375,
+          1437.7900390625
+        ],
+        "angles": [
+          0.0,
+          36.354000091552734,
+          0.0
+        ],
+        "scale": 1.125,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7247,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          242.64100646972656,
+          2741.5,
+          1221.3299560546875
+        ],
+        "angles": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.8788719773292542,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7248,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          -2335.3701171875,
+          2341.360107421875,
+          1435.9100341796875
+        ],
+        "angles": [
+          0.0,
+          36.354000091552734,
+          0.0
+        ],
+        "scale": 1.125,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7249,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          -2590.14990234375,
+          2156.340087890625,
+          1333.0400390625
+        ],
+        "angles": [
+          0.0,
+          36.354000091552734,
+          0.0
+        ],
+        "scale": 1.125,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 7250,
+        "model": "mdl/olympus/flexscreen_frame_olympus.rmdl",
+        "origin": [
+          2860.360107421875,
+          1954.949951171875,
+          1448.06005859375
+        ],
+        "angles": [
+          0.0,
+          -36.62699890136719,
+          0.0
+        ],
+        "scale": 1.125,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\flexscreen_frame_olympus",
+        "lod": 2,
+        "triangles": 78,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 36,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 8061,
+        "model": "mdl/beacon/composite_screen_animation_01.rmdl",
+        "origin": [
+          -180.58599853515625,
+          5640.93994140625,
+          141.27000427246094
+        ],
+        "angles": [
+          0.0,
+          -90.0,
+          -180.0
+        ],
+        "scale": 1.315060019493103,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_screen_animation_01",
+        "lod": 0,
+        "triangles": 2,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 0,
+        "collision_recovery": "Decorative screen; existing room boundary clip retained"
+      },
+      {
+        "index": 8062,
+        "model": "mdl/beacon/composite_screen_animation_01.rmdl",
+        "origin": [
+          179.48399353027344,
+          5640.93994140625,
+          141.27000427246094
+        ],
+        "angles": [
+          0.0,
+          -90.0,
+          -180.0
+        ],
+        "scale": 1.315060019493103,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_screen_animation_01",
+        "lod": 0,
+        "triangles": 2,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 0,
+        "collision_recovery": "Decorative screen; existing room boundary clip retained"
+      },
+      {
+        "index": 8063,
+        "model": "mdl/beacon/composite_screen_animation_01.rmdl",
+        "origin": [
+          1486.699951171875,
+          2808.18994140625,
+          -24.170299530029297
+        ],
+        "angles": [
+          0.0,
+          -127.58699798583984,
+          0.0
+        ],
+        "scale": 1.3385100364685059,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_screen_animation_01",
+        "lod": 0,
+        "triangles": 2,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 0,
+        "collision_recovery": "Decorative screen; existing room boundary clip retained"
+      },
+      {
+        "index": 8064,
+        "model": "mdl/beacon/composite_screen_animation_01.rmdl",
+        "origin": [
+          -1783.719970703125,
+          2582.280029296875,
+          -24.170299530029297
+        ],
+        "angles": [
+          0.0,
+          -52.58700180053711,
+          0.0
+        ],
+        "scale": 1.3385100364685059,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_screen_animation_01",
+        "lod": 0,
+        "triangles": 2,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 0,
+        "collision_recovery": "Decorative screen; existing room boundary clip retained"
+      },
+      {
+        "index": 8065,
+        "model": "mdl/beacon/composite_screen_animation_01.rmdl",
+        "origin": [
+          -1492.6199951171875,
+          2804.93994140625,
+          -24.170299530029297
+        ],
+        "angles": [
+          0.0,
+          -52.58700180053711,
+          0.0
+        ],
+        "scale": 1.3385100364685059,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_screen_animation_01",
+        "lod": 0,
+        "triangles": 2,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 0,
+        "collision_recovery": "Decorative screen; existing room boundary clip retained"
+      },
+      {
+        "index": 8066,
+        "model": "mdl/beacon/composite_screen_animation_01.rmdl",
+        "origin": [
+          1777.0999755859375,
+          2584.639892578125,
+          -24.170299530029297
+        ],
+        "angles": [
+          0.0,
+          -127.58699798583984,
+          0.0
+        ],
+        "scale": 1.3385100364685059,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_screen_animation_01",
+        "lod": 0,
+        "triangles": 2,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 0,
+        "collision_recovery": "Decorative screen; existing room boundary clip retained"
+      },
+      {
+        "index": 8184,
+        "model": "mdl/beacon/composite_big_screen_01.rmdl",
+        "origin": [
+          -642.4110107421875,
+          4150.7998046875,
+          158.56700134277344
+        ],
+        "angles": [
+          0.0,
+          180.0,
+          0.0
+        ],
+        "scale": 0.9343360066413879,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_big_screen_01",
+        "lod": 2,
+        "triangles": 260,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 12,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 8185,
+        "model": "mdl/beacon/composite_big_screen_01.rmdl",
+        "origin": [
+          -6.0,
+          3388.699951171875,
+          832.7869873046875
+        ],
+        "angles": [
+          4.592560031325858e-17,
+          3.006040003478824e-19,
+          0.7500429749488831
+        ],
+        "scale": 3.68257999420166,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_big_screen_01",
+        "lod": 0,
+        "triangles": 810,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 12,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 8186,
+        "model": "mdl/beacon/composite_big_screen_01.rmdl",
+        "origin": [
+          640.197998046875,
+          4150.7998046875,
+          158.56700134277344
+        ],
+        "angles": [
+          0.0,
+          180.0,
+          0.0
+        ],
+        "scale": 0.9343360066413879,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_big_screen_01",
+        "lod": 2,
+        "triangles": 260,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 12,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 8187,
+        "model": "mdl/beacon/composite_big_screen_01.rmdl",
+        "origin": [
+          -1671.1700439453125,
+          1287.300048828125,
+          932.1859741210938
+        ],
+        "angles": [
+          0.0,
+          -0.3183000087738037,
+          0.0
+        ],
+        "scale": 2.495419979095459,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_big_screen_01",
+        "lod": 2,
+        "triangles": 260,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 12,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 8188,
+        "model": "mdl/beacon/composite_big_screen_01.rmdl",
+        "origin": [
+          585.9310302734375,
+          1487.93994140625,
+          335.9110107421875
+        ],
+        "angles": [
+          0.0,
+          -90.0,
+          0.0
+        ],
+        "scale": 1.12909996509552,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_big_screen_01",
+        "lod": 2,
+        "triangles": 260,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 12,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 8189,
+        "model": "mdl/beacon/composite_big_screen_01.rmdl",
+        "origin": [
+          1668.719970703125,
+          1282.9000244140625,
+          932.1859741210938
+        ],
+        "angles": [
+          0.0,
+          -1.9062000513076782,
+          0.0
+        ],
+        "scale": 2.495419979095459,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_big_screen_01",
+        "lod": 2,
+        "triangles": 260,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 12,
+        "collision_recovery": "IRPS surface"
+      },
+      {
+        "index": 8190,
+        "model": "mdl/beacon/composite_big_screen_01.rmdl",
+        "origin": [
+          -585.8839721679688,
+          1489.3199462890625,
+          335.9110107421875
+        ],
+        "angles": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "scale": 1.12909996509552,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\composite_big_screen_01",
+        "lod": 2,
+        "triangles": 260,
+        "recovery": "Source VG; original overlay section retained",
+        "collision_triangles": 12,
+        "collision_recovery": "IRPS surface"
+      }
+    ],
+    "policy": "All fifteen banner frame/arm pairs, seven wall screens, six original room closure screens; source transforms, under 90% index capacity",
+    "draw_budget": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\composite\\mp_arena_composite.details.bsp",
+      "meshes": 2973,
+      "real_triangles": 941236,
+      "native_padded_indices": 2827710,
+      "world_index_capacity": 3145728,
+      "all_meshes_fit_simultaneously": true,
+      "maximum_all_visible_mesh_prefix": 2973,
+      "prefix_indices": 2827710,
+      "first_mesh_excluded_when_all_visible": null,
+      "mesh_partitions": [
+        2842,
+        2842,
+        2973
+      ],
+      "static_batch_runs": 347,
+      "unique_static_draw_keys": 347,
+      "world_batch_capacity": 2048,
+      "static_batches_fit_simultaneously": true,
+      "first_mesh_excluded_by_static_batch_limit": null,
+      "dynamic_light_masks_can_split_static_batches": true,
+      "native_batch_limit_instruction": "engine.dll+0xb7304",
+      "native_batch_limit_exit": "engine.dll+0xb74c9",
+      "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+    },
+    "lighting": "Append preserves old charts; targeted hall RTL and screen illumination are recorded separately in screen-repair/lighting.json",
+    "previous_version": "0.4.0"
+  },
+  "targeted_lighting": {
+    "source_lights": [
+      {
+        "hardware_index": 3,
+        "source_entity": 309,
+        "source_class": "light",
+        "origin": [
+          2201.65,
+          865.366,
+          544.187
+        ],
+        "radius": 650.0,
+        "colour": [
+          0.25547161267322466,
+          0.34100507083610143,
+          0.35
+        ]
+      },
+      {
+        "hardware_index": 4,
+        "source_entity": 51,
+        "source_class": "light_spot",
+        "origin": [
+          -2208.29,
+          921.019,
+          682.209
+        ],
+        "radius": 1800,
+        "colour": [
+          0.33620423582482756,
+          0.47546119363491685,
+          0.51
+        ]
+      }
+    ],
+    "previous_slots": [
+      {
+        "source_entity": 442,
+        "source_class": "light_spot",
+        "origin": [
+          2974.62,
+          8666.24,
+          3572.11
+        ],
+        "radius": 1800,
+        "colour": [
+          1.3600406843441908,
+          1.5786274848311717,
+          2.0
+        ],
+        "hardware_index": 3
+      },
+      {
+        "source_entity": 408,
+        "source_class": "light_spot",
+        "origin": [
+          -3784.72,
+          8288.75,
+          3626.97
+        ],
+        "radius": 1800,
+        "colour": [
+          1.3600406843441908,
+          1.5786274848311717,
+          2.0
+        ],
+        "hardware_index": 4
+      }
+    ],
+    "updated_chart_count": 186217,
+    "illuminated_screen_charts": 100,
+    "updated_probes": 287,
+    "new_light_luxel_references": {
+      "3": 36223,
+      "4": 130295
+    },
+    "approximation": "Source spots treated as points; source screen appearances frozen with constant chart illumination, no animated emissive shader"
+  },
+  "menu_isolation": {
+    "delta": [
+      -13224.0,
+      12144.0,
+      11264.0
+    ],
+    "entities": [
+      {
+        "classname": "light_environment",
+        "script_name": null,
+        "before": "-11680 11892 12997",
+        "after": "-24904.0 24036.0 24261.0"
+      },
+      {
+        "classname": "info_target_clientside",
+        "script_name": "menu_camera_target",
+        "before": "-11776 11600 12776",
+        "after": "-25000.0 23744.0 24040.0"
+      },
+      {
+        "classname": "info_target_clientside",
+        "script_name": "menu_scene_ref",
+        "before": "-11776 11856 12736",
+        "after": "-25000.0 24000.0 24000.0"
+      },
+      {
+        "classname": "light_environment_volume",
+        "script_name": null,
+        "before": "-11776 11856 12736",
+        "after": "-25000.0 24000.0 24000.0"
+      }
+    ],
+    "reason": "Native client menu actors and effects were inside the photographic sky sphere; preserve relative scene/camera/light-volume transforms outside it"
+  },
+  "local_repair": {
+    "version": "0.6.0",
+    "added_props": 4,
+    "added_triangles": 910,
+    "placements": [
+      {
+        "index": 2914,
+        "model": "mdl/cockpit/mounted_ceiling_server_01.rmdl",
+        "origin": [
+          -516.6199951171875,
+          149.13499450683594,
+          124.77799987792969
+        ],
+        "angles": [
+          0.0,
+          0.14300000667572021,
+          0.0
+        ],
+        "scale": 1.555050015449524,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\mounted_ceiling_server_01",
+        "lod": 3,
+        "triangles": 283,
+        "collision_triangles": 0,
+        "collision_recovery": "Existing source world collision retained",
+        "recovery": "Complete source VG author LOD3"
+      },
+      {
+        "index": 2916,
+        "model": "mdl/cockpit/mounted_ceiling_server_01.rmdl",
+        "origin": [
+          516.0289916992188,
+          150.76600646972656,
+          124.77799987792969
+        ],
+        "angles": [
+          0.0,
+          180.0,
+          0.0
+        ],
+        "scale": 1.555050015449524,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\mounted_ceiling_server_01",
+        "lod": 3,
+        "triangles": 283,
+        "collision_triangles": 0,
+        "collision_recovery": "Existing source world collision retained",
+        "recovery": "Complete source VG author LOD3"
+      },
+      {
+        "index": 5287,
+        "model": "mdl/containers/container_medium_tanks_blue.rmdl",
+        "origin": [
+          2.071049928665161,
+          1956.5999755859375,
+          -102.58699798583984
+        ],
+        "angles": [
+          0.0,
+          5.922299861907959,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\container_medium_tanks_blue",
+        "lod": 3,
+        "triangles": 172,
+        "collision_triangles": 0,
+        "collision_recovery": "Existing source world collision retained",
+        "recovery": "Complete source VG author LOD3"
+      },
+      {
+        "index": 5288,
+        "model": "mdl/containers/container_medium_tanks_blue.rmdl",
+        "origin": [
+          -0.3593420088291168,
+          1961.989990234375,
+          -144.96200561523438
+        ],
+        "angles": [
+          0.0,
+          -170.62399291992188,
+          0.0
+        ],
+        "scale": 1.0,
+        "skin": 0,
+        "solid": 6,
+        "flags": 4,
+        "folder": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\tools\\composite-legion\\exported_files\\models\\container_medium_tanks_blue",
+        "lod": 3,
+        "triangles": 172,
+        "collision_triangles": 0,
+        "collision_recovery": "Existing source world collision retained",
+        "recovery": "Complete source VG author LOD3"
+      }
+    ],
+    "policy": "Original transforms and complete source LOD3; retain existing world collision, no duplicate collider",
+    "draw_budget": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\composite\\mp_arena_composite.details.bsp",
+      "meshes": 2976,
+      "real_triangles": 942146,
+      "native_padded_indices": 2830446,
+      "world_index_capacity": 3145728,
+      "all_meshes_fit_simultaneously": true,
+      "maximum_all_visible_mesh_prefix": 2976,
+      "prefix_indices": 2830446,
+      "first_mesh_excluded_when_all_visible": null,
+      "mesh_partitions": [
+        2844,
+        2844,
+        2976
+      ],
+      "static_batch_runs": 349,
+      "unique_static_draw_keys": 349,
+      "world_batch_capacity": 2048,
+      "static_batches_fit_simultaneously": true,
+      "first_mesh_excluded_by_static_batch_limit": null,
+      "dynamic_light_masks_can_split_static_batches": true,
+      "native_batch_limit_instruction": "engine.dll+0xb7304",
+      "native_batch_limit_exit": "engine.dll+0xb74c9",
+      "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+    },
+    "lighting": "New 4x4 charts ray-baked against the full scene; old charts and character probes retained at append time",
+    "previous_version": "0.5.0"
+  },
+  "orphan_lamp": {
+    "index": 5093,
+    "disabled_render_triangles": 24,
+    "disabled_shadow_triangles": 24,
+    "reason": "Light at (-8,2273,66) attached to previously removed wind shield 4924; no wall at its source position",
+    "collision": "Source non-solid; collision streams unchanged"
+  },
+  "chart_gutters": {
+    "charts": 942146,
+    "changed_charts": {
+      "sky0_0": 204403,
+      "sky0_1": 158744,
+      "rtl0_0": 104869,
+      "rtl0_1": 116238,
+      "sky1_0": 134572,
+      "sky1_1": 104905,
+      "rtl1_0": 54118,
+      "rtl1_1": 62833,
+      "sky2_0": 166236,
+      "sky2_1": 124334,
+      "rtl2_0": 79384,
+      "rtl2_1": 80861,
+      "sky3_0": 69134,
+      "sky3_1": 53839,
+      "rtl3_0": 32920,
+      "rtl3_1": 43122
+    },
+    "valid_samples_preserved": true,
+    "method": "Nearest of six own raster samples, within each 4x4 triangle chart; no geometry, textures, lights, probes or collision changed"
+  },
+  "wall_lighting": [
+    {
+      "charts": 1302,
+      "size": 32,
+      "allocation_page": 3,
+      "allocation_start_y": 1248,
+      "scope": "Large vertical painted metal panels within 1200 units of both control entrances; area >1000",
+      "receiver_samples_per_triangle": 351,
+      "old_charts_preserved": true,
+      "lights_and_probes_preserved": true,
+      "method": "Full-scene sun, sky and local-light ray bake; own-chart gutters; inset receiver samples avoid zero-area vertex-edge rays"
+    },
+    {
+      "charts": 948,
+      "size": 16,
+      "allocation_page": 3,
+      "allocation_start_y": 1920,
+      "scope": "Vertical painted metal panels within 1200 units of both control entrances; area 100..1000",
+      "receiver_samples_per_triangle": 105,
+      "old_charts_preserved": true,
+      "lights_and_probes_preserved": true,
+      "method": "Full-scene sun, sky and local-light ray bake; own-chart gutters; inset receiver samples avoid zero-area vertex-edge rays",
+      "receipt_recovery": "BSP and scope were already committed; receipt filename shadowing corrected, committed UVs verified before writing receipt"
+    },
+    {
+      "reassigned_triangles": 948,
+      "processed_receivers": 2250,
+      "draw_budget": {
+        "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\composite\\mp_arena_composite.wall-pages.bsp",
+        "meshes": 3024,
+        "real_triangles": 942146,
+        "native_padded_indices": 2830530,
+        "world_index_capacity": 3145728,
+        "all_meshes_fit_simultaneously": true,
+        "maximum_all_visible_mesh_prefix": 3024,
+        "prefix_indices": 2830530,
+        "first_mesh_excluded_when_all_visible": null,
+        "mesh_partitions": [
+          2892,
+          2892,
+          3024
+        ],
+        "static_batch_runs": 353,
+        "unique_static_draw_keys": 353,
+        "world_batch_capacity": 2048,
+        "static_batches_fit_simultaneously": true,
+        "first_mesh_excluded_by_static_batch_limit": null,
+        "dynamic_light_masks_can_split_static_batches": true,
+        "native_batch_limit_instruction": "engine.dll+0xb7304",
+        "native_batch_limit_exit": "engine.dll+0xb74c9",
+        "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+      },
+      "reason": "Native material sort stores atlas page per mesh; split high-resolution receivers from page-zero geometry"
+    }
+  ],
+  "release_version": "0.7.0",
+  "vertex_paint_comparison_repair": {
+    "version": "0.7.0",
+    "previous_version": "0.6.0",
+    "changed_vertices": 190916,
+    "native_shader_materials": 17,
+    "paint_pack_bytes": 54114670,
+    "preserved": [
+      "collision",
+      "geometry",
+      "UVs",
+      "normals",
+      "lightmaps",
+      "character probes",
+      "render visibility",
+      "gameplay entities"
+    ],
+    "native_visual_comparison": [
+      {
+        "view": "court-overview",
+        "source_sha256": "c6edcfe0cb2af09b03430d441b843ee606a47579fb601921783fadc5f4272f0e",
+        "port_sha256": "df8277d0a0fbbd95c94af3649b5c042b35196d608c4a2af4d09835e5df4f210b"
+      },
+      {
+        "view": "west-control",
+        "source_sha256": "0c000d77480c9ff38aadb270cf08ffadc820d80732f58330e69376685669d14a",
+        "port_sha256": "23b13281a1a723cf469bb9b77dafc8fa8604d640746b6825a41e8dd90d22415b"
+      },
+      {
+        "view": "north-platform",
+        "source_sha256": "67f94d66d4aa9acbf0eef6b37cb795349f6f6a22010adabbceb118513680cd14",
+        "port_sha256": "6ccc0f2b4b6ae92cee5d8da19cecd903447e3b443215fad708bcb4029a70e3ad"
+      },
+      {
+        "view": "west-cargo",
+        "source_sha256": "d2263afe8483b8c679443c1f5efc27a0f1e90a15cd117f6b74bc211a59c39473",
+        "port_sha256": "63c787dd251b242c31ab7b2d12cfab5cf804cb32530fdde4700b005955a05d9f"
+      }
+    ],
+    "draw_budget": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\northstar\\ArenaComposite\\mod\\maps\\mp_arena_composite.bsp",
+      "meshes": 3024,
+      "real_triangles": 942146,
+      "native_padded_indices": 2830530,
+      "world_index_capacity": 3145728,
+      "all_meshes_fit_simultaneously": true,
+      "maximum_all_visible_mesh_prefix": 3024,
+      "prefix_indices": 2830530,
+      "first_mesh_excluded_when_all_visible": null,
+      "mesh_partitions": [
+        2892,
+        2892,
+        3024
+      ],
+      "static_batch_runs": 353,
+      "unique_static_draw_keys": 353,
+      "world_batch_capacity": 2048,
+      "static_batches_fit_simultaneously": true,
+      "first_mesh_excluded_by_static_batch_limit": null,
+      "dynamic_light_masks_can_split_static_batches": true,
+      "native_batch_limit_instruction": "engine.dll+0xb7304",
+      "native_batch_limit_exit": "engine.dll+0xb74c9",
+      "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+    },
+    "source_captures_reused_with_hash_verification": true,
+    "limitations": [
+      "Vertex alpha and Apex terrain layer blending remain approximated.",
+      "Animated banners and source scenery omissions remain.",
+      "Paired captures do not establish multiplayer frame times."
+    ]
+  }
+}

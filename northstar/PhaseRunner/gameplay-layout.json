@@ -1,0 +1,1080 @@
+{
+  "version": "1.1.0",
+  "map": "mp_phase_runner",
+  "teams": {
+    "2": "IMC west building",
+    "3": "Militia east building"
+  },
+  "added_entity_counts": {
+    "info_spawnpoint_human_start": 24,
+    "info_spawnpoint_human": 42,
+    "info_spawnpoint_titan": 12,
+    "info_spawnpoint_titan_start": 6,
+    "info_spawnpoint_flag": 2,
+    "info_hardpoint": 3,
+    "trigger_capture_point": 3
+  },
+  "spawns": [
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -5790.0,
+        -1200.0,
+        -861.17919921875
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_0"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -5790.0,
+        -1360.0,
+        -862.6290893554688
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_1"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -5790.0,
+        -1520.0,
+        -862.629150390625
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_2"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -5790.0,
+        -1680.0,
+        -861.17919921875
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_3"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -5930.0,
+        -1104.0,
+        -876.96875
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_4"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -5930.0,
+        -1360.0,
+        -829.896484375
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_5"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -5930.0,
+        -1520.0,
+        -829.896484375
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_6"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -5930.0,
+        -1680.0,
+        -798.2470703125
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_7"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -6070.0,
+        -1264.0,
+        -829.96875
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_8"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -6070.0,
+        -1360.0,
+        -829.896484375
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_9"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -6070.0,
+        -1520.0,
+        -829.896484375
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_10"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        -6070.0,
+        -1680.0,
+        -829.96875
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_start_11"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -5390,
+        -1700,
+        -881.928
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_12"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -5090,
+        -2000,
+        -892.0
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_13"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -4590,
+        -2600,
+        -953.765
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_14"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -3890,
+        -3200,
+        -1276.186
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_15"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -2990,
+        -4100,
+        -1277.131
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_16"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -1990,
+        -4500,
+        -1188.216
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_17"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -990,
+        -4500,
+        -1209.82
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_18"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -4290,
+        -800,
+        -893.094
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_19"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -3390,
+        200,
+        -1116.378
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_20"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -2690,
+        900,
+        -1148.0
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_21"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -1690,
+        1900,
+        -1116.0
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_22"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -690,
+        2000,
+        -1020.001
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_23"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -5690,
+        -900,
+        -1147.943
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_24"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -4990,
+        -1200,
+        -890.38
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_25"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -3790,
+        -1800,
+        -1096.377
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_26"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -2790,
+        -2700,
+        -1051.821
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_27"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -1790,
+        -3400,
+        -1248.804
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_28"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -690,
+        -3200,
+        -1004.029
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_human_29"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        -5090.0,
+        -2200.0,
+        -887.96875
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_30"
+    },
+    {
+      "classname": "info_spawnpoint_titan_start",
+      "origin": [
+        -5090.0,
+        -2200.0,
+        -887.96875
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_start_31"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        -5090.0,
+        -1944.0,
+        -886.3502197265625
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_32"
+    },
+    {
+      "classname": "info_spawnpoint_titan_start",
+      "origin": [
+        -5090.0,
+        -1944.0,
+        -886.3502197265625
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_start_33"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        -5090.0,
+        -2456.0,
+        -887.9549560546875
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_34"
+    },
+    {
+      "classname": "info_spawnpoint_titan_start",
+      "origin": [
+        -5090.0,
+        -2456.0,
+        -887.9549560546875
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_start_35"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        -5218.0,
+        -2200.0,
+        -887.96875
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_36"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        -1062.0,
+        -3600.0,
+        -1017.96875
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_37"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        -1190.0,
+        -3472.0,
+        -1019.363037109375
+      ],
+      "team": 0,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_titan_38"
+    },
+    {
+      "classname": "info_spawnpoint_flag",
+      "origin": [
+        -5870,
+        -1420,
+        -833.928
+      ],
+      "team": 2,
+      "yaw": 0,
+      "targetname": "phase_runner_info_spawnpoint_flag_39"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6010.0,
+        -1200.0,
+        -863.0914916992188
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_40"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6010.0,
+        -1360.0,
+        -865.29541015625
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_41"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6010.0,
+        -1520.0,
+        -865.2957763671875
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_42"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6010.0,
+        -1680.0,
+        -863.0914306640625
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_43"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6150.0,
+        -1232.0,
+        -798.3312377929688
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_44"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6150.0,
+        -1360.0,
+        -829.8944702148438
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_45"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6150.0,
+        -1520.0,
+        -829.8944702148438
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_46"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6150.0,
+        -1680.0,
+        -797.17919921875
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_47"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6290.0,
+        -1232.0,
+        -829.96875
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_48"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6290.0,
+        -1360.0,
+        -829.8944702148438
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_49"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6290.0,
+        -1520.0,
+        -829.8944702148438
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_50"
+    },
+    {
+      "classname": "info_spawnpoint_human_start",
+      "origin": [
+        6290.0,
+        -1680.0,
+        -829.96875
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_start_51"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        5610,
+        -1700,
+        -881.926
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_52"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        5310,
+        -2000,
+        -892.0
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_53"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        4810,
+        -2600,
+        -954.24
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_54"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        4110,
+        -3200,
+        -1267.225
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_55"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        3210,
+        -4100,
+        -1277.227
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_56"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        2210,
+        -4500,
+        -1188.304
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_57"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        1210,
+        -4500,
+        -1210.18
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_58"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        4510,
+        -800,
+        -893.141
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_59"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        3610,
+        200,
+        -1116.676
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_60"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        2910,
+        900,
+        -1015.684
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_61"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        1910,
+        1900,
+        -1116.0
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_62"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        910,
+        2000,
+        -1020.001
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_63"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        5910,
+        -900,
+        -1147.736
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_64"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        5210,
+        -1200,
+        -890.38
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_65"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        4010,
+        -1800,
+        -1091.556
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_66"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        3010,
+        -2700,
+        -1058.917
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_67"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        2010,
+        -3400,
+        -1245.273
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_68"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        910,
+        -3200,
+        -1003.429
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_human_69"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        5310.0,
+        -2200.0,
+        -887.96875
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_70"
+    },
+    {
+      "classname": "info_spawnpoint_titan_start",
+      "origin": [
+        5310.0,
+        -2200.0,
+        -887.96875
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_start_71"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        5310.0,
+        -1944.0,
+        -886.3502807617188
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_72"
+    },
+    {
+      "classname": "info_spawnpoint_titan_start",
+      "origin": [
+        5310.0,
+        -1944.0,
+        -886.3502807617188
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_start_73"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        5310.0,
+        -2456.0,
+        -887.9548950195312
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_74"
+    },
+    {
+      "classname": "info_spawnpoint_titan_start",
+      "origin": [
+        5310.0,
+        -2456.0,
+        -887.9548950195312
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_start_75"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        5438.0,
+        -2200.0,
+        -887.96875
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_76"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        1282.0,
+        -3600.0,
+        -1017.96875
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_77"
+    },
+    {
+      "classname": "info_spawnpoint_titan",
+      "origin": [
+        1410.0,
+        -3472.0,
+        -1019.363037109375
+      ],
+      "team": 0,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_titan_78"
+    },
+    {
+      "classname": "info_spawnpoint_flag",
+      "origin": [
+        6090,
+        -1420,
+        -833.926
+      ],
+      "team": 3,
+      "yaw": 180,
+      "targetname": "phase_runner_info_spawnpoint_flag_79"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        110,
+        -3200,
+        -1269.129
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_info_spawnpoint_human_80"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -650,
+        -4000,
+        -1022.0
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_info_spawnpoint_human_81"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        870,
+        -4000,
+        -1022.0
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_info_spawnpoint_human_82"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        -650,
+        600,
+        -1232.544
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_info_spawnpoint_human_83"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        870,
+        600,
+        -1207.595
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_info_spawnpoint_human_84"
+    },
+    {
+      "classname": "info_spawnpoint_human",
+      "origin": [
+        110,
+        1800,
+        -1295.71
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_info_spawnpoint_human_85"
+    },
+    {
+      "classname": "info_hardpoint",
+      "origin": [
+        -4450,
+        -1700,
+        -892.0
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_hardpoint_a"
+    },
+    {
+      "classname": "info_hardpoint",
+      "origin": [
+        110,
+        -2700,
+        -1275.998
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_hardpoint_b"
+    },
+    {
+      "classname": "info_hardpoint",
+      "origin": [
+        4670,
+        -1700,
+        -892.0
+      ],
+      "team": 0,
+      "yaw": 90,
+      "targetname": "phase_runner_hardpoint_c"
+    }
+  ],
+  "objectives": [
+    {
+      "group": "A",
+      "origin": [
+        -4450,
+        -1700,
+        -892.0
+      ],
+      "trigger": "phase_runner_capture_a"
+    },
+    {
+      "group": "B",
+      "origin": [
+        110,
+        -2700,
+        -1275.998
+      ],
+      "trigger": "phase_runner_capture_b"
+    },
+    {
+      "group": "C",
+      "origin": [
+        4670,
+        -1700,
+        -892.0
+      ],
+      "trigger": "phase_runner_capture_c"
+    }
+  ],
+  "fastball_buddies": [
+    {
+      "team": 2,
+      "origin": [
+        -5090,
+        -2200,
+        -892.0
+      ],
+      "yaw": 0
+    },
+    {
+      "team": 3,
+      "origin": [
+        5310,
+        -2200,
+        -892.0
+      ],
+      "yaw": 180
+    }
+  ],
+  "fastball_panels": [
+    {
+      "origin": [
+        -4450,
+        -1480,
+        -892.0
+      ],
+      "yaw": 90
+    },
+    {
+      "origin": [
+        110,
+        -2480,
+        -1275.998
+      ],
+      "yaw": 90
+    },
+    {
+      "origin": [
+        4670,
+        -1480,
+        -892.0
+      ],
+      "yaw": 90
+    }
+  ],
+  "geometry_changed": false,
+  "collision_changed": false,
+  "entity_lump_append_bytes": 34814,
+  "limitations": [
+    "Attrition AI requires a separately authored valid AIN/navigation graph.",
+    "Multiplayer balance requires matches with multiple human players."
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "scope": "Tested installed Titanfall 2 build; RVAs are not portable across updates.",
+  "binary_sha256": {
+    "D:\\Games\\Titanfall2\\bin\\x64_retail\\engine.dll": "58eb1a1b44b30275bdd21368de264d856bc310d37d93a0f76f111f0026913487",
+    "D:\\Games\\Titanfall2\\bin\\x64_retail\\client.dll": "002b36487fec7c98882929fbccdb506d0146bbf3270cbb964a4d21c5edf7eebc"
+  },
+  "limits": [
+    {
+      "name": "all_visible_world_indices",
+      "value": 3145728,
+      "kind": "native_submission_capacity",
+      "evidence": "audit_world_draw_budget.py; engine.dll RVA 0xb72af; logs/native-reader-engine-0x7cb410.txt"
+    },
+    {
+      "name": "world_draw_batches",
+      "value": 2048,
+      "kind": "native_submission_capacity",
+      "evidence": "engine.dll RVA 0xb7304; static keys can be split by dynamic light masks"
+    },
+    {
+      "name": "material_sorts",
+      "value": 8192,
+      "kind": "native_loader_capacity",
+      "evidence": "1024-byte loader bitset; 0.1.20 minidump; guard_native_sort_capacity.py; package_northstar.py"
+    },
+    {
+      "name": "world_mesh_reference_index",
+      "value": 65535,
+      "kind": "serialized_unsigned16_max",
+      "evidence": "OBJ_REFERENCES uint16; references index meshes, not source prop placements"
+    },
+    {
+      "name": "local_vertex_index",
+      "value": 65535,
+      "kind": "serialized_unsigned16_max",
+      "evidence": "MESH_INDICES uint16; global vertex base lives in MATERIAL_SORTS"
+    },
+    {
+      "name": "collision_primitive_index",
+      "value": 65535,
+      "kind": "serialized_unsigned16_max",
+      "evidence": "CM_PRIMITIVES bits 8..23; target brush or triangle header; conservative writers use fewer than 65536"
+    },
+    {
+      "name": "geoset_start_and_count",
+      "value": 65535,
+      "kind": "serialized_unsigned16_max",
+      "evidence": "CM_GRID_CELLS uint16 fields; range first+count checked conservatively <=65535"
+    },
+    {
+      "name": "brush_cut_and_bevel_counts",
+      "value": 255,
+      "kind": "serialized_unsigned8_max",
+      "evidence": "CM_BRUSHES bytes at offsets 12 and 13"
+    },
+    {
+      "name": "packed_collision_center_and_extent",
+      "value": 32767,
+      "kind": "serialized_signed16_max",
+      "evidence": "CM_GEO_SET_BOUNDS / CM_PRIMITIVE_BOUNDS / TRICOLL_NODES; require center and extent to fit, not just coordinates"
+    },
+    {
+      "name": "flat_cell_child_and_leaf_counts",
+      "value": 255,
+      "kind": "serialized_unsigned8_max",
+      "evidence": "CELL_AABB_NODES; build_camera_visibility also restricts root child count <=255"
+    },
+    {
+      "name": "project_world_index_policy",
+      "value": 0.95,
+      "kind": "project_safety_policy",
+      "evidence": "build_phase_runner_firs.py; margin, not an engine hard limit"
+    },
+    {
+      "name": "project_static_batch_policy",
+      "value": 512,
+      "kind": "project_safety_policy_exclusive",
+      "evidence": "Firs release requires static_batch_runs <512; dynamic lights can multiply batch count"
+    },
+    {
+      "name": "project_local_vertices_policy",
+      "value": 60000,
+      "kind": "project_safety_policy",
+      "evidence": "optimize_portalfree_render.py; preserves short local clipping spans"
+    },
+    {
+      "name": "project_tricoll_group_triangles",
+      "value": 96,
+      "kind": "project_encoding_choice",
+      "evidence": "native_triangle_collision.py supports 1..300; 96 chosen to keep compact local bounds"
+    },
+    {
+      "name": "project_coordinate_clip",
+      "value": 32760,
+      "kind": "project_safety_policy",
+      "evidence": "rebuild_complete_collision.py; remote polygons clipped; shape bounds must still be representable"
+    }
+  ],
+  "current_release": {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\northstar\\PhaseRunner\\mod\\maps\\mp_phase_runner.bsp",
+    "meshes": 4982,
+    "real_triangles": 972628,
+    "native_padded_indices": 2924184,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 4982,
+    "prefix_indices": 2924184,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      4947,
+      4947,
+      4982
+    ],
+    "static_batch_runs": 479,
+    "unique_static_draw_keys": 479,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path.",
+    "material_sorts": 483,
+    "stored_brushes": 7654,
+    "active_brushes": 7134,
+    "stored_triangle_headers": 25948,
+    "active_triangle_headers": 25866,
+    "stored_collision_triangles": 2451620,
+    "collision_geosets": 546,
+    "lightprobes": 39821,
+    "lightprobe_references": 39821,
+    "lightmap_pages": 7,
+    "portals_bytes": 12,
+    "raw_index_headroom": 221544,
+    "policy_95_percent_index_headroom": 64257
+  },
+  "unknown": [
+    "Universal playable map dimensions",
+    "Safe static-prop/entity total for native model path",
+    "Universal texture residency budget",
+    "Fully selective portal graph generation",
+    "Complete Apex collision contents equivalence",
+    "Apex versions other than the source v47"
+  ],
+  "limitation": "No universal map-size or total-object limit is inferred from the world-baked renderer budget. Other rendering paths have separate capacities."
+}
