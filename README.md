@@ -13,6 +13,7 @@ including the initial test failures and the scope of subsequent native checks.
 - [Repository contents and local dependencies](REPOSITORY.md).
 - [Northstar harness](test-harness/README.md) and [R5R harness](r5-harness/README.md).
 - [Native minimap conversion](docs/arena-minimaps-2026-10-13.md).
+- [Next conversion candidates: Overflow, Party Crasher and Firing Range](docs/candidates/assessment-2026-10-13.md).
 - [Northstar banners and Apex displays](docs/banner-display-textures-2026-10-12.md).
 
 Clean downloads: `output/PhaseRunner-1.6.0-Northstar.zip` and

@@ -1,0 +1,51 @@
+[
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261013-155041-0e103d\\screenshots\\firing-range-overview-5040c60b.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_staging0007.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "7ff22aabcc6b2b47041d11ecf3c799362a5cb1a8c2317406983c962541cb4ef0",
+    "captured": 1791867708.1535776,
+    "map": "mp_rr_canyonlands_staging",
+    "camera": {
+      "origin": [
+        26507.6,
+        -6928.0,
+        -26600.0
+      ],
+      "angles": [
+        22.0,
+        90.0,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_canyonlands_staging",
+        "context": "server",
+        "ready": 1,
+        "instance": "99b2f8d29e8044e889485e8bbe52a03a"
+      },
+      "client": {
+        "map": "mp_rr_canyonlands_staging",
+        "context": "client",
+        "ready": 1,
+        "instance": "12675a7335be4dd79aa9a24b329cde41",
+        "camera": 1,
+        "origin": [
+          26507.5996,
+          -6928.0,
+          -26600.0
+        ],
+        "angles": [
+          22.0,
+          90.0,
+          0.0
+        ]
+      }
+    },
+    "generation": "49215266fc2f489483b0e14822b92243",
+    "engine": "r5r"
+  }
+]

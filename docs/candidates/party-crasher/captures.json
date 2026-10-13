@@ -1,0 +1,149 @@
+[
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261013-155041-0e103d\\screenshots\\party-crasher-overview-8b592c6c.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_party_crasher0001.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "772af4e445f22229fb90172273ce1e43d6607eee51806522692cf19be5242a4a",
+    "captured": 1791867298.0046093,
+    "map": "mp_rr_party_crasher",
+    "camera": {
+      "origin": [
+        3385.96265,
+        -1591.92493,
+        2220.44629
+      ],
+      "angles": [
+        12.0,
+        97.7711029,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_party_crasher",
+        "context": "server",
+        "ready": 1,
+        "instance": "fe24d7c3a4154d5985319158a787eaab"
+      },
+      "client": {
+        "map": "mp_rr_party_crasher",
+        "context": "client",
+        "ready": 1,
+        "instance": "3c0d47b3084c43cebc26823534daabac",
+        "camera": 1,
+        "origin": [
+          3385.9626,
+          -1591.9249,
+          2220.4463
+        ],
+        "angles": [
+          12.0,
+          97.7711,
+          0.0
+        ]
+      }
+    },
+    "generation": "4bd4a7f68deb40e195c8f099b7704da2",
+    "engine": "r5r"
+  },
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261013-155041-0e103d\\screenshots\\party-crasher-mirage-voyage-810276e9.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_party_crasher0002.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "e3b0be42647a41ad19c7c1c30434895dd3f716658a676161cab15879afb75c5b",
+    "captured": 1791867337.889215,
+    "map": "mp_rr_party_crasher",
+    "camera": {
+      "origin": [
+        -1949.47925,
+        -565.452087,
+        1366.40222
+      ],
+      "angles": [
+        0.0,
+        -4.39630127,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_party_crasher",
+        "context": "server",
+        "ready": 1,
+        "instance": "fe24d7c3a4154d5985319158a787eaab"
+      },
+      "client": {
+        "map": "mp_rr_party_crasher",
+        "context": "client",
+        "ready": 1,
+        "instance": "3c0d47b3084c43cebc26823534daabac",
+        "camera": 1,
+        "origin": [
+          -1949.4792,
+          -565.4521,
+          1366.4022
+        ],
+        "angles": [
+          0.0,
+          -4.3963,
+          0.0
+        ]
+      }
+    },
+    "generation": "4bd4a7f68deb40e195c8f099b7704da2",
+    "engine": "r5r"
+  },
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261013-155041-0e103d\\screenshots\\party-crasher-plaza-3509d3ea.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_party_crasher0003.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "5042ae010686081771829d11ea959c6a10172bb4192e3a9934802cd5eb8585df",
+    "captured": 1791867377.9591284,
+    "map": "mp_rr_party_crasher",
+    "camera": {
+      "origin": [
+        416.486328,
+        2083.01709,
+        562.318604
+      ],
+      "angles": [
+        0.0,
+        -83.0055008,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_party_crasher",
+        "context": "server",
+        "ready": 1,
+        "instance": "fe24d7c3a4154d5985319158a787eaab"
+      },
+      "client": {
+        "map": "mp_rr_party_crasher",
+        "context": "client",
+        "ready": 1,
+        "instance": "3c0d47b3084c43cebc26823534daabac",
+        "camera": 1,
+        "origin": [
+          416.4863,
+          2083.0171,
+          562.3186
+        ],
+        "angles": [
+          0.0,
+          -83.0055,
+          0.0
+        ]
+      }
+    },
+    "generation": "4bd4a7f68deb40e195c8f099b7704da2",
+    "engine": "r5r"
+  }
+]

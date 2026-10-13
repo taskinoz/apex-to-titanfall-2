@@ -1,0 +1,35 @@
+[
+  {
+    "map": "mp_rr_canyonlands_mu2",
+    "bsp_version": 47,
+    "meshes": 60908,
+    "triangles": 2013717,
+    "padded_indices": 6052974,
+    "fraction_native_world_capacity": 1.9241886138916016,
+    "scope": "All source world mesh records only; props excluded",
+    "crc_verified": true,
+    "mesh_sha256": "1c648a87bec5ba1ce9b2fd1ef673a4f5bf77583ca27e1dcb16f8ecd993cc9d49"
+  },
+  {
+    "map": "mp_rr_desertlands_mu2",
+    "bsp_version": 47,
+    "meshes": 57659,
+    "triangles": 2726052,
+    "padded_indices": 8191926,
+    "fraction_native_world_capacity": 2.6041431427001953,
+    "scope": "All source world mesh records only; props excluded",
+    "crc_verified": true,
+    "mesh_sha256": "ff7a095be9b558f76a65b6ad74174fa52a7e2e0d8dda2254915cdc00c952cdd2"
+  },
+  {
+    "map": "mp_rr_olympus",
+    "bsp_version": 47,
+    "meshes": 33991,
+    "triangles": 2544201,
+    "padded_indices": 7640388,
+    "fraction_native_world_capacity": 2.428813934326172,
+    "scope": "All source world mesh records only; props excluded",
+    "crc_verified": true,
+    "mesh_sha256": "f843293749f536a40cdeebe8bbdc1095e3d51ed2d9f6645f927dbc84e184ed2f"
+  }
+]
