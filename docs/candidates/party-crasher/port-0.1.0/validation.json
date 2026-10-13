@@ -1,0 +1,48 @@
+{
+  "bsp_sha256": "322c5a0caad30c2d40ea59c2e3c1bf972b6c601290b8061649b3623004a4a1c0",
+  "binary_checks": [
+    "Collision triangle range",
+    "Collision vertex reference",
+    "Conservative world index capacity",
+    "Mounted material dependency closure",
+    "Native collision header capacity",
+    "Native material-sort capacity",
+    "Native mesh reference capacity",
+    "Native probe record strides",
+    "Native v37 header",
+    "No unsupported source collision blobs retained",
+    "Opposing team starts present",
+    "Padded native mesh/index ranges",
+    "RTL lightmap page lengths",
+    "Sky lightmap page lengths",
+    "Static batch headroom for dynamic light masks",
+    "Visibility references and spatial tree"
+  ],
+  "mounted_native_captures": true,
+  "modes": [
+    {
+      "mode": "ps",
+      "live_spawns": 24,
+      "clear_supported": true,
+      "floor_contacts": 2,
+      "angle_captures": 6
+    },
+    {
+      "mode": "ffa",
+      "live_spawns": 24,
+      "clear_supported": true,
+      "floor_contacts": 2,
+      "angle_captures": 0
+    }
+  ],
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "script_errors": [],
+  "native_crashes": [],
+  "limitations": [
+    "One local client; multiplayer load and balance not tested",
+    "AI, Titan modes and Apex training interactions not validated",
+    "Safety entity presence checked; every hazard not physically exercised"
+  ],
+  "known_failed_stress_check": "A longer shared Overflow/Party Crasher session crashed during repeated FFA-to-PS cycling. Cause unresolved; clean individual checks do not erase this failure."
+}

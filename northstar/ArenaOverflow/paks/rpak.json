@@ -1,0 +1,11 @@
+{
+  "Aliases": {
+    "mp_overflow.rpak": "mp_coliseum.rpak",
+    "mp_overflow_loadscreen.rpak": "overflow_presentation.rpak"
+  },
+  "Postload": {
+    "overflow_world.rpak": "mp_coliseum.rpak",
+    "overflow_presentation.rpak": "common.rpak",
+    "overflow_minimap.rpak": "common.rpak"
+  }
+}

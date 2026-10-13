@@ -1,0 +1,11 @@
+{
+  "Aliases": {
+    "mp_apex_firing_range.rpak": "mp_coliseum.rpak",
+    "mp_apex_firing_range_loadscreen.rpak": "firing_range_presentation.rpak"
+  },
+  "Postload": {
+    "firing_range_world.rpak": "mp_coliseum.rpak",
+    "firing_range_presentation.rpak": "common.rpak",
+    "firing_range_minimap.rpak": "common.rpak"
+  }
+}

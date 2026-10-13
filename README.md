@@ -1,5 +1,13 @@
 # Apex to Titanfall 2 map ports
 
+New **0.1.0 early Northstar previews**: Overflow (`mp_overflow`), Party Crasher
+(`mp_party_crasher`) and Firing Range (`mp_apex_firing_range`). These have native
+geometry/collision, materials, direct lighting, loading artwork and minimaps.
+Pilot modes and single-client spawn/reload checks pass; substantial scenery,
+source shader behavior and Apex interactions are still missing. See the
+[new-port report and Olympus feasibility](docs/candidates/approved-port-work-2026-10-13.md).
+Clean player ZIPs are local in `output/`. Enable one new preview at a time.
+
 Current builds: **Phase Runner 1.6.0** and **Drop-Off 0.10.0**. Restore
 432 and 366 source scenery placements respectively, reaching 97.04% and
 97.06% of the native world index capacity. No dynamic entities are added.
@@ -7,8 +15,8 @@ Existing minimaps, lighting, gameplay, collision exclusions and catwalks remain.
 AI navigation is still incomplete. See [budgets, recovery and validation](docs/arena-scenery-fill-2026-10-13.md),
 including the initial test failures and the scope of subsequent native checks.
 
-- [Saved map comparison site](site/dist/index.html): 23 matching wider-area
-  views of these builds, with earlier snapshots retained.
+- [Saved map comparison site](site/dist/index.html): existing wider-area views
+  plus matched views of the three new previews, with earlier snapshots retained.
 - [Site source and release export](site/README.md).
 - [Repository contents and local dependencies](REPOSITORY.md).
 - [Northstar harness](test-harness/README.md) and [R5R harness](r5-harness/README.md).

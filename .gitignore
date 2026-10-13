@@ -19,6 +19,9 @@
 !/northstar/PhaseRunner/
 !/northstar/ArenaComposite/
 !/northstar/MapTest.Harness/
+!/northstar/ArenaOverflow/
+!/northstar/ArenaPartyCrasher/
+!/northstar/ApexFiringRange/
 
 # Owned runtime state, logs, downloads, releases and game assets stay local.
 **/output/

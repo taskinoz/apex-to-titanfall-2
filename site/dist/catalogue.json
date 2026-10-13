@@ -2146,6 +2146,317 @@
         }
       ],
       "latest": "2026-10-13-scenery-fill"
+    },
+    {
+      "id": "overflow",
+      "name": "Overflow",
+      "source_map": "mp_rr_aqueduct",
+      "target_map": "mp_overflow",
+      "status": "Early preview",
+      "description": "An industrial arena with elevated lanes, molten channels and opposing bases.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
+      "download": null,
+      "version": "0.1.0",
+      "source_offset": [
+        0,
+        0,
+        0
+      ],
+      "snapshots": [
+        {
+          "id": "2026-10-13-initial-ports",
+          "version": "0.1.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                -324.00824,
+                -6295.51123,
+                1393.36169
+              ],
+              "angles": [
+                15.0,
+                61.8894501,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-13-initial-ports/view-0-r5r.png",
+                "sha256": "7b2ea1c01f34a1c264de6594873c6d0783f72412c35c3258e3348bedf38ee892",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867498.05519
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-13-initial-ports/view-0-northstar.png",
+                "sha256": "809b951e99ba0f9f33b97669b64b156c1b24fb148bd3f9697fd1d22496c4481d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791880214.7705786
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                4536.32324,
+                -4842.01514,
+                627.977661
+              ],
+              "angles": [
+                0.0,
+                168.955353,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-13-initial-ports/view-1-r5r.png",
+                "sha256": "fce8f483d45bd7f57a89e0b42a03cf34802188798dcb0eee7fd71017f9a6947b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867538.0924218
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-13-initial-ports/view-1-northstar.png",
+                "sha256": "5ff5a2132726d9eb6957b3644141004ced6dc91043b62d10cdc40d4fe92d3762",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791880220.7621326
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                -763.161804,
+                -5228.40234,
+                477.852356
+              ],
+              "angles": [
+                0.0,
+                124.9048,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-13-initial-ports/view-2-r5r.png",
+                "sha256": "547d6573c20d733e3c63d4412d699802d5e2cc4460b1c569ba2ff112a579f8d5",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867578.0703087
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-13-initial-ports/view-2-northstar.png",
+                "sha256": "858bc73f53e02374b38d0a31ad717218fa9cc15e00f5f73c0b5380645ed53032",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791880227.0687947
+              }
+            }
+          ]
+        }
+      ],
+      "latest": "2026-10-13-initial-ports"
+    },
+    {
+      "id": "party-crasher",
+      "name": "Party Crasher",
+      "source_map": "mp_rr_party_crasher",
+      "target_map": "mp_party_crasher",
+      "status": "Early preview",
+      "description": "City streets, multilevel buildings and the crashed Voyage form a compact pilot arena.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
+      "download": null,
+      "version": "0.1.0",
+      "source_offset": [
+        0,
+        0,
+        0
+      ],
+      "snapshots": [
+        {
+          "id": "2026-10-13-initial-ports",
+          "version": "0.1.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                3385.96265,
+                -1591.92493,
+                2220.44629
+              ],
+              "angles": [
+                12.0,
+                97.7711029,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-13-initial-ports/view-0-r5r.png",
+                "sha256": "772af4e445f22229fb90172273ce1e43d6607eee51806522692cf19be5242a4a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867298.0046093
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-13-initial-ports/view-0-northstar.png",
+                "sha256": "19f38fc6fbfb359de306ca1f48911aad346364f388ad8c5c9108a291b5a15f96",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791881100.907018
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                -1949.47925,
+                -565.452087,
+                1366.40222
+              ],
+              "angles": [
+                0.0,
+                -4.39630127,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-13-initial-ports/view-1-r5r.png",
+                "sha256": "e3b0be42647a41ad19c7c1c30434895dd3f716658a676161cab15879afb75c5b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867337.889215
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-13-initial-ports/view-1-northstar.png",
+                "sha256": "25614f6c2a76e80738a675dd348ad85a4a3da3548ed35ecf073f7f73bf63f15f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791881107.0643709
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                416.486328,
+                2083.01709,
+                562.318604
+              ],
+              "angles": [
+                0.0,
+                -83.0055008,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-13-initial-ports/view-2-r5r.png",
+                "sha256": "5042ae010686081771829d11ea959c6a10172bb4192e3a9934802cd5eb8585df",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867377.9591284
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-13-initial-ports/view-2-northstar.png",
+                "sha256": "f1954e2a8f24fa0b0c9d3c5e12c860fe258d8e38ea19af34961d898308f838bc",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791881113.4930139
+              }
+            }
+          ]
+        }
+      ],
+      "latest": "2026-10-13-initial-ports"
+    },
+    {
+      "id": "firing-range",
+      "name": "Firing Range",
+      "source_map": "mp_rr_canyonlands_staging",
+      "target_map": "mp_apex_firing_range",
+      "status": "Early preview",
+      "description": "The original training landscape adapted as a Titanfall pilot sandbox.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
+      "download": null,
+      "version": "0.1.0",
+      "source_offset": [
+        32000,
+        -7000,
+        -28000
+      ],
+      "snapshots": [
+        {
+          "id": "2026-10-13-initial-ports",
+          "version": "0.1.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                2000.0,
+                -5000.0,
+                2200.0
+              ],
+              "angles": [
+                22.0,
+                90.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-13-initial-ports/view-0-r5r.png",
+                "sha256": "73e1c3576bcc685378ef09a668c7757beedc29dd473b45909ae80a6a64e3c26d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791878615.865995
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-13-initial-ports/view-0-northstar.png",
+                "sha256": "7da77bba058b3698ef5e1187331433a1fabb978ea3287ac4a126b2067039bc15",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791879909.3822107
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                500.0,
+                -1500.0,
+                -30.0
+              ],
+              "angles": [
+                8.0,
+                80.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-13-initial-ports/view-1-r5r.png",
+                "sha256": "af7439c335f41e578d400c1b34f509954c9e47bfeac37950faf4c13394d3826e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791878890.723292
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-13-initial-ports/view-1-northstar.png",
+                "sha256": "586f12ca912287a29ac24c5542e413b0746c5b488bcce0fc033c1a8bdcdb169f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791879915.4907377
+              }
+            }
+          ]
+        }
+      ],
+      "latest": "2026-10-13-initial-ports"
     }
   ]
 }

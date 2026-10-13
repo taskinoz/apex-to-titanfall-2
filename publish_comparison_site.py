@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parent
 SITE=ROOT/'site'
 SLUG=re.compile(r'[a-z0-9][a-z0-9-]{0,70}\Z')
 
-def export(snapshot, comparison_overrides=None, include_downloads=False, findings=None):
+def export(snapshot, comparison_overrides=None, include_downloads=False, findings=None, map_ids=None):
     if not SLUG.fullmatch(snapshot):raise ValueError('Invalid snapshot name')
     catalogue=json.loads((SITE/'maps.json').read_text(encoding='utf-8'))
     dist=SITE/'dist';dist.mkdir(parents=True,exist_ok=True)
@@ -19,6 +19,9 @@ def export(snapshot, comparison_overrides=None, include_downloads=False, finding
     maps=[]
     for row in catalogue['maps']:
         if not SLUG.fullmatch(row['id']):raise ValueError('Invalid map ID')
+        if map_ids is not None and row['id'] not in map_ids:
+            if row['id'] not in old:raise ValueError('Cannot preserve an unpublished map: '+row['id'])
+            maps.append(old[row['id']]);continue
         source=ROOT/(comparison_overrides or {}).get(row['id'],row['comparison'])
         data=json.loads((source/'comparison.json').read_text())
         if data['route']['source_map']!=row['source_map'] or data['route']['target_map']!=row['target_map']:
@@ -81,6 +84,9 @@ if __name__=='__main__':
     p.add_argument('--phase-runner',help='Workspace-relative comparison directory')
     p.add_argument('--include-downloads',action='store_true',help='Copy verified current player ZIPs into the static site')
     p.add_argument('--findings',type=Path,help='Reviewed plain-text observations, keyed by map ID and shot name')
+    p.add_argument('--maps',nargs='+',help='Update only these maps, preserving other published snapshots exactly')
     a=p.parse_args();overrides={k:v for k,v in [('drop-off',a.drop_off),('phase-runner',a.phase_runner)] if v}
     findings=json.loads(a.findings.read_text(encoding='utf-8')) if a.findings else None
-    export(a.snapshot,overrides,a.include_downloads,findings)
+    if a.maps and not set(a.maps)<=set(r['id'] for r in json.loads((SITE/'maps.json').read_text())['maps']):
+        raise ValueError('Unknown map selection')
+    export(a.snapshot,overrides,a.include_downloads,findings,set(a.maps) if a.maps else None)

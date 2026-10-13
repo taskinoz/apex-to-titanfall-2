@@ -8,7 +8,7 @@
       "source_map": "mp_rr_arena_composite",
       "target_map": "mp_arena_composite",
       "route": "r5-harness/routes/drop-off-survey.json",
-      "comparison": "r5-harness/output/drop-off-survey",
+      "comparison": "output/arena-fill/drop-off/comparison",
       "status": "Playable preview",
       "description": "An industrial rooftop arena with control rooms, elevated platforms and working ziplines.",
       "modes": [
@@ -26,7 +26,7 @@
       "source_map": "mp_rr_arena_phase_runner",
       "target_map": "mp_phase_runner",
       "route": "r5-harness/routes/phase-runner-survey.json",
-      "comparison": "r5-harness/output/phase-runner-survey",
+      "comparison": "output/arena-fill/phase-runner/comparison",
       "status": "Playable port",
       "description": "Snow, rock and industrial tunnels connect opposing bases beneath the phase machinery.",
       "modes": [
@@ -37,6 +37,57 @@
         "Fastball"
       ],
       "notes": "Adds 432 source scenery placements: supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves minimap, displays, paint, lighting, team modes and catwalks. AI navigation and some layered/animated materials remain incomplete.",
+      "download": null
+    },
+    {
+      "id": "overflow",
+      "name": "Overflow",
+      "package": "ArenaOverflow",
+      "source_map": "mp_rr_aqueduct",
+      "target_map": "mp_overflow",
+      "route": "r5-harness/routes/overflow-initial-preview.json",
+      "comparison": "output/new-port-comparisons/overflow",
+      "status": "Early preview",
+      "description": "An industrial arena with elevated lanes, molten channels and opposing bases.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
+      "download": null
+    },
+    {
+      "id": "party-crasher",
+      "name": "Party Crasher",
+      "package": "ArenaPartyCrasher",
+      "source_map": "mp_rr_party_crasher",
+      "target_map": "mp_party_crasher",
+      "route": "r5-harness/routes/party-crasher-initial-preview.json",
+      "comparison": "output/new-port-comparisons/party-crasher",
+      "status": "Early preview",
+      "description": "City streets, multilevel buildings and the crashed Voyage form a compact pilot arena.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
+      "download": null
+    },
+    {
+      "id": "firing-range",
+      "name": "Firing Range",
+      "package": "ApexFiringRange",
+      "source_map": "mp_rr_canyonlands_staging",
+      "target_map": "mp_apex_firing_range",
+      "route": "r5-harness/routes/firing-range-initial-preview.json",
+      "comparison": "output/new-port-comparisons/firing-range",
+      "status": "Early preview",
+      "description": "The original training landscape adapted as a Titanfall pilot sandbox.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
       "download": null
     }
   ]

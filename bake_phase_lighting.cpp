@@ -6,6 +6,7 @@
 #include <cstdint>
 #include <fstream>
 #include <iostream>
+#include <string>
 #include <thread>
 #include <vector>
 struct V {float x,y,z; V operator+(V b)const{return{x+b.x,y+b.y,z+b.z};} V operator-(V b)const{return{x-b.x,y-b.y,z-b.z};} V operator*(float f)const{return{x*f,y*f,z*f};}};
@@ -48,8 +49,8 @@ template<class R>std::vector<R> load(const char*name){std::ifstream f(name,std::
 struct Pixel{V p,n;uint32_t face;};
 struct Light{float sun,sky;V bent;};
 int main(int argc,char **argv){try{
- if(argc!=7&&argc!=8){std::cerr<<"triangles jobs output width height pages [caster-mask]\n";return 2;}tri=load<T>(argv[1]);auto jobs=load<Job>(argv[2]);int w=std::stoi(argv[4]),h=std::stoi(argv[5]),pages=std::stoi(argv[6]);
- auto casters=argc==8?load<uint8_t>(argv[7]):std::vector<uint8_t>(tri.size(),1);
+ if(argc!=7&&argc!=8&&argc!=11){std::cerr<<"triangles jobs output width height pages [caster-mask [sun-x sun-y sun-z]]\n";return 2;}tri=load<T>(argv[1]);auto jobs=load<Job>(argv[2]);int w=std::stoi(argv[4]),h=std::stoi(argv[5]),pages=std::stoi(argv[6]);
+ auto casters=argc>=8?load<uint8_t>(argv[7]):std::vector<uint8_t>(tri.size(),1);
  if(casters.size()!=tri.size()||jobs.size()!=tri.size()||w<1||h<1||pages<1)throw std::runtime_error("invalid bake inputs");
  // Retain original IDs: the receiver job ID also identifies its triangle for
  // self-intersection rejection. Removing faces would silently break that link.
@@ -66,7 +67,9 @@ int main(int argc,char **argv){try{
   }
  }
  std::vector<Light> result(size);std::vector<V> dirs;for(int k=0;k<24;k++){float z=std::sqrt((k+.5f)/24),r=std::sqrt(1-z*z),a=k*2.39996323f;dirs.push_back({r*std::cos(a),r*std::sin(a),z});}
- V sun=unit({.6178957224f,-.4823191166f,.6209453344f});std::atomic<size_t> next{0},valid{0},blocked{0};std::vector<std::thread> pool;
+ V sun=unit({.6178957224f,-.4823191166f,.6209453344f});
+ if(argc==11){V requested={std::stof(argv[8]),std::stof(argv[9]),std::stof(argv[10])};if(!std::isfinite(dot(requested,requested))||dot(requested,requested)<1e-12f)throw std::runtime_error("invalid sun direction");sun=unit(requested);}
+ std::atomic<size_t> next{0},valid{0},blocked{0};std::vector<std::thread> pool;
  unsigned threads=std::min(16u,std::max(1u,std::thread::hardware_concurrency()));
  for(unsigned th=0;th<threads;th++)pool.emplace_back([&]{while(true){size_t from=next.fetch_add(512);if(from>=size)break;for(size_t i=from;i<std::min(size,from+512);i++){
   const Pixel &p=pixel[i];if(p.face==UINT32_MAX)continue;valid++;

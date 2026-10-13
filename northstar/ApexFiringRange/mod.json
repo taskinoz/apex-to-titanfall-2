@@ -1,0 +1,18 @@
+{
+  "Name": "ApexFiringRange",
+  "Version": "0.1.0",
+  "LoadPriority": 10,
+  "Description": "Firing Range native conversion preview. AI navigation and source gameplay systems are incomplete.",
+  "Scripts": [
+    {
+      "Path": "_firing_range.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "ApexFiringRange_Init"
+      }
+    }
+  ],
+  "Localisation": [
+    "resource/firing_range_%language%.txt"
+  ]
+}

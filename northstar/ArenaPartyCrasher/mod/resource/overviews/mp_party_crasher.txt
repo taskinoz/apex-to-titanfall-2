@@ -1,0 +1,14 @@
+"mp_party_crasher"
+{
+    "assets"
+    {
+        "minimap" "overviews/mp_party_crasher"
+    }
+    "pos_x" "-4989.0"
+    "pos_y" "5646.0"
+    "scale" "10.009765625"
+    "displayDist" "2048"
+    "threatMaxDist" "2500"
+    "threatNearDist" "500"
+    "threatFarDist" "2000"
+}

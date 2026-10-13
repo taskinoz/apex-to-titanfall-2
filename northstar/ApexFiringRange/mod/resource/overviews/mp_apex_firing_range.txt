@@ -1,0 +1,14 @@
+"mp_apex_firing_range"
+{
+    "assets"
+    {
+        "minimap" "overviews/mp_apex_firing_range"
+    }
+    "pos_x" "-8520.0"
+    "pos_y" "9616.291015625"
+    "scale" "24.826683044433594"
+    "displayDist" "2048"
+    "threatMaxDist" "2500"
+    "threatNearDist" "500"
+    "threatFarDist" "2000"
+}

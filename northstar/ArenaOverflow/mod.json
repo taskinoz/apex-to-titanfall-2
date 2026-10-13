@@ -1,0 +1,18 @@
+{
+  "Name": "ArenaOverflow",
+  "Version": "0.1.0",
+  "LoadPriority": 10,
+  "Description": "Overflow native conversion preview. AI navigation and source gameplay systems are incomplete.",
+  "Scripts": [
+    {
+      "Path": "_overflow.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "ArenaOverflow_Init"
+      }
+    }
+  ],
+  "Localisation": [
+    "resource/overflow_%language%.txt"
+  ]
+}

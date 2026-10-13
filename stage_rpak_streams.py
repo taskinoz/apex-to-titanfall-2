@@ -39,7 +39,18 @@ def stage(pak,source):
                         returned=ctypes.c_uint32()
                         if not kernel.DeviceIoControl(msvcrt.get_osfhandle(dst.fileno()),0x900c4,None,0,None,0,ctypes.byref(returned),None):
                             raise ctypes.WinError(ctypes.get_last_error())
-                    dst.truncate(size);src.seek(0);dst.write(src.read(4096))
+                    if os.name=='nt':
+                        # CRT _chsize_s can materialize the entire zero-filled
+                        # extension despite FSCTL_SET_SPARSE. SetEndOfFile keeps
+                        # unreferenced starpak extents sparse on NTFS.
+                        kernel.SetFilePointerEx.argtypes=[ctypes.c_void_p,ctypes.c_longlong,ctypes.c_void_p,ctypes.c_uint32]
+                        kernel.SetEndOfFile.argtypes=[ctypes.c_void_p]
+                        handle=msvcrt.get_osfhandle(dst.fileno())
+                        if not kernel.SetFilePointerEx(handle,size,None,0) or not kernel.SetEndOfFile(handle):
+                            raise ctypes.WinError(ctypes.get_last_error())
+                        dst.seek(0)
+                    else:dst.truncate(size)
+                    src.seek(0);dst.write(src.read(4096))
                     for offset in sorted(offsets):
                         length=table[offset]
                         if offset+length>size-len(tail):raise ValueError('Starpak block overlaps directory')

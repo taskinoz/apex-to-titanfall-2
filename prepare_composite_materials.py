@@ -8,9 +8,9 @@ from extract_native_material import NativePak
 from stage_prop_geometry import material_basename
 from optimize_preview_textures import dds,FORMATS
 OUT=ROOT/'output/composite/materials'
-def prepare():
-    report=json.loads((ROOT/'output/composite/scene.json').read_text());assets=OUT/'assets';OUT.mkdir(parents=True,exist_ok=True)
-    roots=[ROOT/'tools/composite-legion/exported_files/materials',ROOT/'tools/legion/exported_files/materials',ROOT/'output/phase-runner/shared-assets/materials',ROOT/'output/phase-runner/common-assets/exported_files/materials']
+def prepare(scene_path=None,material_roots=(),namespace='composite',sky_material=None):
+    report=json.loads(Path(scene_path or ROOT/'output/composite/scene.json').read_text());assets=OUT/'assets';OUT.mkdir(parents=True,exist_ok=True)
+    roots=[*map(Path,material_roots),ROOT/'tools/composite-legion/exported_files/materials',ROOT/'tools/legion/exported_files/materials',ROOT/'output/phase-runner/shared-assets/materials',ROOT/'output/phase-runner/common-assets/exported_files/materials']
     index={}
     for root in roots:
         if root.is_dir():
@@ -22,28 +22,28 @@ def prepare():
     subprocess.run([str(ROOT/'tools/directxtex/texconv.exe'),'-nologo','-y','-m','0','-f','BC1_UNORM_SRGB','-o',str(fallback),str(fallback/'composite_fallback.png')],capture_output=True,check=True)
     Image.new('RGBA',(16,16),(255,255,255,255)).save(fallback/'screen_opacity.png')
     subprocess.run([str(ROOT/'tools/directxtex/texconv.exe'),'-nologo','-y','-m','0','-f','BC4_UNORM','-o',str(fallback),str(fallback/'screen_opacity.png')],capture_output=True,check=True)
-    allnames=dict(report['materials']);allnames['composite_sky']=0
+    allnames=dict(report['materials']);allnames[namespace+'_sky']=0
     for original,count in allnames.items():
-        base=material_basename(original);folder=index.get(base) or index.get(base+'_wldc');channels={}
+        base=material_basename(original);folder=index.get(sky_material if original=='sky' and sky_material else base) or index.get(base+'_wldc');channels={}
         exported=folder.name.lower() if folder else base
         if folder:
             for slot,semantic in ((0,'albedo'),(1,'normal'),(2,'gloss'),(3,'spec'),(13,'opacityMultiply')):
                 source=next((p for p in folder.iterdir() if p.name.lower()==(exported+'_'+semantic+'Texture.dds').lower()),None)
                 if source:
-                    path=f'texture/composite/{base}_{semantic}.rpak';tasks.append((source,path));channels[str(slot)]=path
+                    path=f'texture/{namespace}/{base}_{semantic}.rpak';tasks.append((source,path));channels[str(slot)]=path
         if not channels:
-            missing[original]=count;channels={'0':'texture/composite/composite_fallback_albedo.rpak'}
+            missing[original]=count;channels={'0':f'texture/{namespace}/composite_fallback_albedo.rpak'}
         # Slot thirteen also appears on solid painted cargo: it is not proof
         # that a surface is glass. Preserve the channel but select an opaque
         # shader for these containers, whose source material is solid metal.
         if base=='composite_big_screen_animation_01':
             # Source uber constants specify a translucent closure screen.
             # Its exported albedo is opaque, so it needs explicit coverage.
-            channels['13']='texture/composite/screen_opacity.rpak'
+            channels['13']=f'texture/{namespace}/screen_opacity.rpak'
             tasks.append((fallback/'screen_opacity.dds',channels['13']))
         transparent='13' in channels and base!='underbelly_cargo_containers_hammond'
-        name=f'world/composite/{base}';mapping[original]=dict(name=name,source=original,recovered=bool(folder),textures=channels,transparent=transparent)
-    tasks.append((fallback/'composite_fallback.dds','texture/composite/composite_fallback_albedo.rpak'))
+        name=f'world/{namespace}/{base}';mapping[original]=dict(name=name,source=original,recovered=bool(folder),textures=channels,transparent=transparent)
+    tasks.append((fallback/'composite_fallback.dds',f'texture/{namespace}/composite_fallback_albedo.rpak'))
     # A modest resident texture ceiling avoids unpredictable source starpak streaming.
     def convert(task):
         source,path=task;dest=(assets/path).with_suffix('.dds');dest.parent.mkdir(parents=True,exist_ok=True)
@@ -82,8 +82,8 @@ def prepare():
     from bake_terrain_transitions import save_mips
     from extract_world_glass_shader import extract
     from build_phase_runner_presentation import guid
-    shaderpath='shaderset/composite_world_alpha.rpak';shaderfile=(assets/shaderpath).with_suffix('.msw');extract(shaderfile)
-    shader=bytearray(shaderfile.read_bytes());struct.pack_into('<2Q',shader,5,guid('shader/composite_alpha_pixel.rpak'),guid('shader/composite_alpha_vertex.rpak'));shaderfile.write_bytes(shader)
+    shaderpath=f'shaderset/{namespace}_world_alpha.rpak';shaderfile=(assets/shaderpath).with_suffix('.msw');extract(shaderfile)
+    shader=bytearray(shaderfile.read_bytes());struct.pack_into('<2Q',shader,5,guid(f'shader/{namespace}_alpha_pixel.rpak'),guid(f'shader/{namespace}_alpha_vertex.rpak'));shaderfile.write_bytes(shader)
     files.insert(0,dict(_type='shds',_path=shaderpath))
     alpha_pak=NativePak(ROOT/'inputs/tf2-rpak-work/homestead.raw.rpak');alpha_spec,alpha_uber=alpha_pak.material(next(a for a in alpha_pak.assets if a['guid']==0x92b5ba61a3bf2e7a))
     for original,record in mapping.items():
@@ -96,7 +96,7 @@ def prepare():
                 if fmt in (72,75,78,99):struct.pack_into('<I',raw,128,fmt-1)
             alpha=Image.open(io.BytesIO(raw)).convert('RGBA').getchannel('A')
             if alpha.getextrema()[0]<250:
-                opacity='texture/composite/'+base.rsplit('/',1)[-1]+'_derived_opacity.rpak';dst=(assets/opacity).with_suffix('.dds');dst.parent.mkdir(parents=True,exist_ok=True)
+                opacity=f'texture/{namespace}/'+base.rsplit('/',1)[-1]+'_derived_opacity.rpak';dst=(assets/opacity).with_suffix('.dds');dst.parent.mkdir(parents=True,exist_ok=True)
                 save_mips(Image.merge('RGBA',(alpha,alpha,alpha,Image.new('L',alpha.size,255))),dst)
                 record['textures']['13']=opacity;record['transparent']=True;files.append(dict(_type='txtr',_path=opacity,**{'$disableStreaming':True}))
         if record['transparent']:
@@ -113,8 +113,8 @@ def prepare():
             new['width']=width;new['height']=height;new['$textures']=dict(spec['$textures'])|record['textures']
             if destination==path:new['$colpassMaterial']=cpath
             target=assets/destination;target.parent.mkdir(parents=True,exist_ok=True);target.with_suffix('.json').write_text(json.dumps(new,indent=2));target.with_suffix('.uber').write_bytes(buffer);files.append(dict(_type='matl',_path=destination))
-    manifest=dict(version=7,name='composite_world',keepDevOnly=True,assetsDir=str(assets),outputDir=str(OUT/'build'),compressLevel=0,hasDynamicLibrary=False,files=list({r['_path']:r for r in files}.values()))
+    manifest=dict(version=7,name=namespace+'_world',keepDevOnly=True,assetsDir=str(assets),outputDir=str(OUT/'build'),compressLevel=0,hasDynamicLibrary=False,files=list({r['_path']:r for r in files}.values()))
     (OUT/'build.json').write_text(json.dumps(manifest,indent=2));(OUT/'mapping.json').write_text(json.dumps(dict(materials=mapping,missing=missing,texture_resolution_cap=1024),indent=2))
     run=subprocess.run([str(ROOT/'tools/repak/RePak.exe'),str(OUT/'build.json')],capture_output=True,text=True);(OUT/'build.log').write_text(run.stdout+run.stderr);run.check_returncode()
-    print('Materials',len(mapping),'missing',len(missing),'RPak bytes',(OUT/'build/composite_world.rpak').stat().st_size,flush=True)
+    print('Materials',len(mapping),'missing',len(missing),'RPak bytes',(OUT/'build'/(namespace+'_world.rpak')).stat().st_size,flush=True)
 if __name__=='__main__':prepare()

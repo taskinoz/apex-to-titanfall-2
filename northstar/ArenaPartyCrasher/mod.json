@@ -1,0 +1,18 @@
+{
+  "Name": "ArenaPartyCrasher",
+  "Version": "0.1.0",
+  "LoadPriority": 10,
+  "Description": "Party Crasher native conversion preview. AI navigation and source gameplay systems are incomplete.",
+  "Scripts": [
+    {
+      "Path": "_party_crasher.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "ArenaPartyCrasher_Init"
+      }
+    }
+  ],
+  "Localisation": [
+    "resource/party_crasher_%language%.txt"
+  ]
+}

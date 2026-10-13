@@ -1,5 +1,6 @@
 """Replace lighting only: correct sky occlusion and separate the native menu stage."""
 import json,struct,shutil,math,hashlib
+from pathlib import Path
 from apply_baked_lighting import ROOT,OUT,np,encode_rgbm,distance_transform_edt,Image
 from repair_preview_index_padding import read_lumps
 from compact_preview_bsp import compact
@@ -15,7 +16,9 @@ BAKE=OUT/'lighting-environment.bin'
 
 def entities(path):
     result=[]
-    for data in [read_lumps(path,[0])[0]]+[p.read_bytes() for p in path.parent.glob(path.stem+'_*.ent')]:
+    path=Path(path);external=Path(str(path)+'.0000.bsp_lump')
+    primary=external.read_bytes() if external.is_file() else read_lumps(path,[0])[0]
+    for data in [primary]+[p.read_bytes() for p in path.parent.glob(path.stem+'_*.ent')]:
         if b'{' in data:result.extend(shared.Entities.from_bytes(data[data.index(b'{'):]))
     return result
 

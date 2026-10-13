@@ -1,0 +1,87 @@
+{
+  "map": "mp_overflow",
+  "source": "mp_rr_aqueduct",
+  "version": "0.1.0",
+  "bsp_sha256": "91ddce0a73cb887441428dfa30791df4f73eeed1e2992cec64990f271f374401",
+  "source_to_target_offset": [
+    0,
+    0,
+    0
+  ],
+  "source_static_placements": 5863,
+  "rendered_static_placements": 2459,
+  "omitted_local_placements": 3200,
+  "outside_region": 199,
+  "no_supported_sections": 5,
+  "omission_reasons": {
+    "Compiled source model not recovered": 603,
+    "Conservative native draw budget": 2597
+  },
+  "budget": {
+    "meshes": 2887,
+    "real_triangles": 919999,
+    "native_padded_indices": 2764284,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 2887,
+    "prefix_indices": 2764284,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      2738,
+      2738,
+      2887
+    ],
+    "static_batch_runs": 233,
+    "unique_static_draw_keys": 233,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "collision": {
+    "world_triangles": 534752,
+    "removed_obsolete_clip_triangles": {},
+    "brushes": 3384,
+    "triangle_headers": 4372,
+    "triangles": 777520
+  },
+  "missing_prop_collision": [],
+  "fallback_materials": {
+    "signage_building_02": 564
+  },
+  "source_safety_volumes": {
+    "trigger_out_of_bounds": 66,
+    "trigger_hurt": 58
+  },
+  "source_entity_classes": {
+    "worldspawn": 1,
+    "info_lightprobe": 106,
+    "envmap_volume": 6,
+    "light": 148,
+    "light_environment": 1,
+    "light_spot": 209,
+    "sky_camera": 1,
+    "env_fog_controller": 1,
+    "color_correction": 1,
+    "info_particle_system": 109,
+    "prop_dynamic": 76,
+    "info_target": 44,
+    "info_target_clientside": 25,
+    "prop_dynamic_lightweight": 3,
+    "trigger_out_of_bounds": 67,
+    "func_brush": 9,
+    "script_ref": 17,
+    "info_player_start": 1,
+    "zipline_end": 1,
+    "trigger_hurt": 58,
+    "prop_door": 4,
+    "trigger_slip": 35,
+    "trigger_no_zipline": 9,
+    "ambient_generic": 222,
+    "trigger_soundscape": 20,
+    "soundscape_floor": 13
+  }
+}

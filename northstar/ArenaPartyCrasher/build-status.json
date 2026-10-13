@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "candidate": false,
+  "client_verified": true,
+  "initial_preview_ready": true,
+  "full_release_ready": false,
+  "bsp_sha256": "322c5a0caad30c2d40ea59c2e3c1bf972b6c601290b8061649b3623004a4a1c0",
+  "validated_modes": [
+    "ps",
+    "ffa"
+  ]
+}

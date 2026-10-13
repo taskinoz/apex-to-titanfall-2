@@ -1,0 +1,98 @@
+{
+  "map": "mp_party_crasher",
+  "source": "mp_rr_party_crasher",
+  "version": "0.1.0",
+  "bsp_sha256": "322c5a0caad30c2d40ea59c2e3c1bf972b6c601290b8061649b3623004a4a1c0",
+  "source_to_target_offset": [
+    0,
+    0,
+    0
+  ],
+  "source_static_placements": 13825,
+  "rendered_static_placements": 1855,
+  "omitted_local_placements": 11962,
+  "outside_region": 8,
+  "no_supported_sections": 0,
+  "omission_reasons": {
+    "Compiled source model not recovered": 15,
+    "Conservative native draw budget": 11947
+  },
+  "budget": {
+    "meshes": 2868,
+    "real_triangles": 920000,
+    "native_padded_indices": 2763972,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 2868,
+    "prefix_indices": 2763972,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      2811,
+      2811,
+      2868
+    ],
+    "static_batch_runs": 323,
+    "unique_static_draw_keys": 323,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "collision": {
+    "world_triangles": 648108,
+    "removed_obsolete_clip_triangles": {},
+    "brushes": 3111,
+    "triangle_headers": 4716,
+    "triangles": 814622
+  },
+  "missing_prop_collision": [
+    {
+      "index": 13306,
+      "model": "mdl/decals/puddle_floor_decal_flat_04.rmdl"
+    }
+  ],
+  "fallback_materials": {
+    "dev_gray_512": 214,
+    "signage_building_02": 564
+  },
+  "source_safety_volumes": {
+    "trigger_out_of_bounds": 67,
+    "trigger_hurt": 2
+  },
+  "source_entity_classes": {
+    "worldspawn": 1,
+    "info_lightprobe": 43,
+    "envmap_volume": 9,
+    "func_window_hint": 8,
+    "env_exposure": 1,
+    "light_spot": 622,
+    "light": 271,
+    "sky_camera": 1,
+    "env_fog_controller": 1,
+    "light_environment": 1,
+    "color_correction": 1,
+    "info_particle_system": 22,
+    "info_target_clientside": 44,
+    "prop_dynamic": 52,
+    "script_ref": 28,
+    "prop_door": 4,
+    "script_mover": 3,
+    "info_target": 39,
+    "func_brush": 11,
+    "prop_dynamic_lightweight": 5,
+    "zipline": 8,
+    "prop_physics": 3,
+    "script_mover_lightweight": 26,
+    "trigger_out_of_bounds": 67,
+    "trigger_no_zipline": 49,
+    "trigger_hurt": 2,
+    "trigger_slip": 1,
+    "info_player_start": 1,
+    "ambient_generic": 80,
+    "trigger_soundscape": 16,
+    "soundscape_floor": 1
+  }
+}

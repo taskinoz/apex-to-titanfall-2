@@ -6,12 +6,13 @@ struct Fixture {V p;float radius;V colour;uint32_t index;};
 struct Result {float sh[12]={},sky[4]={},weights[4]={},indices[4]={-1,-1,-1,-1};};
 static_assert(sizeof(Result)==96);
 int main(int argc,char**argv){try{
- if(argc!=5){std::cerr<<"casters positions fixtures output\n";return 2;}
+ if(argc!=5&&argc!=8){std::cerr<<"casters positions fixtures output [sun-x sun-y sun-z]\n";return 2;}
  tri=load<T>(argv[1]);auto points=load<V>(argv[2]);auto fixtures=load<Fixture>(argv[3]);
  for(uint32_t i=0;i<tri.size();i++)order.push_back(i);
  if(order.empty()||points.empty())throw std::runtime_error("Empty bake input");build(0,order.size());
  std::vector<V> dirs;for(int k=0;k<64;k++){float z=std::sqrt((k+.5f)/64),r=std::sqrt(1-z*z),a=k*2.39996323f;dirs.push_back({r*std::cos(a),r*std::sin(a),z});}
  V sun=unit({.6178957224f,-.4823191166f,.6209453344f});
+ if(argc==8){V requested={std::stof(argv[5]),std::stof(argv[6]),std::stof(argv[7])};if(!std::isfinite(dot(requested,requested))||dot(requested,requested)<1e-12f)throw std::runtime_error("invalid sun direction");sun=unit(requested);}
  std::vector<Result> results(points.size());std::atomic<size_t> next{0},sunlit{0},local{0};std::vector<std::thread> pool;
  for(unsigned th=0;th<std::min(16u,std::max(1u,std::thread::hardware_concurrency()));th++)pool.emplace_back([&]{
   while(true){size_t from=next.fetch_add(128);if(from>=points.size())break;

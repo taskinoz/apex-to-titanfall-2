@@ -1,0 +1,100 @@
+[
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261013-190137-a84ab9\\screenshots\\firing-range-training-overview-84a4f8be.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_staging0000.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "73e1c3576bcc685378ef09a668c7757beedc29dd473b45909ae80a6a64e3c26d",
+    "captured": 1791878615.865995,
+    "map": "mp_rr_canyonlands_staging",
+    "camera": {
+      "origin": [
+        34000.0,
+        -12000.0,
+        -25800.0
+      ],
+      "angles": [
+        22.0,
+        90.0,
+        0.0
+      ],
+      "fov": 90.0
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_canyonlands_staging",
+        "context": "server",
+        "ready": 1,
+        "instance": "818c7923ff414efc8dce13590b717ff2"
+      },
+      "client": {
+        "map": "mp_rr_canyonlands_staging",
+        "context": "client",
+        "ready": 1,
+        "instance": "623d27c4a6fd475084fa2dfe8412f923",
+        "camera": 1,
+        "origin": [
+          34000.0,
+          -12000.0,
+          -25800.0
+        ],
+        "angles": [
+          22.0,
+          90.0,
+          0.0
+        ]
+      }
+    },
+    "generation": "ca02d887b13942dca289a684b3747e4e",
+    "engine": "r5r"
+  },
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261013-190137-a84ab9\\screenshots\\firing-range-training-lanes-8a8eb98c.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_staging0001.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "af7439c335f41e578d400c1b34f509954c9e47bfeac37950faf4c13394d3826e",
+    "captured": 1791878890.723292,
+    "map": "mp_rr_canyonlands_staging",
+    "camera": {
+      "origin": [
+        32500.0,
+        -8500.0,
+        -28030.0
+      ],
+      "angles": [
+        8.0,
+        80.0,
+        0.0
+      ],
+      "fov": 90.0
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_canyonlands_staging",
+        "context": "server",
+        "ready": 1,
+        "instance": "818c7923ff414efc8dce13590b717ff2"
+      },
+      "client": {
+        "map": "mp_rr_canyonlands_staging",
+        "context": "client",
+        "ready": 1,
+        "instance": "623d27c4a6fd475084fa2dfe8412f923",
+        "camera": 1,
+        "origin": [
+          32500.0,
+          -8500.0,
+          -28030.0
+        ],
+        "angles": [
+          8.0,
+          80.0,
+          0.0
+        ]
+      }
+    },
+    "generation": "ca02d887b13942dca289a684b3747e4e",
+    "engine": "r5r"
+  }
+]

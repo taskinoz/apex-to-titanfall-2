@@ -3,7 +3,7 @@
 Every draw and collision buffer is generated anew. The verified portal-free
 native container provides engine metadata, never old arena geometry or props.
 """
-import collections,itertools,json,math,shutil,struct,subprocess,sys,time
+import collections,itertools,json,math,shutil,struct,subprocess,sys,time,hashlib
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'tools/lighting-python'))
@@ -22,6 +22,8 @@ from audit_world_draw_budget import audit,enforce_camera_bypass_budget
 from build_character_lighting import make_tree
 from build_preview_stbsp import build as stbsp
 OUT=ROOT/'output/composite';MAP='mp_arena_composite'
+SOURCE_BSP=ROOT/'inputs/composite/client/maps/mp_rr_arena_composite.bsp'
+PAK_NAME='composite_world'
 TEMPLATE=ROOT/'northstar/PhaseRunner/mod/maps/mp_phase_runner.bsp'
 DT=np.dtype([('pi','<u4'),('ni','<u4'),('uv','<f4',2),('color','u1',4),('light','<f4',4),('tangent','<u4'),('extra','<u4')])
 
@@ -30,7 +32,10 @@ def entity_bytes(rows):
 
 def physics(report):
     cachefile=OUT/'physics.npz'
-    if cachefile.exists():
+    fingerprint=hashlib.sha256(json.dumps(report['placements'],sort_keys=True).encode()).hexdigest()
+    metadata=OUT/'physics-source.json'
+    valid_cache=not report.get('config') or (metadata.exists() and json.loads(metadata.read_text()).get('placements_sha256')==fingerprint)
+    if cachefile.exists() and valid_cache:
         a=np.load(cachefile);return {int(k):a[k].tobytes() for k in a.files}
     groups=[];brush_bounds=[];owners=[];cache={};buf={1:bytearray(16),0x5c:bytearray(),0x5d:bytearray(),0x5e:bytearray(),0x5f:bytearray()}
     def add_tris(raw):
@@ -56,8 +61,8 @@ def physics(report):
             else:faces.extend([points[0],points[i],points[i+1]] for i in range(1,len(points)-1))
     if faces:add_tris(faces)
     import decode_inline_world_collision as inline
-    inline.TRANSLATION=(0,0,0)
-    fs,n=inline.decode(ROOT/'inputs/composite/client/maps/mp_rr_arena_composite.bsp',OUT/'inline-collision.json')
+    inline.TRANSLATION=tuple(-v for v in report.get('source_offset',(0,0,0)))
+    fs,n=inline.decode(SOURCE_BSP,OUT/'inline-collision.json')
     add_tris([[f[0],f[i],f[i+1]] for f in fs if all(abs(v)<12000 for p in f for v in p) for i in range(1,len(f)-1)])
     world_count=sum(len(g) for g in groups)
     def convex(points,planes):
@@ -100,6 +105,7 @@ def physics(report):
     if len(groups)>65535:raise ValueError('Native triangle header capacity exceeded')
     encoded,bounds=encode(groups);changes={**buf,**encoded,0x5b:struct.pack('<I',1),0x55:struct.pack('<f6i',32768.,-1,-1,2,2,0,1),**collision_grid(brush_bounds,bounds)}
     np.savez(cachefile,**{str(k):np.frombuffer(v,np.uint8) for k,v in changes.items()})
+    metadata.write_text(json.dumps(dict(placements_sha256=fingerprint),indent=2))
     (OUT/'physics.json').write_text(json.dumps(dict(world_triangles=world_count,removed_obsolete_clip_triangles=dict(removed_clips),brushes=len(brush_bounds),triangle_headers=len(groups),triangles=len(encoded[0x42])//4,owners=owners,missing=[p for p in owners if not p['brushes'] and not p['headers']]),indent=2))
     return changes
 
@@ -108,6 +114,7 @@ def build():
     material_map=json.loads((OUT/'materials/mapping.json').read_text())['materials'];changes=physics(report)
     old=read_lumps(TEMPLATE,(0x23,0x7b,0x63));texture=bytearray();strings=bytearray();table=bytearray();binding={}
     transparent={name for name in names if material_map[name].get('transparent')}
+    foliage={name for name in names if material_map[name].get('native_foliage_cutout')}
     for name in names:
         native=material_map[name]['name'];binding[name]=len(texture)//36
         table.extend(struct.pack('<I',len(strings)));strings.extend(native.replace('/','\\').encode()+b'\0')
@@ -126,6 +133,7 @@ def build():
             pi=len(positions)//12;ni=len(normals)//12;base=len(lit)//44
             positions.extend(points.astype('<f4').tobytes());nb=np.empty((n*6,3),'<f4');nb[::2]=normal.reshape(-1,3);nb[1::2]=tan.reshape(-1,3);normals.extend(nb.tobytes())
             records=np.zeros(n*3,DT);records['pi']=np.arange(pi,pi+n*3);records['ni']=np.arange(ni,ni+n*6,2);records['uv']=uv.reshape(-1,2);records['color']=255;records['tangent']=np.arange(ni+1,ni+n*6,2,dtype=np.uint32)|(mirror.reshape(-1).astype(np.uint32)<<31)
+            if src.shape[2]>=12:records['color']=np.rint(np.clip(src[:,:,8:12],0,255)).astype('u1').reshape(-1,4)
             ids=np.arange(tri_index,tri_index+n);page=ids//perpage;tile=ids%perpage;corner_uv=np.stack((tile%tiles,tile//tiles),1)[:,None,:]*4+np.array([[.5,.5],[3.2,.5],[.5,3.2]])
             records['light'][:,:2]=(corner_uv/resolution).reshape(-1,2)
             local=np.arange(n*3,dtype='<u2').reshape(-1,3);front=np.sum(np.cross(points[:,1]-points[:,0],points[:,2]-points[:,0])*normal.sum(1),axis=1)>0;local[front]=local[front][:,[0,2,1]]
@@ -141,13 +149,13 @@ def build():
                     if len(ix)&1:indices.extend(struct.pack('<3H',*[int(ix[-1,-1])]*3))
                     bounds.extend(struct.pack('<8f',*c,float(np.linalg.norm(e))+.02,*e,0))
             # Independent exact shadow meshes use local uint16 indices.
-            if name!='sky' and name not in transparent:
+            if name!='sky' and name not in transparent and name not in foliage:
                 shadowm.extend(struct.pack('<2I2h',len(shadowp)//12,n,1,-1));shadowp.extend(points.astype('<f4').tobytes());shadowi.extend(local.tobytes())
         if ti%25==0:print('Draw material',ti+1,'/',len(names),flush=True)
     if tri_index!=len(tris):raise ValueError('Scene triangle coverage changed')
     jobs['p'].tofile(OUT/'bake-triangles.bin');jobs.tofile(OUT/'bake-jobs.bin')
     # Jobs are grouped by material, so retain the same order for exclusions.
-    np.concatenate([np.full(int((mi==i).sum()),name!='sky' and name not in transparent,np.uint8) for i,name in enumerate(names)]).tofile(OUT/'bake-casters.bin')
+    np.concatenate([np.full(int((mi==i).sum()),name!='sky' and name not in transparent and name not in foliage,np.uint8) for i,name in enumerate(names)]).tofile(OUT/'bake-casters.bin')
     (OUT/'bake.json').write_text(json.dumps(dict(width=resolution,height=resolution,pages=pages,triangles=len(tris)),indent=2))
     validate_index_padding(meshes,indices,sorts)
     count=len(meshes)//28;refs=np.arange(count,dtype='<u2').tobytes();nodes,refs,objects=build_camera_visibility(bounds,refs)
@@ -186,6 +194,6 @@ def build():
     ordered,_,_=reorder(changes);changes.update(ordered)
     native=OUT/(MAP+'.bsp');proof=compact(TEMPLATE,native,changes);budget=enforce_camera_bypass_budget(native)
     status=dict(source_map=report['source_map'],map=MAP,version='0.1.0',render_triangles=len(tris),render_repair={'world_meshes':count},geometry=report['bounds'],draw_budget=budget,build=proof,source_props=len(report['placements']),missing_props=len(report['omitted']),client_verified=False,lighting='Coarse source-scene bake pending',collision=json.loads((OUT/'physics.json').read_text())|{'owners':None,'missing':None})
-    (OUT/'source-build.json').write_text(json.dumps(status,indent=2));stbsp(OUT,OUT/'materials',MAP,'composite_world')
+    (OUT/'source-build.json').write_text(json.dumps(status,indent=2));stbsp(OUT,OUT/'materials',MAP,PAK_NAME)
     print('Built',native,'seconds',time.monotonic()-started,flush=True)
 if __name__=='__main__':build()

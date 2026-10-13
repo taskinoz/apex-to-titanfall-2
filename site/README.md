@@ -17,6 +17,10 @@ python publish_comparison_site.py --snapshot 2026-10-12-area-survey --findings s
 Capture sets are immutable. Use a new snapshot name after each repair. The build
 selector keeps earlier captures available for comparison. `--drop-off` and
 `--phase-runner` override the input gallery paths for a development build.
+Use `--maps overflow party-crasher firing-range` to update only those previews;
+other published maps and their current snapshots are preserved exactly. The
+three 0.1.0 previews add eight matched views. They are labeled **Early preview**
+and do not imply the same fidelity or mode coverage as the two older ports.
 Only whitelisted camera metadata and hash-verified PNGs leave private harness
 output. Generated `dist/` is deliberately retained as the portable site.
 The current export includes **Scenery recovery** with 12 Drop-Off views and

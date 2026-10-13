@@ -1,0 +1,14 @@
+"mp_overflow"
+{
+    "assets"
+    {
+        "minimap" "overviews/mp_overflow"
+    }
+    "pos_x" "-4788.0"
+    "pos_y" "689.0"
+    "scale" "10.810546875"
+    "displayDist" "2048"
+    "threatMaxDist" "2500"
+    "threatNearDist" "500"
+    "threatFarDist" "2000"
+}
