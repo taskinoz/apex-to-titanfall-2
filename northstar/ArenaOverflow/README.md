@@ -1,10 +1,10 @@
-# Overflow 0.1.0 — initial Northstar preview
+# Overflow 0.2.0 — Northstar preview
 
 Extract `ArenaOverflow` into `Titanfall2/R2Northstar/mods/`, enable it and restart.
 Every player needs the same version. Launch with `mp_gamemode ps` followed by
 `map mp_overflow` (or choose `ffa` for Free For All).
 
-Initial native preview for Pilots vs Pilots and Free For All. Recovers 2,459 static placements and uses 87.87% of this engine's measured per-view world index capacity.
+Early native preview for Pilots vs Pilots and Free For All. Recovers 2,459 baked source placements and uses 87.87% of this engine's measured per-view world index capacity. Restores 259 omitted source lights through static diffuse surface and character lighting; the 56 native RTL slots remain unchanged.
 
 Native checks cover both pilot modes, supported/clear spawns, both team start
 selections in PS, viewing angles near those starts, postmatch return to lobby,
@@ -27,4 +27,4 @@ you are testing to limit resident texture packs; all five ports together have
 not been validated. Original game assets remain their creators' work.
 
 Detailed counts and every omitted source placement are recorded in the repo's
-`docs/candidates/overflow/port-0.1.0/`.
+`docs/candidates/overflow/port-0.2.0/`.

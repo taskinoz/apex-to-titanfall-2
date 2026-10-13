@@ -1,0 +1,98 @@
+{
+  "map": "mp_apex_firing_range",
+  "source": "mp_rr_canyonlands_staging",
+  "version": "0.2.0",
+  "bsp_sha256": "31bf6d8d5b7e67916541f9984f6bfa1bc9ae9a9ade87cf56da3d64669424ace3",
+  "source_to_target_offset": [
+    -32000,
+    7000,
+    28000
+  ],
+  "source_static_placements": 5371,
+  "rendered_static_placements": 4154,
+  "rendered_dynamic_props": 20,
+  "omitted_local_placements": 988,
+  "outside_region": 228,
+  "no_supported_sections": 1,
+  "omission_reasons": {
+    "Invalid static triangle strips": 976,
+    "Compiled source model not recovered": 12
+  },
+  "budget": {
+    "meshes": 2970,
+    "real_triangles": 958194,
+    "native_padded_indices": 2878872,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 2970,
+    "prefix_indices": 2878872,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      2902,
+      2902,
+      2970
+    ],
+    "static_batch_runs": 168,
+    "unique_static_draw_keys": 168,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "collision": {
+    "world_triangles": 43278,
+    "removed_obsolete_clip_triangles": {},
+    "brushes": 11149,
+    "triangle_headers": 15319,
+    "triangles": 2704506,
+    "detail_collision_triangles": 11760
+  },
+  "missing_prop_collision": [],
+  "fallback_materials": {
+    "dev_gray_512": 180,
+    "toolsblack": 36,
+    "toolsskybox": 48
+  },
+  "source_safety_volumes": {
+    "trigger_hurt": 1,
+    "move_rope": 7,
+    "keyframe_rope": 7
+  },
+  "source_entity_classes": {
+    "worldspawn": 1,
+    "info_intermission": 1,
+    "envmap_volume": 5,
+    "info_lightprobe": 576,
+    "env_exposure": 1,
+    "sky_camera": 1,
+    "light_spot": 43,
+    "light": 42,
+    "wind_volume": 1,
+    "light_environment": 1,
+    "color_correction": 1,
+    "env_fog_controller": 1,
+    "info_particle_system": 45,
+    "info_target": 119,
+    "info_target_clientside": 29,
+    "trigger_no_zipline": 2,
+    "prop_dynamic": 12,
+    "zipline": 14,
+    "prop_dynamic_lightweight": 20,
+    "trigger_hurt": 1,
+    "info_player_start": 1,
+    "trigger_multiple": 4,
+    "script_mover": 1,
+    "script_mover_lightweight": 6,
+    "trigger_soundscape": 8,
+    "info_spawnpoint_human": 40
+  },
+  "source_features": {
+    "supply_bins": 20,
+    "water_triangles": 27,
+    "ziplines": 7,
+    "water_adaptation": "Separate 3D sky reanchored; static native water surface, no original wave shader"
+  }
+}

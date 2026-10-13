@@ -127,7 +127,7 @@ def stage_materials():
     from prepare_composite_materials import prepare
     prepare()
 
-def append(bake_base=None):
+def append(bake_base=None,index_fraction=.9,sun_executable=None,sun_direction=None):
     if (WORK/'result.json').exists():
         raise ValueError('Details already applied; restore the snapshot and clear the receipt before reapplying')
     a=np.load(WORK/'addition.npz');data=a['triangles'];mi=a['material'];names=list(a['names']);col=a['collision'];a.close()
@@ -160,6 +160,7 @@ def append(bake_base=None):
             pi=len(buf[3])//12;ni=len(buf[0x1e])//12;base=len(buf[0x49])//44
             buf[3].extend(p.astype('<f4').tobytes());nb=np.empty((n*6,3),'<f4');nb[::2]=normal.reshape(-1,3);nb[1::2]=tan.reshape(-1,3);buf[0x1e].extend(nb.tobytes())
             records=np.zeros(n*3,DT);records['pi']=np.arange(pi,pi+n*3);records['ni']=np.arange(ni,ni+n*6,2);records['uv']=uv.reshape(-1,2);records['color']=255;records['tangent']=np.arange(ni+1,ni+n*6,2,dtype=np.uint32)|(mirror.reshape(-1).astype('u4')<<31)
+            if src.shape[2]>=12:records['color']=np.rint(np.clip(src[:,:,8:12],0,255)).astype('u1').reshape(-1,4)
             ids=np.arange(next_tri,next_tri+n);page=ids//perpage;tile=ids%perpage
             if np.any(page!=3):raise ValueError('Additional charts must fit unused fourth page')
             if reserved[tile//512,tile%512].any():raise ValueError('Additional charts overlap reserved high-resolution walls; allocate different free atlas space')
@@ -189,7 +190,7 @@ def append(bake_base=None):
     oldjobs=np.zeros(len(oldtri),JOB);oldjobs['uv']=-10
     np.concatenate((oldtri,ordered[:,:,:3])).astype('<f4').tofile(WORK/'bake-triangles.bin')
     np.concatenate((oldjobs,jobs)).tofile(WORK/'bake-jobs.bin');np.concatenate((oldcast,casts)).tofile(WORK/'bake-casters.bin')
-    for exe,args in [('bake_phase_environment.exe',[WORK/'bake-triangles.bin',WORK/'bake-jobs.bin',WORK/'sun.bin',2048,2048,1,WORK/'bake-casters.bin']),
+    for exe,args in [(sun_executable or 'bake_phase_environment.exe',[WORK/'bake-triangles.bin',WORK/'bake-jobs.bin',WORK/'sun.bin',2048,2048,1,WORK/'bake-casters.bin',*(sun_direction or [])]),
                      ('bake_interior_lighting.exe',[WORK/'bake-triangles.bin',WORK/'bake-jobs.bin',OUT/'fixtures.bin',WORK/'local.bin',2048,2048,1,WORK/'bake-casters.bin'])]:
         subprocess.run([str(ROOT/'tools'/exe),*map(str,args)],check=True)
     patch_lightmaps(buf,jobs)
@@ -202,7 +203,7 @@ def append(bake_base=None):
     struct.pack_into('<i',buf[5],36+8,shadow_count)
     buf.update(reorder(buf)[0]);validate_index_padding(buf[0x50],buf[0x4f],buf[0x52])
     temp=MAP.with_suffix('.details.bsp');compact(MAP,temp,buf);proof=enforce_camera_bypass_budget(temp)
-    if proof['native_padded_indices']>=3145728*.9 or proof['static_batch_runs']>=512:raise ValueError('Conservative budget exceeded')
+    if proof['native_padded_indices']>=3145728*index_fraction or proof['static_batch_runs']>=512:raise ValueError('Conservative budget exceeded')
     os.replace(temp,MAP)
     persist_scene(data,mi,names,plan)
     previous=json.loads((BACKUP/'source-build.json').read_text())['version']

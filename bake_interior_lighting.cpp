@@ -20,6 +20,7 @@ std::vector<Pixel> raster(const std::vector<Job>& jobs,int w,int h,int pages){
   }
  }return pixels;
 }
+#ifndef SOURCE_LIGHT_LIBRARY
 int main(int argc,char**argv){try{
  if(argc!=9){std::cerr<<"triangles jobs fixtures output width height pages caster-mask\n";return 2;}
  tri=load<T>(argv[1]);auto jobs=load<Job>(argv[2]);auto lights=load<Fixture>(argv[3]);auto casters=load<uint8_t>(argv[8]);
@@ -46,3 +47,4 @@ int main(int argc,char**argv){try{
  for(auto &t:pool)t.join();std::ofstream file(argv[4],std::ios::binary);file.write((char*)output.data(),output.size()*sizeof(Local));
  std::cout<<"Interior lights "<<lights.size()<<", directly lit surface luxels "<<lit<<", threads "<<threads<<"\n";return 0;
 }catch(const std::exception&e){std::cerr<<e.what()<<"\n";return 1;}}
+#endif

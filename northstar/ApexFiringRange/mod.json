@@ -1,6 +1,6 @@
 {
   "Name": "ApexFiringRange",
-  "Version": "0.1.0",
+  "Version": "0.2.0",
   "LoadPriority": 10,
   "Description": "Firing Range native conversion preview. AI navigation and source gameplay systems are incomplete.",
   "Scripts": [

@@ -53,7 +53,10 @@ def decode(rmdl,vg,lod_index=0,with_colors=False):
         if indices==0 and nstrips==0:
             sections.append([]);continue
         if flags&0x5000==0x5000:raise ValueError('Skinned geometry requires bone transforms')
-        if not nstrips or strip+nstrips>strip_count:raise ValueError('Invalid static triangle strips')
+        # This vista has valid direct triangle-list buffers and no strip
+        # table. Legion's exporter skips these sections; validate the full
+        # index stream independently instead of discarding their geometry.
+        if strip+nstrips>strip_count or (not nstrips and indices%3):raise ValueError('Invalid static triangle strips')
         if start+stride*vertices>vertex_bytes or idx+indices>index_count:raise ValueError('Submesh exceeds VG buffers')
         verts=[]
         for j in range(vertices):
@@ -71,6 +74,12 @@ def decode(rmdl,vg,lod_index=0,with_colors=False):
             if shift>stride or not all(math.isfinite(x) for x in p+n+uv):raise ValueError('Invalid static vertex')
             verts.append(p+n+(uv[0],1-uv[1])+(color if with_colors else ()))  # Match Legion SMD UV convention.
         faces=[];used=0
+        if not nstrips:
+            for off in range(0,indices,3):
+                face=struct.unpack_from('<3H',vg,index_offset+(idx+off)*2)
+                if any(v>=vertices for v in face):raise ValueError('VG triangle references missing vertex')
+                faces.append([verts[v] for v in reversed(face)])
+            used=indices
         for j in range(nstrips):
             at=strip_offset+(strip+j)*35
             nindices,relative,nverts,voffset=struct.unpack_from('<4i',vg,at)

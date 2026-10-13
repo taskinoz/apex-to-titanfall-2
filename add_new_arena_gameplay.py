@@ -18,10 +18,12 @@ def build(ident):
         n=native(e,shifts,prefix+'boundary_'+str(i))
         if n is not None:additions.append(n)
         else:omissions.append(dict(source_entity=i,reason='Outside native safe trigger domain'))
-    endpoints={e.get('link_guid'):e for e in scene['source_entities'] if e.get('classname')=='zipline_end'}
+    endpoints={e.get('link_guid'):e for e in scene['source_entities']
+               if e.get('classname') in ('zipline_end','zipline') and e.get('link_guid')}
     routes=[]
     for i,e in enumerate(scene['source_entities']):
         if e['classname']!='zipline':continue
+        if not e.get('link_to_guid_0'):continue
         endpoint=endpoints.get(e.get('link_to_guid_0'))
         if not endpoint:
             omissions.append(dict(source_entity=i,reason='Zipline endpoint not resolved'));continue

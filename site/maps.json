@@ -53,7 +53,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
+      "notes": "0.2.0 restores the 259 omitted local source lights through shadow-aware diffuse bakes with source spotlight cones, alongside 56 native RTL lights. Existing geometry, collision and sunlight remain. Decorations and animated shaders remain incomplete. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
       "download": null
     },
     {
@@ -70,7 +70,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
+      "notes": "0.2.0 restores the 809 omitted local source lights through shadow-aware diffuse bakes with source spotlight cones, alongside 56 native RTL lights. Surface and character lighting are updated without adding light slots or geometry. Decorations and source shader behavior remain incomplete. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
       "download": null
     },
     {
@@ -87,7 +87,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Initial geometry, collision, source materials, direct lightmaps and player probes. Native pilot-mode, spawn, angle and reload checks use one local client. Some scenery, foliage, materials and distant backgrounds remain incomplete. Lower authored LODs and resident textures reduce detail. No Apex interactions, AI navigation, Titan modes, intro or evac. The three new previews together have not been tested; enable one at a time. A longer shared Overflow/Party Crasher session crashed during repeated mode changes; restart between new previews. The cause is unresolved.",
+      "notes": "0.2.0 restores 20 source supply bins with collision, seven native zipline pairs and non-solid backdrop water. The water has an adapted static appearance; Apex waves/reflections and loot interactions are not reproduced. Uses 91.51% of measured world index capacity. Dense scenery and some materials remain incomplete. Pilot modes are tested with one client. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
       "download": null
     }
   ]

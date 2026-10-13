@@ -19,13 +19,14 @@ selector keeps earlier captures available for comparison. `--drop-off` and
 `--phase-runner` override the input gallery paths for a development build.
 Use `--maps overflow party-crasher firing-range` to update only those previews;
 other published maps and their current snapshots are preserved exactly. The
-three 0.1.0 previews add eight matched views. They are labeled **Early preview**
+three previews retain their first 0.1.0 captures and add eight matched 0.2.0
+views in **Source features and lighting**. They are labeled **Early preview**
 and do not imply the same fidelity or mode coverage as the two older ports.
 Only whitelisted camera metadata and hash-verified PNGs leave private harness
 output. Generated `dist/` is deliberately retained as the portable site.
 The current export includes **Scenery recovery** with 12 Drop-Off views and
 11 Phase Runner views. These are the verified 0.10.0 / 1.6.0 candidates at
-97.06% / 97.04% of native world index capacity. The 134 archived native PNG paths
+97.06% / 97.04% of native world index capacity. The archived native PNG paths
 retain previous comparison snapshots. R5R references are hash-verified saved
 captures; the new Northstar views use the same camera poses. The western
 Phase Runner bend keeps the known black source-reference limitation in its

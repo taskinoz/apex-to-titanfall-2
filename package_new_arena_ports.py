@@ -4,7 +4,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
-from new_arena_ports import CONFIG, ROOT, WORK, folder
+from new_arena_ports import CONFIG, ROOT, WORK, VERSION, folder
 
 
 def presentation(ident):
@@ -42,7 +42,7 @@ def package(ident):
         shutil.copy2(src, dst)
     function = c['package'] + '_Init'
     script = '_' + slug + '.nut'
-    (mod / 'mod.json').write_text(json.dumps(dict(Name=c['package'], Version='0.1.0', LoadPriority=10,
+    (mod / 'mod.json').write_text(json.dumps(dict(Name=c['package'], Version=VERSION, LoadPriority=10,
         Description=c['name']+' native conversion preview. AI navigation and source gameplay systems are incomplete.',
         Scripts=[dict(Path=script, RunOn='SERVER && MP', ServerCallback={'After':function})],
         Localisation=['resource/'+slug+'_%language%.txt']),indent=2))
@@ -107,7 +107,7 @@ void function @PACKAGE@_KillFloor()
         text='"lang"\n{\n "Language" "'+language+'"\n "Tokens"\n {\n "'+c['target']+'" "'+c['name']+'"\n "'+c['target']+'_ALLCAPS" "'+c['name'].upper()+'"\n "'+c['target']+'_CLASSIC_DESC" "An Apex map converted for Titanfall 2."\n }\n}\n'
         (resources/(slug+'_'+language+'.txt')).write_text(text,encoding='utf-16')
     status=json.loads((out/'source-build.json').read_text())
-    status.update(version='0.1.0',candidate=True,client_verified=False,release_ready=False)
+    status.update(version=VERSION,candidate=True,client_verified=False,release_ready=False)
     (mod/'build-status.json').write_text(json.dumps(status,indent=2))
     (mod/'README.md').write_text('# '+c['name']+' conversion preview\n\nMap: `'+c['target']+'`.\n\nThis staged candidate has not yet passed native gameplay and rendering checks.\n')
     print('Staged',mod,flush=True)

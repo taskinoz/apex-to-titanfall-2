@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
   "full_release_ready": false,
-  "bsp_sha256": "91ddce0a73cb887441428dfa30791df4f73eeed1e2992cec64990f271f374401",
+  "bsp_sha256": "961a8ddc4bcf98a918c7d1e667e261529573137bfb612e86844840a3b0aded45",
   "validated_modes": [
     "ps",
     "ffa"
