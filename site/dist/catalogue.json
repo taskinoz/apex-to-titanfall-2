@@ -2158,9 +2158,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.2.0 restores the 259 omitted local source lights through shadow-aware diffuse bakes with source spotlight cones, alongside 56 native RTL lights. Existing geometry, collision and sunlight remain. Decorations and animated shaders remain incomplete. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
+      "notes": "0.3.0 adds distance haze, restored source colours and native glowing lights while preserving the existing lava appearance and gameplay. Some animated effects and decorations remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_offset": [
         0,
         0,
@@ -2346,9 +2346,189 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-14-water-fog-glow",
+          "version": "0.3.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                -324.00824,
+                -6295.51123,
+                1393.36169
+              ],
+              "angles": [
+                15.0,
+                61.8894501,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow/view-0-r5r.png",
+                "sha256": "7b2ea1c01f34a1c264de6594873c6d0783f72412c35c3258e3348bedf38ee892",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867498.05519
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow/view-0-northstar.png",
+                "sha256": "759c116ceb1609b175d524f366402ac1a08d529460381006c3e52a9aa49b31bc",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791899216.0292232
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                4536.32324,
+                -4842.01514,
+                627.977661
+              ],
+              "angles": [
+                0.0,
+                168.955353,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow/view-1-r5r.png",
+                "sha256": "fce8f483d45bd7f57a89e0b42a03cf34802188798dcb0eee7fd71017f9a6947b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867538.0924218
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow/view-1-northstar.png",
+                "sha256": "2f014dd8ec05aca1f72ff057813ea6a8f2724f12a232dea67357e7c45823b5ba",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791899222.5466166
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                -763.161804,
+                -5228.40234,
+                477.852356
+              ],
+              "angles": [
+                0.0,
+                124.9048,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow/view-2-r5r.png",
+                "sha256": "547d6573c20d733e3c63d4412d699802d5e2cc4460b1c569ba2ff112a579f8d5",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867578.0703087
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow/view-2-northstar.png",
+                "sha256": "9a59cbd1ffea9d5fd21c4f5ede4f2af56c28937e463418a435939d125ae80f6a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791899228.712519
+              }
+            }
+          ]
+        },
+        {
+          "id": "2026-10-14-water-fog-glow-final",
+          "version": "0.3.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                -324.00824,
+                -6295.51123,
+                1393.36169
+              ],
+              "angles": [
+                15.0,
+                61.8894501,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow-final/view-0-r5r.png",
+                "sha256": "7b2ea1c01f34a1c264de6594873c6d0783f72412c35c3258e3348bedf38ee892",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867498.05519
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow-final/view-0-northstar.png",
+                "sha256": "e397007913862ac529dddd30d72cb9de3c9323fe9c8951820e570d31405fe1c5",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791901797.9679027
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                4536.32324,
+                -4842.01514,
+                627.977661
+              ],
+              "angles": [
+                0.0,
+                168.955353,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow-final/view-1-r5r.png",
+                "sha256": "fce8f483d45bd7f57a89e0b42a03cf34802188798dcb0eee7fd71017f9a6947b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867538.0924218
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow-final/view-1-northstar.png",
+                "sha256": "edf50ab47823491476c65e3ab22eb88ecd1468284936ae71fe99f37f8b665141",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791901804.3766017
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                -763.161804,
+                -5228.40234,
+                477.852356
+              ],
+              "angles": [
+                0.0,
+                124.9048,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow-final/view-2-r5r.png",
+                "sha256": "547d6573c20d733e3c63d4412d699802d5e2cc4460b1c569ba2ff112a579f8d5",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867578.0703087
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-water-fog-glow-final/view-2-northstar.png",
+                "sha256": "3ed0e5fead0be22c39edbb92fb8bb3e019dc0f03f9e2f1d05acb2744265f3757",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791901810.9539118
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-13-source-features-lighting"
+      "latest": "2026-10-14-water-fog-glow-final"
     },
     {
       "id": "party-crasher",
@@ -2361,9 +2541,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.2.0 restores the 809 omitted local source lights through shadow-aware diffuse bakes with source spotlight cones, alongside 56 native RTL lights. Surface and character lighting are updated without adding light slots or geometry. Decorations and source shader behavior remain incomplete. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
+      "notes": "0.3.0 adds 14 source signs/screens and 283 small light fixtures, native glow, restored texture colours and distance haze. Existing lighting and gameplay remain. Animated billboards, some transparent effects and distant scenery are incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_offset": [
         0,
         0,
@@ -2549,9 +2729,189 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-14-water-fog-glow",
+          "version": "0.3.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                3385.96265,
+                -1591.92493,
+                2220.44629
+              ],
+              "angles": [
+                12.0,
+                97.7711029,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow/view-0-r5r.png",
+                "sha256": "772af4e445f22229fb90172273ce1e43d6607eee51806522692cf19be5242a4a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867298.0046093
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow/view-0-northstar.png",
+                "sha256": "736068a2f4b2598ad951051173effdcabef1bac2d5bfd196e2f27fae93cb44fc",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791898757.8739984
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                -1949.47925,
+                -565.452087,
+                1366.40222
+              ],
+              "angles": [
+                0.0,
+                -4.39630127,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow/view-1-r5r.png",
+                "sha256": "e3b0be42647a41ad19c7c1c30434895dd3f716658a676161cab15879afb75c5b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867337.889215
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow/view-1-northstar.png",
+                "sha256": "21d0c21fb212d20a3b0ca47d34de34fb37e2ccba69bf91e0d822a013a0481ada",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791898763.8846517
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                416.486328,
+                2083.01709,
+                562.318604
+              ],
+              "angles": [
+                0.0,
+                -83.0055008,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow/view-2-r5r.png",
+                "sha256": "5042ae010686081771829d11ea959c6a10172bb4192e3a9934802cd5eb8585df",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867377.9591284
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow/view-2-northstar.png",
+                "sha256": "e0204fa3d158575a019677386d8f4b92c14ee30d30bb254174a4d01a7d2719ca",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791898769.9627914
+              }
+            }
+          ]
+        },
+        {
+          "id": "2026-10-14-water-fog-glow-final",
+          "version": "0.3.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                3385.96265,
+                -1591.92493,
+                2220.44629
+              ],
+              "angles": [
+                12.0,
+                97.7711029,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow-final/view-0-r5r.png",
+                "sha256": "772af4e445f22229fb90172273ce1e43d6607eee51806522692cf19be5242a4a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867298.0046093
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow-final/view-0-northstar.png",
+                "sha256": "267dcab51b83c0300e56816abbd97efc6463664e45ce22807b0df42cd99bc197",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791900718.820873
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                -1949.47925,
+                -565.452087,
+                1366.40222
+              ],
+              "angles": [
+                0.0,
+                -4.39630127,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow-final/view-1-r5r.png",
+                "sha256": "e3b0be42647a41ad19c7c1c30434895dd3f716658a676161cab15879afb75c5b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867337.889215
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow-final/view-1-northstar.png",
+                "sha256": "d2fa7f6a89aa0864b07735cf071966c4438f4971c92e5b5e0aef61424e54b6d4",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791900725.0016425
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                416.486328,
+                2083.01709,
+                562.318604
+              ],
+              "angles": [
+                0.0,
+                -83.0055008,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow-final/view-2-r5r.png",
+                "sha256": "5042ae010686081771829d11ea959c6a10172bb4192e3a9934802cd5eb8585df",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791867377.9591284
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-water-fog-glow-final/view-2-northstar.png",
+                "sha256": "09a4a3b643c0026e63c5b72bbeac439e0ebc948215fac0bdb307baf5032ca6de",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791900731.358734
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-13-source-features-lighting"
+      "latest": "2026-10-14-water-fog-glow-final"
     },
     {
       "id": "firing-range",
@@ -2564,9 +2924,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.2.0 restores 20 source supply bins with collision, seven native zipline pairs and non-solid backdrop water. The water has an adapted static appearance; Apex waves/reflections and loot interactions are not reproduced. Uses 91.51% of measured world index capacity. Dense scenery and some materials remain incomplete. Pilot modes are tested with one client. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
+      "notes": "0.3.0 adds campaign-style moving water with a softer grey-blue colour, distance haze and restored source colours. Preserves the 20 supply bins and seven zipline routes. Exact Apex water reflections, distant scenery and training interactions remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_offset": [
         32000,
         -7000,
@@ -2696,9 +3056,133 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-14-water-fog-glow",
+          "version": "0.3.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                2000.0,
+                -5000.0,
+                2200.0
+              ],
+              "angles": [
+                22.0,
+                90.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-water-fog-glow/view-0-r5r.png",
+                "sha256": "73e1c3576bcc685378ef09a668c7757beedc29dd473b45909ae80a6a64e3c26d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791878615.865995
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-water-fog-glow/view-0-northstar.png",
+                "sha256": "527e7474c1eb66fe69116dde17ca33c0f85a0014c9fa7912ffb8adf9d7a83138",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791898207.068986
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                500.0,
+                -1500.0,
+                -30.0
+              ],
+              "angles": [
+                8.0,
+                80.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-water-fog-glow/view-1-r5r.png",
+                "sha256": "af7439c335f41e578d400c1b34f509954c9e47bfeac37950faf4c13394d3826e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791878890.723292
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-water-fog-glow/view-1-northstar.png",
+                "sha256": "180f18af3101000c024529b2ad87afcc988eb0c2b3d62914eabcff0ef891f649",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791898213.2419562
+              }
+            }
+          ]
+        },
+        {
+          "id": "2026-10-14-water-fog-glow-final",
+          "version": "0.3.0",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                2000.0,
+                -5000.0,
+                2200.0
+              ],
+              "angles": [
+                22.0,
+                90.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-water-fog-glow-final/view-0-r5r.png",
+                "sha256": "73e1c3576bcc685378ef09a668c7757beedc29dd473b45909ae80a6a64e3c26d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791878615.865995
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-water-fog-glow-final/view-0-northstar.png",
+                "sha256": "1f46eebab109f339c83712e9ace7eb427d45027eb8787a5c5dbb432824a85c0c",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791900315.2219067
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                500.0,
+                -1500.0,
+                -30.0
+              ],
+              "angles": [
+                8.0,
+                80.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-water-fog-glow-final/view-1-r5r.png",
+                "sha256": "af7439c335f41e578d400c1b34f509954c9e47bfeac37950faf4c13394d3826e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791878890.723292
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-water-fog-glow-final/view-1-northstar.png",
+                "sha256": "14424de8e351b8e1c4fdc69a0c458a29ceb1cf1619843e820adea6dc6e355b62",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791900321.4511354
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-13-source-features-lighting"
+      "latest": "2026-10-14-water-fog-glow-final"
     }
   ]
 }

@@ -35,13 +35,27 @@ Then perform binary, capture and gameplay validation before finalizing.
 
 `verify_new_arena_binary.py` checks 16 distinct categories per build. Native
 `verify_new_arena_runtime.py` captures matched views and verifies the mounted
-BSP hash. `verify_new_port_gameplay.py` checks pilot spawns, team selection, floor
+BSP and material-pack hashes. `verify_new_port_gameplay.py` checks pilot spawns, team selection, floor
 contacts, viewing angles, Postmatch and a stock-map reload. FFA must retain its
 own teams; forcing IMC/Militia teams into FFA can break the stock scoreboard.
 A longer shared session encountered a native playlist-type/reload crash whose
 cause remains unresolved. Clean single-map runs do not establish full release
 readiness. `finalize_new_arena_previews.py` enforces exact-build gates, writes
 complete placement ledgers and produces clean initial-preview player ZIPs.
+
+For the 0.3.0 material path, see the
+[native water/fog/material report](../candidates/native-water-fog-materials-2026-10-14.md).
+`apex_material_constants.py` reflects source CPU fields from the material's
+compiled DXBC, avoiding an assumed struct/vector layout. Never copy a source
+CPU buffer wholesale into a native material. `recover_arena_atmosphere.py`
+maps supported source textures/constants onto native shader contracts and
+`verify_arena_atmosphere.py` independently checks the compiled RPak, colour
+space and data-map encodings. Required normal/gloss/spec bindings cannot be
+omitted merely because the original material exports only a colour texture.
+Vertex COLOR can be a layer/palette weight even on `_vc` names; leave RGB
+interpretation disabled until the particular shader mapping is reviewed.
+Native/v8 sparse cache layouts now dispatch by RPak version. Only owned
+reference/cache files may be changed; the installed game archives are inputs.
 
 These stages are reference implementations rather than a universal converter.
 Full Olympus exceeds the current all-visible per-view index budget before props.

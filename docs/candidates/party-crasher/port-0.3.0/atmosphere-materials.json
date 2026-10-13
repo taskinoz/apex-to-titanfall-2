@@ -1,0 +1,5643 @@
+{
+  "materials": [
+    {
+      "material": "concrete_base_horizontal_clean_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_wood_01_shinny",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_panel_triangles_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_panel_triangles_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_panel_triangles_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_wall_cracked_metal_trim01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "dirt_ground_soil_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "building_walls_metal_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slumcity_concrete_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "building_walls_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stone_gravel_tan_cemented01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "grass_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "geometric_concrete_floor_clean_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sidewalk_curb_trim_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "carrier_metal_trim_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_corrugated_roof_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "boomtown_roof_concrete_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ts_concrete_floor_red_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_rollup_door_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "building_walls_metal_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_wood_floor_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_wood_ceiling_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_cable_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_steps_clean_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_interior_floor_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "cloth_blinds_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "base_blue01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "trim_metal_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_grill_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ts_brushed_metal01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "lobby_basic_wall_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ts_brushed_metal03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "cloudcity_sleek_signs_ads_01_off",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "imc_int_ground_panels_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stone_tile_m_white",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ts_brushed_metal04",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_wall_tiling_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_grey",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sidewalk_curb_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_panel_polished_vents",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "wall_paint_grey",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_brushed_metal_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "cafeteria_floor_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_red",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "imc_tech_smallfan_32_06",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_trim_red_door01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "dev_grey_512",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "desertlands_mirage_sign_04",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "dev_ground_512",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "building_walls_glass_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "cable_large_steel",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "colony_metal_trim_support",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_wall_bulkhead",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "hospital_rubber_flooring_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "colony_concrete_panel_c",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "window_glass_dirty_stripes_01_opaque",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "boomtown_solid_grate_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "boomtown_int_trims_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_trim_tarnished_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_base_clean_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "mcor_floor_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "timeshift_metal_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "construction_metal_form_walls_07",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "construction_metal_form_walls",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "construction_metal_form_walls_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_industrial_floor_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slum_trim_girdering_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_panels_large",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "window_clamp_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_gold_trim",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_industrial_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "s2s_floor_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "s2s_floor_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_wood_trims_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "s2s_metal_trims_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "dmz_asphalt_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_wood_wall_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_metal_beam_dark_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_dish_metal_panel_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_half_panel_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_half_panel_01_white",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ts_window01_opaque",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        0.013782561756670475,
+        0.029488271102309227,
+        0.03436478599905968
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_planks",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "geometric_concrete_floor_clean",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "solid_grate_dirty_wet_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "glass_scratched_02_opaque",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        0.6577110290527344,
+        0.6577110290527344,
+        0.6577110290527344
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sewer_lab_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "carpet_red_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "desertlands_mirage_sign_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "desertlands_mirage_sign_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "caustic_big_screen_01_blue",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.17819999158382416,
+        0.444599986076355,
+        0.3370499908924103
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "waterpool_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "mcor_corrugated_metal_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_moss_yellow_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_moss_green_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "gravel_ground_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_snow_01_wld",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_moss_orange_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_painted_clean_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_painted_clean_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_painted_clean_05",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_painted_clean_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_painted_pattern_clean_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_white_wall_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_painted_trim_clean_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_painted_worn_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_polished_ground_clean_seamless_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_interior_wall_travertine_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_flat_marble_wall_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_painted_clean_04",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_flat_marble_wall_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "marble_wall_rough_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_flat_marble_wall_01_rough",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "grass_wild_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "building_walls_metal_04",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "imc_painted_metal_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "building_walls_metal_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "imc_painted_metal_vert_color_01",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "olympus_lab_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "pool_tile_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "mike_grey_01_vc",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "s2s_painted_metal_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_farms_plastic_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_rock_01_olympus_rock_01_wet_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stamped_metal_large_painted_03_vert_color",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "beacon_metal_panel_grey_03_lighter_vc",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "s2s_wall_trim_01_vc",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "vent_grille_metal_clean_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_metal_panel_grey_04_vc",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "sleek_city_wood_trims_01_white",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "s2s_wall_trim_02_vc",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "sewer_padded_ceiling_panels",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "dam_concrete_02_stained_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slum_city_painted_metal_02_dirty_02_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stamped_metal_large_painted_03_yellow_dirty_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_painted_white_01_dirty_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_floor_black_01_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "s2s_asphalt_01_damaged_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "building_hs_metalroof_panels_to_dirty",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sleek_city_interior_floor_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_metal_trim_painted_01_vc",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "pool_tile_01_to_pool_tile_01_ilm_underwater_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        1.003999948501587,
+        1.003999948501587,
+        2.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_polished_ground_clean_seamless_01_pattern",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "gen_painted_metal_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_polished_ground_clean_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_02_painted_concrete_02_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_floor_01_bright_grey_bm_vc",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        0.4479883909225464,
+        0.4479883909225464,
+        0.4479883909225464
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "olympus_marble_wall_01_underwater",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "rubble_standard02_wld_dirt_dusty_01_wld_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "rubber_floor_2",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "rubble_standard02_wld_icelandic_dirt_02_wld_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "icelandic_moss_01_wld_icelandic_dirt_01_wld_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "light_strip_01_vc",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        7.0,
+        7.0,
+        7.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "noodle_houes_sign_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "led_light01",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "party_crashers_signs_ad_atlas_01_opaque",
+      "kind": "Native unlit source advertisement atlas",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_signs_ad_atlas_01_opaque",
+      "kind": "Native unlit source advertisement atlas",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "oasis_signs_ad_atlas_01",
+      "kind": "Native unlit source advertisement atlas",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_grate_large",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ts_elevator01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stencil_corporate_white_01_vc",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "caustic_water_01",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        0.3047196567058563,
+        0.502498209476471,
+        0.5147663354873657
+      ],
+      "source_emissive_tint": [
+        1.6272000074386597,
+        1.8624001741409302,
+        1.9104000329971313
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "waterfall_interior_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "waterfall_fountain_modern_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "street_line_white01_dec",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "floor_lightstrip_plastic_vert_alpha",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        20.0,
+        20.0,
+        20.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "rubble_standard02_wld_b2t_wld_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "icelandic_dirt_01_wld_b2t",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "window_glass_dirty_stripes_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "waterfall_interior_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "imc_int_glass_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ts_window01_dark",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        0.03436478599905968,
+        0.08036324381828308,
+        0.09291389584541321
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ts_window01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "waterpool_04",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "echo_big_screen_animation_01",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "source_emissive_tint": [
+        0.45100000500679016,
+        0.7839999794960022,
+        0.9100000262260437
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "floor_mat_black_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sign_caution_rise",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_roof_ac_unit_large",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ship_console_control_tower",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "charge_generator_01",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.17599999904632568,
+        1.0,
+        0.17599999904632568
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "kodai_projector_ring",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        6.659999847412109,
+        14.980000495910645,
+        20.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "fuseboxsmall",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "wire_cluster",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "utility_wires_black_white01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "ship_console_control_small",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "crate_plastic_medium_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "pipe_modular_painted_white_vert_color",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "olympus_farm_metal_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stamped_metal_large_rusty_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "kodai_projector_ring_dirty",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "contemporary_door",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "pipesmulti",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "pelican_case_large",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "box_med_cardboard_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "box_metal",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "wall_waterpipe",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "can_soda",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_pallet_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "plastic_pallet_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_flex_screen_frame_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sewers_railing_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "mendoko_pipes_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slum_city_oxygen_tank_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slum_city_oxygen_tank_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "canyonlands_door_single_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_metal_paneling_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_metal_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "citymodern_parking_stall",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        5.759999752044678,
+        8.199999809265137,
+        10.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "light_switch",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "industrial_wall_light_02_on",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        11.0,
+        7.1610002517700195,
+        4.311999797821045
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "light_wall_horizontal_industrial_brown_on",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        3.0,
+        1.9530000686645508,
+        1.1759999990463257
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "container_medium_tanks_blue",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.10000000149011612,
+        0.10000000149011612,
+        0.10000000149011612
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "air_ducts_clean",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "painted_metal_tank_welded_01_dirty_vert_color",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "olympus_housing_metal_slats",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_housing_metal",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_marble_wall_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "base_grey01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "light_flourescent_modern_off",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "research_station_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "construction_scaffolding_metal",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "diamond_plating_painted_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "citymodern_sign_a",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "arenas_signs_ad_atlas_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        0.1650230586528778,
+        0.1650230586528778
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "imc_metal_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sign_neon_colors",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        0.9729182720184326,
+        0.9729182720184326,
+        0.9729182720184326
+      ],
+      "source_emissive_tint": [
+        2.0,
+        1.0579999685287476,
+        0.4320000112056732
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "olympus_signs_ad_atlas_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "light_fixture_modern_01_on",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    }
+  ],
+  "shaders": [
+    {
+      "native_shader_set": "0x52be72f84bf38f30",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0xbc654af817a04c94",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x81f5bac39d4df3b1",
+      "unchanged_bytecode": true,
+      "pixel_variants": 16,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x6afe220da02633a0",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x311a465cfd2cd645",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x52be72f84bf38f30",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0xbc654af817a04c94",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    }
+  ],
+  "fog": {
+    "source": {
+      "spawnclass": "reFog",
+      "fogangles": "0 90 0",
+      "scale": "1",
+      "angles": "32.4742 150.787 -131.211",
+      "origin": "-8891.7 6664.82 5985.22",
+      "vl_scatter": ".6",
+      "vl_intensity": ".8",
+      "vl_in_shadow_scatter": ".15",
+      "vl_distFalloff": "3000",
+      "vl_color": "0.5 0.75 1",
+      "use_angles": "1",
+      "targetname": "env_fog_mid6069686489632588392",
+      "target": "env_fog_mid6069686489632588392",
+      "spawnflags": "0",
+      "minfadetime": "3",
+      "forceontosky": "0",
+      "fogztop": "10000",
+      "fogzbottom": "-800",
+      "foghalfdisttop": "1000000",
+      "foghalfdistbottom": "250",
+      "fogenable": "1",
+      "fogdistoffset": "1500",
+      "fogdirhalfangle": "90",
+      "fogdircolorstrength": ".1",
+      "fogdircolor": "173 203 221",
+      "fogdensity": ".5",
+      "fogcolorstrength": "1",
+      "fogcolor": "49 50 56",
+      "classname": "env_fog_controller"
+    },
+    "native": {
+      "fogangles": "0 90 0",
+      "angles": "32.4742 150.787 -131.211",
+      "use_angles": "1",
+      "minfadetime": "3",
+      "forceontosky": "0",
+      "fogztop": "10000",
+      "fogzbottom": "-800",
+      "foghalfdisttop": "1000000",
+      "foghalfdistbottom": "250",
+      "fogenable": "1",
+      "fogdistoffset": "1500",
+      "fogdirhalfangle": "90",
+      "fogdircolorstrength": ".1",
+      "fogdircolor": "173 203 221",
+      "fogdensity": ".5",
+      "fogcolorstrength": "1",
+      "fogcolor": "49 50 56",
+      "classname": "env_fog_controller",
+      "spawnclass": "reFog",
+      "origin": "0 0 0",
+      "spawnflags": "1",
+      "targetname": "party_crasher_source_fog"
+    },
+    "unsupported_volumetric_keys": [
+      "vl_scatter",
+      "vl_intensity",
+      "vl_in_shadow_scatter",
+      "vl_distFalloff",
+      "vl_color"
+    ],
+    "adaptation": "Global native fog controller; source height/distance/colour fields retained, editor origin relocated"
+  },
+  "source_texture_cap": 1024,
+  "limitations": [
+    "Alpha emission remains frozen",
+    "Source volumetric scattering and animated advertisements not reproduced",
+    "Vertex-colour/palette conversion disabled after native/R5R mismatch; source bytes retained"
+  ],
+  "rejected_vertex_colour_materials": [
+    "imc_painted_metal_vert_color_01",
+    "mike_grey_01_vc",
+    "stamped_metal_large_painted_03_vert_color",
+    "beacon_metal_panel_grey_03_lighter_vc",
+    "s2s_wall_trim_01_vc",
+    "beacon_metal_panel_grey_04_vc",
+    "s2s_wall_trim_02_vc",
+    "olympus_metal_trim_painted_01_vc",
+    "concrete_floor_01_bright_grey_bm_vc",
+    "light_strip_01_vc",
+    "stencil_corporate_white_01_vc",
+    "pipe_modular_painted_white_vert_color",
+    "painted_metal_tank_welded_01_dirty_vert_color"
+  ]
+}

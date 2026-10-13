@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-VERSION = '0.2.0'
+VERSION = '0.3.0'
 GAME = Path('D:/Games/R5Reloaded/R5R Library/LIVE')
 WORK = Path(os.environ.get('APEX_PORT_WORK', str(ROOT / 'output/new-arena-ports'))).resolve()
 CONFIG = {

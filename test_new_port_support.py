@@ -64,5 +64,16 @@ class PortSupportTests(unittest.TestCase):
             high=ctypes.c_ulong();low=kernel.GetCompressedFileSizeW(str(target),ctypes.byref(high))
             self.assertLess((high.value<<32)|low,size//4)
 
+    def test_native_v7_stream_cache_uses_single_stream_reference(self):
+        with tempfile.TemporaryDirectory(dir=ROOT/'output') as tmp:
+            p=Path(tmp);source=p/'source';cache=p/'cache';source.mkdir();cache.mkdir()
+            name=b'native.starpak\0';block=b'native texture'.ljust(4096,b'x')
+            (source/'native.starpak').write_bytes(bytes(4096)+block+struct.pack('<3Q',4096,4096,1))
+            header=bytearray(88);header[:4]=b'RPak';struct.pack_into('<H',header,4,7)
+            struct.pack_into('<4H',header,56,len(name),0,0,0);struct.pack_into('<2I',header,64,0,1)
+            asset=bytearray(72);struct.pack_into('<Q',asset,32,4096)
+            pak=cache/'native.rpak';pak.write_bytes(header+name+asset);stage(pak,source)
+            self.assertEqual((cache/'native.starpak').read_bytes()[4096:8192],block)
+
 
 if __name__=='__main__':unittest.main()

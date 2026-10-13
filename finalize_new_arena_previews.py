@@ -74,7 +74,8 @@ def finalize(ident,make_zip=False):
     if (work/'source-feature-recovery/plan.json').exists():
         features=json.loads((work/'source-feature-recovery/plan.json').read_text())
         summary['source_features']=dict(supply_bins=features['supply_bins'],water_triangles=features['water_triangles'],ziplines=len(safety['ropes']),water_adaptation=features['water_adaptation'])
-        updates.append(f"Restores {features['supply_bins']} static supply bins with source collision, {len(safety['ropes'])} native zipline pairs and non-solid sky water. Water uses an adapted static material and a proxy sea level of -1600; the original waves and reflection shader are not reproduced. Supply bins are closed scenery, without Apex loot interaction.")
+        water_note='Water uses an adapted campaign shader with scrolling waves' if (work/'atmosphere-materials.json').exists() else 'Water uses an adapted static material'
+        updates.append(f"Restores {features['supply_bins']} static supply bins with source collision, {len(safety['ropes'])} native zipline pairs and non-solid sky water. {water_note} and a proxy sea level of -1600; the original Apex waves and reflection shader are not reproduced. Supply bins are closed scenery, without Apex loot interaction.")
         (docs/'dynamic-placement-inventory.json').write_text(json.dumps([p for p in features['placements'] if p.get('source_entity_kind')=='dynamic-supply-bin'],indent=2))
         contacts=work/'runtime/source-features.json'
         if contacts.exists():
@@ -82,6 +83,25 @@ def finalize(ident,make_zip=False):
             proof['source_feature_checks']=dict(bin_collision_contacts=len(evidence['crate_contacts']),native_zipline_pairs=evidence['ziplines'],
                 scope='Native bin contacts and rope counts before the backdrop-only colour/horizon calibration; gameplay colliders unchanged')
             (docs/'validation.json').write_text(json.dumps(proof,indent=2))
+    if (work/'atmosphere-materials.json').exists():
+        atmosphere=json.loads((work/'atmosphere-materials.json').read_text())
+        contracts=json.loads((work/'atmosphere-validation.json').read_text())
+        rpak=source/'paks'/(ident.replace('-','_')+'_world.rpak')
+        if contracts['bsp_sha256']!=sha or contracts['material_pack_sha256']!=digest(rpak):raise ValueError('Stale atmosphere proof: '+ident)
+        if any(p.get('material_pack_sha256')!=contracts['material_pack_sha256'] for p in (captures,gameplay)):raise ValueError('Stale native material captures/gameplay: '+ident)
+        summary['source_atmosphere']=dict(repaired_materials=len(atmosphere['materials']),
+            native_hdr_materials=sum('HDR emission' in r['kind'] for r in atmosphere['materials']),
+            vertex_paint_materials=sum('vertex paint' in r['kind'] for r in atmosphere['materials']),
+            fog=atmosphere['fog']['native'],limitations=atmosphere['limitations'])
+        proof['atmosphere_contracts']=contracts
+        updates.append('Restores source fog, reflected source colour constants and native HDR emission from Apex texture masks. Vertex palette/layer data is retained but its unverified RGB interpretation is disabled. Animated advertisement frames and Apex volumetric scattering remain incomplete.')
+        (docs/'atmosphere-materials.json').write_text(json.dumps(atmosphere,indent=2))
+        (docs/'validation.json').write_text(json.dumps(proof,indent=2))
+    if (work/'signage-recovery/plan.json').exists():
+        signage=json.loads((work/'signage-recovery/plan.json').read_text())
+        summary['signage_recovery']=dict(placements=signage['added_props'],triangles=signage['added_triangles'],
+            model_counts=dict(collections.Counter(Path(p['model']).stem for p in signage['placements'])))
+        updates.append(f"Adds {signage['added_props']} source advertisements and fixture placements in {signage['added_triangles']:,} triangles, without dynamic prop entities.")
     (docs/'inventory-summary.json').write_text(json.dumps(summary,indent=2))
     screenshot=docs/'screenshot.png';shutil.copy2(captures['views'][0]['northstar']['path'],screenshot)
     percent=budget['native_padded_indices']/budget['world_index_capacity']*100
@@ -106,8 +126,9 @@ repeated mode cycling in the same process.
 This is less complete than Phase Runner and Drop-Off. Decorations, dense
 foliage, distant scenery and some materials are missing. Authored lower LODs,
 1024-pixel texture caps, approximate sky mapping, coarse direct lightmaps and
-point approximations of spot lights reduce fidelity. Animated/emissive source
-materials use static approximations. Apex interactions, weapon stations,
+point approximations of spot lights reduce fidelity. Some native HDR emission
+and water scrolling are recovered; animated advertisements, volumetric effects
+and other specialized source shaders remain incomplete. Apex interactions, weapon stations,
 training dummies, AI navigation, Titan modes, CTF/Hardpoint/Fastball objectives,
 intro and evac are not supplied. Source safety volumes are retained, but each
 hazard has not been physically exercised. The Firing Range minimap is generated;

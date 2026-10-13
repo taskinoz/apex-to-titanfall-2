@@ -6,15 +6,21 @@ are retained so Legion can read this cache without copying entire libraries.
 import argparse,ctypes,json,os,struct
 from pathlib import Path
 def stage(pak,source):
-    data=pak.read_bytes();a,b,segments,pages,patches=struct.unpack_from('<5H',data,72)
-    if data[:4]!=b'RPak' or struct.unpack_from('<H',data,4)[0]!=8 or patches:
-        raise ValueError('An unpatched, decompressed v8 RPak is required')
-    descriptors,assets=struct.unpack_from('<2I',data,84)
-    names=[ [Path(n.decode().replace('\\','/')).name for n in raw.split(b'\0') if n] for raw in (data[128:128+a],data[128+a:128+a+b])]
-    at=128+a+b+segments*16+pages*12+descriptors*8
+    data=pak.read_bytes();version,flags=struct.unpack_from('<2H',data,4)
+    if data[:4]!=b'RPak' or version not in (7,8) or flags&0x8100:
+        raise ValueError('An unpatched, decompressed v7/v8 RPak is required')
+    if version==8:
+        a,b,segments,pages=struct.unpack_from('<4H',data,72);patches=struct.unpack_from('<I',data,80)[0]
+        descriptors,assets=struct.unpack_from('<2I',data,84);header=128;stride=80;streams=2
+    else:
+        a,segments,pages,patches=struct.unpack_from('<4H',data,56);b=0
+        descriptors,assets=struct.unpack_from('<2I',data,64);header=88;stride=72;streams=1
+    if patches:raise ValueError('Patch chains require the upstream patch loader')
+    names=[ [Path(n.decode().replace('\\','/')).name for n in raw.split(b'\0') if n] for raw in (data[header:header+a],data[header+a:header+a+b])]
+    at=header+a+b+segments*16+pages*12+descriptors*8
     needed=[{} for _ in range(2)]
     for i in range(assets):
-        for k,ref in enumerate(struct.unpack_from('<2Q',data,at+i*80+32)):
+        for k,ref in enumerate(struct.unpack_from('<'+'Q'*streams,data,at+i*stride+32)):
             if ref in (0,0xffffffffffffffff):continue
             index=ref&255
             if index>=len(names[k]):raise ValueError('Stream index out of range')

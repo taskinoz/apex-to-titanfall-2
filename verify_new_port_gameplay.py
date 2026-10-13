@@ -7,7 +7,7 @@ import time
 from new_arena_ports import CONFIG, ROOT, folder
 sys.path.insert(0,str(ROOT/'test-harness'))
 from harness import Controller
-from verify_new_arena_runtime import mounted_bsp
+from verify_new_arena_runtime import mounted_bsp,mounted_material_pack
 
 
 def verify(ident):
@@ -52,7 +52,7 @@ def verify(ident):
     c.load(cfg['target'],'ps',120);time.sleep(15)
     logs=c.export_logs()
     if logs['script_errors'] or logs['native_crashes']:raise RuntimeError('Native reload log errors')
-    result=dict(map=cfg['target'],bsp_sha256=sha,mounted_payload_verified=True,
+    result=dict(map=cfg['target'],bsp_sha256=sha,material_pack_sha256=mounted_material_pack(c,ident),mounted_payload_verified=True,
                 modes=records,postmatch_lobby=True,stock_map_reload=True,logs=logs,
                 limitations=['One local client; multiplayer load and balance not tested',
                              'AI, Titan modes and Apex training interactions not validated',

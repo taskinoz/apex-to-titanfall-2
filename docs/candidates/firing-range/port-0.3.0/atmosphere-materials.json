@@ -1,0 +1,1892 @@
+{
+  "materials": [
+    {
+      "material": "thunderdome_rock_shale_thunderdome_white_sand_01_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_quarry_wall_to_thunderdome_sand_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "red_rock_charred_flat_01_to_red_rock_wall_smooth_02_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "red_rock_wall_smooth_03_to_red_rock_wall_damaged_orange_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_base_01_concrete_base_01_cracked_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_corrugated_galvanized_01_rusty_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_wall_basebullet_01_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "concrete_wall_base_03",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slumcity_concrete_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "building_walls_black_polished",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sidewalk_curb_trim_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_metal_paneling_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_metal_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stasis_trim_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stasis_lab_trim_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sand_desert_02_wld",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_grate_stretched01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "metal_floor_holes_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sand_desert_02_bm_transparent",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "grime_oil_drip_asphalt01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_quarry_block_stairs_01_orange",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "fuseboxsmall",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "wire_cluster",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "utility_wires_black_white01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "diamond_plate_dirty_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "painted_metal_tank_welded_vert_color_grease_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slum_city_painted_metal_02_dirty_02_streaks_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slumcity_pipes_wires_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slum_city_painted_metal",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "pipe_modular_painted_white_vert_color",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "thunderdome_flex_screen_frame_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "rock_white_chalk_mod_01_sand_desert_02_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_metal_paneling_01_sand_desert_02_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_metal_trim_01_sand_desert_02_bm",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "security_post",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        3.4590001106262207,
+        2.8959999084472656,
+        1.8799999952316284
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "sewers_wall_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "slum_trim_girdering_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "underbelly_cargo_containers",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_charred_rock_modular_01_orange",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_modular_rock_charred_02_orange",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_quarry_blocks_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_quarry_blocks_01_orange",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_quarry_blocks_03_orange",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_quarry_blocks_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_quarry_blocks_02_orange",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "rock_white_chalk_mod_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "rib_giant_large_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "rib_giant_small_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "parachute_end_seam_white_vert_color_01",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "industrial_scaffolding_tarp_02_cutout",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "desert_rock_cluster_small",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "light_wall_horizontal_industrial_blue_on",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        3.5439999103546143,
+        3.8559999465942383,
+        8.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "menu_cubemap_01_char_select",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "industrial_scaffolding_tarp_01_animated",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "tarp_02",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "firstgen_hydraulic_hose_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stamped_metal_02_test",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "fabric_canopy_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "landing_mats_metal",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "truck_samson_v2_ext",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_wires_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "cable_large_steel",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "thunderdome_flex_screens_plastic_01_opaque",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "imc_panel_64_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "corgi_doll",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "imc_int_fusebox_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "security_light_02_on",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        2.7170000076293945,
+        5.180999755859375,
+        10.956000328063965
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "nessy_doll",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "beacon_cable_trim_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "stamped_metal_large_painted_03_vert_color",
+      "kind": "Source albedo tint/PBR; vertex palette interpretation disabled",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      },
+      "vertex_palette_disabled_after_native_comparison": true
+    },
+    {
+      "material": "boomtown_int_trims_01",
+      "kind": "Source albedo tint/PBR; blend weights excluded from RGB tint",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "charge_pylon_cell_01",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        26.579999923706055,
+        10.710000038146973,
+        1.1700000762939453
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "loot_bin_01",
+      "kind": "Native HDR emission with source mask/tint and PBR",
+      "source_albedo_tint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_emissive_tint": [
+        3.4054999351501465,
+        1.784999966621399,
+        0.16449999809265137
+      ],
+      "constant_offsets": {
+        "c_zUpBlendingVertexAlphaAndL0_albedoTint": [
+          352,
+          16
+        ],
+        "c_depthBlendScalarAndL0_emissiveTint": [
+          368,
+          16
+        ]
+      }
+    },
+    {
+      "material": "d_skybox_water_01",
+      "kind": "Native Gauntlet opaque water adaptation, BT-7274 wave maps, Apex backdrop albedo",
+      "non_solid": true,
+      "source_wave_parity": false,
+      "new_reflection_capture": false
+    }
+  ],
+  "shaders": [
+    {
+      "native_shader_set": "0x52be72f84bf38f30",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x81f5bac39d4df3b1",
+      "unchanged_bytecode": true,
+      "pixel_variants": 16,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x6afe220da02633a0",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0xbc654af817a04c94",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x6b7fbcd01ef8f57b",
+      "unchanged_bytecode": true,
+      "pixel_variants": 16,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x6b7fbcd01ef8f57b",
+      "unchanged_bytecode": true,
+      "pixel_variants": 16,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x2a7468f11d09a60c",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    },
+    {
+      "native_shader_set": "0x52be72f84bf38f30",
+      "unchanged_bytecode": true,
+      "pixel_variants": 8,
+      "vertex_variants": 32
+    }
+  ],
+  "fog": {
+    "source": {
+      "vl_scatter": "0.8",
+      "vl_intensity": "0.15",
+      "vl_in_shadow_scatter": "0.0",
+      "vl_distFalloff": "1500",
+      "vl_color": "0.9 0.7 0.4",
+      "spawnclass": "reFog",
+      "disableWhenVfogEnabled": "0",
+      "fogangles": "0 90 0",
+      "scale": "1",
+      "angles": "20.6701 -154.651 -82.4829",
+      "origin": "38393.7 -7320.5 31144",
+      "use_angles": "1",
+      "targetname": "env_fog_mid",
+      "spawnflags": "0",
+      "minfadetime": "3",
+      "forceontosky": "0",
+      "fogztop": "6500",
+      "fogzbottom": "-800",
+      "foghalfdisttop": "600000",
+      "foghalfdistbottom": "22000",
+      "fogenable": "1",
+      "fogdistoffset": "1000",
+      "fogdirhalfangle": "80",
+      "fogdircolorstrength": ".5",
+      "fogdircolor": "255 243 229",
+      "fogdensity": ".35",
+      "fogcolorstrength": ".5",
+      "fogcolor": "165 222 255",
+      "classname": "env_fog_controller"
+    },
+    "native": {
+      "fogangles": "0 90 0",
+      "angles": "20.6701 -154.651 -82.4829",
+      "use_angles": "1",
+      "minfadetime": "3",
+      "forceontosky": "0",
+      "fogztop": "6500",
+      "fogzbottom": "-800",
+      "foghalfdisttop": "600000",
+      "foghalfdistbottom": "22000",
+      "fogenable": "1",
+      "fogdistoffset": "1000",
+      "fogdirhalfangle": "80",
+      "fogdircolorstrength": ".5",
+      "fogdircolor": "255 243 229",
+      "fogdensity": ".35",
+      "fogcolorstrength": ".5",
+      "fogcolor": "165 222 255",
+      "classname": "env_fog_controller",
+      "spawnclass": "reFog",
+      "origin": "0 0 0",
+      "spawnflags": "1",
+      "targetname": "firing_range_source_fog"
+    },
+    "unsupported_volumetric_keys": [
+      "vl_scatter",
+      "vl_intensity",
+      "vl_in_shadow_scatter",
+      "vl_distFalloff",
+      "vl_color"
+    ],
+    "adaptation": "Global native fog controller; source height/distance/colour fields retained, editor origin relocated"
+  },
+  "source_texture_cap": 1024,
+  "limitations": [
+    "Alpha emission remains frozen",
+    "Source volumetric scattering and animated advertisements not reproduced",
+    "Vertex-colour/palette conversion disabled after native/R5R mismatch; source bytes retained"
+  ],
+  "rejected_vertex_colour_materials": [
+    "pipe_modular_painted_white_vert_color",
+    "parachute_end_seam_white_vert_color_01",
+    "stamped_metal_large_painted_03_vert_color"
+  ]
+}

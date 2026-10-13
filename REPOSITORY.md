@@ -9,12 +9,15 @@ Those files remain in the original workspace and are excluded by `.gitignore`.
 The current player packages are Phase Runner 1.6.0 and Drop-Off 0.10.0. Local ZIPs
 are in `output/`; they are not Git contents. Opening `site/dist/index.html` needs
 no game assets or server. Native screenshot archives are included in the site.
-Overflow, Party Crasher and Firing Range have separate 0.2.0 early previews,
+Overflow, Party Crasher and Firing Range have separate 0.3.0 early previews,
 source scripts and placement ledgers. The additional-port report describes the
 isolated build root and the Python 3.14 extraction / Python 3.12 geometry split.
 Their [source-feature and lighting update](docs/candidates/source-features-and-lighting-2026-10-13.md)
 records the recovered fixtures, supply bins, native ropes and adapted water.
 Earlier preview inventories and screenshot snapshots remain immutable.
+The [native water/fog/material report](docs/candidates/native-water-fog-materials-2026-10-14.md)
+records source DXBC reflection, colour-space handling, shader contracts and
+the rejected candidates encountered during this update.
 
 ## Restoring the development environment
 

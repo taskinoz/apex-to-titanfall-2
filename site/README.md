@@ -22,6 +22,9 @@ other published maps and their current snapshots are preserved exactly. The
 three previews retain their first 0.1.0 captures and add eight matched 0.2.0
 views in **Source features and lighting**. They are labeled **Early preview**
 and do not imply the same fidelity or mode coverage as the two older ports.
+The 0.3.0 **Water, haze and glow** snapshot adds campaign water, source fog,
+HDR masks and Party Crasher advertisements. The rejected vertex-colour
+candidate is also retained, clearly labeled, for comparison with the correction.
 Only whitelisted camera metadata and hash-verified PNGs leave private harness
 output. Generated `dist/` is deliberately retained as the portable site.
 The current export includes **Scenery recovery** with 12 Drop-Off views and

@@ -53,7 +53,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.2.0 restores the 259 omitted local source lights through shadow-aware diffuse bakes with source spotlight cones, alongside 56 native RTL lights. Existing geometry, collision and sunlight remain. Decorations and animated shaders remain incomplete. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
+      "notes": "0.3.0 adds distance haze, restored source colours and native glowing lights while preserving the existing lava appearance and gameplay. Some animated effects and decorations remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null
     },
     {
@@ -70,7 +70,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.2.0 restores the 809 omitted local source lights through shadow-aware diffuse bakes with source spotlight cones, alongside 56 native RTL lights. Surface and character lighting are updated without adding light slots or geometry. Decorations and source shader behavior remain incomplete. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
+      "notes": "0.3.0 adds 14 source signs/screens and 283 small light fixtures, native glow, restored texture colours and distance haze. Existing lighting and gameplay remain. Animated billboards, some transparent effects and distant scenery are incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null
     },
     {
@@ -87,7 +87,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.2.0 restores 20 source supply bins with collision, seven native zipline pairs and non-solid backdrop water. The water has an adapted static appearance; Apex waves/reflections and loot interactions are not reproduced. Uses 91.51% of measured world index capacity. Dense scenery and some materials remain incomplete. Pilot modes are tested with one client. Restart between new preview maps; the earlier repeated-mode-change crash remains unresolved.",
+      "notes": "0.3.0 adds campaign-style moving water with a softer grey-blue colour, distance haze and restored source colours. Preserves the 20 supply bins and seven zipline routes. Exact Apex water reflections, distant scenery and training interactions remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null
     }
   ]

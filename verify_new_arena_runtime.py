@@ -28,6 +28,16 @@ def mounted_bsp(c,ident):
     return actual
 
 
+def mounted_material_pack(c,ident):
+    name=ident.replace('-','_')+'_world.rpak';root=Path(c.session['game'])/c.session['profile']/'mods'
+    paths=list(root.glob('*/paks/'+name))
+    if len(paths)!=1:raise RuntimeError('Expected one mounted material pack')
+    actual=hashlib.sha256(paths[0].read_bytes()).hexdigest()
+    wanted=hashlib.sha256((folder(ident)/'materials/build'/name).read_bytes()).hexdigest()
+    if actual!=wanted:raise RuntimeError('Mounted material pack differs from build')
+    return actual
+
+
 def refine_spawns(ident):
     c=Controller();name=CONFIG[ident]['target'];state=c.request('/status')
     if state.get('contexts',{}).get('client',{}).get('level')!=name:
@@ -102,7 +112,7 @@ def capture(ident):
     logs=c.export_logs()
     if logs['script_errors'] or logs['native_crashes']:raise RuntimeError('Native log errors during candidate capture')
     (out/'captures.json').write_text(json.dumps(dict(map=cfg['target'],views=records,mode=mode,teams=teams,logs=logs,
-        bsp_sha256=sha,mounted_payload_verified=True),indent=2))
+        bsp_sha256=sha,material_pack_sha256=mounted_material_pack(c,ident),mounted_payload_verified=True),indent=2))
 
 
 if __name__=='__main__':
