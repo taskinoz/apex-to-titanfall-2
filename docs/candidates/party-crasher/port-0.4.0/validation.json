@@ -1,0 +1,19 @@
+{
+  "bsp_sha256": "77760034b330cba43160ee712bca00856982b555cf21209cab67cb97fa6634e0",
+  "material_pack_sha256": "9c40eb37729eaec47b3ffa3b666981e6fa8bcd98b4448731d2dff954ba09af53",
+  "binary_checks": 2930,
+  "native_captures": 8,
+  "native_collider_contacts": 29,
+  "both_teams_verified": true,
+  "spawn_clearance_and_support": true,
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "party_reload": true,
+  "script_errors": [],
+  "native_crashes": [],
+  "single_client_only": true,
+  "safety_triggers_unchanged": true,
+  "ai_navigation_added": false,
+  "known_failed_diagnostic": "Prolonged camera session: unregistered goalState in earn-meter code, then shutdown access violation; cause unisolated. See FAILED_DIAGNOSTICS.md.",
+  "camera_runs": "Isolated diagnostic safety triggers removed; normal gameplay checks reloaded all 67 out-of-bounds and 2 hurt entities."
+}

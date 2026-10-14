@@ -1,12 +1,15 @@
 # Apex to Titanfall 2 map ports
 
-New **0.3.0 early Northstar previews**: Overflow (`mp_overflow`), Party Crasher
-(`mp_party_crasher`) and Firing Range (`mp_apex_firing_range`). These have native
+Current early Northstar previews: Overflow **0.3.1**, Party Crasher **0.4.0**
+(`mp_party_crasher`) and Firing Range **0.3.1** (`mp_apex_firing_range`). These have native
 geometry/collision, materials, direct lighting, loading artwork and minimaps.
 Pilot modes and single-client spawn/reload checks pass; substantial scenery,
 source shader behavior and Apex interactions are still missing. See the
 [new-port report and Olympus feasibility](docs/candidates/approved-port-work-2026-10-13.md).
-Clean player ZIPs are local in `output/`. Enable one new preview at a time.
+Clean player ZIPs are local in `output/`, with the shared `ApexMaps.UI` companion.
+Party Crasher 0.4.0 restores 380 source placements: 42 large boundary rocks,
+168 facade pieces, 42 roof vents and 128 solar panels. It uses 97.66% of native
+world index capacity. See [the recovery and validation](docs/candidates/party-crasher/port-0.4.0/README.md).
 
 Firing Range includes 20 closed supply bins, seven native zipline routes
 and adapted campaign water. The previews now recover native source fog,
@@ -19,7 +22,7 @@ Party Crasher and Overflow retain
 lighting. See [feature recovery, lighting and limitations](docs/candidates/source-features-and-lighting-2026-10-13.md).
 The 0.1.0 / 0.2.0 ZIPs and comparison snapshots remain available.
 
-Current builds: **Phase Runner 1.6.0** and **Drop-Off 0.10.0**. Restore
+Current builds: **Phase Runner 1.6.1** and **Drop-Off 0.10.1**. Restore
 432 and 366 source scenery placements respectively, reaching 97.04% and
 97.06% of the native world index capacity. No dynamic entities are added.
 Existing minimaps, lighting, gameplay, collision exclusions and catwalks remain.

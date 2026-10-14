@@ -1,0 +1,15 @@
+{
+  "source_map": "mp_rr_party_crasher",
+  "target_map": "mp_party_crasher",
+  "source_offset": [0, 0, 0],
+  "shots": [
+    {"name": "spawn-right", "origin": [-2537.5, 3894.8, 651], "angles": [0, -90, 0], "fov": 90, "settle": 4},
+    {"name": "opposite-spawn-right", "origin": [1674.8, -3382, 651], "angles": [0, 90, 0], "fov": 90, "settle": 4},
+    {"name": "west-edge", "origin": [-3200, 2500, 1400], "angles": [5, 180, 0], "fov": 90, "settle": 4},
+    {"name": "east-edge", "origin": [4700, -1600, 2600], "angles": [8, 170, 0], "fov": 90, "settle": 2},
+    {"name": "south-facade", "origin": [-200, -5800, 1800], "angles": [0, 80, 0], "fov": 90, "settle": 4},
+    {"name": "north-roof", "origin": [5750, 1550, 3530], "angles": [32, 180, 0], "fov": 90, "settle": 2},
+    {"name": "south-roof", "origin": [-638.5, -5500, 2820], "angles": [28, 90, 0], "fov": 90, "settle": 2},
+    {"name": "west-cliffs", "origin": [-4000, 1900, 2200], "angles": [0, 180, 0], "fov": 90, "settle": 4}
+  ]
+}

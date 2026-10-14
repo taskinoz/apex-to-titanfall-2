@@ -39,6 +39,12 @@ reviewed notes. Use a new snapshot label for further changes.
 The viewer renders these as text, not HTML. Do not change notes in an archived
 snapshot; create a new snapshot if the observations or captures change.
 
+Party Crasher's **Edges and rooftops** snapshot shows the 0.4.0 boundary/facade
+and rooftop recovery in six matched native/R5R views. The two close-up roof
+views include source foliage still omitted from the port. Exterior diagnostic
+camera sessions temporarily remove safety-trigger entities in the owned game;
+gameplay validation reloads the original map and checks all 69 safety triggers.
+
 Set a map's `download` to its public release URL when ready. Runtime ZIPs remain
 separate from the site and retain the existing clean Northstar mod packaging.
 Alternatively, append `--include-downloads` after packaging current versions:

@@ -1,3 +1,24 @@
+---
+id: gm_01m4nfwh6d8em5ts5pzrv4cbwb
+title: "Titanfall map conversion case studies: Phase Runner, Drop-Off and Party Crasher"
+description: Versioned current port budgets, recoverable props, remaining omissions and native evidence
+tags:
+  - titanfall-2
+  - apex-legends
+  - map-conversion
+  - phase-runner
+  - drop-off
+  - composite
+  - case-study
+  - party-crasher
+project: apex-to-titanfall-2
+status: verified
+created: 2026-10-11T12:44:29.261Z
+updated: 2026-10-14T06:16:41.328Z
+created_by: agent:Codex
+updated_by: agent:Claude
+revision: 3
+---
 # Phase Runner and Drop-Off: verified conversion case studies
 
 Reviewed 11 October 2026; latest tested project releases were built 6–7 October.
@@ -90,3 +111,17 @@ Current `northstar/*/mod.json`, `docs/conversion/MISSING_CONTENT.md`,
 `docs/conversion/trees.json`, `docs/conversion/tree-grounding-before.json`,
 `docs/composite/inventory-summary.json`, `docs/composite/MISSING_CONTENT.md`,
 `docs/composite/validation.json`, and versioned repair documents.
+
+## Party Crasher 0.4.0 boundary and rooftop recovery — 14 October 2026
+
+A measured priority swap recovers 380 exact source static placements: 168 facade/window sections, all 42 large boundary-rock placements, 42 roof vents and all 128 source solar panels. The final scene contains 2,532 included source placements of 13,825; 11,285 local placements remain omitted and eight are outside the selected region. These counts describe retained geometry, not complete visual parity or a native entity limit. Roof vegetation and dense inset/window modules still remain omitted.
+
+Final world submission: 1,022,586 triangles, 3,072,114 padded indices (97.66% of 3,145,728), 3,185 meshes and 358 static draw batches. The remaining 73,614 indices do not certify AI, multiplayer performance or an unlimited effect budget. No gameplay entities were added. Existing entities, 67 out-of-bounds and two hurt triggers, source collision exclusions, character probes, world lights and used lightmap charts were retained. Existing material bindings and uber buffers compare identically against the immutable baseline. Six new material definitions use recovered Apex textures and native PBR; layered source shading remains approximate.
+
+Use a priority inventory rather than greedily adding small objects: a facade-first candidate added 270 placements in 73,910 triangles; the accepted boundary/roof candidate adds 380 in 72,590 triangles. Boundary rock type 01 uses authored LOD3, types 02/03 authored LOD4. Solar panels use the last available authored LOD2. Original source transforms and source PHY/BVH surfaces are preserved; no guessed patch planes or collision boxes were inserted.
+
+The independent binary audit passed 2,930 checks. Native checks from the exact mounted payload verified 29 new collider contacts, clear supported starts for both teams, postmatch return, stock Coliseum load and Party Crasher reload. Eight native edge/roof views and six matched native/R5R references were saved. Remote camera views temporarily remove boundary/hurt trigger entities only in owned diagnostic runtimes; normal gameplay checks reload the map and verify all 69 safety entities. Never infer gameplay safety from these diagnostic pictures. The shared ApexMaps.UI companion remains unchanged and no new uimg atlas is added.
+
+Failures are retained explicitly. One prolonged diagnostic session reported an unregistered goalState in earn-meter code, followed by a shutdown access violation. Cause and relation to earlier stress failures remain unisolated. Fresh short-session checks passed; they do not erase that failure or certify long sessions. One R5R launch had a server-connection overflow; retry captured the roof references. An all-five-map retry reported a texture-allocation failure; the final new native checks used Party Crasher, Drop-Off and shared UI with the engines running serially. Do not count historical all-five-map atlas validation as a new 0.4.0 stress certification.
+
+Evidence: recover_party_structure.py, verify_party_structure.py, capture_party_structure.py, verify_party_structure_runtime.py; docs/candidates/party-crasher/port-0.4.0/{inventory-summary.json,placement-inventory.csv,validation.json,FAILED_DIAGNOSTICS.md}; immutable site snapshot 2026-10-14-party-structure. The player ZIP and installed runtime are hash verified; old mod/preferences and the previous download remain backed up.

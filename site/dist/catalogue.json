@@ -2786,9 +2786,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds 14 source signs/screens and 283 small light fixtures, native glow, restored texture colours and distance haze. Existing lighting and gameplay remain. Animated billboards, some transparent effects and distant scenery are incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "0.4.0: Restores 380 exact-source placements: 168 facade sections, all 42 large boundary rocks, 42 rooftop vents and all 128 solar panels. Uses 97.66% of native world index capacity, with no additional gameplay entities. Existing lighting, collision, safety areas, spawns, loading screen and minimap are retained. Some dense window modules, roof foliage, animated advertisements and layered terrain materials remain incomplete. AI navigation and Titan modes are not supplied. Restart between previews; repeated mode cycling has an unresolved earlier failure.",
       "download": null,
-      "version": "0.3.1",
+      "version": "0.4.0",
       "source_offset": [
         0,
         0,
@@ -3399,9 +3399,201 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-14-party-structure",
+          "version": "0.4.0",
+          "shots": [
+            {
+              "name": "spawn-right",
+              "origin": [
+                -2537.5,
+                3894.8,
+                651
+              ],
+              "angles": [
+                0,
+                -90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Boundary rock geometry and retained source wall sections are restored. Source foliage, animated advertising and atmosphere remain richer."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/spawn-right-r5r.png",
+                "sha256": "27ba4af77a3486030809b538c2e47cdf880c0be81e55f793f6d384f6c9ad5e75",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791955645.9150538
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/spawn-right-northstar.png",
+                "sha256": "a6668ac839bb8a21b97b820d038a6e0f72325ccb77d1dd0b7f0ae4ac1e54dae6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791957098.6017964
+              }
+            },
+            {
+              "name": "opposite-spawn-right",
+              "origin": [
+                1674.8,
+                -3382,
+                651
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Recovered structures use original Apex transforms and source-owned collision. Lighting and source effects remain approximations."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/opposite-spawn-right-r5r.png",
+                "sha256": "bc17b72363903e3fd5e348945d872c8465faec818aea03a3e0a19f2d5dfc8c92",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791955726.090378
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/opposite-spawn-right-northstar.png",
+                "sha256": "32696486748353beac49d60073edc46d5bafaa1332e011ff69c120e3ead8bc19",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791957104.7059777
+              }
+            },
+            {
+              "name": "west-edge",
+              "origin": [
+                -3200,
+                2500,
+                1400
+              ],
+              "angles": [
+                5,
+                180,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Original facade/window modules now close structural gaps; some dense inset windows remain outside this recovery budget."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/west-edge-r5r.png",
+                "sha256": "7330b8bb6edd12cb09d4c764d3fec2562b7cd03f098124d62c18dedd2721b600",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791955806.0786874
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/west-edge-northstar.png",
+                "sha256": "49b82fe39c3020e84225f3c1ba7294da7ad4c8b236c6d6d1a08677e90ea624f9",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791957110.511685
+              }
+            },
+            {
+              "name": "east-edge",
+              "origin": [
+                4700,
+                -1600,
+                2600
+              ],
+              "angles": [
+                8,
+                170,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Additional source windows and structural sections are retained. This is an exterior diagnostic camera view."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/east-edge-r5r.png",
+                "sha256": "a47df68cd1eb9e25644015587881114d2972cf13ae5ba582bca97961682928a3",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791955886.0618136
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/east-edge-northstar.png",
+                "sha256": "ad6594983c8b24a7a62f44786711b4525a326065858ff4af5c56508b8818ee3d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791957115.8566175
+              }
+            },
+            {
+              "name": "north-roof",
+              "origin": [
+                5750,
+                1550,
+                3530
+              ],
+              "angles": [
+                32,
+                180,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Source rooftop vents are restored. Source foliage and animated billboard effects remain incomplete."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/north-roof-r5r.png",
+                "sha256": "62fdd1f17d6c0b9756ee949dc21fc5e19f2defe3199070d2f1521a83f73d35cd",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791958069.6918955
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/north-roof-northstar.png",
+                "sha256": "fa13cda27ae97cd69a72408b448f49dbb660892dc405ce26b3722316780c1d7f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791957476.1969306
+              }
+            },
+            {
+              "name": "south-roof",
+              "origin": [
+                -638.5,
+                -5500,
+                2820
+              ],
+              "angles": [
+                28,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Original rooftop equipment is recovered; this angle is partly occluded by the adjoining building and planter. Dense source roof vegetation remains omitted."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/south-roof-r5r.png",
+                "sha256": "9650c232acc5a3183b0b9d0faffbd3ab2800c4380a0fc979b2bb78c965caa01e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791958104.7582643
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-party-structure/south-roof-northstar.png",
+                "sha256": "1b9d2e01aa5a5f93a049411e878c666b8a1f63db1e2dba2223256e72d086d717",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791957481.3274336
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-14-ui-atlas-survey"
+      "latest": "2026-10-14-party-structure"
     },
     {
       "id": "firing-range",

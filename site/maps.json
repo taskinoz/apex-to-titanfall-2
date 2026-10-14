@@ -62,15 +62,15 @@
       "package": "ArenaPartyCrasher",
       "source_map": "mp_rr_party_crasher",
       "target_map": "mp_party_crasher",
-      "route": "r5-harness/routes/party-crasher-expanded-survey.json",
-      "comparison": "output/ui-atlas-surveys/party-crasher",
+      "route": "r5-harness/routes/party-crasher-edge-roof-survey.json",
+      "comparison": "output/party-edge-roof/comparison",
       "status": "Early preview",
       "description": "City streets, multilevel buildings and the crashed Voyage form a compact pilot arena.",
       "modes": [
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds 14 source signs/screens and 283 small light fixtures, native glow, restored texture colours and distance haze. Existing lighting and gameplay remain. Animated billboards, some transparent effects and distant scenery are incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "0.4.0: Restores 380 exact-source placements: 168 facade sections, all 42 large boundary rocks, 42 rooftop vents and all 128 solar panels. Uses 97.66% of native world index capacity, with no additional gameplay entities. Existing lighting, collision, safety areas, spawns, loading screen and minimap are retained. Some dense window modules, roof foliage, animated advertisements and layered terrain materials remain incomplete. AI navigation and Titan modes are not supplied. Restart between previews; repeated mode cycling has an unresolved earlier failure.",
       "download": null
     },
     {

@@ -1,0 +1,164 @@
+{
+  "map": "mp_party_crasher",
+  "source": "mp_rr_party_crasher",
+  "version": "0.4.0",
+  "bsp_sha256": "77760034b330cba43160ee712bca00856982b555cf21209cab67cb97fa6634e0",
+  "source_to_target_offset": [
+    0,
+    0,
+    0
+  ],
+  "source_static_placements": 13825,
+  "rendered_static_placements": 2532,
+  "rendered_dynamic_props": 0,
+  "omitted_local_placements": 11285,
+  "outside_region": 8,
+  "no_supported_sections": 0,
+  "omission_reasons": {
+    "Compiled source model not recovered": 15,
+    "Conservative native draw budget": 11270
+  },
+  "budget": {
+    "meshes": 3185,
+    "real_triangles": 1022586,
+    "native_padded_indices": 3072114,
+    "world_index_capacity": 3145728,
+    "all_meshes_fit_simultaneously": true,
+    "maximum_all_visible_mesh_prefix": 3185,
+    "prefix_indices": 3072114,
+    "first_mesh_excluded_when_all_visible": null,
+    "mesh_partitions": [
+      3126,
+      3126,
+      3185
+    ],
+    "static_batch_runs": 358,
+    "unique_static_draw_keys": 358,
+    "world_batch_capacity": 2048,
+    "static_batches_fit_simultaneously": true,
+    "first_mesh_excluded_by_static_batch_limit": null,
+    "dynamic_light_masks_can_split_static_batches": true,
+    "native_batch_limit_instruction": "engine.dll+0xb7304",
+    "native_batch_limit_exit": "engine.dll+0xb74c9",
+    "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+  },
+  "collision": {
+    "world_triangles": 648108,
+    "removed_obsolete_clip_triangles": {},
+    "brushes": 3111,
+    "triangle_headers": 9589,
+    "triangles": 1282345,
+    "detail_collision_triangles": 436311
+  },
+  "missing_prop_collision": [
+    {
+      "index": 13306,
+      "model": "mdl/decals/puddle_floor_decal_flat_04.rmdl"
+    }
+  ],
+  "fallback_materials": {
+    "dev_gray_512": 214,
+    "signage_building_02": 564
+  },
+  "source_safety_volumes": {
+    "trigger_out_of_bounds": 67,
+    "trigger_hurt": 2
+  },
+  "source_entity_classes": {
+    "worldspawn": 1,
+    "info_lightprobe": 43,
+    "envmap_volume": 9,
+    "func_window_hint": 8,
+    "env_exposure": 1,
+    "light_spot": 622,
+    "light": 271,
+    "sky_camera": 1,
+    "env_fog_controller": 1,
+    "light_environment": 1,
+    "color_correction": 1,
+    "info_particle_system": 22,
+    "info_target_clientside": 44,
+    "prop_dynamic": 52,
+    "script_ref": 28,
+    "prop_door": 4,
+    "script_mover": 3,
+    "info_target": 39,
+    "func_brush": 11,
+    "prop_dynamic_lightweight": 5,
+    "zipline": 8,
+    "prop_physics": 3,
+    "script_mover_lightweight": 26,
+    "trigger_out_of_bounds": 67,
+    "trigger_no_zipline": 49,
+    "trigger_hurt": 2,
+    "trigger_slip": 1,
+    "info_player_start": 1,
+    "ambient_generic": 80,
+    "trigger_soundscape": 16,
+    "soundscape_floor": 1
+  },
+  "source_lighting": {
+    "native_rtl_fixtures": 56,
+    "additional_baked_fixtures": 809,
+    "method": "Shadow-aware diffuse bake with source spot cones; character SH constant terms. Native RTL slots unchanged.",
+    "limitation": "Additional fixtures have static diffuse contributions, not independent native specular light slots"
+  },
+  "source_atmosphere": {
+    "repaired_materials": 229,
+    "native_hdr_materials": 15,
+    "vertex_paint_materials": 0,
+    "fog": {
+      "fogangles": "0 90 0",
+      "angles": "32.4742 150.787 -131.211",
+      "use_angles": "1",
+      "minfadetime": "3",
+      "forceontosky": "0",
+      "fogztop": "10000",
+      "fogzbottom": "-800",
+      "foghalfdisttop": "1000000",
+      "foghalfdistbottom": "250",
+      "fogenable": "1",
+      "fogdistoffset": "1500",
+      "fogdirhalfangle": "90",
+      "fogdircolorstrength": ".1",
+      "fogdircolor": "173 203 221",
+      "fogdensity": ".5",
+      "fogcolorstrength": "1",
+      "fogcolor": "49 50 56",
+      "classname": "env_fog_controller",
+      "spawnclass": "reFog",
+      "origin": "0 0 0",
+      "spawnflags": "1",
+      "targetname": "party_crasher_source_fog"
+    },
+    "limitations": [
+      "Alpha emission remains frozen",
+      "Source volumetric scattering and animated advertisements not reproduced",
+      "Vertex-colour/palette conversion disabled after native/R5R mismatch; source bytes retained"
+    ]
+  },
+  "signage_recovery": {
+    "placements": 297,
+    "triangles": 29996,
+    "model_counts": {
+      "olympus_highrise_sign_rev_01": 1,
+      "citymodern_sign_a": 4,
+      "olympus_highrise_sign_oasis_02": 1,
+      "olympus_highrise_sign_bonsai_01": 2,
+      "arenas_big_screen_01": 3,
+      "ac_genki_market_sign_big_01": 1,
+      "party_crashers_pillar_signage": 2,
+      "citymodern_light_on_01": 283
+    }
+  },
+  "new_recovery": {
+    "placements": 380,
+    "triangles": 72590,
+    "categories": {
+      "facade": 168,
+      "roof-vent": 42,
+      "roof-solar": 128,
+      "edge-rock": 42
+    }
+  }
+}

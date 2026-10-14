@@ -1,0 +1,22 @@
+{
+  "party-crasher": {
+    "spawn-right": [
+      "Boundary rock geometry and retained source wall sections are restored. Source foliage, animated advertising and atmosphere remain richer."
+    ],
+    "opposite-spawn-right": [
+      "Recovered structures use original Apex transforms and source-owned collision. Lighting and source effects remain approximations."
+    ],
+    "west-edge": [
+      "Original facade/window modules now close structural gaps; some dense inset windows remain outside this recovery budget."
+    ],
+    "east-edge": [
+      "Additional source windows and structural sections are retained. This is an exterior diagnostic camera view."
+    ],
+    "north-roof": [
+      "Source rooftop vents are restored. Source foliage and animated billboard effects remain incomplete."
+    ],
+    "south-roof": [
+      "Original rooftop equipment is recovered; this angle is partly occluded by the adjoining building and planter. Dense source roof vegetation remains omitted."
+    ]
+  }
+}
