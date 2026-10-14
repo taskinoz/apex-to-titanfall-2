@@ -5,7 +5,6 @@
   },
   "Postload": {
     "party_crasher_world.rpak": "mp_coliseum.rpak",
-    "party_crasher_presentation.rpak": "common.rpak",
-    "party_crasher_minimap.rpak": "common.rpak"
+    "party_crasher_presentation.rpak": "common.rpak"
   }
 }

@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "multiplayer_lobby_verified": true,
+  "stock_reload_verified": true,
+  "shared": {
+    "companion": "ApexMaps.UI",
+    "version": "0.1.0",
+    "custom_ui_atlases": 1
+  },
+  "shared_pack_sha256": "91c3e4b5b3be378bfdaebe905b0a0fefc11039e1cd26607c2e4ccd8e22e4a584",
+  "maps": {
+    "PhaseRunner": {
+      "map": "mp_phase_runner",
+      "config_sha256": "f5fb096baa0c1a70980daa2d9252148cebf1184d3cc83f7e2facdf86d0558f21",
+      "native_views": 1,
+      "all_five_installed": true,
+      "ui_companion_verified": true,
+      "screenshots": [
+        {
+          "name": "combined-install",
+          "sha256": "461e212c155b9039735ab961426aa03bc18ecd1ec63169ffdd91c43a669b731d"
+        }
+      ]
+    },
+    "ArenaComposite": {
+      "map": "mp_arena_composite",
+      "config_sha256": "04a29bd3d726a864abaca73cbffa154b131db101b4a61b35087129a36a85b082",
+      "native_views": 1,
+      "all_five_installed": true,
+      "ui_companion_verified": true,
+      "screenshots": [
+        {
+          "name": "combined-install",
+          "sha256": "d26f1773f8988fede4b3a7c15fa2ec8c732b78a9e36f07a2e091ba976d9b4e27"
+        }
+      ]
+    },
+    "ApexFiringRange": {
+      "map": "mp_apex_firing_range",
+      "config_sha256": "7cb1132b29d09b8c3af6ed798eb597e613953236e8f6f5cc1e93d255fe78bf1a",
+      "native_views": 7,
+      "all_five_installed": true,
+      "ui_companion_verified": true,
+      "screenshots": [
+        {
+          "name": "view-0",
+          "sha256": "b3f748c7c78c51cf6ffaaa8dc5656dd023565b608f635614e5bbb7b1f89f66b4"
+        },
+        {
+          "name": "view-1",
+          "sha256": "7e988e3af7625a06ca1a8af90b18cc2c35a3e04a1c2e5231c1cb5aafd8a7bf2a"
+        },
+        {
+          "name": "weapon-lane",
+          "sha256": "c0de00ba270688d6fbfc269e39eb0de08e22dd04cb55e790e840e9c5cf26f160"
+        },
+        {
+          "name": "upper-platform",
+          "sha256": "64d153d579a35b74acef61ad1164e47e9a1ad6f1644a27ad00c1b8cf33750b35"
+        },
+        {
+          "name": "cave-exit",
+          "sha256": "72707848fdf49a7ab0c78ef0667097271b0c856c2ac5a20adff94bf2f9918ede"
+        },
+        {
+          "name": "supply-bins",
+          "sha256": "445e6c4c9614a928f314829d0a6df8d4baafa60192b361e4ecd72fe8e4d5e95f"
+        },
+        {
+          "name": "sea-and-rocks",
+          "sha256": "149e6c79a829e4432c19e88c263992e155ee433c4f98543f718d028deaeeaab3"
+        }
+      ]
+    },
+    "ArenaPartyCrasher": {
+      "map": "mp_party_crasher",
+      "config_sha256": "cc6e263631a977cf968eeddd6403cb9100e8965f8cfc95cf433c95efbb76393b",
+      "native_views": 8,
+      "all_five_installed": true,
+      "ui_companion_verified": true,
+      "screenshots": [
+        {
+          "name": "view-0",
+          "sha256": "64746cab7959c944dbeb2bfaca03c3cd7ce430f64fdcd5a8ef34b79552ad36fc"
+        },
+        {
+          "name": "view-1",
+          "sha256": "1ab188b7b9a942a399fd583d6bb86f01eed89fa2badedafebea6a74a0199a693"
+        },
+        {
+          "name": "view-2",
+          "sha256": "fcad2e3eafe6a8679594cc64c6e3898580a822b5c9c95614fe185babdc253e32"
+        },
+        {
+          "name": "south-courtyard",
+          "sha256": "fe5f3ff0d4904d7fda62bd619c905d01bca3b07a31961e7206c2915a5f81f7bc"
+        },
+        {
+          "name": "north-courtyard",
+          "sha256": "083aa0e4b2b4764e88319e812d612a0dd8675f97a4e6df71fa4272cbc8cb4b83"
+        },
+        {
+          "name": "upper-signs",
+          "sha256": "e92c82159064fb71425cfb6be9802684311bfb72762b380a058f8b7233295a21"
+        },
+        {
+          "name": "market-lane",
+          "sha256": "6aaaa2e5d2e37df465ca3c7e7a476f1abfada8772d05708b14812a7bccfc6690"
+        },
+        {
+          "name": "ship-overlook",
+          "sha256": "6e67255b8b6eb780347b2101ecf1af838084a740c07bda686ad6a0feb2417648"
+        }
+      ]
+    },
+    "ArenaOverflow": {
+      "map": "mp_overflow",
+      "config_sha256": "2dd8f8fe0add329b2b1ea69654eaeaf7bb3ad32d06aeaaf7af982278efbf4cbe",
+      "native_views": 8,
+      "all_five_installed": true,
+      "ui_companion_verified": true,
+      "screenshots": [
+        {
+          "name": "view-0",
+          "sha256": "6f9ce205f8b1ef1da5b73db4f1e52795ad46d3478a5d1b585be8ba9c9d075147"
+        },
+        {
+          "name": "view-1",
+          "sha256": "230444d6e3aa3486b1a296386b096b8b79fb8fce09cda92c2cb2cdeafd5a010e"
+        },
+        {
+          "name": "view-2",
+          "sha256": "6dfff44f43706163f9d2d3b16b0b865ff4f68457a0e4bd316866410796a2cc44"
+        },
+        {
+          "name": "east-entry",
+          "sha256": "c3b1e526a745c512da0e4cd03139b74a2d8d76a31d2aa8a33dd061b333523630"
+        },
+        {
+          "name": "west-entry",
+          "sha256": "077406c63119f2fb401e867828af76ad6ec1e6185b28185de1ac4f02cb75fbdd"
+        },
+        {
+          "name": "central-bridge",
+          "sha256": "44588423f3de3fa3a9e9e04eb257209fe6f5248b9ccf6410b073de36754a9ed1"
+        },
+        {
+          "name": "lava-channel",
+          "sha256": "5ae3e806c613e8b0cdc789e3ebcfd6263d0a8cbfa930013722620a8019e1822e"
+        },
+        {
+          "name": "north-platform",
+          "sha256": "36d14a0b17c694a7500bec546ea76d1c315d832d1f59fff738d8b2751278e8a5"
+        }
+      ]
+    }
+  },
+  "lifecycle_captures": [
+    {
+      "sha256": "15170e3ec8180dc7a2b25a1d4077a6f38129687ccb7dcff986f114c8fb1a8110",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "sha256": "a32960063506c69c562b251c601df0a4342b24f59794c9d26844d3e7e049c30e",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "sha256": "c66ad0217ac600d6dbbc13f54a669e0a77d4236bd9308a53d021252438e3e4eb",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "single_client": true,
+  "multiplayer_load_verified": false,
+  "ai_verified": false,
+  "prior_failures": [
+    "Native 20-atlas pool error",
+    "Minimap-only filtering insufficient",
+    "Early world-regex candidate had fallback materials",
+    "UI-only filtering still loaded unwanted presentations through shared dependency path"
+  ],
+  "cold_multiplayer_lobby_verified": true,
+  "cold_lobby_capture": {
+    "sha256": "4fd41f8c31fc5ce17164b42eddf07fa069df2fe3d5977cc19fd4695368286bf5",
+    "width": 1280,
+    "height": 720
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "Name": "ApexMaps.UI",
+  "Version": "0.1.0",
+  "LoadPriority": 9,
+  "Description": "Shared original loading artwork and minimaps for the five Apex map conversions."
+}

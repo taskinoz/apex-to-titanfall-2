@@ -1,3 +1,9 @@
+# ArenaOverflow 0.3.1 UI atlas hotfix
+
+The five maps share one UI atlas through ApexMaps.UI. Enable the included companion. World materials, geometry and collision are unchanged. See the repository's UI atlas validation receipt for final combined-install checks.
+
+## Previous release notes
+
 # Overflow 0.3.0 — Northstar preview
 
 Extract `ArenaOverflow` into `Titanfall2/R2Northstar/mods/`, enable it and restart.

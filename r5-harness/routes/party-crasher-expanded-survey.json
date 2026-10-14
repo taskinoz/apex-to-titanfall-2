@@ -1,0 +1,133 @@
+{
+  "title": "party-crasher expanded areas and combined-install atlas regression",
+  "source_map": "mp_rr_party_crasher",
+  "target_map": "mp_party_crasher",
+  "source_offset": [
+    0,
+    0,
+    0
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "view-0",
+      "origin": [
+        3385.96265,
+        -1591.92493,
+        2220.44629
+      ],
+      "angles": [
+        12.0,
+        97.7711029,
+        0.0
+      ],
+      "fov": 90,
+      "settle": 3
+    },
+    {
+      "name": "view-1",
+      "origin": [
+        -1949.47925,
+        -565.452087,
+        1366.40222
+      ],
+      "angles": [
+        0.0,
+        -4.39630127,
+        0.0
+      ],
+      "fov": 90,
+      "settle": 3
+    },
+    {
+      "name": "view-2",
+      "origin": [
+        416.486328,
+        2083.01709,
+        562.318604
+      ],
+      "angles": [
+        0.0,
+        -83.0055008,
+        0.0
+      ],
+      "fov": 90,
+      "settle": 3
+    },
+    {
+      "name": "south-courtyard",
+      "origin": [
+        1700,
+        -3000,
+        950
+      ],
+      "angles": [
+        0,
+        95,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "north-courtyard",
+      "origin": [
+        -2500,
+        3450,
+        980
+      ],
+      "angles": [
+        0,
+        -35,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "upper-signs",
+      "origin": [
+        -830,
+        4050,
+        2180
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "market-lane",
+      "origin": [
+        -100,
+        1750,
+        650
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "ship-overlook",
+      "origin": [
+        1200,
+        500,
+        2100
+      ],
+      "angles": [
+        15,
+        150,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

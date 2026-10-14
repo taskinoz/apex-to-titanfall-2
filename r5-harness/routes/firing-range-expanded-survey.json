@@ -1,0 +1,118 @@
+{
+  "title": "firing-range expanded areas and combined-install atlas regression",
+  "source_map": "mp_rr_canyonlands_staging",
+  "target_map": "mp_apex_firing_range",
+  "source_offset": [
+    32000,
+    -7000,
+    -28000
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "view-0",
+      "origin": [
+        2000.0,
+        -5000.0,
+        2200.0
+      ],
+      "angles": [
+        22.0,
+        90.0,
+        0.0
+      ],
+      "fov": 90.0,
+      "settle": 3
+    },
+    {
+      "name": "view-1",
+      "origin": [
+        500.0,
+        -1500.0,
+        -30.0
+      ],
+      "angles": [
+        8.0,
+        80.0,
+        0.0
+      ],
+      "fov": 90.0,
+      "settle": 3
+    },
+    {
+      "name": "weapon-lane",
+      "origin": [
+        1300,
+        -1000,
+        -100
+      ],
+      "angles": [
+        10,
+        30,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "upper-platform",
+      "origin": [
+        -3000,
+        2000,
+        760
+      ],
+      "angles": [
+        12,
+        -35,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "cave-exit",
+      "origin": [
+        -3300,
+        -900,
+        700
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "supply-bins",
+      "origin": [
+        500,
+        -2500,
+        -380
+      ],
+      "angles": [
+        10,
+        80,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "sea-and-rocks",
+      "origin": [
+        7000,
+        1600,
+        -900
+      ],
+      "angles": [
+        20,
+        20,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

@@ -5,7 +5,6 @@
   },
   "Postload": {
     "overflow_world.rpak": "mp_coliseum.rpak",
-    "overflow_presentation.rpak": "common.rpak",
-    "overflow_minimap.rpak": "common.rpak"
+    "overflow_presentation.rpak": "common.rpak"
   }
 }

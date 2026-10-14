@@ -1,0 +1,326 @@
+{
+  "images": [
+    {
+      "path": "loadscreens/mp_phase_runner_lobby",
+      "posX": 0,
+      "posY": 0,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_phase_runner",
+      "posX": 0,
+      "posY": 0,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_phase_runner_widescreen",
+      "posX": 0,
+      "posY": 0,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "overviews/mp_phase_runner",
+      "posX": 5120,
+      "posY": 0,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "loadscreens/mp_arena_composite",
+      "posX": 2560,
+      "posY": 0,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_arena_composite_widescreen",
+      "posX": 2560,
+      "posY": 0,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_arena_composite_lobby",
+      "posX": 2560,
+      "posY": 0,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "overviews/mp_arena_composite",
+      "posX": 6144,
+      "posY": 0,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "loadscreens/mp_apex_firing_range",
+      "posX": 0,
+      "posY": 1440,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_apex_firing_range_widescreen",
+      "posX": 0,
+      "posY": 1440,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_apex_firing_range_lobby",
+      "posX": 0,
+      "posY": 1440,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "overviews/mp_apex_firing_range",
+      "posX": 7168,
+      "posY": 0,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "loadscreens/mp_party_crasher",
+      "posX": 2560,
+      "posY": 1440,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_party_crasher_widescreen",
+      "posX": 2560,
+      "posY": 1440,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_party_crasher_lobby",
+      "posX": 2560,
+      "posY": 1440,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "overviews/mp_party_crasher",
+      "posX": 5120,
+      "posY": 1024,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "loadscreens/mp_overflow",
+      "posX": 0,
+      "posY": 2880,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_overflow_widescreen",
+      "posX": 0,
+      "posY": 2880,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "loadscreens/mp_overflow_lobby",
+      "posX": 0,
+      "posY": 2880,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "path": "overviews/mp_overflow",
+      "posX": 6144,
+      "posY": 1024,
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "provenance": {
+    "PhaseRunner": [
+      {
+        "source": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\presentation\\assets\\texture\\loadscreens\\mp_phase_runner.dds",
+        "sha256": "b0ea6d2f349a9fe63f85e8f1422cb02af7cfbd0ea03da2150fa9f6d43ed3a9ba",
+        "original_size": [
+          2560,
+          1440
+        ],
+        "position": [
+          0,
+          0
+        ],
+        "resized": false
+      },
+      {
+        "source": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\minimaps\\phase_runner_minimap\\assets\\texture\\overviews\\mp_phase_runner.dds",
+        "sha256": "64883e533be1183bad7b0ba8394a5b296066ef08717084de90511ee432da00ed",
+        "original_size": [
+          1024,
+          1024
+        ],
+        "position": [
+          5120,
+          0
+        ],
+        "resized": false
+      }
+    ],
+    "ArenaComposite": [
+      {
+        "source": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\composite\\presentation\\assets\\texture\\loadscreens\\mp_arena_composite.dds",
+        "sha256": "3cccd60fef66a77d4d68b5a51f5955f098ff6784614d0186c6bc0fb37801e18d",
+        "original_size": [
+          2560,
+          1440
+        ],
+        "position": [
+          2560,
+          0
+        ],
+        "resized": false
+      },
+      {
+        "source": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\minimaps\\drop_off_minimap\\assets\\texture\\overviews\\mp_arena_composite.dds",
+        "sha256": "4446a4885bdf6bbef5ac9188d5986a89a49c2eb68ac2b63cc2322c43d94da848",
+        "original_size": [
+          1024,
+          1024
+        ],
+        "position": [
+          6144,
+          0
+        ],
+        "resized": false
+      }
+    ],
+    "ApexFiringRange": [
+      {
+        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\firing-range\\presentation\\assets\\texture\\loadscreens\\mp_apex_firing_range.dds",
+        "sha256": "05719d9c62333b24a85da93d32c438046356fdf9f0e6fb43acad8026f59d2ee7",
+        "original_size": [
+          2560,
+          1440
+        ],
+        "position": [
+          0,
+          1440
+        ],
+        "resized": false
+      },
+      {
+        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\firing-range\\minimap\\assets\\texture\\overviews\\mp_apex_firing_range.dds",
+        "sha256": "ac38b07f54f70242660bb9877991541da00dce1f19644203f48271c5d555946a",
+        "original_size": [
+          1024,
+          1024
+        ],
+        "position": [
+          7168,
+          0
+        ],
+        "resized": false
+      }
+    ],
+    "ArenaPartyCrasher": [
+      {
+        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\party-crasher\\presentation\\assets\\texture\\loadscreens\\mp_party_crasher.dds",
+        "sha256": "98acb856dcae19f6cdab6f7a789e77e1e21ab084b95596462bb606b248e7696b",
+        "original_size": [
+          2560,
+          1440
+        ],
+        "position": [
+          2560,
+          1440
+        ],
+        "resized": false
+      },
+      {
+        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\party-crasher\\minimap\\assets\\texture\\overviews\\mp_party_crasher.dds",
+        "sha256": "a3235a9552f263dc2426f23b66be80b9ad051e075273da43702c3a6c211b51ef",
+        "original_size": [
+          1024,
+          1024
+        ],
+        "position": [
+          5120,
+          1024
+        ],
+        "resized": false
+      }
+    ],
+    "ArenaOverflow": [
+      {
+        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\overflow\\presentation\\assets\\texture\\loadscreens\\mp_overflow.dds",
+        "sha256": "aa8be211cf9e829497833516e2472dd28a5eb25e8347fb11acb3cec2aa8833fe",
+        "original_size": [
+          2560,
+          1440
+        ],
+        "position": [
+          0,
+          2880
+        ],
+        "resized": false
+      },
+      {
+        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\overflow\\minimap\\assets\\texture\\overviews\\mp_overflow.dds",
+        "sha256": "c5229bc223f2c84f667efd4b4bc9d4c1fe23d37a53a441f6e8d5f31b87db7188",
+        "original_size": [
+          1024,
+          1024
+        ],
+        "position": [
+          6144,
+          1024
+        ],
+        "resized": false
+      }
+    ]
+  },
+  "loading": {
+    "PhaseRunner": {
+      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\PhaseRunner\\phase_runner_presentation.rpak",
+      "sha256": "47dfe31612cd9eb10de1822942bd5440f05f741bf30d1c12937467a50e31bc07",
+      "native_materials_unchanged": true,
+      "ui_atlases": 0
+    },
+    "ArenaComposite": {
+      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ArenaComposite\\composite_presentation.rpak",
+      "sha256": "a9b6541f7fb460fe4025b24401f3d1da28002101f5cb97e182333a32813ad12a",
+      "native_materials_unchanged": true,
+      "ui_atlases": 0
+    },
+    "ApexFiringRange": {
+      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ApexFiringRange\\firing_range_presentation.rpak",
+      "sha256": "967fc48aded0aaf6d8af3699a55a3c17048d1de5a9503dda9dd5db3f812dba77",
+      "native_materials_unchanged": true,
+      "ui_atlases": 0
+    },
+    "ArenaPartyCrasher": {
+      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ArenaPartyCrasher\\party_crasher_presentation.rpak",
+      "sha256": "30bb89f4a09257e435d1325f30be0d8cf83d4e59eed2abfceea2627dfdcbd117",
+      "native_materials_unchanged": true,
+      "ui_atlases": 0
+    },
+    "ArenaOverflow": {
+      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ArenaOverflow\\overflow_presentation.rpak",
+      "sha256": "39e590eb1a0f9915be1aac1777a0c727bb2b5d26cc3b68ccbcf74e5b3743dc45",
+      "native_materials_unchanged": true,
+      "ui_atlases": 0
+    }
+  },
+  "shared_ui_atlases": 1,
+  "resident_dimensions": [
+    8192,
+    4608
+  ],
+  "shared_pack_sha256": "91c3e4b5b3be378bfdaebe905b0a0fefc11039e1cd26607c2e4ccd8e22e4a584",
+  "native_runtime_verified": true,
+  "native_validation": "docs/conversion/ui-atlas-lifetime-validation.json"
+}

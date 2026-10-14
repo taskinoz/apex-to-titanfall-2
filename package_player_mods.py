@@ -14,12 +14,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 RELEASES = {
     'PhaseRunner': {
-        'version': '1.6.0', 'map': 'mp_phase_runner', 'title': 'Phase Runner',
+        'version': '1.6.1', 'map': 'mp_phase_runner', 'title': 'Phase Runner',
         'screenshot': 'output/arena-fill/phase-runner/comparison/arena-overview-northstar.png',
         'notes': 'Restores 432 source scenery placements, including supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves the Apex minimap, displays, paint, safety areas, team spawns, CTF, Hardpoint, Fastball, lighting and catwalks. Terrain layers, Attrition AI/navigation, animated shaders and full multiplayer balance remain incomplete.',
     },
     'ArenaComposite': {
-        'version': '0.10.0', 'map': 'mp_arena_composite', 'title': 'Drop-Off',
+        'version': '0.10.1', 'map': 'mp_arena_composite', 'title': 'Drop-Off',
         'screenshot': 'output/arena-fill/drop-off/comparison/south-overview-northstar.png',
         'notes': 'Preview for Skirmish, Pilots vs Pilots and Free For All. Restores 366 source placements: utility conduits, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves the Apex minimap, Northstar banners, displays, paint, lighting, room closures, safety volumes and ziplines. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.',
     },
@@ -46,9 +46,12 @@ def player_readme(name):
     release = RELEASES[name]
     return f'''# {release['title']} {release['version']} for Northstar
 
-Close Titanfall 2. Extract `{name}` into `Titanfall2/R2Northstar/mods/`.
+Close Titanfall 2. Move the old map folder to a backup outside `mods/`, then
+extract `{name}` and `ApexMaps.UI` into `Titanfall2/R2Northstar/mods/`.
+Replace the old folder rather than merging; obsolete atlas files must be removed.
 Enable it in Northstar's mod menu and restart. Disable any older copy of the
-same map. Every player needs the same mod version.
+same map. Every player needs the same mod version. Keep ApexMaps.UI from the
+archive beside the map in mods/ and enable it; all five maps share that UI atlas.
 
 Launch from the console:
 
@@ -72,6 +75,9 @@ def write_player_zip(source, target):
     info = json.loads((source/'mod.json').read_text(encoding='utf-8-sig'))
     if info['Name'] != name or info['Version'] != RELEASES[name]['version']:
         raise ValueError('Unexpected mod identity/version')
+    from map_pack_lifetime import audit, audit_shared
+    audit_shared()
+    audit(source/'paks', RELEASES[name]['map'])
     screenshot = ROOT/RELEASES[name]['screenshot']
     if not screenshot.is_file():
         raise ValueError('Verified game screenshot is missing')
@@ -79,13 +85,21 @@ def write_player_zip(source, target):
         backup = ROOT/'output/distribution-backups'/(target.stem+'-with-reports.zip')
         backup.parent.mkdir(parents=True,exist_ok=True)
         if not backup.exists():
-            os.link(target,backup)
+            try:
+                os.link(target,backup)
+            except OSError:
+                shutil.copy2(target,backup)
     temp = target.with_suffix('.zip.packaging')
     expected = {}
     print('Packaging player mod:',name,flush=True)
     with zipfile.ZipFile(temp,'w',zipfile.ZIP_DEFLATED,compresslevel=6,allowZip64=True) as z:
         for path in runtime_files(source):
             archive_path = name+'/'+path.relative_to(source).as_posix()
+            z.write(path,archive_path); expected[archive_path] = digest(path)
+        shared = ROOT/'northstar/ApexMaps.UI'
+        for path in [shared/'mod.json', *sorted((shared/'paks').glob('*'))]:
+            if not path.is_file(): raise ValueError('Shared UI runtime file missing')
+            archive_path = 'ApexMaps.UI/'+path.relative_to(shared).as_posix()
             z.write(path,archive_path); expected[archive_path] = digest(path)
         text = player_readme(name).encode('utf-8')
         z.writestr(name+'/README.md',text)
@@ -118,7 +132,8 @@ def record_existing_releases():
         with zipfile.ZipFile(target) as z:
             members = z.namelist()
             if not all(p.startswith(name+'/mod/') or p.startswith(name+'/paks/')
-                       or p in {name+'/mod.json',name+'/README.md',name+'/screenshot.png'}
+                       or p in {name+'/mod.json',name+'/README.md',name+'/screenshot.png',
+                                'ApexMaps.UI/mod.json','ApexMaps.UI/paks/rpak.json','ApexMaps.UI/paks/apex_maps_ui.rpak'}
                        for p in members):
                 raise ValueError('Unexpected player archive contents')
         results[name] = dict(path=str(target.relative_to(ROOT)),bytes=target.stat().st_size,

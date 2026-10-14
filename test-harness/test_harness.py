@@ -10,6 +10,18 @@ from harness import Application, Broker, Handler, validate_job
 
 
 class HarnessTests(unittest.TestCase):
+    def test_engine_dialog_is_reported_before_readiness_timeout(self):
+        from harness import Controller
+        from unittest.mock import patch
+        c = Controller.__new__(Controller)
+        c.session = {'token':'private-test-value'}
+        c.request = lambda _: dict(game_running=True,game_pid=17,contexts={})
+        c.export_logs = lambda: None
+        with patch('harness.owned_engine_error', return_value='More than 20 UI atlases private-test-value') as diagnostic:
+            with self.assertRaisesRegex(RuntimeError, '20 UI atlases \\[session-token\\]'):
+                c.wait_map('mp_test', 1)
+            diagnostic.assert_called_once_with(17)
+
     def test_camera_moves_streaming_player_before_native_view_and_checks_result(self):
         from harness import Controller
         c = Controller.__new__(Controller)

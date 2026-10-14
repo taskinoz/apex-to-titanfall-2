@@ -14,7 +14,7 @@ def package():
     # Keep BSP material dependencies alive for the whole native map lifetime.
     # A map-regex pack is reloaded during repeated map setup and invalidates
     # cached materials; a raw Coliseum dependency preload stalls startup.
-    (MOD/'paks/rpak.json').write_text(json.dumps(dict(Aliases={MAP+'.rpak':'mp_coliseum.rpak',MAP+'_loadscreen.rpak':'composite_presentation.rpak'},Postload={'composite_world.rpak':'mp_coliseum.rpak','composite_presentation.rpak':'common.rpak'}),indent=2))
+    (MOD/'paks/rpak.json').write_text(json.dumps(dict(Aliases={MAP+'.rpak':'mp_coliseum.rpak',MAP+'_loadscreen.rpak':'composite_presentation.rpak'},Postload={'composite_world.rpak':'mp_coliseum.rpak'}),indent=2))
     scripts=MOD/'mod/scripts/vscripts';scripts.mkdir(parents=True,exist_ok=True)
     (scripts/'_arena_composite.nut').write_text('''untyped
 global function ArenaComposite_Init
@@ -52,5 +52,7 @@ bool function ArenaComposite_Where( entity player, array<string> args )
         text='"lang"\n{\n "Language" "'+language+'"\n "Tokens"\n {\n "mp_arena_composite" "Drop-Off"\n "mp_arena_composite_ALLCAPS" "DROP-OFF"\n "mp_arena_composite_CLASSIC_DESC" "An industrial arena converted for Titanfall 2."\n }\n}\n'
         (resources/('composite_'+language+'.txt')).write_text(text,encoding='utf-16')
     shutil.copy2(OUT/'source-build.json',MOD/'build-status.json')
+    from map_pack_lifetime import scope
+    scope(MOD/'paks', MAP)
     print('Staged',MOD)
 if __name__=='__main__':package()

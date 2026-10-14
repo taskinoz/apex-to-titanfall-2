@@ -113,7 +113,8 @@ def build():
         before = work/'rpak-before.json'
         if not before.exists(): shutil.copy2(mapping, before)
         value = json.loads(mapping.read_text())
-        value['Postload'][built.name] = 'common.rpak'
+        value.setdefault('Postload', {}).pop(built.name, None)
+        value[built.name] = '^'+config['map']+'$'
         mapping.write_text(json.dumps(value, indent=2)+'\n')
         report.update(config, image_sha256=digest(ROOT/config['image']),
                       overview_sha256=digest(dest), native_runtime_verified=False)

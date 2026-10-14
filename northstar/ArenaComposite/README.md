@@ -1,3 +1,9 @@
+# ArenaComposite 0.10.1 UI atlas hotfix
+
+The five maps share one UI atlas through ApexMaps.UI. Enable the included companion. World materials, geometry and collision are unchanged. See the repository's UI atlas validation receipt for final combined-install checks.
+
+## Previous release notes
+
 # Drop-Off 0.10.0 for Northstar
 
 Adds 366 original scenery placements. Uses 97.06% of the native world index capacity with no added dynamic entities. Existing minimaps, gameplay, collision exclusions and tunnel visibility are preserved. See SCENERY_FILL.md for measured budgets and validation. AI navigation remains incomplete.

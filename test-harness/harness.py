@@ -131,6 +131,39 @@ class Broker:
                 self.event('cancelled', job)
 
 
+def owned_engine_error(pid):
+    """Read an Engine Error dialog only from the controller's game process."""
+    if os.name != 'nt' or not isinstance(pid, int) or isinstance(pid, bool) or pid <= 0:
+        return None
+    import ctypes
+    api = ctypes.windll.user32
+    callback_type = ctypes.WINFUNCTYPE(ctypes.c_int, ctypes.c_void_p, ctypes.c_void_p)
+    api.GetWindowThreadProcessId.argtypes = [ctypes.c_void_p, ctypes.POINTER(ctypes.c_uint32)]
+    api.GetWindowTextW.argtypes = [ctypes.c_void_p, ctypes.c_wchar_p, ctypes.c_int]
+    api.EnumWindows.argtypes = [callback_type, ctypes.c_void_p]
+    api.EnumChildWindows.argtypes = [ctypes.c_void_p, callback_type, ctypes.c_void_p]
+    messages = []
+    def caption(handle):
+        buffer = ctypes.create_unicode_buffer(4096)
+        api.GetWindowTextW(handle, buffer, len(buffer))
+        return buffer.value
+    def child(handle, unused):
+        text = caption(handle).strip()
+        if text and text not in ('OK', 'Cancel'):
+            messages.append(text)
+        return 1
+    child_callback = callback_type(child)
+    def window(handle, unused):
+        owner = ctypes.c_uint32()
+        api.GetWindowThreadProcessId(handle, ctypes.byref(owner))
+        if owner.value == pid and caption(handle).strip() == 'Engine Error':
+            api.EnumChildWindows(handle, child_callback, None)
+        return 1
+    window_callback = callback_type(window)
+    api.EnumWindows(window_callback, None)
+    return '\n'.join(messages)[:2048] if messages else None
+
+
 def copy_file(source, dest):
     source, dest = Path(source), Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -157,7 +190,7 @@ def copy_tree(source, dest):
 def clear_managed_package(profile, name):
     """Remove stale files only from this harness's three reserved folders."""
     profile=Path(profile).resolve()
-    if name not in ('MapTest.Harness','PhaseRunner.Preview','MapTest.Extra'):
+    if name not in ('MapTest.Harness','PhaseRunner.Preview','MapTest.Extra') and not re.fullmatch(r'MapTest\.Extra[2-8]', name):
         raise ValueError('Unmanaged package folder')
     dest=profile/'mods'/name
     if dest.resolve().parent != (profile/'mods').resolve():
@@ -173,7 +206,10 @@ class Application:
             raise ValueError('A dedicated harness profile name is required')
         self.profile = self.game / profile
         self.port, self.token, self.package = port, token, Path(package).resolve()
-        self.extra_package = Path(extra_package).resolve() if extra_package else None
+        extras = extra_package if isinstance(extra_package, list) else ([extra_package] if extra_package else [])
+        if len(extras) > 8:
+            raise ValueError('At most eight extra packages are supported')
+        self.extra_packages = [Path(p).resolve() for p in extras]
         self.run = Path(run).resolve()
         self.broker = Broker(self.run)
         self.process = None
@@ -196,9 +232,9 @@ class Application:
             mod = json.loads((src / 'mod.json').read_text(encoding='utf-8-sig'))
             enabled[mod['Name']] = {mod['Version']: True}
         packages = [(ROOT / 'northstar/MapTest.Harness', 'MapTest.Harness'), (self.package, 'PhaseRunner.Preview')]
-        if self.extra_package:
-            packages.append((self.extra_package, 'MapTest.Extra'))
-        for name in ('MapTest.Harness','PhaseRunner.Preview','MapTest.Extra'):
+        for i, source_package in enumerate(self.extra_packages, 1):
+            packages.append((source_package, 'MapTest.Extra' + (str(i) if i > 1 else '')))
+        for name in ('MapTest.Harness','PhaseRunner.Preview','MapTest.Extra', *('MapTest.Extra'+str(i) for i in range(2,9))):
             clear_managed_package(self.profile,name)
         for src, name in packages:
             copy_tree(src, self.profile / 'mods' / name)
@@ -349,6 +385,10 @@ class Controller:
             s = self.request('/status')
             if not s['game_running']:
                 raise RuntimeError('The isolated game process exited')
+            engine_error = owned_engine_error(s.get('game_pid'))
+            if engine_error:
+                self.export_logs()
+                raise RuntimeError('Native Engine Error: ' + engine_error.replace(self.session['token'], '[session-token]'))
             contexts = s['contexts']
             now = time.time()
             if all(c in contexts and contexts[c].get('level') == name and contexts[c].get('ready')
@@ -478,7 +518,7 @@ def start(args):
         with (HOME/'output/controller.log').open('ab') as log:
             subprocess.Popen([sys.executable, str(Path(__file__).resolve()), 'serve', '--game', args.game,
                               '--profile', args.profile, '--port', str(args.port), '--package', args.package,
-                              *(['--extra-package', args.extra_package] if args.extra_package else [])],
+                              *[value for extra in (args.extra_package or []) for value in ('--extra-package', extra)]],
                              stdout=log, stderr=log, creationflags=subprocess.CREATE_NO_WINDOW)
         deadline = time.monotonic()+10
         while time.monotonic() < deadline:
@@ -506,7 +546,7 @@ def parser():
         s.add_argument('--profile', default='R2MapHarness')
         s.add_argument('--port', type=int, default=39131)
         s.add_argument('--package', default=str(ROOT/'northstar/PhaseRunner' if (ROOT/'northstar/PhaseRunner/mod.json').exists() else ROOT/'northstar/PhaseRunner.Preview'))
-        s.add_argument('--extra-package', help='Enable a second map package to test shared asset lifetime')
+        s.add_argument('--extra-package', action='append', help='Enable another map package; repeat to test a combined installation')
         if action == 'start':
             s.add_argument('--map', default='mp_phase_runner')
             s.add_argument('--mode', choices=MODES, default='tdm')

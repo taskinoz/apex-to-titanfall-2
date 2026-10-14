@@ -1,3 +1,23 @@
+---
+id: gm_01m4nfwwnxq30rgpr6w7490ka2
+title: Native Northstar map testing and clean releases
+description: Isolated native harness, screenshots, collision and reload validation, clean packages and rollback
+tags:
+  - titanfall-2
+  - apex-legends
+  - map-conversion
+  - testing
+  - harness
+  - northstar
+  - packaging
+project: apex-to-titanfall-2
+status: verified
+created: 2026-10-11T12:44:41.021Z
+updated: 2026-10-14T02:32:17.084Z
+created_by: agent:Codex
+updated_by: agent:Claude
+revision: 2
+---
 # Native Northstar map testing and clean releases
 
 The project has an opt-in Squirrel/Python harness for launch, map load, camera
@@ -82,3 +102,15 @@ remain unestablished.
 `package_player_mods.py`, `install_arena_repair_releases.py`, and map validation
 receipts. The HTTP API reference used by the harness is
 https://docs.northstar.tf/Modding/reference/northstar/httprequests/.
+
+## Five-map UI atlas hotfix and expanded comparisons — 14 October 2026
+
+The current hotfix versions are Phase Runner 1.6.1, Drop-Off 0.10.1, Firing Range/Party Crasher/Overflow 0.3.1, with shared ApexMaps.UI 0.1.0. A five-map owned installation reproduced the native dialog `Tried to load more than 20 assets of type "UI image atlas".` Isolated-map passes did not detect this shared pool failure. Native Engine Error dialogs can leave the process alive without a Northstar crash-log entry; the harness now checks only its owned game's Engine Error window and redacts its token before reporting the diagnostic.
+
+The accepted fix consolidates fifteen loading/lobby image aliases and five minimaps into one UI atlas, rather than relying on map filters to unload separate atlases. The individual loading packs keep their native material states, texture bindings and uberbuffers but no longer own uimg assets. Standalone minimap RPaks leave the runtime packages. Every clean map ZIP includes the same three-file ApexMaps.UI companion. Replace the old map folder rather than merging, move backups outside mods, update every installed conversion, and enable the shared companion once. Obsolete atlas files must not remain in the live mod folder.
+
+The final single-client process loaded all five maps, captured 25 area views, returned through postmatch to mp_lobby, loaded stock mp_coliseum and reloaded Firing Range with no script errors or native crash entries. A separate cold launch directly into mp_lobby also passed with all five maps and the companion installed. These checks do not establish multiplayer load, AI or stable frame rates. The previous repeated-mode-change/loadout failures remain separate and unresolved.
+
+Three expanded routes add five locations each to Firing Range, Party Crasher and Overflow: 23 matched R5R/Northstar pairs in total, including the eight earlier viewpoints. Active maps, camera positions, equal resolution and capture hashes are checked. Site snapshot 2026-10-14-ui-atlas-survey retains earlier snapshots unchanged. New views expose omitted Party Crasher banners/character advertisements and hologram differences, plus incomplete water/lava/atmospheric parity; they are recorded observations, not claims that this UI fix repaired those features.
+
+Evidence in the private conversion repo: docs/candidates/ui-atlas-lifetime-2026-10-14.md, docs/conversion/ui-atlas-lifetime-validation.json, shared-map-ui.json, build_shared_map_ui.py, map_pack_lifetime.py, capture_combined_map_regression.py, verify_combined_ui_lifecycle.py, publish_ui_atlas_surveys.py and site/ui-atlas-survey-findings.json.

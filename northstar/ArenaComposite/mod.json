@@ -1,6 +1,6 @@
 {
   "Name": "ArenaComposite",
-  "Version": "0.10.0",
+  "Version": "0.10.1",
   "LoadPriority": 10,
   "Description": "Drop-Off with native minimap, source display artwork, PBR and preserved collision.",
   "Scripts": [

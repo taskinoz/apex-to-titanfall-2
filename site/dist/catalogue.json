@@ -13,9 +13,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Adds 366 source placements: conduits, clamps, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves minimap, Northstar banners, displays, paint, lighting, safety volumes and ziplines. Some scenery and animated materials remain incomplete. Intro and evac are disabled.",
+      "notes": "Adds 366 source placements: conduits, clamps, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves minimap, Northstar banners, displays, paint, lighting, safety volumes and ziplines. Some scenery and animated materials remain incomplete. Intro and evac are disabled. The UI atlas hotfix shares loading artwork and minimaps through ApexMaps.UI; geometry and lighting are unchanged.",
       "download": null,
-      "version": "0.10.0",
+      "version": "0.10.1",
       "source_offset": [
         0,
         0,
@@ -1163,9 +1163,9 @@
         "Hardpoint",
         "Fastball"
       ],
-      "notes": "Adds 432 source scenery placements: supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves minimap, displays, paint, lighting, team modes and catwalks. AI navigation and some layered/animated materials remain incomplete.",
+      "notes": "Adds 432 source scenery placements: supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves minimap, displays, paint, lighting, team modes and catwalks. AI navigation and some layered/animated materials remain incomplete. The UI atlas hotfix shares loading artwork and minimaps through ApexMaps.UI; geometry and lighting are unchanged.",
       "download": null,
-      "version": "1.6.0",
+      "version": "1.6.1",
       "source_offset": [
         26000,
         19000,
@@ -2158,9 +2158,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.0 adds distance haze, restored source colours and native glowing lights while preserving the existing lava appearance and gameplay. Some animated effects and decorations remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds distance haze, restored source colours and native glowing lights while preserving the existing lava appearance and gameplay. Some animated effects and decorations remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null,
-      "version": "0.3.0",
+      "version": "0.3.1",
       "source_offset": [
         0,
         0,
@@ -2526,9 +2526,254 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-14-ui-atlas-survey",
+          "version": "0.3.1",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                -324.00824,
+                -6295.51123,
+                1393.36169
+              ],
+              "angles": [
+                15.0,
+                61.8894501,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/view-0-r5r.png",
+                "sha256": "a5f2212ccabba91d602c51207beaee8e22f15858aaf7470b6191214a0de3b34f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943774.43126
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/view-0-northstar.png",
+                "sha256": "6f9ce205f8b1ef1da5b73db4f1e52795ad46d3478a5d1b585be8ba9c9d075147",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942364.180085
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                4536.32324,
+                -4842.01514,
+                627.977661
+              ],
+              "angles": [
+                0.0,
+                168.955353,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/view-1-r5r.png",
+                "sha256": "bcbfd647b759ebcf6aec722769238c69d5b6d31e93f612a277e77fc9404409b2",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943809.3595948
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/view-1-northstar.png",
+                "sha256": "230444d6e3aa3486b1a296386b096b8b79fb8fce09cda92c2cb2cdeafd5a010e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942370.318794
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                -763.161804,
+                -5228.40234,
+                477.852356
+              ],
+              "angles": [
+                0.0,
+                124.9048,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/view-2-r5r.png",
+                "sha256": "dcc53026d290b6517634c6ac534b7ff0a088e3bb6fc32fd2b7a2003cca65a71c",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943844.4353034
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/view-2-northstar.png",
+                "sha256": "6dfff44f43706163f9d2d3b16b0b865ff4f68457a0e4bd316866410796a2cc44",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942376.5180523
+              }
+            },
+            {
+              "name": "east-entry",
+              "origin": [
+                4450,
+                -4100,
+                650
+              ],
+              "angles": [
+                0,
+                175,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "This enclosed viewpoint shows different native surface and lightmap responses. It is not an assertion of lighting parity."
+              ],
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/east-entry-r5r.png",
+                "sha256": "e653f40880b586cbd1fcc63688b814d0c3d526a96832f2423f6e207097b71707",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943879.400013
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/east-entry-northstar.png",
+                "sha256": "c3b1e526a745c512da0e4cd03139b74a2d8d76a31d2aa8a33dd061b333523630",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942384.0003827
+              }
+            },
+            {
+              "name": "west-entry",
+              "origin": [
+                -3600,
+                -4100,
+                650
+              ],
+              "angles": [
+                0,
+                5,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Both engines show a dark covered area at this camera position."
+              ],
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/west-entry-r5r.png",
+                "sha256": "c792359e78e386293ce750a4c58b16c63d493f8df851147e348c3d0a54d2246f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943914.4363942
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/west-entry-northstar.png",
+                "sha256": "077406c63119f2fb401e867828af76ad6ec1e6185b28185de1ac4f02cb75fbdd",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942391.1654515
+              }
+            },
+            {
+              "name": "central-bridge",
+              "origin": [
+                600,
+                -4500,
+                650
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Structural geometry is retained; source grading, animated glow and atmospheric effects remain incomplete."
+              ],
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/central-bridge-r5r.png",
+                "sha256": "992c668b0e7e00a567d45ed7076d895160ed81f9fb5706e3137032a0c2ccd970",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943949.322909
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/central-bridge-northstar.png",
+                "sha256": "44588423f3de3fa3a9e9e04eb257209fe6f5248b9ccf6410b073de36754a9ed1",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942398.3051848
+              }
+            },
+            {
+              "name": "lava-channel",
+              "origin": [
+                -500,
+                -2500,
+                800
+              ],
+              "angles": [
+                20,
+                -45,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The original lava animation and glow differ from the preserved native approximation."
+              ],
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/lava-channel-r5r.png",
+                "sha256": "838ed17e751140a827896ba1e5074112240b468fc36fae75e8391e35c468c647",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943984.348043
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/lava-channel-northstar.png",
+                "sha256": "5ae3e806c613e8b0cdc789e3ebcfd6263d0a8cbfa930013722620a8019e1822e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942405.5816035
+              }
+            },
+            {
+              "name": "north-platform",
+              "origin": [
+                0,
+                -1300,
+                1050
+              ],
+              "angles": [
+                15,
+                -90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "This broader angle exposes remaining source lighting, haze and material-layer differences."
+              ],
+              "r5r": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/north-platform-r5r.png",
+                "sha256": "880fd02776bf76a658fd9898de120fefd2c3cd8a2ae9283d3d39b7bbc86c3528",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791944019.4621084
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-14-ui-atlas-survey/north-platform-northstar.png",
+                "sha256": "36d14a0b17c694a7500bec546ea76d1c315d832d1f59fff738d8b2751278e8a5",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942412.7437472
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-14-water-fog-glow-final"
+      "latest": "2026-10-14-ui-atlas-survey"
     },
     {
       "id": "party-crasher",
@@ -2541,9 +2786,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.0 adds 14 source signs/screens and 283 small light fixtures, native glow, restored texture colours and distance haze. Existing lighting and gameplay remain. Animated billboards, some transparent effects and distant scenery are incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds 14 source signs/screens and 283 small light fixtures, native glow, restored texture colours and distance haze. Existing lighting and gameplay remain. Animated billboards, some transparent effects and distant scenery are incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null,
-      "version": "0.3.0",
+      "version": "0.3.1",
       "source_offset": [
         0,
         0,
@@ -2909,9 +3154,254 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-14-ui-atlas-survey",
+          "version": "0.3.1",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                3385.96265,
+                -1591.92493,
+                2220.44629
+              ],
+              "angles": [
+                12.0,
+                97.7711029,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/view-0-r5r.png",
+                "sha256": "e922c77e8ce44cccc3774882118d6dd1b51d856705dbbf88eb9b1516906405b8",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943444.4776735
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/view-0-northstar.png",
+                "sha256": "64746cab7959c944dbeb2bfaca03c3cd7ce430f64fdcd5a8ef34b79552ad36fc",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942237.8702514
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                -1949.47925,
+                -565.452087,
+                1366.40222
+              ],
+              "angles": [
+                0.0,
+                -4.39630127,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/view-1-r5r.png",
+                "sha256": "cfb3006ed69607c903c9a1e4e3835b151193659a11124900534e35b5cc7eb8ca",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943479.4523249
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/view-1-northstar.png",
+                "sha256": "1ab188b7b9a942a399fd583d6bb86f01eed89fa2badedafebea6a74a0199a693",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942244.1223779
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                416.486328,
+                2083.01709,
+                562.318604
+              ],
+              "angles": [
+                0.0,
+                -83.0055008,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/view-2-r5r.png",
+                "sha256": "ff65de4987f2dbcf9d73a96150ee670861fa1df76785ec3ff894d1ef4545f100",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943514.4649692
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/view-2-northstar.png",
+                "sha256": "fcad2e3eafe6a8679594cc64c6e3898580a822b5c9c95614fe185babdc253e32",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942250.2690787
+              }
+            },
+            {
+              "name": "south-courtyard",
+              "origin": [
+                1700,
+                -3000,
+                950
+              ],
+              "angles": [
+                0,
+                95,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Source advertisements and atmospheric glow remain richer than the native static adaptation."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/south-courtyard-r5r.png",
+                "sha256": "734b127fb52e33f60df4de0586dc398ea8fd86ee36105b9646af35f05369017b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943549.5101922
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/south-courtyard-northstar.png",
+                "sha256": "fe5f3ff0d4904d7fda62bd619c905d01bca3b07a31961e7206c2915a5f81f7bc",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942257.3462453
+              }
+            },
+            {
+              "name": "north-courtyard",
+              "origin": [
+                -2500,
+                3450,
+                980
+              ],
+              "angles": [
+                0,
+                -35,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Both engines use the same eye position. Animated advertisements and coloured atmospheric effects remain incomplete."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/north-courtyard-r5r.png",
+                "sha256": "b95df35aec9a512ba2dc2b7c0500d188c1eaa25a6da77c09af96fe871c152379",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943584.4143286
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/north-courtyard-northstar.png",
+                "sha256": "083aa0e4b2b4764e88319e812d612a0dd8675f97a4e6df71fa4272cbc8cb4b83",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942264.3159049
+              }
+            },
+            {
+              "name": "upper-signs",
+              "origin": [
+                -830,
+                4050,
+                2180
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The large banner and character advertisements in the Apex view are missing in the native view; recorded for further recovery."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/upper-signs-r5r.png",
+                "sha256": "526dca16fffdf894d2314b00ef9fbf38829c687df5d91a7cdfbcfc6b1ac415b6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943619.5272274
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/upper-signs-northstar.png",
+                "sha256": "e92c82159064fb71425cfb6be9802684311bfb72762b380a058f8b7233295a21",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942271.331819
+              }
+            },
+            {
+              "name": "market-lane",
+              "origin": [
+                -100,
+                1750,
+                650
+              ],
+              "angles": [
+                0,
+                0,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The source hologram differs substantially from the native static fallback. This effect is not repaired by the UI atlas hotfix."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/market-lane-r5r.png",
+                "sha256": "09b7a9d8d06ee6200db0826a01d0848784be22e71c6adde71c7adbffb5b83963",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943654.3337946
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/market-lane-northstar.png",
+                "sha256": "6aaaa2e5d2e37df465ca3c7e7a476f1abfada8772d05708b14812a7bccfc6690",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942278.4997604
+              }
+            },
+            {
+              "name": "ship-overlook",
+              "origin": [
+                1200,
+                500,
+                2100
+              ],
+              "angles": [
+                15,
+                150,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "The wider area shows remaining advertisement, distant scenery and lighting differences."
+              ],
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/ship-overlook-r5r.png",
+                "sha256": "6a0c64f3b3624d2b9ca57e66c62095cc2e6d0fdb75749128717e68495509a66e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943689.3078806
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-14-ui-atlas-survey/ship-overlook-northstar.png",
+                "sha256": "6e67255b8b6eb780347b2101ecf1af838084a740c07bda686ad6a0feb2417648",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942285.9042044
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-14-water-fog-glow-final"
+      "latest": "2026-10-14-ui-atlas-survey"
     },
     {
       "id": "firing-range",
@@ -2924,9 +3414,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.0 adds campaign-style moving water with a softer grey-blue colour, distance haze and restored source colours. Preserves the 20 supply bins and seven zipline routes. Exact Apex water reflections, distant scenery and training interactions remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds campaign-style moving water with a softer grey-blue colour, distance haze and restored source colours. Preserves the 20 supply bins and seven zipline routes. Exact Apex water reflections, distant scenery and training interactions remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null,
-      "version": "0.3.0",
+      "version": "0.3.1",
       "source_offset": [
         32000,
         -7000,
@@ -3180,9 +3670,226 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-14-ui-atlas-survey",
+          "version": "0.3.1",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                2000.0,
+                -5000.0,
+                2200.0
+              ],
+              "angles": [
+                22.0,
+                90.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/view-0-r5r.png",
+                "sha256": "8f983e2df931974d3e3ffd0377342efac72708103151f5b50324b06d7e8f2532",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943144.5241635
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/view-0-northstar.png",
+                "sha256": "b3f748c7c78c51cf6ffaaa8dc5656dd023565b608f635614e5bbb7b1f89f66b4",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942115.878183
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                500.0,
+                -1500.0,
+                -30.0
+              ],
+              "angles": [
+                8.0,
+                80.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/view-1-r5r.png",
+                "sha256": "f7aeabccc39e7087e9af2c9ddedbdd93eb455a18ebf86b7affc2461c2585a7c8",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943179.3069866
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/view-1-northstar.png",
+                "sha256": "7e988e3af7625a06ca1a8af90b18cc2c35a3e04a1c2e5231c1cb5aafd8a7bf2a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942122.107347
+              }
+            },
+            {
+              "name": "weapon-lane",
+              "origin": [
+                1300,
+                -1000,
+                -100
+              ],
+              "angles": [
+                10,
+                30,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Structural geometry and converted zipline routes are visible. Apex weapon stations, target interactions and some decorations remain absent."
+              ],
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/weapon-lane-r5r.png",
+                "sha256": "90269457559b96f4bde4786d20205c0b2fb5dbc388b8248c943341fee41c6325",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943214.2913408
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/weapon-lane-northstar.png",
+                "sha256": "c0de00ba270688d6fbfc269e39eb0de08e22dd04cb55e790e840e9c5cf26f160",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942129.4963024
+              }
+            },
+            {
+              "name": "upper-platform",
+              "origin": [
+                -3000,
+                2000,
+                760
+              ],
+              "angles": [
+                12,
+                -35,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "This wider angle exposes omitted target and flag decorations and remaining source terrain and lighting differences."
+              ],
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/upper-platform-r5r.png",
+                "sha256": "18e89e50d11138d461aaf7f2c288040b41b1b89ca48a8647d7a8bfa1605f3d42",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943249.275712
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/upper-platform-northstar.png",
+                "sha256": "64d153d579a35b74acef61ad1164e47e9a1ad6f1644a27ad00c1b8cf33750b35",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942136.8660748
+              }
+            },
+            {
+              "name": "cave-exit",
+              "origin": [
+                -3300,
+                -900,
+                700
+              ],
+              "angles": [
+                0,
+                0,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Layered terrain, grading and lighting remain approximations; the UI hotfix does not change these surfaces."
+              ],
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/cave-exit-r5r.png",
+                "sha256": "81c56d5c6c44bac0832e9d45dcfd6568811c1f6b4c72e71933c91c2e641c8583",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943284.4073653
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/cave-exit-northstar.png",
+                "sha256": "72707848fdf49a7ab0c78ef0667097271b0c856c2ac5a20adff94bf2f9918ede",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942144.2954063
+              }
+            },
+            {
+              "name": "supply-bins",
+              "origin": [
+                500,
+                -2500,
+                -380
+              ],
+              "angles": [
+                10,
+                80,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Native supply bins are baked closed scenery. Apex loot and training interactions are not supplied."
+              ],
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/supply-bins-r5r.png",
+                "sha256": "a8abacbb5f8de57951df8d456616fc14e3482c9efc3823934affd0f6f96d90b9",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943319.4094949
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/supply-bins-northstar.png",
+                "sha256": "445e6c4c9614a928f314829d0a6df8d4baafa60192b361e4ecd72fe8e4d5e95f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942151.4215202
+              }
+            },
+            {
+              "name": "sea-and-rocks",
+              "origin": [
+                7000,
+                1600,
+                -900
+              ],
+              "angles": [
+                20,
+                20,
+                0
+              ],
+              "fov": 90,
+              "findings": [
+                "Native water scrolls, but source reflections, wave appearance, refraction and volumetric haze remain incomplete."
+              ],
+              "r5r": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/sea-and-rocks-r5r.png",
+                "sha256": "1cd04fa705f4bd290900fe206f134d3f7aa69a8b9c432749595773f6f41b061c",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943354.3443081
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-14-ui-atlas-survey/sea-and-rocks-northstar.png",
+                "sha256": "149e6c79a829e4432c19e88c263992e155ee433c4f98543f718d028deaeeaab3",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791942159.0314968
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-14-water-fog-glow-final"
+      "latest": "2026-10-14-ui-atlas-survey"
     }
   ]
 }

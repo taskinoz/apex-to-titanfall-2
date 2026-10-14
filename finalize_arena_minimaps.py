@@ -35,7 +35,8 @@ def verify():
         assert all(current[path] == baseline[package][path] for path in unchanged), 'Existing runtime changed'
         mapping = json.loads((mod/'paks/rpak.json').read_text())
         before = json.loads((OUT/config['pack']/'rpak-before.json').read_text())
-        before['Postload'][config['pack']+'.rpak'] = 'common.rpak'
+        before.setdefault('Postload', {}).pop(config['pack']+'.rpak', None)
+        before[config['pack']+'.rpak'] = '^'+config['map']+'$'
         assert mapping == before, 'Unexpected loading configuration changes'
         pack = verify_pack(mod/'paks'/(config['pack']+'.rpak'), config)
         captures = json.loads((OUT/'runtime'/package/'captures.json').read_text())

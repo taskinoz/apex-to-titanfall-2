@@ -53,7 +53,7 @@ def build(ident):
     (out/'build.log').write_text(run.stdout+run.stderr);run.check_returncode();verify_pack(out/'build'/(pack+'.rpak'),config)
     mod=WORK/'candidates'/c['package'];shutil.copy2(out/'build'/(pack+'.rpak'),mod/'paks'/(pack+'.rpak'))
     target=mod/'mod/resource/overviews'/(c['target']+'.txt');target.parent.mkdir(parents=True,exist_ok=True);target.write_text(overview(config))
-    path=mod/'paks/rpak.json';mapping=json.loads(path.read_text());mapping['Postload'][pack+'.rpak']='common.rpak';path.write_text(json.dumps(mapping,indent=2))
+    path=mod/'paks/rpak.json';mapping=json.loads(path.read_text());mapping.setdefault('Postload',{}).pop(pack+'.rpak',None);mapping[pack+'.rpak']='^'+c['target']+'$';path.write_text(json.dumps(mapping,indent=2))
     (out/'minimap.json').write_text(json.dumps(dict(config=config,provenance=provenance,native_runtime_verified=False),indent=2))
     print(ident,'minimap',corner,scale,provenance['kind'],flush=True)
 

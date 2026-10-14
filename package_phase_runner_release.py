@@ -47,7 +47,9 @@ def build():
     for f in (PRESENTATION/'resource').iterdir():shutil.copy2(f,resource/f.name)
     paks=PACKAGE/'paks';shutil.copy2(PRESENTATION/'build/phase_runner_presentation.rpak',paks/'phase_runner_presentation.rpak')
     config=json.loads((paks/'rpak.json').read_text());config['Aliases']['mp_phase_runner_loadscreen.rpak']='phase_runner_presentation.rpak'
-    config['Postload']['phase_runner_presentation.rpak']='common.rpak';(paks/'rpak.json').write_text(json.dumps(config,indent=2))
+    config['Postload'].pop('phase_runner_presentation.rpak',None);(paks/'rpak.json').write_text(json.dumps(config,indent=2))
+    from map_pack_lifetime import scope
+    scope(paks, 'mp_phase_runner')
     script=PACKAGE/'mod/scripts/vscripts/_phase_runner_preview.nut';text=script.read_text();marker='\t\tthread PhaseRunnerPreview_TestStatus()\n'
     if marker not in text:raise ValueError('Runtime test hook missing')
     script.write_text(text.replace(marker,marker+'\t\tPhaseRunner_CatwalkChecks()\n')+custom)

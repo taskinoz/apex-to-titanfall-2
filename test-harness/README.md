@@ -64,6 +64,19 @@ Alternate installation or package:
 
 The game directory must contain `NorthstarLauncher.exe` and a working `R2Northstar` installation with the three core Northstar mods. The default Python runtime is the locally bundled Python; the wrapper falls back to `python` on PATH. Pillow is required for PNG conversion. Map names must be raw `mp_...` names available in that installation. A missing map or failed connection results in a timeout/error rather than a successful test.
 
+Repeat `--extra-package <directory>` to stage up to eight additional packages.
+This tests combined installations, including the native 20-asset UI image atlas
+limit. Reserved `MapTest.Extra` through `MapTest.Extra8` folders are replaced on
+each owned launch so old maps cannot shadow a new test.
+Run `build_shared_map_ui.py` after staging presentation/minimap candidates, then
+`map_pack_lifetime.py audit` before packaging. The five maps share the one
+`ApexMaps.UI` companion. Standalone minimap atlases and atlases embedded in
+presentation packs are rejected. World packs retain their native
+`mp_coliseum.rpak` dependency order; loading them before it gives fallback materials.
+`capture_combined_map_regression.py <package> --expanded` records the installed
+loading contracts and native images with all five maps plus the UI companion present. Capture checks are not a
+multiplayer, performance or AI certification.
+
 ## How control works
 
 The Python controller listens on `127.0.0.1:39131`. The Northstar Squirrel mod polls it independently from UI, client and server scripts. Commands are authenticated with a random per-session bearer token, delivered once and acknowledged by the appropriate script context. Timed-out queued commands are cancelled. There is no DLL plugin to build.

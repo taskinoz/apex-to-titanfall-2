@@ -1,3 +1,9 @@
+# ArenaPartyCrasher 0.3.1 UI atlas hotfix
+
+The five maps share one UI atlas through ApexMaps.UI. Enable the included companion. World materials, geometry and collision are unchanged. See the repository's UI atlas validation receipt for final combined-install checks.
+
+## Previous release notes
+
 # Party Crasher 0.3.0 — Northstar preview
 
 Extract `ArenaPartyCrasher` into `Titanfall2/R2Northstar/mods/`, enable it and restart.

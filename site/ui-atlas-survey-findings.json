@@ -1,0 +1,23 @@
+{
+  "firing-range": {
+    "weapon-lane": ["Structural geometry and converted zipline routes are visible. Apex weapon stations, target interactions and some decorations remain absent."],
+    "upper-platform": ["This wider angle exposes omitted target and flag decorations and remaining source terrain and lighting differences."],
+    "cave-exit": ["Layered terrain, grading and lighting remain approximations; the UI hotfix does not change these surfaces."],
+    "supply-bins": ["Native supply bins are baked closed scenery. Apex loot and training interactions are not supplied."],
+    "sea-and-rocks": ["Native water scrolls, but source reflections, wave appearance, refraction and volumetric haze remain incomplete."]
+  },
+  "party-crasher": {
+    "south-courtyard": ["Source advertisements and atmospheric glow remain richer than the native static adaptation."],
+    "north-courtyard": ["Both engines use the same eye position. Animated advertisements and coloured atmospheric effects remain incomplete."],
+    "upper-signs": ["The large banner and character advertisements in the Apex view are missing in the native view; recorded for further recovery."],
+    "market-lane": ["The source hologram differs substantially from the native static fallback. This effect is not repaired by the UI atlas hotfix."],
+    "ship-overlook": ["The wider area shows remaining advertisement, distant scenery and lighting differences."]
+  },
+  "overflow": {
+    "east-entry": ["This enclosed viewpoint shows different native surface and lightmap responses. It is not an assertion of lighting parity."],
+    "west-entry": ["Both engines show a dark covered area at this camera position."],
+    "central-bridge": ["Structural geometry is retained; source grading, animated glow and atmospheric effects remain incomplete."],
+    "lava-channel": ["The original lava animation and glow differ from the preserved native approximation."],
+    "north-platform": ["This broader angle exposes remaining source lighting, haze and material-layer differences."]
+  }
+}

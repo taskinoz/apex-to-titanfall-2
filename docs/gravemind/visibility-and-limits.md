@@ -1,3 +1,23 @@
+---
+id: gm_01m4nfvbskvsb60d8mw81t2qjd
+title: Titanfall map visibility, portals and measured limits
+description: Native padded index and draw batch limits; conservative visibility and failed selective portals
+tags:
+  - titanfall-2
+  - apex-legends
+  - map-conversion
+  - visibility
+  - portals
+  - engine-limits
+  - optimization
+project: apex-to-titanfall-2
+status: verified
+created: 2026-10-11T12:43:50.963Z
+updated: 2026-10-14T02:32:20.622Z
+created_by: agent:Codex
+updated_by: agent:Claude
+revision: 2
+---
 # Titanfall map visibility, portals and measured limits
 
 Scope: world-baked render path in the tested installed Titanfall 2 engine.
@@ -78,3 +98,11 @@ capacity or support for all Apex versions was established.
 `docs/composite/local-repairs-2026-10-07.md` / `validation.json`.
 The copied Composite engine-limit ledger's `current_release` is Phase Runner;
 use the 0.6.0 receipt for current Drop-Off usage.
+
+## Additional observed shared limit — 14 October 2026
+
+The installed Titanfall 2 engine rejects more than **20 UI image atlas assets** with an Engine Error dialog. This is a shared pool including stock assets and all installed mods, independent of BSP world-index capacity and of the number of images inside an atlas. The reproduced engine SHA-256 is 58eb1a1b44b30275bdd21368de264d856bc310d37d93a0f76f111f0026913487, with Northstar 1.31.13. Do not generalize this observation to other binaries or platforms without re-auditing.
+
+The five original conversions each had a presentation uimg and a minimap uimg. Their combined loading exceeded the pool. The accepted hotfix uses one shared uimg with twenty image lookups and an 8192×4608 resident BC7 sRGB texture. All five maps and both a cold multiplayer lobby and a postmatch/stock reload cycle passed on one client. This reduces custom atlas use to one; it does not change world geometry budgets, dynamic gameplay headroom or implement spatial texture streaming. Later map or billboard recovery must budget UI assets independently of world triangles.
+
+Evidence: docs/conversion/ui-atlas-lifetime-validation.json and docs/candidates/ui-atlas-lifetime-2026-10-14.md. Regex-only UI attempts were insufficient in the installed launcher, and loading world packs earlier caused fallback materials. Neither rejected candidate is counted as a success.
