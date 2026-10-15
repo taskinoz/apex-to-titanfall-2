@@ -1,0 +1,210 @@
+[
+  {
+    "name": "tunnel",
+    "capture": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261015-003008-66acbd\\screenshots\\repair-tunnel-9f8b7887.png",
+      "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_staging0011.tga",
+      "width": 1280,
+      "height": 720,
+      "sha256": "49f0f7f41fe1c7c285f81701d6927a1e9b2de8a5623f5a7df85752ce511669f7",
+      "captured": 1791984726.727147,
+      "map": "mp_rr_canyonlands_staging",
+      "camera": {
+        "origin": [
+          27046.510000000002,
+          -6920.22,
+          -27488.97
+        ],
+        "angles": [
+          21.79,
+          -179.38,
+          0.0
+        ],
+        "fov": 90
+      },
+      "state": {
+        "server": {
+          "map": "mp_rr_canyonlands_staging",
+          "context": "server",
+          "ready": 1,
+          "instance": "a5f00ea8c5a044dbbf662a871540b2e2"
+        },
+        "client": {
+          "map": "mp_rr_canyonlands_staging",
+          "context": "client",
+          "ready": 1,
+          "instance": "43a2a8b4693d4337ab8885981d7516d6",
+          "camera": 1,
+          "origin": [
+            27046.5098,
+            -6920.2202,
+            -27488.9707
+          ],
+          "angles": [
+            21.79,
+            -179.38,
+            0.0
+          ]
+        }
+      },
+      "generation": "2ac06db45bec4db4af7c017793dba224",
+      "engine": "r5r"
+    }
+  },
+  {
+    "name": "rib",
+    "capture": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261015-003008-66acbd\\screenshots\\repair-rib-6c13311d.png",
+      "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_staging0012.tga",
+      "width": 1280,
+      "height": 720,
+      "sha256": "10cccfada7e5bcea7ae4c857bd5e720ab73d07859b6e286607ebd4042813f382",
+      "captured": 1791984761.5632923,
+      "map": "mp_rr_canyonlands_staging",
+      "camera": {
+        "origin": [
+          29476.010000000002,
+          -4128.29,
+          -28453.02
+        ],
+        "angles": [
+          -19.92,
+          -38.85,
+          0.0
+        ],
+        "fov": 90
+      },
+      "state": {
+        "server": {
+          "map": "mp_rr_canyonlands_staging",
+          "context": "server",
+          "ready": 1,
+          "instance": "a5f00ea8c5a044dbbf662a871540b2e2"
+        },
+        "client": {
+          "map": "mp_rr_canyonlands_staging",
+          "context": "client",
+          "ready": 1,
+          "instance": "43a2a8b4693d4337ab8885981d7516d6",
+          "camera": 1,
+          "origin": [
+            29476.0098,
+            -4128.29,
+            -28453.0195
+          ],
+          "angles": [
+            -19.92,
+            -38.85,
+            0.0
+          ]
+        }
+      },
+      "generation": "2ac06db45bec4db4af7c017793dba224",
+      "engine": "r5r"
+    }
+  },
+  {
+    "name": "sand",
+    "capture": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261015-003008-66acbd\\screenshots\\repair-sand-b18fd819.png",
+      "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_staging0013.tga",
+      "width": 1280,
+      "height": 720,
+      "sha256": "e369467636468e67245cb06c6d5a88b9ea1d21c7bd1db305224829de9d3a1e4d",
+      "captured": 1791984796.5403936,
+      "map": "mp_rr_canyonlands_staging",
+      "camera": {
+        "origin": [
+          30656.21,
+          -6498.13,
+          -29102.97
+        ],
+        "angles": [
+          29.67,
+          -20.41,
+          0.0
+        ],
+        "fov": 90
+      },
+      "state": {
+        "server": {
+          "map": "mp_rr_canyonlands_staging",
+          "context": "server",
+          "ready": 1,
+          "instance": "a5f00ea8c5a044dbbf662a871540b2e2"
+        },
+        "client": {
+          "map": "mp_rr_canyonlands_staging",
+          "context": "client",
+          "ready": 1,
+          "instance": "43a2a8b4693d4337ab8885981d7516d6",
+          "camera": 1,
+          "origin": [
+            30656.2109,
+            -6498.1299,
+            -29102.9707
+          ],
+          "angles": [
+            29.67,
+            -20.41,
+            0.0
+          ]
+        }
+      },
+      "generation": "2ac06db45bec4db4af7c017793dba224",
+      "engine": "r5r"
+    }
+  },
+  {
+    "name": "rocks",
+    "capture": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261015-003008-66acbd\\screenshots\\repair-rocks-0e34486a.png",
+      "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_staging0014.tga",
+      "width": 1280,
+      "height": 720,
+      "sha256": "4d6ffe289eec0bd4876a8e18b215b51c3be65cc58ef159cda673902a61ff6b2f",
+      "captured": 1791984831.626237,
+      "map": "mp_rr_canyonlands_staging",
+      "camera": {
+        "origin": [
+          32625.63,
+          -6534.52,
+          -28951.44
+        ],
+        "angles": [
+          1.0,
+          41.64,
+          0.0
+        ],
+        "fov": 90
+      },
+      "state": {
+        "server": {
+          "map": "mp_rr_canyonlands_staging",
+          "context": "server",
+          "ready": 1,
+          "instance": "a5f00ea8c5a044dbbf662a871540b2e2"
+        },
+        "client": {
+          "map": "mp_rr_canyonlands_staging",
+          "context": "client",
+          "ready": 1,
+          "instance": "43a2a8b4693d4337ab8885981d7516d6",
+          "camera": 1,
+          "origin": [
+            32625.6309,
+            -6534.52,
+            -28951.4395
+          ],
+          "angles": [
+            1.0,
+            41.64,
+            0.0
+          ]
+        }
+      },
+      "generation": "2ac06db45bec4db4af7c017793dba224",
+      "engine": "r5r"
+    }
+  }
+]

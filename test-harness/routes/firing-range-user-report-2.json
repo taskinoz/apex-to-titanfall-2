@@ -1,0 +1,96 @@
+{
+  "map": "mp_apex_firing_range",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "q34-invisible-prop",
+      "origin": [
+        -1125.7,
+        2784.01,
+        -728.42
+      ],
+      "angles": [
+        68.38,
+        78.82,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q36-rock-gap",
+      "origin": [
+        -416.8,
+        4561.69,
+        -803.77
+      ],
+      "angles": [
+        -51.51,
+        38.06,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q37-invisible-collision",
+      "origin": [
+        -1671.83,
+        4322.3,
+        -621.73
+      ],
+      "angles": [
+        6.18,
+        167.78,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q38-invisible-targets",
+      "origin": [
+        108.92,
+        337.75,
+        -967.97
+      ],
+      "angles": [
+        70.06,
+        -80.28,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q39-invisible-collision-2",
+      "origin": [
+        -1870.62,
+        -2129.8,
+        -584.34
+      ],
+      "angles": [
+        28.45,
+        -178.58,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

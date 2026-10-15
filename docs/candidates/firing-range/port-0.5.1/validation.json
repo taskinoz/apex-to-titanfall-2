@@ -1,0 +1,16 @@
+{
+  "bsp_sha256": "7a5d8cdd03d5faeba5501d449a82b1a058bb39313fef83123852917551f8afdd",
+  "binary_checks": 147,
+  "placements_matched": 329,
+  "spawns_moved": 23,
+  "clip_triangles_removed": 313,
+  "drawn_surface_contacts": "38/40",
+  "report_positions_clean": "11/12",
+  "invisible_collision_fraction": 0.0278,
+  "both_teams_verified": true,
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "firing_reload": true,
+  "single_client_only": true,
+  "ai_navigation_added": false
+}

@@ -30,6 +30,9 @@ class ApexMaterials(NativePak):
             for a in self.assets if a['type']=='matl' and a['version']==15}
 
     def constants(self, name):
+        if name not in self.materials:
+            # Exported folder names are lower case; pack strings keep authored case (e.g. _BM_01).
+            name=next(k for k in self.materials if k.lower()==name.lower())
         a=self.materials[name];d=self.data;h=self.address(a['header'])
         s=self.index[struct.unpack_from('<Q',d,h+88)[0]]
         if s['version']!=11:raise ValueError('Unsupported source shader set')

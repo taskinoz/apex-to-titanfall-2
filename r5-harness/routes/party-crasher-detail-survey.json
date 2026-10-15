@@ -1,0 +1,73 @@
+{
+  "title": "party-crasher 0.5.0 flex-screen panels, signs and banners",
+  "source_map": "mp_rr_party_crasher",
+  "target_map": "mp_party_crasher",
+  "source_offset": [
+    0,
+    0,
+    0
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "south-banners",
+      "origin": [
+        200,
+        -3200,
+        1000
+      ],
+      "angles": [
+        -8,
+        -95,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "east-screens",
+      "origin": [
+        1650,
+        -2850,
+        940
+      ],
+      "angles": [
+        4,
+        -100,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "north-screens",
+      "origin": [
+        -2350,
+        3250,
+        940
+      ],
+      "angles": [
+        4,
+        115,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "upper-signs",
+      "origin": [
+        -830,
+        4050,
+        2180
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

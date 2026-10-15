@@ -1,0 +1,141 @@
+{
+  "map": "mp_party_crasher",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "p22-oob-geo",
+      "origin": [
+        3292.57,
+        -2570.71,
+        539.89
+      ],
+      "angles": [
+        67.32,
+        -121.06,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p23-orb",
+      "origin": [
+        1372.9,
+        273.74,
+        663.61
+      ],
+      "angles": [
+        11.8,
+        -160.52,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p24-z-fighting",
+      "origin": [
+        1192.59,
+        688.25,
+        614.03
+      ],
+      "angles": [
+        -2.79,
+        99.36,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p25-missing-texture",
+      "origin": [
+        -414.69,
+        -985.29,
+        1281.41
+      ],
+      "angles": [
+        22.41,
+        160.95,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p26-textures-collision",
+      "origin": [
+        4356.0,
+        -2392.37,
+        623.29
+      ],
+      "angles": [
+        -1.72,
+        -64.09,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p27-rock-hole",
+      "origin": [
+        -1629.94,
+        -3067.83,
+        1428.01
+      ],
+      "angles": [
+        11.63,
+        151.6,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p28-banner-attachment",
+      "origin": [
+        -3905.1,
+        2038.86,
+        2726.82
+      ],
+      "angles": [
+        -20.48,
+        175.19,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p29-missing-model",
+      "origin": [
+        -1674.08,
+        4645.57,
+        623.29
+      ],
+      "angles": [
+        -3.49,
+        91.52,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

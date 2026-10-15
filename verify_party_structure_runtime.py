@@ -12,8 +12,8 @@ from harness import Controller
 from verify_new_arena_runtime import mounted_bsp, mounted_material_pack
 
 
-def run():
-    out=folder('party-crasher')/'structure-recovery'
+def run(project='structure-recovery'):
+    out=folder('party-crasher')/project
     c=Controller()
     # Restore original trigger entities after the explicitly marked camera run.
     c.load('mp_party_crasher','ps',180)
@@ -31,7 +31,11 @@ def run():
         if result['data']['team']!=team:
             raise ValueError('Incorrect spawn team')
         teams.append(result)
-    plan=json.loads((out/'plan.json').read_text());a=np.load(out/'addition.npz');physical=a['collision'];a.close()
+    # Surface-only rounds add no colliders and have no placement plan.
+    if (out/'plan.json').exists():
+        plan=json.loads((out/'plan.json').read_text());a=np.load(out/'addition.npz');physical=a['collision'];a.close()
+    else:
+        plan=dict(placements=[]);physical=np.empty((0,3,3),'f4')
     cursor=0;seen=collections.Counter();contacts=[]
     for prop in plan['placements']:
         n=prop['collision_triangles'];faces=physical[cursor:cursor+n];cursor+=n
@@ -78,4 +82,4 @@ def run():
     print('Passed',len(contacts),'source-collider contacts, both teams, postmatch lobby, stock reload and Party Crasher reload',flush=True)
 
 
-if __name__=='__main__':run()
+if __name__=='__main__':run(*sys.argv[1:])

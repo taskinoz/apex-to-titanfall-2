@@ -1,0 +1,606 @@
+{
+  "map": "mp_party_crasher",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "r01-hole",
+      "origin": [
+        -1797.95,
+        -3005.86,
+        1344.33
+      ],
+      "angles": [
+        0.53,
+        134.14,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r02-missing-textures",
+      "origin": [
+        768.63,
+        -3856.38,
+        623.27
+      ],
+      "angles": [
+        -6.51,
+        -109.46,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r03-z-fighting",
+      "origin": [
+        998.75,
+        -3761.31,
+        623.28
+      ],
+      "angles": [
+        27.64,
+        97.77,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r04-big-grey",
+      "origin": [
+        -1159.74,
+        2170.73,
+        1280.19
+      ],
+      "angles": [
+        44.43,
+        -86.6,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r05-texture",
+      "origin": [
+        -1903.6,
+        4769.9,
+        623.29
+      ],
+      "angles": [
+        -2.84,
+        102.3,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r06-invisible-prop",
+      "origin": [
+        2915.24,
+        1655.21,
+        980.03
+      ],
+      "angles": [
+        30.55,
+        -59.36,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r07-texture",
+      "origin": [
+        4499.42,
+        -2188.94,
+        623.29
+      ],
+      "angles": [
+        -7.4,
+        -59.49,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r08-texture-collision",
+      "origin": [
+        4046.71,
+        -2775.41,
+        623.29
+      ],
+      "angles": [
+        2.15,
+        -71.86,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r09-missing-prop",
+      "origin": [
+        -3231.28,
+        -1311.11,
+        1344.33
+      ],
+      "angles": [
+        29.24,
+        -164.21,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r10-missing-object",
+      "origin": [
+        -3563.52,
+        1768.63,
+        2491.25
+      ],
+      "angles": [
+        -24.78,
+        157.81,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r11-flat-texture",
+      "origin": [
+        -3805.53,
+        984.78,
+        2322.56
+      ],
+      "angles": [
+        -7.61,
+        -148.4,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r12-z-fighting",
+      "origin": [
+        1284.99,
+        -823.09,
+        937.57
+      ],
+      "angles": [
+        51.61,
+        -135.67,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r13-missing-object-collision",
+      "origin": [
+        -220.35,
+        -1184.82,
+        1362.13
+      ],
+      "angles": [
+        27.44,
+        162.55,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "r14-z-fighting",
+      "origin": [
+        -871.4,
+        1991.1,
+        992.5
+      ],
+      "angles": [
+        52.36,
+        77.83,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p22-oob-geo",
+      "origin": [
+        3292.57,
+        -2570.71,
+        539.89
+      ],
+      "angles": [
+        67.32,
+        -121.06,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p23-orb",
+      "origin": [
+        1372.9,
+        273.74,
+        663.61
+      ],
+      "angles": [
+        11.8,
+        -160.52,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p24-z-fighting",
+      "origin": [
+        1192.59,
+        688.25,
+        614.03
+      ],
+      "angles": [
+        -2.79,
+        99.36,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p25-missing-texture",
+      "origin": [
+        -414.69,
+        -985.29,
+        1281.41
+      ],
+      "angles": [
+        22.41,
+        160.95,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p26-textures-collision",
+      "origin": [
+        4356.0,
+        -2392.37,
+        623.29
+      ],
+      "angles": [
+        -1.72,
+        -64.09,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p27-rock-hole",
+      "origin": [
+        -1629.94,
+        -3067.83,
+        1428.01
+      ],
+      "angles": [
+        11.63,
+        151.6,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p28-banner-attachment",
+      "origin": [
+        -3905.1,
+        2038.86,
+        2726.82
+      ],
+      "angles": [
+        -20.48,
+        175.19,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p29-missing-model",
+      "origin": [
+        -1674.08,
+        4645.57,
+        623.29
+      ],
+      "angles": [
+        -3.49,
+        91.52,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "d-south-banners",
+      "origin": [
+        200,
+        -3200,
+        1000
+      ],
+      "angles": [
+        -8,
+        -95,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "d-east-screens",
+      "origin": [
+        1650,
+        -2850,
+        940
+      ],
+      "angles": [
+        4,
+        -100,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "d-north-screens",
+      "origin": [
+        -2350,
+        3250,
+        940
+      ],
+      "angles": [
+        4,
+        115,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "d-upper-signs",
+      "origin": [
+        -830,
+        4050,
+        2180
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-view-0",
+      "origin": [
+        3385.96265,
+        -1591.92493,
+        2220.44629
+      ],
+      "angles": [
+        12.0,
+        97.7711029,
+        0.0
+      ],
+      "fov": 90,
+      "settle": 3
+    },
+    {
+      "name": "s-view-1",
+      "origin": [
+        -1949.47925,
+        -565.452087,
+        1366.40222
+      ],
+      "angles": [
+        0.0,
+        -4.39630127,
+        0.0
+      ],
+      "fov": 90,
+      "settle": 3
+    },
+    {
+      "name": "s-view-2",
+      "origin": [
+        416.486328,
+        2083.01709,
+        562.318604
+      ],
+      "angles": [
+        0.0,
+        -83.0055008,
+        0.0
+      ],
+      "fov": 90,
+      "settle": 3
+    },
+    {
+      "name": "s-south-courtyard",
+      "origin": [
+        1700,
+        -3000,
+        950
+      ],
+      "angles": [
+        0,
+        95,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-north-courtyard",
+      "origin": [
+        -2500,
+        3450,
+        980
+      ],
+      "angles": [
+        0,
+        -35,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-upper-signs",
+      "origin": [
+        -830,
+        4050,
+        2180
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-market-lane",
+      "origin": [
+        -100,
+        1750,
+        650
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-ship-overlook",
+      "origin": [
+        1200,
+        500,
+        2100
+      ],
+      "angles": [
+        15,
+        150,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-spawn-right",
+      "origin": [
+        -2537.5,
+        3894.8,
+        651
+      ],
+      "angles": [
+        0,
+        -90,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-opposite-spawn-right",
+      "origin": [
+        1674.8,
+        -3382,
+        651
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-west-edge",
+      "origin": [
+        -3200,
+        2500,
+        1400
+      ],
+      "angles": [
+        5,
+        180,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-east-edge",
+      "origin": [
+        4700,
+        -1600,
+        2600
+      ],
+      "angles": [
+        8,
+        170,
+        0
+      ],
+      "fov": 90,
+      "settle": 2
+    },
+    {
+      "name": "s-south-facade",
+      "origin": [
+        -200,
+        -5800,
+        1800
+      ],
+      "angles": [
+        0,
+        80,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

@@ -1,12 +1,14 @@
 {
-  "version": "0.3.0",
+  "version": "0.5.1",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
   "full_release_ready": false,
-  "bsp_sha256": "ec8d188dc56835749956488bb175dfa8cbfbe2a460d0e057076f64665f354c6b",
+  "bsp_sha256": "7a5d8cdd03d5faeba5501d449a82b1a058bb39313fef83123852917551f8afdd",
+  "render_fraction": 0.9762935638427734,
+  "new_placements": 53,
   "validated_modes": [
-    "ps",
-    "ffa"
-  ]
+    "ps"
+  ],
+  "validation": "Single-client pilot spawns, landing-pad surface contacts and reloads; FFA definitions unchanged"
 }

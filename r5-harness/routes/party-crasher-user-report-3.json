@@ -1,0 +1,88 @@
+{
+  "title": "party-crasher-user-report-3",
+  "source_map": "mp_rr_party_crasher",
+  "target_map": "mp_party_crasher",
+  "source_offset": [
+    0,
+    0,
+    0
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "q30-missing-collision",
+      "origin": [
+        3966.04,
+        -2717.39,
+        623.29
+      ],
+      "angles": [
+        -5.73,
+        -56.45,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q31-missing-texture",
+      "origin": [
+        3925.1,
+        -2625.73,
+        623.29
+      ],
+      "angles": [
+        33.06,
+        86.2,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q32-missing-prop",
+      "origin": [
+        862.29,
+        3003.42,
+        1081.92
+      ],
+      "angles": [
+        32.36,
+        -179.91,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q33-invisible-object",
+      "origin": [
+        2033.34,
+        2085.37,
+        980.03
+      ],
+      "angles": [
+        35.44,
+        -66.79,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

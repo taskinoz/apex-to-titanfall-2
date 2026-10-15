@@ -1,0 +1,16 @@
+{
+  "bsp_sha256": "d4685e35008cddb43259b804f7010d55c302fc5dfe6d1ef4c60b304deb50b30d",
+  "material_pack_sha256": "2a3ea31124103762c18e55ce294642ee52be827b4e0f71ab537ab251a141942e",
+  "binary_checks": 2279,
+  "native_captures": 14,
+  "both_teams_verified": true,
+  "spawn_clearance_and_support": true,
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "party_reload": true,
+  "script_errors": [],
+  "native_crashes": [],
+  "single_client_only": true,
+  "safety_triggers_unchanged": true,
+  "ai_navigation_added": false
+}

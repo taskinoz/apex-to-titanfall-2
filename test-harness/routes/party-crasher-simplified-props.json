@@ -1,0 +1,141 @@
+{
+  "map": "mp_party_crasher",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "s-wires-console-a-0",
+      "origin": [
+        1639.4,
+        -3868.7,
+        850
+      ],
+      "angles": [
+        18.43,
+        -67.03,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-wires-console-a-1",
+      "origin": [
+        1463.8,
+        -3454.3,
+        850
+      ],
+      "angles": [
+        9.46,
+        -67.03,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-wires-console-b-0",
+      "origin": [
+        -2976.1,
+        4109.5,
+        850
+      ],
+      "angles": [
+        18.43,
+        125.91,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-wires-console-b-1",
+      "origin": [
+        -2712.1,
+        3745.1,
+        850
+      ],
+      "angles": [
+        9.46,
+        125.91,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-signage-a-0",
+      "origin": [
+        1038.3,
+        -1566.0,
+        857
+      ],
+      "angles": [
+        18.43,
+        -56.45,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-signage-a-1",
+      "origin": [
+        789.6,
+        -1190.9,
+        857
+      ],
+      "angles": [
+        9.46,
+        -56.45,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-signage-b-0",
+      "origin": [
+        -1257.9,
+        2426.5,
+        857
+      ],
+      "angles": [
+        18.43,
+        117.4,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "s-signage-b-1",
+      "origin": [
+        -1050.8,
+        2027.0,
+        857
+      ],
+      "angles": [
+        9.46,
+        117.4,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

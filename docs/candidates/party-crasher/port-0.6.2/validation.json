@@ -1,0 +1,40 @@
+{
+  "bsp_sha256": "98116bb9ffb57e316ebf24e926bb57c9132fc8e5a3ef18bfc4cd26db4ee1e879",
+  "material_pack_sha256": "13823d19e7679122d548487e0807911979530540a008cf97a70717f321cb4b51",
+  "binary_checks": 2356,
+  "render_fraction": 0.9771347045898438,
+  "restored_placements": 22,
+  "simplified_placements": 14,
+  "freed_triangles": 16900,
+  "added_triangles": 30183,
+  "categories": {
+    "simplified": 14,
+    "q39 flower planter": 1,
+    "q37 search light": 1,
+    "q35 search light": 1,
+    "q34 cafe table": 1,
+    "q34 napkin holder": 1,
+    "q34 stool": 1,
+    "q34 bowl": 1,
+    "q34 glass": 1,
+    "q36 rubble": 3,
+    "q39 speaker": 1,
+    "cafe": 10
+  },
+  "foam_opacity_scale": 0.3,
+  "atlas_panel_source_pixels": [
+    1266,
+    749,
+    2047,
+    1180
+  ],
+  "source_collider_contacts": 10,
+  "drawn_surface_contacts": "19/19",
+  "report_positions_clean": "7/7",
+  "both_teams_verified": true,
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "party_reload": true,
+  "single_client_only": true,
+  "ai_navigation_added": false
+}

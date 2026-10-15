@@ -13,9 +13,11 @@ from build_center_detail import active
 from package_player_mods import digest
 
 
-def verify():
+def verify(version='0.4.0', project='structure-recovery', categories=None):
+    """Audit one append round against the snapshot taken immediately before it."""
     out = folder('party-crasher')
-    backup = out/'before-0.4.0'
+    backup = out/('before-'+version)
+    categories = categories or {'facade':168,'roof-vent':42,'roof-solar':128,'edge-rock':42}
     old = read_lumps(backup/'mp_party_crasher.bsp', tuple(range(128)))
     new = read_lumps(out/'mp_party_crasher.bsp', tuple(range(128)))
     checks = []
@@ -55,12 +57,11 @@ def verify():
             check(before.material(a)==after.material(assets[a['guid']]),
                   'Original material/shader bindings/uber buffer identical: '+hex(a['guid']))
     scene = json.loads((out/'scene.json').read_text())
-    plan = json.loads((out/'structure-recovery/plan.json').read_text())
+    plan = json.loads((out/project/'plan.json').read_text())
     check(len({p['index'] for p in scene['placements']})==len(scene['placements']),
           'Unique source placement ownership')
     check(sum(scene['materials'].values())==scene['triangles'], 'Canonical material counts cover full scene')
-    check(plan['categories']=={'facade':168,'roof-vent':42,'roof-solar':128,'edge-rock':42},
-          'All approved facade/roof/boundary groups recovered')
+    check(plan['categories']==categories, 'All approved recovery groups recovered')
     oldowners={p['index'] for p in json.loads((backup/'physics.json').read_text())['owners'] if 'index' in p}
     for p in plan['placements']:
         check(p['origin']==p['original_apex_origin'], 'Exact source origin: '+str(p['index']))
@@ -81,7 +82,7 @@ def verify():
     result=dict(checks=len(checks),passed=checks,budget=budget,visibility=visibility,
                 bsp_sha256=digest(out/'mp_party_crasher.bsp'),added_placements=plan['added_props'],
                 native_runtime_verified=False)
-    (out/'structure-recovery/binary-validation.json').write_text(json.dumps(result,indent=2))
+    (out/project/'binary-validation.json').write_text(json.dumps(result,indent=2))
     print('Passed',len(checks),'checks; world occupancy',round(budget['native_padded_indices']/budget['world_index_capacity']*100,3),'%')
     return result
 

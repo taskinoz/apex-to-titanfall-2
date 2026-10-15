@@ -190,9 +190,13 @@ def append(bake_base=None,index_fraction=.9,sun_executable=None,sun_direction=No
     oldjobs=np.zeros(len(oldtri),JOB);oldjobs['uv']=-10
     np.concatenate((oldtri,ordered[:,:,:3])).astype('<f4').tofile(WORK/'bake-triangles.bin')
     np.concatenate((oldjobs,jobs)).tofile(WORK/'bake-jobs.bin');np.concatenate((oldcast,casts)).tofile(WORK/'bake-casters.bin')
+    # The retained bakers were linked against this MinGW runtime. Git's own
+    # mingw64 libstdc++ on PATH fails to load them (0xC0000139).
+    env=dict(os.environ);mingw=Path('C:/ProgramData/mingw64/mingw64/bin')
+    if mingw.is_dir():env['PATH']=str(mingw)+os.pathsep+env.get('PATH','')
     for exe,args in [(sun_executable or 'bake_phase_environment.exe',[WORK/'bake-triangles.bin',WORK/'bake-jobs.bin',WORK/'sun.bin',2048,2048,1,WORK/'bake-casters.bin',*(sun_direction or [])]),
                      ('bake_interior_lighting.exe',[WORK/'bake-triangles.bin',WORK/'bake-jobs.bin',OUT/'fixtures.bin',WORK/'local.bin',2048,2048,1,WORK/'bake-casters.bin'])]:
-        subprocess.run([str(ROOT/'tools'/exe),*map(str,args)],check=True)
+        subprocess.run([str(ROOT/'tools'/exe),*map(str,args)],check=True,env=env)
     patch_lightmaps(buf,jobs)
     append_collision(buf,col)
     count=len(buf[0x50])//28;struct.pack_into('<2I',buf[0xe],24,0,count)
@@ -233,6 +237,11 @@ def patch_lightmaps(buf,jobs):
         ids[y:y+4,x:x+4]=loc['ids'];vis[y:y+4,x:x+4]=loc['vis'];vis[y:y+4,x:x+4,0]=np.rint(v[...,0]*255).astype('u1')
 
 def append_collision(buf,col):
+    # Primitives already disabled in the grid (e.g. replaced source colliders)
+    # must stay disabled: only previously active and newly appended ones are gridded.
+    from build_center_detail import active
+    grid=({k:bytes(buf[k]) for k in (0x57,0x59)} if 0x57 in buf and 0x59 in buf else __import__('repair_preview_index_padding').read_lumps(MAP,(0x57,0x59)))
+    previously=active(grid);first_new=len(buf[0x45])//44
     good=np.linalg.norm(np.cross(col[:,1]-col[:,0],col[:,2]-col[:,0]),axis=1)>1e-5;col=col[good]
     centers=col.mean(1);order=np.lexsort((centers[:,2],centers[:,1],centers[:,0]));col=col[order]
     encoded,bounds=encode([col[i:i+96] for i in range(0,len(col),96)])
@@ -251,7 +260,19 @@ def append_collision(buf,col):
         allbounds.append((faces.min((0,1)).tolist(),faces.max((0,1)).tolist()))
     brush=[]
     for r in struct.iter_unpack('<3f2BH3fI',buf[0x5c]):brush.append(([r[i]-r[i+6] for i in range(3)],[r[i]+r[i+6] for i in range(3)]))
-    buf.update(collision_grid(brush,allbounds))
+    keep_b=[i for i in range(len(brush)) if (0,i) in previously]
+    keep_t=[i for i in range(len(allbounds)) if (0x40,i) in previously or i>=first_new]
+    if len(keep_b)==len(brush) and len(keep_t)==len(allbounds):buf.update(collision_grid(brush,allbounds))
+    else:
+        from extend_prop_collision import pack_grid
+        g=pack_grid([brush[i] for i in keep_b]+[allbounds[i] for i in keep_t]);off=len(keep_b);p=bytearray(g[0x59]);sets=bytearray(g[0x57])
+        def remap(word):
+            k=(word>>8)&65535
+            return (keep_b[k]<<8)|(word&255) if k<off else (0x40<<24)|(keep_t[k-off]<<8)|(word&255)
+        for at in range(0,len(p),4):struct.pack_into('<I',p,at,remap(struct.unpack_from('<I',p,at)[0]))
+        for at in range(0,len(sets),8):
+            if struct.unpack_from('<H',sets,at+2)[0]==1:struct.pack_into('<I',sets,at+4,remap(struct.unpack_from('<I',sets,at+4)[0]))
+        g[0x59]=p;g[0x57]=sets;buf.update(g)
     report=json.loads((OUT/'physics.json').read_text());report.update(triangles=report['triangles']+len(col),triangle_headers=len(buf[0x45])//44,detail_collision_triangles=len(col))
     report['owners'].extend(dict(index=p['index'],model=p['model'],method=p['collision_recovery'],brushes=0,headers=(p['collision_triangles']+95)//96) for p in json.loads((WORK/'plan.json').read_text())['placements'] if p['collision_triangles'])
     temp=OUT/'physics.detail.json';temp.write_text(json.dumps(report,indent=2));os.replace(temp,OUT/'physics.json')
