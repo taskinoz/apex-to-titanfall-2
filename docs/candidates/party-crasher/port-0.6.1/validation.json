@@ -1,0 +1,26 @@
+{
+  "bsp_sha256": "4186440855b088fe4ac30ec149ea9ed9ce3c28bfc8213b9c2f062faec5686bff",
+  "material_pack_sha256": "dc753d542501ccbcc38fcf258f25e061acb15c56838d27ec482011bf431fd314",
+  "binary_checks": 2356,
+  "render_fraction": 0.9799594879150391,
+  "placements_matched": 19,
+  "source_brushes_disabled": 87,
+  "drawn_surface_contacts": "19/19",
+  "lod_downgrades": 26,
+  "lod_net_triangles": -9100,
+  "new_placements": 8,
+  "new_triangles": 8426,
+  "categories": {
+    "planter-pillar": 1,
+    "glass-column": 2,
+    "cafe": 5
+  },
+  "source_collider_contacts": 4,
+  "report_positions_clean": "2/4",
+  "both_teams_verified": true,
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "party_reload": true,
+  "single_client_only": true,
+  "ai_navigation_added": false
+}

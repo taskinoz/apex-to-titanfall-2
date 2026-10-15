@@ -1,15 +1,32 @@
 # Apex to Titanfall 2 map ports
 
-Current early Northstar previews: Overflow **0.3.1**, Party Crasher **0.4.0**
-(`mp_party_crasher`) and Firing Range **0.3.1** (`mp_apex_firing_range`). These have native
+Current early Northstar previews: Overflow **0.3.1**, Party Crasher **0.6.2**
+(`mp_party_crasher`) and Firing Range **0.5.1** (`mp_apex_firing_range`). These have native
 geometry/collision, materials, direct lighting, loading artwork and minimaps.
 Pilot modes and single-client spawn/reload checks pass; substantial scenery,
-source shader behavior and Apex interactions are still missing. See the
-[new-port report and Olympus feasibility](docs/candidates/approved-port-work-2026-10-13.md).
+source shader behavior and Apex interactions are still missing.
 Clean player ZIPs are local in `output/`, with the shared `ApexMaps.UI` companion.
-Party Crasher 0.4.0 restores 380 source placements: 42 large boundary rocks,
-168 facade pieces, 42 roof vents and 128 solar panels. It uses 97.66% of native
-world index capacity. See [the recovery and validation](docs/candidates/party-crasher/port-0.4.0/README.md).
+
+The latest rounds make collision match what is drawn (`match_collision_to_render.py`): coarse-detail
+placements whose full-detail Apex collider no longer matches the drawn shape collide with their drawn
+triangles instead. Firing Range 0.5.1 fixes 329 rocks, moves spawns onto visible ground and removes
+invisible clips around the missing range targets: invisible collision falls from 15.7% to 2.8%
+([details](docs/candidates/firing-range/port-0.5.1/README.md)). Party Crasher 0.6.1 fixes the screen
+towers and restores the reported flower planter, glass columns and cafe tables
+([details](docs/candidates/party-crasher/port-0.6.1/README.md)).
+Party Crasher 0.6.2 draws the omitted props whose collision was still in the world (cafe tables,
+search lights, rubble, a speaker, the second planter), paid for by simplifying over-detailed props
+([details](docs/candidates/party-crasher/port-0.6.2/README.md)).
+
+Earlier rounds of 15 October restore Apex two-layer blending (sand, moss, snow, dirt) with
+Titanfall's native blend shader (`apply_layer_blends.py`). They also stop drawing meshes that
+no reachable position can see (`analyse_visibility.py`, `retire_render_meshes.py`) and
+place new props in released lightmap tiles (`append_free_charts.py`). Party Crasher 0.6.0
+adds the window walls, screen towers, race-track set and rocks from the user reports
+([details](docs/candidates/party-crasher/port-0.6.0/README.md)). Firing Range 0.5.0 raises
+reported rocks to finer detail ([details](docs/candidates/firing-range/port-0.5.0/README.md)).
+Earlier: Firing Range 0.4.0 restored the hidden landing pad; Party Crasher 0.5.1 fixed
+world-projected ground UVs and z-fighting overlays; 0.5.0 added signs and screen panels.
 
 Firing Range includes 20 closed supply bins, seven native zipline routes
 and adapted campaign water. The previews now recover native source fog,

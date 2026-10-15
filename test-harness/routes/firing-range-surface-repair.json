@@ -1,0 +1,111 @@
+{
+  "map": "mp_apex_firing_range",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "rib",
+      "origin": [
+        -2523.99,
+        2871.71,
+        -453.02
+      ],
+      "angles": [
+        -19.92,
+        -38.85,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "sand",
+      "origin": [
+        -1343.79,
+        501.87,
+        -1102.97
+      ],
+      "angles": [
+        29.67,
+        -20.41,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "rocks",
+      "origin": [
+        625.63,
+        465.48,
+        -951.44
+      ],
+      "angles": [
+        1.0,
+        41.64,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "pad-approach",
+      "origin": [
+        1520,
+        900,
+        -700
+      ],
+      "angles": [
+        2,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "pad-deck",
+      "origin": [
+        1523,
+        1500,
+        -540
+      ],
+      "angles": [
+        18,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "pad-overview",
+      "origin": [
+        500,
+        1000,
+        -250
+      ],
+      "angles": [
+        22,
+        45,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "tunnel",
+      "origin": [
+        -4953.49,
+        79.78,
+        511.03
+      ],
+      "angles": [
+        21.79,
+        -179.38,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

@@ -1,9 +1,17 @@
-# Party Crasher 0.4.0
+# Party Crasher 0.6.2
 
-Restores 380 exact-source placements: 168 facade sections, all 42 large boundary rocks, 42 rooftop vents and all 128 solar panels. Uses 97.66% of native world index capacity, with no additional gameplay entities. Existing lighting, collision, safety areas, spawns, loading screen and minimap are retained. Some dense window modules, roof foliage, animated advertisements and layered terrain materials remain incomplete. AI navigation and Titan modes are not supplied. Restart between previews; repeated mode cycling has an unresolved earlier failure.
+Fixes invisible objects from missing Apex props: the cafe table set, both search lights, the concrete rubble ramp and a speaker are now drawn, and the second flower planter is back with solid walls. More cafe tables and stools are restored. The fountain foam is faint, as in Apex (Titanfall cannot animate it), and the R5Reloaded placeholder screen shows a north-star emblem. Over-detailed wire bundles, consoles and pillar signs use simplified meshes to pay for this. Foliage, animated advertisements and AI navigation remain absent. Restart between previews.
 
-The independent audit passed 2,930 checks. Native tests verified 29 new source collider contacts, clear supported team spawns, postmatch return, stock Coliseum loading and Party Crasher reloading. Eight native edge/roof views were captured from the exact mounted payload. Camera-only diagnostic runs temporarily removed safety trigger entities in the isolated process; gameplay checks restored all 67 out-of-bounds and two hurt triggers by reloading the unmodified map. The previous FFA registration and entities are byte-identical; this round exercises PS. No multiplayer FPS, AI capacity or all-five-map stress certification is implied.
+## How
 
-Baseline rollback is retained on the build drive under `party-crasher/before-0.4.0/`. The rejected facade-first candidate and its receipts are also retained separately.
+- Invisible collision at q34-q37 and q39 was world-baked collision of omitted Apex props, found by tracing from each report camera and testing which omitted placement's model bounds contain the hit: table set 8851/6678/6319/6625/13690, search lights 13651/13652, rubble 898/1777/12866 and speaker 9255. They are drawn at source LOD0 with their source collider.
 
-Reproduce with `recover_party_structure.py plan`, `materials`, `append`, then `verify_party_structure.py`, both harness surveys and `verify_party_structure_runtime.py`. Set APEX_PORT_WORK to the owned build workspace. The append is guarded against reapplication; restore the immutable snapshot before rebuilding.
+- The q39 planter (11244) has only a small IRPS box as its source collider, so its walls collide with its drawn structural triangles (flower cards excluded).
+
+- Budget: 14 single-LOD props in the arena (hanging wire bundles, ship consoles, pillar signage; menu-stage copies untouched) are meshoptimizer-simplified at 0.5% relative error, freeing 16,900 triangles. Collision is unchanged and the regression views show no visible change.
+
+- q38: `water_foamy_fountain_01` is animated and faint in Apex; its opacity map is scaled by 0.3. q40: the R5Reloaded placeholder panel of `oasis_signs_ad_atlas_01` is repainted with an original north-star emblem.
+
+Validation: 2,356 binary checks; collision grid = previous active set plus new headers; 7/7 report views fully clean; 10 new collider contacts; 19/19 drawn-surface contacts; 40-view regression unchanged except the repainted screen; spawns, postmatch lobby, stock and map reload.
+
+Rollback: `party-crasher/before-0.6.2/` (including `texture-originals/`) on the build drive.

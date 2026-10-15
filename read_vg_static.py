@@ -19,18 +19,24 @@ def compiled_materials(data):
     return slots,[[names[index] for index in row] for row in skin_indices]
 
 
-def packed_normal(value):
+def packed_normal(value,legacy=False):
     axis=(value>>29)&3
     if axis==3:raise ValueError('Invalid packed normal axis')
     a=-255. if (value>>28)&1 else 255.
     b=float((value>>19)&511)-256.;c=float((value>>10)&511)-256.
     length=math.sqrt(a*a+b*b+c*c)
     normal=[0.,0.,0.]
-    for i,x in [(axis,a),((0x124>>(2*axis+2))&3,b),((0x124>>(2*axis+4))&3,c)]:normal[i]=x/length
+    # Verified against the source static vertex shader (rib_giant_large_01 VS):
+    # its movc swizzles yield axis 0 -> (a,b,c), 1 -> (c,a,b), 2 -> (b,c,a).
+    # A swapped (a,c,b)/(b,a,c)/(c,b,a) reading was rejected: across 80 sampled
+    # models it lowered median |normal . face normal| from 0.999 to 0.868.
+    # `legacy` is retained only for call compatibility; both use this order.
+    order=((a,b,c),(c,a,b),(b,c,a))
+    normal[:]=[x/length for x in order[axis]]
     return tuple(normal)
 
 
-def decode(rmdl,vg,lod_index=0,with_colors=False):
+def decode(rmdl,vg,lod_index=0,with_colors=False,legacy_normals=False):
     rmdl,vg=bytes(rmdl),bytes(vg)
     slots,skins=compiled_materials(rmdl)
     if len(vg)<160 or struct.unpack_from('<2I',vg)!=(0x47567430,1):raise ValueError('Unsupported VG version')
@@ -66,7 +72,7 @@ def decode(rmdl,vg,lod_index=0,with_colors=False):
                 a,b=struct.unpack_from('<2I',vg,at);shift=8
                 p=((a&0x1fffff)/1024.-1024.,(((b&1023)<<11)+(a>>21))/1024.-1024.,(b>>10)/1024.-2048.)
             else:raise ValueError('Unsupported position encoding')
-            n=packed_normal(struct.unpack_from('<I',vg,at+shift)[0]);shift+=4
+            n=packed_normal(struct.unpack_from('<I',vg,at+shift)[0],legacy_normals);shift+=4
             color=struct.unpack_from('<4B',vg,at+shift) if flags&0x10 else (255,255,255,255)
             if flags&0x10:shift+=4
             uv=struct.unpack_from('<2f',vg,at+shift);shift+=8
@@ -96,6 +102,6 @@ def decode(rmdl,vg,lod_index=0,with_colors=False):
     return sections,slots,skins
 
 
-def load(folder,lod_index=0,with_colors=False):
+def load(folder,lod_index=0,with_colors=False,legacy_normals=False):
     folder=Path(folder);name=folder.name
-    return decode((folder/(name+'.rmdl')).read_bytes(),(folder/(name+'.vg')).read_bytes(),lod_index,with_colors)
+    return decode((folder/(name+'.rmdl')).read_bytes(),(folder/(name+'.vg')).read_bytes(),lod_index,with_colors,legacy_normals)

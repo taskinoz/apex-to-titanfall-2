@@ -1,0 +1,262 @@
+[
+  {
+    "name": "tunnel",
+    "capture": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559\\screenshots\\before-tunnel-785b8c82.png",
+      "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559\\screenshots\\before-tunnel-785b8c82.tga",
+      "width": 1280,
+      "height": 720,
+      "captured": 1791985326.5462155,
+      "sha256": "b98be5b9cc13d84ea1fbc52ac588a9561e05787143ce705091f4800a32e6aa9f",
+      "state": {
+        "game_running": true,
+        "game_pid": 31128,
+        "profile": "D:\\Games\\Titanfall2\\R2AtlasHarness",
+        "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559",
+        "contexts": {
+          "ui": {
+            "loading": false,
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "ready": true,
+            "level": "mp_apex_firing_range",
+            "context": "ui",
+            "received": 1791985323.910374
+          },
+          "server": {
+            "players": 1,
+            "mode": "ps",
+            "context": "server",
+            "loading": false,
+            "playerOrigin": [
+              -4953.490234375,
+              79.77999877929688,
+              447.0299987792969
+            ],
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "level": "mp_apex_firing_range",
+            "ready": true,
+            "received": 1791985323.8569143
+          },
+          "client": {
+            "outOfBoundsDeadTime": 0.0,
+            "time": 177.4626007080078,
+            "angles": [
+              21.790000915527344,
+              -179.3800048828125,
+              0.0
+            ],
+            "origin": [
+              -4953.490234375,
+              79.77999877929688,
+              511.0299987792969
+            ],
+            "context": "client",
+            "loading": false,
+            "health": 100,
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "alive": true,
+            "level": "mp_apex_firing_range",
+            "camera": true,
+            "ready": true,
+            "received": 1791985324.0704973
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "rib",
+    "capture": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559\\screenshots\\before-rib-467babba.png",
+      "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559\\screenshots\\before-rib-467babba.tga",
+      "width": 1280,
+      "height": 720,
+      "captured": 1791985331.7622502,
+      "sha256": "9166e6a132e6e64217854cceb7d9eab88f02f1ee8c1a4ebedcd21964df4e4e01",
+      "state": {
+        "game_running": true,
+        "game_pid": 31128,
+        "profile": "D:\\Games\\Titanfall2\\R2AtlasHarness",
+        "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559",
+        "contexts": {
+          "ui": {
+            "loading": false,
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "ready": true,
+            "level": "mp_apex_firing_range",
+            "context": "ui",
+            "received": 1791985329.7844563
+          },
+          "server": {
+            "players": 1,
+            "mode": "ps",
+            "context": "server",
+            "loading": false,
+            "playerOrigin": [
+              -2523.989990234375,
+              2871.7099609375,
+              -517.02001953125
+            ],
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "level": "mp_apex_firing_range",
+            "ready": true,
+            "received": 1791985329.5773704
+          },
+          "client": {
+            "outOfBoundsDeadTime": 0.0,
+            "time": 182.63438415527344,
+            "angles": [
+              -19.920000076293945,
+              -38.849998474121094,
+              0.0
+            ],
+            "origin": [
+              -2523.989990234375,
+              2871.7099609375,
+              -453.0199890136719
+            ],
+            "context": "client",
+            "loading": false,
+            "health": 100,
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "alive": true,
+            "level": "mp_apex_firing_range",
+            "camera": true,
+            "ready": true,
+            "received": 1791985329.837861
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "sand",
+    "capture": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559\\screenshots\\before-sand-c092b07e.png",
+      "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559\\screenshots\\before-sand-c092b07e.tga",
+      "width": 1280,
+      "height": 720,
+      "captured": 1791985336.8889623,
+      "sha256": "6d04810f1fb04b35ab41ad3de260ba66ac3e80a2c336e833e584c27c76620b37",
+      "state": {
+        "game_running": true,
+        "game_pid": 31128,
+        "profile": "D:\\Games\\Titanfall2\\R2AtlasHarness",
+        "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559",
+        "contexts": {
+          "ui": {
+            "loading": false,
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "ready": true,
+            "level": "mp_apex_firing_range",
+            "context": "ui",
+            "received": 1791985335.1641839
+          },
+          "server": {
+            "players": 1,
+            "mode": "ps",
+            "context": "server",
+            "loading": false,
+            "playerOrigin": [
+              -1343.7900390625,
+              501.8699951171875,
+              -1166.969970703125
+            ],
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "level": "mp_apex_firing_range",
+            "ready": true,
+            "received": 1791985335.2719936
+          },
+          "client": {
+            "outOfBoundsDeadTime": 0.0,
+            "time": 187.99819946289062,
+            "angles": [
+              29.670000076293945,
+              -20.40999984741211,
+              0.0
+            ],
+            "origin": [
+              -1343.7900390625,
+              501.8699951171875,
+              -1102.969970703125
+            ],
+            "context": "client",
+            "loading": false,
+            "health": 100,
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "alive": true,
+            "level": "mp_apex_firing_range",
+            "camera": true,
+            "ready": true,
+            "received": 1791985335.2192926
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "rocks",
+    "capture": {
+      "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559\\screenshots\\before-rocks-bfc99ff1.png",
+      "native_path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559\\screenshots\\before-rocks-bfc99ff1.tga",
+      "width": 1280,
+      "height": 720,
+      "captured": 1791985341.9351964,
+      "sha256": "81bf7301834e4a68d784ceffd06ac7cdceca533ae1282a4426d3521ff31bbe49",
+      "state": {
+        "game_running": true,
+        "game_pid": 31128,
+        "profile": "D:\\Games\\Titanfall2\\R2AtlasHarness",
+        "run": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\test-harness\\output\\20261015-003559",
+        "contexts": {
+          "ui": {
+            "loading": false,
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "ready": true,
+            "level": "mp_apex_firing_range",
+            "context": "ui",
+            "received": 1791985340.2487257
+          },
+          "server": {
+            "players": 1,
+            "mode": "ps",
+            "context": "server",
+            "loading": false,
+            "playerOrigin": [
+              625.6300048828125,
+              465.4800109863281,
+              -1015.4400024414062
+            ],
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "level": "mp_apex_firing_range",
+            "ready": true,
+            "received": 1791985340.0895298
+          },
+          "client": {
+            "outOfBoundsDeadTime": 0.0,
+            "time": 193.09556579589844,
+            "angles": [
+              1.0,
+              41.63999938964844,
+              0.0
+            ],
+            "origin": [
+              625.6300048828125,
+              465.4800109863281,
+              -951.4400024414062
+            ],
+            "context": "client",
+            "loading": false,
+            "health": 100,
+            "generation": "dc5507777cb44e34bc3449f330edf320",
+            "alive": true,
+            "level": "mp_apex_firing_range",
+            "camera": true,
+            "ready": true,
+            "received": 1791985340.302148
+          }
+        }
+      }
+    }
+  }
+]

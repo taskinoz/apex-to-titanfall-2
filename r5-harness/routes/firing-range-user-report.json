@@ -1,0 +1,133 @@
+{
+  "title": "firing-range user report 2",
+  "source_map": "mp_rr_canyonlands_staging",
+  "target_map": "mp_apex_firing_range",
+  "source_offset": [
+    32000,
+    -7000,
+    -28000
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "f15-missing-stuff",
+      "origin": [
+        1665.26,
+        -1621.86,
+        -844.21
+      ],
+      "angles": [
+        47.66,
+        101.48,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "f16-missing-stuff-2",
+      "origin": [
+        2409.4,
+        -1736.25,
+        -913.12
+      ],
+      "angles": [
+        20.84,
+        128.08,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "f17-missing-texture",
+      "origin": [
+        3164.38,
+        2804.34,
+        -448.19
+      ],
+      "angles": [
+        23.41,
+        144.25,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "f18-invisible-geo",
+      "origin": [
+        219.11,
+        -934.51,
+        -893.57
+      ],
+      "angles": [
+        78.99,
+        67.57,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "f19-invisible-geo-targets",
+      "origin": [
+        114.74,
+        318.12,
+        -967.97
+      ],
+      "angles": [
+        77.24,
+        -57.91,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "f20-invisible-geo-2",
+      "origin": [
+        -2400.34,
+        -2583.91,
+        -176.22
+      ],
+      "angles": [
+        78.07,
+        161.35,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "f21-rock-gap",
+      "origin": [
+        -473.94,
+        4413.17,
+        -786.78
+      ],
+      "angles": [
+        -32.25,
+        46.57,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

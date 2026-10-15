@@ -4,9 +4,20 @@ from pathlib import Path
 from package_northstar import validate_bsp
 ROOT=Path(__file__).resolve().parent
 
+def relocate_game_lump(payload,old,offset):
+    """Rebase absolute game-lump directory offsets from `old` to `offset`."""
+    payload=bytearray(payload);n=len(payload);count=struct.unpack_from('<I',payload)[0]
+    if 4+16*count>n:raise ValueError('Truncated game-lump directory')
+    for j in range(count):
+        at=4+j*16;ptr,length=struct.unpack_from('<2I',payload,at+8)
+        if length:
+            if not old<=ptr or ptr+length>old+n:raise ValueError('External game-lump payload cannot be relocated')
+            struct.pack_into('<I',payload,at+8,ptr+offset-old)
+    return bytes(payload)
+
 def compact(source,output,replacements=None):
     source,output=Path(source),Path(output)
-    replacements=replacements or {}
+    replacements=dict(replacements or {})
     output.parent.mkdir(parents=True,exist_ok=True)
     with source.open('rb') as inp,output.open('wb') as out:
         header=bytearray(inp.read(2064));out.write(header)
@@ -14,20 +25,20 @@ def compact(source,output,replacements=None):
             old,n,v,pad=struct.unpack_from('<4I',header,16+i*16)
             if i in replacements:
                 payload=replacements[i]
-                out.write(bytes((-out.tell())%16));offset=out.tell();out.write(payload)
+                out.write(bytes((-out.tell())%16));offset=out.tell()
+                # Callers pass every lump read from the source; an unmodified
+                # game lump still holds absolute offsets into the old file.
+                if i==0x23 and payload:
+                    inp.seek(old)
+                    if n!=len(payload) or inp.read(n)!=bytes(payload):raise ValueError('Edited game-lump directories are unsupported')
+                    payload=replacements[i]=relocate_game_lump(payload,old,offset)
+                out.write(payload)
                 struct.pack_into('<4I',header,16+i*16,offset,len(payload),v,pad)
                 continue
             if not n:continue
             out.write(bytes((-out.tell())%16));offset=out.tell();inp.seek(old)
             if i==0x23:
-                payload=bytearray(inp.read(n));count=struct.unpack_from('<I',payload)[0]
-                if 4+16*count>n:raise ValueError('Truncated game-lump directory')
-                for j in range(count):
-                    at=4+j*16;ptr,length=struct.unpack_from('<2I',payload,at+8)
-                    if length:
-                        if not old<=ptr or ptr+length>old+n:raise ValueError('External game-lump payload cannot be relocated')
-                        struct.pack_into('<I',payload,at+8,ptr+offset-old)
-                out.write(payload)
+                out.write(relocate_game_lump(inp.read(n),old,offset))
             else:
                 remaining=n
                 while remaining:

@@ -1,0 +1,126 @@
+{
+  "map": "mp_party_crasher",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "q34-missing-coffee-tables",
+      "origin": [
+        2860.78,
+        -52.46,
+        991.91
+      ],
+      "angles": [
+        65.47,
+        -172.27,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q35-invisible-collision",
+      "origin": [
+        331.88,
+        -1767.48,
+        957.39
+      ],
+      "angles": [
+        66.76,
+        164.61,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q36-invisible-ramp",
+      "origin": [
+        2.6,
+        -2260.2,
+        917.71
+      ],
+      "angles": [
+        76.82,
+        97.39,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q37-invisible-collision",
+      "origin": [
+        -524.11,
+        -2212.79,
+        1047.8
+      ],
+      "angles": [
+        88.51,
+        124.17,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q38-water-animation",
+      "origin": [
+        -407.42,
+        -1164.42,
+        1024.71
+      ],
+      "angles": [
+        42.6,
+        155.59,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q39-missing-collision",
+      "origin": [
+        2279.76,
+        1444.3,
+        980.03
+      ],
+      "angles": [
+        19.04,
+        34.91,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "q40-r5r-logo",
+      "origin": [
+        3245.35,
+        -172.38,
+        1955.28
+      ],
+      "angles": [
+        12.71,
+        35.06,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}
