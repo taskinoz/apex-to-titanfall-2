@@ -13,10 +13,10 @@ tags:
 project: apex-to-titanfall-2
 status: verified
 created: 2026-10-11T12:44:41.021Z
-updated: 2026-10-14T02:32:17.084Z
+updated: 2026-10-17T16:45:45.733Z
 created_by: agent:Codex
 updated_by: agent:Claude
-revision: 2
+revision: 4
 ---
 # Native Northstar map testing and clean releases
 
@@ -114,3 +114,21 @@ The final single-client process loaded all five maps, captured 25 area views, re
 Three expanded routes add five locations each to Firing Range, Party Crasher and Overflow: 23 matched R5R/Northstar pairs in total, including the eight earlier viewpoints. Active maps, camera positions, equal resolution and capture hashes are checked. Site snapshot 2026-10-14-ui-atlas-survey retains earlier snapshots unchanged. New views expose omitted Party Crasher banners/character advertisements and hologram differences, plus incomplete water/lava/atmospheric parity; they are recorded observations, not claims that this UI fix repaired those features.
 
 Evidence in the private conversion repo: docs/candidates/ui-atlas-lifetime-2026-10-14.md, docs/conversion/ui-atlas-lifetime-validation.json, shared-map-ui.json, build_shared_map_ui.py, map_pack_lifetime.py, capture_combined_map_regression.py, verify_combined_ui_lifecycle.py, publish_ui_atlas_surveys.py and site/ui-atlas-survey-findings.json.
+
+## Toolchain pitfalls found in the Firing Range 0.4.0 build — 15 October 2026
+
+- **Game-lump offsets during compaction.** Lump 0x23's directory stores *absolute file offsets*. Older `compact_preview_bsp.compact` relocated them only when copying the lump from the source file. A caller that passed all 128 lumps as replacements (as the Firing Range surface patch does) got the payload written verbatim at a new offset, leaving `prps` pointing at stale data. This was caught before shipping, and installed builds were checked and are fine. The compactor now relocates in both paths and refuses edited game-lump replacements. Check: every game-lump entry `[ptr, ptr+len)` must lie inside the lump.
+- **RePak texture order.** If a material appears in `build.json` before its textures, RePak auto-adds the textures with streaming *enabled*. Without a starpak, it fails with "Attempted to write mandatory streaming asset without a stream file handle". Declare every `txtr` before any `matl`.
+- **Light-baker DLLs.** The retained MinGW bakers (`tools/bake_interior_lighting.exe` etc.) are dynamically linked. Launched from Git Bash, they pick up Git's `mingw64/bin/libstdc++-6.dll` and exit with 0xC0000139. `recover_composite_details.append` now puts `C:/ProgramData/mingw64/mingw64/bin` first on PATH for them. The newer `bake_arena_*.exe` tools are static.
+- **Route ordering.** The first shot of a Northstar route can land on the pre-match spawn/loadout overlay. Put a non-critical view first or retake it.
+- **Collision for restored props.** For props omitted from the source, a "world/source-owned" collision label is a default. Verify restored visible surfaces with native vertical traces. Firing Range's restored stairs had no collider until their source IRPS mesh was appended.
+
+## Five-map site image refresh — 18 October 2026
+
+`refresh_site_captures.py` refreshes every distinct published camera against the current accepted mod, with one cold owned Northstar session per map. Snapshot `2026-10-18-release-refresh` contains 53 matched views: Drop-Off 0.10.1 (12), Phase Runner 1.7.2 (11), Overflow 0.4.1 (8), Party Crasher 0.6.4 (15), and Firing Range 0.5.1 (7). Party Crasher combines the prior arena/street and roof/edge surveys and adds the Northstar billboard. Shared ApexMaps.UI is 0.1.1.
+
+All 53 native images were recaptured. Existing hash-verified matching Apex images retain their original capture dates; the new screen camera has a fresh R5R reference. Do not relabel reused source photos as newly captured. Mounted BSP/STBSP/RPak hashes, active map, actual camera pose, living camera player and paired image dimensions are verified. Native photography removes boundary/hurt triggers only in the owned runtime for exterior views, never from map files. These are visual surveys, not fresh gameplay or multiplayer certification. Wait for the game-mode introduction before the first photograph; menu closing alone does not clear its banner.
+
+A discarded new-source attempt encountered an invalid `ContainsPoint` error after destroying source safety entities. A fresh R5R launch with those entities intact captured the screen successfully. Runtime trigger destruction is not safe for every source map script lifecycle.
+
+`verify_site_refresh.py` checks all 362 exported image hashes/dimensions, the 53 current native camera records, absence of private metadata, equality of embedded HTML/catalogue data, and byte-for-byte logical equality of all 26 historical snapshot records. Old snapshots remain available while the five map cards and defaults select the new snapshot. Evidence: `docs/site-image-refresh-2026-10-18.md` and the adjacent JSON validation receipts; reusable routes are `r5-harness/routes/*-release-survey.json`.
