@@ -258,6 +258,14 @@ def materials(ident):
             elif fallback and fallback in tex:
                 tex[slot] = tex[fallback]
         tex['15'] = flat
+        # Some source materials (Overflow lava_river_v3_bm) lack a PBR layer-1 map.
+        for slot, semantic, colour in (('1', 'normal', (128, 128, 255, 255)), ('2', 'gloss', (30, 30, 30, 255)), ('3', 'spec', (8, 8, 8, 255))):
+            if slot not in tex:
+                path = f'texture/{slug}/layer_blend_neutral_{semantic}.rpak'
+                if not (assets/path).with_suffix('.dds').exists():
+                    save_mips(Image.new('RGBA', (4, 4), colour), (assets/path).with_suffix('.dds'))
+                files[path] = dict(_type='txtr', _path=path, **{'$disableStreaming': True}); tex[slot] = path
+                tex.setdefault(str(int(slot)+23), path)
         for slot in ('0', '1', '2', '3', '22', '23'):
             if slot not in tex:
                 raise ValueError(f'{name} lacks native bm slot {slot}')

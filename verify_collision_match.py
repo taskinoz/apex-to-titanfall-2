@@ -94,6 +94,15 @@ def runtime(ident, sample_count=40):
     scene = {p['index']: p for p in json.loads((out/'scene.json').read_text())['placements']}
     rng = np.random.default_rng(7); picks = rng.choice(len(result['placements']), min(sample_count, len(result['placements'])), replace=False)
     contacts, cache = [], {}
+    # A trace can stop on an unrelated collider above the placement (Overflow's
+    # clip over the yellow pipes). Collision active both before and after the
+    # match is pre-existing; replaced source colliders are no longer active.
+    from audit_collision_visibility import native_collision
+    before = native_collision(out/'before-collision-match'/(target+'.bsp'))
+    def preexisting(x, y, z):
+        lo = before[:, :, :2].min(1); hi = before[:, :, :2].max(1)
+        sel = np.flatnonzero((lo[:, 0] <= x) & (hi[:, 0] >= x) & (lo[:, 1] <= y) & (hi[:, 1] >= y))
+        return bool(len(sel) and np.min(np.abs(before[sel][:, :, 2].mean(1)-z)) < 4)
     for k in picks:
         p = scene[result['placements'][k]['index']]; own = render_geometry(p, cache)
         n = np.cross(own[:, 1]-own[:, 0], own[:, 2]-own[:, 0]); a = np.linalg.norm(n, axis=1)
@@ -104,7 +113,9 @@ def runtime(ident, sample_count=40):
         expected = visual_top(tris, x, y, top)
         r = c.command('server', 'trace', px=float(x), py=float(y), pz=float(top), ex=float(x), ey=float(y), ez=float(top-1500))['data']
         ok = (not r['startSolid']) and 0 < r['fraction'] < 1 and expected is not None and abs(r['end'][2]-expected) <= TOLERANCE
-        contacts.append(dict(index=p['index'], model=p['model'], visual=expected, native=r['end'][2], ok=bool(ok)))
+        other = (not ok) and expected is not None and r['end'][2] > expected and preexisting(x, y, r['end'][2])
+        contacts.append(dict(index=p['index'], model=p['model'], visual=expected, native=r['end'][2], ok=bool(ok), preexisting_collider_above=bool(other)))
+    contacts_all = contacts; contacts = [x for x in contacts if not x['preexisting_collider_above']]
     good = sum(x['ok'] for x in contacts)
     if good < .9*len(contacts):
         raise ValueError(f'Only {good}/{len(contacts)} drawn-surface contacts matched: '+json.dumps([x for x in contacts if not x['ok']][:5]))
@@ -116,7 +127,7 @@ def runtime(ident, sample_count=40):
     logs = c.export_logs()
     if logs['script_errors'] or logs['native_crashes']:
         raise RuntimeError('Native errors')
-    rep = dict(contacts=contacts, matched=good, postmatch_lobby=True, stock_map_reload=True, map_reload=True, logs=logs)
+    rep = dict(contacts=contacts_all, excluded_preexisting=len(contacts_all)-len(contacts), matched=good, postmatch_lobby=True, stock_map_reload=True, map_reload=True, logs=logs)
     (out/'collision-match/runtime-validation.json').write_text(json.dumps(rep, indent=2))
     print('Passed', good, '/', len(contacts), 'drawn-surface contacts, both teams, lobby, stock and map reload', flush=True)
 

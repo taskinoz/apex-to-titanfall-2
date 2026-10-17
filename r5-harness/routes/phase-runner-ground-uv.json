@@ -1,0 +1,88 @@
+{
+  "title": "phase-runner-ground-uv",
+  "source_map": "mp_rr_arena_phase_runner",
+  "target_map": "mp_phase_runner",
+  "source_offset": [
+    26000,
+    19000,
+    0
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "g-desertlands_snow_02_wld_vtx",
+      "origin": [
+        -157.0,
+        -420.8,
+        -1129.6
+      ],
+      "angles": [
+        37.88,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "g-icelandic_moss_01_wld_icelan",
+      "origin": [
+        -1103.4,
+        -64.2,
+        -1142.1
+      ],
+      "angles": [
+        37.88,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "g-desertlands_snow_04_wld_b2t",
+      "origin": [
+        -2671.3,
+        2309.4,
+        455.3
+      ],
+      "angles": [
+        37.88,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "g-icelandic_moss_01_wld_vxd",
+      "origin": [
+        207.9,
+        -272.3,
+        -1119.2
+      ],
+      "angles": [
+        37.88,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

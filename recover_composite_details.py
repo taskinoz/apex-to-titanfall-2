@@ -237,6 +237,8 @@ def patch_lightmaps(buf,jobs):
         ids[y:y+4,x:x+4]=loc['ids'];vis[y:y+4,x:x+4]=loc['vis'];vis[y:y+4,x:x+4,0]=np.rint(v[...,0]*255).astype('u1')
 
 def append_collision(buf,col):
+    if not len(col):
+        return  # props whose collision already exists in the world collision
     # Primitives already disabled in the grid (e.g. replaced source colliders)
     # must stay disabled: only previously active and newly appended ones are gridded.
     from build_center_detail import active

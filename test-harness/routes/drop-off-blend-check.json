@@ -1,0 +1,66 @@
+{
+  "map": "mp_arena_composite",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        3000,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "b-slum_city_painted_metal_02_dir",
+      "origin": [
+        297.5,
+        5588.4,
+        193.1
+      ],
+      "angles": [
+        23.22,
+        0.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "b-stamped_metal_large_painted_03",
+      "origin": [
+        100.5,
+        3761.7,
+        696.8
+      ],
+      "angles": [
+        11.46,
+        -90.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "b-s2s_wall_trim_01_vc_dirty_bm_p",
+      "origin": [
+        -110.3,
+        3895.1,
+        103.3
+      ],
+      "angles": [
+        7.6,
+        118.21,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "map": "mp_phase_runner",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "arena-overview",
+      "origin": [
+        0,
+        -5000,
+        1400
+      ],
+      "angles": [
+        28,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "west-tunnel",
+      "origin": [
+        -1819.8,
+        3017.7,
+        -382.4
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "west-building",
+      "origin": [
+        -6080,
+        -1530.2,
+        -773.9
+      ],
+      "angles": [
+        10,
+        90,
+        0
+      ],
+      "fov": 75,
+      "settle": 5
+    },
+    {
+      "name": "east-building",
+      "origin": [
+        6283.9,
+        -1417,
+        -773.9
+      ],
+      "angles": [
+        10,
+        90,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "east-tunnel",
+      "origin": [
+        1940.5,
+        3016.9,
+        -376
+      ],
+      "angles": [
+        0,
+        180,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "west-tunnel-bend",
+      "origin": [
+        -4412.6,
+        613.2,
+        -645.7
+      ],
+      "angles": [
+        0,
+        45,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "east-tunnel-bend",
+      "origin": [
+        4636.4,
+        734.9,
+        -683.3
+      ],
+      "angles": [
+        0,
+        135,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "central-rocks",
+      "origin": [
+        1839.9,
+        -782,
+        -1136.7
+      ],
+      "angles": [
+        0,
+        180,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "west-stairs",
+      "origin": [
+        -4176.4,
+        -1463.9,
+        -950.6
+      ],
+      "angles": [
+        10,
+        180,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "nessie-rocks",
+      "origin": [
+        3200,
+        700,
+        -850
+      ],
+      "angles": [
+        30,
+        145,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    },
+    {
+      "name": "terrain-seam",
+      "origin": [
+        0,
+        -2650,
+        -1180
+      ],
+      "angles": [
+        30,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 5
+    }
+  ]
+}

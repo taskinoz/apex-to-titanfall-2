@@ -1,0 +1,20 @@
+{
+  "bsp_sha256": "a6db50d1bb5a1f9cd706b525d8abf18b06ea30904631443805449ff74e399167",
+  "binary_checks": 1544,
+  "render_fraction": 0.9445323944091797,
+  "native_blend_materials": 18,
+  "collision_matched": 51,
+  "source_brushes_disabled": 54,
+  "source_headers_disabled": 780,
+  "invisible_objects_drawn": 53,
+  "invisible_object_triangles": 68906,
+  "invisible_collision_before": 0.0369,
+  "invisible_collision_after": 0.0282,
+  "drawn_surface_contacts": "31/31",
+  "contacts_on_preexisting_collider_above": 9,
+  "both_teams_verified": true,
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "map_reload": true,
+  "single_client_only": true
+}
