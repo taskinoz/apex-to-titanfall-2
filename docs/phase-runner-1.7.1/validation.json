@@ -1,0 +1,61 @@
+{
+  "bsp_sha256": "c8c885154f9800f4b89419b38df2b98ed5399bd917eb12d24929e9fa1bc13598",
+  "binary_checks": 112,
+  "native_blend_materials": 31,
+  "texture_data_rebound": 38,
+  "blend_pack_bytes": 180236466,
+  "world_uv_rewritten": {
+    "icelandic_moss_01_wld_icelandic_dirt_01_wld_bm": 15719,
+    "icelandic_dirt_02_wld_icelandic_dirt_01_wld_bm": 4218,
+    "icelandic_moss_01_wld_vxd": 8037,
+    "desertlands_snow_02_wld_vtx": 17798,
+    "desertlands_snow_04_wld_b2t": 1127
+  },
+  "single_layer_kept": [
+    "dam_concrete_02_stained_bm",
+    "metal_painted_yellow_02_dirty_bm",
+    "asphalt08_cracked_bm"
+  ],
+  "rocks_matched": 210,
+  "source_headers_disabled": 16665,
+  "source_brushes_disabled": 17,
+  "drawn_collision_triangles": 27839,
+  "invisible_collision_before": 0.1822,
+  "invisible_collision_after": 0.0104,
+  "spawns_clear_and_supported": 84,
+  "drawn_rock_contacts": "40/40",
+  "both_teams_verified": true,
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "map_reload": true,
+  "catwalk_meshes_smoothed": 119,
+  "catwalk_max_shift": 31.32,
+  "catwalk_route_ends": [
+    {
+      "start": [
+        -4722.323672453748,
+        -59.24163365137757,
+        -741.7669840753078
+      ],
+      "floor": -758.2709696057807
+    },
+    {
+      "start": [
+        4941.374673985875,
+        -62.93137607406304,
+        -741.7669840753078
+      ],
+      "floor": -762.2714177355865
+    }
+  ],
+  "container_frames_restored": 17,
+  "frame_triangles": 2184,
+  "decals_alpha_blended": [
+    "cement_stripes_decals_vert",
+    "s2s_bolt_decals_03",
+    "s2s_boltdecals_02",
+    "s2s_decals_01"
+  ],
+  "stand_in_hidden": "sign_warning_yellow (for unrecovered signage_building_02)",
+  "single_client_only": true
+}

@@ -14,7 +14,7 @@ from extract_native_material import NativePak
 ROOT=Path(__file__).resolve().parent
 
 
-def build(folder=None,material_project=None,map_name='mp_phase_runner_preview',pak_name='phase_runner_world'):
+def build(folder=None,material_project=None,map_name='mp_phase_runner_preview',pak_name='phase_runner_world',extra_paks=()):
     sys.path.insert(0,str(ROOT/'tools/bsp_tool'))
     from bsp_tool.extensions.stbsp import StreamBsp
     folder=Path(folder) if folder is not None else ROOT/'output/phase-runner/preview-lighting'
@@ -30,7 +30,8 @@ def build(folder=None,material_project=None,map_name='mp_phase_runner_preview',p
         names.add(strings[start:strings.index(0,start)].decode().replace('\\','/'))
     assets={}
     project=Path(material_project) if material_project else ROOT/'output/phase-runner/world-materials'
-    for path in (ROOT/'inputs/tf2-rpak-work/coliseum.raw.rpak',project/'build'/(pak_name+'.rpak')):
+    # Maps whose materials span several packs (Phase Runner) pass them as extra_paks.
+    for path in (ROOT/'inputs/tf2-rpak-work/coliseum.raw.rpak',project/'build'/(pak_name+'.rpak'),*map(Path,extra_paks)):
         pak=NativePak(path)
         for asset in pak.assets:
             if asset['type']!='matl':continue

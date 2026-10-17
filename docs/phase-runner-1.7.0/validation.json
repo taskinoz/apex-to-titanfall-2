@@ -1,0 +1,33 @@
+{
+  "bsp_sha256": "689e8417d8f70a026ee77dd56e21b085549aeae7e9b9bc643ab309509ea76368",
+  "binary_checks": 126,
+  "native_blend_materials": 26,
+  "texture_data_rebound": 33,
+  "blend_pack_bytes": 171532241,
+  "world_uv_rewritten": {
+    "icelandic_moss_01_wld_icelandic_dirt_01_wld_bm": 15719,
+    "icelandic_dirt_02_wld_icelandic_dirt_01_wld_bm": 4218,
+    "icelandic_moss_01_wld_vxd": 8037,
+    "desertlands_snow_02_wld_vtx": 17798,
+    "desertlands_snow_04_wld_b2t": 1127
+  },
+  "single_layer_kept": [
+    "dam_concrete_02_stained_bm",
+    "metal_painted_yellow_02_dirty_bm",
+    "asphalt08_cracked_bm"
+  ],
+  "rocks_matched": 210,
+  "source_headers_disabled": 16665,
+  "source_brushes_disabled": 17,
+  "drawn_collision_triangles": 27839,
+  "invisible_collision_before": 0.1822,
+  "invisible_collision_after": 0.0104,
+  "spawns_clear_and_supported": 84,
+  "drawn_rock_contacts": "40/40",
+  "both_teams_verified": true,
+  "postmatch_lobby": true,
+  "stock_map_reload": true,
+  "map_reload": true,
+  "render_budget_unchanged": true,
+  "single_client_only": true
+}

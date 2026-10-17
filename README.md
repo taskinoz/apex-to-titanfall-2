@@ -1,6 +1,6 @@
 # Apex to Titanfall 2 map ports
 
-Current early Northstar previews: Overflow **0.3.1**, Party Crasher **0.6.2**
+Current early Northstar previews: Overflow **0.4.0**, Party Crasher **0.6.2**
 (`mp_party_crasher`) and Firing Range **0.5.1** (`mp_apex_firing_range`). These have native
 geometry/collision, materials, direct lighting, loading artwork and minimaps.
 Pilot modes and single-client spawn/reload checks pass; substantial scenery,
@@ -14,6 +14,8 @@ invisible clips around the missing range targets: invisible collision falls from
 ([details](docs/candidates/firing-range/port-0.5.1/README.md)). Party Crasher 0.6.1 fixes the screen
 towers and restores the reported flower planter, glass columns and cafe tables
 ([details](docs/candidates/party-crasher/port-0.6.1/README.md)).
+Overflow 0.4.0 adds native two-layer blending, matches collision to 51 coarse-detail props and draws 53
+props whose collision was invisible ([details](docs/candidates/overflow/port-0.4.0/README.md)).
 Party Crasher 0.6.2 draws the omitted props whose collision was still in the world (cafe tables,
 search lights, rubble, a speaker, the second planter), paid for by simplifying over-detailed props
 ([details](docs/candidates/party-crasher/port-0.6.2/README.md)).
@@ -39,7 +41,12 @@ Party Crasher and Overflow retain
 lighting. See [feature recovery, lighting and limitations](docs/candidates/source-features-and-lighting-2026-10-13.md).
 The 0.1.0 / 0.2.0 ZIPs and comparison snapshots remain available.
 
-Current builds: **Phase Runner 1.6.1** and **Drop-Off 0.10.1**. Restore
+Current builds: **Phase Runner 1.7.1** and **Drop-Off 0.10.1**. Phase Runner 1.7.1 fixes the base floor
+decal flicker, restores container frames and smooths the tunnel catwalks
+([details](docs/phase-runner-1.7.1/README.md)); the shared ApexMaps.UI 0.1.1 fixes washed-out minimaps. Phase Runner 1.7.0 adds Apex two-layer
+blending (snow caps and moss on rocks, moss/dirt ground), Apex-scale ground tiling and collision matched to
+210 coarse-detail cliffs and rocks (invisible collision 18.2% to 1.0%;
+[details](docs/phase-runner-1.7.0/README.md)). Phase Runner 1.6.0 and Drop-Off 0.10.0 restore
 432 and 366 source scenery placements respectively, reaching 97.04% and
 97.06% of the native world index capacity. No dynamic entities are added.
 Existing minimaps, lighting, gameplay, collision exclusions and catwalks remain.

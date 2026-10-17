@@ -23,6 +23,10 @@ PROJECT = OUT / 'structure-recovery'
 BACKUP = OUT / 'before-0.4.0'
 TRIANGLE_ALLOWANCE = 74000
 INDEX_FRACTION = .98
+# Map identity used by snapshot()/materials(); other new_arena_ports maps override these.
+TARGET = 'mp_party_crasher'
+SLUG = 'party_crasher'
+SOURCE = 'mp_rr_party_crasher'
 
 
 def write(path, value):
@@ -136,15 +140,15 @@ def snapshot():
     if BACKUP.exists():
         raise ValueError('Snapshot already exists; do not overwrite the rollback')
     BACKUP.mkdir(parents=True)
-    for name in ('mp_party_crasher.bsp', 'mp_party_crasher.stbsp', 'scene.npz', 'scene.json',
+    for name in (TARGET+'.bsp', TARGET+'.stbsp', 'scene.npz', 'scene.json',
                  'physics.npz', 'physics.json', 'source-build.json', 'materials/mapping.json',
-                 'materials/build.json', 'materials/build/party_crasher_world.rpak'):
+                 'materials/build.json', 'materials/build/'+SLUG+'_world.rpak'):
         source, target = OUT / name, BACKUP / name
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
     # The live RPak may be hard-linked to a staged/installed package. Detach
     # before RePak opens it, so neither rollback nor accepted mod is mutated.
-    live = OUT / 'materials/build/party_crasher_world.rpak'
+    live = OUT / 'materials/build' / (SLUG+'_world.rpak')
     temp = live.with_suffix('.detached.rpak')
     shutil.copy2(live, temp)
     os.replace(temp, live)
@@ -172,7 +176,7 @@ def materials():
     write(stage_scene, dict(materials=new))
     import prepare_composite_materials as prepare
     prepare.OUT = PROJECT / 'materials'
-    prepare.prepare(stage_scene, [OUT / 'legion/exported_files/materials'], 'party_crasher')
+    prepare.prepare(stage_scene, [OUT / 'legion/exported_files/materials'], SLUG)
     mdir = prepare.OUT
     staged = json.loads((mdir / 'mapping.json').read_text())
     manifest = json.loads((OUT / 'materials/build.json').read_text())
@@ -195,8 +199,8 @@ def materials():
     from apex_material_constants import ApexMaterials
     from PIL import Image
     manifest['files'] = list(files.values())
-    builder = NativeMaterials(OUT / 'materials', 'party_crasher', manifest)
-    source = ApexMaterials(OUT / 'paks/mp_rr_party_crasher.rpak')
+    builder = NativeMaterials(OUT / 'materials', SLUG, manifest)
+    source = ApexMaterials(OUT / 'paks' / (SOURCE+'.rpak'))
     adapted = []
     for name in new:
         r = old['materials'][name]

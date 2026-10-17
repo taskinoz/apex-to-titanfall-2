@@ -1,0 +1,111 @@
+{
+  "map": "mp_phase_runner",
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "m1-concrete_trim_slums_01_to_moss",
+      "origin": [
+        -249.8,
+        -514.9,
+        -1132.7
+      ],
+      "angles": [
+        35.26,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "m2-concrete_trim_slums_01_to_moss",
+      "origin": [
+        -1637.2,
+        48.0,
+        -1046.9
+      ],
+      "angles": [
+        35.26,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "m3-metal_worn_tileable_01_to_icel",
+      "origin": [
+        -3989.1,
+        62.6,
+        -546.5
+      ],
+      "angles": [
+        35.26,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "m4-white_floor_tile_mendoko_01_to",
+      "origin": [
+        -4088.7,
+        38.9,
+        -709.3
+      ],
+      "angles": [
+        35.26,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "m5-icelandic_rock_cluster_01_snow",
+      "origin": [
+        -271.8,
+        -259.8,
+        -787.9
+      ],
+      "angles": [
+        35.26,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "m6-rock_lava_desertland_03_moss_d",
+      "origin": [
+        154.0,
+        627.8,
+        -1078.8
+      ],
+      "angles": [
+        35.26,
+        45.0,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

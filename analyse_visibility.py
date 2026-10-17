@@ -60,7 +60,14 @@ def triggers(ident):
     scene = json.loads((folder(ident)/'scene.json').read_text()); planes = []
     for e in scene['source_entities']:
         if e.get('classname') in ('trigger_out_of_bounds', 'trigger_hurt'):
-            for p in pieces(e):
+            try:
+                decoded = pieces(e)
+            except ValueError:
+                # Unsupported descriptor variant (Overflow): omitting the volume only
+                # enlarges reach, which keeps more meshes and audits more collision.
+                triggers.skipped = getattr(triggers, 'skipped', 0)+1
+                continue
+            for p in decoded:
                 # Trigger pieces are in source coordinates: n.x <= d becomes n.x' <= d + n.offset.
                 # Pieces are relative to the entity origin, in source coordinates.
                 origin = np.asarray([float(v) for v in e.get('origin', '0 0 0').split()])

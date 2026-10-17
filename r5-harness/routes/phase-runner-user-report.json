@@ -1,0 +1,193 @@
+{
+  "title": "phase-runner-user-report",
+  "source_map": "mp_rr_arena_phase_runner",
+  "target_map": "mp_phase_runner",
+  "source_offset": [
+    26000,
+    19000,
+    0
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "warmup",
+      "origin": [
+        0,
+        0,
+        1500
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90,
+      "settle": 6
+    },
+    {
+      "name": "p01-zfight-base-w1",
+      "origin": [
+        -5610.3,
+        -1797.15,
+        -812.07
+      ],
+      "angles": [
+        36.8,
+        99.81,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p02-zfight-base-w2",
+      "origin": [
+        -5611.94,
+        -1302.68,
+        -736.74
+      ],
+      "angles": [
+        56.08,
+        97.06,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p03-zfight-base-e1",
+      "origin": [
+        5865.15,
+        -1280.98,
+        -722.88
+      ],
+      "angles": [
+        67.98,
+        89.83,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p04-zfight-base-e2",
+      "origin": [
+        5864.26,
+        -1603.54,
+        -785.6
+      ],
+      "angles": [
+        55.07,
+        -88.35,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p05-tunnel-rocks",
+      "origin": [
+        -3926.74,
+        1935.54,
+        -595.76
+      ],
+      "angles": [
+        -9.6,
+        -139.69,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p06-catwalk-dips",
+      "origin": [
+        -4534.39,
+        281.79,
+        -617.6
+      ],
+      "angles": [
+        53.66,
+        71.56,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p07-catwalk-ground-w",
+      "origin": [
+        -4707.52,
+        -116.02,
+        -703.86
+      ],
+      "angles": [
+        39.63,
+        -92.09,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p08-catwalk-ground-e",
+      "origin": [
+        4972.14,
+        -137.32,
+        -784.18
+      ],
+      "angles": [
+        35.07,
+        108.67,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p09-container-gap-1",
+      "origin": [
+        -5139.02,
+        -155.15,
+        -714.59
+      ],
+      "angles": [
+        4.19,
+        119.74,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p10-container-gap-2",
+      "origin": [
+        -2962.17,
+        1277.44,
+        -1040.76
+      ],
+      "angles": [
+        7.33,
+        82.26,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    },
+    {
+      "name": "p11-container-gap-3",
+      "origin": [
+        2967.65,
+        1481.82,
+        -1028.3
+      ],
+      "angles": [
+        16.63,
+        -12.26,
+        0
+      ],
+      "fov": 90,
+      "settle": 4
+    }
+  ]
+}

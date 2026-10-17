@@ -88,7 +88,9 @@ def build():
     dest.parent.mkdir(parents=True,exist_ok=True)
     png = WORK/'ui-shared.png'
     canvas.save(png)
-    subprocess.run([str(ROOT/'tools/directxtex/texconv.exe'),'-nologo','-f','BC7_UNORM_SRGB','-m','1',
+    # -srgb: the PNG already holds sRGB values; without it texconv treats it as linear and
+    # brightens every overview and loading name (dark Apex minimaps looked washed out).
+    subprocess.run([str(ROOT/'tools/directxtex/texconv.exe'),'-nologo','-srgb','-f','BC7_UNORM_SRGB','-m','1',
                     '-y','-o',str(dest.parent),str(png)],capture_output=True,check=True)
     shutil.copy2(dest.parent/'ui-shared.dds',dest)
     manifest = dict(version=7,name='apex_maps_ui',keepDevOnly=True,assetsDir=str(WORK/'assets'),
