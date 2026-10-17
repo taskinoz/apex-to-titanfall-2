@@ -1,0 +1,66 @@
+{
+ "map": "mp_phase_runner",
+ "mode": "ps",
+ "shots": [
+  {
+   "name": "warmup",
+   "origin": [
+    -6104.67,
+    -1469.43,
+    -777.9
+   ],
+   "angles": [
+    21.97,
+    172.31,
+    0
+   ],
+   "fov": 90,
+   "settle": 6
+  },
+  {
+   "name": "p1-console",
+   "origin": [
+    -6104.67,
+    -1469.43,
+    -777.9
+   ],
+   "angles": [
+    21.97,
+    172.31,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "p1-console-close",
+   "origin": [
+    -6120,
+    -1460,
+    -790
+   ],
+   "angles": [
+    30,
+    175,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "p2-console-east",
+   "origin": [
+    6330,
+    -1460,
+    -778
+   ],
+   "angles": [
+    22,
+    -8,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  }
+ ]
+}

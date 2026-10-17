@@ -1,10 +1,10 @@
 {
-  "version": "0.6.2",
+  "version": "0.6.3",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
   "full_release_ready": false,
-  "bsp_sha256": "98116bb9ffb57e316ebf24e926bb57c9132fc8e5a3ef18bfc4cd26db4ee1e879",
+  "bsp_sha256": "d3cda159102698088869533fc367f19caa2443d77298c1378b01636e549aa613",
   "render_fraction": 0.9771347045898438,
   "new_placements": 22,
   "validation": "Single-client pilot spawns, source contacts and reloads; FFA definitions unchanged"

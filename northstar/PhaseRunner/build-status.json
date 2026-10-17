@@ -2867766,7 +2867766,7 @@
       "Native Titan spawn hulls/markers are checked; not every live Titan drop trajectory is tested."
     ]
   },
-  "version": "1.7.1",
+  "version": "1.7.2",
   "safety": {
     "added_counts": {
       "trigger_out_of_bounds": 82,
@@ -2867953,5 +2867953,5 @@
     "scale": 16.015625,
     "configuration_query": "-8099 7514 16.0156"
   },
-  "bsp_sha256": "c8c885154f9800f4b89419b38df2b98ed5399bd917eb12d24929e9fa1bc13598"
+  "bsp_sha256": "db48476651733500d8923102630105b90b970813c63e256ca079e280f441103b"
 }

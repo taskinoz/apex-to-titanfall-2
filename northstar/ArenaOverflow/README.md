@@ -1,3 +1,9 @@
+# ArenaOverflow 0.4.1
+
+Fixes z-fighting and flat textures from Apex overlays that were drawn as solid surfaces on top of the surface below: stencil lettering (REFINERY, the capsules) and arrow signs are now proper decals, the flat brown dirt sheet over the asphalt is removed, and the lava no longer flickers between its glow and a grey duplicate. The invisible barrier in the ceiling opening is an Apex player clip and is kept. Known issue (also in 0.4.0): about one load in five can crash Northstar at spawn; restart and load again.
+
+## Previous release notes
+
 # Overflow 0.4.0
 
 Restores Apex two-layer blending with Titanfall's native blend shader: stains, dirt and wear on concrete, painted metal and rock now blend as in Apex instead of showing one layer. 51 pipes, rocks and wall plates drawn at coarse detail now collide with the shape you see, and 53 props whose Apex collision was still in the map (tech panels, server racks, ceiling servers, warning lights, vents) are drawn instead of being invisible objects. Known issue (also in 0.3.1): about one load in five can crash Northstar at spawn; restart and load again. Animated advertisements, AI navigation and Titan modes remain absent.

@@ -47,7 +47,7 @@ OFFSET = np.asarray([-26000., -19000., 0.])  # source + OFFSET = port
 EXPORTS = [ROOT/'tools/legion/exported_files/materials', ROOT/'output/phase-runner/legion-assets/exported_files/materials',
            ROOT/'output/phase-runner/common-assets/exported_files/materials', ROOT/'tools/composite-legion/exported_files/materials']
 PAK = 'phase_runner_blend'
-VERSION = '1.7.1'
+VERSION = '1.7.2'
 SLUG = 'phase_runner_blend'
 
 
