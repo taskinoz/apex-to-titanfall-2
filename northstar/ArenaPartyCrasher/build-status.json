@@ -1,5 +1,5 @@
 {
-  "version": "0.6.3",
+  "version": "0.6.4",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
@@ -7,5 +7,7 @@
   "bsp_sha256": "d3cda159102698088869533fc367f19caa2443d77298c1378b01636e549aa613",
   "render_fraction": 0.9771347045898438,
   "new_placements": 22,
-  "validation": "Single-client pilot spawns, source contacts and reloads; FFA definitions unchanged"
+  "validation": "Single-client pilot spawns, source contacts and reloads; FFA definitions unchanged",
+  "artwork": "art/northstar/party-crasher-northstar-screen-v1.png",
+  "world_pack_sha256": "9c98a2a0a6c09572f7f6ab40a7573d352ef536b370b04fa0c1b5152a5a37d68b"
 }

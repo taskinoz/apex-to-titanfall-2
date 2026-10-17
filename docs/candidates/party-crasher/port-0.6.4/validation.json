@@ -1,0 +1,40 @@
+{
+  "version": "0.6.4",
+  "artwork_sha256": "cc88a6ba557769a52b3b4664b4ec75590ac270b51c992678f8d4f145d788cb97",
+  "texture": {
+    "source_panel_pixels": [
+      1266,
+      749,
+      2047,
+      1180
+    ],
+    "native_panel_pixels": [
+      633,
+      374,
+      1024,
+      591
+    ],
+    "dds_size": [
+      1024,
+      1024
+    ],
+    "mips": 11,
+    "changed_blocks": 7272,
+    "unchanged_outside_blocks": 80111,
+    "srgb_encoding": "Existing DXGI 78 retained; sRGB bytes preserved without gamma re-encoding",
+    "original_sha256": "194b988e16701cbf5fd9ef83dd54a6f2e90d784bff5746039dbb024e5899cfa9",
+    "modified_sha256": "03bee4aeeb32c1642ee37514f373ee953d00edf49223a470b39699823e98b56e"
+  },
+  "identical_material_definitions": 599,
+  "asset_count": 1888,
+  "world_pack_sha256": "9c98a2a0a6c09572f7f6ab40a7573d352ef536b370b04fa0c1b5152a5a37d68b",
+  "bsp_sha256": "d3cda159102698088869533fc367f19caa2443d77298c1378b01636e549aa613",
+  "geometry_collision_lighting_scripts_and_ui_unchanged": true,
+  "ui_atlases_added": 0,
+  "native_screenshot_sha256": "b814811a97e43fb7e8d73671ba1919cd3e6cbb17957d648fc7c2f8d5a8b48156",
+  "mounted_payload_verified": true,
+  "stock_and_party_reload": true,
+  "script_errors": 0,
+  "native_crashes": 0,
+  "single_client_only": true
+}
