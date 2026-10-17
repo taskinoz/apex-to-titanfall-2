@@ -1165,7 +1165,7 @@
       ],
       "notes": "Adds 432 source scenery placements: supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves minimap, displays, paint, lighting, team modes and catwalks. AI navigation and some layered/animated materials remain incomplete. The UI atlas hotfix shares loading artwork and minimaps through ApexMaps.UI; geometry and lighting are unchanged.",
       "download": null,
-      "version": "1.6.1",
+      "version": "1.7.2",
       "source_offset": [
         26000,
         19000,
@@ -2160,7 +2160,7 @@
       ],
       "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds distance haze, restored source colours and native glowing lights while preserving the existing lava appearance and gameplay. Some animated effects and decorations remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null,
-      "version": "0.3.1",
+      "version": "0.4.1",
       "source_offset": [
         0,
         0,
@@ -2788,7 +2788,7 @@
       ],
       "notes": "0.4.0: Restores 380 exact-source placements: 168 facade sections, all 42 large boundary rocks, 42 rooftop vents and all 128 solar panels. Uses 97.66% of native world index capacity, with no additional gameplay entities. Existing lighting, collision, safety areas, spawns, loading screen and minimap are retained. Some dense window modules, roof foliage, animated advertisements and layered terrain materials remain incomplete. AI navigation and Titan modes are not supplied. Restart between previews; repeated mode cycling has an unresolved earlier failure.",
       "download": null,
-      "version": "0.4.0",
+      "version": "0.6.3",
       "source_offset": [
         0,
         0,
@@ -3608,7 +3608,7 @@
       ],
       "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds campaign-style moving water with a softer grey-blue colour, distance haze and restored source colours. Preserves the 20 supply bins and seven zipline routes. Exact Apex water reflections, distant scenery and training interactions remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
       "download": null,
-      "version": "0.3.1",
+      "version": "0.5.1",
       "source_offset": [
         32000,
         -7000,

@@ -14,11 +14,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 RELEASES = {
     'PhaseRunner': {
-        'version': '1.7.1',
+        'version': '1.7.2',
         'map': 'mp_phase_runner',
         'title': 'Phase Runner',
         'screenshot': 'output/arena-fill/phase-runner/comparison/arena-overview-northstar.png',
-        'notes': 'Fixes the flickering floor in both starting bases (opaque Apex decals drawn on the same plane as the floor; the stripes are now alpha-blended decals and a wrong stand-in sign texture is hidden), restores the metal frames around stacked containers that left visible gaps, and smooths the tunnel catwalks so they no longer dip and meet the floor at both arena ends. Minimaps are no longer washed out (shared ApexMaps.UI 0.1.1). Includes 1.7.0: Apex two-layer blending, Apex-scale ground tiling and collision matched to 210 cliffs and rocks.',
+        'notes': 'The control-room consoles in both bases are drawn from the full Apex mesh with lighting taken from their own surface, so their panels no longer look stretched or streaky. Includes 1.7.1: flicker-free base floors, container frames, smooth catwalks, and 1.7.0 blending, ground tiling and rock collision.',
     },
     'ArenaComposite': {
         'version': '0.10.1',
@@ -35,18 +35,18 @@ RELEASES = {
         'notes': 'Rocks now collide with the shape you see: 329 rocks drawn at coarse detail had full-detail Apex collision, which left invisible rock to bump into and visible rock to fall into. Their collision is now the drawn shape, and spawns that stood on the old shape were moved onto the visible ground. Invisible player clips left around the missing shooting-range targets are removed. Invisible collision across the playable area drops from about 16% to under 3% of collision surface. Includes 0.5.0 blending and rock detail. Weapon stations, targets, foliage and AI navigation remain absent. Restart between previews.',
     },
     'ArenaPartyCrasher': {
-        'version': '0.6.2',
+        'version': '0.6.3',
         'map': 'mp_party_crasher',
         'title': 'Party Crasher',
         'screenshot': 'northstar/ArenaPartyCrasher/screenshot.png',
-        'notes': 'Fixes invisible objects from missing Apex props: the cafe table set, both search lights, the concrete rubble ramp and a speaker are now drawn, and the second flower planter is back with solid walls. More cafe tables and stools are restored. The fountain foam is faint, as in Apex (Titanfall cannot animate it), and the R5Reloaded placeholder screen shows a north-star emblem. Over-detailed wire bundles, consoles and pillar signs use simplified meshes to pay for this. Foliage, animated advertisements and AI navigation remain absent. Restart between previews.',
+        'notes': 'Fixes the fifth round of reports. The bar counter around the pillar, the glasses on it, and the rubble and rocks beside the pool are drawn where you could bump into them, and the missing tables are back in both upper cafes. Table clutter and the out-of-bounds rooftop AC unit and pipes are removed. The "234" room number no longer blooms, and the pool water is see-through instead of black. Heavy flat-panel props use simplified meshes to pay for this. Foliage, animated advertisements and AI navigation remain absent.',
     },
     'ArenaOverflow': {
-        'version': '0.4.0',
+        'version': '0.4.1',
         'map': 'mp_overflow',
         'title': 'Overflow',
         'screenshot': 'northstar/ArenaOverflow/screenshot.png',
-        'notes': "Restores Apex two-layer blending with Titanfall's native blend shader: stains, dirt and wear on concrete, painted metal and rock now blend as in Apex instead of showing one layer. 51 pipes, rocks and wall plates drawn at coarse detail now collide with the shape you see, and 53 props whose Apex collision was still in the map (tech panels, server racks, ceiling servers, warning lights, vents) are drawn instead of being invisible objects. Known issue (also in 0.3.1): about one load in five can crash Northstar at spawn; restart and load again. Animated advertisements, AI navigation and Titan modes remain absent.",
+        'notes': 'Fixes z-fighting and flat textures from Apex overlays that were drawn as solid surfaces on top of the surface below: stencil lettering (REFINERY, the capsules) and arrow signs are now proper decals, the flat brown dirt sheet over the asphalt is removed, and the lava no longer flickers between its glow and a grey duplicate. The invisible barrier in the ceiling opening is an Apex player clip and is kept. Known issue (also in 0.4.0): about one load in five can crash Northstar at spawn; restart and load again.',
     },
 }
 # The shared UI companion ships as its own download (one UI atlas serves all five maps;

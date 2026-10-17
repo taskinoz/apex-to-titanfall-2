@@ -1,3 +1,9 @@
+# PhaseRunner 1.7.2
+
+The control-room consoles in both bases are drawn from the full Apex mesh with lighting taken from their own surface, so their panels no longer look stretched or streaky. Includes 1.7.1: flicker-free base floors, container frames, smooth catwalks, and 1.7.0 blending, ground tiling and rock collision.
+
+## Previous release notes
+
 # Phase Runner 1.7.1
 
 Fixes the flickering floor in both starting bases (opaque Apex decals drawn on the same plane as the floor; the stripes are now alpha-blended decals and a wrong stand-in sign texture is hidden), restores the metal frames around stacked containers that left visible gaps, and smooths the tunnel catwalks so they no longer dip and meet the floor at both arena ends. Minimaps are no longer washed out (shared ApexMaps.UI 0.1.1). Includes 1.7.0: Apex two-layer blending, Apex-scale ground tiling and collision matched to 210 cliffs and rocks.

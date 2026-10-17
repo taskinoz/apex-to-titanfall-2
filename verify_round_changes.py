@@ -28,7 +28,8 @@ from package_player_mods import digest
 from append_free_charts import used_tiles, PER_PAGE
 
 
-def verify(ident, baseline_dir, project):
+def verify(ident, baseline_dir, project, disabled=(), changed=()):
+    """disabled: collision header ids deliberately removed from the grid; changed: material names deliberately rebuilt."""
     out = folder(ident); target = CONFIG[ident]['target']; slug = ident.replace('-', '_')
     base = out/baseline_dir; bsp = out/(target+'.bsp')
     old = read_lumps(base/(target+'.bsp'), tuple(range(128))); new = read_lumps(bsp, tuple(range(128)))
@@ -43,8 +44,10 @@ def verify(ident, baseline_dir, project):
     for key in (3, 0x42, 0x44, 0x45, 0x60):
         check(new[key][:len(old[key])] == old[key], f'Original position/collision prefix preserved: {key:02x}')
     first, last = len(old[0x45])//44, len(new[0x45])//44
-    check(active(new) == active(old) | {(0x40, i) for i in range(first, last)},
-          'Original collision exclusions preserved; only new collision headers activated')
+    gone_headers = {(0x40, i) for i in disabled}
+    check(active(new) == (active(old)-gone_headers) | {(0x40, i) for i in range(first, last) if i not in disabled},
+          'Original collision exclusions preserved; only new collision headers activated'
+          + (f'; {len(gone_headers)} named headers disabled' if gone_headers else ''))
     a = np.frombuffer(old[0x49], DT); b = np.frombuffer(new[0x49][:len(old[0x49])], DT)
     for field in DT.names:
         if field == 'color':
@@ -81,15 +84,15 @@ def verify(ident, baseline_dir, project):
     before = NativePak(base/'materials/build'/(slug+'_world.rpak')); after = NativePak(out/'materials/build'/(slug+'_world.rpak'))
     mapping = json.loads((out/'materials/mapping.json').read_text())['materials']
     blended = {r['name'] for r in mapping.values() if r.get('native_layer_blend')}
-    assets = {x['guid']: x for x in after.assets}; changed = 0
+    assets = {x['guid']: x for x in after.assets}; rebound = 0
     for x in before.assets:
         check(x['guid'] in assets, 'Original asset retained: '+hex(x['guid']))
         if x['type'] == 'matl':
             spec, uber = before.material(x)
-            if spec.get('name', '').replace('_colpass', '') in blended:
-                changed += 1; continue
+            if spec.get('name', '').replace('_colpass', '') in blended or spec.get('name', '').replace('_colpass', '').rsplit('/', 1)[-1] in changed:
+                rebound += 1; continue
             check((spec, uber) == after.material(assets[x['guid']]), 'Untouched material identical: '+hex(x['guid']))
-    checks.append(f'{changed} blend-converted material records rebound to the native bm shader')
+    checks.append(f'{rebound} blend-converted or named material records rebuilt')
     result = dict(checks=len(checks), passed=checks, budget=budget, visibility=visibility, bsp_sha256=digest(bsp),
                   retained_meshes=survived, removed_meshes=gone, native_runtime_verified=False)
     (out/project).mkdir(exist_ok=True)

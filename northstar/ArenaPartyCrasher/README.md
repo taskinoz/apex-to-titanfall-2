@@ -1,3 +1,9 @@
+# ArenaPartyCrasher 0.6.3
+
+Fixes the fifth round of reports. The bar counter around the pillar, the glasses on it, and the rubble and rocks beside the pool are drawn where you could bump into them, and the missing tables are back in both upper cafes. Table clutter and the out-of-bounds rooftop AC unit and pipes are removed. The "234" room number no longer blooms, and the pool water is see-through instead of black. Heavy flat-panel props use simplified meshes to pay for this. Foliage, animated advertisements and AI navigation remain absent.
+
+## Previous release notes
+
 # Party Crasher 0.6.2
 
 Fixes invisible objects from missing Apex props: the cafe table set, both search lights, the concrete rubble ramp and a speaker are now drawn, and the second flower planter is back with solid walls. More cafe tables and stools are restored. The fountain foam is faint, as in Apex (Titanfall cannot animate it), and the R5Reloaded placeholder screen shows a north-star emblem. Over-detailed wire bundles, consoles and pillar signs use simplified meshes to pay for this. Foliage, animated advertisements and AI navigation remain absent. Restart between previews.

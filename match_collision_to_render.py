@@ -127,15 +127,17 @@ def measure(ident):
 
 def replace_collision(l, buf, drop_b, drop_h, col):
     """Disable source primitives (grid only) and append triangle collision; returns the encoding."""
-    # Append the drawn-shape triangle collision (relocatable headers).
-    centers = col.mean(1); q = np.floor(centers/128).astype(np.int32); col = col[np.lexsort((centers[:, 2], q[:, 1], q[:, 0]))]
-    encoded, _ = encode([col[i:i+96] for i in range(0, len(col), 96)])
-    vb = len(buf[3])//12; wb = len(buf[0x42])//4; nb = len(buf[0x44])//16
-    for at in range(0, len(encoded[0x45]), 44):
-        h = list(struct.unpack_from('<6h4i4f', encoded[0x45], at)); h[6] += vb; h[7] += wb; h[8] += nb
-        buf[0x45].extend(struct.pack('<6h4i4f', *h))
-    for k in (3, 0x42, 0x44, 0x60):
-        buf[k].extend(encoded[k])
+    # Append the drawn-shape triangle collision (relocatable headers); none when only disabling.
+    encoded = None
+    if len(col):
+        centers = col.mean(1); q = np.floor(centers/128).astype(np.int32); col = col[np.lexsort((centers[:, 2], q[:, 1], q[:, 0]))]
+        encoded, _ = encode([col[i:i+96] for i in range(0, len(col), 96)])
+        vb = len(buf[3])//12; wb = len(buf[0x42])//4; nb = len(buf[0x44])//16
+        for at in range(0, len(encoded[0x45]), 44):
+            h = list(struct.unpack_from('<6h4i4f', encoded[0x45], at)); h[6] += vb; h[7] += wb; h[8] += nb
+            buf[0x45].extend(struct.pack('<6h4i4f', *h))
+        for k in (3, 0x42, 0x44, 0x60):
+            buf[k].extend(encoded[k])
     # New headers must be active: mark them by giving them grid membership.
     first_new = len(l[0x45])//44
     tmp = {k: bytes(v) for k, v in buf.items()}
