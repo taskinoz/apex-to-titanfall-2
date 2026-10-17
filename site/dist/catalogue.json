@@ -13,7 +13,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Adds 366 source placements: conduits, clamps, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves minimap, Northstar banners, displays, paint, lighting, safety volumes and ziplines. Some scenery and animated materials remain incomplete. Intro and evac are disabled. The UI atlas hotfix shares loading artwork and minimaps through ApexMaps.UI; geometry and lighting are unchanged.",
+      "notes": "Preview for Skirmish, Pilots vs Pilots and Free For All. Restores 366 source placements: utility conduits, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves the Apex minimap, Northstar banners, displays, paint, lighting, room closures, safety volumes and ziplines. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.",
       "download": null,
       "version": "0.10.1",
       "source_offset": [
@@ -1145,9 +1145,351 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-18-release-refresh",
+          "version": "0.10.1",
+          "shots": [
+            {
+              "name": "court-overview",
+              "origin": [
+                0,
+                2200,
+                900
+              ],
+              "angles": [
+                22,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/court-overview-r5r.png",
+                "sha256": "16e1f6c5f1601c1c06efd101fa0b7454d4d99b33046a82a45f7573bb8cd4cdb7",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771300.5818188
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/court-overview-northstar.png",
+                "sha256": "4c049dbffaedb88f485f85d904518c32afc0a285a01636a5849539dac5f3f176",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254390.3340738
+              }
+            },
+            {
+              "name": "south-overview",
+              "origin": [
+                0,
+                -1200,
+                1450
+              ],
+              "angles": [
+                18,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/south-overview-r5r.png",
+                "sha256": "ff0378cff222caffea77a1394efa8d8fee563429729a92da6fb9a7e58895e9cb",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771460.5304701
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/south-overview-northstar.png",
+                "sha256": "9140c82cff7dc6a2881f80535c898c3acf39eaab6029d0c98fe2e6920deffbee",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792255189.9873385
+              }
+            },
+            {
+              "name": "west-control",
+              "origin": [
+                -1917.1,
+                631.305,
+                256.031
+              ],
+              "angles": [
+                -20,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/west-control-r5r.png",
+                "sha256": "643c4ec4133117c24f70e50143782263de4e6560dac374bcbebfad9b141ca5cc",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771340.581923
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/west-control-northstar.png",
+                "sha256": "e95eea07c09e4ba78bfe8ed985bbb52df9ae7ef45e84ed3fdc21dd9014480c4e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254395.1410582
+              }
+            },
+            {
+              "name": "north-platform",
+              "origin": [
+                0,
+                5000,
+                450
+              ],
+              "angles": [
+                -10,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/north-platform-r5r.png",
+                "sha256": "a548fdc7123cbc40304a35f58d70125128d4f1ad75d9cbab901f4d907ba8f7aa",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771380.630876
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/north-platform-northstar.png",
+                "sha256": "a391727a6a5ccca52ca31ce6fbf6d024870fd024c4d671ced1c57abb87d961ae",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254400.038259
+              }
+            },
+            {
+              "name": "west-cargo",
+              "origin": [
+                -1656,
+                1300,
+                260
+              ],
+              "angles": [
+                10,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/west-cargo-r5r.png",
+                "sha256": "e9383633ffabd9b0d995d5e644a2e6ee0d82a9e0cb44a5c44eca2dffd11750e9",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771420.5576925
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/west-cargo-northstar.png",
+                "sha256": "846a3223993a780e2895a9e7cf8d63896d93cfe30a47a03caa9304815ab19550",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254405.307217
+              }
+            },
+            {
+              "name": "east-control",
+              "origin": [
+                1917.1,
+                631.305,
+                256.031
+              ],
+              "angles": [
+                -20,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/east-control-r5r.png",
+                "sha256": "afd682d2d4080e393489194f9649bc988f3f3a7a5761df65e9f1480cc860c574",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771500.4784148
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/east-control-northstar.png",
+                "sha256": "9cfb2b3bdc4947f40a2019fa96dbe6a43e19754518b114849b086fe467523526",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254410.454541
+              }
+            },
+            {
+              "name": "lower-court",
+              "origin": [
+                0,
+                1962,
+                6
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/lower-court-r5r.png",
+                "sha256": "6d20914a9aa68d1fdb50b83b1de82d581b74cdef1dcfc425c2aa3db2161c21fa",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771540.4820054
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/lower-court-northstar.png",
+                "sha256": "34f8eb69e205847076144135a2d92c301540243b7dc88adcd60da989b32572cd",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254415.5714753
+              }
+            },
+            {
+              "name": "central-window",
+              "origin": [
+                65,
+                3400,
+                480
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/central-window-r5r.png",
+                "sha256": "aa86f0b326700ff10080dac20a15e34da00053f56029ce84e91b96fe98e0db2b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771580.5724974
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/central-window-northstar.png",
+                "sha256": "b09f36307a3233458d240102f80047674a42040ff68af2d4045252f030dbb78b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254420.9713037
+              }
+            },
+            {
+              "name": "north-closure",
+              "origin": [
+                20,
+                5534,
+                144
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/north-closure-r5r.png",
+                "sha256": "7dda3500b9f6cd02a82569bb183063230fa8685b9b98c8ed275bb16fbbece203",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771620.5237563
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/north-closure-northstar.png",
+                "sha256": "9698a81e6433cc74f38766a800ec7bfeb472f8107b9ddc1e19f4cc7f7a6f46a6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254426.0412853
+              }
+            },
+            {
+              "name": "upper-west",
+              "origin": [
+                -2500,
+                5300,
+                1450
+              ],
+              "angles": [
+                10,
+                40,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/upper-west-r5r.png",
+                "sha256": "41d19dacf1926ab8a76a92bc75b14898e2ec76d4c21c4f4d077495d004c5aa56",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771660.6547453
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/upper-west-northstar.png",
+                "sha256": "6af8356c162a71ada1b986a5953a7713dc1430f1ff338587f8b172ba7c46fd9f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254431.039641
+              }
+            },
+            {
+              "name": "upper-east",
+              "origin": [
+                2600,
+                5400,
+                1450
+              ],
+              "angles": [
+                10,
+                135,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/upper-east-r5r.png",
+                "sha256": "02936be242dfc97100a388ff76f8fb728dd1438a1424c6f0b903aeb050c52938",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771700.5297678
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/upper-east-northstar.png",
+                "sha256": "df22e7f9c613a6f9ff5c0a5c8675d45c292d7d96d9896bae7e8c1d359f303f2d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254436.3720715
+              }
+            },
+            {
+              "name": "west-banner",
+              "origin": [
+                -2568,
+                3650,
+                1600
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/west-banner-r5r.png",
+                "sha256": "a0719200193b46ed4686c9c7d5d67af5ce1443887d046a753f4a41202941d48d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791771740.601017
+              },
+              "northstar": {
+                "image": "captures/drop-off/2026-10-18-release-refresh/west-banner-northstar.png",
+                "sha256": "2fdd0f9e32a67bfaee060534fd64f03507728dedce945480801fa8649acfdf74",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254441.7520018
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-13-scenery-fill"
+      "latest": "2026-10-18-release-refresh"
     },
     {
       "id": "phase-runner",
@@ -1163,7 +1505,7 @@
         "Hardpoint",
         "Fastball"
       ],
-      "notes": "Adds 432 source scenery placements: supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves minimap, displays, paint, lighting, team modes and catwalks. AI navigation and some layered/animated materials remain incomplete. The UI atlas hotfix shares loading artwork and minimaps through ApexMaps.UI; geometry and lighting are unchanged.",
+      "notes": "The control-room consoles in both bases are drawn from the full Apex mesh with lighting taken from their own surface, so their panels no longer look stretched or streaky. Includes 1.7.1: flicker-free base floors, container frames, smooth catwalks, and 1.7.0 blending, ground tiling and rock collision.",
       "download": null,
       "version": "1.7.2",
       "source_offset": [
@@ -2143,9 +2485,323 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-18-release-refresh",
+          "version": "1.7.2",
+          "shots": [
+            {
+              "name": "arena-overview",
+              "origin": [
+                0,
+                -5000,
+                1400
+              ],
+              "angles": [
+                28,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/arena-overview-r5r.png",
+                "sha256": "efc92e57b6d037a83b1ce9b6e1645f2950610d7c1b9df63014063d0f862926d6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773285.1644835
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/arena-overview-northstar.png",
+                "sha256": "eb8381b2f1f0020b82a16eadb9893b8f9051db406ed5fd37e88d6eeca37744b1",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254571.080684
+              }
+            },
+            {
+              "name": "west-tunnel",
+              "origin": [
+                -1819.8,
+                3017.7,
+                -382.4
+              ],
+              "angles": [
+                0,
+                0,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/west-tunnel-r5r.png",
+                "sha256": "f175d4a6af728e3818615ac7c706a406f2339c1e9b88e95f82901cd2d647e9ce",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773324.9647355
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/west-tunnel-northstar.png",
+                "sha256": "b963fe18574f721bb4894e0e25a056df63cd7ec2733cbb950af9b2b0a30471ad",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254576.3320012
+              }
+            },
+            {
+              "name": "west-building",
+              "origin": [
+                -6080,
+                -1530.2,
+                -773.9
+              ],
+              "angles": [
+                10,
+                90,
+                0
+              ],
+              "fov": 75,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/west-building-r5r.png",
+                "sha256": "bd0cdd33ef01a19aea2b0d8369fbf828d3f436750e6c4c001823c5f5ac17cf31",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773364.982922
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/west-building-northstar.png",
+                "sha256": "a47be102cf7aa3095f54bffe446d900a42825e6168f0d78f32719357214cba86",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254581.7271652
+              }
+            },
+            {
+              "name": "east-building",
+              "origin": [
+                6283.9,
+                -1417,
+                -773.9
+              ],
+              "angles": [
+                10,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/east-building-r5r.png",
+                "sha256": "e18f87254bff59ce46020ee20adcb09bd50de8e0d7ffcfb3fb2549e6b6e12247",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773869.4671693
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/east-building-northstar.png",
+                "sha256": "e7258c0b10de4aa4ab385e8bf273ce7dbb65c12190c6bf12b8bc74bafdf0759a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254586.9952803
+              }
+            },
+            {
+              "name": "east-tunnel",
+              "origin": [
+                1940.5,
+                3016.9,
+                -376
+              ],
+              "angles": [
+                0,
+                180,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/east-tunnel-r5r.png",
+                "sha256": "841e819ac7ef38e3c759dfee133dc8db1530f51aa69cfbcde850fad9ed0d5250",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791773904.349024
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/east-tunnel-northstar.png",
+                "sha256": "dc2c8bd3c9f3a5b8470416cfebd45651cefbc1c02ef9a5fd3f31135f2fdb5b13",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254592.3766007
+              }
+            },
+            {
+              "name": "west-tunnel-bend",
+              "origin": [
+                -4412.6,
+                613.2,
+                -645.7
+              ],
+              "angles": [
+                0,
+                45,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/west-tunnel-bend-r5r.png",
+                "sha256": "bfb7b62e43ea484b9ccd8fbb0fe85c3ef9bd5a71370e511d7d1a7933688559a7",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774664.2257445
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/west-tunnel-bend-northstar.png",
+                "sha256": "f4f8c574e2f092986ceb5314e2a7a4b3ecda828a90e08823e51a8b7107d2c236",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254597.653184
+              }
+            },
+            {
+              "name": "east-tunnel-bend",
+              "origin": [
+                4636.4,
+                734.9,
+                -683.3
+              ],
+              "angles": [
+                0,
+                135,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/east-tunnel-bend-r5r.png",
+                "sha256": "facf455b430eff99e421bd604ed4f1236c0b65dd0285950caf030d0dc45da138",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774704.3914013
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/east-tunnel-bend-northstar.png",
+                "sha256": "b5182e16081f1cb2dfa37b2a5ce6fa22ce0edfbe5bbed3e5b87c49a46175a3d2",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254603.325398
+              }
+            },
+            {
+              "name": "central-rocks",
+              "origin": [
+                1839.9,
+                -782,
+                -1136.7
+              ],
+              "angles": [
+                0,
+                180,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/central-rocks-r5r.png",
+                "sha256": "13cfbc7089145f34732e6c70f2526497c84307a83ac7970c60b05f20da6ddf25",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774024.3638887
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/central-rocks-northstar.png",
+                "sha256": "088b5bb396ecba63207e213ced2451b629bbfc3673046a78fc3ee5bd58cd4f4e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254608.6147087
+              }
+            },
+            {
+              "name": "west-stairs",
+              "origin": [
+                -4176.4,
+                -1463.9,
+                -950.6
+              ],
+              "angles": [
+                10,
+                180,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/west-stairs-r5r.png",
+                "sha256": "60b06be76afd765ae53cbda2fb51a73cd360964d47c887afe86b389250b57412",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774064.4523482
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/west-stairs-northstar.png",
+                "sha256": "e09f284f233d4541ca4b5344a7d5db9391980f63d40e425a4172b902dd6546e7",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254613.6931624
+              }
+            },
+            {
+              "name": "nessie-rocks",
+              "origin": [
+                3200,
+                700,
+                -850
+              ],
+              "angles": [
+                30,
+                145,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/nessie-rocks-r5r.png",
+                "sha256": "54f97a50a8c817ea0e8ea371d1de9f6bc6dab82a0cafa4adb6f685888b8e8a08",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774104.3270504
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/nessie-rocks-northstar.png",
+                "sha256": "afb640a32746b39cc9225dc9f07d3717ee8482dc11b59c235a6c105aa91f63c8",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254618.760244
+              }
+            },
+            {
+              "name": "terrain-seam",
+              "origin": [
+                0,
+                -2650,
+                -1180
+              ],
+              "angles": [
+                30,
+                0,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/terrain-seam-r5r.png",
+                "sha256": "eed21333bfe1bc1b92bd9394c289f132a1823ca33442ca288ffce73ea95174f2",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791774144.342471
+              },
+              "northstar": {
+                "image": "captures/phase-runner/2026-10-18-release-refresh/terrain-seam-northstar.png",
+                "sha256": "06a1adc9dc99509c355d055f9287dfd580b2ed9614a93166d2011af3cb2c348a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254623.864834
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-13-scenery-fill"
+      "latest": "2026-10-18-release-refresh"
     },
     {
       "id": "overflow",
@@ -2158,7 +2814,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds distance haze, restored source colours and native glowing lights while preserving the existing lava appearance and gameplay. Some animated effects and decorations remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "Fixes z-fighting and flat textures from Apex overlays that were drawn as solid surfaces on top of the surface below: stencil lettering (REFINERY, the capsules) and arrow signs are now proper decals, the flat brown dirt sheet over the asphalt is removed, and the lava no longer flickers between its glow and a grey duplicate. The invisible barrier in the ceiling opening is an Apex player clip and is kept. Known issue (also in 0.4.0): about one load in five can crash Northstar at spawn; restart and load again.",
       "download": null,
       "version": "0.4.1",
       "source_offset": [
@@ -2771,9 +3427,239 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-18-release-refresh",
+          "version": "0.4.1",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                -324.00824,
+                -6295.51123,
+                1393.36169
+              ],
+              "angles": [
+                15.0,
+                61.8894501,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-18-release-refresh/view-0-r5r.png",
+                "sha256": "a5f2212ccabba91d602c51207beaee8e22f15858aaf7470b6191214a0de3b34f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943774.43126
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-18-release-refresh/view-0-northstar.png",
+                "sha256": "7348a2ca6334f46bca2db0250026422e9ee19234070ef889df4db0e695b82f51",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254720.6844828
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                4536.32324,
+                -4842.01514,
+                627.977661
+              ],
+              "angles": [
+                0.0,
+                168.955353,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-18-release-refresh/view-1-r5r.png",
+                "sha256": "bcbfd647b759ebcf6aec722769238c69d5b6d31e93f612a277e77fc9404409b2",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943809.3595948
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-18-release-refresh/view-1-northstar.png",
+                "sha256": "e41e6e013895a923a82de902dd7eac1960418c5a15c362559d5035c1916f4e60",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254725.7725768
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                -763.161804,
+                -5228.40234,
+                477.852356
+              ],
+              "angles": [
+                0.0,
+                124.9048,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-18-release-refresh/view-2-r5r.png",
+                "sha256": "dcc53026d290b6517634c6ac534b7ff0a088e3bb6fc32fd2b7a2003cca65a71c",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943844.4353034
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-18-release-refresh/view-2-northstar.png",
+                "sha256": "c807abc6283de032e499d4a3188bf2841977b201054452769c4366b6dfd07499",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254731.4566855
+              }
+            },
+            {
+              "name": "east-entry",
+              "origin": [
+                4450,
+                -4100,
+                650
+              ],
+              "angles": [
+                0,
+                175,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-18-release-refresh/east-entry-r5r.png",
+                "sha256": "e653f40880b586cbd1fcc63688b814d0c3d526a96832f2423f6e207097b71707",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943879.400013
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-18-release-refresh/east-entry-northstar.png",
+                "sha256": "09835a0c651b8e4c52187f64b040513d8b35ec4c5ae21a35625c43d231dc269e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254736.7553413
+              }
+            },
+            {
+              "name": "west-entry",
+              "origin": [
+                -3600,
+                -4100,
+                650
+              ],
+              "angles": [
+                0,
+                5,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-18-release-refresh/west-entry-r5r.png",
+                "sha256": "c792359e78e386293ce750a4c58b16c63d493f8df851147e348c3d0a54d2246f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943914.4363942
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-18-release-refresh/west-entry-northstar.png",
+                "sha256": "6423780080d3a95dad6cf18668d55b0ae1ed7caa059a8c3d87618feb8bbee234",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254741.9248495
+              }
+            },
+            {
+              "name": "central-bridge",
+              "origin": [
+                600,
+                -4500,
+                650
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-18-release-refresh/central-bridge-r5r.png",
+                "sha256": "992c668b0e7e00a567d45ed7076d895160ed81f9fb5706e3137032a0c2ccd970",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943949.322909
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-18-release-refresh/central-bridge-northstar.png",
+                "sha256": "4a4a9624b67ab2dc6d743009574c5dbb21c7868bc808a1442df61de3550b3636",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254747.5933912
+              }
+            },
+            {
+              "name": "lava-channel",
+              "origin": [
+                -500,
+                -2500,
+                800
+              ],
+              "angles": [
+                20,
+                -45,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-18-release-refresh/lava-channel-r5r.png",
+                "sha256": "838ed17e751140a827896ba1e5074112240b468fc36fae75e8391e35c468c647",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943984.348043
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-18-release-refresh/lava-channel-northstar.png",
+                "sha256": "3a21ef80db199e6292e7529eef489e97eb99e09d34699183376821488db43951",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254752.6825655
+              }
+            },
+            {
+              "name": "north-platform",
+              "origin": [
+                0,
+                -1300,
+                1050
+              ],
+              "angles": [
+                15,
+                -90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/overflow/2026-10-18-release-refresh/north-platform-r5r.png",
+                "sha256": "880fd02776bf76a658fd9898de120fefd2c3cd8a2ae9283d3d39b7bbc86c3528",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791944019.4621084
+              },
+              "northstar": {
+                "image": "captures/overflow/2026-10-18-release-refresh/north-platform-northstar.png",
+                "sha256": "7821dc2a93b806f3f3cbbc491589651db313bd8d7338959f70960069610d0b54",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254757.7965162
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-14-ui-atlas-survey"
+      "latest": "2026-10-18-release-refresh"
     },
     {
       "id": "party-crasher",
@@ -2786,9 +3672,9 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.4.0: Restores 380 exact-source placements: 168 facade sections, all 42 large boundary rocks, 42 rooftop vents and all 128 solar panels. Uses 97.66% of native world index capacity, with no additional gameplay entities. Existing lighting, collision, safety areas, spawns, loading screen and minimap are retained. Some dense window modules, roof foliage, animated advertisements and layered terrain materials remain incomplete. AI navigation and Titan modes are not supplied. Restart between previews; repeated mode cycling has an unresolved earlier failure.",
+      "notes": "Adds a new Northstar billboard image to the curved Oasis screen, matching the Drop-Off banner artwork. Geometry, collision, lighting and gameplay are unchanged from 0.6.3.",
       "download": null,
-      "version": "0.6.3",
+      "version": "0.6.4",
       "source_offset": [
         0,
         0,
@@ -3591,9 +4477,435 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-18-release-refresh",
+          "version": "0.6.4",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                3385.96265,
+                -1591.92493,
+                2220.44629
+              ],
+              "angles": [
+                12.0,
+                97.7711029,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/view-0-r5r.png",
+                "sha256": "e922c77e8ce44cccc3774882118d6dd1b51d856705dbbf88eb9b1516906405b8",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943444.4776735
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/view-0-northstar.png",
+                "sha256": "208d71d38a00c0c65a30533568777c7141302521c23a61fb6551b054707ce25f",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254868.885539
+              }
+            },
+            {
+              "name": "spawn-right",
+              "origin": [
+                -2537.5,
+                3894.8,
+                651
+              ],
+              "angles": [
+                0,
+                -90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/spawn-right-r5r.png",
+                "sha256": "27ba4af77a3486030809b538c2e47cdf880c0be81e55f793f6d384f6c9ad5e75",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791955645.9150538
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/spawn-right-northstar.png",
+                "sha256": "20d0436a4999a9876cbe4d3bd4b42a4cba16a86f3a367471ee571d61d101362d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254874.211705
+              }
+            },
+            {
+              "name": "opposite-spawn-right",
+              "origin": [
+                1674.8,
+                -3382,
+                651
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/opposite-spawn-right-r5r.png",
+                "sha256": "bc17b72363903e3fd5e348945d872c8465faec818aea03a3e0a19f2d5dfc8c92",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791955726.090378
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/opposite-spawn-right-northstar.png",
+                "sha256": "d24c136227fd029b34e58504bfb3d22ff15fa2fea1901de68cee19ba1bcfd00b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254879.5627606
+              }
+            },
+            {
+              "name": "west-edge",
+              "origin": [
+                -3200,
+                2500,
+                1400
+              ],
+              "angles": [
+                5,
+                180,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/west-edge-r5r.png",
+                "sha256": "7330b8bb6edd12cb09d4c764d3fec2562b7cd03f098124d62c18dedd2721b600",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791955806.0786874
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/west-edge-northstar.png",
+                "sha256": "a3658235d4b5763e2157470839ef015967f33bc55bc047a54559acf220d2a895",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254884.6444864
+              }
+            },
+            {
+              "name": "east-edge",
+              "origin": [
+                4700,
+                -1600,
+                2600
+              ],
+              "angles": [
+                8,
+                170,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/east-edge-r5r.png",
+                "sha256": "a47df68cd1eb9e25644015587881114d2972cf13ae5ba582bca97961682928a3",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791955886.0618136
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/east-edge-northstar.png",
+                "sha256": "cd96420050244a2d215e98e49ca71c3314f3f50f1ab0c660c33a47ceb8d11329",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254890.084498
+              }
+            },
+            {
+              "name": "north-roof",
+              "origin": [
+                5750,
+                1550,
+                3530
+              ],
+              "angles": [
+                32,
+                180,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/north-roof-r5r.png",
+                "sha256": "62fdd1f17d6c0b9756ee949dc21fc5e19f2defe3199070d2f1521a83f73d35cd",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791958069.6918955
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/north-roof-northstar.png",
+                "sha256": "df2b0747086d72e9e7ff87c4129b2a5b24b2a395d5342b14066df1abe961ddc7",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254895.6157634
+              }
+            },
+            {
+              "name": "south-roof",
+              "origin": [
+                -638.5,
+                -5500,
+                2820
+              ],
+              "angles": [
+                28,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/south-roof-r5r.png",
+                "sha256": "9650c232acc5a3183b0b9d0faffbd3ab2800c4380a0fc979b2bb78c965caa01e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791958104.7582643
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/south-roof-northstar.png",
+                "sha256": "9422dd98105ec5e212427a56765237b94166d81d6714778da77c4cc52b37bd55",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254901.1005378
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                -1949.47925,
+                -565.452087,
+                1366.40222
+              ],
+              "angles": [
+                0.0,
+                -4.39630127,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/view-1-r5r.png",
+                "sha256": "cfb3006ed69607c903c9a1e4e3835b151193659a11124900534e35b5cc7eb8ca",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943479.4523249
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/view-1-northstar.png",
+                "sha256": "06e14a6bcc83f9e35e78d01210ac7e2402278d685f09977210ad7525a701bf0b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254906.2264013
+              }
+            },
+            {
+              "name": "view-2",
+              "origin": [
+                416.486328,
+                2083.01709,
+                562.318604
+              ],
+              "angles": [
+                0.0,
+                -83.0055008,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/view-2-r5r.png",
+                "sha256": "ff65de4987f2dbcf9d73a96150ee670861fa1df76785ec3ff894d1ef4545f100",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943514.4649692
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/view-2-northstar.png",
+                "sha256": "f7e89f7ded57c23e7d669bb967e869b947710590fbb1b704fa2ae294cc431da2",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254911.8690693
+              }
+            },
+            {
+              "name": "south-courtyard",
+              "origin": [
+                1700,
+                -3000,
+                950
+              ],
+              "angles": [
+                0,
+                95,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/south-courtyard-r5r.png",
+                "sha256": "734b127fb52e33f60df4de0586dc398ea8fd86ee36105b9646af35f05369017b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943549.5101922
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/south-courtyard-northstar.png",
+                "sha256": "420d7c5e7eedc582f53a5724b6a2739d99014fa921b788ebbbf92de391b80ce7",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254917.2591958
+              }
+            },
+            {
+              "name": "north-courtyard",
+              "origin": [
+                -2500,
+                3450,
+                980
+              ],
+              "angles": [
+                0,
+                -35,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/north-courtyard-r5r.png",
+                "sha256": "b95df35aec9a512ba2dc2b7c0500d188c1eaa25a6da77c09af96fe871c152379",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943584.4143286
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/north-courtyard-northstar.png",
+                "sha256": "b9eba228a18a14f49b8119c3c36a02d423cc5b53233c10ffda19d2620344cb17",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254922.9013066
+              }
+            },
+            {
+              "name": "upper-signs",
+              "origin": [
+                -830,
+                4050,
+                2180
+              ],
+              "angles": [
+                0,
+                90,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/upper-signs-r5r.png",
+                "sha256": "526dca16fffdf894d2314b00ef9fbf38829c687df5d91a7cdfbcfc6b1ac415b6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943619.5272274
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/upper-signs-northstar.png",
+                "sha256": "823dbc1e53e76b1901b32abd6eb49728f50cf3420649e57519b4e0a85f750f3c",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254928.0089679
+              }
+            },
+            {
+              "name": "market-lane",
+              "origin": [
+                -100,
+                1750,
+                650
+              ],
+              "angles": [
+                0,
+                0,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/market-lane-r5r.png",
+                "sha256": "09b7a9d8d06ee6200db0826a01d0848784be22e71c6adde71c7adbffb5b83963",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943654.3337946
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/market-lane-northstar.png",
+                "sha256": "1b3ff2b44e2f99d1de90ea3b05f14b5ec610936a8c59eb80ae637650248f8b2a",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254933.4154732
+              }
+            },
+            {
+              "name": "ship-overlook",
+              "origin": [
+                1200,
+                500,
+                2100
+              ],
+              "angles": [
+                15,
+                150,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/ship-overlook-r5r.png",
+                "sha256": "6a0c64f3b3624d2b9ca57e66c62095cc2e6d0fdb75749128717e68495509a66e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943689.3078806
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/ship-overlook-northstar.png",
+                "sha256": "308e7c7ce18309bec201fc52236c1d13db5cdae1178bf8446f5bdc312ab164e8",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254938.83849
+              }
+            },
+            {
+              "name": "northstar-screen",
+              "origin": [
+                2566.630615234375,
+                -648.6843872070312,
+                2142.2939453125
+              ],
+              "angles": [
+                12.710000038146973,
+                35.060001373291016,
+                0.0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/northstar-screen-r5r.png",
+                "sha256": "1a5f105c097bc5e5d1a4401c4920fe6ea416aa06296cf8789f34d39101ac90c1",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254236.2676709
+              },
+              "northstar": {
+                "image": "captures/party-crasher/2026-10-18-release-refresh/northstar-screen-northstar.png",
+                "sha256": "ea7ee33596570b5ac8786ba1ce23b857b894fb82329549da0b5019c000d17c04",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792254943.6992688
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-14-party-structure"
+      "latest": "2026-10-18-release-refresh"
     },
     {
       "id": "firing-range",
@@ -3606,7 +4918,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds campaign-style moving water with a softer grey-blue colour, distance haze and restored source colours. Preserves the 20 supply bins and seven zipline routes. Exact Apex water reflections, distant scenery and training interactions remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "Rocks now collide with the shape you see: 329 rocks drawn at coarse detail had full-detail Apex collision, which left invisible rock to bump into and visible rock to fall into. Their collision is now the drawn shape, and spawns that stood on the old shape were moved onto the visible ground. Invisible player clips left around the missing shooting-range targets are removed. Invisible collision across the playable area drops from about 16% to under 3% of collision surface. Includes 0.5.0 blending and rock detail. Weapon stations, targets, foliage and AI navigation remain absent. Restart between previews.",
       "download": null,
       "version": "0.5.1",
       "source_offset": [
@@ -4079,9 +5391,211 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-10-18-release-refresh",
+          "version": "0.5.1",
+          "shots": [
+            {
+              "name": "view-0",
+              "origin": [
+                2000.0,
+                -5000.0,
+                2200.0
+              ],
+              "angles": [
+                22.0,
+                90.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/view-0-r5r.png",
+                "sha256": "8f983e2df931974d3e3ffd0377342efac72708103151f5b50324b06d7e8f2532",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943144.5241635
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/view-0-northstar.png",
+                "sha256": "c0c925b09389bb0bef460096e1aab9d2b703200229cf4e296f334cea6c57ef58",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792255041.900737
+              }
+            },
+            {
+              "name": "view-1",
+              "origin": [
+                500.0,
+                -1500.0,
+                -30.0
+              ],
+              "angles": [
+                8.0,
+                80.0,
+                0.0
+              ],
+              "fov": 90.0,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/view-1-r5r.png",
+                "sha256": "f7aeabccc39e7087e9af2c9ddedbdd93eb455a18ebf86b7affc2461c2585a7c8",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943179.3069866
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/view-1-northstar.png",
+                "sha256": "c224d73c0d268f2a4b3ceb9fe2407ee2bfbbca4aa26d3fa6f4928641024ec78d",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792255047.3211806
+              }
+            },
+            {
+              "name": "weapon-lane",
+              "origin": [
+                1300,
+                -1000,
+                -100
+              ],
+              "angles": [
+                10,
+                30,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/weapon-lane-r5r.png",
+                "sha256": "90269457559b96f4bde4786d20205c0b2fb5dbc388b8248c943341fee41c6325",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943214.2913408
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/weapon-lane-northstar.png",
+                "sha256": "ebb5ec34cad3842f85524bbd82e710bfa889d14c4cd025e935bba95afbfa4d80",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792255052.601426
+              }
+            },
+            {
+              "name": "upper-platform",
+              "origin": [
+                -3000,
+                2000,
+                760
+              ],
+              "angles": [
+                12,
+                -35,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/upper-platform-r5r.png",
+                "sha256": "18e89e50d11138d461aaf7f2c288040b41b1b89ca48a8647d7a8bfa1605f3d42",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943249.275712
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/upper-platform-northstar.png",
+                "sha256": "7d589c5cbe37f72b63ccef29d03d9d54679f6fec8eeb0378dd6da020b860c298",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792255057.6959596
+              }
+            },
+            {
+              "name": "cave-exit",
+              "origin": [
+                -3300,
+                -900,
+                700
+              ],
+              "angles": [
+                0,
+                0,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/cave-exit-r5r.png",
+                "sha256": "81c56d5c6c44bac0832e9d45dcfd6568811c1f6b4c72e71933c91c2e641c8583",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943284.4073653
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/cave-exit-northstar.png",
+                "sha256": "2e006f02d1bd179d6a30ec0761f0de4e2ac210622d149372eda4452e289c5ca0",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792255062.7864957
+              }
+            },
+            {
+              "name": "supply-bins",
+              "origin": [
+                500,
+                -2500,
+                -380
+              ],
+              "angles": [
+                10,
+                80,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/supply-bins-r5r.png",
+                "sha256": "a8abacbb5f8de57951df8d456616fc14e3482c9efc3823934affd0f6f96d90b9",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943319.4094949
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/supply-bins-northstar.png",
+                "sha256": "8b04d42f16a1d9798a7a87c0d58f95c80dda9e8f24ea3db61ec8e33d7d3f2f09",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792255068.0863132
+              }
+            },
+            {
+              "name": "sea-and-rocks",
+              "origin": [
+                7000,
+                1600,
+                -900
+              ],
+              "angles": [
+                20,
+                20,
+                0
+              ],
+              "fov": 90,
+              "r5r": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/sea-and-rocks-r5r.png",
+                "sha256": "1cd04fa705f4bd290900fe206f134d3f7aa69a8b9c432749595773f6f41b061c",
+                "width": 1280,
+                "height": 720,
+                "captured": 1791943354.3443081
+              },
+              "northstar": {
+                "image": "captures/firing-range/2026-10-18-release-refresh/sea-and-rocks-northstar.png",
+                "sha256": "301fe1eda9b225444bfcc90549381c9a36903cdb2f4ae1d29e6de1d996826a42",
+                "width": 1280,
+                "height": 720,
+                "captured": 1792255073.3952336
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-14-ui-atlas-survey"
+      "latest": "2026-10-18-release-refresh"
     }
   ]
 }

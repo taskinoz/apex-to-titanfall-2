@@ -1,0 +1,32 @@
+{
+  "maps": {
+    "drop-off": {
+      "version": "0.10.1",
+      "views": 12
+    },
+    "phase-runner": {
+      "version": "1.7.2",
+      "views": 11
+    },
+    "overflow": {
+      "version": "0.4.1",
+      "views": 8
+    },
+    "party-crasher": {
+      "version": "0.6.4",
+      "views": 15
+    },
+    "firing-range": {
+      "version": "0.5.1",
+      "views": 7
+    }
+  },
+  "latest_views": 53,
+  "latest_images": 106,
+  "total_images_verified": 362,
+  "portable_html_matches_catalogue": true,
+  "all_images_hash_and_dimensions_verified": true,
+  "private_metadata_excluded": true,
+  "old_snapshots_preserved": true,
+  "historical_snapshot_records_verified": 26
+}

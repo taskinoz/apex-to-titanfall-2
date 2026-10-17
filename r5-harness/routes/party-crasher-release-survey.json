@@ -1,0 +1,223 @@
+{
+  "title": "Party Crasher current-release site survey",
+  "source_map": "mp_rr_party_crasher",
+  "target_map": "mp_party_crasher",
+  "source_offset": [
+    0,
+    0,
+    0
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "view-0",
+      "origin": [
+        3385.96265,
+        -1591.92493,
+        2220.44629
+      ],
+      "angles": [
+        12.0,
+        97.7711029,
+        0.0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "spawn-right",
+      "origin": [
+        -2537.5,
+        3894.8,
+        651
+      ],
+      "angles": [
+        0,
+        -90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "opposite-spawn-right",
+      "origin": [
+        1674.8,
+        -3382,
+        651
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "west-edge",
+      "origin": [
+        -3200,
+        2500,
+        1400
+      ],
+      "angles": [
+        5,
+        180,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "east-edge",
+      "origin": [
+        4700,
+        -1600,
+        2600
+      ],
+      "angles": [
+        8,
+        170,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "north-roof",
+      "origin": [
+        5750,
+        1550,
+        3530
+      ],
+      "angles": [
+        32,
+        180,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "south-roof",
+      "origin": [
+        -638.5,
+        -5500,
+        2820
+      ],
+      "angles": [
+        28,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "view-1",
+      "origin": [
+        -1949.47925,
+        -565.452087,
+        1366.40222
+      ],
+      "angles": [
+        0.0,
+        -4.39630127,
+        0.0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "view-2",
+      "origin": [
+        416.486328,
+        2083.01709,
+        562.318604
+      ],
+      "angles": [
+        0.0,
+        -83.0055008,
+        0.0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "south-courtyard",
+      "origin": [
+        1700,
+        -3000,
+        950
+      ],
+      "angles": [
+        0,
+        95,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "north-courtyard",
+      "origin": [
+        -2500,
+        3450,
+        980
+      ],
+      "angles": [
+        0,
+        -35,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "upper-signs",
+      "origin": [
+        -830,
+        4050,
+        2180
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "market-lane",
+      "origin": [
+        -100,
+        1750,
+        650
+      ],
+      "angles": [
+        0,
+        0,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "ship-overlook",
+      "origin": [
+        1200,
+        500,
+        2100
+      ],
+      "angles": [
+        15,
+        150,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "northstar-screen",
+      "origin": [
+        2566.630615234375,
+        -648.6843872070312,
+        2142.2939453125
+      ],
+      "angles": [
+        12.710000038146973,
+        35.060001373291016,
+        0.0
+      ],
+      "fov": 90
+    }
+  ]
+}
