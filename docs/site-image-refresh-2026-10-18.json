@@ -1,0 +1,30 @@
+{
+  "snapshot": "2026-10-18-release-refresh",
+  "maps": {
+    "drop-off": {
+      "version": "0.10.1",
+      "shots": 12
+    },
+    "phase-runner": {
+      "version": "1.7.2",
+      "shots": 11
+    },
+    "overflow": {
+      "version": "0.4.1",
+      "shots": 8
+    },
+    "party-crasher": {
+      "version": "0.6.4",
+      "shots": 15
+    },
+    "firing-range": {
+      "version": "0.5.1",
+      "shots": 7
+    }
+  },
+  "all_native_images_recaptured": true,
+  "existing_apex_reference_dates_preserved": true,
+  "native_payloads_and_camera_poses_verified": true,
+  "diagnostic_safety_disabled": true,
+  "gameplay_validation": false
+}

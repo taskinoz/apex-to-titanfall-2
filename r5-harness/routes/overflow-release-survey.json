@@ -1,0 +1,125 @@
+{
+  "title": "Overflow current-release site survey",
+  "source_map": "mp_rr_aqueduct",
+  "target_map": "mp_overflow",
+  "source_offset": [
+    0,
+    0,
+    0
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "view-0",
+      "origin": [
+        -324.00824,
+        -6295.51123,
+        1393.36169
+      ],
+      "angles": [
+        15.0,
+        61.8894501,
+        0.0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "view-1",
+      "origin": [
+        4536.32324,
+        -4842.01514,
+        627.977661
+      ],
+      "angles": [
+        0.0,
+        168.955353,
+        0.0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "view-2",
+      "origin": [
+        -763.161804,
+        -5228.40234,
+        477.852356
+      ],
+      "angles": [
+        0.0,
+        124.9048,
+        0.0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "east-entry",
+      "origin": [
+        4450,
+        -4100,
+        650
+      ],
+      "angles": [
+        0,
+        175,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "west-entry",
+      "origin": [
+        -3600,
+        -4100,
+        650
+      ],
+      "angles": [
+        0,
+        5,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "central-bridge",
+      "origin": [
+        600,
+        -4500,
+        650
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "lava-channel",
+      "origin": [
+        -500,
+        -2500,
+        800
+      ],
+      "angles": [
+        20,
+        -45,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "north-platform",
+      "origin": [
+        0,
+        -1300,
+        1050
+      ],
+      "angles": [
+        15,
+        -90,
+        0
+      ],
+      "fov": 90
+    }
+  ]
+}

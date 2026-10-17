@@ -1,5 +1,9 @@
 # Northstar banner artwork
 
+Party Crasher also has a landscape screen design:
+`party-crasher-northstar-screen-v1.png`. Its generation prompt and integration
+notes are in `party-crasher-screen-v1.md`.
+
 `northstar-banner-v1.png` is the project banner texture. It was made with the
 built-in imagegen tool using the official Northstar launcher icon as a visual
 reference. It is an opaque, flat graphic, not a screenshot of either game.

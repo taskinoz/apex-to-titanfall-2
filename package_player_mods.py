@@ -35,11 +35,11 @@ RELEASES = {
         'notes': 'Rocks now collide with the shape you see: 329 rocks drawn at coarse detail had full-detail Apex collision, which left invisible rock to bump into and visible rock to fall into. Their collision is now the drawn shape, and spawns that stood on the old shape were moved onto the visible ground. Invisible player clips left around the missing shooting-range targets are removed. Invisible collision across the playable area drops from about 16% to under 3% of collision surface. Includes 0.5.0 blending and rock detail. Weapon stations, targets, foliage and AI navigation remain absent. Restart between previews.',
     },
     'ArenaPartyCrasher': {
-        'version': '0.6.3',
+        'version': '0.6.4',
         'map': 'mp_party_crasher',
         'title': 'Party Crasher',
         'screenshot': 'northstar/ArenaPartyCrasher/screenshot.png',
-        'notes': 'Fixes the fifth round of reports. The bar counter around the pillar, the glasses on it, and the rubble and rocks beside the pool are drawn where you could bump into them, and the missing tables are back in both upper cafes. Table clutter and the out-of-bounds rooftop AC unit and pipes are removed. The "234" room number no longer blooms, and the pool water is see-through instead of black. Heavy flat-panel props use simplified meshes to pay for this. Foliage, animated advertisements and AI navigation remain absent.',
+        'notes': 'Adds a new Northstar billboard image to the curved Oasis screen, matching the Drop-Off banner artwork. Geometry, collision, lighting and gameplay are unchanged from 0.6.3.',
     },
     'ArenaOverflow': {
         'version': '0.4.1',

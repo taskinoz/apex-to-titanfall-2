@@ -1,0 +1,181 @@
+{
+  "title": "Drop-Off current-release site survey",
+  "source_map": "mp_rr_arena_composite",
+  "target_map": "mp_arena_composite",
+  "source_offset": [
+    0,
+    0,
+    0
+  ],
+  "mode": "ps",
+  "shots": [
+    {
+      "name": "court-overview",
+      "origin": [
+        0,
+        2200,
+        900
+      ],
+      "angles": [
+        22,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "south-overview",
+      "origin": [
+        0,
+        -1200,
+        1450
+      ],
+      "angles": [
+        18,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "west-control",
+      "origin": [
+        -1917.1,
+        631.305,
+        256.031
+      ],
+      "angles": [
+        -20,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "north-platform",
+      "origin": [
+        0,
+        5000,
+        450
+      ],
+      "angles": [
+        -10,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "west-cargo",
+      "origin": [
+        -1656,
+        1300,
+        260
+      ],
+      "angles": [
+        10,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "east-control",
+      "origin": [
+        1917.1,
+        631.305,
+        256.031
+      ],
+      "angles": [
+        -20,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "lower-court",
+      "origin": [
+        0,
+        1962,
+        6
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "central-window",
+      "origin": [
+        65,
+        3400,
+        480
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "north-closure",
+      "origin": [
+        20,
+        5534,
+        144
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "upper-west",
+      "origin": [
+        -2500,
+        5300,
+        1450
+      ],
+      "angles": [
+        10,
+        40,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "upper-east",
+      "origin": [
+        2600,
+        5400,
+        1450
+      ],
+      "angles": [
+        10,
+        135,
+        0
+      ],
+      "fov": 90
+    },
+    {
+      "name": "west-banner",
+      "origin": [
+        -2568,
+        3650,
+        1600
+      ],
+      "angles": [
+        0,
+        90,
+        0
+      ],
+      "fov": 90
+    }
+  ]
+}

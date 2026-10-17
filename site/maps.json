@@ -7,8 +7,8 @@
       "package": "ArenaComposite",
       "source_map": "mp_rr_arena_composite",
       "target_map": "mp_arena_composite",
-      "route": "r5-harness/routes/drop-off-survey.json",
-      "comparison": "output/arena-fill/drop-off/comparison",
+      "route": "r5-harness/routes/drop-off-release-survey.json",
+      "comparison": "output/site-refresh-2026-10-18/drop-off/comparison",
       "status": "Playable preview",
       "description": "An industrial rooftop arena with control rooms, elevated platforms and working ziplines.",
       "modes": [
@@ -16,7 +16,7 @@
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "Adds 366 source placements: conduits, clamps, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves minimap, Northstar banners, displays, paint, lighting, safety volumes and ziplines. Some scenery and animated materials remain incomplete. Intro and evac are disabled. The UI atlas hotfix shares loading artwork and minimaps through ApexMaps.UI; geometry and lighting are unchanged.",
+      "notes": "Preview for Skirmish, Pilots vs Pilots and Free For All. Restores 366 source placements: utility conduits, tanks, crates, furniture and structural details. Uses 97.06% of native world index capacity with no added dynamic entities. Preserves the Apex minimap, Northstar banners, displays, paint, lighting, room closures, safety volumes and ziplines. Some props, animated materials and source runtime colouring remain incomplete. Intro and evac are disabled.",
       "download": null
     },
     {
@@ -25,8 +25,8 @@
       "package": "PhaseRunner",
       "source_map": "mp_rr_arena_phase_runner",
       "target_map": "mp_phase_runner",
-      "route": "r5-harness/routes/phase-runner-survey.json",
-      "comparison": "output/arena-fill/phase-runner/comparison",
+      "route": "r5-harness/routes/phase-runner-release-survey.json",
+      "comparison": "output/site-refresh-2026-10-18/phase-runner/comparison",
       "status": "Playable port",
       "description": "Snow, rock and industrial tunnels connect opposing bases beneath the phase machinery.",
       "modes": [
@@ -36,7 +36,7 @@
         "Hardpoint",
         "Fastball"
       ],
-      "notes": "Adds 432 source scenery placements: supported ground plants, flowers, small snow rocks and power equipment. Uses 97.04% of native world index capacity with no added dynamic entities. Preserves minimap, displays, paint, lighting, team modes and catwalks. AI navigation and some layered/animated materials remain incomplete. The UI atlas hotfix shares loading artwork and minimaps through ApexMaps.UI; geometry and lighting are unchanged.",
+      "notes": "The control-room consoles in both bases are drawn from the full Apex mesh with lighting taken from their own surface, so their panels no longer look stretched or streaky. Includes 1.7.1: flicker-free base floors, container frames, smooth catwalks, and 1.7.0 blending, ground tiling and rock collision.",
       "download": null
     },
     {
@@ -45,15 +45,15 @@
       "package": "ArenaOverflow",
       "source_map": "mp_rr_aqueduct",
       "target_map": "mp_overflow",
-      "route": "r5-harness/routes/overflow-expanded-survey.json",
-      "comparison": "output/ui-atlas-surveys/overflow",
+      "route": "r5-harness/routes/overflow-release-survey.json",
+      "comparison": "output/site-refresh-2026-10-18/overflow/comparison",
       "status": "Early preview",
       "description": "An industrial arena with elevated lanes, molten channels and opposing bases.",
       "modes": [
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds distance haze, restored source colours and native glowing lights while preserving the existing lava appearance and gameplay. Some animated effects and decorations remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "Fixes z-fighting and flat textures from Apex overlays that were drawn as solid surfaces on top of the surface below: stencil lettering (REFINERY, the capsules) and arrow signs are now proper decals, the flat brown dirt sheet over the asphalt is removed, and the lava no longer flickers between its glow and a grey duplicate. The invisible barrier in the ceiling opening is an Apex player clip and is kept. Known issue (also in 0.4.0): about one load in five can crash Northstar at spawn; restart and load again.",
       "download": null
     },
     {
@@ -62,15 +62,15 @@
       "package": "ArenaPartyCrasher",
       "source_map": "mp_rr_party_crasher",
       "target_map": "mp_party_crasher",
-      "route": "r5-harness/routes/party-crasher-edge-roof-survey.json",
-      "comparison": "output/party-edge-roof/comparison",
+      "route": "r5-harness/routes/party-crasher-release-survey.json",
+      "comparison": "output/site-refresh-2026-10-18/party-crasher/comparison",
       "status": "Early preview",
       "description": "City streets, multilevel buildings and the crashed Voyage form a compact pilot arena.",
       "modes": [
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.4.0: Restores 380 exact-source placements: 168 facade sections, all 42 large boundary rocks, 42 rooftop vents and all 128 solar panels. Uses 97.66% of native world index capacity, with no additional gameplay entities. Existing lighting, collision, safety areas, spawns, loading screen and minimap are retained. Some dense window modules, roof foliage, animated advertisements and layered terrain materials remain incomplete. AI navigation and Titan modes are not supplied. Restart between previews; repeated mode cycling has an unresolved earlier failure.",
+      "notes": "Adds a new Northstar billboard image to the curved Oasis screen, matching the Drop-Off banner artwork. Geometry, collision, lighting and gameplay are unchanged from 0.6.3.",
       "download": null
     },
     {
@@ -79,15 +79,15 @@
       "package": "ApexFiringRange",
       "source_map": "mp_rr_canyonlands_staging",
       "target_map": "mp_apex_firing_range",
-      "route": "r5-harness/routes/firing-range-expanded-survey.json",
-      "comparison": "output/ui-atlas-surveys/firing-range",
+      "route": "r5-harness/routes/firing-range-release-survey.json",
+      "comparison": "output/site-refresh-2026-10-18/firing-range/comparison",
       "status": "Early preview",
       "description": "The original training landscape adapted as a Titanfall pilot sandbox.",
       "modes": [
         "Pilots vs Pilots",
         "Free For All"
       ],
-      "notes": "0.3.1 fixes the combined-install UI atlas crash using the shared ApexMaps.UI companion. Adds five new matched viewpoints. 0.3.0 adds campaign-style moving water with a softer grey-blue colour, distance haze and restored source colours. Preserves the 20 supply bins and seven zipline routes. Exact Apex water reflections, distant scenery and training interactions remain incomplete. Restart between previews; the earlier repeated-mode-change crash is unresolved. Vertex palette conversion remains incomplete.",
+      "notes": "Rocks now collide with the shape you see: 329 rocks drawn at coarse detail had full-detail Apex collision, which left invisible rock to bump into and visible rock to fall into. Their collision is now the drawn shape, and spawns that stood on the old shape were moved onto the visible ground. Invisible player clips left around the missing shooting-range targets are removed. Invisible collision across the playable area drops from about 16% to under 3% of collision surface. Includes 0.5.0 blending and rock detail. Weapon stations, targets, foliage and AI navigation remain absent. Restart between previews.",
       "download": null
     }
   ]
