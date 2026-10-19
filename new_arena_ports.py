@@ -22,6 +22,10 @@ CONFIG = {
     'firing-range': dict(name='Firing Range', source='mp_rr_canyonlands_staging', target='mp_apex_firing_range',
         package='ApexFiringRange', offset=[-32000, 7000, 28000],
         bounds=[[-14500, -13000, -6000], [14500, 14500, 12000]]),
+    # A World's Edge area Apex used as an Arenas map (docs/candidates/poi-survey-2026-10-19.md).
+    'thermal-station': dict(name='Thermal Station', source='mp_rr_desertlands_mu2', target='mp_thermal_station',
+        package='ArenaThermalStation', offset=[19900, 20500, 4000],
+        bounds=[[-6800, -6500, -2500], [6800, 6500, 7000]]),
 }
 
 

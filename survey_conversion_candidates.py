@@ -23,6 +23,23 @@ ROUTES = {
     'firing-range': ('mp_rr_canyonlands_staging', [
         ('overview', [26507.6, -6928, -26600], [22, 90, 0]),
     ]),
+    # Battle royale areas Apex used as arenas (survey_poi_candidates.py).
+    'artillery': ('mp_rr_canyonlands_mu2', [
+        ('overview', [6756.5, 25574.5, 8670.0], [32, 90, 0]),
+        ('ground', [9614.0, 30792.0, 4938.0], [4, -175.6, 0]),
+    ]),
+    'thermal-station': ('mp_rr_desertlands_mu2', [
+        ('overview', [-19912.5, -25541.0, -650.0], [32, 90, 0]),
+        ('ground', [-20091.0, -17683.0, -3914.0], [4, -86.4, 0]),
+    ]),
+    'dome': ('mp_rr_desertlands_mu2', [
+        ('overview', [19074.0, -43002.5, 1202.0], [32, 90, 0]),
+        ('ground', [19351.0, -41456.0, -2122.0], [4, 94.6, 0]),
+    ]),
+    'golden-gardens': ('mp_rr_olympus', [
+        ('overview', [17213.1, 3518.8, 171.2], [32, 90, 0]),
+        ('ground', [16279.9, 13022.3, -3522.0], [4, -78.3, 0]),
+    ]),
 }
 
 

@@ -1,0 +1,100 @@
+[
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261019-021359-05ab67\\screenshots\\dome-overview-d5cb811e.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_desertlands_mu20004.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "da79c1499209d33018ebdcbe42d41a8fdf8046e151743e40e62a3a123d579002",
+    "captured": 1792336980.604205,
+    "map": "mp_rr_desertlands_mu2",
+    "camera": {
+      "origin": [
+        19074.0,
+        -43002.5,
+        1202.0
+      ],
+      "angles": [
+        32.0,
+        90.0,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_desertlands_mu2",
+        "context": "server",
+        "ready": 1,
+        "instance": "5503a189eec146149408c0c14f4fcba8"
+      },
+      "client": {
+        "map": "mp_rr_desertlands_mu2",
+        "context": "client",
+        "ready": 1,
+        "instance": "057435b7a70d4d51af8596283097e068",
+        "camera": 1,
+        "origin": [
+          19074.0,
+          -43002.5,
+          1202.0
+        ],
+        "angles": [
+          32.0,
+          90.0,
+          0.0
+        ]
+      }
+    },
+    "generation": "99bf7c3e11b74dd5a0c23db553065d3e",
+    "engine": "r5r"
+  },
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261019-021359-05ab67\\screenshots\\dome-ground-d24e6900.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_desertlands_mu20005.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "0c58048740d1162d3db630bf131be01c2b11b6742e9aa12644a18bd7cf1e64b4",
+    "captured": 1792337020.710328,
+    "map": "mp_rr_desertlands_mu2",
+    "camera": {
+      "origin": [
+        19351.0,
+        -41456.0,
+        -2122.0
+      ],
+      "angles": [
+        4.0,
+        94.6,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_desertlands_mu2",
+        "context": "server",
+        "ready": 1,
+        "instance": "5503a189eec146149408c0c14f4fcba8"
+      },
+      "client": {
+        "map": "mp_rr_desertlands_mu2",
+        "context": "client",
+        "ready": 1,
+        "instance": "057435b7a70d4d51af8596283097e068",
+        "camera": 1,
+        "origin": [
+          19351.0,
+          -41456.0,
+          -2122.0
+        ],
+        "angles": [
+          4.0,
+          94.6,
+          0.0
+        ]
+      }
+    },
+    "generation": "99bf7c3e11b74dd5a0c23db553065d3e",
+    "engine": "r5r"
+  }
+]

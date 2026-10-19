@@ -1,0 +1,100 @@
+[
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261019-021359-05ab67\\screenshots\\artillery-overview-e168d12d.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_mu20000.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "0bb112bd457d3e565a26180b391d80e661f36f16f3df90b61c1687b33ffd3c63",
+    "captured": 1792336675.7384481,
+    "map": "mp_rr_canyonlands_mu2",
+    "camera": {
+      "origin": [
+        6756.5,
+        25574.5,
+        8670.0
+      ],
+      "angles": [
+        32.0,
+        90.0,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_canyonlands_mu2",
+        "context": "server",
+        "ready": 1,
+        "instance": "7accbbb980574af8a5855d1527bb3bef"
+      },
+      "client": {
+        "map": "mp_rr_canyonlands_mu2",
+        "context": "client",
+        "ready": 1,
+        "instance": "e1dda8e275d94b959f720eb2d0b080d6",
+        "camera": 1,
+        "origin": [
+          6756.5,
+          25574.5,
+          8670.0
+        ],
+        "angles": [
+          32.0,
+          90.0,
+          0.0
+        ]
+      }
+    },
+    "generation": "4b28e91fa1c6451880bdc73f1581e077",
+    "engine": "r5r"
+  },
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261019-021359-05ab67\\screenshots\\artillery-ground-823b8e56.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_canyonlands_mu20001.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "659174a21a3d4b4118109270b9f6b36e9d8bdfaa4eec8d1a750f75558a44cd70",
+    "captured": 1792336715.2982347,
+    "map": "mp_rr_canyonlands_mu2",
+    "camera": {
+      "origin": [
+        9614.0,
+        30792.0,
+        4938.0
+      ],
+      "angles": [
+        4.0,
+        -175.6,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_canyonlands_mu2",
+        "context": "server",
+        "ready": 1,
+        "instance": "7accbbb980574af8a5855d1527bb3bef"
+      },
+      "client": {
+        "map": "mp_rr_canyonlands_mu2",
+        "context": "client",
+        "ready": 1,
+        "instance": "e1dda8e275d94b959f720eb2d0b080d6",
+        "camera": 1,
+        "origin": [
+          9614.0,
+          30792.0,
+          4938.0
+        ],
+        "angles": [
+          4.0,
+          -175.6,
+          0.0
+        ]
+      }
+    },
+    "generation": "4b28e91fa1c6451880bdc73f1581e077",
+    "engine": "r5r"
+  }
+]

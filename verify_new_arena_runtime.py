@@ -57,7 +57,8 @@ def refine_spawns(ident):
     else:
         defaults={'overflow':[[-3300,-4200,400],[4650,-4200,400]],
                   'party-crasher':[[-3800,-1500,800],[3400,3000,800]],
-                  'firing-range':[[-1500,-2500,-440],[2500,-2500,-520]]}
+                  'firing-range':[[-1500,-2500,-440],[2500,-2500,-520]],
+                  'thermal-station':[[-3019,-28,0],[2760,-210,30]]}
         centers=[np.asarray(p) for p in defaults[ident]]
     if len(centers)!=2:raise ValueError('Two opposing spawn regions must be identified')
     tests=[];selected=[]

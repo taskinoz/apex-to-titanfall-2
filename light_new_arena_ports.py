@@ -1,6 +1,7 @@
 """Bake source sun visibility, local lights and native moving-model probes."""
 import itertools
 import json
+from pathlib import Path
 import os
 import struct
 import subprocess
@@ -54,8 +55,12 @@ def fixtures(ident):
 
 
 def run_logged(executable, args, log):
+    # The bake tools link the MinGW runtime (exit 127 without it), as append_free_charts.py does.
+    env = dict(os.environ); mingw = Path('C:/ProgramData/mingw64/mingw64/bin')
+    if mingw.is_dir():
+        env['PATH'] = str(mingw)+os.pathsep+env.get('PATH', '')
     with log.open('w') as stream:
-        subprocess.run([str(executable), *map(str, args)], stdout=stream, stderr=subprocess.STDOUT, check=True)
+        subprocess.run([str(executable), *map(str, args)], stdout=stream, stderr=subprocess.STDOUT, check=True, env=env)
     print(log.read_text(), flush=True)
 
 
