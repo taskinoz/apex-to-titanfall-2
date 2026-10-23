@@ -1,0 +1,100 @@
+[
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261019-021359-05ab67\\screenshots\\golden-gardens-overview-3be514fd.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_olympus0006.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "ee390f73f89f8f67012f73bcc10ea16850d12e1efdf0003e93df11b3ab7b9eeb",
+    "captured": 1792337145.89538,
+    "map": "mp_rr_olympus",
+    "camera": {
+      "origin": [
+        17213.1,
+        3518.8,
+        171.2
+      ],
+      "angles": [
+        32.0,
+        90.0,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_olympus",
+        "context": "server",
+        "ready": 1,
+        "instance": "681906feef5441d6ba1f21b3cbe11ce2"
+      },
+      "client": {
+        "map": "mp_rr_olympus",
+        "context": "client",
+        "ready": 1,
+        "instance": "8da0d120bf8f4b41852cb0399135b7a9",
+        "camera": 1,
+        "origin": [
+          17213.0996,
+          3518.8,
+          171.2
+        ],
+        "angles": [
+          32.0,
+          90.0,
+          0.0
+        ]
+      }
+    },
+    "generation": "c02d67704ebf4032a0633c2cc123ba21",
+    "engine": "r5r"
+  },
+  {
+    "path": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\r5-harness\\output\\20261019-021359-05ab67\\screenshots\\golden-gardens-ground-d7ad0ce6.png",
+    "native_path": "D:\\Games\\R5Reloaded\\R5R Library\\MapHarness\\platform\\screenshots\\mp_rr_olympus0007.tga",
+    "width": 1280,
+    "height": 720,
+    "sha256": "c86aa70255637a43dcd44fb5f237c38cf87c89455e6afcc7de84731851050ec3",
+    "captured": 1792337185.7087004,
+    "map": "mp_rr_olympus",
+    "camera": {
+      "origin": [
+        16279.9,
+        13022.3,
+        -3522.0
+      ],
+      "angles": [
+        4.0,
+        -78.3,
+        0.0
+      ],
+      "fov": 90
+    },
+    "state": {
+      "server": {
+        "map": "mp_rr_olympus",
+        "context": "server",
+        "ready": 1,
+        "instance": "681906feef5441d6ba1f21b3cbe11ce2"
+      },
+      "client": {
+        "map": "mp_rr_olympus",
+        "context": "client",
+        "ready": 1,
+        "instance": "8da0d120bf8f4b41852cb0399135b7a9",
+        "camera": 1,
+        "origin": [
+          16279.9004,
+          13022.2998,
+          -3522.0
+        ],
+        "angles": [
+          4.0,
+          -78.3,
+          0.0
+        ]
+      }
+    },
+    "generation": "c02d67704ebf4032a0633c2cc123ba21",
+    "engine": "r5r"
+  }
+]

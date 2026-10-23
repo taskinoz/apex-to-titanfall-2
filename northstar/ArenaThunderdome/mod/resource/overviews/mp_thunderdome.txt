@@ -1,0 +1,14 @@
+"mp_thunderdome"
+{
+    "assets"
+    {
+        "minimap" "overviews/mp_thunderdome"
+    }
+    "pos_x" "-16806.72265625"
+    "pos_y" "16747.9296875"
+    "scale" "32.8798713684082"
+    "displayDist" "2048"
+    "threatMaxDist" "2500"
+    "threatNearDist" "500"
+    "threatFarDist" "2000"
+}

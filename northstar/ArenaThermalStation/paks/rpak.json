@@ -1,0 +1,10 @@
+{
+  "Aliases": {
+    "mp_thermal_station.rpak": "mp_coliseum.rpak",
+    "mp_thermal_station_loadscreen.rpak": "thermal_station_presentation.rpak"
+  },
+  "Postload": {
+    "thermal_station_world.rpak": "mp_coliseum.rpak",
+    "thermal_station_presentation.rpak": "common.rpak"
+  }
+}

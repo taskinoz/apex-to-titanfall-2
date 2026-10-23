@@ -106,6 +106,62 @@ def relocate():
     print('Relocation complete:',sum(r['bytes'] for r in rows),'bytes',flush=True)
 
 
+def archive(paths):
+    """Move workspace folders (ignored by Git) to STORE/archive and leave a junction, so every path still resolves.
+
+    Each file is copied, hashed and re-read before the source tree is removed; Git-tracked folders are refused.
+    """
+    for rel in paths:
+        source = (ROOT/rel); target = STORE/'archive'/rel
+        if source.is_junction():
+            print('Already archived:', rel); continue
+        if not source.is_dir() or not source.resolve().is_relative_to(ROOT) or source.resolve() == ROOT:
+            raise ValueError('Not a workspace folder: '+rel)
+        tracked = subprocess.run(['git', 'ls-files', '--', rel], cwd=ROOT, capture_output=True, text=True, check=True).stdout.strip()
+        if tracked:
+            raise ValueError('Refusing to archive Git-tracked content: '+rel)
+        total = 0; count = 0; links = []
+        for base, dirs, names in os.walk(source, followlinks=False):
+            base = Path(base)
+            for name in list(dirs):
+                path = base/name
+                if path.is_symlink() or path.is_junction():
+                    # Earlier archive junctions already point off C:; carry the link over, never its contents.
+                    if path.resolve().is_relative_to(ROOT) or not path.resolve().is_dir():
+                        raise ValueError('Unreviewed link inside archive folder: '+str(path))
+                    links.append(path); dirs.remove(name)
+        for path in source.rglob('*'):
+            if any(path == l or path.is_relative_to(l) for l in links):
+                continue
+            if path.is_symlink() or path.is_junction():
+                raise ValueError('Unreviewed link inside archive folder: '+str(path))
+            if not path.is_file():
+                continue
+            dest = target/path.relative_to(source); dest.parent.mkdir(parents=True, exist_ok=True)
+            sha = digest(path)
+            if not (dest.exists() and dest.stat().st_size == path.stat().st_size and digest(dest) == sha):
+                temporary = dest.with_name(dest.name+'.archiving'); shutil.copy2(path, temporary)
+                if digest(temporary) != sha:
+                    raise ValueError('Copy verification failed: '+str(path))
+                os.replace(temporary, dest)
+            total += path.stat().st_size; count += 1
+        for link in links:
+            dest = target/link.relative_to(source); dest.parent.mkdir(parents=True, exist_ok=True)
+            if not dest.exists():
+                subprocess.run(['cmd.exe', '/d', '/c', 'mklink', '/J', str(dest), str(link.resolve())], check=True, capture_output=True)
+            if dest.resolve() != link.resolve():
+                raise ValueError('Nested link mismatch: '+str(link))
+            os.rmdir(link)  # removes the junction only
+        shutil.rmtree(source)
+        subprocess.run(['cmd.exe', '/d', '/c', 'mklink', '/J', str(source), str(target)], check=True, capture_output=True)
+        if source.resolve() != target.resolve():
+            raise ValueError('Junction verification failed: '+rel)
+        log = STORE/'archive.json'; rows = json.loads(log.read_text()) if log.exists() else []
+        rows.append(dict(path=rel, target=str(target), files=count, bytes=total, archived=time.strftime('%Y-%m-%d %H:%M')))
+        log.write_text(json.dumps(rows, indent=2))
+        print('Archived', rel, count, 'files', round(total/2**30, 2), 'GiB', flush=True)
+
+
 def deduplicate(apply=False):
     roots = [STORE/'output', ROOT/'northstar']
     groups = {}
@@ -143,7 +199,9 @@ def deduplicate(apply=False):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('action',choices=['relocate','deduplicate'])
+    p.add_argument('action',choices=['relocate','deduplicate','archive'])
+    p.add_argument('paths',nargs='*',help='archive: workspace-relative folders')
     p.add_argument('--apply',action='store_true')
     a=p.parse_args()
-    relocate() if a.action=='relocate' else deduplicate(a.apply)
+    if a.action=='archive':archive(a.paths)
+    else:relocate() if a.action=='relocate' else deduplicate(a.apply)

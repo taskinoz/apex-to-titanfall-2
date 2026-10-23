@@ -12,6 +12,12 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+# output/ may be a junction into project storage (manage_project_storage.py relocate).
+OUTPUT = (ROOT/'output').resolve()
+
+
+def workspace_path(target):
+    return str(Path('output')/Path(target).resolve().relative_to(OUTPUT))
 RELEASES = {
     'PhaseRunner': {
         'version': '1.7.2',
@@ -47,6 +53,20 @@ RELEASES = {
         'title': 'Overflow',
         'screenshot': 'northstar/ArenaOverflow/screenshot.png',
         'notes': 'Fixes z-fighting and flat textures from Apex overlays that were drawn as solid surfaces on top of the surface below: stencil lettering (REFINERY, the capsules) and arrow signs are now proper decals, the flat brown dirt sheet over the asphalt is removed, and the lava no longer flickers between its glow and a grey duplicate. The invisible barrier in the ceiling opening is an Apex player clip and is kept. Known issue (also in 0.4.0): about one load in five can crash Northstar at spawn; restart and load again.',
+    },
+    'ArenaThermalStation': {
+        'version': '0.1.2',
+        'map': 'mp_thermal_station',
+        'title': 'Thermal Station',
+        'screenshot': 'northstar/ArenaThermalStation/screenshot.png',
+        'notes': "Thermal Station, the World's Edge area Apex used as an Arenas map. The storm-ring wall now looks the same on every side: it is self-lit with no sun shading, which had left two sides see-through and two orange. Rebuilds no longer stack extra copies of the ring, which had darkened the map. The lava-flow ground is dark cooled crust with glowing cracks, not a bright white sheet. Coplanar dirt overlays that z-fought with the asphalt are removed. The minimap is regenerated. Requires ApexMaps.UI 0.2.1.",
+    },
+    'ArenaThunderdome': {
+        'version': '0.1.1',
+        'map': 'mp_thunderdome',
+        'title': 'Thunderdome',
+        'screenshot': 'northstar/ArenaThunderdome/screenshot.png',
+        'notes': 'Thunderdome from the current retail Apex release: the hovering arena inside its stadium ring. Props now collide (Apex collision exported per model), and about 1,500 more props are drawn using cheaper LODs and simplified heavy pipes and frames. Terrain blending, vertex-painted metal, ziplines, lava and out-of-bounds volumes and 88 Apex spawns. Grass and small rock clusters are thinned to fit the draw budget; material colours use neutral tints. Requires ApexMaps.UI 0.2.0.',
     },
 }
 # The shared UI companion ships as its own download (one UI atlas serves all five maps;
@@ -102,7 +122,7 @@ def write_player_zip(source, target):
     name = source.name
     if name not in RELEASES:
         raise ValueError('Unknown player release')
-    if not target.resolve().is_relative_to(ROOT/'output'):
+    if not target.resolve().is_relative_to(OUTPUT):
         raise ValueError('Release destination must stay in workspace output')
     info = json.loads((source/'mod.json').read_text(encoding='utf-8-sig'))
     if info['Name'] != name or info['Version'] != RELEASES[name]['version']:
@@ -147,7 +167,7 @@ def write_player_zip(source, target):
     temp.replace(target)
     sha = digest(target)
     target.with_suffix('.zip.sha256').write_text(sha+'  '+target.name+'\n')
-    result = dict(path=str(target.relative_to(ROOT)),bytes=target.stat().st_size,
+    result = dict(path=workspace_path(target),bytes=target.stat().st_size,
                   sha256=sha,verified_files=len(expected))
     print(json.dumps(result),flush=True)
     return result
@@ -159,8 +179,8 @@ def write_ui_zip(target=None):
     info = json.loads((shared/'mod.json').read_text(encoding='utf-8-sig'))
     target = Path(target or ROOT/'output'/f"{SHARED_UI}-{info['Version']}-Northstar.zip").resolve()
     files = [shared/'mod.json', *sorted(p for p in (shared/'paks').rglob('*') if p.is_file())]
-    text = (f"# {SHARED_UI} {info['Version']} for Northstar\n\nShared loading artwork and minimaps for the five Apex map conversions "
-            "(Phase Runner, Drop-Off, Firing Range, Party Crasher, Overflow). Extract `ApexMaps.UI` into "
+    text = (f"# {SHARED_UI} {info['Version']} for Northstar\n\nShared loading artwork and minimaps for the seven Apex map conversions "
+            "(Phase Runner, Drop-Off, Firing Range, Party Crasher, Overflow, Thermal Station, Thunderdome). Extract `ApexMaps.UI` into "
             "`Titanfall2/R2Northstar/mods/`, replacing any older copy, and enable it. One shared UI atlas serves every map; "
             "keep only the newest version.\n").encode('utf-8')
     temp = target.with_suffix('.zip.packaging'); expected = {}
@@ -176,7 +196,7 @@ def write_ui_zip(target=None):
                 raise ValueError('UI archive payload mismatch: '+arc)
     temp.replace(target); sha = digest(target)
     target.with_suffix('.zip.sha256').write_text(sha+'  '+target.name+'\n')
-    result = dict(path=str(target.relative_to(ROOT)), bytes=target.stat().st_size, sha256=sha, verified_files=len(expected))
+    result = dict(path=workspace_path(target), bytes=target.stat().st_size, sha256=sha, verified_files=len(expected))
     print(json.dumps(result), flush=True)
     return result
 
@@ -190,7 +210,7 @@ def record_existing_releases():
                        or p in {name+'/mod.json',name+'/README.md',name+'/screenshot.png'}
                        for p in members):
                 raise ValueError('Unexpected player archive contents')
-        results[name] = dict(path=str(target.relative_to(ROOT)),bytes=target.stat().st_size,
+        results[name] = dict(path=workspace_path(target),bytes=target.stat().st_size,
                              sha256=digest(target),verified_files=len(members))
     manifest = ROOT/f"output/PhaseRunner-{RELEASES['PhaseRunner']['version']}-release-manifest.json"
     if manifest.exists():

@@ -30,7 +30,10 @@ def build(ident):
     for p in scene['placements']:
         if foliage(p['model']):
             base = Path(p['folder']) / Path(p['folder']).name
-            slots, skins = compiled_materials(base.with_suffix('.rmdl').read_bytes())
+            if base.with_suffix('.rmdl').exists():
+                slots, skins = compiled_materials(base.with_suffix('.rmdl').read_bytes())
+            else:  # current Apex: RSX Cast export carries the material names
+                import read_cast; skins = read_cast.load(Path(p['folder']), 0)[2]
             leaf_names.update(n for skin in skins for n in skin)
     roots = [folder(ident) / 'legion/exported_files/materials', ROOT / 'tools/composite-legion/exported_files/materials',
              ROOT / 'tools/legion/exported_files/materials', ROOT / 'output/phase-runner/shared-assets/materials',

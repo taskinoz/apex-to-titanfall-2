@@ -1,0 +1,18 @@
+{
+  "Name": "ArenaThermalStation",
+  "Version": "0.1.2",
+  "LoadPriority": 10,
+  "Description": "Thermal Station native conversion preview. AI navigation and source gameplay systems are incomplete.",
+  "Scripts": [
+    {
+      "Path": "_thermal_station.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "ArenaThermalStation_Init"
+      }
+    }
+  ],
+  "Localisation": [
+    "resource/thermal_station_%language%.txt"
+  ]
+}

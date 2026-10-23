@@ -1,0 +1,111 @@
+{
+ "map": "mp_thermal_station",
+ "mode": "ps",
+ "shots": [
+  {
+   "name": "warmup",
+   "origin": [
+    -12.5,
+    -5041.0,
+    3350.0
+   ],
+   "angles": [
+    32,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 8
+  },
+  {
+   "name": "overview",
+   "origin": [
+    -12.5,
+    -5041.0,
+    3350.0
+   ],
+   "angles": [
+    32,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "ground-west",
+   "origin": [
+    -3019,
+    -28,
+    60
+   ],
+   "angles": [
+    4,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "ground-east",
+   "origin": [
+    2760,
+    -210,
+    97
+   ],
+   "angles": [
+    4,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "tower-top",
+   "origin": [
+    -12,
+    -41,
+    2500
+   ],
+   "angles": [
+    60,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "ring-edge",
+   "origin": [
+    3500,
+    -3000,
+    600
+   ],
+   "angles": [
+    5,
+    -30,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "ring-from-inside",
+   "origin": [
+    0,
+    0,
+    900
+   ],
+   "angles": [
+    5,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  }
+ ]
+}

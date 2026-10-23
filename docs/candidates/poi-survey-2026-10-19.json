@@ -1,0 +1,561 @@
+{
+  "date": "2026-10-19",
+  "capacity": 3145728,
+  "target_fraction": 0.95,
+  "play_margin": 2000.0,
+  "backdrop_margin": 6000.0,
+  "areas": [
+    {
+      "id": "artillery",
+      "name": "Artillery",
+      "source_map": "mp_rr_canyonlands_mu2",
+      "script_points": 15,
+      "point_bounds": [
+        [
+          3263.0,
+          29172.0,
+          4828.0
+        ],
+        [
+          10250.0,
+          31977.0,
+          5470.0
+        ]
+      ],
+      "play": {
+        "box": [
+          [
+            1263.0,
+            27172.0,
+            3328.0
+          ],
+          [
+            12250.0,
+            33977.0,
+            11470.0
+          ]
+        ],
+        "world_triangles": 82081,
+        "world_meshes": 2459,
+        "world_padded_indices": 246606,
+        "world_fraction": 0.0784,
+        "placements": 8926,
+        "unique_models": 216,
+        "prop_triangles_lod0": 6049289,
+        "prop_triangles_lod3": 1003837,
+        "placements_without_export": 4,
+        "total_fraction_lod3": 1.0357,
+        "materials": 78,
+        "entity_classes": {
+          "script_ref": 154,
+          "light": 139,
+          "info_target": 137,
+          "light_spot": 87,
+          "info_target_clientside": 38,
+          "prop_door": 30,
+          "ambient_generic": 29,
+          "prop_dynamic": 24,
+          "trigger_soundscape": 17,
+          "traverse": 9,
+          "trigger_out_of_bounds": 5,
+          "zipline": 4,
+          "trigger_slip": 4,
+          "trigger_no_zipline": 3,
+          "info_particle_system": 2
+        },
+        "top_models_lod3": [
+          [
+            "foliage_ground_plants",
+            1631
+          ],
+          [
+            "sign_plate_c",
+            556
+          ],
+          [
+            "industrial_wall_light",
+            415
+          ],
+          [
+            "ceiling_vent_metal",
+            393
+          ],
+          [
+            "garage_support_wall_imc_02",
+            383
+          ],
+          [
+            "box_small_01",
+            284
+          ],
+          [
+            "militaryfort_clamp_01",
+            270
+          ],
+          [
+            "sewer_grate_01",
+            234
+          ],
+          [
+            "leaves_ground_spread_01",
+            228
+          ],
+          [
+            "sewer_railing_01_128",
+            205
+          ],
+          [
+            "bomb_imc_01",
+            170
+          ],
+          [
+            "tree_brush_green_large_02",
+            162
+          ]
+        ],
+        "non_foliage_placements": 6956,
+        "non_foliage_prop_triangles_lod3": 961368,
+        "total_fraction_lod3_without_foliage": 0.9952
+      },
+      "backdrop": {
+        "box": [
+          [
+            -2737.0,
+            23172.0,
+            3328.0
+          ],
+          [
+            16250.0,
+            37977.0,
+            11470.0
+          ]
+        ],
+        "world_triangles": 150800,
+        "world_meshes": 3462,
+        "world_padded_indices": 452850,
+        "world_fraction": 0.144,
+        "placements": 16796,
+        "unique_models": 290,
+        "prop_triangles_lod0": 12436892,
+        "prop_triangles_lod3": 1917314,
+        "placements_without_export": 4,
+        "total_fraction_lod3": 1.9725,
+        "materials": 95
+      }
+    },
+    {
+      "id": "thermal-station",
+      "name": "Thermal Station",
+      "source_map": "mp_rr_desertlands_mu2",
+      "script_points": 13,
+      "point_bounds": [
+        [
+          -23069.0,
+          -23399.0,
+          -4269.0
+        ],
+        [
+          -16756.0,
+          -17683.0,
+          -3850.0
+        ]
+      ],
+      "play": {
+        "box": [
+          [
+            -25069.0,
+            -25399.0,
+            -5769.0
+          ],
+          [
+            -14756.0,
+            -15683.0,
+            2150.0
+          ]
+        ],
+        "world_triangles": 56178,
+        "world_meshes": 617,
+        "world_padded_indices": 168708,
+        "world_fraction": 0.0536,
+        "placements": 5251,
+        "unique_models": 261,
+        "prop_triangles_lod0": 4266326,
+        "prop_triangles_lod3": 566479,
+        "placements_without_export": 19,
+        "total_fraction_lod3": 0.5939,
+        "materials": 60,
+        "entity_classes": {
+          "light_spot": 160,
+          "script_ref": 102,
+          "info_particle_system": 99,
+          "light": 63,
+          "ambient_generic": 49,
+          "prop_dynamic": 42,
+          "prop_door": 11,
+          "trigger_soundscape": 9,
+          "trigger_slip": 8,
+          "trigger_out_of_bounds": 8,
+          "info_target": 7,
+          "traverse": 5,
+          "zipline_end": 5,
+          "zipline": 5,
+          "info_target_clientside": 4
+        },
+        "top_models_lod3": [
+          [
+            "icelandic_moss_grass_02",
+            834
+          ],
+          [
+            "sewer_railing_01_64",
+            205
+          ],
+          [
+            "sign_plate_c",
+            197
+          ],
+          [
+            "pipe_modular_painted_grey_8",
+            187
+          ],
+          [
+            "sewer_railing_01_128",
+            117
+          ],
+          [
+            "firstgen_pipe_curve_darkcloth_01",
+            115
+          ],
+          [
+            "grass_icelandic_01",
+            108
+          ],
+          [
+            "icelandic_ground_plant_01",
+            95
+          ],
+          [
+            "industrial_metal_arm_support_01",
+            94
+          ],
+          [
+            "conduit_bracket_imc_02",
+            91
+          ],
+          [
+            "imc_tech_panel_64_01",
+            81
+          ],
+          [
+            "sign_caution_chemical",
+            80
+          ]
+        ],
+        "non_foliage_placements": 4000,
+        "non_foliage_prop_triangles_lod3": 443743,
+        "total_fraction_lod3_without_foliage": 0.4768
+      },
+      "backdrop": {
+        "box": [
+          [
+            -29069.0,
+            -29399.0,
+            -5769.0
+          ],
+          [
+            -10756.0,
+            -11683.0,
+            2150.0
+          ]
+        ],
+        "world_triangles": 96705,
+        "world_meshes": 1295,
+        "world_padded_indices": 290514,
+        "world_fraction": 0.0924,
+        "placements": 19856,
+        "unique_models": 426,
+        "prop_triangles_lod0": 17682831,
+        "prop_triangles_lod3": 2391646,
+        "placements_without_export": 48,
+        "total_fraction_lod3": 2.3732,
+        "materials": 83
+      }
+    },
+    {
+      "id": "dome",
+      "name": "The Dome",
+      "source_map": "mp_rr_desertlands_mu2",
+      "script_points": 5,
+      "point_bounds": [
+        [
+          15223.0,
+          -41456.0,
+          -2232.0
+        ],
+        [
+          22925.0,
+          -34549.0,
+          -1998.0
+        ]
+      ],
+      "play": {
+        "box": [
+          [
+            13223.0,
+            -43456.0,
+            -3732.0
+          ],
+          [
+            24925.0,
+            -32549.0,
+            4002.0
+          ]
+        ],
+        "world_triangles": 83272,
+        "world_meshes": 3593,
+        "world_padded_indices": 250680,
+        "world_fraction": 0.0797,
+        "placements": 8637,
+        "unique_models": 217,
+        "prop_triangles_lod0": 7458048,
+        "prop_triangles_lod3": 931622,
+        "placements_without_export": 1,
+        "total_fraction_lod3": 0.9682,
+        "materials": 46,
+        "entity_classes": {
+          "ambient_generic": 294,
+          "light_spot": 263,
+          "script_ref": 140,
+          "light": 129,
+          "info_particle_system": 108,
+          "info_target": 74,
+          "trigger_soundscape": 29,
+          "prop_door": 24,
+          "prop_dynamic": 20,
+          "trigger_hurt": 20,
+          "traverse": 9,
+          "info_target_clientside": 4,
+          "trigger_slip": 4,
+          "trigger_no_zipline": 2,
+          "script_mover_train_node": 1
+        },
+        "top_models_lod3": [
+          [
+            "grass_burnt_yellow_03",
+            1344
+          ],
+          [
+            "pipe_modular_painted_yellow_8",
+            342
+          ],
+          [
+            "pipe_modular_painted_yellow_64",
+            340
+          ],
+          [
+            "icelandic_rockcluster_03",
+            308
+          ],
+          [
+            "sewer_railing_01_128",
+            287
+          ],
+          [
+            "icelandic_rockcluster_01",
+            273
+          ],
+          [
+            "sign_plate_c",
+            250
+          ],
+          [
+            "pipe_modular_painted_yellow_32",
+            221
+          ],
+          [
+            "conduit_bracket_imc_04",
+            200
+          ],
+          [
+            "icelandic_moss_grass_02",
+            191
+          ],
+          [
+            "pipe_modular_painted_yellow_corner",
+            185
+          ],
+          [
+            "canyonland_pipe_ring",
+            184
+          ]
+        ],
+        "non_foliage_placements": 6864,
+        "non_foliage_prop_triangles_lod3": 759361,
+        "total_fraction_lod3_without_foliage": 0.8039
+      },
+      "backdrop": {
+        "box": [
+          [
+            9223.0,
+            -47456.0,
+            -3732.0
+          ],
+          [
+            28925.0,
+            -28549.0,
+            4002.0
+          ]
+        ],
+        "world_triangles": 125850,
+        "world_meshes": 4416,
+        "world_padded_indices": 378912,
+        "world_fraction": 0.1205,
+        "placements": 14546,
+        "unique_models": 453,
+        "prop_triangles_lod0": 14095964,
+        "prop_triangles_lod3": 1738152,
+        "placements_without_export": 10,
+        "total_fraction_lod3": 1.7781,
+        "materials": 154
+      }
+    },
+    {
+      "id": "golden-gardens",
+      "name": "Golden Gardens",
+      "source_map": "mp_rr_olympus",
+      "script_points": 14,
+      "point_bounds": [
+        [
+          14473.0,
+          4015.0,
+          -3592.0
+        ],
+        [
+          19953.0,
+          13022.0,
+          -3029.0
+        ]
+      ],
+      "play": {
+        "box": [
+          [
+            12473.0,
+            2015.0,
+            -5092.0
+          ],
+          [
+            21953.0,
+            15022.0,
+            2971.0
+          ]
+        ],
+        "world_triangles": 98977,
+        "world_meshes": 687,
+        "world_padded_indices": 297378,
+        "world_fraction": 0.0945,
+        "placements": 14599,
+        "unique_models": 194,
+        "prop_triangles_lod0": 13551334,
+        "prop_triangles_lod3": 1686516,
+        "placements_without_export": 0,
+        "total_fraction_lod3": 1.7029,
+        "materials": 46,
+        "entity_classes": {
+          "light": 183,
+          "light_spot": 177,
+          "script_ref": 138,
+          "prop_dynamic": 80,
+          "ambient_generic": 68,
+          "info_particle_system": 65,
+          "trigger_soundscape": 16,
+          "prop_door": 14,
+          "info_target": 10,
+          "info_target_clientside": 7,
+          "zipline": 3,
+          "trigger_multiple": 3,
+          "trigger_no_zipline": 2,
+          "trigger_out_of_bounds": 2,
+          "zipline_end": 1
+        },
+        "top_models_lod3": [
+          [
+            "flowers_wall_01",
+            2385
+          ],
+          [
+            "flowers_ground_01",
+            1799
+          ],
+          [
+            "olympus_moss_grass_01",
+            1713
+          ],
+          [
+            "ground_plant_red_large",
+            1334
+          ],
+          [
+            "olympus_moss_grass_02",
+            1265
+          ],
+          [
+            "olympus_moss_grass_04",
+            654
+          ],
+          [
+            "ivy_bougainvillea_01",
+            362
+          ],
+          [
+            "ivy_green_03",
+            341
+          ],
+          [
+            "ivy_green_02",
+            276
+          ],
+          [
+            "icelandic_ground_plant_02",
+            250
+          ],
+          [
+            "olympus_can_light_short",
+            237
+          ],
+          [
+            "bush_green_forest_01_red_anim",
+            226
+          ]
+        ],
+        "non_foliage_placements": 2426,
+        "non_foliage_prop_triangles_lod3": 487544,
+        "total_fraction_lod3_without_foliage": 0.5595
+      },
+      "backdrop": {
+        "box": [
+          [
+            8473.0,
+            -1985.0,
+            -5092.0
+          ],
+          [
+            25953.0,
+            19022.0,
+            2971.0
+          ]
+        ],
+        "world_triangles": 231825,
+        "world_meshes": 2361,
+        "world_padded_indices": 696630,
+        "world_fraction": 0.2215,
+        "placements": 40875,
+        "unique_models": 548,
+        "prop_triangles_lod0": 32310868,
+        "prop_triangles_lod3": 5084596,
+        "placements_without_export": 132,
+        "total_fraction_lod3": 5.0705,
+        "materials": 141
+      }
+    }
+  ]
+}

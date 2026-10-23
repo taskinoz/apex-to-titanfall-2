@@ -24,6 +24,8 @@ def asset_index(ident):
         for p in root.rglob('*.rmdl'):
             if p.with_suffix('.vg').exists():
                 index[p.stem.lower()] = p.parent
+        for p in root.glob('*/*_LOD0.cast'):  # current Apex models exported by RSX as Cast
+            index.setdefault(p.parent.name.lower(), p.parent)
     return index
 
 
@@ -40,7 +42,8 @@ def priority(model):
     n=model.lower()
     if any(w in n for w in ('vent', 'drain', 'signage_plates', 'conduit_bracket')):return 5
     if any(w in n for w in ('stairs','stair','floor','walkway','bridge','ramp','roof','hull','ship','voyage','catwalk')):return 0
-    if any(w in n for w in ('wall','railing','rail_','fence','crate','container','cover','barrier','beam','column','support','frame','tower_arm','pipe','tank','smelting','door','crane')):return 1
+    if any(w in n for w in ('wall','railing','rail_','fence','crate','container','cover','barrier','beam','column','support','frame','tower_arm','pipe','tank','smelting','door','crane',
+                            'cage','framework','ceiling','scaffold','girder')):return 1
     if any(w in n for w in ('rock','levels_terrain')):return 2
     if foliage(model):return 4
     return 3
@@ -52,8 +55,10 @@ def prepare(ident):
     out.mkdir(parents=True, exist_ok=True)
     bsp = bsp_tool.load_bsp(str(source_bsp(ident)))
     geo = bsp.external
-    if geo.loading_errors:
-        raise ValueError(str(geo.loading_errors))
+    # v52 light probe records differ in size; the port rebuilds its own probes.
+    errors = {k: v for k, v in geo.loading_errors.items() if k != 'LIGHTPROBES'}
+    if errors:
+        raise ValueError(str(errors))
     sprp = geo.GAME_LUMP.sprp
     if not hasattr(sprp, 'props'):
         sprp = GameLump_SPRP.from_bytes(bytes(sprp))
@@ -112,6 +117,15 @@ def prepare(ident):
             angles=[p.angles.y, p.angles.z, p.angles.x], scale=p.scale, skin=p.skin,
             solid=p.solid_mode.value, flags=int(p.flags),
             in_region=bool(np.all(origin >= low) and np.all(origin <= high))))
+    # Optional backdrop: named surrounding models (e.g. Thunderdome's stadium stands) beyond the play
+    # bounds, kept at their cheapest planned LOD so the arena is not a floating island.
+    backdrop = c.get('backdrop')
+    if backdrop:
+        blo, bhi = np.asarray(backdrop['box'], 'f4')
+        for p in props:
+            stem = Path(p['model']).stem.lower()
+            if not p['in_region'] and any(w in stem for w in backdrop['models']) and                     np.all(np.asarray(p['origin']) >= blo) and np.all(np.asarray(p['origin']) <= bhi):
+                p['in_region'] = True; p['backdrop'] = True
     local = [p for p in props if p['in_region']]
     index = asset_index(ident)
     cache, errors = {}, {}
@@ -122,21 +136,31 @@ def prepare(ident):
             errors[model] = 'Compiled source model not recovered'
             continue
         try:
-            levels = struct.unpack_from('<18Q', (path / (path.name + '.vg')).read_bytes(), 16)[13]
+            from read_vg_static import levels as vg_levels
+            levels = vg_levels(path)
             candidates = []
-            for lod in range(min(levels, 3 if foliage(model) else 4)):
+            for lod in range(min(levels, 3) if foliage(model) else levels):  # every author LOD (dense retail maps)
                 sections, slots, skins = load(path, lod, with_colors=True)
                 secs = [np.asarray(s, 'f4').reshape(-1, 3, 12) for s in sections]
                 candidates.append((secs, slots, skins, lod, path))
+            # Optional (dense retail maps): meshoptimizer-simplify the cheapest LOD of still-heavy props.
+            simplify = c.get('simplify')
+            if simplify and candidates and sum(len(s) for s in candidates[-1][0]) >= simplify['min_triangles'] and not foliage(model):
+                from simplify_cache import cached
+                secs, slots_, skins_, lod_, path_ = candidates[-1]
+                simple = cached(path_, lod_, simplify['error'], out/'simplified')
+                if simple is not None and len(simple) == len(secs) and sum(map(len, simple)) < sum(map(len, secs)):
+                    candidates.append((simple, slots_, skins_, lod_, path_))
             cache[model] = candidates
         except (OSError, ValueError, struct.error) as e:
             errors[model] = str(e)
     counts = collections.Counter(p['model'] for p in local)
-    levels = {m: 0 for m in cache}
+    backdrop_models = {p['model'] for p in local if p.get('backdrop')}
+    levels = {m: (len(cs)-1 if m in backdrop_models else 0) for m, cs in cache.items()}
     cost = lambda item: sum(len(s) for s in item[0])
     total = sum(cost(cs[0]) * counts[m] for m, cs in cache.items())
     # Leave space for runtime batches, collision repairs and presentation.
-    budget = 920000 - world_count - len(sky_dome())
+    budget = c.get('triangle_budget', 920000) - world_count - len(sky_dome())
     while total > budget:
         savings = [(counts[m] * (cost(cs[levels[m]]) - cost(cs[levels[m] + 1])), m)
                    for m, cs in cache.items() if levels[m] + 1 < len(cs)]
@@ -149,7 +173,7 @@ def prepare(ident):
         total -= saving
     parts = collections.defaultdict(list)
     selected, omitted, used = [], [], 0
-    local.sort(key=lambda p: (priority(p['model']),
+    local.sort(key=lambda p: (-1 if p.get('backdrop') else priority(p['model']),
                              p['solid'] not in (2, 6, 7), p['index']))
     for p in local:
         cs = cache.get(p['model'])

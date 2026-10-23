@@ -1,0 +1,18 @@
+{
+  "Name": "ArenaThunderdome",
+  "Version": "0.1.1",
+  "LoadPriority": 10,
+  "Description": "Thunderdome native conversion preview. AI navigation and source gameplay systems are incomplete.",
+  "Scripts": [
+    {
+      "Path": "_thunderdome.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "ArenaThunderdome_Init"
+      }
+    }
+  ],
+  "Localisation": [
+    "resource/thunderdome_%language%.txt"
+  ]
+}

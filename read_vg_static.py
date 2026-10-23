@@ -102,6 +102,14 @@ def decode(rmdl,vg,lod_index=0,with_colors=False,legacy_normals=False):
     return sections,slots,skins
 
 
+def levels(folder):
+    """Author LOD count of a Legion (.vg) or RSX Cast (current Apex) model export."""
+    folder=Path(folder);vg=folder/(folder.name+'.vg')
+    if vg.exists():return struct.unpack_from('<18Q',vg.read_bytes(),16)[13]
+    import read_cast;return read_cast.levels(folder)
+
 def load(folder,lod_index=0,with_colors=False,legacy_normals=False):
+    if not (Path(folder)/(Path(folder).name+'.vg')).exists() and any(Path(folder).glob('*_LOD0.cast')):
+        import read_cast;return read_cast.load(folder,lod_index,with_colors)  # current Apex: RSX Cast exports
     folder=Path(folder);name=folder.name
     return decode((folder/(name+'.rmdl')).read_bytes(),(folder/(name+'.vg')).read_bytes(),lod_index,with_colors,legacy_normals)

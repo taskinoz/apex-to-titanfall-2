@@ -6,7 +6,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 MAPS = {'PhaseRunner': 'mp_phase_runner', 'ArenaComposite': 'mp_arena_composite',
         'ApexFiringRange': 'mp_apex_firing_range', 'ArenaPartyCrasher': 'mp_party_crasher',
-        'ArenaOverflow': 'mp_overflow'}
+        'ArenaOverflow': 'mp_overflow', 'ArenaThermalStation': 'mp_thermal_station',
+        'ArenaThunderdome': 'mp_thunderdome'}
 
 
 def scope(paks, map_name):

@@ -29,10 +29,13 @@ def survey(ident):
         if not d.is_dir() or not any('albedo2' in p.name for p in d.iterdir()) or name not in src.materials:
             continue
         path = cache/(name+'-ps.txt')
-        if not path.exists():
-            disassemble(src, name, cache)
+        try:
+            if not path.exists():
+                disassemble(src, name, cache)
+            values, _ = src.constants(name)
+        except (KeyError, ValueError):
+            continue  # shader lives in a shared pack (common.rpak), not the map pack: keep its single layer
         ps = path.read_text(errors='replace'); slots = texture_slots(ps)
-        values, _ = src.constants(name)
         row = dict(triangles=count, ramp=values.get('c_layerBlendRamp', [None])[0])
         for tex in ('albedoTexture', 'albedo2Texture', 'layerBlendTexture'):
             if tex not in slots:

@@ -12,7 +12,8 @@ sys.path.insert(0, str(ROOT / 'tools/lighting-python'))
 import numpy as np
 
 SKY = {'overflow': 'aqueduct_sky', 'party-crasher': 'party_crasher_night_sky',
-       'firing-range': 'canyonlands_hu_sky'}
+       'firing-range': 'canyonlands_hu_sky', 'thermal-station': 'desertlands_sky_mu1',
+       'thunderdome': 'canyonlands_hu_sky'}  # Thunderdome is in Kings Canyon; its skydome is a model material
 
 
 def collisions(ident):
@@ -117,7 +118,9 @@ def initial_starts(ident, report):
         # Authored arena spawn markers can be absent in client partitions.
         guesses = {'overflow': [[-4000, -5400, 320], [3800, -5600, 320]],
                    'party-crasher': [[-3200, -1600, 1100], [3300, 2400, 1100]],
-                   'firing-range': [[2000, -500, 0], [-2000, -500, 0]]}
+                   'firing-range': [[2000, -500, 0], [-2000, -500, 0]],
+                   # R5R deathmatch spawns at the west and east platforms (+ offset).
+                   'thermal-station': [[-3019, -28, -10], [2760, -210, 27]]}
         local = [(np.asarray(p), '0 0 0') for p in guesses[ident]]
     if len(local) > 48:
         local = local[::max(1, len(local) // 48)][:48]

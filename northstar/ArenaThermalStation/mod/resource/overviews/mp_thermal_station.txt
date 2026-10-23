@@ -1,0 +1,14 @@
+"mp_thermal_station"
+{
+    "assets"
+    {
+        "minimap" "overviews/mp_thermal_station"
+    }
+    "pos_x" "-8182.59375"
+    "pos_y" "7932.16845703125"
+    "scale" "15.731781005859375"
+    "displayDist" "2048"
+    "threatMaxDist" "2500"
+    "threatNearDist" "500"
+    "threatFarDist" "2000"
+}

@@ -22,6 +22,7 @@ def vertex_tint(name,verified=False):
 
 
 def tint(values,field):
+    if field not in values:return [1.,1.,1.]  # shader without this constant (resolved from a shared pack): neutral
     v=values[field]
     if len(v)!=4 or not all(math.isfinite(x) and 0<=x<=4096 for x in v[1:]):
         raise ValueError('Invalid reflected source tint')
@@ -57,7 +58,8 @@ class NativeMaterials:
         return path
 
     def texture(self,name,image=None,source=None):
-        path=f'texture/{self.slug}/{name}.rpak';target=(self.assets/path).with_suffix('.dds');target.parent.mkdir(parents=True,exist_ok=True)
+        # Pack GUIDs ignore case; retail material keys keep authored case (bldg_wall_metal_IMC_01).
+        path=f'texture/{self.slug}/{name.lower()}.rpak';target=(self.assets/path).with_suffix('.dds');target.parent.mkdir(parents=True,exist_ok=True)
         if source:
             im=image_dds(source)
             if max(im.size)>1024:im.thumbnail((1024,1024),Image.Resampling.LANCZOS)
@@ -84,7 +86,9 @@ class NativeMaterials:
         self.files[path]=dict(_type='txtr',_path=path,**{'$disableStreaming':True});return path
 
     def write(self,path,name,spec,uber,textures,colour=None,emission=None,paint=False,colpass=None):
-        s=dict(spec);s.update(name=name,shaderSet=self.shaderset(int(spec['shaderSet'],16)),
+        # Case-variant keys (retail authored case) can rewrite the same material: keep an already-built path.
+        shader=spec['shaderSet'] if str(spec['shaderSet']).startswith('shaderset/') else self.shaderset(int(spec['shaderSet'],16))
+        s=dict(spec);s.update(name=name,shaderSet=shader,
             **{'$textures':textures},blendStates=(spec['blendStates']+['0x0']*8)[:8])
         for field in ('$depthShadowMaterial','$depthPrepassMaterial','$depthVSMMaterial'):
             s[field]=self.stock[field]
@@ -153,11 +157,63 @@ def water(builder,mapping):
         non_solid=True,source_wave_parity=False,new_reflection_capture=False)
 
 
+UNRESOLVED_WHITE_MEAN=200
+UNRESOLVED_WHITE_TINT=.55
+
+
+class RetailConstants:
+    """Material constants for current Apex (Oodle packs) from RSX exports: the material's .rsx.json names its
+    shader set; the set's .msw lists its shader GUIDs (offset 5); the exported raw shader (.fxc DXBC) carrying
+    CBufUberStatic gives the field layout (apex_material_constants.reflect); the exported .uber gives the values.
+    Materials whose shaders are unavailable fall back to neutral tints."""
+    NEUTRAL={'c_zUpBlendingVertexAlphaAndL0_albedoTint':[0.,1.,1.,1.],'c_depthBlendScalarAndL0_emissiveTint':[0.,1.,1.,1.]}
+    def __init__(self,materials,legion=None,shaders=None,exports=None):
+        self.materials=set(materials);self.legion=legion;self.shaders=shaders;self.exports=exports;self.layouts={};self.reflected=0
+    def layout(self,shaderset):
+        from apex_material_constants import reflect
+        if shaderset not in self.layouts:
+            self.layouts[shaderset]=None
+            msw=self.shaders/'shaderset'/(shaderset+'.msw') if self.shaders else None
+            if msw and msw.exists():
+                raw=msw.read_bytes()
+                for guid in struct.unpack_from('<2Q',raw,5):
+                    for fxc in sorted((self.shaders/'shader').glob('0x%016X_*.fxc'%guid)):
+                        try:self.layouts[shaderset]=reflect(fxc.read_bytes());break
+                        except ValueError:continue
+                    if self.layouts[shaderset]:break
+        return self.layouts[shaderset]
+    def constants(self,name):
+        meta=self.legion/name/(name+'.rsx.json') if self.legion else None
+        if meta and meta.exists():
+            m=json.loads(meta.read_text());fields=self.layout(m['spec'].get('shaderSet',''))
+            uber=self.exports/m['source']/(m['source']+'.uber') if self.exports else None
+            if fields and uber and uber.exists():
+                cpu=uber.read_bytes();values={}
+                for n,(offset,count) in fields.items():
+                    if count%4==0 and offset+count<=len(cpu):values[n]=list(struct.unpack_from('<'+'f'*(count//4),cpu,offset))
+                if 'c_zUpBlendingVertexAlphaAndL0_albedoTint' in values:
+                    self.reflected+=1
+                    for k,v in self.NEUTRAL.items():values.setdefault(k,v)
+                    return values,fields
+        return dict(self.NEUTRAL),{k:(0,16) for k in self.NEUTRAL}
+
+
+def retail_constants(ident,materials):
+    from new_arena_ports import RETAIL
+    src=RETAIL/CONFIG[ident]['source']
+    return RetailConstants(materials,folder(ident)/'legion/exported_files/materials',src/'rsx-shaders',
+                           src/'rsx-export/exported_files/material')
+
+
 def build(ident):
     out=folder(ident);receipt=out/'atmosphere-materials.json'
     if receipt.exists():raise ValueError('Atmosphere already applied; restore before-0.3.0 to rebuild')
     mats=out/'materials';manifest=json.loads((mats/'build.json').read_text());mapping=json.loads((mats/'mapping.json').read_text())
-    source=ApexMaterials(out/'paks'/(CONFIG[ident]['source']+'.rpak'));builder=NativeMaterials(mats,ident.replace('-','_'),manifest)
+    retail=CONFIG[ident].get('retail')
+    source=retail_constants(ident,mapping['materials']) if retail else ApexMaterials(out/'paks'/(CONFIG[ident]['source']+'.rpak'))
+    builder=NativeMaterials(mats,ident.replace('-','_'),manifest)
+    # Retail maps: *_vert_color/_vc scene colours are real paint (not blend weights), so paint them.
+    paint=lambda name:vertex_tint(name,verified=bool(retail))
     root=out/'legion/exported_files/materials';rows=[];skipped=[]
     for name,r in mapping['materials'].items():
         if r.get('frozen_lava_layers'):continue
@@ -166,10 +222,22 @@ def build(ident):
         if name not in source.materials or not p.exists():continue
         try:values,fields=source.constants(name)
         except (KeyError,ValueError) as error:
-            skipped.append(dict(material=name,reason='Source shader reflection unavailable: '+str(error)))
-            continue
+            # Shader set outside the map pack and the shared packs: neutral tint, dimmed for near-white
+            # albedos (Thermal Station building_walls_metal_03, mean 221) that blow out under native exposure.
+            albedo_path=p/(name+'_albedoTexture.dds')
+            if not albedo_path.exists():
+                skipped.append(dict(material=name,reason='Source shader reflection unavailable: '+str(error)));continue
+            import numpy as _np
+            bright=float(_np.asarray(image_dds(albedo_path).convert('L').resize((64,64))).mean())
+            scale=UNRESOLVED_WHITE_TINT if bright>UNRESOLVED_WHITE_MEAN else 1.
+            values={'c_zUpBlendingVertexAlphaAndL0_albedoTint':[0.,scale,scale,scale],'c_depthBlendScalarAndL0_emissiveTint':[0.,1.,1.,1.]}
+            fields={k:(0,16) for k in values}
+            skipped.append(dict(material=name,reason='Source shader reflection unavailable: '+str(error),
+                                fallback_albedo_tint=scale,albedo_mean=round(bright,1)))
         colour=tint(values,'c_zUpBlendingVertexAlphaAndL0_albedoTint')
         emit=tint(values,'c_depthBlendScalarAndL0_emissiveTint')
+        cap=CONFIG[ident].get('emission_cap',{}).get(name)
+        if cap is not None:emit=[min(v,cap) for v in emit]  # per-map review: whole-surface emission that Apex masks
         path='material/'+r['name']+'_wld.rpak';cpath='material/'+r['name']+'_colpass_wld.rpak'
         albedo=p/(name+'_albedoTexture.dds');emissive=p/(name+'_emissiveTexture.dds')
         if not albedo.exists():continue
@@ -187,8 +255,8 @@ def build(ident):
                 for slot,semantic,c in [('1','normal',(128,128,255,255)),('2','gloss',(30,30,30,255)),('3','spec',(8,8,8,255))]:
                     textures.setdefault(slot,builder.texture('neutral_'+semantic,image=Image.new('RGBA',(4,4),c)))
                 child,cuber=builder.material(int(spec['$colpassMaterial'],16))
-                builder.write(cpath,r['name']+'_colpass',child,cuber,textures,colour,emit,paint=vertex_tint(name))
-                builder.write(path,r['name'],spec,uber,textures,colour,emit,paint=vertex_tint(name),colpass=cpath)
+                builder.write(cpath,r['name']+'_colpass',child,cuber,textures,colour,emit,paint=paint(name))
+                builder.write(path,r['name'],spec,uber,textures,colour,emit,paint=paint(name),colpass=cpath)
                 r.pop('static_glow_ambient',None);kind='Native HDR emission with source mask/tint and PBR'
             elif unlit:
                 spec,uber=builder.material(0xd93184c122ff87e4)
@@ -201,13 +269,13 @@ def build(ident):
                     if slot not in textures:textures[slot]=builder.texture('neutral_'+semantic,image=Image.new('RGBA',(4,4),c))
                 spec=json.loads((mats/'assets'/path).with_suffix('.json').read_text());uber=(mats/'assets'/path).with_suffix('.uber').read_bytes()
                 child=json.loads((mats/'assets'/cpath).with_suffix('.json').read_text());cuber=(mats/'assets'/cpath).with_suffix('.uber').read_bytes()
-                if vertex_tint(name):
+                if paint(name):
                     spec['shaderSet']=hex(0x6AFE220DA02633A0);child['shaderSet']=hex(0x81F5BAC39D4DF3B1)
-                builder.write(cpath,r['name']+'_colpass',child,cuber,textures,colour,paint=vertex_tint(name))
-                builder.write(path,r['name'],spec,uber,textures,colour,paint=vertex_tint(name),colpass=cpath)
-                kind='Native vertex paint with source albedo tint/PBR' if vertex_tint(name) else 'Source albedo tint/PBR; blend weights excluded from RGB tint'
+                builder.write(cpath,r['name']+'_colpass',child,cuber,textures,colour,paint=paint(name))
+                builder.write(path,r['name'],spec,uber,textures,colour,paint=paint(name),colpass=cpath)
+                kind='Native vertex paint with source albedo tint/PBR' if paint(name) else 'Source albedo tint/PBR; blend weights excluded from RGB tint'
             rows.append(dict(material=name,kind=kind,source_albedo_tint=colour,source_emissive_tint=emit,
-                constant_offsets={k:fields[k] for k in ('c_zUpBlendingVertexAlphaAndL0_albedoTint','c_depthBlendScalarAndL0_emissiveTint')}))
+                constant_offsets={k:fields[k] for k in ('c_zUpBlendingVertexAlphaAndL0_albedoTint','c_depthBlendScalarAndL0_emissiveTint') if k in fields}))
             r['native_source_channels']=kind
             r['textures']=bind if kind.startswith('Native unlit') else textures
         else:

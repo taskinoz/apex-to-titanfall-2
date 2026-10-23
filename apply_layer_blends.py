@@ -71,6 +71,24 @@ def selection(ident):
     return chosen
 
 
+RETAIL_RAMP = 4.0  # median of the 53 surveyed R5R blend materials (layer-blend-survey.json, 10-90%: 1-10)
+
+
+def survey_retail(ident):
+    """Current Apex packs are Oodle-compressed, so shaders are not disassembled: every adapted material with
+    a second albedo and a blend mask is a two-layer candidate, sampled at the mesh UV with the median ramp and
+    source vertex alpha as input. Materials whose alpha cannot be matched keep their single layer (patch)."""
+    out = folder(ident); mapping = json.loads((out/'materials/mapping.json').read_text())['materials']; result = {}
+    for name in mapping:
+        d = out/'legion/exported_files/materials'/name
+        if (d/(name+'_albedo2Texture.dds')).exists() and (d/(name+'_layerBlendTexture.dds')).exists():
+            mesh = dict(kind='mesh')
+            result[name] = dict(source=name, albedoTexture=mesh, albedo2Texture=mesh, layerBlendTexture=mesh,
+                                ramp=RETAIL_RAMP, zup=False, retail_defaults=True)
+    write(out/'layer-blend-survey.json', result)
+    print('Retail blend candidates', len(result), flush=True)
+
+
 def snapshot(ident):
     out, project, backup, bsp = paths(ident)
     if backup.exists():
@@ -107,8 +125,8 @@ def source_alpha(ident, names):
     scene = json.loads((folder(ident)/'scene.json').read_text()); cache = {}
     for p in scene['placements']:
         f = p.get('folder')
-        if not f or not (Path(f)/(Path(f).name+'.vg')).exists():
-            continue
+        if not f or not ((Path(f)/(Path(f).name+'.vg')).exists() or any(Path(f).glob('*_LOD0.cast'))):
+            continue  # Legion .vg or RSX Cast (current Apex) exports
         key = (f, p['lod'])
         if key not in cache:
             try:
@@ -237,8 +255,12 @@ def materials(ident):
     flat = f'texture/{slug}/layer_blend_flat_normal.rpak'
     save_mips(Image.new('RGBA', (4, 4), (128, 128, 255, 255)), (assets/flat).with_suffix('.dds'))
     files[flat] = dict(_type='txtr', _path=flat, **{'$disableStreaming': True})
-    from apex_material_constants import ApexMaterials
-    source = ApexMaterials(out/'paks'/(CONFIG[ident]['source']+'.rpak'))
+    if CONFIG[ident].get('retail'):
+        from recover_arena_atmosphere import retail_constants
+        source = retail_constants(ident, mapping['materials'])
+    else:
+        from apex_material_constants import ApexMaterials
+        source = ApexMaterials(out/'paks'/(CONFIG[ident]['source']+'.rpak'))
     report = {}
     excluded = set(json.loads((project/'blend-patch.json').read_text())['excluded_unmatched'])
     for name, row in selection(ident).items():
@@ -301,5 +323,5 @@ def materials(ident):
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('action', choices=['patch', 'materials']); p.add_argument('ident', choices=sorted(CONFIG))
-    a = p.parse_args(); dict(patch=patch, materials=materials)[a.action](a.ident)
+    p.add_argument('action', choices=['survey-retail', 'patch', 'materials']); p.add_argument('ident', choices=sorted(CONFIG))
+    a = p.parse_args(); {'survey-retail': survey_retail, 'patch': patch, 'materials': materials}[a.action](a.ident)

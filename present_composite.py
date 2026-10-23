@@ -10,7 +10,9 @@ def build(map_name='mp_arena_composite',namespace='composite',display_name='Comp
     assets=OUT/'assets';tex='texture/loadscreens/'+map_name+'.rpak';dest=(assets/tex).with_suffix('.dds');dest.parent.mkdir(parents=True,exist_ok=True)
     subprocess.run([str(ROOT/'tools/directxtex/texconv.exe'),'-nologo','-f','BC7_UNORM_SRGB','-m','1','-y','-o',str(dest.parent),str(ART)],capture_output=True,check=True)
     shutil.copy2(dest.parent/(ART.stem+'.dds'),dest);w,h=Image.open(ART).size
-    template=ROOT/'output/phase-runner/loading-native-template';spec=json.loads((template/'loadscreen.json').read_text());files=[]
+    template=ROOT/'output/phase-runner/loading-native-template'
+    if not (template/'loadscreen.json').exists():template=Path('D:/Games/ApexToTitanfallWork/project-storage/output/phase-runner/loading-native-template')  # manage_project_storage.py relocation
+    spec=json.loads((template/'loadscreen.json').read_text());files=[]
     names=[map_name,map_name+'_widescreen',map_name+'_lobby']
     files.append(dict(_type='uimg',_path='ui_image_atlas/'+namespace+'.rpak',atlas=tex,images=[dict(path='loadscreens/'+name,posX=0,posY=0,width=w,height=h) for name in names]))
     for name in names:

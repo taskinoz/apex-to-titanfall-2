@@ -24,6 +24,8 @@
 !/northstar/ArenaPartyCrasher/
 !/northstar/ApexFiringRange/
 !/northstar/ApexMaps.UI/
+!/northstar/ArenaThermalStation/
+!/northstar/ArenaThunderdome/
 
 # Owned runtime state, logs, downloads, releases and game assets stay local.
 **/output/
