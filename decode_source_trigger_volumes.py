@@ -1,6 +1,6 @@
 """Translate Apex inline signed BVH convex trigger pieces to native R2 planes.
 
-The entity's collision stream has a 56-byte descriptor followed by a surface
+The entity's collision stream has a 56-byte (v47) or 64-byte (v52) descriptor followed by a surface
 name, inline convex leaves and a BVH. Coordinates in this entity variant are
 signed int16, unlike the unsigned type-8 leaves in a world BVH.
 """
@@ -15,11 +15,14 @@ from scipy.optimize import linprog
 def pieces(entity):
     keys=sorted((k for k in entity if k.startswith('*coll')),key=lambda k:int(k[5:]))
     raw=base64.b64decode(''.join(entity[k] for k in keys),validate=True)
-    if len(raw)<80 or struct.unpack_from('<I',raw)[0]!=56:
+    # BSP v47 descriptors are 56 bytes; v52 (current Apex) adds one field (64 bytes, surface name at 68).
+    # Leaf start (offset 28), leaf length (offset 20) and the convex leaf records are unchanged.
+    header=struct.unpack_from('<I',raw)[0] if len(raw)>=80 else 0
+    if header not in (56,64):
         raise ValueError('Unsupported entity collision descriptor')
     start=struct.unpack_from('<I',raw,28)[0]
-    end=56+struct.unpack_from('<I',raw,20)[0]
-    if not 56<=start<end<=len(raw):raise ValueError('Invalid leaf range')
+    end=header+struct.unpack_from('<I',raw,20)[0]
+    if not header<=start<end<=len(raw):raise ValueError('Invalid leaf range')
     out=[];cursor=start
     while cursor<end:
         vn,fn,tn,qn,*decode=struct.unpack_from('<4B4f',raw,cursor)

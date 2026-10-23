@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 VERSION = '0.3.1'
 GAME = Path('D:/Games/R5Reloaded/R5R Library/LIVE')
+RETAIL = Path('D:/Games/ApexToTitanfallWork/apex-current')
 WORK = Path(os.environ.get('APEX_PORT_WORK', str(ROOT / 'output/new-arena-ports'))).resolve()
 CONFIG = {
     'overflow': dict(name='Overflow', source='mp_rr_aqueduct', target='mp_overflow',
@@ -25,7 +26,20 @@ CONFIG = {
     # A World's Edge area Apex used as an Arenas map (docs/candidates/poi-survey-2026-10-19.md).
     'thermal-station': dict(name='Thermal Station', source='mp_rr_desertlands_mu2', target='mp_thermal_station',
         package='ArenaThermalStation', offset=[19900, 20500, 4000],
+        # User report 2026-10-21: b2t dirt z-fights with asphalt; the lava-scroll ground blooms white at 10x.
+        retire_overlays=['icelandic_dirt_01_wld_b2t'], emission_cap={'volcanic_ground_03_wld_lava_scroll_bm': 0.25},
+        layer_emission={'volcanic_ground_03_wld_lava_scroll_bm': (255, 96, 16)},
         bounds=[[-6800, -6500, -2500], [6800, 6500, 7000]]),
+    # Current retail Apex (extract_apex_current.py + adapt_rsx_exports.py); spawn hull +- 3000.
+    'thunderdome': dict(name='Thunderdome', source='mp_rr_thunderdome', target='mp_thunderdome',
+        package='ArenaThunderdome', offset=[0, 0, 0], retail=True,
+        # Dense prop layout: ~95% world-index target and simplified heavy single-LOD props.
+        triangle_budget=990000, simplify=dict(min_triangles=200, error=.01),
+        bounds=[[-9200, -6700, -1500], [9100, 6600, 8000]],
+        # The stadium ring around the arena (stands, floodlights, posts, wire rings) at ~16,500 units.
+        backdrop=dict(models=('td2_stadium_crowd', 'td2_stadium_post', 'light_tower', 'thunderdome_hanging_wire_rings',
+                              'td2_stadium_engine'),  # the hover engines under the platform (z -4529)
+                      box=[[-18000, -18000, -5000], [18000, 18000, 9000]])),
 }
 
 
@@ -34,6 +48,8 @@ def folder(ident):
 
 
 def source_bsp(ident):
+    if CONFIG[ident].get('retail'):  # current Apex, extracted by extract_apex_current.py
+        return RETAIL / CONFIG[ident]['source'] / 'maps' / (CONFIG[ident]['source'] + '.bsp')
     return ROOT / 'inputs/candidates' / ident / 'maps' / (CONFIG[ident]['source'] + '.bsp')
 
 

@@ -1,0 +1,10 @@
+{
+  "Aliases": {
+    "mp_thunderdome.rpak": "mp_coliseum.rpak",
+    "mp_thunderdome_loadscreen.rpak": "thunderdome_presentation.rpak"
+  },
+  "Postload": {
+    "thunderdome_world.rpak": "mp_coliseum.rpak",
+    "thunderdome_presentation.rpak": "common.rpak"
+  }
+}

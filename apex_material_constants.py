@@ -4,7 +4,11 @@ Supports the unpatched decompressed v8/v15 packs used by these previews.
 Other versions must go through an upstream loader rather than reuse offsets.
 """
 import struct
+from pathlib import Path
 from extract_native_material import NativePak
+
+
+SHARED=[Path('D:/Games/ApexToTitanfallWork/r5r-common')/(n+'.rpak') for n in ('common','common_mp','common_sdk','common_early')]
 
 
 class ApexMaterials(NativePak):
@@ -29,18 +33,32 @@ class ApexMaterials(NativePak):
         self.materials={self.string(struct.unpack_from('<2I',d,self.address(a['header'])+24)).replace('\\','/').rsplit('/',1)[-1]:a
             for a in self.assets if a['type']=='matl' and a['version']==15}
 
+    def shader_fields(self, guid):
+        """Static constant layout of a shader set's pixel shader; sets missing from a map pack are looked up in
+        the decompressed R5R common packs (SHARED), e.g. Thermal Station's building_walls_metal_03."""
+        if guid not in self.index:
+            for pak in self.shared():
+                if guid in pak.index:return pak.shader_fields(guid)
+            raise KeyError(guid)
+        d=self.data;s=self.index[guid]
+        if s['version']!=11:raise ValueError('Unsupported source shader set')
+        ps=self.index[struct.unpack_from('<Q',d,self.address(s['header'])+56)[0]]
+        if ps['version']!=12:raise ValueError('Unsupported source shader image')
+        at=self.address(ps['cpu']);ptr=struct.unpack_from('<2I',d,at);size=struct.unpack_from('<I',d,at+8)[0]
+        start=self.address(ptr);return reflect(d[start:start+size])
+
+    def shared(self):
+        if not hasattr(self,'_shared'):
+            self._shared=[ApexMaterials(p) for p in SHARED if p.exists() and p!=getattr(self,'path',None)]
+            for pak in self._shared:pak._shared=[]
+        return self._shared
+
     def constants(self, name):
         if name not in self.materials:
             # Exported folder names are lower case; pack strings keep authored case (e.g. _BM_01).
             name=next(k for k in self.materials if k.lower()==name.lower())
         a=self.materials[name];d=self.data;h=self.address(a['header'])
-        s=self.index[struct.unpack_from('<Q',d,h+88)[0]]
-        if s['version']!=11:raise ValueError('Unsupported source shader set')
-        ps=self.index[struct.unpack_from('<Q',d,self.address(s['header'])+56)[0]]
-        if ps['version']!=12:raise ValueError('Unsupported source shader image')
-        at=self.address(ps['cpu']);ptr=struct.unpack_from('<2I',d,at);size=struct.unpack_from('<I',d,at+8)[0]
-        start=self.address(ptr);dx=d[start:start+size]
-        fields=reflect(dx)
+        fields=self.shader_fields(struct.unpack_from('<Q',d,h+88)[0])
         c=self.address(a['cpu']);ptr=struct.unpack_from('<2I',d,c);length=struct.unpack_from('<I',d,c+8)[0]
         start=self.address(ptr);cpu=d[start:start+length]
         if len(cpu)!=length:raise ValueError('Truncated source material constants')

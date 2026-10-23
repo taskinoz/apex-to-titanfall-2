@@ -1,4 +1,9 @@
-"""One resident UI atlas for all five maps; loading materials stay independent."""
+"""One resident UI atlas for every map; loading materials stay independent.
+
+Titanfall pools at most 20 "UI image atlas" assets across the whole game
+(docs/candidates/ui-atlas-lifetime-2026-10-14.md), so all maps share one atlas:
+2560x1440 loading art in a 3-column grid, 1024x1024 minimaps in a row beneath.
+"""
 import hashlib
 import json
 import shutil
@@ -17,13 +22,16 @@ from restore_banner_display_textures import image_dds
 WORK = Path('D:/Games/ApexToTitanfallWork/new-arena-ports/shared-map-ui')
 SHARED = ROOT/'northstar/ApexMaps.UI'
 PACK = 'apex_maps_ui.rpak'
-SIZE = (8192,4608)
+COLUMNS = 3
+SIZE = (8192,5376)  # 3 rows of loading art (4320) + one row of minimaps (1024); seven maps
 SOURCES = {
     'PhaseRunner': (ROOT/'output/phase-runner/presentation', ROOT/'output/minimaps/phase_runner_minimap'),
     'ArenaComposite': (ROOT/'output/composite/presentation', ROOT/'output/minimaps/drop_off_minimap'),
     'ApexFiringRange': (WORK.parent/'firing-range/presentation', WORK.parent/'firing-range/minimap'),
     'ArenaPartyCrasher': (WORK.parent/'party-crasher/presentation', WORK.parent/'party-crasher/minimap'),
     'ArenaOverflow': (WORK.parent/'overflow/presentation', WORK.parent/'overflow/minimap'),
+    'ArenaThermalStation': (WORK.parent/'thermal-station/presentation', WORK.parent/'thermal-station/minimap'),
+    'ArenaThunderdome': (WORK.parent/'thunderdome/presentation', WORK.parent/'thunderdome/minimap'),
 }
 
 
@@ -42,8 +50,8 @@ def build():
     images, provenance, loading = [], {}, {}
     for i, (package, (presentation, minimap)) in enumerate(SOURCES.items()):
         entries = []
-        for source, position in ((presentation, ((i%2)*2560,(i//2)*1440)),
-                                 (minimap, (5120+(i%3)*1024,(i//3)*1024))):
+        for source, position in ((presentation, ((i%COLUMNS)*2560,(i//COLUMNS)*1440)),
+                                 (minimap, (i*1024, 3*1440))):
             manifest = json.loads((source/'build.json').read_text())
             ui = next(f for f in manifest['files'] if f['_type']=='uimg')
             path = (Path(manifest['assetsDir'])/ui['atlas']).with_suffix('.dds')
@@ -81,8 +89,9 @@ def build():
                 loading[package] = dict(built=str(built),sha256=hashlib.sha256(built.read_bytes()).hexdigest(),
                                         native_materials_unchanged=True,ui_atlases=0)
         provenance[package] = entries
-    if len(images)!=20 or len({item['path'] for item in images})!=20:
-        raise ValueError('Shared atlas must include fifteen loading names and five overviews')
+    expected = 4*len(SOURCES)
+    if len(images)!=expected or len({item['path'] for item in images})!=expected:
+        raise ValueError('Shared atlas must include three loading names and one overview per map')
     tex = 'texture/apex_maps/ui_shared.rpak'
     dest = (WORK/'assets'/tex).with_suffix('.dds')
     dest.parent.mkdir(parents=True,exist_ok=True)
@@ -102,12 +111,12 @@ def build():
         raise ValueError('Shared pack contains unexpected assets')
     ui = next(a for a in pak.assets if a['type']=='uimg')
     address = pak.address(ui['header'])
-    if struct.unpack_from('<4H',pak.data,address+8)!=(*SIZE,20,0):
+    if struct.unpack_from('<4H',pak.data,address+8)!=(*SIZE,expected,0):
         raise ValueError('Shared atlas dimensions/count differ')
     (SHARED/'paks').mkdir(parents=True,exist_ok=True)
     shutil.copy2(built,SHARED/'paks'/PACK)
-    (SHARED/'mod.json').write_text(json.dumps(dict(Name='ApexMaps.UI',Version='0.1.0',LoadPriority=9,
-        Description='Shared original loading artwork and minimaps for the five Apex map conversions.'),indent=2)+'\n')
+    (SHARED/'mod.json').write_text(json.dumps(dict(Name='ApexMaps.UI',Version='0.2.1',LoadPriority=9,
+        Description='Shared original loading artwork and minimaps for the Apex map conversions.'),indent=2)+'\n')
     (SHARED/'paks/rpak.json').write_text(json.dumps(dict(Postload={PACK:'common.rpak'}),indent=2)+'\n')
     for package, result in loading.items():
         paks = ROOT/'northstar'/package/'paks'
@@ -127,7 +136,7 @@ def build():
                    native_runtime_verified=False)
     (WORK/'build-proof.json').write_text(json.dumps(receipt,indent=2))
     (ROOT/'docs/conversion/shared-map-ui.json').write_text(json.dumps(receipt,indent=2))
-    print('Built one shared UI atlas and five atlas-free native loading packs',flush=True)
+    print('Built one shared UI atlas and',len(loading),'atlas-free native loading packs',flush=True)
 
 
 if __name__=='__main__':

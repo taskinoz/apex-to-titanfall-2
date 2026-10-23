@@ -206,7 +206,8 @@ def materials():
         r = old['materials'][name]
         if r['transparent']:
             # Crack decals, fence cutouts and search-light lenses use the tested world-alpha preset.
-            if not (name.startswith('decals_cracks_') or 'fence' in name or name.startswith('search_light_glass')):
+            if not (name.startswith('decals_cracks_') or 'fence' in name or name.startswith('search_light_glass')
+                    or name == 'apex_ring_wall'):  # add_ring_wall.py: reviewed translucent boundary wall
                 raise ValueError('New structural material needs explicit alpha review: '+name)
             # Cracks are source overlays, not holes in the underlying rock.
             # Keep the tested world-alpha preset and its derived opacity map.

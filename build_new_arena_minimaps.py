@@ -15,7 +15,7 @@ from build_arena_minimaps import overview, verify_pack
 
 def build(ident):
     c=CONFIG[ident];out=folder(ident)/'minimap';out.mkdir(parents=True,exist_ok=True)
-    if ident not in ('firing-range','thermal-station'):  # area cut-outs render their own overview
+    if ident not in ('firing-range','thermal-station','thunderdome'):  # cut-outs and retail maps render their own overview
         files=list((folder(ident)/'legion/exported_files/atlases').rglob('*.dds'))
         if len(files)!=1:raise ValueError('Minimap source atlas must be identified unambiguously')
         image=image_dds(files[0]);original_size=image.size

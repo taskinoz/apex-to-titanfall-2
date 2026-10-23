@@ -76,6 +76,36 @@
    ],
    "fov": 90,
    "settle": 4
+  },
+  {
+   "name": "ring-edge",
+   "origin": [
+    3500,
+    -3000,
+    600
+   ],
+   "angles": [
+    5,
+    -30,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "ring-from-inside",
+   "origin": [
+    0,
+    0,
+    900
+   ],
+   "angles": [
+    5,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
   }
  ]
 }

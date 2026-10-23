@@ -15,7 +15,10 @@ def build(ident):
     prefix=ident.replace('-','_')+'_source_';additions=[];omissions=[];shifts=tuple(-v for v in c['offset'])
     for i,e in enumerate(scene['source_entities']):
         if e['classname'] not in ('trigger_hurt','trigger_out_of_bounds') or not any(k.startswith('*coll') for k in e):continue
-        n=native(e,shifts,prefix+'boundary_'+str(i))
+        try:n=native(e,shifts,prefix+'boundary_'+str(i))
+        except ValueError as error:
+            # Current Apex (BSP v52) uses a newer entity collision descriptor; recorded, not guessed.
+            omissions.append(dict(source_entity=i,classname=e['classname'],reason='Undecoded trigger collision: '+str(error)));continue
         if n is not None:additions.append(n)
         else:omissions.append(dict(source_entity=i,reason='Outside native safe trigger domain'))
     endpoints={e.get('link_guid'):e for e in scene['source_entities']

@@ -14,6 +14,13 @@ from compact_preview_bsp import compact
 from repair_camera_visibility import build_camera_visibility
 from stage_prop_geometry import rotation
 from read_prop_physics import read_phy,read_bvh,convex_planes
+
+def read_stl(path):
+    """Binary STL of a model's Respawn BVH4 collision (RSX export), as one piece of triangle faces."""
+    b=path.read_bytes();n=struct.unpack_from('<I',b,80)[0]
+    if len(b)!=84+50*n:raise ValueError('Invalid binary STL')
+    tri=np.ndarray((n,),dtype=np.dtype([('n','<3f4'),('v','<9f4'),('a','<u2')]),buffer=b,offset=84)['v'].reshape(-1,3,3)
+    return [tri.tolist()]
 from repair_preview_hull_edges import vertices_and_bevels
 from native_triangle_collision import encode,collision_grid
 from apply_baked_lighting import tangents,encode_rgbm
@@ -84,7 +91,9 @@ def physics(report):
         if name not in cache:
             try:
                 if base.with_suffix('.phy').exists():pieces=read_phy(base.with_suffix('.phy'));method='IRPS'
-                else:pieces,_=read_bvh(base.with_suffix('.rmdl'));method='BVH'
+                elif base.with_suffix('.rmdl').exists():pieces,_=read_bvh(base.with_suffix('.rmdl'));method='BVH'
+                elif base.with_suffix('.stl').exists():pieces=read_stl(base.with_suffix('.stl'));method='BVH'  # current Apex: RSX Respawn-physics STL
+                else:raise FileNotFoundError('No source collider')
                 cache[name]=(method,pieces)
             except Exception as e:cache[name]=('unavailable:'+str(e),[])
         method,pieces=cache[name];matrix=np.array(rotation(p['angles']));org=np.array(p['origin']);before=(len(brush_bounds),len(groups))
