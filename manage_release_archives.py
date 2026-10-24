@@ -43,7 +43,10 @@ def sha(path):
 def save(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix(path.suffix + '.writing')
-    temp.write_text(json.dumps(value, indent=2) + '\n', encoding='utf-8')
+    with temp.open('w',encoding='utf-8') as stream:
+        stream.write(json.dumps(value, indent=2) + '\n')
+        stream.flush()
+        os.fsync(stream.fileno())
     os.replace(temp, path)
 
 

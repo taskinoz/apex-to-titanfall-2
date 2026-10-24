@@ -82,6 +82,11 @@ the requested original ZIP remains. Existing destination files are preserved.
 Use `--zstd PATH` if the compression tool is not on PATH. Downloading an old archive
 is not a recommendation to run it; earlier builds include known defects.
 
+The beta and historical draft form one backup set. Preserve referenced beta
+ZIPs and intermediate archive objects; removing either can break an older
+version's restoration chain. A later cleanup must rebase and verify those
+dependencies before pruning them.
+
 ## Cleanup tool
 
 `manage_release_archives.py` implements this dated migration. Its fixed storage
