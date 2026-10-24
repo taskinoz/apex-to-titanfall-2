@@ -13,10 +13,10 @@ tags:
 project: apex-to-titanfall-2
 status: verified
 created: 2026-10-11T12:44:41.021Z
-updated: 2026-10-17T16:45:45.733Z
+updated: 2026-10-24T16:39:15.980Z
 created_by: agent:Codex
 updated_by: agent:Claude
-revision: 4
+revision: 5
 ---
 # Native Northstar map testing and clean releases
 
@@ -132,3 +132,19 @@ All 53 native images were recaptured. Existing hash-verified matching Apex image
 A discarded new-source attempt encountered an invalid `ContainsPoint` error after destroying source safety entities. A fresh R5R launch with those entities intact captured the screen successfully. Runtime trigger destruction is not safe for every source map script lifecycle.
 
 `verify_site_refresh.py` checks all 362 exported image hashes/dimensions, the 53 current native camera records, absence of private metadata, equality of embedded HTML/catalogue data, and byte-for-byte logical equality of all 26 historical snapshot records. Old snapshots remain available while the five map cards and defaults select the new snapshot. Evidence: `docs/site-image-refresh-2026-10-18.md` and the adjacent JSON validation receipts; reusable routes are `r5-harness/routes/*-release-survey.json`.
+
+## Release consolidation — 25 October 2026
+
+The [October beta](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/maps-beta-2026-10-25) publishes the existing accepted ZIPs for Phase Runner 1.7.2, Drop-Off 0.10.1, Firing Range 0.5.1, Party Crasher 0.6.4, Overflow 0.4.1, Thermal Station 0.1.2 and Thunderdome 0.1.1, with separate ApexMaps.UI 0.2.1. All eight match their accepted distribution receipts and GitHub's server-computed SHA-256. Regenerated working loading packs differ from some older ZIPs; the cleanup preserves accepted distribution bytes rather than rebuilding under an existing version. No fresh native gameplay certification is implied.
+
+The clean local set is `output/releases/maps-beta-2026-10-25/`. Same-volume hardlinks preserve compatible top-level output paths without allocating another copy. Published ZIPs are immutable; future builders must replace files atomically and use new versions instead of writing through hardlinks.
+
+A separate authenticated draft, tag `build-archive-2026-10-25`, backs up 94 historical ZIPs: 44.0124 GiB of originals represented by 22.0880 GiB of complete ZIPs and Zstandard differential objects. Every delta was decoded and checked against the original ZIP SHA-256 before upload; all 94 remote objects and three metadata/helper assets passed server-hash verification. Eight log-bearing or oversized-report bundles needing review remain local in `output/release-cleanup-2026-10-25/retained-private/`. Do not publish development bundles solely on their filenames.
+
+`archival-objects.json` records original hashes, object hashes and reference chains; `archive-manifest.json` preserves original filenames and sizes. `restore_release_archive.py` uses authenticated GitHub CLI and installed Zstandard, checks all downloaded and reconstructed bytes, keeps temporary storage bounded by removing intermediates, and preserves existing destinations. A real GitHub restore of Drop-Off 0.8.0 through 0.9.0 and the local current 0.10.1 anchor matched its original SHA-256. Preserve both release tags and all referenced objects; a later cleanup must rebase and verify dependencies before pruning them.
+
+`manage_release_archives.py` restricts retirement to inventoried ZIPs in two explicit resolved distribution directories. It checks the entire remote dependency graph, then hashes each unchanged original immediately before individual deletion. A flushed per-file journal precedes removal, followed by a receipt. Current ZIPs, runtime mods, source assets, build trees and excluded history are protected. No recursive directory deletion is used for release cleanup. Migration receipts stay in ignored `output/release-cleanup-2026-10-25/`; do not overwrite a completed migration's inventory.
+
+Fifteen disposable-file tests cover changed/missing proof, path traversal, interruption recovery, malformed checksum sidecars, incomplete uploads and actual two-delta restoration with targets larger than their references. A decoder bug initially used a bare `-M4096` as though it were MiB; the CLI interprets that number as bytes. The helpers now use `--long=31`, verified on the growing-file fixture and the real 776 MiB archive. Failed uploads may leave `starter` assets: only still-incomplete, digest-less objects owned by that upload are removed before retry; completed backups are preserved. Cancel queued futures on a failure so a thread-pool shutdown does not silently continue an entire batch.
+
+Evidence and recovery instructions: `docs/release-management.md`, `manage_release_archives.py`, `archive_release_history.py`, `restore_release_archive.py`, and the private upload, recovery and retirement receipts. Binary distributions remain in GitHub Releases, outside source Git history and Git LFS. Upstream reference: [Zstandard patching guide](https://github.com/facebook/zstd/wiki/Zstandard-as-a-patching-engine).

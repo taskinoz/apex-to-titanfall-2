@@ -1,6 +1,32 @@
 # Apex to Titanfall 2 map ports
 
-Current early Northstar previews: Overflow **0.4.0**, Party Crasher **0.6.2**
+[Download the October 2026 beta](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/maps-beta-2026-10-25)
+or [compare the maps on the live site](https://taskinoz.github.io/apex-to-titanfall-2/).
+
+| Map / companion | Packaged version |
+| --- | --- |
+| Phase Runner | 1.7.2 |
+| Drop-Off | 0.10.1 |
+| Firing Range | 0.5.1 |
+| Party Crasher | 0.6.4 |
+| Overflow | 0.4.1 |
+| Thermal Station | 0.1.2 |
+| Thunderdome | 0.1.1 |
+| ApexMaps.UI | 0.2.1 |
+
+Install **ApexMaps.UI once** plus the maps you want. Close the game and replace
+old mod folders rather than merging them. These are preview builds with known
+limitations, including an intermittent Overflow loading crash. Release notes,
+installation instructions and checksums accompany the downloads.
+
+See [release packages, historical downloads and cleanup](docs/release-management.md).
+The clean local download set is `output/releases/maps-beta-2026-10-25/`;
+compatible paths remain in `output/` without duplicating ZIP storage. Older
+distributions are archived separately.
+
+## Earlier progress notes
+
+Earlier Northstar previews: Overflow **0.4.0**, Party Crasher **0.6.2**
 (`mp_party_crasher`) and Firing Range **0.5.1** (`mp_apex_firing_range`). These have native
 geometry/collision, materials, direct lighting, loading artwork and minimaps.
 Pilot modes and single-client spawn/reload checks pass; substantial scenery,
@@ -41,7 +67,7 @@ Party Crasher and Overflow retain
 lighting. See [feature recovery, lighting and limitations](docs/candidates/source-features-and-lighting-2026-10-13.md).
 The 0.1.0 / 0.2.0 ZIPs and comparison snapshots remain available.
 
-Current builds: **Phase Runner 1.7.1** and **Drop-Off 0.10.1**. Phase Runner 1.7.1 fixes the base floor
+Earlier builds: **Phase Runner 1.7.1** and **Drop-Off 0.10.1**. Phase Runner 1.7.1 fixes the base floor
 decal flicker, restores container frames and smooths the tunnel catwalks
 ([details](docs/phase-runner-1.7.1/README.md)); the shared ApexMaps.UI 0.1.1 fixes washed-out minimaps. Phase Runner 1.7.0 adds Apex two-layer
 blending (snow caps and moss on rocks, moss/dirt ground), Apex-scale ground tiling and collision matched to
@@ -62,10 +88,9 @@ including the initial test failures and the scope of subsequent native checks.
 - [Next conversion candidates: Overflow, Party Crasher and Firing Range](docs/candidates/assessment-2026-10-13.md).
 - [Northstar banners and Apex displays](docs/banner-display-textures-2026-10-12.md).
 
-Clean downloads: `output/PhaseRunner-1.6.0-Northstar.zip` and
-`output/ArenaComposite-0.10.0-Northstar.zip`. Previous 1.5.0 / 0.9.0 ZIPs,
-runtime snapshots and installed copies remain available for rollback.
-The comparison site is local and has not been deployed.
+The current download list is at the top of this document. Older distributions
+are retained in a separate draft GitHub release for authenticated recovery;
+runtime snapshots and installed copies are preserved by the release cleanup.
 
 The investigation history below records earlier previews and their limitations;
 those version-specific notes do not describe the current installed builds.
