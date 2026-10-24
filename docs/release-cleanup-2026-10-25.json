@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-25",
+  "beta": {
+    "url": "https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/maps-beta-2026-10-25",
+    "tag": "maps-beta-2026-10-25",
+    "source_commit": "7ba631943456e227877d50fbb548f940c33fcfa4",
+    "packages": [
+      {
+        "name": "ApexFiringRange-0.5.1-Northstar.zip",
+        "bytes": 367281729,
+        "sha256": "6f13e0513420ff9d0d4fb02036fb6e808a1c2d629f8f226b94029974dade925f"
+      },
+      {
+        "name": "ApexMaps.UI-0.2.1-Northstar.zip",
+        "bytes": 25421584,
+        "sha256": "5ae6c1b090c22ef5ce99e8d0498680745bca08f98b9993ed590a7559b8ed2622"
+      },
+      {
+        "name": "ArenaComposite-0.10.1-Northstar.zip",
+        "bytes": 441614386,
+        "sha256": "f52e2da297b5529b6d4b1f0a11efa337e42f951938c8dab65f878c02072c6ae5"
+      },
+      {
+        "name": "ArenaOverflow-0.4.1-Northstar.zip",
+        "bytes": 429581794,
+        "sha256": "6a1909c9f2de1379c7de97d5d1e3cb2fec6855e395a25ad93262fa4c9e20f433"
+      },
+      {
+        "name": "ArenaPartyCrasher-0.6.4-Northstar.zip",
+        "bytes": 572345609,
+        "sha256": "ec275d4c0383d8a5823de30c00a08f4e7b92745f8c81ef26fb8cf8431d4693ec"
+      },
+      {
+        "name": "ArenaThermalStation-0.1.2-Northstar.zip",
+        "bytes": 486408484,
+        "sha256": "07651a7495ea8d9d5bfab7ff8265e99032072e79381adba0c30b38739bafdd6c"
+      },
+      {
+        "name": "ArenaThunderdome-0.1.1-Northstar.zip",
+        "bytes": 504172253,
+        "sha256": "9c1cdfc8bb2059956b4d2bbaefe2a0db3043e1a8d3eebf7aedce4481bfc69a78"
+      },
+      {
+        "name": "PhaseRunner-1.7.2-Northstar.zip",
+        "bytes": 760852088,
+        "sha256": "6be6d46e0a02958682d2c9460230f58a8a87b144430ab90f7b12e62521838564"
+      }
+    ]
+  },
+  "history": {
+    "tag": "build-archive-2026-10-25",
+    "visibility": "draft",
+    "original_zip_count": 94,
+    "original_bytes": 47257978760,
+    "stored_bytes": 23716824387,
+    "all_remote_hashes_verified": true,
+    "all_reference_chains_verified": true
+  },
+  "local_cleanup": {
+    "retired_zip_count": 94,
+    "logical_bytes_removed": 47257978760,
+    "observed_free_space_change_bytes": 47258136576,
+    "current_directory": "output/releases/maps-beta-2026-10-25",
+    "current_zip_count": 8,
+    "current_storage_shared_by_hardlinks": true,
+    "private_history_zip_count": 8,
+    "all_retained_hashes_verified": true,
+    "this_task_modified_map_runtimes": false
+  },
+  "verification": {
+    "tests_passed": 15,
+    "real_github_recovery": {
+      "requested": "ArenaComposite-0.8.0-Northstar.zip",
+      "verified_sha256": "ede85572ad4e9159ae58e851d6569625174a92416936843dcf8bfbe1b31b6b9d",
+      "bytes": 426550252,
+      "real_github_restore": true,
+      "differential_steps": 2,
+      "current_base_preserved": true
+    },
+    "repository_audit_findings": 0
+  }
+}
