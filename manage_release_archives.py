@@ -59,7 +59,13 @@ def matching_sidecar(path,digest):
 
 
 def gh(*args):
-    p = subprocess.run(['gh', *args], cwd=ROOT, text=True, capture_output=True)
+    for attempt in range(4):
+        p = subprocess.run(['gh', *args], cwd=ROOT, text=True, capture_output=True)
+        if not p.returncode:break
+        transient=re.search(r'(?i)(HTTP 50[234]|timeout|timed out|connection reset|TLS handshake|unexpected EOF)',p.stderr)
+        readonly=args[0]=='api' and '--method' not in args and '-X' not in args
+        if not readonly or not transient or attempt==3:break
+        time.sleep(2**attempt)
     if p.returncode:
         raise RuntimeError(p.stderr.strip())
     return p.stdout

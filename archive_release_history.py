@@ -10,6 +10,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import time
 
 import manage_release_archives as m
 
@@ -47,7 +48,10 @@ def references(rows):
 
 
 def restored_hash(base,patch):
-    proc=subprocess.Popen([str(ZSTD),'-d','-c','-q','-M4096','--patch-from='+cygwin(base),cygwin(patch)],
+    # Permit a restored ZIP larger than its reference. A bare -M numeric value
+    # is bytes, not MiB, and can silently reduce this limit to the reference size.
+    proc=subprocess.Popen([str(ZSTD),'-d','-c','-q','--patch-from='+cygwin(base),
+                           '--long=31',cygwin(patch)],
                           stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     h=hashlib.sha256(); size=0
     for data in iter(lambda:proc.stdout.read(8*1024*1024),b''):
@@ -107,8 +111,22 @@ def upload(proof,path,existing):
             except RuntimeError:
                 asset=next((a for a in m.release(m.ARCHIVE)['assets'] if a['name']==proof['asset_name']),None)
                 if asset and asset.get('state')=='uploaded':break
+                if asset and asset.get('state')=='starter' and not asset.get('digest'):
+                    # This client's upload exited unsuccessfully. Remove only
+                    # its still-incomplete object, never a completed backup.
+                    time.sleep(3)
+                    fresh=m.api('releases/assets/'+str(asset['id']))
+                    if fresh.get('name')!=proof['asset_name']:raise ValueError('Incomplete upload identity changed')
+                    if fresh.get('state')=='starter' and not fresh.get('digest'):
+                        m.gh('api','--method','DELETE',f'repos/{m.REPO}/releases/assets/{asset["id"]}')
+                    elif fresh.get('state')=='uploaded':break
                 if attempt==2:raise
         asset=next(a for a in m.release(m.ARCHIVE)['assets'] if a['name']==proof['asset_name'])
+    if asset.get('state')=='uploaded' and not asset.get('digest'):
+        for _ in range(6):
+            time.sleep(2)
+            asset=m.api('releases/assets/'+str(asset['id']))
+            if asset.get('digest'):break
     if (asset.get('state'),asset.get('size'),asset.get('digest'))!=('uploaded',proof['asset_bytes'],'sha256:'+proof['asset_sha256']):
         raise ValueError('Remote backup differs: '+proof['asset_name'])
     return {**proof,'asset_id':asset['id'],'remote_verified':True}
@@ -139,6 +157,12 @@ def main():
             if asset and (asset.get('state'),asset.get('size'),asset.get('digest'))==('uploaded',prior['asset_bytes'],'sha256:'+prior['asset_sha256']):
                 if prior['original_sha256']!=row['sha256']:raise ValueError('Prior original differs')
                 return prior
+        raw=existing.get(row['name'])
+        if raw and (raw.get('state'),raw.get('size'),raw.get('digest'))==('uploaded',row['bytes'],'sha256:'+row['sha256']):
+            return {'scope':row['scope'],'name':row['name'],'original_bytes':row['bytes'],
+                    'original_sha256':row['sha256'],'encoding':'zip','asset_name':row['name'],
+                    'asset_bytes':row['bytes'],'asset_sha256':row['sha256'],'restored_sha256':row['sha256'],
+                    'asset_id':raw['id'],'remote_verified':True}
         proof,path=build_object(row,bases.get(key),proofs.get(key))
         return upload(proof,path,existing)
     with ThreadPoolExecutor(max_workers=2) as pool:
@@ -146,8 +170,9 @@ def main():
         for future in as_completed(futures):
             try:
                 proof=future.result()
-            except Exception:
+            except Exception as error:
                 for pending in futures:pending.cancel()
+                print('Historical backup error; queued tasks cancelled:',str(error),flush=True)
                 raise
             proofs[(proof['scope'],proof['name'])]=proof
             m.save(OBJECTS,{'date':'2026-10-25','complete':False,'repository':m.REPO,

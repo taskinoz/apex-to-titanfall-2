@@ -15,6 +15,28 @@ import restore_release_archive as restore
 
 
 class RestoreTests(unittest.TestCase):
+    def test_failed_upload_never_deletes_a_completed_asset(self):
+        proof={'asset_name':'old.zip','asset_bytes':3,'asset_sha256':'a'*64}
+        starter={'name':'old.zip','id':9,'state':'starter','size':3,'digest':None}
+        uploaded={**starter,'state':'uploaded','digest':'sha256:'+'a'*64}
+        with patch.object(releases,'gh',side_effect=RuntimeError('HTTP 502')) as gh, \
+             patch.object(releases,'release',side_effect=[{'assets':[starter]},{'assets':[uploaded]}]), \
+             patch.object(releases,'api',return_value=uploaded),patch.object(archive.time,'sleep'):
+            result=archive.upload(proof,Path('unused.zip'),{})
+        self.assertTrue(result['remote_verified'])
+        self.assertEqual(gh.call_count,1)
+
+    def test_failed_partial_upload_is_removed_before_retry(self):
+        proof={'asset_name':'old.zip','asset_bytes':3,'asset_sha256':'a'*64}
+        starter={'name':'old.zip','id':9,'state':'starter','size':3,'digest':None}
+        uploaded={**starter,'state':'uploaded','digest':'sha256:'+'a'*64}
+        with patch.object(releases,'gh',side_effect=[RuntimeError('HTTP 502'),'', '']) as gh, \
+             patch.object(releases,'release',side_effect=[{'assets':[starter]},{'assets':[uploaded]}]), \
+             patch.object(releases,'api',return_value=starter),patch.object(archive.time,'sleep'):
+            result=archive.upload(proof,Path('unused.zip'),{})
+        self.assertTrue(result['remote_verified'])
+        self.assertEqual(gh.call_args_list[1].args[0:3],('api','--method','DELETE'))
+
     def test_filename_cannot_escape_destination(self):
         with self.assertRaises(ValueError):restore.basename('../escape.zip')
 
@@ -31,8 +53,8 @@ class RestoreTests(unittest.TestCase):
             current=store/'Current-1.0.0-Northstar.zip'
             middle=store/'Old2.zip'; oldest=store/'Old1.zip'
             current.write_bytes(bytes(range(256))*800)
-            middle.write_bytes(current.read_bytes()[:100000]+b'changed middle'+current.read_bytes()[100014:])
-            oldest.write_bytes(middle.read_bytes()[:100]+b'changed oldest'+middle.read_bytes()[114:])
+            middle.write_bytes(current.read_bytes()+b'larger restored middle ZIP'*4000)
+            oldest.write_bytes(middle.read_bytes()+b'larger restored oldest ZIP'*4000)
             rows=[]
             for path,base,tag in [(middle,current,restore.BETA),(oldest,middle,restore.ARCHIVE)]:
                 delta=store/(path.name+'.zst')

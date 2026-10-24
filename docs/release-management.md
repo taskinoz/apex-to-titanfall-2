@@ -127,10 +127,20 @@ explicit distribution directories, including the existing output junction.
 There is no recursive directory deletion. A durable per-file journal precedes
 deletion, followed by a completed receipt; a restart can recover an interruption
 between those writes and distinguish it from an unexpected absence.
-Thirteen disposable-file tests exercise traversal rejection, missing/incorrect
+Disposable-file tests exercise traversal rejection, missing/incorrect
 remote proof, changed local files, dry runs, current-package preservation,
 resumption, interrupted deletion, malformed checksum sidecars, incomplete
-differential archives and actual two-delta restoration.
+differential archives, failed-upload recovery and actual two-delta restoration
+where each restored ZIP is larger than its reference.
+
+The installed Zstandard CLI takes a bare `-M` number as bytes. Passing `-M4096`
+did not provide a 4 GiB allowance and rejected a historical ZIP larger than its
+reference. The checker and restore helper now use an explicit `--long=31`
+decoder window; both the growing-file fixture and the real 776 MiB historical
+ZIP restore to their original SHA-256. The upstream
+[patching guide](https://github.com/facebook/zstd/wiki/Zstandard-as-a-patching-engine)
+and [CLI manual](https://github.com/facebook/zstd/blob/v1.5.7/programs/zstd.1.md)
+describe the reference-file and decoder-window options.
 
 Keep the retirement receipt and original inventory. The receipt records logical
 bytes retired and the change in free space on the storage volume; those may

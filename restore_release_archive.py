@@ -110,8 +110,8 @@ def restore(name,destination,zstd,local_current=None):
                 else:base=temp/row['base_name']
                 check(base,row['base_bytes'],row['base_sha256'])
                 with output.open('xb') as stream:
-                    proc=subprocess.run([str(zstd),'-d','-q','-c','-M4096',
-                        '--patch-from='+zpath(base,zstd),zpath(asset,zstd)],stdout=stream,stderr=subprocess.PIPE)
+                    proc=subprocess.run([str(zstd),'-d','-q','-c',
+                        '--patch-from='+zpath(base,zstd),'--long=31',zpath(asset,zstd)],stdout=stream,stderr=subprocess.PIPE)
                 if proc.returncode:raise RuntimeError(proc.stderr.decode(errors='replace'))
             check(output,row['original_bytes'],row['original_sha256'])
             # All disposable intermediates must be files inside this newly
