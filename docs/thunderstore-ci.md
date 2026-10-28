@@ -22,12 +22,15 @@ Publishing does not run on pull requests; those run offline package tests only.
 Runs serialize to avoid concurrent version uploads. Failed batches can be rerun:
 already-published packages are downloaded and compared before being skipped.
 Different content at an existing version fails rather than overwriting it.
-The version check bypasses cached API responses so a stale negative lookup does
-not attempt to publish an existing version. For a failed upload, set `reuse_run`
+The version check uses the package's explicit catalog name and bypasses cached
+API responses. The first run's receipt-name defect is covered by regression
+tests; trusted early artifacts can be migrated without changing their ZIPs.
+For a failed upload, set `reuse_run`
 to the previous main-branch manual publishing run ID. CI downloads its saved
 artifacts, verifies catalog provenance and output hashes, then uploads the
 selected packages without recompressing the maps. Only this repository's named
 publishing workflow on main is accepted; artifacts expire after seven days.
+Source download ZIPs are excluded from new artifacts to avoid duplicate storage.
 
 ## Release inputs and package layout
 

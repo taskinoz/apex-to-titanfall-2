@@ -130,8 +130,8 @@ def build(package, source, out, namespace='taskinoz'):
                 write(destination, data)
                 hashes[destination] = hashlib.sha256(data).hexdigest()
         with zipfile.ZipFile(temporary) as check:
-            for name, expected in hashes.items():
-                if hashlib.sha256(check.read(name)).hexdigest() != expected:
+            for entry_name, expected in hashes.items():
+                if hashlib.sha256(check.read(entry_name)).hexdigest() != expected:
                     raise ValueError('Repack changed runtime bytes')
         temporary.replace(target)
     config_path = write_config(package, folder, namespace)
@@ -178,9 +178,14 @@ def reuse(run, out, selector):
     with archive.open('wb') as f:
         subprocess.run(['gh', 'api', f'repos/{REPO}/actions/artifacts/{artifact["id"]}/zip'], stdout=f, check=True)
     allowed = {'receipts.json'} | {f'{p["name"]}/taskinoz-{p["name"]}-{p["version"]}.zip' for p in catalog()}
+    old_downloads = {'downloads/'+p['asset'] for p in catalog()}
     with zipfile.ZipFile(archive) as z:
         for item in z.infolist():
             if item.is_dir():
+                continue
+            # First-run artifacts also included accepted source downloads. Do not
+            # extract duplicate ZIPs; only restore verified Thunderstore outputs.
+            if item.filename in old_downloads:
                 continue
             if item.filename not in allowed:
                 raise ValueError('Unexpected artifact member')
@@ -192,6 +197,11 @@ def reuse(run, out, selector):
         if r['mod'] not in locked:
             continue
         p = locked[r['mod']]
+        # Migrate only the exact receipt-name bug in the first trusted run;
+        # ZIP names, source hashes, runtime hashes and output digests are intact.
+        legacy_name = f'mods/taskinoz.{p["mod"]}/paks/rpak.json'
+        if r['name'] == legacy_name and legacy_name in r['runtime_sha256']:
+            r['name'] = p['name']
         if (r['name'], r['version'], r['namespace'], r['source_sha256']) != (
                 p['name'], p['version'], 'taskinoz', p['sha256']):
             raise ValueError('Artifact receipt differs from reviewed catalog')

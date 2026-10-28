@@ -34,6 +34,7 @@ class PackagingTests(unittest.TestCase):
     def test_repackage_preserves_runtime_and_dependency(self):
         p = self.source()
         receipt = ci.build(self.package, p, self.root/'built')
+        self.assertEqual(receipt['name'], 'Overflow')
         with zipfile.ZipFile(receipt['path']) as z:
             self.assertEqual(z.read('mods/taskinoz.ArenaOverflow/mod/maps/mp_overflow.bsp'), b'exact geometry bytes')
             manifest = json.loads(z.read('manifest.json'))
@@ -93,6 +94,27 @@ class PackagingTests(unittest.TestCase):
             response = json.dumps(dict(headBranch=branch, event='workflow_dispatch', name=name)).encode()
             with patch.object(ci.subprocess, 'check_output', return_value=response), self.assertRaises(ValueError):
                 ci.reuse('123', self.root/'out', 'current')
+
+    def test_reuse_restores_outputs_and_skips_old_source_duplicates(self):
+        receipt = ci.build(self.package, self.source(), self.root/'built')
+        source_zip = Path(receipt['path']).read_bytes()
+        receipt['name'] = 'mods/taskinoz.ArenaOverflow/paks/rpak.json'
+        run = json.dumps(dict(headBranch='main', event='workflow_dispatch', name='Publish Northstar maps to Thunderstore')).encode()
+        artifacts = json.dumps({'artifacts': [dict(id=1, name='thunderstore-packages-123', expired=False),
+                                             dict(id=2, name='thunderstore-packages-123', expired=False)]}).encode()
+        def download(command, **kwargs):
+            self.assertIn('artifacts/2/zip', command[-1])
+            with zipfile.ZipFile(kwargs['stdout'], 'w') as z:
+                z.writestr('receipts.json', json.dumps([receipt]))
+                z.writestr('Overflow/taskinoz-Overflow-0.4.2.zip', source_zip)
+                z.writestr('downloads/'+self.package['asset'], b'redundant source not extracted')
+        with patch.object(ci, 'catalog', return_value=[self.package]), \
+                patch.object(ci.subprocess, 'check_output', side_effect=[run, artifacts]), \
+                patch.object(ci.subprocess, 'run', side_effect=download):
+            restored = ci.reuse('123', self.root/'restored', 'ArenaOverflow')
+        self.assertEqual(ci.digest(restored[0]['path']), receipt['sha256'])
+        self.assertEqual(restored[0]['name'], 'Overflow')
+        self.assertFalse((self.root/'restored/downloads').exists())
 
 
 if __name__ == '__main__':
