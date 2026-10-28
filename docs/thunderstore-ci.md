@@ -68,11 +68,20 @@ Thunderstore versions are numeric X.Y.Z; beta/RC status is described in README,
 not appended to the version. Existing runtime versions are retained for the
 first upload. This packaging pipeline does not certify new gameplay behavior.
 
-The uploader is official `tcli` 0.2.4, installed from NuGet with .NET 8 (its
-published runtime policy permits major roll-forward). Actions are pinned to
-commit IDs. Configuration files are generated without credentials.
+The initial official `tcli` 0.2.4 upload published UI, but Firing Range repeatedly
+received HTTP 500 at synchronous finalization. `thunderstore_upload.py` now
+implements Thunderstore's own multipart/background-submission protocol using
+Python's standard library: upload checked ranges with Content-MD5/ETag, finalize,
+submit asynchronously and poll for validation results. This avoids relying on
+a long synchronous web request; the exact server-side 500 cause is unconfirmed.
+API credentials go only to the fixed Thunderstore origin with redirects disabled;
+presigned storage URLs receive no API credential and are withheld from errors.
+Interrupted multipart uploads are aborted. A pending submission timeout reports
+its ID for inspection before another attempt. Actions are commit-pinned.
+Compatibility TOML files contain no credentials; the async path does not use them.
 
 References: [Northstar packaging](https://docs.northstar.tf/Modding/guides/publishing/),
 [Thunderstore package requirements](https://wiki.thunderstore.io/mods/creating-a-package),
 [official CLI](https://github.com/thunderstore-io/thunderstore-cli),
+[official asynchronous submission](https://github.com/thunderstore-io/Thunderstore/blob/master/builder/src/api/packageSubmit.ts),
 and [the existing menu-mod workflow](https://github.com/taskinoz/Enhanced-Menu-Mod/blob/main/.github/workflows/thunderstore.yml).

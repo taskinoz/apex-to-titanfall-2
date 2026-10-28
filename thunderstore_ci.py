@@ -246,7 +246,8 @@ def publish(receipts):
             remote.unlink()
             print('Already published and verified:', r['name'], r['version'], flush=True)
             continue
-        subprocess.run(['tcli', 'publish', '--config-path', r['config'], '--file', r['path']], check=True)
+        from thunderstore_upload import submit
+        submit(r['path'], r['namespace'], os.environ['TCLI_AUTH_TOKEN'])
 
 
 def main():

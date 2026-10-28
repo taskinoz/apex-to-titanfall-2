@@ -5,10 +5,12 @@ import tomllib
 import urllib.error
 import unittest
 import zipfile
+from unittest.mock import MagicMock
 from pathlib import Path
 from unittest.mock import patch
 
 import thunderstore_ci as ci
+import thunderstore_upload as uploader
 
 
 class PackagingTests(unittest.TestCase):
@@ -76,17 +78,14 @@ class PackagingTests(unittest.TestCase):
         with patch.dict(ci.os.environ, {}, clear=True), self.assertRaisesRegex(ValueError, 'TS_KEY'):
             ci.publish([])
 
-    def test_publish_uses_official_cli_with_secret_in_environment(self):
+    def test_publish_uses_async_uploader_and_fresh_version_lookup(self):
         receipt = ci.build(self.package, self.source(), self.root/'built')
         missing = urllib.error.HTTPError('https://thunderstore.io', 404, 'not found', {}, None)
         with patch.dict(ci.os.environ, {'TCLI_AUTH_TOKEN': 'unit-test-placeholder'}), \
                 patch.object(ci.urllib.request, 'urlopen', side_effect=missing) as get, \
-                patch.object(ci.subprocess, 'run') as run:
+                patch.object(uploader, 'submit') as submit:
             ci.publish([receipt])
-        command = run.call_args.args[0]
-        self.assertEqual(command[:2], ['tcli', 'publish'])
-        self.assertNotIn('unit-test-placeholder', command)
-        self.assertIn('--file', command)
+        self.assertEqual(submit.call_args.args[:2], (receipt['path'], 'taskinoz'))
         self.assertIn('?ci=', get.call_args.args[0].full_url)
         self.assertEqual(get.call_args.args[0].get_header('Cache-control'), 'no-cache')
 
@@ -116,6 +115,55 @@ class PackagingTests(unittest.TestCase):
         self.assertEqual(ci.digest(restored[0]['path']), receipt['sha256'])
         self.assertEqual(restored[0]['name'], 'Overflow')
         self.assertFalse((self.root/'restored/downloads').exists())
+
+    def test_async_protocol_uploads_then_polls_background_validation(self):
+        p = self.root/'tiny.zip'
+        p.write_bytes(b'test')
+        initial = {'user_media': {'uuid': 'upload-test'}, 'upload_urls': [dict(offset=0, length=4, part_number=1)]}
+        done = {'status': 'FINISHED', 'result': {'package_version': {'download_url': 'https://thunderstore.io/download/test'}}}
+        with patch.object(uploader, 'api', side_effect=[initial, {}, {'id': 'submit-test', 'status': 'PENDING'}, done]) as api, \
+                patch.object(uploader, 'upload_part', return_value={'ETag': 'part', 'PartNumber': 1}), \
+                patch.object(uploader.time, 'sleep'):
+            uploader.submit(p, 'taskinoz', 'unit-test-placeholder')
+        calls = api.call_args_list
+        self.assertEqual(calls[1].args[0], 'usermedia/upload-test/finish-upload/')
+        self.assertEqual(calls[2].args[0], 'submission/submit-async/')
+        self.assertEqual(calls[2].args[2]['communities'], ['northstar'])
+        self.assertTrue(calls[3].args[0].startswith('submission/poll-async/submit-test/'))
+
+    def test_invalid_part_ranges_abort_before_upload(self):
+        p = self.root/'tiny.zip'
+        p.write_bytes(b'test')
+        initial = {'user_media': {'uuid': 'upload-test'}, 'upload_urls': [dict(offset=1, length=4, part_number=1)]}
+        with patch.object(uploader, 'api', side_effect=[initial, {}]) as api, \
+                patch.object(uploader, 'upload_part') as part, self.assertRaises(ValueError):
+            uploader.submit(p, 'taskinoz', 'unit-test-placeholder')
+        part.assert_not_called()
+        self.assertEqual(api.call_args.args[0], 'usermedia/upload-test/abort-upload/')
+
+    def test_storage_request_has_checksum_and_no_api_credential(self):
+        p = self.root/'tiny.zip'
+        p.write_bytes(b'test')
+        response = MagicMock()
+        response.__enter__.return_value.headers = {'ETag': 'test-etag'}
+        with patch.object(uploader.urllib.request, 'urlopen', return_value=response) as put:
+            part = uploader.upload_part(p, dict(url='https://storage.example/part', offset=0, length=4, part_number=1))
+        request = put.call_args.args[0]
+        self.assertIsNone(request.get_header('Authorization'))
+        self.assertEqual(request.data, b'test')
+        self.assertEqual(part['ETag'], 'test-etag')
+        self.assertIsNotNone(request.get_header('Content-md5'))
+
+    def test_api_rejects_external_origin_and_storage_errors_hide_signed_url(self):
+        with self.assertRaises(ValueError):
+            uploader.api('https://untrusted.example', 'unit-test-placeholder')
+        p = self.root/'tiny.zip'
+        p.write_bytes(b'test')
+        with patch.object(uploader.urllib.request, 'urlopen', side_effect=urllib.error.URLError('secret-signed-url')):
+            with self.assertRaises(RuntimeError) as error:
+                uploader.upload_part(p, dict(url='https://storage.example/?signature=private', offset=0, length=4, part_number=1))
+        self.assertNotIn('signature', str(error.exception))
+        self.assertNotIn('secret-signed-url', str(error.exception))
 
 
 if __name__ == '__main__':
