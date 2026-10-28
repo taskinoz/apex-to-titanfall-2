@@ -1,3 +1,11 @@
+# Overflow 0.4.2
+
+Restores source-derived HDR lava emission while preserving the authored two-layer blend, geometry, collision and lighting. Native PS/FFA, team starts, postmatch, stock/map reload and screenshot checks passed on Northstar 1.31.14.
+
+See docs/candidates/overflow-lava-2026-10-28.md for implementation and remaining limits.
+
+## Previous release notes
+
 # ArenaOverflow 0.4.1
 
 Fixes z-fighting and flat textures from Apex overlays that were drawn as solid surfaces on top of the surface below: stencil lettering (REFINERY, the capsules) and arrow signs are now proper decals, the flat brown dirt sheet over the asphalt is removed, and the lava no longer flickers between its glow and a grey duplicate. The invisible barrier in the ceiling opening is an Apex player clip and is kept. Known issue (also in 0.4.0): about one load in five can crash Northstar at spawn; restart and load again.

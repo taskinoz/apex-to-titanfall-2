@@ -48,11 +48,11 @@ RELEASES = {
         'notes': 'Adds a new Northstar billboard image to the curved Oasis screen, matching the Drop-Off banner artwork. Geometry, collision, lighting and gameplay are unchanged from 0.6.3.',
     },
     'ArenaOverflow': {
-        'version': '0.4.1',
+        'version': '0.4.2',
         'map': 'mp_overflow',
         'title': 'Overflow',
         'screenshot': 'northstar/ArenaOverflow/screenshot.png',
-        'notes': 'Fixes z-fighting and flat textures from Apex overlays that were drawn as solid surfaces on top of the surface below: stencil lettering (REFINERY, the capsules) and arrow signs are now proper decals, the flat brown dirt sheet over the asphalt is removed, and the lava no longer flickers between its glow and a grey duplicate. The invisible barrier in the ceiling opening is an Apex player clip and is kept. Known issue (also in 0.4.0): about one load in five can crash Northstar at spawn; restart and load again.',
+        'notes': 'Restores the large lava channels\' source HDR glow: both emissive layers use Apex\'s authored masks and multiplier instead of the non-emissive blend shader. Existing geometry, collision, visibility and lighting are preserved. Tested in PS/FFA on Northstar 1.31.14, with both PS teams, postmatch lobby, stock/map reload and matched native screenshots. Animated lava distortion and AI remain incomplete. Earlier 1.31.13 intermittent loading crashes have an unconfirmed root cause; this single-client check is not multiplayer certification. Includes 0.4.1 overlay/z-fighting fixes. Requires the shared ApexMaps.UI companion.',
     },
     'ArenaThermalStation': {
         'version': '0.1.2',

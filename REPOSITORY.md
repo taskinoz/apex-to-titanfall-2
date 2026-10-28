@@ -10,6 +10,8 @@ The original-five release set is Phase Runner 1.7.2, Drop-Off 0.10.1, Firing
 Range 0.5.1, Party Crasher 0.6.4 and Overflow 0.4.1, with ApexMaps.UI 0.2.1.
 See [the anniversary release report](docs/anniversary-2026.md) for validation
 status and scope. Thermal Station and Thunderdome are separate additional ports.
+The subsequent [Overflow 0.4.2 lava hotfix](docs/candidates/overflow-lava-2026-10-28.md)
+is packaged separately; historical release sets remain unchanged.
 Local ZIPs are in `output/releases/`; they are not Git contents. Opening
 `site/dist/index.html` needs no game assets or server. Native screenshot archives
 are included in the site. Source scripts and placement ledgers remain in the
