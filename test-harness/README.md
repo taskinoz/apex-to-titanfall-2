@@ -64,6 +64,15 @@ Alternate installation or package:
 
 The game directory must contain `NorthstarLauncher.exe` and a working `R2Northstar` installation with the three core Northstar mods. The default Python runtime is the locally bundled Python; the wrapper falls back to `python` on PATH. Pillow is required for PNG conversion. Map names must be raw `mp_...` names available in that installation. A missing map or failed connection results in a timeout/error rather than a successful test.
 
+For a reproducible runtime comparison, `start` also accepts `--runtime` (a
+read-only directory containing `Northstar.dll` and the three core mods) and
+`--launcher` (an alternate launcher executable directly inside the game
+directory). They are copied into/launched with the dedicated test profile;
+the normal Northstar installation is preserved. Stop the controller before
+changing either selection. Match the launcher and DLL to the same official
+release and record their hashes with the test evidence. These options do not
+download or update Northstar automatically.
+
 Repeat `--extra-package <directory>` to stage up to eight additional packages.
 This tests combined installations, including the native 20-asset UI image atlas
 limit. Reserved `MapTest.Extra` through `MapTest.Extra8` folders are replaced on
