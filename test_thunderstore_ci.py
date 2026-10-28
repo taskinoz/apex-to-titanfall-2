@@ -26,6 +26,7 @@ class PackagingTests(unittest.TestCase):
             z.writestr(mod+'/README.md', 'Known limitations and manual install notes')
             z.writestr(mod+'/mod/maps/mp_overflow.bsp', b'exact geometry bytes')
             z.writestr(mod+'/paks/overflow_world.rpak', b'exact texture bytes')
+            z.writestr(mod+'/paks/rpak.json', b'{}')
             if extra:
                 z.writestr(extra, b'not allowed')
         self.package.update(bytes=p.stat().st_size, sha256=ci.digest(p))
