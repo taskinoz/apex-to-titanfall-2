@@ -1,0 +1,22 @@
+{
+  "original_materials_unchanged": 525,
+  "original_textures_unchanged": 947,
+  "original_assets_preserved": 1534,
+  "recovered_material_guids": 44,
+  "new_resident_texture_assets": 74,
+  "changed_collision_lumps": [
+    3,
+    66,
+    68,
+    69,
+    86,
+    87,
+    88,
+    89,
+    90,
+    96
+  ],
+  "render_geometry_and_lightmaps_unchanged": true,
+  "world_entities_spawns_safety_volumes_unchanged": true,
+  "published_baseline_hashes_verified": true
+}

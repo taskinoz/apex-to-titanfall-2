@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "installed": "D:\\Games\\Titanfall2\\R2Northstar\\mods\\ArenaThunderdome",
+  "backup": "D:\\Games\\Titanfall2\\R2Northstar\\.thunderdome-repair-backups\\20261029-012321\\ArenaThunderdome",
+  "enabled": true,
+  "rollback": "Close game; restore backed-up mod folder and enabledmods.json."
+}

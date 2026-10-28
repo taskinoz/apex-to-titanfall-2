@@ -177,7 +177,14 @@ class RetailConstants:
             if msw and msw.exists():
                 raw=msw.read_bytes()
                 for guid in struct.unpack_from('<2Q',raw,5):
-                    for fxc in sorted((self.shaders/'shader').glob('0x%016X_*.fxc'%guid)):
+                    # RSX omits leading zeroes in raw shader filenames. The
+                    # fixed-width lookup missed those exports. RDEF reflection
+                    # can recover supported shaders; DXIL-only exports still
+                    # require a separate reflection implementation.
+                    directory=self.shaders/'shader'
+                    files=set(directory.glob('0x%016X_*.fxc'%guid))
+                    files.update(directory.glob(f'0x{guid:X}_*.fxc'))
+                    for fxc in sorted(files):
                         try:self.layouts[shaderset]=reflect(fxc.read_bytes());break
                         except ValueError:continue
                     if self.layouts[shaderset]:break
