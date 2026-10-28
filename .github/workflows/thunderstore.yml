@@ -13,11 +13,15 @@ on:
         description: 'Publish verified packages to Thunderstore (false builds downloadable artifacts only)'
         type: boolean
         default: false
+      reuse_run:
+        description: 'Optional prior main-branch publishing run ID: reuse its verified package artifacts'
+        required: false
   pull_request:
     paths: ['thunderstore/**', 'thunderstore_ci.py', 'test_thunderstore_ci.py', '.github/workflows/thunderstore.yml']
 
 permissions:
   contents: read
+  actions: read # download verified artifacts when retrying a publishing run
 
 concurrency:
   group: thunderstore-publish
@@ -73,7 +77,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           SELECTION: ${{ github.event_name == 'release' && github.event.release.tag_name || inputs.selection }}
-        run: python thunderstore_ci.py --select "$SELECTION" --output "$RUNNER_TEMP/thunderstore"
+          REUSE_RUN: ${{ inputs.reuse_run }}
+        run: |
+          if [ -n "$REUSE_RUN" ]; then
+            python thunderstore_ci.py --select "$SELECTION" --output "$RUNNER_TEMP/thunderstore" --reuse-run "$REUSE_RUN"
+          else
+            python thunderstore_ci.py --select "$SELECTION" --output "$RUNNER_TEMP/thunderstore"
+          fi
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: thunderstore-packages-${{ github.run_id }}

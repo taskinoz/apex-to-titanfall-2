@@ -78,13 +78,21 @@ class PackagingTests(unittest.TestCase):
         receipt = ci.build(self.package, self.source(), self.root/'built')
         missing = urllib.error.HTTPError('https://thunderstore.io', 404, 'not found', {}, None)
         with patch.dict(ci.os.environ, {'TCLI_AUTH_TOKEN': 'unit-test-placeholder'}), \
-                patch.object(ci.urllib.request, 'urlopen', side_effect=missing), \
+                patch.object(ci.urllib.request, 'urlopen', side_effect=missing) as get, \
                 patch.object(ci.subprocess, 'run') as run:
             ci.publish([receipt])
         command = run.call_args.args[0]
         self.assertEqual(command[:2], ['tcli', 'publish'])
         self.assertNotIn('unit-test-placeholder', command)
         self.assertIn('--file', command)
+        self.assertIn('?ci=', get.call_args.args[0].full_url)
+        self.assertEqual(get.call_args.args[0].get_header('Cache-control'), 'no-cache')
+
+    def test_reuse_rejects_other_workflows_and_branches(self):
+        for branch, name in [('feature', 'Publish Northstar maps to Thunderstore'), ('main', 'Untrusted workflow')]:
+            response = json.dumps(dict(headBranch=branch, event='workflow_dispatch', name=name)).encode()
+            with patch.object(ci.subprocess, 'check_output', return_value=response), self.assertRaises(ValueError):
+                ci.reuse('123', self.root/'out', 'current')
 
 
 if __name__ == '__main__':
