@@ -14,6 +14,7 @@
 !/r5-harness/
 !/test-harness/
 !/northstar/
+!/thunderstore/
 
 # Only the current mod sources and the local harness belong in this repository.
 /northstar/*

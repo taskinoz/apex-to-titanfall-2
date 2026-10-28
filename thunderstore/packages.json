@@ -1,0 +1,90 @@
+[
+  {
+    "mod": "ApexMaps.UI",
+    "name": "ApexMaps_UI",
+    "title": "Apex Maps UI",
+    "version": "0.2.1",
+    "tag": "anniversary-2026-rc1",
+    "asset": "ApexMaps.UI-0.2.1-Anniversary2026-RC1-Northstar.zip",
+    "bytes": 25421884,
+    "sha256": "2d486912a023f19c5c3326970901f4a005a927ff4a03a4a35984d5b39552d43c",
+    "description": "Shared loading artwork and minimaps required by the Apex map ports for Northstar."
+  },
+  {
+    "mod": "PhaseRunner",
+    "name": "Phase_Runner",
+    "title": "Phase Runner",
+    "version": "1.7.2",
+    "tag": "anniversary-2026-rc1",
+    "asset": "PhaseRunner-1.7.2-Anniversary2026-RC1-Northstar.zip",
+    "bytes": 760852202,
+    "sha256": "efb4e3dd89fc62e62b1412dfd0720e10da8d1ad565585ef85fd7e42e00e8d05f",
+    "description": "Phase Runner from Apex Legends, converted for Titanfall 2 Northstar. Preview build; see README for supported modes and known limitations."
+  },
+  {
+    "mod": "ArenaComposite",
+    "name": "Drop_Off",
+    "title": "Drop-Off",
+    "version": "0.10.1",
+    "tag": "anniversary-2026-rc1",
+    "asset": "ArenaComposite-0.10.1-Anniversary2026-RC1-Northstar.zip",
+    "bytes": 441614345,
+    "sha256": "3c152e9a161beee62eead5dd1e0389e87d7185f8da944c9483a3c3ab4e5069a2",
+    "description": "Drop-Off from Apex Legends, converted for Titanfall 2 Northstar. Preview build; see README for supported modes and known limitations."
+  },
+  {
+    "mod": "ApexFiringRange",
+    "name": "Firing_Range",
+    "title": "Firing Range",
+    "version": "0.5.1",
+    "tag": "anniversary-2026-rc1",
+    "asset": "ApexFiringRange-0.5.1-Anniversary2026-RC1-Northstar.zip",
+    "bytes": 367281700,
+    "sha256": "1debe453b33e240d3ea6f7df6be12d70844f73264fb081b62e65ab57c246deff",
+    "description": "Firing Range from Apex Legends, converted for Titanfall 2 Northstar. Preview build; see README for supported modes and known limitations."
+  },
+  {
+    "mod": "ArenaPartyCrasher",
+    "name": "Party_Crasher",
+    "title": "Party Crasher",
+    "version": "0.6.4",
+    "tag": "anniversary-2026-rc1",
+    "asset": "ArenaPartyCrasher-0.6.4-Anniversary2026-RC1-Northstar.zip",
+    "bytes": 572345738,
+    "sha256": "42a62532ed8d50a9f58073f45e8965a058efd090a0157008edde4f5589ce8f5b",
+    "description": "Party Crasher from Apex Legends, converted for Titanfall 2 Northstar. Preview build; see README for supported modes and known limitations."
+  },
+  {
+    "mod": "ArenaOverflow",
+    "name": "Overflow",
+    "title": "Overflow",
+    "version": "0.4.2",
+    "tag": "overflow-0.4.2",
+    "asset": "ArenaOverflow-0.4.2-Northstar.zip",
+    "bytes": 431615977,
+    "sha256": "d127d0974635506db713eed19b4de9e2aa7181aad6ed643b145f3fb1abf5350d",
+    "description": "Overflow from Apex Legends, converted for Titanfall 2 Northstar. Preview build; see README for supported modes and known limitations."
+  },
+  {
+    "mod": "ArenaThermalStation",
+    "name": "Thermal_Station",
+    "title": "Thermal Station",
+    "version": "0.1.2",
+    "tag": "maps-beta-2026-10-25",
+    "asset": "ArenaThermalStation-0.1.2-Northstar.zip",
+    "bytes": 486408484,
+    "sha256": "07651a7495ea8d9d5bfab7ff8265e99032072e79381adba0c30b38739bafdd6c",
+    "description": "Thermal Station from Apex Legends, converted for Titanfall 2 Northstar. Preview build; see README for supported modes and known limitations."
+  },
+  {
+    "mod": "ArenaThunderdome",
+    "name": "Thunderdome",
+    "title": "Thunderdome",
+    "version": "0.1.1",
+    "tag": "maps-beta-2026-10-25",
+    "asset": "ArenaThunderdome-0.1.1-Northstar.zip",
+    "bytes": 504172253,
+    "sha256": "9c1cdfc8bb2059956b4d2bbaefe2a0db3043e1a8d3eebf7aedce4481bfc69a78",
+    "description": "Thunderdome from Apex Legends, converted for Titanfall 2 Northstar. Preview build; see README for supported modes and known limitations."
+  }
+]

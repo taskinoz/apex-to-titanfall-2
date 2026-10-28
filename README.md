@@ -25,6 +25,7 @@ AI, dedicated servers and multiplayer load are not certified. Release notes,
 installation instructions and checksums accompany the downloads.
 
 See [release packages, historical downloads and cleanup](docs/release-management.md).
+See [Thunderstore CI setup and publishing](docs/thunderstore-ci.md).
 See [the anniversary test report](docs/anniversary-2026.md). Its clean local
 download set is `output/releases/anniversary-2026-rc1/`. Runtime mod versions are
 unchanged; RC1 refreshes packaging and installation guidance around the accepted
