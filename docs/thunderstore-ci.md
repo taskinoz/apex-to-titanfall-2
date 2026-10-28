@@ -1,5 +1,23 @@
 # Thunderstore publishing
 
+All seven maps and the shared UI were published successfully under `taskinoz`.
+The [full publishing run](https://github.com/taskinoz/apex-to-titanfall-2/actions/runs/40686737045)
+passed all 13 packaging/protocol tests and completed the uploads. The
+[public verification receipt](thunderstore-publication-2026-10-28.json) records
+each live version and dependency. Accepted runtime bytes are preserved; this
+publication does not add new native gameplay certification.
+
+| Package | Published version |
+| --- | --- |
+| Phase Runner | 1.7.2 |
+| Drop-Off | 0.10.1 |
+| Firing Range | 0.5.1 |
+| Party Crasher | 0.6.4 |
+| Overflow | 0.4.2 |
+| Thermal Station | 0.1.2 |
+| Thunderdome | 0.1.1 |
+| ApexMaps.UI | 0.2.1 |
+
 The `Publish Northstar maps to Thunderstore` Actions workflow publishes under
 the **taskinoz** team, matching Enhanced Menu Mod. The repository Actions secret
 **TS_KEY** holds the Thunderstore service-account token; it is passed only to

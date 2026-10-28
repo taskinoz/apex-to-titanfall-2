@@ -4,6 +4,10 @@
 [browse the seven-map October beta](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/maps-beta-2026-10-25)
 or [compare the maps on the live site](https://taskinoz.github.io/apex-to-titanfall-2/).
 
+[Northstar map packages on Thunderstore](https://thunderstore.io/c/northstar/p/taskinoz/)
+are also available through compatible mod managers. Remove older manually
+installed copies before enabling managed copies of the same mod.
+
 | Map / companion | Packaged version |
 | --- | --- |
 | Phase Runner | 1.7.2 |

@@ -13,10 +13,10 @@ tags:
 project: apex-to-titanfall-2
 status: verified
 created: 2026-10-11T12:44:41.021Z
-updated: 2026-10-28T06:32:25.554Z
+updated: 2026-10-28T12:43:02.977Z
 created_by: agent:Codex
 updated_by: agent:Claude
-revision: 7
+revision: 11
 ---
 # Native Northstar map testing and clean releases
 
@@ -162,3 +162,19 @@ Fresh overviews of all five maps were reviewed with live map/camera metadata, li
 Forty-one offline tests passed: 21 geometry/capacity/support, four binary adapters, 12 harness and four disposable archive-provenance tests. Python 3.14 is needed for stdlib compression.zstd adapters; the project's compiled geometry dependencies use Python 3.12. Run those groups with their matching interpreters. A further harness regression rejects switching runtimes through an older controller that lacks runtime metadata. The harness now accepts explicit read-only runtime and same-game-directory alternate launcher paths; configuration changes require stopping its controller first. Four provenance tests reject changed downloads, changed staged scripts and archive traversal, and cover translation/script hashing.
 
 The r2-model-compiler v0.5.0 supplied static-box example compiled with zero warnings to a 5,550-byte native MDL. No map model was rebuilt with it. Moving baked scenery to static props still needs native material binding, correct game-lump/visibility namespaces, lighting, collision and native tests. Evidence and packaging tools: docs/anniversary-2026.md, docs/anniversary-2026-validation.json, docs/toolchain/r2-model-compiler-2026-10-28.md, prepare_anniversary_release.py, validate_anniversary_native.py, package_anniversary_rc.py and report_anniversary_release.py. Anniversary packaging retains runtime mod versions, uses distinct RC filenames and excludes harnesses, tools, raw logs and source game archives.
+
+## Thunderstore publishing CI — 28 October 2026
+
+The taskinoz namespace now has all seven converted maps and the shared UI published: Phase_Runner 1.7.2, Drop_Off 0.10.1, Firing_Range 0.5.1, Party_Crasher 0.6.4, Overflow 0.4.2, Thermal_Station 0.1.2, Thunderdome 0.1.1 and ApexMaps_UI 0.2.1. Full run https://github.com/taskinoz/apex-to-titanfall-2/actions/runs/40686737045 succeeded. Public API checks verified each active version and every map's taskinoz-ApexMaps_UI-0.2.1 dependency. Evidence: docs/thunderstore-publication-2026-10-28.json, docs/thunderstore-ci.md, thunderstore/packages.json and the workflow. This is packaging/publication of accepted runtime bytes, not fresh gameplay certification.
+
+The repository Actions secret TS_KEY follows Enhanced Menu Mod's taskinoz convention. Its value is never read from GitHub, stored in source/artifacts, or passed as an external command argument. GitHub secrets cannot be copied between repositories; the human added this repository's token. It is injected only into the configuration check and publisher. GitHub permissions are contents/actions read-only, checkout credentials are not persisted, Actions are commit-pinned, and PRs run tests without publishing. Thirteen local/hosted tests cover byte preservation, metadata/dependencies, source tampering, version/path rejection, realistic artifact reuse, legacy migration, token isolation and multipart/polling behavior.
+
+The catalog locks accepted GitHub release ZIP filenames, tags, sizes and SHA-256: original-five anniversary inputs except the separate Overflow 0.4.2 hotfix, plus the two additional October beta maps. CI never compiles ignored local game assets or includes harness mods/logs. Outputs have root manifest.json/README.md/icon.png and exact runtime files at mods/taskinoz.<original-mod-name>/. Runtime mod identities remain unchanged. UI publishes first. Remove old manual copies before enabling managed installs. Numeric X.Y.Z versions are retained; preview limits are documented in README.
+
+Manual main-branch runs select current, a runtime mod name or a reviewed catalog release tag; publishing defaults off. Published GitHub releases select matching catalog entries plus UI; unknown tags fail until metadata is reviewed. Runs serialize. Existing versions are downloaded and contents compared before skipping; different content at an existing version fails. Identified User-Agent headers are needed for the public API here. Cache-bypassing requests are retained as a defensive measure.
+
+The initial official tcli 0.2.4 run published UI, but Firing Range repeatedly hit HTTP 500 during synchronous finalization. thunderstore_upload.py now implements Thunderstore's official multipart/background-submission protocol: checked contiguous ranges, Content-MD5/ETag, finish upload, async submission and status polling. Credentials go only to the fixed API origin with redirects disabled; storage PUTs receive no API credential and signed URLs are withheld from errors. Failed multipart uploads abort. A pending timeout reports its submission ID for inspection before retry. Async publication succeeded; the exact synchronous server failure cause remains unconfirmed.
+
+A client verification loop initially overwrote receipt package names with the last runtime filename, making existing-version queries use the wrong URL. This was not proven to be CDN caching. The fix preserves explicit names; realistic regression tests cover later-sorting asset packs too. Trusted early artifacts can migrate only that exact last-key defect under the expected runtime prefix while preserving source/output hashes and catalog identity.
+
+Artifact reuse accepts only this repository's named main-branch manual publishing workflow, selects one artifact ID when attempts share names, validates provenance/output hashes, and restores prepared ZIPs without recompressing maps. New artifacts exclude original source downloads. After successful full publication, two redundant 7,172,200,759-byte artifacts from the first run were retired (14,344,401,518 bytes total); the complete current artifact (3,582,485,994 bytes) and all immutable GitHub release downloads remain. Artifacts expire after seven days. Existing recovery release tags/objects were untouched.
