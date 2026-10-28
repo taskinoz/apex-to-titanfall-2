@@ -166,8 +166,26 @@ def reuse(run, out, selector):
     if (info['headBranch'] != 'main' or info['event'] != 'workflow_dispatch' or
             info['name'] != 'Publish Northstar maps to Thunderstore'):
         raise ValueError('Reuse requires this trusted main-branch publishing workflow')
-    subprocess.run(['gh', 'run', 'download', run, '--repo', REPO,
-                    '--name', 'thunderstore-packages-'+run, '--dir', str(out)], check=True)
+    artifacts = json.loads(subprocess.check_output(['gh', 'api',
+        f'repos/{REPO}/actions/runs/{run}/artifacts']))['artifacts']
+    matching = [a for a in artifacts if a['name'] == 'thunderstore-packages-'+run and not a['expired']]
+    if not matching:
+        raise ValueError('Verified artifacts are missing or expired')
+    # Reruns can produce several artifacts with the same name. Download one ID.
+    artifact = max(matching, key=lambda a: a['id'])
+    out.mkdir(parents=True, exist_ok=True)
+    archive = out/'artifact-download.zip'
+    with archive.open('wb') as f:
+        subprocess.run(['gh', 'api', f'repos/{REPO}/actions/artifacts/{artifact["id"]}/zip'], stdout=f, check=True)
+    allowed = {'receipts.json'} | {f'{p["name"]}/taskinoz-{p["name"]}-{p["version"]}.zip' for p in catalog()}
+    with zipfile.ZipFile(archive) as z:
+        for item in z.infolist():
+            if item.is_dir():
+                continue
+            if item.filename not in allowed:
+                raise ValueError('Unexpected artifact member')
+            z.extract(item, out)
+    archive.unlink()
     locked = {p['mod']: p for p in select(catalog(), selector)}
     receipts = []
     for r in json.loads((out/'receipts.json').read_text()):
