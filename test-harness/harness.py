@@ -200,8 +200,12 @@ def clear_managed_package(profile, name):
 
 
 class Application:
-    def __init__(self, game, profile, port, run, token, package, extra_package=None):
+    def __init__(self, game, profile, port, run, token, package, extra_package=None, runtime=None, launcher=None):
         self.game = Path(game).resolve()
+        self.runtime = Path(runtime).resolve() if runtime else self.game/'R2Northstar'
+        self.launcher = Path(launcher).resolve() if launcher else self.game/'NorthstarLauncher.exe'
+        if self.launcher.parent != self.game or self.launcher.suffix.lower() != '.exe':
+            raise ValueError('The test launcher must be an executable in the game directory')
         if not NAME.fullmatch(profile) or profile in ('R2Northstar', 'R2CollisionLab'):
             raise ValueError('A dedicated harness profile name is required')
         self.profile = self.game / profile
@@ -219,9 +223,11 @@ class Application:
         marker = self.profile / '.map-test-harness.json'
         if self.profile.exists() and not marker.exists():
             raise ValueError('Existing profile is not owned by this harness')
-        if not (self.game / 'NorthstarLauncher.exe').is_file():
+        if not self.launcher.is_file():
             raise ValueError('NorthstarLauncher.exe is missing')
-        source = self.game / 'R2Northstar'
+        source = self.runtime
+        if not (source/'Northstar.dll').is_file():
+            raise ValueError('Selected Northstar runtime is missing Northstar.dll')
         self.profile.mkdir(parents=True, exist_ok=True)
         write_json(marker, dict(owner='MapTest.Harness', game=str(self.game)))
         copy_file(source / 'Northstar.dll', self.profile / 'Northstar.dll')
@@ -255,7 +261,7 @@ class Application:
                 for job in list(self.broker.jobs.values()):
                     if job['state'] in ('queued', 'delivered'):
                         self.broker.cancel(job['id'])
-            args = [str(self.game / 'NorthstarLauncher.exe'), '-profile='+self.profile.name,
+            args = [str(self.launcher), '-profile='+self.profile.name,
                     '-multiple', '-novid', '-nosound', '-windowed', '-allowlocalhttp',
                     '-w', str(width), '-h', str(height), '+ip', '127.0.0.1', '+hostport', '37041',
                     '+sv_lan', '1', '+ns_report_server_to_masterserver', '0',
@@ -499,8 +505,8 @@ def serve(args):
     run.mkdir(parents=True, exist_ok=True)
     token = secrets.token_hex(24)
     server = ThreadingHTTPServer(('127.0.0.1', args.port), Handler)
-    server.app = Application(args.game, args.profile, args.port, run, token, args.package, args.extra_package)
-    session = dict(url=f'http://127.0.0.1:{args.port}', token=token, run=str(run), game=str(server.app.game), profile=args.profile, controller_pid=os.getpid())
+    server.app = Application(args.game, args.profile, args.port, run, token, args.package, args.extra_package,args.runtime,args.launcher)
+    session = dict(url=f'http://127.0.0.1:{args.port}', token=token, run=str(run), game=str(server.app.game), profile=args.profile, controller_pid=os.getpid(),runtime=str(server.app.runtime),launcher=str(server.app.launcher))
     write_json(SESSION, session)
     write_json(run/'session.json', session)
     try:
@@ -518,6 +524,8 @@ def start(args):
         with (HOME/'output/controller.log').open('ab') as log:
             subprocess.Popen([sys.executable, str(Path(__file__).resolve()), 'serve', '--game', args.game,
                               '--profile', args.profile, '--port', str(args.port), '--package', args.package,
+                              *(['--runtime',args.runtime] if args.runtime else []),
+                              *(['--launcher',args.launcher] if args.launcher else []),
                               *[value for extra in (args.extra_package or []) for value in ('--extra-package', extra)]],
                              stdout=log, stderr=log, creationflags=subprocess.CREATE_NO_WINDOW)
         deadline = time.monotonic()+10
@@ -533,6 +541,12 @@ def start(args):
     c = Controller()
     if c.session['game'] != str(Path(args.game).resolve()) or c.session['profile'] != args.profile:
         raise ValueError('Another harness configuration is running; stop it first')
+    expected_runtime=str(Path(args.runtime).resolve() if args.runtime else Path(args.game).resolve()/'R2Northstar')
+    expected_launcher=str(Path(args.launcher).resolve() if args.launcher else Path(args.game).resolve()/'NorthstarLauncher.exe')
+    previous_runtime=c.session.get('runtime',str(Path(c.session['game'])/'R2Northstar'))
+    previous_launcher=c.session.get('launcher',str(Path(c.session['game'])/'NorthstarLauncher.exe'))
+    if previous_runtime!=expected_runtime or previous_launcher!=expected_launcher:
+        raise ValueError('Another harness runtime is running; stop it before changing versions')
     c.request('/launch', dict(map=args.map, mode=args.mode, width=args.width, height=args.height))
     return c.wait_map(args.map, args.timeout)
 
@@ -544,6 +558,8 @@ def parser():
         s = sub.add_parser(action)
         s.add_argument('--game', default='D:/Games/Titanfall2')
         s.add_argument('--profile', default='R2MapHarness')
+        s.add_argument('--runtime',help='Read-only Northstar runtime root containing Northstar.dll and core mods')
+        s.add_argument('--launcher',help='Owned alternate launcher executable in the game directory')
         s.add_argument('--port', type=int, default=39131)
         s.add_argument('--package', default=str(ROOT/'northstar/PhaseRunner' if (ROOT/'northstar/PhaseRunner/mod.json').exists() else ROOT/'northstar/PhaseRunner.Preview'))
         s.add_argument('--extra-package', action='append', help='Enable another map package; repeat to test a combined installation')

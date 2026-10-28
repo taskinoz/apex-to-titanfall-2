@@ -1,6 +1,7 @@
 # Apex to Titanfall 2 map ports
 
-[Download the October 2026 beta](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/maps-beta-2026-10-25)
+[Download the original-five anniversary RC1](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/anniversary-2026-rc1),
+[browse the seven-map October beta](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/maps-beta-2026-10-25)
 or [compare the maps on the live site](https://taskinoz.github.io/apex-to-titanfall-2/).
 
 | Map / companion | Packaged version |
@@ -16,11 +17,18 @@ or [compare the maps on the live site](https://taskinoz.github.io/apex-to-titanf
 
 Install **ApexMaps.UI once** plus the maps you want. Close the game and replace
 old mod folders rather than merging them. These are preview builds with known
-limitations, including an intermittent Overflow loading crash. Release notes,
+limitations. The anniversary RC was tested on Northstar **1.31.14**: PS/FFA on
+all five, both team starts, postmatch/menu transitions and ten Overflow
+stock/reload cycles passed. The earlier intermittent Overflow crash on 1.31.13
+was not reproduced in this bounded sample; its root cause remains unconfirmed.
+AI, dedicated servers and multiplayer load are not certified. Release notes,
 installation instructions and checksums accompany the downloads.
 
 See [release packages, historical downloads and cleanup](docs/release-management.md).
-The clean local download set is `output/releases/maps-beta-2026-10-25/`;
+See [the anniversary test report](docs/anniversary-2026.md). Its clean local
+download set is `output/releases/anniversary-2026-rc1/`. Runtime mod versions are
+unchanged; RC1 refreshes packaging and installation guidance around the accepted
+runtime files. The older set is `output/releases/maps-beta-2026-10-25/`;
 compatible paths remain in `output/` without duplicating ZIP storage. Older
 distributions are archived separately.
 

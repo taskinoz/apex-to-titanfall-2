@@ -89,6 +89,38 @@ class HarnessTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 Application(game, name, 39131, self.root/'run', 'token', self.root/'package')
 
+    def test_explicit_runtime_never_overwrites_normal_installation(self):
+        game=self.root/'game';normal=game/'R2Northstar';runtime=self.root/'pinned-runtime';package=self.root/'package'
+        for root,version in [(normal,'old'),(runtime,'new')]:
+            root.mkdir(parents=True)
+            (root/'Northstar.dll').write_text(version)
+            for name in ('Northstar.Client','Northstar.Custom','Northstar.CustomServers'):
+                folder=root/'mods'/name;folder.mkdir(parents=True)
+                (folder/'mod.json').write_text(json.dumps({'Name':name,'Version':version}))
+        launcher=game/'OwnedLauncher.exe';launcher.touch()
+        package.mkdir();(package/'mod.json').write_text(json.dumps({'Name':'TestPackage','Version':'1'}))
+        app=Application(game,'IsolatedRuntimeTest',39131,self.root/'run','token',package,runtime=runtime,launcher=launcher)
+        app.install()
+        self.assertEqual((app.profile/'Northstar.dll').read_text(),'new')
+        self.assertEqual((normal/'Northstar.dll').read_text(),'old')
+        loaded=json.loads((app.profile/'mods/Northstar.Client/mod.json').read_text())
+        self.assertEqual(loaded['Version'],'new')
+
+    def test_alternate_launcher_must_stay_in_game_directory(self):
+        with self.assertRaises(ValueError):
+            Application(self.root/'game','OwnedTest',39131,self.root/'run','token',self.root/'package',launcher=self.root/'outside.exe')
+
+    def test_older_controller_cannot_silently_accept_a_new_runtime(self):
+        from harness import start
+        from types import SimpleNamespace
+        from unittest.mock import Mock,patch
+        game=(self.root/'game').resolve()
+        c=Mock();c.session={'game':str(game),'profile':'OwnedTest'}
+        args=SimpleNamespace(game=str(game),profile='OwnedTest',runtime=str(self.root/'new-runtime'),launcher=None)
+        with patch('harness.Controller',return_value=c):
+            with self.assertRaisesRegex(ValueError,'Another harness runtime'):start(args)
+        self.assertTrue(all(call.args[0]=='/status' for call in c.request.call_args_list))
+
     def test_titan_mode_switch_restarts_only_owned_controller_session(self):
         from harness import Controller
         c = Controller.__new__(Controller)

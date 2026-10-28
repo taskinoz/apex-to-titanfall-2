@@ -13,10 +13,10 @@ tags:
 project: apex-to-titanfall-2
 status: verified
 created: 2026-10-11T12:44:41.021Z
-updated: 2026-10-24T16:39:15.980Z
+updated: 2026-10-28T06:32:25.554Z
 created_by: agent:Codex
 updated_by: agent:Claude
-revision: 5
+revision: 7
 ---
 # Native Northstar map testing and clean releases
 
@@ -148,3 +148,17 @@ A separate authenticated draft, tag `build-archive-2026-10-25`, backs up 94 hist
 Fifteen disposable-file tests cover changed/missing proof, path traversal, interruption recovery, malformed checksum sidecars, incomplete uploads and actual two-delta restoration with targets larger than their references. A decoder bug initially used a bare `-M4096` as though it were MiB; the CLI interprets that number as bytes. The helpers now use `--long=31`, verified on the growing-file fixture and the real 776 MiB archive. Failed uploads may leave `starter` assets: only still-incomplete, digest-less objects owned by that upload are removed before retry; completed backups are preserved. Cancel queued futures on a failure so a thread-pool shutdown does not silently continue an entire batch.
 
 Evidence and recovery instructions: `docs/release-management.md`, `manage_release_archives.py`, `archive_release_history.py`, `restore_release_archive.py`, and the private upload, recovery and retirement receipts. Binary distributions remain in GitHub Releases, outside source Git history and Git LFS. Upstream reference: [Zstandard patching guide](https://github.com/facebook/zstd/wiki/Zstandard-as-a-patching-engine).
+
+## Anniversary five-map validation — 28 October 2026
+
+The original five accepted runtime versions (Phase Runner 1.7.2, Drop-Off 0.10.1, Firing Range 0.5.1, Party Crasher 0.6.4 and Overflow 0.4.1) were extracted from the immutable October beta ZIPs rather than rebuilt from mutable working directories. Provenance now covers every runtime file, including scripts and translations, and the mounted files matched those archives. ApexMaps.UI remains 0.2.1, with one atlas and support for the two additional maps preserved.
+
+The dedicated anniversary profile used the official Northstar 1.31.14 launcher, DLL and core mods; the normal installation/profile were preserved. A combined all-five-installed session passed PS spawn/hull/support checks, both team start selections, weapon fire, native captures, normal postmatch lobby returns, a stock Coliseum visit and converted-map reload. FFA checks and postmatch returns passed on every map. Phase Runner also passed CTF flag, Hardpoint net-objective and Fastball three-panel setup checks. These are one-client smoke checks, not multiplayer load, scoring, balance, dedicated-server or AI certification.
+
+Overflow completed ten alternating PS/FFA cycles, each with stock-map and Overflow reloads, without logged script errors or native crashes. The first cycle used the existing process; the next nine launched fresh processes. A cycle is recorded only after its reload succeeds. This bounded sample does not establish the root cause of the earlier intermittent 1.31.13 crash. Northstar 1.31.14's upstream FFA RUI stack fix is relevant maintenance, not proof of causality. EA restart and the isolated runtime update happened together during startup recovery; do not credit either alone.
+
+Fresh overviews of all five maps were reviewed with live map/camera metadata, living camera players, intact safety entities and expected geometry/materials/UI. Earlier spawn photos are not the visual acceptance set. No pink shader fallback or whole-map disappearance appeared in the reviewed overviews; source scenery, shader/FX and Apex gameplay omissions remain. Structural audits passed native v37 headers, index-pair padding, reachable visibility bounds, world capacity and RPak ordering. Index use is 97.79%, 97.06%, 97.63%, 96.70% and 94.31% respectively; static batch runs are 495, 379, 198, 468 and 250 against the audited 2,048-run submission limit. Dynamic-light splits and other rendering paths still need headroom.
+
+Forty-one offline tests passed: 21 geometry/capacity/support, four binary adapters, 12 harness and four disposable archive-provenance tests. Python 3.14 is needed for stdlib compression.zstd adapters; the project's compiled geometry dependencies use Python 3.12. Run those groups with their matching interpreters. A further harness regression rejects switching runtimes through an older controller that lacks runtime metadata. The harness now accepts explicit read-only runtime and same-game-directory alternate launcher paths; configuration changes require stopping its controller first. Four provenance tests reject changed downloads, changed staged scripts and archive traversal, and cover translation/script hashing.
+
+The r2-model-compiler v0.5.0 supplied static-box example compiled with zero warnings to a 5,550-byte native MDL. No map model was rebuilt with it. Moving baked scenery to static props still needs native material binding, correct game-lump/visibility namespaces, lighting, collision and native tests. Evidence and packaging tools: docs/anniversary-2026.md, docs/anniversary-2026-validation.json, docs/toolchain/r2-model-compiler-2026-10-28.md, prepare_anniversary_release.py, validate_anniversary_native.py, package_anniversary_rc.py and report_anniversary_release.py. Anniversary packaging retains runtime mod versions, uses distinct RC filenames and excludes harnesses, tools, raw logs and source game archives.

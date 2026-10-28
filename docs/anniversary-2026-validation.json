@@ -1,0 +1,1000 @@
+{
+  "date": "2026-10-28",
+  "scope": "Original five; one local Windows client",
+  "runtime": {
+    "version": "1.31.14",
+    "launcher_sha256": "8dcb9de2dae0c8c81a1c653db6416656c74fe887153a49c19753891d23a0ae2a",
+    "dll_sha256": "86007dd1ddac9103508eeca520e2ab89b16df92780a5f8a67497ccf29567edb9"
+  },
+  "base_source_commit": "39c334e581a17d1552e793adf3312a4ed6fcf981",
+  "runtime_bytes_changed": false,
+  "mounted_runtime_files_verified": true,
+  "owned_session_stopped_cleanly": true,
+  "structural": {
+    "passed": true,
+    "maps": {
+      "PhaseRunner": {
+        "version": "1.7.2",
+        "map": "mp_phase_runner",
+        "runtime_hashes_match": true,
+        "index_padding": {
+          "meshes": 5222,
+          "render_triangles": 1023157,
+          "odd_meshes_padded": 2205,
+          "pair_reads_within_declared_vertex_ranges": true,
+          "padding_triangles_degenerate": true,
+          "six_index_alignment_verified": true
+        },
+        "visibility": {
+          "nodes": 22,
+          "references": 5222,
+          "reachable_meshes": 5222,
+          "all_parent_and_object_bounds_verified": true,
+          "contiguous_subtree_ranges_verified": true
+        },
+        "budget": {
+          "meshes": 5222,
+          "real_triangles": 1023157,
+          "native_padded_indices": 3076086,
+          "world_index_capacity": 3145728,
+          "all_meshes_fit_simultaneously": true,
+          "maximum_all_visible_mesh_prefix": 5222,
+          "prefix_indices": 3076086,
+          "first_mesh_excluded_when_all_visible": null,
+          "mesh_partitions": [
+            5198,
+            5198,
+            5222
+          ],
+          "static_batch_runs": 495,
+          "unique_static_draw_keys": 495,
+          "world_batch_capacity": 2048,
+          "static_batches_fit_simultaneously": true,
+          "first_mesh_excluded_by_static_batch_limit": null,
+          "dynamic_light_masks_can_split_static_batches": true,
+          "native_batch_limit_instruction": "engine.dll+0xb7304",
+          "native_batch_limit_exit": "engine.dll+0xb74c9",
+          "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+        },
+        "pak_ordering": {
+          "map": "mp_phase_runner",
+          "packs": [
+            "phase_runner_art_supports.rpak",
+            "phase_runner_banner_displays.rpak",
+            "phase_runner_blend.rpak",
+            "phase_runner_detail.rpak",
+            "phase_runner_fill.rpak",
+            "phase_runner_firs.rpak",
+            "phase_runner_glass_console.rpak",
+            "phase_runner_presentation.rpak",
+            "phase_runner_vertex_paint.rpak",
+            "phase_runner_world.rpak"
+          ],
+          "startup_map_atlases": 0,
+          "policy": "Shared UI companion; atlas-free loading packs and native base-pack world ordering"
+        }
+      },
+      "ArenaComposite": {
+        "version": "0.10.1",
+        "map": "mp_arena_composite",
+        "runtime_hashes_match": true,
+        "index_padding": {
+          "meshes": 3475,
+          "render_triangles": 1016149,
+          "odd_meshes_padded": 1563,
+          "pair_reads_within_declared_vertex_ranges": true,
+          "padding_triangles_degenerate": true,
+          "six_index_alignment_verified": true
+        },
+        "visibility": {
+          "nodes": 15,
+          "references": 3475,
+          "reachable_meshes": 3475,
+          "all_parent_and_object_bounds_verified": true,
+          "contiguous_subtree_ranges_verified": true
+        },
+        "budget": {
+          "meshes": 3475,
+          "real_triangles": 1016149,
+          "native_padded_indices": 3053136,
+          "world_index_capacity": 3145728,
+          "all_meshes_fit_simultaneously": true,
+          "maximum_all_visible_mesh_prefix": 3475,
+          "prefix_indices": 3053136,
+          "first_mesh_excluded_when_all_visible": null,
+          "mesh_partitions": [
+            3343,
+            3343,
+            3475
+          ],
+          "static_batch_runs": 379,
+          "unique_static_draw_keys": 379,
+          "world_batch_capacity": 2048,
+          "static_batches_fit_simultaneously": true,
+          "first_mesh_excluded_by_static_batch_limit": null,
+          "dynamic_light_masks_can_split_static_batches": true,
+          "native_batch_limit_instruction": "engine.dll+0xb7304",
+          "native_batch_limit_exit": "engine.dll+0xb74c9",
+          "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+        },
+        "pak_ordering": {
+          "map": "mp_arena_composite",
+          "packs": [
+            "composite_presentation.rpak",
+            "composite_world.rpak",
+            "drop_off_banner_displays.rpak",
+            "drop_off_fill.rpak",
+            "drop_off_vertex_paint.rpak"
+          ],
+          "startup_map_atlases": 0,
+          "policy": "Shared UI companion; atlas-free loading packs and native base-pack world ordering"
+        }
+      },
+      "ApexFiringRange": {
+        "version": "0.5.1",
+        "map": "mp_apex_firing_range",
+        "runtime_hashes_match": true,
+        "index_padding": {
+          "meshes": 3176,
+          "render_triangles": 1022196,
+          "odd_meshes_padded": 1522,
+          "pair_reads_within_declared_vertex_ranges": true,
+          "padding_triangles_degenerate": true,
+          "six_index_alignment_verified": true
+        },
+        "visibility": {
+          "nodes": 14,
+          "references": 3176,
+          "reachable_meshes": 3176,
+          "all_parent_and_object_bounds_verified": true,
+          "contiguous_subtree_ranges_verified": true
+        },
+        "budget": {
+          "meshes": 3176,
+          "real_triangles": 1022196,
+          "native_padded_indices": 3071154,
+          "world_index_capacity": 3145728,
+          "all_meshes_fit_simultaneously": true,
+          "maximum_all_visible_mesh_prefix": 3176,
+          "prefix_indices": 3071154,
+          "first_mesh_excluded_when_all_visible": null,
+          "mesh_partitions": [
+            3101,
+            3101,
+            3176
+          ],
+          "static_batch_runs": 198,
+          "unique_static_draw_keys": 198,
+          "world_batch_capacity": 2048,
+          "static_batches_fit_simultaneously": true,
+          "first_mesh_excluded_by_static_batch_limit": null,
+          "dynamic_light_masks_can_split_static_batches": true,
+          "native_batch_limit_instruction": "engine.dll+0xb7304",
+          "native_batch_limit_exit": "engine.dll+0xb74c9",
+          "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+        },
+        "pak_ordering": {
+          "map": "mp_apex_firing_range",
+          "packs": [
+            "firing_range_presentation.rpak",
+            "firing_range_world.rpak"
+          ],
+          "startup_map_atlases": 0,
+          "policy": "Shared UI companion; atlas-free loading packs and native base-pack world ordering"
+        }
+      },
+      "ArenaPartyCrasher": {
+        "version": "0.6.4",
+        "map": "mp_party_crasher",
+        "runtime_hashes_match": true,
+        "index_padding": {
+          "meshes": 3243,
+          "render_triangles": 1012534,
+          "odd_meshes_padded": 1456,
+          "pair_reads_within_declared_vertex_ranges": true,
+          "padding_triangles_degenerate": true,
+          "six_index_alignment_verified": true
+        },
+        "visibility": {
+          "nodes": 14,
+          "references": 3243,
+          "reachable_meshes": 3243,
+          "all_parent_and_object_bounds_verified": true,
+          "contiguous_subtree_ranges_verified": true
+        },
+        "budget": {
+          "meshes": 3243,
+          "real_triangles": 1012534,
+          "native_padded_indices": 3041970,
+          "world_index_capacity": 3145728,
+          "all_meshes_fit_simultaneously": true,
+          "maximum_all_visible_mesh_prefix": 3243,
+          "prefix_indices": 3041970,
+          "first_mesh_excluded_when_all_visible": null,
+          "mesh_partitions": [
+            3167,
+            3167,
+            3243
+          ],
+          "static_batch_runs": 468,
+          "unique_static_draw_keys": 468,
+          "world_batch_capacity": 2048,
+          "static_batches_fit_simultaneously": true,
+          "first_mesh_excluded_by_static_batch_limit": null,
+          "dynamic_light_masks_can_split_static_batches": true,
+          "native_batch_limit_instruction": "engine.dll+0xb7304",
+          "native_batch_limit_exit": "engine.dll+0xb74c9",
+          "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+        },
+        "pak_ordering": {
+          "map": "mp_party_crasher",
+          "packs": [
+            "party_crasher_presentation.rpak",
+            "party_crasher_world.rpak"
+          ],
+          "startup_map_atlases": 0,
+          "policy": "Shared UI companion; atlas-free loading packs and native base-pack world ordering"
+        }
+      },
+      "ArenaOverflow": {
+        "version": "0.4.1",
+        "map": "mp_overflow",
+        "runtime_hashes_match": true,
+        "index_padding": {
+          "meshes": 3094,
+          "render_triangles": 987402,
+          "odd_meshes_padded": 1508,
+          "pair_reads_within_declared_vertex_ranges": true,
+          "padding_triangles_degenerate": true,
+          "six_index_alignment_verified": true
+        },
+        "visibility": {
+          "nodes": 14,
+          "references": 3094,
+          "reachable_meshes": 3094,
+          "all_parent_and_object_bounds_verified": true,
+          "contiguous_subtree_ranges_verified": true
+        },
+        "budget": {
+          "meshes": 3094,
+          "real_triangles": 987402,
+          "native_padded_indices": 2966730,
+          "world_index_capacity": 3145728,
+          "all_meshes_fit_simultaneously": true,
+          "maximum_all_visible_mesh_prefix": 3094,
+          "prefix_indices": 2966730,
+          "first_mesh_excluded_when_all_visible": null,
+          "mesh_partitions": [
+            2945,
+            2945,
+            3094
+          ],
+          "static_batch_runs": 250,
+          "unique_static_draw_keys": 250,
+          "world_batch_capacity": 2048,
+          "static_batches_fit_simultaneously": true,
+          "first_mesh_excluded_by_static_batch_limit": null,
+          "dynamic_light_masks_can_split_static_batches": true,
+          "native_batch_limit_instruction": "engine.dll+0xb7304",
+          "native_batch_limit_exit": "engine.dll+0xb74c9",
+          "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
+        },
+        "pak_ordering": {
+          "map": "mp_overflow",
+          "packs": [
+            "overflow_presentation.rpak",
+            "overflow_world.rpak"
+          ],
+          "startup_map_atlases": 0,
+          "policy": "Shared UI companion; atlas-free loading packs and native base-pack world ordering"
+        }
+      }
+    },
+    "custom_ui_atlases": 1,
+    "shared_ui_version": "0.2.1"
+  },
+  "native_sessions": [
+    {
+      "package": "PhaseRunner",
+      "map": "mp_phase_runner",
+      "mode": "ps",
+      "pilot_spawns": 66,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": true,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 2,
+        "info_spawnpoint_titan": 12,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 3,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 42,
+        "trigger_out_of_bounds": 82,
+        "move_rope": 0,
+        "trigger_hurt": 1
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "ArenaComposite",
+      "map": "mp_arena_composite",
+      "mode": "ps",
+      "pilot_spawns": 48,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": true,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 6,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 0,
+        "keyframe_rope": 2,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 24,
+        "trigger_out_of_bounds": 21,
+        "move_rope": 2,
+        "trigger_hurt": 5
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "ApexFiringRange",
+      "map": "mp_apex_firing_range",
+      "mode": "ps",
+      "pilot_spawns": 20,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": true,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 10,
+        "info_hardpoint": 0,
+        "keyframe_rope": 7,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 10,
+        "trigger_out_of_bounds": 0,
+        "move_rope": 7,
+        "trigger_hurt": 1
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "ArenaPartyCrasher",
+      "map": "mp_party_crasher",
+      "mode": "ps",
+      "pilot_spawns": 24,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": true,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 12,
+        "info_hardpoint": 0,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 12,
+        "trigger_out_of_bounds": 67,
+        "move_rope": 0,
+        "trigger_hurt": 2
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "ArenaOverflow",
+      "map": "mp_overflow",
+      "mode": "ps",
+      "pilot_spawns": 24,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": true,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 12,
+        "info_hardpoint": 0,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 12,
+        "trigger_out_of_bounds": 66,
+        "move_rope": 0,
+        "trigger_hurt": 58
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "PhaseRunner",
+      "map": "mp_phase_runner",
+      "mode": "ffa",
+      "pilot_spawns": 66,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": false,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 2,
+        "info_spawnpoint_titan": 12,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 3,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 42,
+        "trigger_out_of_bounds": 82,
+        "move_rope": 0,
+        "trigger_hurt": 1
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "ArenaComposite",
+      "map": "mp_arena_composite",
+      "mode": "ffa",
+      "pilot_spawns": 48,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": false,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 6,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 0,
+        "keyframe_rope": 2,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 24,
+        "trigger_out_of_bounds": 21,
+        "move_rope": 2,
+        "trigger_hurt": 5
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "ApexFiringRange",
+      "map": "mp_apex_firing_range",
+      "mode": "ffa",
+      "pilot_spawns": 20,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": false,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 10,
+        "info_hardpoint": 0,
+        "keyframe_rope": 7,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 10,
+        "trigger_out_of_bounds": 0,
+        "move_rope": 7,
+        "trigger_hurt": 1
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "ArenaPartyCrasher",
+      "map": "mp_party_crasher",
+      "mode": "ffa",
+      "pilot_spawns": 24,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": false,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 12,
+        "info_hardpoint": 0,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 12,
+        "trigger_out_of_bounds": 67,
+        "move_rope": 0,
+        "trigger_hurt": 2
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "ArenaOverflow",
+      "map": "mp_overflow",
+      "mode": "ffa",
+      "pilot_spawns": 24,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": false,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 12,
+        "info_hardpoint": 0,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 12,
+        "trigger_out_of_bounds": 66,
+        "move_rope": 0,
+        "trigger_hurt": 58
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "PhaseRunner",
+      "map": "mp_phase_runner",
+      "mode": "ctf",
+      "pilot_spawns": 66,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": true,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [
+        {
+          "valid": true,
+          "name": "imcFlag"
+        },
+        {
+          "valid": true,
+          "name": "milFlag"
+        }
+      ],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 2,
+        "info_spawnpoint_titan": 12,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 3,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 42,
+        "trigger_out_of_bounds": 82,
+        "move_rope": 0,
+        "trigger_hurt": 1
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "PhaseRunner",
+      "map": "mp_phase_runner",
+      "mode": "cp",
+      "pilot_spawns": 66,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": true,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [
+        {
+          "valid": true,
+          "name": "A"
+        },
+        {
+          "valid": true,
+          "name": "B"
+        },
+        {
+          "valid": true,
+          "name": "C"
+        }
+      ],
+      "panels": 0,
+      "entities": {
+        "info_spawnpoint_flag": 2,
+        "info_spawnpoint_titan": 12,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 3,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 42,
+        "trigger_out_of_bounds": 82,
+        "move_rope": 0,
+        "trigger_hurt": 1
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    },
+    {
+      "package": "PhaseRunner",
+      "map": "mp_phase_runner",
+      "mode": "fastball",
+      "pilot_spawns": 66,
+      "invalid_pilot_spawns": 0,
+      "both_teams_selected": true,
+      "living_player": true,
+      "weapon_fire_exercised": true,
+      "postmatch_return_to_lobby": true,
+      "objectives": [],
+      "panels": 3,
+      "entities": {
+        "info_spawnpoint_flag": 2,
+        "info_spawnpoint_titan": 12,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 3,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 42,
+        "trigger_out_of_bounds": 82,
+        "move_rope": 0,
+        "trigger_hurt": 1
+      },
+      "logged_script_errors": 0,
+      "logged_native_crashes": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "package": "PhaseRunner",
+      "map": "mp_phase_runner",
+      "sha256": "37afe14980237e8d4dd116fb6e5100e8bc8fe0354a4f7a413b342a685183a7ec",
+      "width": 1280,
+      "height": 720,
+      "origin": [
+        0.0,
+        -5000.0,
+        1400.0
+      ],
+      "angles": [
+        28.0,
+        90.0,
+        0.0
+      ],
+      "captured": 1793168124.799729,
+      "visually_reviewed": true
+    },
+    {
+      "package": "ArenaComposite",
+      "map": "mp_arena_composite",
+      "sha256": "c80a4910ec64bf15d8aa0df139b503bf7d23311d4b874f2af2b32e4748653d0f",
+      "width": 1280,
+      "height": 720,
+      "origin": [
+        0.0,
+        2200.0,
+        900.0
+      ],
+      "angles": [
+        22.0,
+        90.0,
+        0.0
+      ],
+      "captured": 1793168168.7206068,
+      "visually_reviewed": true
+    },
+    {
+      "package": "ApexFiringRange",
+      "map": "mp_apex_firing_range",
+      "sha256": "ab342e8d471c99c86996191decb15fe67f877870191085b22568b5ea93f514c3",
+      "width": 1280,
+      "height": 720,
+      "origin": [
+        2000.0,
+        -5000.0,
+        2200.0
+      ],
+      "angles": [
+        22.0,
+        90.0,
+        0.0
+      ],
+      "captured": 1793168213.9177284,
+      "visually_reviewed": true
+    },
+    {
+      "package": "ArenaPartyCrasher",
+      "map": "mp_party_crasher",
+      "sha256": "345a2faa306ff2d832789769c8030d2f792cf1908e7885bf02ce899404274002",
+      "width": 1280,
+      "height": 720,
+      "origin": [
+        3385.962646484375,
+        -1591.9249267578125,
+        2220.4462890625
+      ],
+      "angles": [
+        12.0,
+        97.77110290527344,
+        0.0
+      ],
+      "captured": 1793168259.8079603,
+      "visually_reviewed": true
+    },
+    {
+      "package": "ArenaOverflow",
+      "map": "mp_overflow",
+      "sha256": "4bfb2bc7b1bd1c8be112a42c87ce72e46ad30e4607f6a7757872bba4973e3721",
+      "width": 1280,
+      "height": 720,
+      "origin": [
+        -324.00823974609375,
+        -6295.51123046875,
+        1393.3616943359375
+      ],
+      "angles": [
+        15.0,
+        61.88945007324219,
+        0.0
+      ],
+      "captured": 1793168302.4405308,
+      "visually_reviewed": true
+    }
+  ],
+  "overflow_stress": {
+    "completed_cycles": 10,
+    "fresh_process_launches": 9,
+    "stock_and_converted_reload_cycles": 10,
+    "modes": [
+      "ps",
+      "ffa",
+      "ps",
+      "ffa",
+      "ps",
+      "ffa",
+      "ps",
+      "ffa",
+      "ps",
+      "ffa"
+    ],
+    "logged_script_errors": 0,
+    "logged_native_crashes": 0,
+    "root_cause_of_historical_crash_established": false
+  },
+  "offline_tests": {
+    "geometry_capacity_support": 21,
+    "binary_adapters": 4,
+    "harness": 12,
+    "archive_provenance": 4
+  },
+  "packages": [
+    {
+      "package": "PhaseRunner",
+      "version": "1.7.2",
+      "file": "PhaseRunner-1.7.2-Anniversary2026-RC1-Northstar.zip",
+      "bytes": 760852202,
+      "sha256": "efb4e3dd89fc62e62b1412dfd0720e10da8d1ad565585ef85fd7e42e00e8d05f",
+      "runtime_sha256": {
+        "mod/maps/mp_phase_runner.bsp": "db48476651733500d8923102630105b90b970813c63e256ca079e280f441103b",
+        "mod/maps/mp_phase_runner.stbsp": "8153be22246b69c9fff0dfb61dd8363c2cd5ea1d01ce5f3cb6a7c52a83c5b90e",
+        "mod/models/vistas/grave_se.mdl": "8158501e71ae6e1ee39260339e4856286806b873c27ceeaa73e5fb4fedba1749",
+        "mod/models/vistas/planet_blue_sun.mdl": "9b90184c7219909017dce3064968d1fbaede436eff2de42472a3bac4ad85d2fb",
+        "mod/resource/overviews/mp_phase_runner.txt": "4a0f2d6fc41a27503301ee4655ff094481890b6439b8382241759d9628692343",
+        "mod/resource/phase_runner_english.txt": "44dce60704f00b92ec5e5f24b0561360990059d5c210e426de0c99b480a7a572",
+        "mod/resource/phase_runner_french.txt": "9ab6a452f9ae9cdb092a7228d32226b9b1113b7151bde6546fd8bf7eff0a4978",
+        "mod/resource/phase_runner_german.txt": "d1b5d3807e63309d6173c0f49ab7b1f85ec904ab2b4d2b8c6e619990a465a196",
+        "mod/resource/phase_runner_italian.txt": "ad0278574b06e72398734084d056bfe9a052aa2e80733a031f94309b038a183e",
+        "mod/resource/phase_runner_japanese.txt": "ef3fcb7c331098df8ca66e899093d176e615ba57a35722dcf663214dd3b61e38",
+        "mod/resource/phase_runner_korean.txt": "b41aa7ae0dfd87dd6337f1eda4ff13fc33016cfca0d2a147022881e46b6a6183",
+        "mod/resource/phase_runner_mspanish.txt": "4c4268f917fa380e264f376a37ac6f8730955d9deec8048428ee55619801c997",
+        "mod/resource/phase_runner_polish.txt": "ad5963c8dc5c616ede6ac3a3667443feed71007340404c2bd9e76813b22b78dd",
+        "mod/resource/phase_runner_portuguese.txt": "c2fee19182169d1a741efbd8642bb16d5115caca5de8969126370385a6d1b42d",
+        "mod/resource/phase_runner_russian.txt": "cb97720f5cdbae391342de7dce2bf0cefc7205b855890a428a63e5a831c5f6e7",
+        "mod/resource/phase_runner_schinese.txt": "1e5ee09004ada4660ee25d49efb264381872b93c5d5b4a15a98dbfef09ac150b",
+        "mod/resource/phase_runner_spanish.txt": "c06fa082eca3dcd54a1047c538cb6cbf7c4a55c68f378fdafa9f11089fc4bf05",
+        "mod/resource/phase_runner_tchinese.txt": "b49f7eb7056a37031a8da84ffa7fd57624b454d650bf879d02da5d8c7c756e85",
+        "mod/scripts/vscripts/_phase_runner_modes.nut": "244de7d7f472d8309ba8901280f9ac6de58ee25dc4536ac0993921ceaceb6960",
+        "mod/scripts/vscripts/_phase_runner_preview.nut": "4d1446b3aad53f2e8792bfd7cef4d2114f3713e65631455e5b3297790f36b7de",
+        "mod.json": "4e546d3cf241d7b66bda31dc9473676220d3dbd0d9514f69430210f0f881a1f4",
+        "paks/phase_runner_art_supports.rpak": "c0cc8471ff0f5916eda1d308e26c19dcc4c74051c248fed2495c6b96f2219fd0",
+        "paks/phase_runner_banner_displays.rpak": "8a9eba4e4e15c708e55cf8a58fd105388c8f181366e31864cb66c4e011762748",
+        "paks/phase_runner_blend.rpak": "aef3c04473d150ae85c2ab435c7ada938ca8c05b995cbdcd70865775e3d616e5",
+        "paks/phase_runner_detail.rpak": "fee833fe4de91e92e4657759606070079a471511ce259996b7a8a0a5879b9ac2",
+        "paks/phase_runner_fill.rpak": "4db737d1b22341781acddc6a91148a32d1acb46958caa1828cfe5ab96ffbfcdc",
+        "paks/phase_runner_firs.rpak": "1f9e84ffc504e0e1adfcd6b95dbf703197ae79743e1616b49de0d5de7c9728b1",
+        "paks/phase_runner_glass_console.rpak": "6db6040cb6f89989e19fbff373d73f47fabd9e49f75a2d0e91604420a37d1d59",
+        "paks/phase_runner_presentation.rpak": "47dfe31612cd9eb10de1822942bd5440f05f741bf30d1c12937467a50e31bc07",
+        "paks/phase_runner_vertex_paint.rpak": "218458035484459c21714641706f6a572be5ca4bb0dfd72ccd34ffdca742caa6",
+        "paks/phase_runner_world.rpak": "c44e8a792ed0c7011a9b880021f3a33bb23d9c1b35543278be8e77ddca4be73e",
+        "paks/rpak.json": "f16843626f9be61383e3a6172dab14efa8dd68880a9bf4fa2625188d57472227"
+      },
+      "accepted_beta_zip_sha256": "6be6d46e0a02958682d2c9460230f58a8a87b144430ab90f7b12e62521838564",
+      "verified_members": 34
+    },
+    {
+      "package": "ArenaComposite",
+      "version": "0.10.1",
+      "file": "ArenaComposite-0.10.1-Anniversary2026-RC1-Northstar.zip",
+      "bytes": 441614345,
+      "sha256": "3c152e9a161beee62eead5dd1e0389e87d7185f8da944c9483a3c3ab4e5069a2",
+      "runtime_sha256": {
+        "mod/maps/mp_arena_composite.bsp": "577831c03fb6174bef94e02e0f8fb7c89cfd05d3d26cb86221ee64774720d1cb",
+        "mod/maps/mp_arena_composite.stbsp": "3109c0c467900ef8e7a5f66b96aaf88dce0546e5dcde85d8b2447653a17dce24",
+        "mod/resource/composite_english.txt": "1902eafa9e2cf82eb4665c3f9bc2adee4b024fdd3ac88f11384f95c0bedb8f59",
+        "mod/resource/composite_french.txt": "8d2a1e663cbb417298bc74447d8f38b20eed72c4aeaf46a88544c3ca710711b7",
+        "mod/resource/composite_german.txt": "16e127406136d1faee19be4a70ab6929416dec2be33b2cba0e550a1f022fd8d9",
+        "mod/resource/composite_italian.txt": "f0beda0dca3d48bb7564956f682ad089aed8e5a0e6115044bd7460f6d9c407f4",
+        "mod/resource/composite_japanese.txt": "4b6c4e3494086cd73de87b85208336572afc2e1f10502ecf07be59bb7a7e4156",
+        "mod/resource/composite_korean.txt": "e1c6d9ebfb1e4be62e2fe186438bbe3c78c89e26a15970f2db08178714f1acca",
+        "mod/resource/composite_mspanish.txt": "c36c8ac059d34d9aef2830e7110cfc8f6f0e22bfab284508ca563171fa9182fb",
+        "mod/resource/composite_polish.txt": "cb975b3e922ab6e9bb6c0c34a8ca44fa75913f4cae3569bfb2de90a0a6ebe927",
+        "mod/resource/composite_portuguese.txt": "82c011882efa2a155659664bef7e77f4f89792edb248208c065974745a3e9f09",
+        "mod/resource/composite_russian.txt": "dc8b5b2c1c91c6b346114673b475a9e18a0ae8b930c1c7ffbbfa8205c0a6afb2",
+        "mod/resource/composite_schinese.txt": "8ac67e32a32401003210e805cececf140927b32072e821cd09d4158d2a9c8b90",
+        "mod/resource/composite_spanish.txt": "f6e1e7cbe08c8ce592e6deda463cf43a3e1fe63d08b5f322eccc5986e6af3fa7",
+        "mod/resource/composite_tchinese.txt": "a4748ae679e1dcfe2850b2d5815615619bdfe571d27fde31af4492e05302d4a3",
+        "mod/resource/northstar-banner-license.txt": "c3602933b43e5350b06f3cde496d3925ac6792238903ee774215d1681f3f09ca",
+        "mod/resource/overviews/mp_arena_composite.txt": "cb21a97f28c743ea23d74cf2ee5691a41a09a82493c90142df0b724eec92f585",
+        "mod/scripts/vscripts/_arena_composite.nut": "bc57ae1e483a88d5731e516044b4c7488cb7f69ce14226968cfae093d796f3f0",
+        "mod.json": "1aae838053b0ddbdbca0935421f1e90ba32236d31c7bd09f03bd7df8a324956b",
+        "paks/composite_presentation.rpak": "a9b6541f7fb460fe4025b24401f3d1da28002101f5cb97e182333a32813ad12a",
+        "paks/composite_world.rpak": "d78beb25473402fb3d00ccc04b4da167de57638496b085fd215eb694635c7701",
+        "paks/drop_off_banner_displays.rpak": "4b1e07a0b477fc6d3686320ca496019e743d1e1f5a86f60a120061bcb6ae20ed",
+        "paks/drop_off_fill.rpak": "1a7779d2f5d22d9b1e30b9528a9c30fef44a08979a6e4b72f5fd111754d5faf7",
+        "paks/drop_off_vertex_paint.rpak": "1d7ae4041d0230ee66fd587208dce4ae0e7adf78a396f3309c064f1a1b15aa83",
+        "paks/rpak.json": "04a29bd3d726a864abaca73cbffa154b131db101b4a61b35087129a36a85b082"
+      },
+      "accepted_beta_zip_sha256": "f52e2da297b5529b6d4b1f0a11efa337e42f951938c8dab65f878c02072c6ae5",
+      "verified_members": 27
+    },
+    {
+      "package": "ApexFiringRange",
+      "version": "0.5.1",
+      "file": "ApexFiringRange-0.5.1-Anniversary2026-RC1-Northstar.zip",
+      "bytes": 367281700,
+      "sha256": "1debe453b33e240d3ea6f7df6be12d70844f73264fb081b62e65ab57c246deff",
+      "runtime_sha256": {
+        "mod/maps/mp_apex_firing_range.bsp": "7a5d8cdd03d5faeba5501d449a82b1a058bb39313fef83123852917551f8afdd",
+        "mod/maps/mp_apex_firing_range.stbsp": "0fdb4d286132d9a5a51c89c228c760e7e2cb7eac431516ad3afdf6666a844c96",
+        "mod/resource/firing_range_english.txt": "23dcc22b9dc9fffb9b4151e7b6b49adfceaefe228c302f46d02424a1f17f6804",
+        "mod/resource/firing_range_french.txt": "0b7c8ddec819d7265584a659539aa529cfe1f7d6208bc697c0c00ed6cdba82e0",
+        "mod/resource/firing_range_german.txt": "1ca2e6f74ae705bd07dfc654b16027572ec8360d87f6f90e41fba0b440f9ae30",
+        "mod/resource/firing_range_italian.txt": "0f0203859b3b7e6bc0cf8a84c3021c088db81e2e53084fcb3227d9ebbf897de9",
+        "mod/resource/firing_range_japanese.txt": "4af3c8e8faf9b0683b86303e7dd72f9bfd464cf9c2cc28f54416c3440883a867",
+        "mod/resource/firing_range_korean.txt": "5ee52ac0908d587568ac102c50cf17852591a04fa6136aa85d4f63e847b919af",
+        "mod/resource/firing_range_mspanish.txt": "7e2755f0de912abe6401f928f79e7291f916f907c073e969c9995f37e840384d",
+        "mod/resource/firing_range_polish.txt": "ef8ec0d2c75d3331b86ce184970cb5617ee85ba87f13459954b8fc4fb2bcdac7",
+        "mod/resource/firing_range_portuguese.txt": "659582be105536aeaaca4cc69bd4d7bae33dba98a6e5e5fc8614129ce15c6858",
+        "mod/resource/firing_range_russian.txt": "54e9478d96da490069a60cdb0e0c2a9d30200b06232a2742cc62ff5d1575456a",
+        "mod/resource/firing_range_schinese.txt": "d02f2b57c338a79a062b738bebd1c3ef69e4ef466cacd080c739c858303aa295",
+        "mod/resource/firing_range_spanish.txt": "7cfc598ab345ddc28e27813f4baff24e717269aedba6ed741177ce456f141567",
+        "mod/resource/firing_range_tchinese.txt": "c4a711a4637a6a9b9b92d337b8c0e2205d2ce9f306d3fe1f8246ca0b4fc44358",
+        "mod/resource/overviews/mp_apex_firing_range.txt": "81f325fa51790dbbdf166ae4ff86aafbd966e79c9523c77cb4f831f6bd067ae9",
+        "mod/scripts/vscripts/_firing_range.nut": "ee4b5053d6108c80fcc9e1b78aa36ed2ef2b35a08be2501f5f62c0285161706f",
+        "mod.json": "48ef2de271a90273bb1ac021fd794d5850d9717d95431736c78d7f948592b069",
+        "paks/firing_range_presentation.rpak": "967fc48aded0aaf6d8af3699a55a3c17048d1de5a9503dda9dd5db3f812dba77",
+        "paks/firing_range_world.rpak": "586b5fe7f185a4b567727f5c346fe07e9f19cd2c77fe1d6796e081a4daedd081",
+        "paks/rpak.json": "7cb1132b29d09b8c3af6ed798eb597e613953236e8f6f5cc1e93d255fe78bf1a"
+      },
+      "accepted_beta_zip_sha256": "6f13e0513420ff9d0d4fb02036fb6e808a1c2d629f8f226b94029974dade925f",
+      "verified_members": 23
+    },
+    {
+      "package": "ArenaPartyCrasher",
+      "version": "0.6.4",
+      "file": "ArenaPartyCrasher-0.6.4-Anniversary2026-RC1-Northstar.zip",
+      "bytes": 572345738,
+      "sha256": "42a62532ed8d50a9f58073f45e8965a058efd090a0157008edde4f5589ce8f5b",
+      "runtime_sha256": {
+        "mod/maps/mp_party_crasher.bsp": "d3cda159102698088869533fc367f19caa2443d77298c1378b01636e549aa613",
+        "mod/maps/mp_party_crasher.stbsp": "9093df6eefff305bd12f768f9f27f0f6db209feadbba82850450b83e0eb67bf6",
+        "mod/resource/northstar-banner-license.txt": "c3602933b43e5350b06f3cde496d3925ac6792238903ee774215d1681f3f09ca",
+        "mod/resource/overviews/mp_party_crasher.txt": "92be36a0f0b360c0ae9061f2e80ae32f73eda96b7c00d6fe0a0afde2d82333d5",
+        "mod/resource/party_crasher_english.txt": "cfea930b08ce00308ac036232b6bdfd712c0257681cfdab6167df5c2d65cf6cb",
+        "mod/resource/party_crasher_french.txt": "7ff31caedcb7288c70f3b7b00c8a1d3bb30fdc6a7888147e5f43ddb31f40759f",
+        "mod/resource/party_crasher_german.txt": "72966c1d9cdc58065c7e28c36062b0933a94fbb3b9d79a019d7d5f01011a0ebc",
+        "mod/resource/party_crasher_italian.txt": "b6e771d42c22e452d55e02c2bab302d0ad5170dc26b7e4b186de138dfbdf1c42",
+        "mod/resource/party_crasher_japanese.txt": "b5ec51ea54913ee10850427a5bb25d51e0f19d31c79b20246ab6453d4b1a0f86",
+        "mod/resource/party_crasher_korean.txt": "9903af3acaada3c356d75a9f1422ced9eb81ae1b22a0597e8410cfe7c170e338",
+        "mod/resource/party_crasher_mspanish.txt": "a7e7d3d36acd439d63d5a89b153a3cc8e346edc687be24ad829d893736e8863f",
+        "mod/resource/party_crasher_polish.txt": "070cdb0bb865e1d606a7718823d1fe7b9deaf3ea5cd25fbd0fd59f1455c79e6b",
+        "mod/resource/party_crasher_portuguese.txt": "66f56e86423fa86d001663034c38c21ba2c3dd6967189eb57b6e2e8ce8e339f3",
+        "mod/resource/party_crasher_russian.txt": "f9966cd70ff6fc2ccab6280dc3862d7cbe9bf9648739d8e80855f2a27ab2e931",
+        "mod/resource/party_crasher_schinese.txt": "deba5f403da9de9d3b9c8f61e905bb8a136a4e8fd3dd04248322d7a7f4b7220b",
+        "mod/resource/party_crasher_spanish.txt": "be7d057832875f7af9e3ea8af53cef1bad5a781b7c0e6c8208e42319ddf950ad",
+        "mod/resource/party_crasher_tchinese.txt": "f58f22cb238e37d95e33d429d7b69c4bff3c22c06fbd28cbbeb9eac69d0ddf48",
+        "mod/scripts/vscripts/_party_crasher.nut": "0b5762adc4b703743b4dd51ae6f0e6373c66bbeba22608dcbc05ea78c6000f43",
+        "mod.json": "fd884a08f1a2a18c857cfe24f884e026d00bb184b0bc084db7c75fa3d97c0746",
+        "paks/party_crasher_presentation.rpak": "30bb89f4a09257e435d1325f30be0d8cf83d4e59eed2abfceea2627dfdcbd117",
+        "paks/party_crasher_world.rpak": "9c98a2a0a6c09572f7f6ab40a7573d352ef536b370b04fa0c1b5152a5a37d68b",
+        "paks/rpak.json": "cc6e263631a977cf968eeddd6403cb9100e8965f8cfc95cf433c95efbb76393b"
+      },
+      "accepted_beta_zip_sha256": "ec275d4c0383d8a5823de30c00a08f4e7b92745f8c81ef26fb8cf8431d4693ec",
+      "verified_members": 24
+    },
+    {
+      "package": "ArenaOverflow",
+      "version": "0.4.1",
+      "file": "ArenaOverflow-0.4.1-Anniversary2026-RC1-Northstar.zip",
+      "bytes": 429581836,
+      "sha256": "64ae8e7fc3ae35df6e876c11967216c89e3bd31c8484a9f5a2ece95859b80480",
+      "runtime_sha256": {
+        "mod/maps/mp_overflow.bsp": "81885e45eec5ad13d31a28bf5021aae74e64d7d62661c37cad66ffabe0cf7ea7",
+        "mod/maps/mp_overflow.stbsp": "3534c1b7b7944331baa852a14158695406475d4ec36e6846e15294bd9653c7f4",
+        "mod/resource/overflow_english.txt": "cff8be50380eb3c2f977901251701dc48db0b63ac49fd686897546eb0dacdd92",
+        "mod/resource/overflow_french.txt": "e888c640f6e56e1a0de174597afb4405dc51f843b2c9fe384f15caa65206b7b7",
+        "mod/resource/overflow_german.txt": "648a4bc52fb09413f3b9a68f555ff8d51559e76d6e6277d560deda3b6bd6583a",
+        "mod/resource/overflow_italian.txt": "f7c2a7ad8f8614ee088d5a6f50b3bb2cd18332de740511912d0b2c8d12fb6dee",
+        "mod/resource/overflow_japanese.txt": "887f6b8fd43bb1a935940f9578fec9c6f9ff8d6d5a63634cddac139795fe43af",
+        "mod/resource/overflow_korean.txt": "f79247b6c88ec844c0aa1a3e756c77a2b5ff9343a071e618722fa909657531c5",
+        "mod/resource/overflow_mspanish.txt": "620663c8ba575b21d3c86c67fd42d56af54c9851982ba0be0f1c5fb9f6cbe3bf",
+        "mod/resource/overflow_polish.txt": "a6826509db0aa57c6cadb4a807f74abefe68efd3f46ed785f0defc7bee1ce1c8",
+        "mod/resource/overflow_portuguese.txt": "0f503c37d2bb23105b7880444532e04ac48c89a46865a9096bf364d3feba29a9",
+        "mod/resource/overflow_russian.txt": "9064199476d3ecfe409176161046156e0967adf5fb43d7b17277ee08c299e6f0",
+        "mod/resource/overflow_schinese.txt": "7baeae131731b8b5df4ec552736b6533173a5afe7ce444b9e64122c804500511",
+        "mod/resource/overflow_spanish.txt": "ccf3e706ed7cc6e1e8cf68ec2e965b85d859a8a38ee422225a840dcbd0a08da5",
+        "mod/resource/overflow_tchinese.txt": "185d8bc85161215b9397dc9b4b846ba11fc34e67662e573ed8e044f8532533ec",
+        "mod/resource/overviews/mp_overflow.txt": "6e7840e18037d2f84e55b6589175e0201d52622b532d1ef97168a91320633cfc",
+        "mod/scripts/vscripts/_overflow.nut": "33546b1c6c286cdbbaaac769d4736248ae5ea2ece9211368e2f600b1a10363bb",
+        "mod.json": "339da100d56a37446dcb9dad453f76e9fd8092e7ceae16049b35bbd5924705da",
+        "paks/overflow_presentation.rpak": "39e590eb1a0f9915be1aac1777a0c727bb2b5d26cc3b68ccbcf74e5b3743dc45",
+        "paks/overflow_world.rpak": "490323ede736bc4116c9aa588e5b01c723667d5948d7bea43c795ed03cd041ed",
+        "paks/rpak.json": "2dd8f8fe0add329b2b1ea69654eaeaf7bb3ad32d06aeaaf7af982278efbf4cbe"
+      },
+      "accepted_beta_zip_sha256": "6a1909c9f2de1379c7de97d5d1e3cb2fec6855e395a25ad93262fa4c9e20f433",
+      "verified_members": 23
+    },
+    {
+      "package": "ApexMaps.UI",
+      "version": "0.2.1",
+      "file": "ApexMaps.UI-0.2.1-Anniversary2026-RC1-Northstar.zip",
+      "bytes": 25421884,
+      "sha256": "2d486912a023f19c5c3326970901f4a005a927ff4a03a4a35984d5b39552d43c",
+      "runtime_sha256": {
+        "mod.json": "9e83e9abf906c69a92ef7a307987eb86c4c554afac645e041c86e6da5e8e2014",
+        "paks/apex_maps_ui.rpak": "e6106aada370fee89895d989c3a2142c92f7698dfcdd1c5962be9962f9faf306",
+        "paks/rpak.json": "84f3cc74d6c82363b8adb3f7ac70136147f63d24aa58c831b8435565608281ce"
+      },
+      "accepted_beta_zip_sha256": "5ae6c1b090c22ef5ce99e8d0498680745bca08f98b9993ed590a7559b8ed2622",
+      "verified_members": 4
+    }
+  ],
+  "limitations": [
+    "One local client; multiplayer load, balance and dedicated servers not certified",
+    "AI navigation and Apex-specific gameplay systems remain incomplete",
+    "Objective presence is not full objective scoring/round certification",
+    "Bounded newer-runtime checks do not establish the old Overflow crash root cause",
+    "Safety volumes preserved; every hazard and traversal route not physically exercised"
+  ],
+  "accepted_beta_archive_hashes": {
+    "PhaseRunner": "6be6d46e0a02958682d2c9460230f58a8a87b144430ab90f7b12e62521838564",
+    "ArenaComposite": "f52e2da297b5529b6d4b1f0a11efa337e42f951938c8dab65f878c02072c6ae5",
+    "ApexFiringRange": "6f13e0513420ff9d0d4fb02036fb6e808a1c2d629f8f226b94029974dade925f",
+    "ArenaPartyCrasher": "ec275d4c0383d8a5823de30c00a08f4e7b92745f8c81ef26fb8cf8431d4693ec",
+    "ArenaOverflow": "6a1909c9f2de1379c7de97d5d1e3cb2fec6855e395a25ad93262fa4c9e20f433"
+  }
+}

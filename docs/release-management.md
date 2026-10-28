@@ -5,6 +5,23 @@ is an independent Northstar ZIP. Install the newest `ApexMaps.UI` companion once
 alongside whichever maps are wanted. Replace old mod directories rather than
 merging them, and keep backups outside the game's active `mods` directory.
 
+## Original-five anniversary RC1
+
+The [anniversary RC1](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/anniversary-2026-rc1)
+focuses on Phase Runner, Drop-Off, Firing Range, Party Crasher and Overflow, with
+ApexMaps.UI 0.2.1. Its distinct `Anniversary2026-RC1` ZIP names contain the same
+accepted runtime bytes, refreshed installation notes and the existing real
+game screenshots. Mod versions remain unchanged. The six ZIPs, checksums and
+runtime manifest live in `output/releases/anniversary-2026-rc1/`.
+
+[The validation report](anniversary-2026.md) records the Northstar 1.31.14
+single-client checks, known limits and compiler assessment. The source helpers
+stage/hash the accepted beta, audit the exact staged maps, exercise native
+loads/modes, require manual screenshot review, package clean player files and
+export a public receipt without private harness metadata. Existing destinations
+are verified rather than silently overwritten. The October beta and historical
+draft remain unchanged because older recovery chains reference those bytes.
+
 ## October 2026 beta
 
 The [October 2026 beta](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/maps-beta-2026-10-25)
