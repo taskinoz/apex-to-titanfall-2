@@ -10,7 +10,7 @@ or [compare the maps on the live site](https://taskinoz.github.io/apex-to-titanf
 | Drop-Off | 0.10.1 |
 | Firing Range | 0.5.1 |
 | Party Crasher | 0.6.4 |
-| Overflow | 0.4.1 |
+| Overflow | 0.4.2 |
 | Thermal Station | 0.1.2 |
 | Thunderdome | 0.1.1 |
 | ApexMaps.UI | 0.2.1 |
@@ -33,6 +33,11 @@ compatible paths remain in `output/` without duplicating ZIP storage. Older
 distributions are archived separately.
 
 ## Earlier progress notes
+
+The separate [Overflow 0.4.2 lava hotfix](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/overflow-0.4.2)
+restores source-derived HDR glow while preserving geometry, collision and baked
+lighting. The anniversary RC1 remains unchanged at Overflow 0.4.1.
+See [the comparison and native validation](docs/candidates/overflow-lava-2026-10-28.md).
 
 Earlier Northstar previews: Overflow **0.4.0**, Party Crasher **0.6.2**
 (`mp_party_crasher`) and Firing Range **0.5.1** (`mp_apex_firing_range`). These have native

@@ -1,13 +1,14 @@
 {
-  "version": "0.4.1",
+  "version": "0.4.2",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
   "full_release_ready": false,
-  "bsp_sha256": "81885e45eec5ad13d31a28bf5021aae74e64d7d62661c37cad66ffabe0cf7ea7",
+  "bsp_sha256": "e056527167fd6ec7c38fb9084cf5e5d97fffab63de7dad1e7358586971ae2fc1",
   "validated_modes": [
     "ps",
     "ffa"
   ],
-  "render_fraction": 0.9445323944091797
+  "render_fraction": 0.9430980682373047,
+  "lava_hdr_verified": true
 }

@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-28",
+  "version": "0.4.2",
+  "baseline_version": "0.4.1",
+  "northstar": "1.31.14",
+  "source_emission_tint": [
+    10.0,
+    10.0,
+    10.0
+  ],
+  "changed_bsp_lumps": [
+    43,
+    44
+  ],
+  "geometry_collision_lighting_preserved": true,
+  "candidate_bsp_sha256": "e056527167fd6ec7c38fb9084cf5e5d97fffab63de7dad1e7358586971ae2fc1",
+  "driver_shader_creation": true,
+  "shader_regression_tests": 5,
+  "nonempty_shader_variants": 8,
+  "original_assets": {
+    "original_materials_unchanged": 354,
+    "original_textures_unchanged": 829,
+    "original_assets_present": 1201,
+    "new_assets": 8
+  },
+  "passed": true,
+  "modes": [
+    {
+      "mode": "ps",
+      "spawns": 24,
+      "all_clear_and_supported": true
+    },
+    {
+      "mode": "ffa",
+      "spawns": 24,
+      "all_clear_and_supported": true
+    }
+  ],
+  "both_ps_teams": true,
+  "postmatch_lobby": true,
+  "stock_and_converted_reload": true,
+  "weapon_fire": true,
+  "single_client_only": true,
+  "safety_entities_preserved": true,
+  "script_errors": 0,
+  "native_crashes": 0,
+  "captures": [
+    {
+      "name": "lava-channel",
+      "width": 1280,
+      "height": 720,
+      "captured": 1793177604.629755,
+      "sha256": "6644da11db873686130021a9bdc4ddbaace857f5127564db2567ebf80fd4e9c1"
+    },
+    {
+      "name": "north-platform",
+      "width": 1280,
+      "height": 720,
+      "captured": 1793177613.380815,
+      "sha256": "49eb005386d4d4c5d9d613f68c7f6cffdd9e8da30c9dceb5622435f21afc9905"
+    },
+    {
+      "name": "overview",
+      "width": 1280,
+      "height": 720,
+      "captured": 1793177622.0931008,
+      "sha256": "fe8458056546c079963201010254dcea0489886ec9ebeb0fe7f9d418fb1736dd"
+    }
+  ],
+  "r5r_reference_date": "2026-10-18",
+  "native_capture_date": "2026-10-28",
+  "package": {
+    "name": "ArenaOverflow-0.4.2-Northstar.zip",
+    "bytes": 431615977,
+    "sha256": "d127d0974635506db713eed19b4de9e2aa7181aad6ed643b145f3fb1abf5350d",
+    "verified_files": 23
+  },
+  "limitations": [
+    "Source scrolling/distortion not reconstructed",
+    "Emission multiply detail frozen into the two source emissive maps",
+    "Single-client PS/FFA validation; multiplayer load, dedicated servers and AI unverified."
+  ]
+}
