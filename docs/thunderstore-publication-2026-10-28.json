@@ -1,0 +1,107 @@
+{
+  "verified_at_utc": "2026-10-28T12:41:09.088638+00:00",
+  "namespace": "taskinoz",
+  "community": "northstar",
+  "workflow_run": "https://github.com/taskinoz/apex-to-titanfall-2/actions/runs/40686737045",
+  "source_commit": "ce8466bf722b69528b582f43fdcd9d38027a34cb",
+  "catalog_sha256": "5964f7c5092753222f0de33c45953c7eca53eb34bff57b0da987315cb6ebea21",
+  "tests_passed": 13,
+  "runtime_bytes_preserved_by_ci": true,
+  "native_gameplay_retested": false,
+  "packages": [
+    {
+      "mod": "ApexMaps.UI",
+      "title": "Apex Maps UI",
+      "full_name": "taskinoz-ApexMaps_UI-0.2.1",
+      "version_number": "0.2.1",
+      "is_active": true,
+      "dependencies": [],
+      "download_url": "https://thunderstore.io/package/download/taskinoz/ApexMaps_UI/0.2.1/",
+      "package_url": "https://thunderstore.io/c/northstar/p/taskinoz/ApexMaps_UI/"
+    },
+    {
+      "mod": "PhaseRunner",
+      "title": "Phase Runner",
+      "full_name": "taskinoz-Phase_Runner-1.7.2",
+      "version_number": "1.7.2",
+      "is_active": true,
+      "dependencies": [
+        "taskinoz-ApexMaps_UI-0.2.1"
+      ],
+      "download_url": "https://thunderstore.io/package/download/taskinoz/Phase_Runner/1.7.2/",
+      "package_url": "https://thunderstore.io/c/northstar/p/taskinoz/Phase_Runner/"
+    },
+    {
+      "mod": "ArenaComposite",
+      "title": "Drop-Off",
+      "full_name": "taskinoz-Drop_Off-0.10.1",
+      "version_number": "0.10.1",
+      "is_active": true,
+      "dependencies": [
+        "taskinoz-ApexMaps_UI-0.2.1"
+      ],
+      "download_url": "https://thunderstore.io/package/download/taskinoz/Drop_Off/0.10.1/",
+      "package_url": "https://thunderstore.io/c/northstar/p/taskinoz/Drop_Off/"
+    },
+    {
+      "mod": "ApexFiringRange",
+      "title": "Firing Range",
+      "full_name": "taskinoz-Firing_Range-0.5.1",
+      "version_number": "0.5.1",
+      "is_active": true,
+      "dependencies": [
+        "taskinoz-ApexMaps_UI-0.2.1"
+      ],
+      "download_url": "https://thunderstore.io/package/download/taskinoz/Firing_Range/0.5.1/",
+      "package_url": "https://thunderstore.io/c/northstar/p/taskinoz/Firing_Range/"
+    },
+    {
+      "mod": "ArenaPartyCrasher",
+      "title": "Party Crasher",
+      "full_name": "taskinoz-Party_Crasher-0.6.4",
+      "version_number": "0.6.4",
+      "is_active": true,
+      "dependencies": [
+        "taskinoz-ApexMaps_UI-0.2.1"
+      ],
+      "download_url": "https://thunderstore.io/package/download/taskinoz/Party_Crasher/0.6.4/",
+      "package_url": "https://thunderstore.io/c/northstar/p/taskinoz/Party_Crasher/"
+    },
+    {
+      "mod": "ArenaOverflow",
+      "title": "Overflow",
+      "full_name": "taskinoz-Overflow-0.4.2",
+      "version_number": "0.4.2",
+      "is_active": true,
+      "dependencies": [
+        "taskinoz-ApexMaps_UI-0.2.1"
+      ],
+      "download_url": "https://thunderstore.io/package/download/taskinoz/Overflow/0.4.2/",
+      "package_url": "https://thunderstore.io/c/northstar/p/taskinoz/Overflow/"
+    },
+    {
+      "mod": "ArenaThermalStation",
+      "title": "Thermal Station",
+      "full_name": "taskinoz-Thermal_Station-0.1.2",
+      "version_number": "0.1.2",
+      "is_active": true,
+      "dependencies": [
+        "taskinoz-ApexMaps_UI-0.2.1"
+      ],
+      "download_url": "https://thunderstore.io/package/download/taskinoz/Thermal_Station/0.1.2/",
+      "package_url": "https://thunderstore.io/c/northstar/p/taskinoz/Thermal_Station/"
+    },
+    {
+      "mod": "ArenaThunderdome",
+      "title": "Thunderdome",
+      "full_name": "taskinoz-Thunderdome-0.1.1",
+      "version_number": "0.1.1",
+      "is_active": true,
+      "dependencies": [
+        "taskinoz-ApexMaps_UI-0.2.1"
+      ],
+      "download_url": "https://thunderstore.io/package/download/taskinoz/Thunderdome/0.1.1/",
+      "package_url": "https://thunderstore.io/c/northstar/p/taskinoz/Thunderdome/"
+    }
+  ]
+}
