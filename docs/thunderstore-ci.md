@@ -3,7 +3,7 @@
 The `Publish Northstar maps to Thunderstore` Actions workflow publishes under
 the **taskinoz** team, matching Enhanced Menu Mod. The repository Actions secret
 **TS_KEY** holds the Thunderstore service-account token; it is passed only to
-the publishing step as `TCLI_AUTH_TOKEN`. Never put it in source, release assets
+the configuration check and publishing steps (the latter as `TCLI_AUTH_TOKEN`). Never put it in source, release assets
 or workflow inputs. Existing GitHub secrets cannot be read or copied between repos.
 
 ## First upload and manual runs
@@ -22,6 +22,12 @@ Publishing does not run on pull requests; those run offline package tests only.
 Runs serialize to avoid concurrent version uploads. Failed batches can be rerun:
 already-published packages are downloaded and compared before being skipped.
 Different content at an existing version fails rather than overwriting it.
+The version check bypasses cached API responses so a stale negative lookup does
+not attempt to publish an existing version. For a failed upload, set `reuse_run`
+to the previous main-branch manual publishing run ID. CI downloads its saved
+artifacts, verifies catalog provenance and output hashes, then uploads the
+selected packages without recompressing the maps. Only this repository's named
+publishing workflow on main is accepted; artifacts expire after seven days.
 
 ## Release inputs and package layout
 

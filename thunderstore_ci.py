@@ -7,6 +7,7 @@ import re
 import shutil
 import struct
 import subprocess
+import time
 import urllib.error
 import urllib.request
 import zipfile
@@ -133,6 +134,15 @@ def build(package, source, out, namespace='taskinoz'):
                 if hashlib.sha256(check.read(name)).hexdigest() != expected:
                     raise ValueError('Repack changed runtime bytes')
         temporary.replace(target)
+    config_path = write_config(package, folder, namespace)
+    return dict(mod=mod, name=name, version=version, namespace=namespace,
+                path=str(target.resolve()), config=str(config_path.resolve()),
+                sha256=digest(target), source_sha256=package['sha256'], runtime_sha256=hashes)
+
+
+def write_config(package, folder, namespace):
+    name, version = package['name'], package['version']
+    dependencies = [] if package['mod'] == UI else [f'{namespace}-ApexMaps_UI-0.2.1']
     quoted = json.dumps
     config = ('[config]\nschemaVersion = "0.0.1"\n[package]\n'
               + '\n'.join(f'{key} = {quoted(value)}' for key, value in {
@@ -145,9 +155,40 @@ def build(package, source, out, namespace='taskinoz'):
               + '[publish.categories]\nnorthstar = []\n')
     config_path = folder/'thunderstore.toml'
     config_path.write_text(config, encoding='utf-8')
-    return dict(mod=mod, name=name, version=version, namespace=namespace,
-                path=str(target.resolve()), config=str(config_path.resolve()),
-                sha256=digest(target), source_sha256=package['sha256'], runtime_sha256=hashes)
+    return config_path
+
+
+def reuse(run, out, selector):
+    if not re.fullmatch(r'\d+', run):
+        raise ValueError('Expected numeric CI run ID')
+    info = json.loads(subprocess.check_output(['gh', 'run', 'view', run, '--repo', REPO,
+                     '--json', 'headBranch,event,name']))
+    if (info['headBranch'] != 'main' or info['event'] != 'workflow_dispatch' or
+            info['name'] != 'Publish Northstar maps to Thunderstore'):
+        raise ValueError('Reuse requires this trusted main-branch publishing workflow')
+    subprocess.run(['gh', 'run', 'download', run, '--repo', REPO,
+                    '--name', 'thunderstore-packages-'+run, '--dir', str(out)], check=True)
+    locked = {p['mod']: p for p in select(catalog(), selector)}
+    receipts = []
+    for r in json.loads((out/'receipts.json').read_text()):
+        if r['mod'] not in locked:
+            continue
+        p = locked[r['mod']]
+        if (r['name'], r['version'], r['namespace'], r['source_sha256']) != (
+                p['name'], p['version'], 'taskinoz', p['sha256']):
+            raise ValueError('Artifact receipt differs from reviewed catalog')
+        folder = out/p['name']
+        target = folder/f'taskinoz-{p["name"]}-{p["version"]}.zip'
+        if digest(target) != r['sha256']:
+            raise ValueError('Artifact ZIP hash mismatch')
+        with zipfile.ZipFile(target) as z:
+            for name in ('README.md', 'icon.png'):
+                (folder/name).write_bytes(z.read(name))
+        r.update(path=str(target.resolve()), config=str(write_config(p, folder, 'taskinoz').resolve()))
+        receipts.append(r)
+    if {r['mod'] for r in receipts} != set(locked):
+        raise ValueError('Artifacts do not contain every selected package')
+    return sorted(receipts, key=lambda r: (r['mod'] != UI, r['mod']))
 
 
 def publish(receipts):
@@ -156,9 +197,10 @@ def publish(receipts):
     for r in receipts:
         if digest(r['path']) != r['sha256']:
             raise ValueError('Prepared ZIP changed')
-        url = f'https://thunderstore.io/api/experimental/package/{r["namespace"]}/{r["name"]}/{r["version"]}/'
+        # Thunderstore/CDN negative caching can briefly hide a newly published version.
+        url = f'https://thunderstore.io/api/experimental/package/{r["namespace"]}/{r["name"]}/{r["version"]}/?ci={time.time_ns()}'
         try:
-            request = urllib.request.Request(url, headers={'User-Agent': 'ApexMapPublisher/1.0 (+https://github.com/taskinoz/apex-to-titanfall-2)'})
+            request = urllib.request.Request(url, headers={'User-Agent': 'ApexMapPublisher/1.0 (+https://github.com/taskinoz/apex-to-titanfall-2)', 'Cache-Control': 'no-cache'})
             with urllib.request.urlopen(request, timeout=60) as response:
                 existing = json.load(response)
         except urllib.error.HTTPError as e:
@@ -185,11 +227,17 @@ def main():
     p.add_argument('--namespace', default='taskinoz')
     p.add_argument('--output', type=Path, default=ROOT/'output/thunderstore')
     p.add_argument('--source-dir', type=Path, help='Use already-downloaded accepted ZIPs')
+    p.add_argument('--reuse-run', help='Reuse verified artifacts from this main-branch publishing run')
     p.add_argument('--publish', action='store_true', help='Publish previously prepared receipts in output')
     args = p.parse_args()
     receipt_path = args.output/'receipts.json'
     if args.publish:
         publish(json.loads(receipt_path.read_text()))
+        return
+    if args.reuse_run:
+        receipts = reuse(args.reuse_run, args.output, args.select)
+        receipt_path.write_text(json.dumps(receipts, indent=2)+'\n')
+        print('Verified and reused', len(receipts), 'packages', flush=True)
         return
     receipts = []
     for package in select(catalog(), args.select):
