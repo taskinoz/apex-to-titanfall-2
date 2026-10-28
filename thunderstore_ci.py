@@ -199,8 +199,8 @@ def reuse(run, out, selector):
         p = locked[r['mod']]
         # Migrate only the exact receipt-name bug in the first trusted run;
         # ZIP names, source hashes, runtime hashes and output digests are intact.
-        legacy_name = f'mods/taskinoz.{p["mod"]}/paks/rpak.json'
-        if r['name'] == legacy_name and legacy_name in r['runtime_sha256']:
+        legacy_name = max(r['runtime_sha256'], default='')
+        if r['name'] == legacy_name and legacy_name.startswith(f'mods/taskinoz.{p["mod"]}/'):
             r['name'] = p['name']
         if (r['name'], r['version'], r['namespace'], r['source_sha256']) != (
                 p['name'], p['version'], 'taskinoz', p['sha256']):

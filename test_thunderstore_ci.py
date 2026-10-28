@@ -96,9 +96,10 @@ class PackagingTests(unittest.TestCase):
                 ci.reuse('123', self.root/'out', 'current')
 
     def test_reuse_restores_outputs_and_skips_old_source_duplicates(self):
-        receipt = ci.build(self.package, self.source(), self.root/'built')
+        source = self.source(extra='ArenaOverflow/paks/zz_sorted_last.rpak')
+        receipt = ci.build(self.package, source, self.root/'built')
         source_zip = Path(receipt['path']).read_bytes()
-        receipt['name'] = 'mods/taskinoz.ArenaOverflow/paks/rpak.json'
+        receipt['name'] = 'mods/taskinoz.ArenaOverflow/paks/zz_sorted_last.rpak'
         run = json.dumps(dict(headBranch='main', event='workflow_dispatch', name='Publish Northstar maps to Thunderstore')).encode()
         artifacts = json.dumps({'artifacts': [dict(id=1, name='thunderstore-packages-123', expired=False),
                                              dict(id=2, name='thunderstore-packages-123', expired=False)]}).encode()
