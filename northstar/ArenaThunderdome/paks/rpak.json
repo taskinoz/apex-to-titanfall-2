@@ -5,6 +5,7 @@
   },
   "Postload": {
     "thunderdome_world.rpak": "mp_coliseum.rpak",
-    "thunderdome_presentation.rpak": "common.rpak"
+    "thunderdome_presentation.rpak": "common.rpak",
+    "thunderdome_props.rpak": "mp_coliseum.rpak"
   }
 }

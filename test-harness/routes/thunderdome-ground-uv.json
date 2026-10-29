@@ -1,0 +1,141 @@
+{
+ "map": "mp_thunderdome",
+ "mode": "ps",
+ "shots": [
+  {
+   "name": "r2-blurry-ground-y0",
+   "origin": [
+    -4368,
+    -1624,
+    858.224
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r2-blurry-ground-y90",
+   "origin": [
+    -4368,
+    -1624,
+    858.224
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r2-blurry-ground-down",
+   "origin": [
+    -4368,
+    -1624,
+    858.224
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r3-green-ground-y0",
+   "origin": [
+    -4017.08,
+    -982.442,
+    855.859
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r3-green-ground-y90",
+   "origin": [
+    -4017.08,
+    -982.442,
+    855.859
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r3-green-ground-down",
+   "origin": [
+    -4017.08,
+    -982.442,
+    855.859
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r6-invisible-geo-y0",
+   "origin": [
+    -3557.88,
+    -451.787,
+    1031.242
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r6-invisible-geo-y90",
+   "origin": [
+    -3557.88,
+    -451.787,
+    1031.242
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r6-invisible-geo-down",
+   "origin": [
+    -3557.88,
+    -451.787,
+    1031.242
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  }
+ ]
+}
