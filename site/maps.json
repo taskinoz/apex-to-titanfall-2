@@ -89,6 +89,40 @@
       ],
       "notes": "Rocks now collide with the shape you see: 329 rocks drawn at coarse detail had full-detail Apex collision, which left invisible rock to bump into and visible rock to fall into. Their collision is now the drawn shape, and spawns that stood on the old shape were moved onto the visible ground. Invisible player clips left around the missing shooting-range targets are removed. Invisible collision across the playable area drops from about 16% to under 3% of collision surface. Includes 0.5.0 blending and rock detail. Weapon stations, targets, foliage and AI navigation remain absent. Restart between previews.",
       "download": null
+    },
+    {
+      "id": "thermal-station",
+      "name": "Thermal Station",
+      "package": "ArenaThermalStation",
+      "source_map": "mp_rr_desertlands_mu2",
+      "target_map": "mp_thermal_station",
+      "route": "test-harness/routes/thermal-station-site-survey.json",
+      "comparison": "output/site-galleries-2026-10-30/thermal-station",
+      "status": "Early preview",
+      "description": "World's Edge's geothermal station and its lava fields, cut out of the battle royale map as a pilot arena.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Converted from current Apex. The arena is cut from the full World's Edge map with its own collision, lighting and storm sky. Bright overlays and z-fighting dirt were retired after the first playtest. There is no R5Reloaded source for this version of the map, so the gallery shows the port only.",
+      "download": null
+    },
+    {
+      "id": "thunderdome",
+      "name": "Thunderdome",
+      "package": "ArenaThunderdome",
+      "source_map": "mp_rr_thunderdome",
+      "target_map": "mp_thunderdome",
+      "route": "test-harness/routes/thunderdome-site-survey.json",
+      "comparison": "output/site-galleries-2026-10-30/thunderdome",
+      "status": "Early preview",
+      "description": "Fuse's floating arena: wetlands, treehouses and the giant skull, ringed by a stadium crowd.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Converted from current Apex. Over 6,700 Apex props are compiled as native static props with collision, faded foliage and re-baked shadows. The map is split into visibility cells so blocked areas are not drawn, and small clutter fades with distance. Apex's runtime UI screens around the stadium cannot be reproduced and show their static backing. There is no R5Reloaded source for this map, so the gallery shows the port only.",
+      "download": null
     }
   ]
 }

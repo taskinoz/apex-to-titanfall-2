@@ -69,10 +69,18 @@ LAYER2 = '__l2'
 LAYER2_CUTOUT = '__l2c'
 BLEND_RANGE = (0.1, 0.9)
 BLEND_THRESHOLD = {}
-# Holograms (td2_holo_skull_01, td2_holo_signs_01) are additive and two-sided in Apex: they clone common.rpak's
-# crow_dropship_afterburner (blend 0xF0138086, no depth write, rasterizer 0x2) with their illumination (_ilm) map.
+# Glow materials: holograms (td2_holo_skull_01, td2_holo_signs_01) and every other material that is additive in Apex
+# (blend 0xF0138086, RSX_ADDITIVE; td2_metal_sheet_seam_emiss_01). Titanfall's additive templates (crow_dropship_
+# afterburner, beacon_big_screen_animation_01) drew nothing at all on the Thunderdome skull (30 October 2026), and
+# led_light01 stopped the map loading, so a glow is drawn as a lit cutout: illumination map x the section's constant
+# vertex tint (TINTS; the seams are 193, 61, 72) x its mask, keeping texels where the mask, or else the glow, exceeds
+# GLOW_CUT.
 HOLO = re.compile(r'holo')
-ADDITIVE_TEMPLATE = 'models\\vehicle\\crow_dropship\\crow_dropship_afterburner'
+GLOW_CUT = 24
+TINTS = {}  # material -> uniform non-white vertex RGB, filled by compile_model
+# Props larger than LIGHT_RADIUS take their light probe and lighting origin from the top of their bounds: one probe
+# at the base of the 2,700-unit skull sat in its shadow and drew it black.
+LIGHT_RADIUS = 512.
 TEXTURE_CAP = 512
 # Alpha-tested (cutout) materials clone Homestead's grass: glue 0x560000B0, two-sided, common.rpak's foliage shader
 # set, and per-material shadow/prepass/VSM depth materials that sample the albedo's alpha (all shaders resident in
@@ -162,7 +170,13 @@ def compile_model(ident, model, skin, out, work):
         smd(w/f'lod{lod}.smd', [s for s, _ in keep], [k for _, k in keep], names, NAMESPACE+'/'+ident)
         used.update(names[k] for _, k in keep); lods.append(lod)
         if lod == 0:
-            radius = float(np.linalg.norm(np.concatenate([np.asarray(s, 'f4').reshape(-1, 12)[:, :3] for s, _ in keep]), axis=1).max())
+            verts = np.concatenate([np.asarray(s, 'f4').reshape(-1, 12) for s, _ in keep])
+            radius = float(np.linalg.norm(verts[:, :3], axis=1).max())
+            top = [*((verts[:, :2].min(0)+verts[:, :2].max(0))/2).tolist(), float(verts[:, 2].max())]
+            for s, k in keep:
+                rgb = np.asarray(s, 'f4').reshape(-1, 12)[:, 8:11]
+                if rgb.std(0).max() < 2 and rgb.mean() < 250:
+                    TINTS.setdefault(names[k], tuple(rgb.mean(0).round().astype(int).tolist()))
     if not lods:
         return None
     qc = [f'$modelname "{target}"', '$cdmaterials ""', '$body "body" "lod0.smd"', '$staticprop', '$surfaceprop "default"',
@@ -178,7 +192,7 @@ def compile_model(ident, model, skin, out, work):
     (w/'compile.log').write_text(run.stdout+run.stderr)
     if run.returncode:
         raise RuntimeError(f'{model}: '+run.stdout[-2000:]+run.stderr)
-    return dict(mdl='models/'+target, materials=sorted(used), radius=radius, lods=len(lods), bytes=mdl.stat().st_size, fade=fade)
+    return dict(mdl='models/'+target, materials=sorted(used), radius=radius, top=top, lods=len(lods), bytes=mdl.stat().st_size, fade=fade)
 
 
 DXGI = {71: 'BC1_UNORM', 72: 'BC1_UNORM_SRGB', 74: 'BC2_UNORM', 75: 'BC2_UNORM_SRGB', 77: 'BC3_UNORM', 78: 'BC3_UNORM_SRGB',
@@ -213,7 +227,7 @@ def rsx_index(work):
     material GUID (pak GUID of `material/<json name>_<shader>.rpak`) and by base name (rigid `_rgdp` preferred);
     each value lists (slot, semantic, first-layer DDS) for the fix shader's four slots."""
     folders = [p for root in RSX_ROOTS for p in root.glob('**/exported_files/material/*') if (p/(p.name+'.json')).exists()]
-    RSX_LAYER2.clear(); RSX_ILM.clear(); RSX_MASK.clear()
+    RSX_LAYER2.clear(); RSX_ILM.clear(); RSX_MASK.clear(); RSX_ADDITIVE.clear()
 
     def entry(p):
         try:
@@ -232,11 +246,15 @@ def rsx_index(work):
         if not spec.get('name') or '_colpass' in p.name:
             return None
         base = spec['name'].rsplit('/', 1)[-1]
-        # Layer 1's projection graphic and its coverage mask (td2_holo_skull_01_1_ilm / _1_msk); the unnumbered
-        # _ilm is the dot-grid scanline overlay.
-        pick = lambda kind: sorted(p.glob(f'*_{kind}.dds'), key=lambda f: ('_1_' not in f.name, f.name))
-        if pick('ilm'):
-            RSX_ILM.setdefault(base, (pick('ilm')[0], (pick('msk') or [None])[0]))
+        # A projection layer with its coverage mask (td2_holo_skull_01_1_ilm / _1_msk; the skull's unnumbered _ilm is
+        # a dot-grid scanline overlay), else the first illumination map (the seams' _ilm strip; their 1 x 2048 _msk is
+        # a pulse ramp, not a UV mask).
+        layer = sorted(p.glob('*_1_msk.dds'))
+        ilm = [p/(layer[0].name.replace('_msk', '_ilm'))] if layer else sorted(p.glob('*_ilm.dds'), key=lambda f: ('_1_' in f.name, f.name))
+        if ilm and ilm[0].exists() and (base not in RSX_ILM or layer and RSX_ILM[base][1] is None):  # another export may lack the mask
+            RSX_ILM[base] = (ilm[0], layer[0] if layer else None)
+        if spec.get('blendStates', ['0x0'])[0] == '0xF0138086':
+            RSX_ADDITIVE.add(base)
         if second:
             RSX_LAYER2.setdefault(base, second)
         mask = [p/(Path(refs[k]).stem+'.dds') for k, t in sorted(types.items(), key=lambda x: int(x[0])) if t == '_bm']
@@ -244,7 +262,8 @@ def rsx_index(work):
             RSX_MASK.setdefault(base, mask[0])
         if not any(s == '0' for s, _, _ in out):
             return None
-        return f'{pakguid("material/"+spec["name"]+"_"+p.name.rsplit("_", 1)[1]+".rpak"):016X}', spec['name'].rsplit('/', 1)[-1], p.name, out
+        # Unpadded, as Cast's numeric material names: 0x034717147C928E10 is `0x34717147C928E` (td2_rui_screen_bg).
+        return f'{pakguid("material/"+spec["name"]+"_"+p.name.rsplit("_", 1)[1]+".rpak"):X}', spec['name'].rsplit('/', 1)[-1], p.name, out
 
     with concurrent.futures.ThreadPoolExecutor(16) as pool:
         entries = [e for e in pool.map(entry, folders) if e]
@@ -256,6 +275,7 @@ def rsx_index(work):
 
 
 RSX_LAYER2, RSX_ILM, RSX_MASK = {}, {}, {}  # filled by rsx_index: base name -> second-layer (slot, semantic, DDS) / (_ilm, _msk) DDS
+RSX_ADDITIVE = set()  # base names whose Apex material is additive
 RSX = Path('D:/Games/ApexToTitanfallWork/rsx-latest/bin/Release_NoGui/rsx.exe')
 APEX_PAKS = Path('D:/Games/Apex/paks/Win64')
 ASSET_LIST = ROOT/'output/thunderdome-repair-2026-10-29/shared-export/all-assets.csv'  # repair_thunderdome.py --list
@@ -341,11 +361,10 @@ def materials(ident, names, world_mapping, world_assets, work):
             return resolve_cutout_layer2(name)
         if name.endswith(LAYER2):
             return resolve_layer2(name.removesuffix(LAYER2))
-        if HOLO.search(name.lower()):
-            ilm = RSX_ILM.get(name) or RSX_ILM.get(variant(name, RSX_ILM) or '')
-            if ilm:
-                report['hologram'] += 1; holograms.add(name)
-                return {'0': add(name, 'illum', ilm[0]), '13': add(name, 'mask', ilm[1]) if ilm[1] else white}
+        base = name if name in RSX_ILM else variant(name, RSX_ILM) or name  # td2_holo_skull_01, not its _uh variant
+        if (HOLO.search(name.lower()) or base in RSX_ADDITIVE) and base in RSX_ILM:
+            report['glow'] += 1
+            return dict(neutral, **{'0': glow(name, *RSX_ILM[base])})
         if name in world_mapping and world_mapping[name].get('recovered'):
             report['world'] += 1  # the fix shader has slots 0-3 only (no blend layers)
             return dict(neutral, **{k: own(v) for k, v in world_mapping[name]['textures'].items() if k in ('0', '1', '2', '3')})
@@ -356,7 +375,8 @@ def materials(ident, names, world_mapping, world_assets, work):
                 return dict(neutral, **{slot: add(name, semantic, source/f'{v}_{semantic}Texture.dds') for slot, semantic in SEMANTICS
                                         if (source/f'{v}_{semantic}Texture.dds').exists()})
         # RSX layout: Cast names unexported materials by the top digits of their GUID (0x40AEDBA289B54).
-        rsx = by_name.get(name) or by_name.get(variant(name, by_name) or '') or             next((v for g, v in by_guid.items() if name.startswith('0x') and g.startswith(name[2:].upper())), None)
+        rsx = by_name.get(name) or by_name.get(variant(name, by_name) or '') or \
+            next((v for g, v in by_guid.items() if name.startswith('0x') and g.startswith(name[2:].upper())), None)
         if rsx:
             report['rsx'] += 1
             return dict(neutral, **{slot: add(name, semantic, src) for slot, semantic, src in rsx})
@@ -405,14 +425,23 @@ def materials(ident, names, world_mapping, world_assets, work):
         report['blend_cutout'] += 1
         return dict(layer2, **{'0': path})
 
-    holograms = set()
-    white = f'texture/{NAMESPACE}/{slug}/opaque_white.rpak'
-    wpath = (assets/white).with_suffix('.dds')
-    Image.new('L', (16, 16), 255).save(wpath.with_suffix('.png'))
-    subprocess.run([str(ROOT/'tools/directxtex/texconv.exe'), '-nologo', '-y', '-m', '0', '-f', 'BC4_UNORM', '-o', str(wpath.parent),
-                    str(wpath.with_suffix('.png'))], check=True, capture_output=True); wpath.with_suffix('.png').unlink()
-    files.append({'_type': 'txtr', '_path': white, '$disableStreaming': True})
-    additive = pak.material(next(a for a in pak.assets if a['guid'] == pakguid(f'material/{ADDITIVE_TEMPLATE.replace(chr(92), "/")}_fix.rpak')))
+    def glow(name, ilm, mask):
+        """Cutout albedo: illumination x vertex tint x mask, alpha from the mask (or the glow) above GLOW_CUT."""
+        from restore_banner_display_textures import image_dds
+        rgb = np.asarray(image_dds(ilm).convert('RGB'), 'f4')*np.asarray(TINTS.get(name, (255, 255, 255)), 'f4')/255
+        m = np.asarray(image_dds(mask).convert('L').resize(rgb.shape[1::-1], Image.Resampling.BILINEAR), 'f4') if mask else rgb.max(2)
+        if mask:
+            rgb *= m[..., None]/255
+        path = f'texture/{NAMESPACE}/{slug}/{name}_glow.rpak'; dest = (assets/path).with_suffix('.dds')
+        with locks[path]:
+            if path not in cutout:
+                dest.parent.mkdir(parents=True, exist_ok=True); png = dest.with_suffix('.png')
+                Image.fromarray(np.dstack([rgb.clip(0, 255), np.where(m > GLOW_CUT, 255, 0)]).astype('u1')).save(png)
+                subprocess.run([str(ROOT/'tools/directxtex/texconv.exe'), '-nologo', '-y', '-m', '0', '-f', 'BC3_UNORM_SRGB', '-srgb',
+                                '-o', str(dest.parent), str(png)], check=True, capture_output=True); png.unlink()
+                files.append({'_type': 'txtr', '_path': path, '$disableStreaming': True}); cutout[path] = True
+        return path
+
     with concurrent.futures.ThreadPoolExecutor(8) as pool:
         resolved = dict(zip(names, pool.map(resolve, names)))
     # A cutout second layer without a blend mask draws layer 1 again (its lifted copy then matches the surface).
@@ -423,11 +452,9 @@ def materials(ident, names, world_mapping, world_assets, work):
         target.write_text(json.dumps(spec, indent=2)); target.with_suffix('.uber').write_bytes(uber)
 
     for name, textures in resolved.items():
-        holo = name in holograms
-        cut = not holo and cutout.get(textures['0'], False); report['cutout'] += cut
+        cut = cutout.get(textures['0'], False); report['cutout'] += cut
         for kind in ('fix', 'skn'):
-            spec, uber = additive if holo else alpha['fix'] if cut and kind == 'fix' else \
-                templates[pakguid(f'material/{TEMPLATE.replace(chr(92), "/")}_{kind}.rpak')]
+            spec, uber = alpha['fix'] if cut and kind == 'fix' else templates[pakguid(f'material/{TEMPLATE.replace(chr(92), "/")}_{kind}.rpak')]
             spec = dict(spec, name=f'{NAMESPACE}/{ident}/{name}', shaderType=kind, blendStates=spec['blendStates']+['0x0']*4,
                         **{'$textures': textures, '$colpassMaterial': '0x0'})
             if cut and kind == 'fix':  # depth passes are auto-added by RePak from these paths
@@ -453,6 +480,14 @@ def is_cutout(dds_path):
     from restore_banner_display_textures import image_dds
     a = np.asarray(image_dds(dds_path).convert('RGBA'))[..., 3]
     return bool((a < 128).mean() > CUTOUT_FRACTION)
+
+
+def lighting_point(p, b):
+    """The placement origin, or for a prop over LIGHT_RADIUS the top centre of its bounds plus 64 units."""
+    if b['radius']*p['scale'] <= LIGHT_RADIUS:
+        return list(p['origin'])
+    from stage_prop_geometry import rotation
+    return (np.asarray(rotation(p['angles'])) @ np.asarray(b['top'])*p['scale']+np.asarray(p['origin'])+[0, 0, 64]).tolist()
 
 
 def nearest_probes(bsp, points):
@@ -505,8 +540,9 @@ def build(ident, source, with_foliage):
         flags = r[31] | (NO_SHADOW if b['fade'] and b['radius'] < FOLIAGE_FADE[0][0] else 0)
         struct.pack_into('<HBB', r, 28, models.index(b['mdl']), 0, flags); struct.pack_into('<HH', r, 32, 0, 0xffff)
         struct.pack_into('<f', r, 36, b['fade']*p['scale'] if b['fade'] else -1.)
-        struct.pack_into('<3f', r, 40, *p['origin'])
-        placements.append(bytes(r)); points.append(p['origin'])
+        light = lighting_point(p, b)
+        struct.pack_into('<3f', r, 40, *light)
+        placements.append(bytes(r)); points.append(light)
     bsp = next((dst/'mod/maps').glob('*.bsp'))
     result = add_stock_props.apply(bsp, models, placements, solid=False, probes=nearest_probes(bsp, np.asarray(points)))
     report = dict(result, source=str(source), selected=len(props), foliage=with_foliage, models=len(models),

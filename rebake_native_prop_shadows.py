@@ -149,9 +149,9 @@ def rebake(ident, package):
     probes = probe_lump(np.fromfile(work/'probes.bin', '<f4').reshape(len(positions), 24))
     temp = bsp.with_suffix('.shadows.bsp')
     compact(bsp, temp, {0x62: sky.tobytes(), 0x69: bytes(rtl), 0x65: probes}); os.replace(temp, bsp)
-    # Re-pick each prop's lit probe against the new probe values (positions are unchanged).
+    # Re-pick each prop's lit probe against the new probe values (positions are unchanged), at its lighting origin.
     names, recs = build_native_props.add_stock_props.sprp(bsp)
-    points = np.array([struct.unpack_from('<3f', r) for r in recs]); picks = nearest_probes(bsp, points)
+    points = np.array([struct.unpack_from('<3f', r, 40) for r in recs]); picks = nearest_probes(bsp, points)
     lump = read_lumps(bsp, (0x66,))[0x66]
     if len(lump) != 4*len(recs):
         raise ValueError('0x66 does not match the placements')

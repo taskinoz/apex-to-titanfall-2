@@ -1,0 +1,112 @@
+{
+ "map": "mp_thunderdome",
+ "mode": "ps",
+ "shots": [
+  {
+   "name": "warmup",
+   "origin": [
+    0,
+    -7500,
+    4500
+   ],
+   "angles": [
+    30,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 8
+  },
+  {
+   "name": "overview-south",
+   "origin": [
+    0,
+    -7500,
+    4500
+   ],
+   "angles": [
+    30,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "overview-north",
+   "origin": [
+    0,
+    7000,
+    4500
+   ],
+   "angles": [
+    30,
+    -90,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "east-start",
+   "origin": [
+    5888,
+    0,
+    1000
+   ],
+   "angles": [
+    5,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "centre",
+   "origin": [
+    0,
+    0,
+    1300
+   ],
+   "angles": [
+    10,
+    45,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "skull",
+   "origin": [
+    2530.5,
+    1059.6,
+    2900
+   ],
+   "angles": [
+    8,
+    225,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  },
+  {
+   "name": "across-arena",
+   "origin": [
+    -2264.17,
+    -1949.95,
+    1633.62
+   ],
+   "angles": [
+    11.68,
+    35.33,
+    0
+   ],
+   "fov": 90,
+   "settle": 4
+  }
+ ],
+ "title": "Thunderdome site survey"
+}
