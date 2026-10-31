@@ -1,7 +1,7 @@
 {
   "source_map": "mp_rr_thunderdome",
   "map": "mp_thunderdome",
-  "version": "0.3.1",
+  "version": "0.2.0",
   "render_triangles": 989999,
   "render_repair": {
     "world_meshes": 3175
@@ -43,7 +43,52 @@
     "native_batch_limit_exit": "engine.dll+0xb74c9",
     "limitation": "This audits a native world-rendering capacity. It does not prove which meshes the running client marks visible or account for earlier index-buffer use in the frame. Static models use a different rendering path."
   },
-  "build": {
+  "source_props": 5426,
+  "missing_props": 6774,
+  "client_verified": true,
+  "lighting": "Existing released lightmaps and character lighting preserved; no new bake",
+  "streaming_sidecar": {
+    "version": "8.0",
+    "materials": 288,
+    "columns": 1600,
+    "bytes": 109419,
+    "native_parser_round_trip": true,
+    "material_guids_verified": true,
+    "coverage": "Native empty columns for resident textures",
+    "client_load_verified": true,
+    "limitation": "No spatial mip coverage or starpak-backed texture streaming yet."
+  },
+  "candidate": false,
+  "release_ready": true,
+  "bsp_sha256": "36318770c982216b1ce6948b7a6dca3ab7e69617e3fd32729e96f9a3e053071b",
+  "client_load_verified": true,
+  "collision_repair": {
+    "physical_props": 5318,
+    "triangles": 807437,
+    "bridge_props": 14,
+    "world_preserved": true
+  },
+  "material_repair": {
+    "recovered_entries": 23,
+    "triangles": 76843,
+    "textures": 74,
+    "deferred": {
+      "trim_metal_01_sand_desert_02_bm": "Layered material requires native blend conversion",
+      "_default": "No original material found",
+      "stencil_corporate_white_01": "Requires separate coverage/emission shader conversion",
+      "road_tracks_dry_03_blend_2_trans": "Requires separate coverage/emission shader conversion",
+      "sand_desert_02_bm_transparent": "Requires separate coverage/emission shader conversion",
+      "ar_control_objective_border_color_1": "Requires separate coverage/emission shader conversion",
+      "engine_exhaust_glow_large": "Requires separate coverage/emission shader conversion",
+      "trim_metal_rust_01_bm": "Layered material requires native blend conversion",
+      "thunderdome_metal_trim_01_sand_desert_02_bm_avt": "Layered material requires native blend conversion",
+      "8529336956448360370": "Requires separate coverage/emission shader conversion",
+      "thunderdome_sky": "No original material found"
+    }
+  },
+  "native_validation": "docs/candidates/thunderdome/port-0.2.0/validation.json",
+  "release_channel": "local-beta",
+  "historical_0_1_1_build": {
     "original_bytes": 1188643612,
     "compact_bytes": 737606324,
     "non_game_lumps_byte_identical": false,
@@ -132,11 +177,7 @@
       "native_triangle_pair_validation": null
     }
   },
-  "source_props": 5426,
-  "missing_props": 6774,
-  "client_verified": false,
-  "lighting": "Coarse source-scene bake pending",
-  "collision": {
+  "historical_0_1_1_collision": {
     "world_triangles": 126819,
     "removed_obsolete_clip_triangles": {},
     "brushes": 2221,
@@ -145,17 +186,28 @@
     "owners": null,
     "missing": null
   },
-  "streaming_sidecar": {
-    "version": "8.0",
-    "materials": 288,
-    "columns": 1600,
-    "bytes": 109419,
-    "native_parser_round_trip": true,
-    "material_guids_verified": true,
-    "coverage": "Native empty columns for resident textures",
-    "client_load_verified": false,
-    "limitation": "No spatial mip coverage or starpak-backed texture streaming yet."
+  "build": {
+    "bytes": 780690420,
+    "collision_only_lumps_changed": [
+      3,
+      66,
+      68,
+      69,
+      86,
+      87,
+      88,
+      89,
+      90,
+      96
+    ],
+    "native_verified": true
   },
-  "candidate": true,
-  "release_ready": false
+  "collision": {
+    "active_world_headers": 705,
+    "active_prop_headers": 11238,
+    "active_prop_triangles": 807437,
+    "world_triangles": 126819,
+    "physical_props": 5318,
+    "ownership": "docs/candidates/thunderdome/port-0.2.0/collision-repair.json"
+  }
 }

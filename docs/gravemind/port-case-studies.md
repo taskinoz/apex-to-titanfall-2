@@ -14,10 +14,10 @@ tags:
 project: apex-to-titanfall-2
 status: verified
 created: 2026-10-11T12:44:29.261Z
-updated: 2026-10-17T16:11:56.580Z
+updated: 2026-10-28T14:18:48.082Z
 created_by: agent:Codex
 updated_by: agent:Claude
-revision: 8
+revision: 9
 ---
 # Phase Runner and Drop-Off: verified conversion case studies
 
@@ -241,3 +241,17 @@ The existing star placeholder in `oasis_signs_ad_atlas_01` is replaced with a ne
 `party_crasher_northstar_screen.py` changes only the existing atlas panel. The source panel rectangle (1266,749)–(2047,1180) maps to native pixels [633,374,1024,591) in the existing 1024-square BC3 sRGB atlas. Its 11 mip levels and header remain unchanged; 80,111 compressed blocks outside the affected panel are byte identical. Preserve existing sRGB bytes rather than applying another gamma conversion. All 599 material definitions/bindings and the pack's 1,888-asset inventory compare identically. No BSP, STBSP, geometry, collision, lights, scripts, UVs or UI atlases change.
 
 The exact mounted candidate was captured from the previous q40 screen camera and a backed-off full-screen view. Artwork is upright and neighboring Oasis signs remain intact. Stock Coliseum and Party Crasher then reloaded with no logged script errors or native crashes. These are single-client visual/reload checks, not new multiplayer or performance certification. Evidence: `docs/candidates/party-crasher/port-0.6.4/validation.json` and `screen-in-game.png`. Previous material pack, original atlas and metadata remain in the isolated build folder `party-crasher/northstar-screen-v1/` for rollback.
+
+## Thunderdome 0.2.0 collision and shared-material repair — 29 October 2026
+
+Immutable published 0.1.1 BSP SHA256: `5181aee05b423466dbe2e98dcaa0c0c294788844c96bd893d83956f9c5ab2c1d`. Retail Apex source is rBSP 52.1. Build-status metadata saying 0.3.1 was stale: the real mod/archive version was 0.1.1. Candidate work uses a separate hardlinked staging tree and detaches every modified file before writing.
+
+Source PHY export had 225 drawn solid placements without a collider: railing trims, industrial lights, pipe sets and two window frames. The collision builder also excluded source solid mode 1 (SOLID_BSP), omitting 14 bridge components. Source full-detail colliders often differ from the coarse selected render LOD. This repair activates 807,437 native triangle faces for 5,318 visible physical props (source solids 1/2/6/7, excluding backdrop), in 11,238 new headers. Every new face is verified against actual native render geometry. A few meshes previously offset by 0.12 units for coplanar fixes are snapped to actual on-disk faces, within a 0.25-unit limit and complete face membership checks. Preserve original position indices, 705 active world headers, world brushes and entity/safety data. Disable 18,657 old prop headers and 2,220 prop brushes in the active grid while retaining their serialized bytes. Source solid 0 remains nonphysical. This is an explicit render-LOD collision adaptation, not an assertion that all Apex PHY data is incorrect.
+
+Material lookup must load the map plus common_early/common/common(01)/common_mp/common_mp(01). Map-only RSX exports leave shared textures and shader semantics unresolved. List all assets separately, resolve decimal material GUIDs by exact GUID, then use each material JSON's exact name and texture semantics; do not guess with suffix aliases. Recovered 23 material entries across 76,843 triangles using 74 unique original colour/normal/gloss/specular textures, with resident mip chains and a 1024 cap. Case aliases share native GUIDs: 44 actual material assets (primary/colour passes) change. All 525 unrelated materials and 947 existing textures compare identically; all 1,534 old pack assets remain. Consolidate into the existing world RPak and preserve dependency ordering/shared UI. Material GUIDs are unchanged, so the resident STBSP catalog remains valid.
+
+RSX raw shader filenames omit leading zeroes. Supporting padded and unpadded GUIDs fixes lookup, but modern DXIL-only containers have no RDEF, so the existing SM5 reflection code still cannot recover their paint/emission constants. Keep neutral tints rather than inventing offsets. Eleven material entries remain deferred, including layered/coverage/emission cases and the zero-triangle sky alias; scenery omissions remain unchanged. No render geometry, lightmaps, world visibility, gameplay scripts, spawns or safety volumes changed. The world draw budget remains 2,974,398/3,145,728 padded indices (94.55%).
+
+Northstar 1.31.14 isolated single-client PS/FFA acceptance passed: all 88 live spawns clear/supported in each mode, both team respawns, firing, postmatch lobby, stock Coliseum and converted-map reload, no logged script errors/native crashes. All 14 bridge samples hit. Of 200 matched contact rays, any hit improves 188→200; contacts within 8 units improve 119→138 and start-solid results reduce 8→1. Other hits can be overlapping world/prop surfaces, so do not claim 200 exact intended-surface contacts or complete movement certification. Four matched native screenshots retained. Eight existing collision/material regression tests pass, plus binary asset/prefix/safety checks.
+
+An extra unsupported CTF trial found absent flag objectives, then server index "3" error and UI stall. That failed experiment is retained; it is not certified CTF support. Fresh supported-mode acceptance passed afterward. Native screenshots still show omitted scenery/ground gaps and approximate authored paints; do not describe this as full visual parity. Evidence: `repair_thunderdome.py`, `docs/candidates/thunderdome/port-0.2.0/`, private `output/thunderdome-repair-2026-10-29/`. Old published archives remain immutable.

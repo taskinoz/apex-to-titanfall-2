@@ -1,0 +1,10 @@
+{
+  "map": "mp_thermal_station",
+  "mode": "ps",
+  "shots": [
+    {"name": "crate-close", "origin": [-2684, -434, 40], "angles": [25, 154.5, 0], "fov": 90, "settle": 3},
+    {"name": "crate-side", "origin": [-2910, -560, 20], "angles": [20, 90, 0], "fov": 90, "settle": 2},
+    {"name": "crate-top", "origin": [-2910, -327, 150], "angles": [89, 154.5, 0], "fov": 90, "settle": 2},
+    {"name": "row-wide", "origin": [-2500, -200, 150], "angles": [35, 163.7, 0], "fov": 90, "settle": 2}
+  ]
+}

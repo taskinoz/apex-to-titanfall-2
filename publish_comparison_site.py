@@ -41,7 +41,8 @@ def export(snapshot, comparison_overrides=None, include_downloads=False, finding
                 if not isinstance(observations,list) or not all(isinstance(x,str) for x in observations):
                     raise ValueError('Findings must be a list of plain-text observations')
                 record['findings']=observations
-            for engine in ('r5r','northstar'):
+            # Current-Apex ports have no R5Reloaded source: their galleries (publish_port_gallery.py) are Northstar only.
+            for engine in ('r5r','northstar') if 'r5r' in pair else ('northstar',):
                 meta=pair[engine];filename=pair['name']+'-'+engine+'.png'
                 image=source/meta['gallery_path']
                 if image.parent.resolve()!=source.resolve():raise ValueError('Image leaves comparison folder')

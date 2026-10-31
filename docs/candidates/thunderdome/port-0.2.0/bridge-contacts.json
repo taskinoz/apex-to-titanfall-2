@@ -1,0 +1,184 @@
+[
+  {
+    "index": 1042,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/td2_military_bridge_end_cap.rmdl",
+    "native": {
+      "fraction": 0.468730092048645,
+      "startSolid": false,
+      "end": [
+        2094.592041015625,
+        -3067.3740234375,
+        1540.7742919921875
+      ]
+    }
+  },
+  {
+    "index": 1043,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/td2_military_bridge_end_cap.rmdl",
+    "native": {
+      "fraction": 0.4687325656414032,
+      "startSolid": false,
+      "end": [
+        1664.0689697265625,
+        -2297.576171875,
+        1705.12646484375
+      ]
+    }
+  },
+  {
+    "index": 1655,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_support_01.rmdl",
+    "native": {
+      "fraction": 0.468711793422699,
+      "startSolid": false,
+      "end": [
+        2020.046142578125,
+        -2371.70068359375,
+        1697.7274169921875
+      ]
+    }
+  },
+  {
+    "index": 1656,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_cable_support_01.rmdl",
+    "native": {
+      "fraction": 0.468711793422699,
+      "startSolid": false,
+      "end": [
+        1590.83740234375,
+        -2487.286376953125,
+        1697.7252197265625
+      ]
+    }
+  },
+  {
+    "index": 6391,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.46866026520729065,
+      "startSolid": false,
+      "end": [
+        1744.3155517578125,
+        -3072.036865234375,
+        1567.1961669921875
+      ]
+    }
+  },
+  {
+    "index": 6392,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.46866026520729065,
+      "startSolid": false,
+      "end": [
+        1698.911865234375,
+        -2903.438232421875,
+        1600.74951171875
+      ]
+    }
+  },
+  {
+    "index": 6393,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.46866026520729065,
+      "startSolid": false,
+      "end": [
+        1653.508056640625,
+        -2734.839599609375,
+        1634.3028564453125
+      ]
+    }
+  },
+  {
+    "index": 6394,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.4687780439853668,
+      "startSolid": false,
+      "end": [
+        2184.409912109375,
+        -2951.1103515625,
+        1566.2198486328125
+      ]
+    }
+  },
+  {
+    "index": 6395,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.4687780439853668,
+      "startSolid": false,
+      "end": [
+        2093.066162109375,
+        -2611.921630859375,
+        1633.7227783203125
+      ]
+    }
+  },
+  {
+    "index": 6396,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.4687780439853668,
+      "startSolid": false,
+      "end": [
+        2138.827392578125,
+        -2781.847900390625,
+        1599.9052734375
+      ]
+    }
+  },
+  {
+    "index": 6397,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.46869957447052,
+      "startSolid": false,
+      "end": [
+        2046.0313720703125,
+        -2448.03369140625,
+        1666.4835205078125
+      ]
+    }
+  },
+  {
+    "index": 6398,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.46866026520729065,
+      "startSolid": false,
+      "end": [
+        2000.6962890625,
+        -2279.690185546875,
+        1701.4117431640625
+      ]
+    }
+  },
+  {
+    "index": 6399,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.46866026520729065,
+      "startSolid": false,
+      "end": [
+        1562.7005615234375,
+        -2397.642333984375,
+        1701.4095458984375
+      ]
+    }
+  },
+  {
+    "index": 6400,
+    "model": "mdl/levels_terrain/mp_rr_canyonlands/military_bridge_top_bar_01.rmdl",
+    "native": {
+      "fraction": 0.46866026520729065,
+      "startSolid": false,
+      "end": [
+        1608.1043701171875,
+        -2566.240966796875,
+        1667.856201171875
+      ]
+    }
+  }
+]

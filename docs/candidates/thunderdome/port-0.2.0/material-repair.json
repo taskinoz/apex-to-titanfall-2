@@ -1,0 +1,827 @@
+{
+  "materials": [
+    {
+      "material": "sewer_lab_trim_05",
+      "source_material": "world/ola/sewer_lab_trim_05",
+      "triangles": 20,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/sewer_lab_trim_05_wldc/sewer_lab_trim_05_col.dds",
+          "source_sha256": "079f44a554800d211dfd4db238b19234dd69e249537fd6128242506f407ad0be",
+          "target": "texture/thunderdome/repair_sewer_lab_trim_05_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/sewer_lab_trim_05_wldc/sewer_lab_trim_05_nml.dds",
+          "source_sha256": "8d451acb6f6ee95d57ca555136b8b979af3b643cead88c4194cc6c620feb73b1",
+          "target": "texture/thunderdome/repair_sewer_lab_trim_05_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/sewer_lab_trim_05_wldc/sewer_lab_trim_05_gls.dds",
+          "source_sha256": "4015d936d8a08598e660606eb43ad2c17b00ebf303813d6345d9d6dc7e691eb7",
+          "target": "texture/thunderdome/repair_sewer_lab_trim_05_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/sewer_lab_trim_05_wldc/sewer_lab_trim_05_spc.dds",
+          "source_sha256": "049e5047e618efbeca82415e0070882049365854484a10862f4bb5f82d7972d7",
+          "target": "texture/thunderdome/repair_sewer_lab_trim_05_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/sewer_lab_trim_05_colpass_wld.rpak",
+        "material/world/thunderdome/sewer_lab_trim_05_wld.rpak"
+      ]
+    },
+    {
+      "material": "tropics_imc_metal_trim_02",
+      "source_material": "world/metal/tropics_IMC_metal_trim_01/tropics_IMC_metal_trim_02",
+      "triangles": 1755,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/tropics_IMC_metal_trim_02_wldc/tropics_IMC_metal_trim_02_col.dds",
+          "source_sha256": "781d64031f12579e3f342857e8d06ee83443b33f63eed07c64f183dc608638e7",
+          "target": "texture/thunderdome/repair_tropics_imc_metal_trim_02_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/tropics_IMC_metal_trim_02_wldc/tropics_IMC_metal_trim_02_nml.dds",
+          "source_sha256": "ba1dbf4648e1cca1017e58e1bfccc10b9ff33cb9baeed7fefcd7f23d6484a7bb",
+          "target": "texture/thunderdome/repair_tropics_imc_metal_trim_02_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/tropics_IMC_metal_trim_02_wldc/tropics_IMC_metal_trim_02_gls.dds",
+          "source_sha256": "56605a37e4d43e9a302c29186b474078ae96a6759571f9b1752ab48830d34d65",
+          "target": "texture/thunderdome/repair_tropics_imc_metal_trim_02_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/tropics_IMC_metal_trim_02_wldc/tropics_IMC_metal_trim_02_spc.dds",
+          "source_sha256": "417affa4656a2ab719633567be618efc10f840a432b9ef6a6f573a7e6c94f1a3",
+          "target": "texture/thunderdome/repair_tropics_imc_metal_trim_02_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/tropics_imc_metal_trim_02_colpass_wld.rpak",
+        "material/world/thunderdome/tropics_imc_metal_trim_02_wld.rpak"
+      ]
+    },
+    {
+      "material": "bare_metal_trim_01",
+      "source_material": "world/metal/bare_metal_trim_01/bare_metal_trim_01",
+      "triangles": 234,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/bare_metal_trim_01_wldc/bare_metal_trim_01_col.dds",
+          "source_sha256": "0bb751eab472f343afaf9fb0e066ed605655b437a2c6f191db17ab260e85882f",
+          "target": "texture/thunderdome/repair_bare_metal_trim_01_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/bare_metal_trim_01_wldc/bare_metal_trim_01_nml.dds",
+          "source_sha256": "541f5f703aa9a19c76b0eaa729cd5d14ec490c9a554393a03484abfc12de2c6b",
+          "target": "texture/thunderdome/repair_bare_metal_trim_01_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/bare_metal_trim_01_wldc/bare_metal_trim_01_gls.dds",
+          "source_sha256": "5a5f0b9d63d02877202de2ce965470963bc90adfe2b649a44ced2a18a60538a6",
+          "target": "texture/thunderdome/repair_bare_metal_trim_01_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/bare_metal_trim_01_wldc/bare_metal_trim_01_spc.dds",
+          "source_sha256": "72239144e13b7a8ee33cd53f7fc753ccfaec93901e746f28080f044e15a6c004",
+          "target": "texture/thunderdome/repair_bare_metal_trim_01_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/bare_metal_trim_01_colpass_wld.rpak",
+        "material/world/thunderdome/bare_metal_trim_01_wld.rpak"
+      ]
+    },
+    {
+      "material": "thunderdome_metal_trim_01_avt",
+      "source_material": "world/thunderdome/thunderdome_metal_trim_01_avt",
+      "triangles": 23552,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/thunderdome_metal_trim_01_avt_rgdp/thunderdome_metal_trim_01_avt_col.dds",
+          "source_sha256": "1067cde3ce8c6a5d389b2638d400edda8c83edeeab1f169bf9797917dc26b561",
+          "target": "texture/thunderdome/repair_thunderdome_metal_trim_01_avt_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/thunderdome_metal_trim_01_avt_rgdp/thunderdome_metal_trim_01_avt_nml.dds",
+          "source_sha256": "4d6728ea4c4579fd4ec6ad1e59cdbb94ac87f68464f1077f388c612e1d43c34f",
+          "target": "texture/thunderdome/repair_thunderdome_metal_trim_01_avt_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/thunderdome_metal_trim_01_avt_rgdp/thunderdome_metal_trim_01_avt_gls.dds",
+          "source_sha256": "f453ed1f370189a3c7a7ae39e488839451b2e401f5e0902982aeb34188ba4036",
+          "target": "texture/thunderdome/repair_thunderdome_metal_trim_01_avt_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/thunderdome_metal_trim_01_avt_rgdp/thunderdome_metal_trim_01_avt_spc.dds",
+          "source_sha256": "5d493a75f60bb985b88f7a0e4025feb937ba71b83c7f4fde3fee9ff495232a54",
+          "target": "texture/thunderdome/repair_thunderdome_metal_trim_01_avt_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/thunderdome_metal_trim_01_avt_colpass_wld.rpak",
+        "material/world/thunderdome/thunderdome_metal_trim_01_avt_wld.rpak"
+      ]
+    },
+    {
+      "material": "14738928614753031639",
+      "source_material": "world/boomtown/boomtown_int_trims_01",
+      "triangles": 6048,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/boomtown_int_trims_01_wldc/boomtown_int_trims_01_col.dds",
+          "source_sha256": "15c3b599c0e59e6473bab3ad2aa0b9e9e8bd321adf6b0c4a939285df8deda937",
+          "target": "texture/thunderdome/repair_14738928614753031639_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/boomtown_int_trims_01_wldc/boomtown_int_trims_01_nml.dds",
+          "source_sha256": "efbf9438ab2f9b4151a245af040795b00a40a2ab7021db1c1393137b95af0334",
+          "target": "texture/thunderdome/repair_14738928614753031639_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/boomtown_int_trims_01_wldc/boomtown_int_trims_01_gls.dds",
+          "source_sha256": "e9c4c832d3112c9f7d9747036e9c2654f04d8960b64f31b6dba20f103139ad30",
+          "target": "texture/thunderdome/repair_14738928614753031639_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/boomtown_int_trims_01_wldc/boomtown_int_trims_01_spc.dds",
+          "source_sha256": "184bf5c31cf82222403fb981e680743cee1508c222e0f2ea9d8c9faaa51927b6",
+          "target": "texture/thunderdome/repair_14738928614753031639_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/14738928614753031639_colpass_wld.rpak",
+        "material/world/thunderdome/14738928614753031639_wld.rpak"
+      ]
+    },
+    {
+      "material": "16491260791107595074",
+      "source_material": "world/metal/trim_metal_01",
+      "triangles": 9446,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/trim_metal_01_wldc/trim_metal_01_col.dds",
+          "source_sha256": "5bcb52937b3073628de91bb0fc1de43a8c685de20a941d9fdebc4bdc76f3a343",
+          "target": "texture/thunderdome/repair_16491260791107595074_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/trim_metal_01_wldc/trim_metal_01_nml.dds",
+          "source_sha256": "dc433abc0568ba991de1ff935b8be3448ac9a133d7fa6c6e2e222324a4127e0c",
+          "target": "texture/thunderdome/repair_16491260791107595074_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/trim_metal_01_wldc/trim_metal_01_gls.dds",
+          "source_sha256": "cc0837465c30dc9303c4ec72778db8e9ec757464d933f4d7e37f6272e219d06f",
+          "target": "texture/thunderdome/repair_16491260791107595074_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/trim_metal_01_wldc/trim_metal_01_spc.dds",
+          "source_sha256": "f1c95bcdeea1dce1d12eabe1ec5ba591d438256e7df63bced79d6e2178b868d0",
+          "target": "texture/thunderdome/repair_16491260791107595074_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/16491260791107595074_colpass_wld.rpak",
+        "material/world/thunderdome/16491260791107595074_wld.rpak"
+      ]
+    },
+    {
+      "material": "13730602461176725767",
+      "source_material": "world/ola/ola_sewer_grate_01",
+      "triangles": 112,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/ola_sewer_grate_01_rgdp/ola_sewer_grate_01_col.dds",
+          "source_sha256": "e4f15bf108b938579ab15cb565ecd4d0fc4f0a097c07e1f271e8c471ad6d63ee",
+          "target": "texture/thunderdome/repair_13730602461176725767_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/ola_sewer_grate_01_rgdp/ola_sewer_grate_01_nml.dds",
+          "source_sha256": "b045b9f6f3c3834c9bb7b5c3fc612b0790ec6f6a746f6fcd250c2908f678046b",
+          "target": "texture/thunderdome/repair_13730602461176725767_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/ola_sewer_grate_01_rgdp/ola_sewer_grate_01_gls.dds",
+          "source_sha256": "747ec96b1fbdf6f2e6f4aaa2fe2690bd293fcb9222f911bc6717668d9d470f6e",
+          "target": "texture/thunderdome/repair_13730602461176725767_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/ola_sewer_grate_01_rgdp/ola_sewer_grate_01_spc.dds",
+          "source_sha256": "7c1d54f623a82ea54f6bb695851b3a5b8ca32146879a9f5fc440937adb399cb2",
+          "target": "texture/thunderdome/repair_13730602461176725767_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/13730602461176725767_colpass_wld.rpak",
+        "material/world/thunderdome/13730602461176725767_wld.rpak"
+      ]
+    },
+    {
+      "material": "tropics_IMC_metal_trim_02",
+      "source_material": "world/metal/tropics_IMC_metal_trim_01/tropics_IMC_metal_trim_02",
+      "triangles": 10072,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/tropics_IMC_metal_trim_02_wldc/tropics_IMC_metal_trim_02_col.dds",
+          "source_sha256": "781d64031f12579e3f342857e8d06ee83443b33f63eed07c64f183dc608638e7",
+          "target": "texture/thunderdome/repair_tropics_imc_metal_trim_02_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/tropics_IMC_metal_trim_02_wldc/tropics_IMC_metal_trim_02_nml.dds",
+          "source_sha256": "ba1dbf4648e1cca1017e58e1bfccc10b9ff33cb9baeed7fefcd7f23d6484a7bb",
+          "target": "texture/thunderdome/repair_tropics_imc_metal_trim_02_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/tropics_IMC_metal_trim_02_wldc/tropics_IMC_metal_trim_02_gls.dds",
+          "source_sha256": "56605a37e4d43e9a302c29186b474078ae96a6759571f9b1752ab48830d34d65",
+          "target": "texture/thunderdome/repair_tropics_imc_metal_trim_02_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/tropics_IMC_metal_trim_02_wldc/tropics_IMC_metal_trim_02_spc.dds",
+          "source_sha256": "417affa4656a2ab719633567be618efc10f840a432b9ef6a6f573a7e6c94f1a3",
+          "target": "texture/thunderdome/repair_tropics_imc_metal_trim_02_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/tropics_imc_metal_trim_02_colpass_wld.rpak",
+        "material/world/thunderdome/tropics_imc_metal_trim_02_wld.rpak"
+      ]
+    },
+    {
+      "material": "646971389362643246",
+      "source_material": "world/ola/sewers_railing_01_avt",
+      "triangles": 440,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/sewers_railing_01_avt_rgdp/sewers_railing_01_avt_col.dds",
+          "source_sha256": "cb7cf073c297592149076064ccadc7167c89a16ee81c350d2580e2cdef69ecbb",
+          "target": "texture/thunderdome/repair_646971389362643246_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/sewers_railing_01_avt_rgdp/sewers_railing_01_avt_nml.dds",
+          "source_sha256": "350b7d5ac053539676806cee8609e6d72798a4034672ef918f027fec735be6e4",
+          "target": "texture/thunderdome/repair_646971389362643246_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/sewers_railing_01_avt_rgdp/sewers_railing_01_avt_gls.dds",
+          "source_sha256": "6bbacb2e75e39734e08393947e0b7ed23af2b3dec3abcbea286ba0fe894e4d0c",
+          "target": "texture/thunderdome/repair_646971389362643246_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/sewers_railing_01_avt_rgdp/sewers_railing_01_avt_spc.dds",
+          "source_sha256": "fb9753c27cd8d07492beac42a6343a64e57f122fece5c71653381a6592b450df",
+          "target": "texture/thunderdome/repair_646971389362643246_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/646971389362643246_colpass_wld.rpak",
+        "material/world/thunderdome/646971389362643246_wld.rpak"
+      ]
+    },
+    {
+      "material": "metal_beam_supports_painted_01_old_avt",
+      "source_material": "world/metal/metal_beam_supports_painted_01_old_avt",
+      "triangles": 1340,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/metal_beam_supports_painted_01_old_avt_rgdp/metal_beam_supports_painted_01_old_avt_col.dds",
+          "source_sha256": "7f09f07ef39fcf7803cb1619114661cf002a325452e99f4944cf9395e60e13d7",
+          "target": "texture/thunderdome/repair_metal_beam_supports_painted_01_old_avt_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/metal_beam_supports_painted_01_old_avt_rgdp/metal_beam_supports_painted_01_old_avt_nml.dds",
+          "source_sha256": "e2e8de605b1310538ffe6fc488a47bf0668123f0b216c804fe7e25acebbfd787",
+          "target": "texture/thunderdome/repair_metal_beam_supports_painted_01_old_avt_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/metal_beam_supports_painted_01_old_avt_rgdp/metal_beam_supports_painted_01_old_avt_gls.dds",
+          "source_sha256": "36a7b6ba8384a666f7d2797865bc1eaf4c1d82e730906d03ffdc5b0dfb4c85c4",
+          "target": "texture/thunderdome/repair_metal_beam_supports_painted_01_old_avt_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/metal_beam_supports_painted_01_old_avt_rgdp/metal_beam_supports_painted_01_old_avt_spc.dds",
+          "source_sha256": "ee7dbe05108500d8ed821ee9e7fd73fa5c135b3b04d955c5dea618d3fd73aff7",
+          "target": "texture/thunderdome/repair_metal_beam_supports_painted_01_old_avt_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/metal_beam_supports_painted_01_old_avt_colpass_wld.rpak",
+        "material/world/thunderdome/metal_beam_supports_painted_01_old_avt_wld.rpak"
+      ]
+    },
+    {
+      "material": "scaffold_tech_beams_avt",
+      "source_material": "models/imc_base/scaffold_tech_beams_avt",
+      "triangles": 268,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/scaffold_tech_beams_avt_rgdp/scaffold_tech_beams_avt_col.dds",
+          "source_sha256": "6dd56d06a5ddab9674421b2533ea9621ad8a12a6f33d7aac62e3b27e4b6ffe85",
+          "target": "texture/thunderdome/repair_scaffold_tech_beams_avt_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/scaffold_tech_beams_avt_rgdp/scaffold_tech_beams_avt_nml.dds",
+          "source_sha256": "ea2738da5b7e2fab4e0f9d8bf46003c804bebe08aad29b335e1f6d93902c2633",
+          "target": "texture/thunderdome/repair_scaffold_tech_beams_avt_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/scaffold_tech_beams_avt_rgdp/scaffold_tech_beams_avt_gls.dds",
+          "source_sha256": "19bd558e7405bfd306e4d2bb6770940f3311b017e64a155b82b824b9b5cc08b8",
+          "target": "texture/thunderdome/repair_scaffold_tech_beams_avt_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/scaffold_tech_beams_avt_rgdp/scaffold_tech_beams_avt_spc.dds",
+          "source_sha256": "6a76271104e4b8ca6563a3b6714c38fb024f63db83f5a8154540135e73d22354",
+          "target": "texture/thunderdome/repair_scaffold_tech_beams_avt_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/scaffold_tech_beams_avt_colpass_wld.rpak",
+        "material/world/thunderdome/scaffold_tech_beams_avt_wld.rpak"
+      ]
+    },
+    {
+      "material": "14271288483161065004",
+      "source_material": "world/boomtown/boomtown_int_trims_01_yellow",
+      "triangles": 360,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/boomtown_int_trims_01_yellow_rgdp/boomtown_int_trims_01_yellow_col.dds",
+          "source_sha256": "c1959cbc2dbd5e8b5075dc3ed7819c9f924202546e98d7416ee2d597d53a49b1",
+          "target": "texture/thunderdome/repair_14271288483161065004_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/boomtown_int_trims_01_yellow_rgdp/boomtown_int_trims_01_yellow_nml.dds",
+          "source_sha256": "efbf9438ab2f9b4151a245af040795b00a40a2ab7021db1c1393137b95af0334",
+          "target": "texture/thunderdome/repair_14738928614753031639_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/boomtown_int_trims_01_yellow_rgdp/boomtown_int_trims_01_yellow_gls.dds",
+          "source_sha256": "e9c4c832d3112c9f7d9747036e9c2654f04d8960b64f31b6dba20f103139ad30",
+          "target": "texture/thunderdome/repair_14738928614753031639_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/boomtown_int_trims_01_yellow_rgdp/boomtown_int_trims_01_yellow_spc.dds",
+          "source_sha256": "91921b98dba35fb601805918f77a9c7eba6c3ca1a1f3abae5c32090ce3de7a65",
+          "target": "texture/thunderdome/repair_14271288483161065004_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/14271288483161065004_colpass_wld.rpak",
+        "material/world/thunderdome/14271288483161065004_wld.rpak"
+      ]
+    },
+    {
+      "material": "17937072327870082951",
+      "source_material": "world/ola/ola_sewer_grate_01_yellow",
+      "triangles": 12,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/ola_sewer_grate_01_yellow_rgdp/ola_sewer_grate_01_yellow_col.dds",
+          "source_sha256": "85b40e4b8dbe91eb7b41056b4f3d34987ce25aadb9237d415caeb618e1117c6f",
+          "target": "texture/thunderdome/repair_17937072327870082951_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/ola_sewer_grate_01_yellow_rgdp/ola_sewer_grate_01_yellow_nml.dds",
+          "source_sha256": "b045b9f6f3c3834c9bb7b5c3fc612b0790ec6f6a746f6fcd250c2908f678046b",
+          "target": "texture/thunderdome/repair_13730602461176725767_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/ola_sewer_grate_01_yellow_rgdp/ola_sewer_grate_01_yellow_gls.dds",
+          "source_sha256": "747ec96b1fbdf6f2e6f4aaa2fe2690bd293fcb9222f911bc6717668d9d470f6e",
+          "target": "texture/thunderdome/repair_13730602461176725767_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/ola_sewer_grate_01_yellow_rgdp/ola_sewer_grate_01_yellow_spc.dds",
+          "source_sha256": "7c1d54f623a82ea54f6bb695851b3a5b8ca32146879a9f5fc440937adb399cb2",
+          "target": "texture/thunderdome/repair_13730602461176725767_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/17937072327870082951_colpass_wld.rpak",
+        "material/world/thunderdome/17937072327870082951_wld.rpak"
+      ]
+    },
+    {
+      "material": "dropship_goblin_v2_map1",
+      "source_material": "models/vehicles_r5/air/dropship_goblin/dropship_goblin_v2_map1",
+      "triangles": 418,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/dropship_goblin_v2_map1_rgdp/dropship_goblin_v2_map1_col.dds",
+          "source_sha256": "cf1bb7bef1e9aa02defd3a47ec7c75ae0ed78261dd8a287be1fb7b8b6d8d2350",
+          "target": "texture/thunderdome/repair_dropship_goblin_v2_map1_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/dropship_goblin_v2_map1_rgdp/dropship_goblin_v2_map1_nml.dds",
+          "source_sha256": "9526320e7bf650f7788a41fe6288a2e862c51a07953ed4c81f766bfab8f93cf8",
+          "target": "texture/thunderdome/repair_dropship_goblin_v2_map1_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/dropship_goblin_v2_map1_rgdp/dropship_goblin_v2_map1_gls.dds",
+          "source_sha256": "46fd32959b538c75c41913fa3c77a5860706a356b245b7bef8a4068068f2c2da",
+          "target": "texture/thunderdome/repair_dropship_goblin_v2_map1_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/dropship_goblin_v2_map1_rgdp/dropship_goblin_v2_map1_spc.dds",
+          "source_sha256": "6a08ee6756208a760bcdd6d5e5a0d3e51aaaf9de8e966f249ecbfe936453bc11",
+          "target": "texture/thunderdome/repair_dropship_goblin_v2_map1_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/dropship_goblin_v2_map1_colpass_wld.rpak",
+        "material/world/thunderdome/dropship_goblin_v2_map1_wld.rpak"
+      ]
+    },
+    {
+      "material": "dropship_goblin_v2_map2",
+      "source_material": "models/vehicles_r5/air/dropship_goblin/dropship_goblin_v2_map2",
+      "triangles": 488,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/dropship_goblin_v2_map2_rgdp/dropship_goblin_v2_map2_col.dds",
+          "source_sha256": "7b3ec92fb679adc652f37193a69f6a2b4eea24d79a9348061edea8859d69c943",
+          "target": "texture/thunderdome/repair_dropship_goblin_v2_map2_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/dropship_goblin_v2_map2_rgdp/dropship_goblin_v2_map2_nml.dds",
+          "source_sha256": "3168c39ae5a1df9d1815a66a9ca6bdb56377df6af9c1aeee2bf5aa73ed8fdb77",
+          "target": "texture/thunderdome/repair_dropship_goblin_v2_map2_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/dropship_goblin_v2_map2_rgdp/dropship_goblin_v2_map2_gls.dds",
+          "source_sha256": "d64743d65e41f6fba229b315403c45d5cd727f135788e63e04f03dacda5279f2",
+          "target": "texture/thunderdome/repair_dropship_goblin_v2_map2_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/dropship_goblin_v2_map2_rgdp/dropship_goblin_v2_map2_spc.dds",
+          "source_sha256": "210323cb0b9b2b238b7f72b8789ff8dfe2aede9ce0ab4142b4c704e178f6630b",
+          "target": "texture/thunderdome/repair_dropship_goblin_v2_map2_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/dropship_goblin_v2_map2_colpass_wld.rpak",
+        "material/world/thunderdome/dropship_goblin_v2_map2_wld.rpak"
+      ]
+    },
+    {
+      "material": "8990513098724196044",
+      "source_material": "world/beacon/stamped_metal_large_painted_03_vert_color",
+      "triangles": 10298,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/stamped_metal_large_painted_03_vert_color_wldc/stamped_metal_large_painted_03_vert_color_col.dds",
+          "source_sha256": "bc76d812b88bcea3c43d984828f5ba5c10d1f2ef465d069870feb408c4896504",
+          "target": "texture/thunderdome/repair_8990513098724196044_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/stamped_metal_large_painted_03_vert_color_wldc/stamped_metal_large_painted_03_vert_color_nml.dds",
+          "source_sha256": "240f4843d5656f96835b049501ebd4087107b121dc510b84f6bfcf4fdcce274f",
+          "target": "texture/thunderdome/repair_8990513098724196044_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/stamped_metal_large_painted_03_vert_color_wldc/stamped_metal_large_painted_03_vert_color_gls.dds",
+          "source_sha256": "e306b8205a0bb2b731625c0edda6f58fcd15a2882649c7c22cd2a0ae7e69a54c",
+          "target": "texture/thunderdome/repair_8990513098724196044_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/stamped_metal_large_painted_03_vert_color_wldc/stamped_metal_large_painted_03_vert_color_spc.dds",
+          "source_sha256": "6a76271104e4b8ca6563a3b6714c38fb024f63db83f5a8154540135e73d22354",
+          "target": "texture/thunderdome/repair_scaffold_tech_beams_avt_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/8990513098724196044_colpass_wld.rpak",
+        "material/world/thunderdome/8990513098724196044_wld.rpak"
+      ]
+    },
+    {
+      "material": "kodai_live_fire_test_rooftrim_01",
+      "source_material": "models/kodai_live_fire_test/kodai_live_fire_test_rooftrim_01",
+      "triangles": 1320,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/kodai_live_fire_test_rooftrim_01_rgdp/kodai_live_fire_test_rooftrim_01_col.dds",
+          "source_sha256": "171ff6dc4a0cf92bce653601b78a3d7e3d9ebb51cff93166a62244551505cc92",
+          "target": "texture/thunderdome/repair_kodai_live_fire_test_rooftrim_01_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/kodai_live_fire_test_rooftrim_01_rgdp/kodai_live_fire_test_rooftrim_01_nml.dds",
+          "source_sha256": "8b28141ba495980938fa50fe77f89641525c72096ca88843c3e7989b55fbdec5",
+          "target": "texture/thunderdome/repair_kodai_live_fire_test_rooftrim_01_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/kodai_live_fire_test_rooftrim_01_rgdp/kodai_live_fire_test_rooftrim_01_gls.dds",
+          "source_sha256": "92b6b34cafb310d88624bc000d6c68905d89c0deeecb5fbbd2a228a8b9a3f6c2",
+          "target": "texture/thunderdome/repair_kodai_live_fire_test_rooftrim_01_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/kodai_live_fire_test_rooftrim_01_rgdp/kodai_live_fire_test_rooftrim_01_spc.dds",
+          "source_sha256": "257cb56c4c36709f8e9dc5634a5e4987aec5d7f7af33a0096a83162c92bb40cd",
+          "target": "texture/thunderdome/repair_kodai_live_fire_test_rooftrim_01_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/kodai_live_fire_test_rooftrim_01_colpass_wld.rpak",
+        "material/world/thunderdome/kodai_live_fire_test_rooftrim_01_wld.rpak"
+      ]
+    },
+    {
+      "material": "pipesmulti_avt",
+      "source_material": "models/electricalboxes/pipesmulti_avt",
+      "triangles": 288,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/pipesmulti_avt_rgdp/pipesmulti_avt_col.dds",
+          "source_sha256": "85a3142697dde98b9669b7076b048bb4e5fab107ac5eaf0128bd1d4a337f3e37",
+          "target": "texture/thunderdome/repair_pipesmulti_avt_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/pipesmulti_avt_rgdp/pipesmulti_avt_nml.dds",
+          "source_sha256": "9e77507ced7e994bedd85395b56ed3f57fcf3abea122a75164fc0db2e9383782",
+          "target": "texture/thunderdome/repair_pipesmulti_avt_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/pipesmulti_avt_rgdp/pipesmulti_avt_gls.dds",
+          "source_sha256": "4d8bfa518fd82697a042aa5c25553cc3fb389f372ca20fce46aa6eb02d247047",
+          "target": "texture/thunderdome/repair_pipesmulti_avt_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/pipesmulti_avt_rgdp/pipesmulti_avt_spc.dds",
+          "source_sha256": "22f0b41487c00b54e690dab3b4b18bdac59f48af435b010511f57a166761c304",
+          "target": "texture/thunderdome/repair_pipesmulti_avt_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/pipesmulti_avt_colpass_wld.rpak",
+        "material/world/thunderdome/pipesmulti_avt_wld.rpak"
+      ]
+    },
+    {
+      "material": "7315467432636850472",
+      "source_material": "world/s2s/s2s_metal_trims_02_vc",
+      "triangles": 8864,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/s2s_metal_trims_02_vc_wldc/s2s_metal_trims_02_vc_col.dds",
+          "source_sha256": "d6afc52ea7292cf73cbed992f0bd317f808cc243ef806d2fbcb4b80461ea135a",
+          "target": "texture/thunderdome/repair_7315467432636850472_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/s2s_metal_trims_02_vc_wldc/s2s_metal_trims_02_vc_nml.dds",
+          "source_sha256": "4411affff10c3893e03ff78bcb355c42eef9ca1d73848d91ec871f0f23cdf67b",
+          "target": "texture/thunderdome/repair_7315467432636850472_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/s2s_metal_trims_02_vc_wldc/s2s_metal_trims_02_vc_gls.dds",
+          "source_sha256": "761b9ee456a5395cea980220073e7cd7841eda1c42cfaaade5e4816a2849ee91",
+          "target": "texture/thunderdome/repair_7315467432636850472_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/s2s_metal_trims_02_vc_wldc/s2s_metal_trims_02_vc_spc.dds",
+          "source_sha256": "9e7e870226036b4f167b00b9af1071f56ef5c8598874247395542fa72b31c0f6",
+          "target": "texture/thunderdome/repair_7315467432636850472_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/7315467432636850472_colpass_wld.rpak",
+        "material/world/thunderdome/7315467432636850472_wld.rpak"
+      ]
+    },
+    {
+      "material": "carrier_metal_trim_03_avt",
+      "source_material": "world/metal/carrier_metal_trim_03_avt",
+      "triangles": 624,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/carrier_metal_trim_03_avt_rgdp/carrier_metal_trim_03_avt_col.dds",
+          "source_sha256": "5bcb52937b3073628de91bb0fc1de43a8c685de20a941d9fdebc4bdc76f3a343",
+          "target": "texture/thunderdome/repair_16491260791107595074_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/carrier_metal_trim_03_avt_rgdp/carrier_metal_trim_03_avt_nml.dds",
+          "source_sha256": "dc433abc0568ba991de1ff935b8be3448ac9a133d7fa6c6e2e222324a4127e0c",
+          "target": "texture/thunderdome/repair_16491260791107595074_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/carrier_metal_trim_03_avt_rgdp/carrier_metal_trim_03_avt_gls.dds",
+          "source_sha256": "cc0837465c30dc9303c4ec72778db8e9ec757464d933f4d7e37f6272e219d06f",
+          "target": "texture/thunderdome/repair_16491260791107595074_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/carrier_metal_trim_03_avt_rgdp/carrier_metal_trim_03_avt_spc.dds",
+          "source_sha256": "f1c95bcdeea1dce1d12eabe1ec5ba591d438256e7df63bced79d6e2178b868d0",
+          "target": "texture/thunderdome/repair_16491260791107595074_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/carrier_metal_trim_03_avt_colpass_wld.rpak",
+        "material/world/thunderdome/carrier_metal_trim_03_avt_wld.rpak"
+      ]
+    },
+    {
+      "material": "sewer_lab_trim_02",
+      "source_material": "world/ola/sewer_lab_trim_02",
+      "triangles": 476,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/sewer_lab_trim_02_rgdp/sewer_lab_trim_02_col.dds",
+          "source_sha256": "d6212159368e299094d14b4e77153f455cd77cf9f0acb64a97fe56abb38114c3",
+          "target": "texture/thunderdome/repair_sewer_lab_trim_02_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/sewer_lab_trim_02_rgdp/sewer_lab_trim_02_nml.dds",
+          "source_sha256": "cdeb7fd3c3c834b3b6b9df52e7938c4605c0a6d39163bf2f933c5020f79d2c2a",
+          "target": "texture/thunderdome/repair_sewer_lab_trim_02_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/sewer_lab_trim_02_rgdp/sewer_lab_trim_02_gls.dds",
+          "source_sha256": "13572db3bb75707c4a681e6f39dabcaae025873a7f86ac005e177edb10b0f405",
+          "target": "texture/thunderdome/repair_sewer_lab_trim_02_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/sewer_lab_trim_02_rgdp/sewer_lab_trim_02_spc.dds",
+          "source_sha256": "8583977ad1c3d502510ea60ed33593322b4508bed83f31f829dc00e8e29b08d5",
+          "target": "texture/thunderdome/repair_sewer_lab_trim_02_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/sewer_lab_trim_02_colpass_wld.rpak",
+        "material/world/thunderdome/sewer_lab_trim_02_wld.rpak"
+      ]
+    },
+    {
+      "material": "imc_exposed_back_wall_01",
+      "source_material": "world/metal/imc_exposed_back_wall_01",
+      "triangles": 48,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/imc_exposed_back_wall_01_rgdp/imc_exposed_back_wall_01_col.dds",
+          "source_sha256": "6504a3287b671930dec8b45848f01aee53e3b3d932ebd894268b491c5c3a3403",
+          "target": "texture/thunderdome/repair_imc_exposed_back_wall_01_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/imc_exposed_back_wall_01_rgdp/imc_exposed_back_wall_01_nml.dds",
+          "source_sha256": "1f306e9b42442512257282881868a738c398381cef2ce7c5b4aca1af95590c08",
+          "target": "texture/thunderdome/repair_imc_exposed_back_wall_01_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/imc_exposed_back_wall_01_rgdp/imc_exposed_back_wall_01_gls.dds",
+          "source_sha256": "3d79a8b531ca4f563fda3d264461e2fe8c9ee1e15f2b1c1fd3a6ab59ac071987",
+          "target": "texture/thunderdome/repair_imc_exposed_back_wall_01_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/imc_exposed_back_wall_01_rgdp/imc_exposed_back_wall_01_spc.dds",
+          "source_sha256": "1b734d258a89c4ba5363825e2723b01ac12f3b76c4b61964d51067860dae7bc2",
+          "target": "texture/thunderdome/repair_imc_exposed_back_wall_01_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/imc_exposed_back_wall_01_colpass_wld.rpak",
+        "material/world/thunderdome/imc_exposed_back_wall_01_wld.rpak"
+      ]
+    },
+    {
+      "material": "16533644808952614152",
+      "source_material": "world/thunderdome/thunderdome_metal_trim_01",
+      "triangles": 360,
+      "textures": [
+        {
+          "semantic": "_col",
+          "source": "shared-export/exported_files/material/thunderdome_metal_trim_01_rgdp/thunderdome_metal_trim_01_col.dds",
+          "source_sha256": "1067cde3ce8c6a5d389b2638d400edda8c83edeeab1f169bf9797917dc26b561",
+          "target": "texture/thunderdome/repair_thunderdome_metal_trim_01_avt_albedo.rpak"
+        },
+        {
+          "semantic": "_nml",
+          "source": "shared-export/exported_files/material/thunderdome_metal_trim_01_rgdp/thunderdome_metal_trim_01_nml.dds",
+          "source_sha256": "4d6728ea4c4579fd4ec6ad1e59cdbb94ac87f68464f1077f388c612e1d43c34f",
+          "target": "texture/thunderdome/repair_thunderdome_metal_trim_01_avt_normal.rpak"
+        },
+        {
+          "semantic": "_gls",
+          "source": "shared-export/exported_files/material/thunderdome_metal_trim_01_rgdp/thunderdome_metal_trim_01_gls.dds",
+          "source_sha256": "f453ed1f370189a3c7a7ae39e488839451b2e401f5e0902982aeb34188ba4036",
+          "target": "texture/thunderdome/repair_thunderdome_metal_trim_01_avt_gloss.rpak"
+        },
+        {
+          "semantic": "_spc",
+          "source": "shared-export/exported_files/material/thunderdome_metal_trim_01_rgdp/thunderdome_metal_trim_01_spc.dds",
+          "source_sha256": "5d493a75f60bb985b88f7a0e4025feb937ba71b83c7f4fde3fee9ff495232a54",
+          "target": "texture/thunderdome/repair_thunderdome_metal_trim_01_avt_spec.rpak"
+        }
+      ],
+      "paths": [
+        "material/world/thunderdome/16533644808952614152_colpass_wld.rpak",
+        "material/world/thunderdome/16533644808952614152_wld.rpak"
+      ]
+    }
+  ],
+  "deferred": {
+    "trim_metal_01_sand_desert_02_bm": "Layered material requires native blend conversion",
+    "_default": "No original material found",
+    "stencil_corporate_white_01": "Requires separate coverage/emission shader conversion",
+    "road_tracks_dry_03_blend_2_trans": "Requires separate coverage/emission shader conversion",
+    "sand_desert_02_bm_transparent": "Requires separate coverage/emission shader conversion",
+    "ar_control_objective_border_color_1": "Requires separate coverage/emission shader conversion",
+    "engine_exhaust_glow_large": "Requires separate coverage/emission shader conversion",
+    "trim_metal_rust_01_bm": "Layered material requires native blend conversion",
+    "thunderdome_metal_trim_01_sand_desert_02_bm_avt": "Layered material requires native blend conversion",
+    "8529336956448360370": "Requires separate coverage/emission shader conversion",
+    "thunderdome_sky": "No original material found"
+  },
+  "recovered_materials": 23,
+  "recovered_triangles": 76843,
+  "unique_new_textures": 74,
+  "unchanged_material_dependencies": true,
+  "limitation": "Retail DXIL constant reflection, translucent and layered source shaders remain separate work."
+}

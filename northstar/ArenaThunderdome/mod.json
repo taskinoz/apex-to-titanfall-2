@@ -1,6 +1,6 @@
 {
   "Name": "ArenaThunderdome",
-  "Version": "0.1.1",
+  "Version": "0.2.0",
   "LoadPriority": 10,
   "Description": "Thunderdome native conversion preview. AI navigation and source gameplay systems are incomplete.",
   "Scripts": [

@@ -83,7 +83,7 @@ def inside(points, planes):
     return out
 
 
-def viewpoints(ident, tris, walkable=None):
+def viewpoints(ident, tris, walkable=None, seeds=None):
     # Native winding is reversed: orientation comes from the stored vertex normals.
     area = np.linalg.norm(np.cross(tris[:, 1]-tris[:, 0], tris[:, 2]-tris[:, 0]), axis=1)
     n = render_triangles.normals; n = n/np.maximum(np.linalg.norm(n, axis=1, keepdims=True), 1e-9)
@@ -108,16 +108,16 @@ def viewpoints(ident, tris, walkable=None):
     nodes = {}
     for i, (x, y, z) in enumerate(key):
         nodes.setdefault((x, y), []).append((z, i))
-    spawns = json.loads((folder(ident)/'native-spawn-candidates.json').read_text())['regions']
+    if seeds is None:  # flood seeds: the native spawn probes
+        seeds = [probe['origin'] for region in json.loads((folder(ident)/'native-spawn-candidates.json').read_text())['regions']
+                 for probe in region['probes']]
     seen = np.zeros(len(key), bool); queue = deque()
-    for region in spawns:
-        for probe in region['probes']:
-            x, y, z = probe['origin']
-            cands = nodes.get((int(np.floor(x/CELL)), int(np.floor(y/CELL))), [])
-            if cands:
-                zz, i = min(cands, key=lambda c: abs(c[0]*32-z))
-                if not seen[i] and not oob[i]:
-                    seen[i] = True; queue.append(i)
+    for x, y, z in seeds:
+        cands = nodes.get((int(np.floor(x/CELL)), int(np.floor(y/CELL))), [])
+        if cands:
+            zz, i = min(cands, key=lambda c: abs(c[0]*32-z))
+            if not seen[i] and not oob[i]:
+                seen[i] = True; queue.append(i)
     while queue:
         i = queue.popleft(); x, y, z = key[i]
         for dx in (-1, 0, 1):
@@ -152,7 +152,8 @@ def see_through(ident, names):
         r = mapping.get(n) or by_native.get(n) or {}
         spec = out/'materials/assets'/('material/'+r['name']+'_wld.json') if r else None
         shader = json.loads(spec.read_text()).get('shaderSet', '') if spec and spec.exists() else ''
-        result[n] = bool(r.get('transparent')) or 'cutout' in shader or 'alpha' in shader or 'glass' in shader             or any(w in n.lower() for w in ('glass', 'fence', 'grate', 'holes', 'decal', 'sky'))
+        result[n] = bool(r.get('transparent')) or 'cutout' in shader or 'alpha' in shader or 'glass' in shader \
+            or any(w in n.lower() for w in ('glass', 'fence', 'grate', 'holes', 'decal', 'sky'))
     return result
 
 

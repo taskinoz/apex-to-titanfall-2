@@ -1,0 +1,531 @@
+{
+ "map": "mp_thunderdome",
+ "mode": "ps",
+ "shots": [
+  {
+   "name": "r1-map-ends-y0",
+   "origin": [
+    -4196.29,
+    -2951.03,
+    620.031
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r1-map-ends-y90",
+   "origin": [
+    -4196.29,
+    -2951.03,
+    620.031
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r1-map-ends-y180",
+   "origin": [
+    -4196.29,
+    -2951.03,
+    620.031
+   ],
+   "angles": [
+    10,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r1-map-ends-y270",
+   "origin": [
+    -4196.29,
+    -2951.03,
+    620.031
+   ],
+   "angles": [
+    10,
+    270,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r1-map-ends-down",
+   "origin": [
+    -4196.29,
+    -2951.03,
+    620.031
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r2-blurry-ground-y0",
+   "origin": [
+    -4368,
+    -1624,
+    858.224
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r2-blurry-ground-y90",
+   "origin": [
+    -4368,
+    -1624,
+    858.224
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r2-blurry-ground-y180",
+   "origin": [
+    -4368,
+    -1624,
+    858.224
+   ],
+   "angles": [
+    10,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r2-blurry-ground-y270",
+   "origin": [
+    -4368,
+    -1624,
+    858.224
+   ],
+   "angles": [
+    10,
+    270,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r2-blurry-ground-down",
+   "origin": [
+    -4368,
+    -1624,
+    858.224
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r3-green-ground-y0",
+   "origin": [
+    -4017.08,
+    -982.442,
+    855.859
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r3-green-ground-y90",
+   "origin": [
+    -4017.08,
+    -982.442,
+    855.859
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r3-green-ground-y180",
+   "origin": [
+    -4017.08,
+    -982.442,
+    855.859
+   ],
+   "angles": [
+    10,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r3-green-ground-y270",
+   "origin": [
+    -4017.08,
+    -982.442,
+    855.859
+   ],
+   "angles": [
+    10,
+    270,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r3-green-ground-down",
+   "origin": [
+    -4017.08,
+    -982.442,
+    855.859
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r4-building-interior-y0",
+   "origin": [
+    -5605.02,
+    -849.045,
+    908.031
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r4-building-interior-y90",
+   "origin": [
+    -5605.02,
+    -849.045,
+    908.031
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r4-building-interior-y180",
+   "origin": [
+    -5605.02,
+    -849.045,
+    908.031
+   ],
+   "angles": [
+    10,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r4-building-interior-y270",
+   "origin": [
+    -5605.02,
+    -849.045,
+    908.031
+   ],
+   "angles": [
+    10,
+    270,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r4-building-interior-down",
+   "origin": [
+    -5605.02,
+    -849.045,
+    908.031
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r5-missing-texture-y0",
+   "origin": [
+    -5436.41,
+    -318.484,
+    1161.03
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r5-missing-texture-y90",
+   "origin": [
+    -5436.41,
+    -318.484,
+    1161.03
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r5-missing-texture-y180",
+   "origin": [
+    -5436.41,
+    -318.484,
+    1161.03
+   ],
+   "angles": [
+    10,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r5-missing-texture-y270",
+   "origin": [
+    -5436.41,
+    -318.484,
+    1161.03
+   ],
+   "angles": [
+    10,
+    270,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r5-missing-texture-down",
+   "origin": [
+    -5436.41,
+    -318.484,
+    1161.03
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r6-invisible-geo-y0",
+   "origin": [
+    -3557.88,
+    -451.787,
+    1031.242
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r6-invisible-geo-y90",
+   "origin": [
+    -3557.88,
+    -451.787,
+    1031.242
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r6-invisible-geo-y180",
+   "origin": [
+    -3557.88,
+    -451.787,
+    1031.242
+   ],
+   "angles": [
+    10,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r6-invisible-geo-y270",
+   "origin": [
+    -3557.88,
+    -451.787,
+    1031.242
+   ],
+   "angles": [
+    10,
+    270,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r6-invisible-geo-down",
+   "origin": [
+    -3557.88,
+    -451.787,
+    1031.242
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r7-hole-y0",
+   "origin": [
+    1677.19,
+    -2249.25,
+    1221.76
+   ],
+   "angles": [
+    10,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 3
+  },
+  {
+   "name": "r7-hole-y90",
+   "origin": [
+    1677.19,
+    -2249.25,
+    1221.76
+   ],
+   "angles": [
+    10,
+    90,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r7-hole-y180",
+   "origin": [
+    1677.19,
+    -2249.25,
+    1221.76
+   ],
+   "angles": [
+    10,
+    180,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r7-hole-y270",
+   "origin": [
+    1677.19,
+    -2249.25,
+    1221.76
+   ],
+   "angles": [
+    10,
+    270,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  },
+  {
+   "name": "r7-hole-down",
+   "origin": [
+    1677.19,
+    -2249.25,
+    1221.76
+   ],
+   "angles": [
+    60,
+    0,
+    0
+   ],
+   "fov": 90,
+   "settle": 1.5
+  }
+ ]
+}

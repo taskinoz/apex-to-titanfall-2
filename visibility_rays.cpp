@@ -1,5 +1,10 @@
 // Count first-hit rays per triangle from a set of viewpoints.
 // usage: visibility_rays triangles.bin points.bin rays_per_point hits.bin [occluders.bin]
+//        visibility_rays views triangles.bin points.bin rays_per_point outdir
+//        (per viewpoint: outdir/view_<p>.bin = uint32 ids of every first-hit triangle; BVH built once)
+//        visibility_rays tiles triangles.bin occluders.bin units.bin points.bin tiles.bin tile_count units_count rays out.bin
+//        (units.bin: uint32 unit per triangle; tiles.bin: uint32 tile per point; out: uint8 [tiles][units],
+//        1 where a ray from one of the tile's points reached the unit, first hit or through see-through triangles)
 // occluders.bin: uint8 [N]; 0 = see-through (never blocks a ray, still counted when reached)
 // triangles.bin: float32 [N][3][3]; points.bin: float32 [M][3]; hits.bin: uint32 [N]
 // Rays follow a Fibonacci sphere, rotated per point so directions interleave.
@@ -112,9 +117,13 @@ static bool blocked(V o, V target, int self) {
 }
 
 static int segments(int argc, char** argv);
+static int views(int argc, char** argv);
+static int tiles(int argc, char** argv);
 
 int main(int argc, char** argv) {
     if (argc > 1 && std::string(argv[1]) == "segments") return segments(argc, argv);
+    if (argc > 1 && std::string(argv[1]) == "views") return views(argc, argv);
+    if (argc > 1 && std::string(argv[1]) == "tiles") return tiles(argc, argv);
     if (argc != 5 && argc != 6) { std::puts("triangles points rays_per_point hits [occluders]"); return 2; }
     FILE* f = std::fopen(argv[1], "rb"); std::fseek(f, 0, SEEK_END); long size = std::ftell(f); std::fseek(f, 0, SEEK_SET);
     int n = (int)(size/36); tri.resize(n*3); std::fread(tri.data(), 36, n, f); std::fclose(f);
@@ -185,4 +194,74 @@ static int segments(int argc, char** argv) {
     for (auto& t : pool) t.join();
     FILE* f = std::fopen(argv[8], "wb"); std::fwrite(vis.data(), 1, k, f); std::fclose(f);
     int seen = 0; for (auto v : vis) seen += v; std::printf("candidates %d visible %d\n", k, seen); return 0;
+}
+
+static int views(int argc, char** argv) {
+    if (argc != 6) { std::puts("views triangles points rays outdir"); return 2; }
+    auto readall = [](const char* p, std::vector<char>& b) { FILE* f = std::fopen(p, "rb"); std::fseek(f, 0, SEEK_END); long long n = _ftelli64(f); std::fseek(f, 0, SEEK_SET); b.resize(n); std::fread(b.data(), 1, n, f); std::fclose(f); };
+    FILE* tf = std::fopen(argv[2], "rb"); _fseeki64(tf, 0, SEEK_END); long long bytes = _ftelli64(tf); _fseeki64(tf, 0, SEEK_SET);
+    int n = (int)(bytes/36); tri.resize((size_t)n*3); std::fread(tri.data(), 36, n, tf); std::fclose(tf);  // no second copy
+    std::vector<char> b; readall(argv[3], b); int m = (int)(b.size()/12); std::vector<V> pts(m); std::memcpy(pts.data(), b.data(), b.size());
+    int rays = std::atoi(argv[4]); std::string outdir = argv[5];
+    std::vector<V> c(n); order.resize(n);
+    for (int i = 0; i < n; i++) { order[i] = i; c[i] = {(tri[i*3].x+tri[i*3+1].x+tri[i*3+2].x)/3, (tri[i*3].y+tri[i*3+1].y+tri[i*3+2].y)/3, (tri[i*3].z+tri[i*3+1].z+tri[i*3+2].z)/3}; }
+    nodes.reserve(n); build(0, n, c); std::vector<V>().swap(c);
+    std::fprintf(stderr, "bvh %d triangles %zu nodes\n", n, nodes.size());
+    const double g = 3.14159265358979*(3.-std::sqrt(5.));  // double: g*i spans 1e7 rad at millions of rays
+    int threads = std::max(1u, std::thread::hardware_concurrency());
+    std::vector<uint8_t> hit(n);
+    for (int p = 0; p < m; p++) {
+        std::fill(hit.begin(), hit.end(), 0); std::atomic<int> next(0); std::vector<std::thread> pool;
+        for (int w = 0; w < threads; w++) pool.emplace_back([&]() {
+            std::vector<int> through;
+            for (int chunk; (chunk = next.fetch_add(4096)) < rays;)
+                for (int i = chunk; i < std::min(rays, chunk+4096); i++) {
+                    float z = 1-2*(i+.5f)/rays, r = std::sqrt(std::max(0.f, 1-z*z));
+                    double a = std::fmod(g*i, 6.283185307179586);
+                    V d = {(float)std::cos(a)*r, (float)std::sin(a)*r, z};
+                    int t = trace(pts[p], d, through); if (t >= 0) hit[t] = 1;
+                }
+        });
+        for (auto& t : pool) t.join();
+        std::vector<uint32_t> ids; for (int i = 0; i < n; i++) if (hit[i]) ids.push_back(i);
+        std::string path = outdir+"/view_"+std::to_string(p)+".bin";
+        FILE* f = std::fopen(path.c_str(), "wb"); std::fwrite(ids.data(), 4, ids.size(), f); std::fclose(f);
+        std::fprintf(stderr, "view %d / %d: %zu triangles hit\n", p+1, m, ids.size());
+    }
+    return 0;
+}
+
+static int tiles(int argc, char** argv) {
+    if (argc != 11) { std::puts("tiles triangles occluders units points tiles tile_count units_count rays out"); return 2; }
+    auto readall = [](const char* p, std::vector<char>& b) { FILE* f = std::fopen(p, "rb"); _fseeki64(f, 0, SEEK_END); long long n = _ftelli64(f); _fseeki64(f, 0, SEEK_SET); b.resize(n); std::fread(b.data(), 1, n, f); std::fclose(f); };
+    std::vector<char> b; readall(argv[2], b); int n = (int)(b.size()/36); tri.resize((size_t)n*3); std::memcpy(tri.data(), b.data(), b.size());
+    readall(argv[3], b); occ.assign(b.begin(), b.end());
+    readall(argv[4], b); std::vector<uint32_t> unit(n); std::memcpy(unit.data(), b.data(), b.size());
+    readall(argv[5], b); int m = (int)(b.size()/12); std::vector<V> pts(m); std::memcpy(pts.data(), b.data(), b.size());
+    readall(argv[6], b); std::vector<uint32_t> tile(m); std::memcpy(tile.data(), b.data(), b.size());
+    std::vector<char>().swap(b);
+    int T = std::atoi(argv[7]), U = std::atoi(argv[8]), rays = std::atoi(argv[9]);
+    std::vector<V> c(n); order.resize(n);
+    for (int i = 0; i < n; i++) { order[i] = i; c[i] = {(tri[i*3].x+tri[i*3+1].x+tri[i*3+2].x)/3, (tri[i*3].y+tri[i*3+1].y+tri[i*3+2].y)/3, (tri[i*3].z+tri[i*3+1].z+tri[i*3+2].z)/3}; }
+    nodes.reserve(n); build(0, n, c); std::vector<V>().swap(c);
+    std::vector<V> dirs(rays); const double g = 3.14159265358979*(3.-std::sqrt(5.));
+    for (int i = 0; i < rays; i++) { float z = 1-2*(i+.5f)/rays, r = std::sqrt(std::max(0.f, 1-z*z)); double a = std::fmod(g*i, 6.283185307179586); dirs[i] = {(float)std::cos(a)*r, (float)std::sin(a)*r, z}; }
+    std::vector<uint8_t> seen((size_t)T*U, 0); std::atomic<int> next(0);
+    int threads = std::max(1u, std::thread::hardware_concurrency()); std::vector<std::thread> pool;
+    for (int w = 0; w < threads; w++) pool.emplace_back([&]() {
+        std::vector<int> through;
+        for (int p; (p = next++) < m;) {
+            uint8_t* row = &seen[(size_t)tile[p]*U];
+            float a = 2.39996f*p, ca = std::cos(a), sa = std::sin(a);  // rotated per point so directions interleave
+            for (int i = 0; i < rays; i++) {
+                V d = {dirs[i].x*ca-dirs[i].y*sa, dirs[i].x*sa+dirs[i].y*ca, dirs[i].z};
+                int t = trace(pts[p], d, through); if (t >= 0) row[unit[t]] = 1;  // benign races: only ever set to 1
+                for (int u : through) row[unit[u]] = 1;
+            }
+            if (p % 2000 == 0) std::fprintf(stderr, "point %d / %d\n", p, m);
+        }
+    });
+    for (auto& t : pool) t.join();
+    FILE* f = std::fopen(argv[10], "wb"); std::fwrite(seen.data(), 1, seen.size(), f); std::fclose(f);
+    std::printf("triangles %d points %d tiles %d units %d rays %d\n", n, m, T, U, rays); return 0;
 }

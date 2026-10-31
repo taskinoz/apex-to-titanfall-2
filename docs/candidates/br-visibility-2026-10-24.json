@@ -1,0 +1,888 @@
+{
+  "capacity": 3145728,
+  "rays": 6000000,
+  "scene": {
+    "world_meshes": 57659,
+    "world_triangles": 2726052,
+    "world_indices": 8191926,
+    "placements": 451863,
+    "placements_without_export": 833,
+    "scene_triangles": 52040334
+  },
+  "views": [
+    {
+      "name": "TTV Building",
+      "kind": "ground",
+      "eye": [
+        9862.48,
+        5426.32,
+        -4078.6800000000003
+      ],
+      "worst": {
+        "yaw": 210,
+        "pitch": -20.0,
+        "world_perfect": 5472.0,
+        "world_frustum": 3057024.0,
+        "props_perfect_lod": 23628.0,
+        "props_perfect_baked": 6210.0,
+        "props_frustum_lod": 64696950.0,
+        "props_frustum_baked": 57933234.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 2271.0,
+        "units_seen": 49,
+        "total_perfect_baked": 11682.0
+      }
+    },
+    {
+      "name": "TTV Building",
+      "kind": "roof",
+      "eye": [
+        9137.5791015625,
+        5766.498046875,
+        -3540.6279296875
+      ],
+      "worst": {
+        "yaw": 0,
+        "pitch": 0.0,
+        "world_perfect": 12444.0,
+        "world_frustum": 1065042.0,
+        "props_perfect_lod": 115722.0,
+        "props_perfect_baked": 53382.0,
+        "props_frustum_lod": 24846798.0,
+        "props_frustum_baked": 21306288.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 12669.0,
+        "units_seen": 79,
+        "total_perfect_baked": 65826.0
+      }
+    },
+    {
+      "name": "Capitol City",
+      "kind": "ground",
+      "eye": [
+        6760.333333333333,
+        5671.939393939394,
+        -3893.030303030303
+      ],
+      "worst": {
+        "yaw": 120,
+        "pitch": 0.0,
+        "world_perfect": 15528.0,
+        "world_frustum": 2572338.0,
+        "props_perfect_lod": 75702.0,
+        "props_perfect_baked": 20922.0,
+        "props_frustum_lod": 52544598.0,
+        "props_frustum_baked": 48754710.0,
+        "foliage_perfect_lod": 2616.0,
+        "triangles": 2991.0,
+        "units_seen": 71,
+        "total_perfect_baked": 36450.0
+      }
+    },
+    {
+      "name": "Capitol City",
+      "kind": "roof",
+      "eye": [
+        7950.86474609375,
+        5745.28955078125,
+        -3897.458251953125
+      ],
+      "worst": {
+        "yaw": 90,
+        "pitch": -20.0,
+        "world_perfect": 184248.0,
+        "world_frustum": 1963626.0,
+        "props_perfect_lod": 2138022.0,
+        "props_perfect_baked": 732162.0,
+        "props_frustum_lod": 37995066.0,
+        "props_frustum_baked": 33802524.0,
+        "foliage_perfect_lod": 41622.0,
+        "triangles": 90186.0,
+        "units_seen": 1309,
+        "total_perfect_baked": 916410.0
+      }
+    },
+    {
+      "name": "Lava Fissure",
+      "kind": "ground",
+      "eye": [
+        -27644.846153846152,
+        11373.923076923076,
+        -2989.6923076923076
+      ],
+      "worst": {
+        "yaw": 270,
+        "pitch": 0.0,
+        "world_perfect": 71262.0,
+        "world_frustum": 2918364.0,
+        "props_perfect_lod": 778416.0,
+        "props_perfect_baked": 90822.0,
+        "props_frustum_lod": 55990860.0,
+        "props_frustum_baked": 49096776.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 19728.0,
+        "units_seen": 254,
+        "total_perfect_baked": 162084.0
+      }
+    },
+    {
+      "name": "Lava Fissure",
+      "kind": "roof",
+      "eye": [
+        -27582.857421875,
+        12095.3544921875,
+        -2910.454345703125
+      ],
+      "worst": {
+        "yaw": 150,
+        "pitch": -20.0,
+        "world_perfect": 101592.0,
+        "world_frustum": 158532.0,
+        "props_perfect_lod": 340758.0,
+        "props_perfect_baked": 35946.0,
+        "props_frustum_lod": 5179062.0,
+        "props_frustum_baked": 2394096.0,
+        "foliage_perfect_lod": 960.0,
+        "triangles": 17115.0,
+        "units_seen": 204,
+        "total_perfect_baked": 137538.0
+      }
+    },
+    {
+      "name": "Space Elevator",
+      "kind": "ground",
+      "eye": [
+        -12912.615384615385,
+        27068.923076923078,
+        -3602.6153846153848
+      ],
+      "worst": {
+        "yaw": 90,
+        "pitch": -20.0,
+        "world_perfect": 14238.0,
+        "world_frustum": 210954.0,
+        "props_perfect_lod": 52278.0,
+        "props_perfect_baked": 5718.0,
+        "props_frustum_lod": 5530824.0,
+        "props_frustum_baked": 2576670.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 291.0,
+        "units_seen": 18,
+        "total_perfect_baked": 19956.0
+      }
+    },
+    {
+      "name": "Space Elevator",
+      "kind": "roof",
+      "eye": [
+        -12300.2802734375,
+        27784.474609375,
+        -2504.907470703125
+      ],
+      "worst": {
+        "yaw": 150,
+        "pitch": -20.0,
+        "world_perfect": 139998.0,
+        "world_frustum": 386826.0,
+        "props_perfect_lod": 2558934.0,
+        "props_perfect_baked": 1196580.0,
+        "props_frustum_lod": 13309752.0,
+        "props_frustum_baked": 10095504.0,
+        "foliage_perfect_lod": 636978.0,
+        "triangles": 124716.0,
+        "units_seen": 3641,
+        "total_perfect_baked": 1336578.0
+      }
+    },
+    {
+      "name": "Little Town",
+      "kind": "ground",
+      "eye": [
+        20605.333333333332,
+        2688.3333333333335,
+        -3973.3333333333335
+      ],
+      "worst": {
+        "yaw": 30,
+        "pitch": 0.0,
+        "world_perfect": 80898.0,
+        "world_frustum": 362490.0,
+        "props_perfect_lod": 3372252.0,
+        "props_perfect_baked": 1013334.0,
+        "props_frustum_lod": 13510776.0,
+        "props_frustum_baked": 9930750.0,
+        "foliage_perfect_lod": 965718.0,
+        "triangles": 161178.0,
+        "units_seen": 3983,
+        "total_perfect_baked": 1094232.0
+      }
+    },
+    {
+      "name": "Little Town",
+      "kind": "roof",
+      "eye": [
+        19485.6015625,
+        2728.40185546875,
+        -3728.259521484375
+      ],
+      "worst": {
+        "yaw": 30,
+        "pitch": 0.0,
+        "world_perfect": 96738.0,
+        "world_frustum": 451740.0,
+        "props_perfect_lod": 3389496.0,
+        "props_perfect_baked": 1221240.0,
+        "props_frustum_lod": 14884254.0,
+        "props_frustum_baked": 11350692.0,
+        "foliage_perfect_lod": 930492.0,
+        "triangles": 162984.0,
+        "units_seen": 4832,
+        "total_perfect_baked": 1317978.0
+      }
+    },
+    {
+      "name": "TTV Building 2",
+      "kind": "ground",
+      "eye": [
+        1857.5,
+        5040.0,
+        -3906.0
+      ],
+      "worst": {
+        "yaw": 90,
+        "pitch": -20.0,
+        "world_perfect": 5172.0,
+        "world_frustum": 2199282.0,
+        "props_perfect_lod": 131562.0,
+        "props_perfect_baked": 43116.0,
+        "props_frustum_lod": 42604416.0,
+        "props_frustum_baked": 38763948.0,
+        "foliage_perfect_lod": 3024.0,
+        "triangles": 9360.0,
+        "units_seen": 99,
+        "total_perfect_baked": 48288.0
+      }
+    },
+    {
+      "name": "TTV Building 2",
+      "kind": "roof",
+      "eye": [
+        1490.27880859375,
+        4854.51953125,
+        -3004.099609375
+      ],
+      "worst": {
+        "yaw": 120,
+        "pitch": -20.0,
+        "world_perfect": 210.0,
+        "world_frustum": 2321004.0,
+        "props_perfect_lod": 105708.0,
+        "props_perfect_baked": 25680.0,
+        "props_frustum_lod": 47627916.0,
+        "props_frustum_baked": 43651200.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 2898.0,
+        "units_seen": 98,
+        "total_perfect_baked": 25890.0
+      }
+    },
+    {
+      "name": "Little Town 2",
+      "kind": "ground",
+      "eye": [
+        -27353.6,
+        -26674.6,
+        -4300.0
+      ],
+      "worst": {
+        "yaw": 60,
+        "pitch": 0.0,
+        "world_perfect": 67158.0,
+        "world_frustum": 6575970.0,
+        "props_perfect_lod": 1711122.0,
+        "props_perfect_baked": 433380.0,
+        "props_frustum_lod": 124969800.0,
+        "props_frustum_baked": 121499760.0,
+        "foliage_perfect_lod": 228972.0,
+        "triangles": 76731.0,
+        "units_seen": 1244,
+        "total_perfect_baked": 500538.0
+      }
+    },
+    {
+      "name": "Little Town 2",
+      "kind": "roof",
+      "eye": [
+        -27929.376953125,
+        -26542.259765625,
+        -4069.59912109375
+      ],
+      "worst": {
+        "yaw": 30,
+        "pitch": -20.0,
+        "world_perfect": 106902.0,
+        "world_frustum": 7305348.0,
+        "props_perfect_lod": 1862280.0,
+        "props_perfect_baked": 697548.0,
+        "props_frustum_lod": 131938074.0,
+        "props_frustum_baked": 128942268.0,
+        "foliage_perfect_lod": 253098.0,
+        "triangles": 111669.0,
+        "units_seen": 2016,
+        "total_perfect_baked": 804450.0
+      }
+    },
+    {
+      "name": "Dome",
+      "kind": "ground",
+      "eye": [
+        18856.2,
+        -38082.4,
+        -2080.0
+      ],
+      "worst": {
+        "yaw": 180,
+        "pitch": -20.0,
+        "world_perfect": 18864.0,
+        "world_frustum": 2659548.0,
+        "props_perfect_lod": 593304.0,
+        "props_perfect_baked": 94872.0,
+        "props_frustum_lod": 52225494.0,
+        "props_frustum_baked": 48170334.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 13032.0,
+        "units_seen": 285,
+        "total_perfect_baked": 113736.0
+      }
+    },
+    {
+      "name": "Dome",
+      "kind": "roof",
+      "eye": [
+        18005.576171875,
+        -37391.234375,
+        -2053.639892578125
+      ],
+      "worst": {
+        "yaw": 210,
+        "pitch": -20.0,
+        "world_perfect": 16362.0,
+        "world_frustum": 619950.0,
+        "props_perfect_lod": 99318.0,
+        "props_perfect_baked": 25200.0,
+        "props_frustum_lod": 16514196.0,
+        "props_frustum_baked": 13200234.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 5742.0,
+        "units_seen": 115,
+        "total_perfect_baked": 41562.0
+      }
+    },
+    {
+      "name": "Refinery",
+      "kind": "ground",
+      "eye": [
+        19395.625,
+        27739.75,
+        -4344.5625
+      ],
+      "worst": {
+        "yaw": 300,
+        "pitch": 0.0,
+        "world_perfect": 59742.0,
+        "world_frustum": 3285156.0,
+        "props_perfect_lod": 664236.0,
+        "props_perfect_baked": 200964.0,
+        "props_frustum_lod": 55158480.0,
+        "props_frustum_baked": 52703628.0,
+        "foliage_perfect_lod": 11862.0,
+        "triangles": 33444.0,
+        "units_seen": 551,
+        "total_perfect_baked": 260706.0
+      }
+    },
+    {
+      "name": "Refinery",
+      "kind": "roof",
+      "eye": [
+        18893.732421875,
+        28826.6796875,
+        -4072.85009765625
+      ],
+      "worst": {
+        "yaw": 240,
+        "pitch": 0.0,
+        "world_perfect": 8856.0,
+        "world_frustum": 6807372.0,
+        "props_perfect_lod": 25020.0,
+        "props_perfect_baked": 2904.0,
+        "props_frustum_lod": 122874216.0,
+        "props_frustum_baked": 119812488.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 471.0,
+        "units_seen": 21,
+        "total_perfect_baked": 11760.0
+      }
+    },
+    {
+      "name": "Factory",
+      "kind": "ground",
+      "eye": [
+        5681.561428571429,
+        -21949.01476190476,
+        -3275.9566666666665
+      ],
+      "worst": {
+        "yaw": 210,
+        "pitch": 0.0,
+        "world_perfect": 164190.0,
+        "world_frustum": 889374.0,
+        "props_perfect_lod": 2842692.0,
+        "props_perfect_baked": 626862.0,
+        "props_frustum_lod": 24703902.0,
+        "props_frustum_baked": 18683640.0,
+        "foliage_perfect_lod": 206232.0,
+        "triangles": 81045.0,
+        "units_seen": 2104,
+        "total_perfect_baked": 791052.0
+      }
+    },
+    {
+      "name": "Factory",
+      "kind": "roof",
+      "eye": [
+        4747.02001953125,
+        -21238.978515625,
+        -3445.23046875
+      ],
+      "worst": {
+        "yaw": 270,
+        "pitch": 0.0,
+        "world_perfect": 122310.0,
+        "world_frustum": 994134.0,
+        "props_perfect_lod": 2011494.0,
+        "props_perfect_baked": 349092.0,
+        "props_frustum_lod": 19814184.0,
+        "props_frustum_baked": 14140434.0,
+        "foliage_perfect_lod": 15084.0,
+        "triangles": 59199.0,
+        "units_seen": 1028,
+        "total_perfect_baked": 471402.0
+      }
+    },
+    {
+      "name": "Lava City",
+      "kind": "ground",
+      "eye": [
+        24343.5,
+        -27350.285714285714,
+        -3246.4285714285716
+      ],
+      "worst": {
+        "yaw": 30,
+        "pitch": 0.0,
+        "world_perfect": 88902.0,
+        "world_frustum": 461712.0,
+        "props_perfect_lod": 2559288.0,
+        "props_perfect_baked": 553932.0,
+        "props_frustum_lod": 8674650.0,
+        "props_frustum_baked": 6062262.0,
+        "foliage_perfect_lod": 260976.0,
+        "triangles": 57060.0,
+        "units_seen": 1607,
+        "total_perfect_baked": 642834.0
+      }
+    },
+    {
+      "name": "Lava City",
+      "kind": "roof",
+      "eye": [
+        24367.326171875,
+        -26787.056640625,
+        -2071.2197265625
+      ],
+      "worst": {
+        "yaw": 300,
+        "pitch": 0.0,
+        "world_perfect": 20856.0,
+        "world_frustum": 262884.0,
+        "props_perfect_lod": 816720.0,
+        "props_perfect_baked": 150858.0,
+        "props_frustum_lod": 4930896.0,
+        "props_frustum_baked": 2902026.0,
+        "foliage_perfect_lod": 70938.0,
+        "triangles": 21906.0,
+        "units_seen": 431,
+        "total_perfect_baked": 171714.0
+      }
+    },
+    {
+      "name": "Thermal Station",
+      "kind": "ground",
+      "eye": [
+        -19613.23076923077,
+        -20910.923076923078,
+        -4041.6153846153848
+      ],
+      "worst": {
+        "yaw": 240,
+        "pitch": 0.0,
+        "world_perfect": 68898.0,
+        "world_frustum": 88680.0,
+        "props_perfect_lod": 1016046.0,
+        "props_perfect_baked": 350310.0,
+        "props_frustum_lod": 4694670.0,
+        "props_frustum_baked": 2825172.0,
+        "foliage_perfect_lod": 53952.0,
+        "triangles": 45906.0,
+        "units_seen": 1037,
+        "total_perfect_baked": 419208.0
+      }
+    },
+    {
+      "name": "Thermal Station",
+      "kind": "roof",
+      "eye": [
+        -19612.671875,
+        -20834.228515625,
+        440.43017578125
+      ],
+      "worst": {
+        "yaw": 0,
+        "pitch": -20.0,
+        "world_perfect": 0.0,
+        "world_frustum": 4708170.0,
+        "props_perfect_lod": 70230.0,
+        "props_perfect_baked": 4674.0,
+        "props_frustum_lod": 83789610.0,
+        "props_frustum_baked": 78860628.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 51.0,
+        "units_seen": 2,
+        "total_perfect_baked": 4674.0
+      }
+    },
+    {
+      "name": "Epicenter",
+      "kind": "ground",
+      "eye": [
+        11547.25,
+        20246.5,
+        -4187.25
+      ],
+      "worst": {
+        "yaw": 0,
+        "pitch": 0.0,
+        "world_perfect": 1302.0,
+        "world_frustum": 667704.0,
+        "props_perfect_lod": 82536.0,
+        "props_perfect_baked": 9180.0,
+        "props_frustum_lod": 15177786.0,
+        "props_frustum_baked": 13387200.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 174.0,
+        "units_seen": 5,
+        "total_perfect_baked": 10482.0
+      }
+    },
+    {
+      "name": "Epicenter",
+      "kind": "roof",
+      "eye": [
+        12593.1337890625,
+        20119.951171875,
+        -36.817039489746094
+      ],
+      "worst": {
+        "yaw": 330,
+        "pitch": 0.0,
+        "world_perfect": 0.0,
+        "world_frustum": 1526610.0,
+        "props_perfect_lod": 59364.0,
+        "props_perfect_baked": 6486.0,
+        "props_frustum_lod": 28914000.0,
+        "props_frustum_baked": 27485358.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 159.0,
+        "units_seen": 4,
+        "total_perfect_baked": 6486.0
+      }
+    },
+    {
+      "name": "Overlook",
+      "kind": "ground",
+      "eye": [
+        28696.25,
+        10344.75,
+        -2932.75
+      ],
+      "worst": {
+        "yaw": 120,
+        "pitch": -20.0,
+        "world_perfect": 70332.0,
+        "world_frustum": 2144424.0,
+        "props_perfect_lod": 2290920.0,
+        "props_perfect_baked": 805458.0,
+        "props_frustum_lod": 47314008.0,
+        "props_frustum_baked": 43425678.0,
+        "foliage_perfect_lod": 541026.0,
+        "triangles": 126498.0,
+        "units_seen": 2704,
+        "total_perfect_baked": 875790.0
+      }
+    },
+    {
+      "name": "Overlook",
+      "kind": "roof",
+      "eye": [
+        28302.705078125,
+        11437.9228515625,
+        -3013.080078125
+      ],
+      "worst": {
+        "yaw": 90,
+        "pitch": -20.0,
+        "world_perfect": 41868.0,
+        "world_frustum": 495126.0,
+        "props_perfect_lod": 1763484.0,
+        "props_perfect_baked": 504018.0,
+        "props_frustum_lod": 15101148.0,
+        "props_frustum_baked": 12376092.0,
+        "foliage_perfect_lod": 374520.0,
+        "triangles": 92679.0,
+        "units_seen": 1852,
+        "total_perfect_baked": 545886.0
+      }
+    },
+    {
+      "name": "Train yard",
+      "kind": "ground",
+      "eye": [
+        -13002.0,
+        3223.2,
+        -3118.0
+      ],
+      "worst": {
+        "yaw": 240,
+        "pitch": -20.0,
+        "world_perfect": 39252.0,
+        "world_frustum": 1023024.0,
+        "props_perfect_lod": 1353876.0,
+        "props_perfect_baked": 153576.0,
+        "props_frustum_lod": 30874128.0,
+        "props_frustum_baked": 24820302.0,
+        "foliage_perfect_lod": 431316.0,
+        "triangles": 29517.0,
+        "units_seen": 626,
+        "total_perfect_baked": 192828.0
+      }
+    },
+    {
+      "name": "Train yard",
+      "kind": "roof",
+      "eye": [
+        -12885.18359375,
+        3288.319091796875,
+        -2735.215576171875
+      ],
+      "worst": {
+        "yaw": 120,
+        "pitch": 0.0,
+        "world_perfect": 126486.0,
+        "world_frustum": 1933458.0,
+        "props_perfect_lod": 4495032.0,
+        "props_perfect_baked": 1823454.0,
+        "props_frustum_lod": 39709968.0,
+        "props_frustum_baked": 34104582.0,
+        "foliage_perfect_lod": 1575678.0,
+        "triangles": 224622.0,
+        "units_seen": 6443,
+        "total_perfect_baked": 1949940.0
+      }
+    },
+    {
+      "name": "vantage -2536,-10806",
+      "kind": "vantage",
+      "eye": [
+        -2535.839599609375,
+        -10806.3291015625,
+        7981.23828125
+      ],
+      "worst": {
+        "yaw": 300,
+        "pitch": -20.0,
+        "world_perfect": 509154.0,
+        "world_frustum": 2128800.0,
+        "props_perfect_lod": 4462794.0,
+        "props_perfect_baked": 3968358.0,
+        "props_frustum_lod": 31872228.0,
+        "props_frustum_baked": 31057722.0,
+        "foliage_perfect_lod": 1563258.0,
+        "triangles": 258627.0,
+        "units_seen": 12742,
+        "total_perfect_baked": 4477512.0
+      }
+    },
+    {
+      "name": "vantage -305,-13075",
+      "kind": "vantage",
+      "eye": [
+        -304.7560729980469,
+        -13074.6201171875,
+        6103.01025390625
+      ],
+      "worst": {
+        "yaw": 300,
+        "pitch": -20.0,
+        "world_perfect": 515706.0,
+        "world_frustum": 1925874.0,
+        "props_perfect_lod": 4930794.0,
+        "props_perfect_baked": 4049502.0,
+        "props_frustum_lod": 28551408.0,
+        "props_frustum_baked": 27611706.0,
+        "foliage_perfect_lod": 1606374.0,
+        "triangles": 295329.0,
+        "units_seen": 13478,
+        "total_perfect_baked": 4565208.0
+      }
+    },
+    {
+      "name": "vantage -5021,-12687",
+      "kind": "vantage",
+      "eye": [
+        -5021.13037109375,
+        -12686.50390625,
+        6102.18115234375
+      ],
+      "worst": {
+        "yaw": 300,
+        "pitch": -20.0,
+        "world_perfect": 349806.0,
+        "world_frustum": 2098212.0,
+        "props_perfect_lod": 3906936.0,
+        "props_perfect_baked": 3265650.0,
+        "props_frustum_lod": 32269488.0,
+        "props_frustum_baked": 30877782.0,
+        "foliage_perfect_lod": 1393980.0,
+        "triangles": 190146.0,
+        "units_seen": 9676,
+        "total_perfect_baked": 3615456.0
+      }
+    },
+    {
+      "name": "vantage -19965,-20481",
+      "kind": "vantage",
+      "eye": [
+        -19965.4296875,
+        -20480.8203125,
+        5927.83203125
+      ],
+      "worst": {
+        "yaw": 60,
+        "pitch": -20.0,
+        "world_perfect": 429870.0,
+        "world_frustum": 6045270.0,
+        "props_perfect_lod": 3453420.0,
+        "props_perfect_baked": 2921496.0,
+        "props_frustum_lod": 115435068.0,
+        "props_frustum_baked": 113043108.0,
+        "foliage_perfect_lod": 1824174.0,
+        "triangles": 122055.0,
+        "units_seen": 9623,
+        "total_perfect_baked": 3351366.0
+      }
+    },
+    {
+      "name": "vantage 12583,21039",
+      "kind": "vantage",
+      "eye": [
+        12582.8818359375,
+        21038.568359375,
+        5040.57080078125
+      ],
+      "worst": {
+        "yaw": 300,
+        "pitch": 0.0,
+        "world_perfect": 236904.0,
+        "world_frustum": 3307626.0,
+        "props_perfect_lod": 3263832.0,
+        "props_perfect_baked": 3081024.0,
+        "props_frustum_lod": 54332118.0,
+        "props_frustum_baked": 53881626.0,
+        "foliage_perfect_lod": 2248476.0,
+        "triangles": 131235.0,
+        "units_seen": 11919,
+        "total_perfect_baked": 3317928.0
+      }
+    },
+    {
+      "name": "vantage -3807,-7948",
+      "kind": "vantage",
+      "eye": [
+        -3806.880859375,
+        -7947.59619140625,
+        4543.9189453125
+      ],
+      "worst": {
+        "yaw": 240,
+        "pitch": -20.0,
+        "world_perfect": 42.0,
+        "world_frustum": 1293324.0,
+        "props_perfect_lod": 30834.0,
+        "props_perfect_baked": 20850.0,
+        "props_frustum_lod": 27584214.0,
+        "props_frustum_baked": 25697046.0,
+        "foliage_perfect_lod": 0.0,
+        "triangles": 498.0,
+        "units_seen": 8,
+        "total_perfect_baked": 20892.0
+      }
+    },
+    {
+      "name": "vantage 16873,-30584",
+      "kind": "vantage",
+      "eye": [
+        16872.619140625,
+        -30583.984375,
+        4528.404296875
+      ],
+      "worst": {
+        "yaw": 120,
+        "pitch": -20.0,
+        "world_perfect": 593766.0,
+        "world_frustum": 6880374.0,
+        "props_perfect_lod": 4467816.0,
+        "props_perfect_baked": 3942504.0,
+        "props_frustum_lod": 129301902.0,
+        "props_frustum_baked": 127790454.0,
+        "foliage_perfect_lod": 1645500.0,
+        "triangles": 236775.0,
+        "units_seen": 13422,
+        "total_perfect_baked": 4536270.0
+      }
+    },
+    {
+      "name": "vantage -10776,-21341",
+      "kind": "vantage",
+      "eye": [
+        -10776.2685546875,
+        -21341.017578125,
+        4420.94921875
+      ],
+      "worst": {
+        "yaw": 30,
+        "pitch": -20.0,
+        "world_perfect": 547602.0,
+        "world_frustum": 4619106.0,
+        "props_perfect_lod": 4119546.0,
+        "props_perfect_baked": 3084900.0,
+        "props_frustum_lod": 82480146.0,
+        "props_frustum_baked": 80201604.0,
+        "foliage_perfect_lod": 1167876.0,
+        "triangles": 232386.0,
+        "units_seen": 9756,
+        "total_perfect_baked": 3632502.0
+      }
+    }
+  ]
+}

@@ -62,11 +62,11 @@ RELEASES = {
         'notes': "Thermal Station, the World's Edge area Apex used as an Arenas map. The storm-ring wall now looks the same on every side: it is self-lit with no sun shading, which had left two sides see-through and two orange. Rebuilds no longer stack extra copies of the ring, which had darkened the map. The lava-flow ground is dark cooled crust with glowing cracks, not a bright white sheet. Coplanar dirt overlays that z-fought with the asphalt are removed. The minimap is regenerated. Requires ApexMaps.UI 0.2.1.",
     },
     'ArenaThunderdome': {
-        'version': '0.1.1',
+        'version': '0.2.0',
         'map': 'mp_thunderdome',
         'title': 'Thunderdome',
         'screenshot': 'northstar/ArenaThunderdome/screenshot.png',
-        'notes': 'Thunderdome from the current retail Apex release: the hovering arena inside its stadium ring. Props now collide (Apex collision exported per model), and about 1,500 more props are drawn using cheaper LODs and simplified heavy pipes and frames. Terrain blending, vertex-painted metal, ziplines, lava and out-of-bounds volumes and 88 Apex spawns. Grass and small rock clusters are thinned to fit the draw budget; material colours use neutral tints. Requires ApexMaps.UI 0.2.0.',
+        'notes': 'Repairs collision on 5,318 visible physical props, including 14 previously skipped bridge components, using their drawn surfaces instead of mismatched source hulls. Restores 23 material entries with original Apex colour, normal, gloss and specular maps. Geometry, lighting, safety volumes and the shared UI atlas are preserved. Tested on Northstar 1.31.14 in single-client PS/FFA: all 88 spawns clear/supported, both teams, weapon fire, postmatch lobby and stock/map reload. Some layered/translucent materials, authored paint/emission constants, omitted scenery and AI remain incomplete. CTF is unsupported (missing flag objectives); this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.',
     },
 }
 # The shared UI companion ships as its own download (one UI atlas serves all five maps;

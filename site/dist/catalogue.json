@@ -5596,6 +5596,274 @@
         }
       ],
       "latest": "2026-10-18-release-refresh"
+    },
+    {
+      "id": "thermal-station",
+      "name": "Thermal Station",
+      "source_map": "mp_rr_desertlands_mu2",
+      "target_map": "mp_thermal_station",
+      "status": "Early preview",
+      "description": "World's Edge's geothermal station and its lava fields, cut out of the battle royale map as a pilot arena.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Converted from current Apex. The arena is cut from the full World's Edge map with its own collision, lighting and storm sky. Bright overlays and z-fighting dirt were retired after the first playtest. There is no R5Reloaded source for this version of the map, so the gallery shows the port only.",
+      "download": null,
+      "version": "0.1.2",
+      "source_offset": [
+        0,
+        0,
+        0
+      ],
+      "snapshots": [
+        {
+          "id": "2026-10-30-port-gallery",
+          "version": "0.1.2",
+          "shots": [
+            {
+              "name": "overview",
+              "origin": [
+                -12.5,
+                -5041.0,
+                3350.0
+              ],
+              "angles": [
+                32,
+                90,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thermal-station/2026-10-30-port-gallery/overview-northstar.png",
+                "sha256": "d6c8c626c6058937667c6b279f717330520bcba8c5c0d0418f04fcfb243791f1",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793337433.4391513
+              }
+            },
+            {
+              "name": "ground-east",
+              "origin": [
+                2760,
+                -210,
+                97
+              ],
+              "angles": [
+                4,
+                180,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thermal-station/2026-10-30-port-gallery/ground-east-northstar.png",
+                "sha256": "926a11485c7ae5918fd9f63749e48504f5f222c645115b303341cb8b72901082",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793337442.1379435
+              }
+            },
+            {
+              "name": "ring-edge",
+              "origin": [
+                3500,
+                -3000,
+                600
+              ],
+              "angles": [
+                5,
+                -30,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thermal-station/2026-10-30-port-gallery/ring-edge-northstar.png",
+                "sha256": "a0708f53008668e159dae05018e6c5b795644807243dfff4fcf30d90f02929aa",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793337450.5412004
+              }
+            },
+            {
+              "name": "lava-fields",
+              "origin": [
+                -3377.26,
+                -100.93,
+                293.31
+              ],
+              "angles": [
+                -23.24,
+                -77.88,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thermal-station/2026-10-30-port-gallery/lava-fields-northstar.png",
+                "sha256": "bc576a6c94cb2bb298fa96c5dc6f78f02f9b13d2a6aeeed231e87ff7749370f4",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793337476.3600233
+              }
+            }
+          ]
+        }
+      ],
+      "latest": "2026-10-30-port-gallery"
+    },
+    {
+      "id": "thunderdome",
+      "name": "Thunderdome",
+      "source_map": "mp_rr_thunderdome",
+      "target_map": "mp_thunderdome",
+      "status": "Early preview",
+      "description": "Fuse's floating arena: wetlands, treehouses and the giant skull, ringed by a stadium crowd.",
+      "modes": [
+        "Pilots vs Pilots",
+        "Free For All"
+      ],
+      "notes": "Converted from current Apex. Over 6,700 Apex props are compiled as native static props with collision, faded foliage and re-baked shadows. The map is split into visibility cells so blocked areas are not drawn, and small clutter fades with distance. Apex's runtime UI screens around the stadium cannot be reproduced and show their static backing. There is no R5Reloaded source for this map, so the gallery shows the port only.",
+      "download": null,
+      "version": "0.2.0",
+      "source_offset": [
+        0,
+        0,
+        0
+      ],
+      "snapshots": [
+        {
+          "id": "2026-10-30-port-gallery",
+          "version": "0.2.0",
+          "shots": [
+            {
+              "name": "overview-south",
+              "origin": [
+                0,
+                -7500,
+                4500
+              ],
+              "angles": [
+                30,
+                90,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-10-30-port-gallery/overview-south-northstar.png",
+                "sha256": "5fd6a6a3a97da3bbc74d3ae734ed3c680431624dd5a9a928a18539b210c2f5b5",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349719.820161
+              }
+            },
+            {
+              "name": "overview-north",
+              "origin": [
+                0,
+                7000,
+                4500
+              ],
+              "angles": [
+                30,
+                -90,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-10-30-port-gallery/overview-north-northstar.png",
+                "sha256": "251b988cb322ab2e351fb9c0612f4de03fa67101746ef4997fbd2e76360df17e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349727.2281501
+              }
+            },
+            {
+              "name": "east-start",
+              "origin": [
+                5888,
+                0,
+                1000
+              ],
+              "angles": [
+                5,
+                180,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-10-30-port-gallery/east-start-northstar.png",
+                "sha256": "1b0c57878aa3606c9aa5cc45045dc4a497863f0da7a8ee6ee6d29f7ca6a77172",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349734.8503444
+              }
+            },
+            {
+              "name": "centre",
+              "origin": [
+                0,
+                0,
+                1300
+              ],
+              "angles": [
+                10,
+                45,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-10-30-port-gallery/centre-northstar.png",
+                "sha256": "442c98afcbe5b0648fd1788b66b52c4efd4de54fc880cedf1055d797576e59e6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349742.6597972
+              }
+            },
+            {
+              "name": "skull",
+              "origin": [
+                2530.5,
+                1059.6,
+                2900
+              ],
+              "angles": [
+                8,
+                225,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-10-30-port-gallery/skull-northstar.png",
+                "sha256": "e5d5f3c0c724737ab6c9d02d223e1d65a77a1fa80c58a24336dd2d802fa8983e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349749.9529157
+              }
+            },
+            {
+              "name": "across-arena",
+              "origin": [
+                -2264.17,
+                -1949.95,
+                1633.62
+              ],
+              "angles": [
+                11.68,
+                35.33,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-10-30-port-gallery/across-arena-northstar.png",
+                "sha256": "6a500014c2f1ecc586de9c83edfaf692b2e64d6722f1a675d127b7a2cd944e0b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349757.1209579
+              }
+            }
+          ]
+        }
+      ],
+      "latest": "2026-10-30-port-gallery"
     }
   ]
 }

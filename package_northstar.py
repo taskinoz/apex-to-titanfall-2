@@ -47,6 +47,7 @@ def validate_bsp(path,require_native_index_padding=False):
         if first+count>sets:
             raise ValueError(f'Collision grid cell {cell} refers outside geosets')
     brush_count=lumps[0x5c][1]//32
+    static_props=struct.unpack_from('<I',data,lumps[0x7b][0]+12)[0] if lumps.get(0x7b,(0,0,0))[1]>=16 else 0
     palette_count=lumps.get(0x5b,(0,0,0))[1]//4
     primitive_offset,primitive_length,_=lumps.get(0x59,(0,0,0))
     primitive_count=primitive_length//4
@@ -56,7 +57,8 @@ def validate_bsp(path,require_native_index_padding=False):
         raise ValueError('Geoset bounds count differs')
     def validate_primitive(packed):
         kind=packed>>24;index=(packed>>8)&65535
-        limit=brush_count if kind==0 else lumps.get(0x45,(0,0,0))[1]//44 if kind==0x40 else 0
+        # 0x60 references a static-prop placement; LEVEL_INFO (0x7b) field 3 is the placement count.
+        limit=brush_count if kind==0 else lumps.get(0x45,(0,0,0))[1]//44 if kind==0x40 else static_props if kind==0x60 else 0
         if index>=limit or (packed&255)>=palette_count:
             raise ValueError('Collision primitive refers outside brushes/contents')
     for (packed,) in struct.iter_unpack('<I',data[primitive_offset:primitive_offset+primitive_length]):
