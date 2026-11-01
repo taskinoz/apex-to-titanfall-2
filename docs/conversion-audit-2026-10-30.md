@@ -39,11 +39,13 @@ Every stage reads and rewrites the 930 MB BSP: about 13 GB of disk traffic per r
 
 ## Recommendations, by expected value
 
-1. **Weld collision vertex positions (largest win).** The BSP's position lump is 276 MB: 23.0M positions, of which
-   only 3.68M are unique. Render uses 3.0M; the 59,122 triangle-collision headers write three fresh positions per
-   triangle. Welding within each 96-triangle group (the 10/7/7-bit index deltas stay local) should save roughly
-   200 MB. That means faster map loads, smaller downloads and less pipeline I/O. It needs a native trace check
-   afterwards, as in `docs/candidates/static-prop-conversion-2026-10-24.md`.
+1. **Weld collision vertex positions — done 1 November.** `weld_collision_vertices.py`, a pipeline stage after
+   collision, stores each position once per triangle-collision header (Homestead stores 0.65 positions per triangle;
+   the encoder wrote 3). The prop headers were also slabs, about 6,500 units long, because
+   `add_native_prop_collision.py` grouped triangles sorted by x; it now groups them in Z order, so each header is a
+   compact patch, which welds better and gives collision traces smaller boxes. Thunderdome's collision positions went
+   from 19.96M to 5.76M and the BSP from 930 MB to 759 MB; the stage takes 32 s. Player drops at ten spots landed at
+   the same heights as before.
 2. **Cache texture conversion.** The props and world-material stages re-run texconv for every texture on every run.
    Keying converted DDS files by source hash, cap and format would cut most of the props stage. Batching files
    per texconv call avoids roughly 1,000 process start-ups.
