@@ -5,6 +5,7 @@ From a package with the world rebuilt (Thunderdome: the UV-rescaled 0.2.0, `Aren
   1. props          build_native_props.py: compiled props, the props RPak and placements -> <source>-props
   2. rebake         rebake_native_prop_shadows.py: lightmap tiles and probes with the props as casters
   3. collision      add_native_prop_collision.py: solid props as world triangle collision
+     weld           weld_collision_vertices.py: shared positions within each collision header (930 to 759 MB)
   4. overlays       separate_world_overlays.py: world overlay layers lifted off their surfaces
   5. world-materials patch_world_materials.py: fallback-textured overlays and alpha decals in the world RPak
   6. cells          build_visibility_cells.py: per-cell visible sets
@@ -13,7 +14,7 @@ From a package with the world rebuilt (Thunderdome: the UV-rescaled 0.2.0, `Aren
 Each stage refuses a package it has already processed, so a failed run is restarted from the source. Stage
 output goes to <output>/pipeline.log and the timings to <output>/pipeline.json. 30 October 2026, Thunderdome:
 props 7 min, rebake 11 min, world materials 2 min, cells 3 min with cached rays (35 min tracing the stadium ring
-too, about 10 within the play bounds), everything else under a minute.
+too, about 10 within the play bounds), everything else under a minute. 1 November: weld 32 s.
 
   python run_prop_pipeline.py thunderdome <source package> [--foliage]
 """
@@ -32,6 +33,7 @@ def stages(ident, source, output, foliage):
     return [('props', ['build_native_props.py', ident, str(source)]+(['--foliage'] if foliage else [])),
             ('rebake', ['rebake_native_prop_shadows.py', ident, o]),
             ('collision', ['add_native_prop_collision.py', ident, o]),
+            ('weld', ['weld_collision_vertices.py', o]),
             ('overlays', ['separate_world_overlays.py', o]),
             ('world-materials', ['patch_world_materials.py', ident, o]),
             ('cells', ['build_visibility_cells.py', ident, o]),

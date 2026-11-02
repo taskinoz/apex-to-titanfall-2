@@ -6,9 +6,9 @@ with or without the primitive (29 October 2026). Apex's collision for these mode
 (RSX `.stl`, 12.7M triangles for Thunderdome's solid props: twice the 65,535 triangle-header limit), and there is
 no convex decomposition here, so the drawn geometry at a collision LOD (the first LOD with at most COLLISION_TRIANGLES
 triangles, as match_collision_to_render.py's drawn-triangle collision) is appended as native triangle collision.
-That follows recover_composite_details.append_collision: groups of 96 encoded by native_triangle_collision.encode,
-relocated after the existing buffers, then the grid rebuilt over the previously active primitives plus the new
-headers (disabled source colliders stay disabled).
+That follows recover_composite_details.append_collision: groups of 96 in Z order, encoded by
+native_triangle_collision.encode, relocated after the existing buffers, then the grid rebuilt over the previously
+active primitives plus the new headers (disabled source colliders stay disabled).
 
 Solid means source solid mode 1, 2, 6 or 7 and not foliage (grass, flowers, trees: Apex players walk through them);
 the treehouse building is solid despite its name. Props under MIN_RADIUS are skipped, and the LOD cap keeps the
@@ -67,8 +67,18 @@ def triangles(ident):
                 out.append(t @ np.asarray(rotation(p['angles'])).T * p['scale'] + p['origin'])
     col = np.concatenate(out)
     good = np.linalg.norm(np.cross(col[:, 1]-col[:, 0], col[:, 2]-col[:, 0]), axis=1) > 1e-5
-    col = col[good]; centres = col.mean(1)
-    return col[np.lexsort((centres[:, 2], centres[:, 1], centres[:, 0]))].astype('<f4')
+    col = col[good]
+    return col[np.argsort(morton(col.mean(1)), kind='stable')].astype('<f4')
+
+
+def morton(points, bits=21):
+    """Z-order keys, so each run of GROUP triangles is a compact box (sorting by x made 6,500-unit slabs)."""
+    lo = points.min(0); q = ((points-lo)/max(np.ptp(points, 0).max(), 1e-6)*((1 << bits)-1)).astype(np.uint64)
+    key = np.zeros(len(points), np.uint64)
+    for b in range(bits):
+        for axis in range(3):
+            key |= ((q[:, axis] >> np.uint64(b)) & np.uint64(1)) << np.uint64(3*b+axis)
+    return key
 
 
 def add(ident, package):
