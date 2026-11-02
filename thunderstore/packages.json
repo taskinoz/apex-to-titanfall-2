@@ -80,11 +80,11 @@
     "mod": "ArenaThunderdome",
     "name": "Thunderdome",
     "title": "Thunderdome",
-    "version": "0.1.1",
-    "tag": "maps-beta-2026-10-25",
-    "asset": "ArenaThunderdome-0.1.1-Northstar.zip",
-    "bytes": 504172253,
-    "sha256": "9c1cdfc8bb2059956b4d2bbaefe2a0db3043e1a8d3eebf7aedce4481bfc69a78",
+    "version": "0.3.0",
+    "tag": "thunderdome-0.3.0",
+    "asset": "ArenaThunderdome-0.3.0-Northstar.zip",
+    "bytes": 718057786,
+    "sha256": "5e954ef595983920388140a15b6fda759b949f39edd1dedb519df3243bb2e059",
     "description": "Thunderdome from Apex Legends, converted for Titanfall 2 Northstar. Preview build; see README for supported modes and known limitations."
   }
 ]

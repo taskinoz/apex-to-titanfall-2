@@ -5723,7 +5723,7 @@
       ],
       "notes": "Converted from current Apex. Over 6,700 Apex props are compiled as native static props with collision, faded foliage and re-baked shadows. The map is split into visibility cells so blocked areas are not drawn, and small clutter fades with distance. Apex's runtime UI screens around the stadium cannot be reproduced and show their static backing. There is no R5Reloaded source for this map, so the gallery shows the port only.",
       "download": null,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_offset": [
         0,
         0,
@@ -5861,9 +5861,141 @@
               }
             }
           ]
+        },
+        {
+          "id": "2026-11-03-thunderdome-0-3-0",
+          "version": "0.3.0",
+          "shots": [
+            {
+              "name": "overview-south",
+              "origin": [
+                0,
+                -7500,
+                4500
+              ],
+              "angles": [
+                30,
+                90,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-11-03-thunderdome-0-3-0/overview-south-northstar.png",
+                "sha256": "5fd6a6a3a97da3bbc74d3ae734ed3c680431624dd5a9a928a18539b210c2f5b5",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349719.820161
+              }
+            },
+            {
+              "name": "overview-north",
+              "origin": [
+                0,
+                7000,
+                4500
+              ],
+              "angles": [
+                30,
+                -90,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-11-03-thunderdome-0-3-0/overview-north-northstar.png",
+                "sha256": "251b988cb322ab2e351fb9c0612f4de03fa67101746ef4997fbd2e76360df17e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349727.2281501
+              }
+            },
+            {
+              "name": "east-start",
+              "origin": [
+                5888,
+                0,
+                1000
+              ],
+              "angles": [
+                5,
+                180,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-11-03-thunderdome-0-3-0/east-start-northstar.png",
+                "sha256": "1b0c57878aa3606c9aa5cc45045dc4a497863f0da7a8ee6ee6d29f7ca6a77172",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349734.8503444
+              }
+            },
+            {
+              "name": "centre",
+              "origin": [
+                0,
+                0,
+                1300
+              ],
+              "angles": [
+                10,
+                45,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-11-03-thunderdome-0-3-0/centre-northstar.png",
+                "sha256": "442c98afcbe5b0648fd1788b66b52c4efd4de54fc880cedf1055d797576e59e6",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349742.6597972
+              }
+            },
+            {
+              "name": "skull",
+              "origin": [
+                2530.5,
+                1059.6,
+                2900
+              ],
+              "angles": [
+                8,
+                225,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-11-03-thunderdome-0-3-0/skull-northstar.png",
+                "sha256": "e5d5f3c0c724737ab6c9d02d223e1d65a77a1fa80c58a24336dd2d802fa8983e",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349749.9529157
+              }
+            },
+            {
+              "name": "across-arena",
+              "origin": [
+                -2264.17,
+                -1949.95,
+                1633.62
+              ],
+              "angles": [
+                11.68,
+                35.33,
+                0
+              ],
+              "fov": 90,
+              "northstar": {
+                "image": "captures/thunderdome/2026-11-03-thunderdome-0-3-0/across-arena-northstar.png",
+                "sha256": "6a500014c2f1ecc586de9c83edfaf692b2e64d6722f1a675d127b7a2cd944e0b",
+                "width": 1280,
+                "height": 720,
+                "captured": 1793349757.1209579
+              }
+            }
+          ]
         }
       ],
-      "latest": "2026-10-30-port-gallery"
+      "latest": "2026-11-03-thunderdome-0-3-0"
     }
   ]
 }
