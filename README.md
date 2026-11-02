@@ -16,7 +16,7 @@ installed copies before enabling managed copies of the same mod.
 | Party Crasher | 0.6.4 |
 | Overflow | 0.4.2 |
 | Thermal Station | 0.1.2 |
-| Thunderdome | 0.1.1 |
+| Thunderdome | 0.3.0 |
 | ApexMaps.UI | 0.2.1 |
 
 Install **ApexMaps.UI once** plus the maps you want. Close the game and replace

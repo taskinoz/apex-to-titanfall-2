@@ -15,7 +15,7 @@ publication does not add new native gameplay certification.
 | Party Crasher | 0.6.4 |
 | Overflow | 0.4.2 |
 | Thermal Station | 0.1.2 |
-| Thunderdome | 0.1.1 |
+| Thunderdome | 0.3.0 |
 | ApexMaps.UI | 0.2.1 |
 
 The `Publish Northstar maps to Thunderstore` Actions workflow publishes under

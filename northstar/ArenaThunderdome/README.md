@@ -1,4 +1,4 @@
-# Thunderdome 0.2.0 for Northstar
+# Thunderdome 0.3.0 for Northstar
 
 Close Titanfall 2. Move the old map folder to a backup outside `mods/`, then
 extract `ArenaThunderdome` into `Titanfall2/R2Northstar/mods/`. Replace the old folder
@@ -17,7 +17,7 @@ Launch from the console:
 map mp_thunderdome
 ```
 
-Repairs collision on 5,318 visible physical props, including 14 previously skipped bridge components, using their drawn surfaces instead of mismatched source hulls. Restores 23 material entries with original Apex colour, normal, gloss and specular maps. Geometry, lighting, safety volumes and the shared UI atlas are preserved. Tested on Northstar 1.31.14 in single-client PS/FFA: all 88 spawns clear/supported, both teams, weapon fire, postmatch lobby and stock/map reload. Some layered/translucent materials, authored paint/emission constants, omitted scenery and AI remain incomplete. CTF is unsupported (missing flag objectives); this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.
+Rebuilds the arena scenery as 6,757 native props from the Apex models, with their original materials, foliage and baked shadows; 3,740 solid props (rocks, buildings, crates, the skull) collide with their drawn shape. The skull, holograms and red seams are coloured again. Visibility cells and fade distances for small props reduce what is drawn when looking across the arena, and collision data is welded, so the map is 170 MB smaller. Tested on Northstar 1.31.14 in single-client PS/FFA: all 96 spawns clear/supported, both teams, weapon fire, postmatch lobby and stock/map reload. Glowing surfaces are lit rather than emissive, the animated stadium screens are absent, and AI is incomplete. CTF is unsupported (missing flag objectives); this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.
 
 `screenshot.png` is an in-game capture of this port. Original map assets remain
 the work of their respective creators.

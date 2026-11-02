@@ -62,11 +62,11 @@ RELEASES = {
         'notes': "Thermal Station, the World's Edge area Apex used as an Arenas map. The storm-ring wall now looks the same on every side: it is self-lit with no sun shading, which had left two sides see-through and two orange. Rebuilds no longer stack extra copies of the ring, which had darkened the map. The lava-flow ground is dark cooled crust with glowing cracks, not a bright white sheet. Coplanar dirt overlays that z-fought with the asphalt are removed. The minimap is regenerated. Requires ApexMaps.UI 0.2.1.",
     },
     'ArenaThunderdome': {
-        'version': '0.2.0',
+        'version': '0.3.0',
         'map': 'mp_thunderdome',
         'title': 'Thunderdome',
         'screenshot': 'northstar/ArenaThunderdome/screenshot.png',
-        'notes': 'Repairs collision on 5,318 visible physical props, including 14 previously skipped bridge components, using their drawn surfaces instead of mismatched source hulls. Restores 23 material entries with original Apex colour, normal, gloss and specular maps. Geometry, lighting, safety volumes and the shared UI atlas are preserved. Tested on Northstar 1.31.14 in single-client PS/FFA: all 88 spawns clear/supported, both teams, weapon fire, postmatch lobby and stock/map reload. Some layered/translucent materials, authored paint/emission constants, omitted scenery and AI remain incomplete. CTF is unsupported (missing flag objectives); this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.',
+        'notes': 'Rebuilds the arena scenery as 6,757 native props from the Apex models, with their original materials, foliage and baked shadows; 3,740 solid props (rocks, buildings, crates, the skull) collide with their drawn shape. The skull, holograms and red seams are coloured again. Visibility cells and fade distances for small props reduce what is drawn when looking across the arena, and collision data is welded, so the map is 170 MB smaller. Tested on Northstar 1.31.14 in single-client PS/FFA: all 96 spawns clear/supported, both teams, weapon fire, postmatch lobby and stock/map reload. Glowing surfaces are lit rather than emissive, the animated stadium screens are absent, and AI is incomplete. CTF is unsupported (missing flag objectives); this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.',
     },
 }
 # The shared UI companion ships as its own download (one UI atlas serves all five maps;
