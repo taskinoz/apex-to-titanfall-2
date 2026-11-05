@@ -1,14 +1,16 @@
 {
-  "version": "0.5.1",
+  "version": "0.6.0",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
   "full_release_ready": false,
-  "bsp_sha256": "7a5d8cdd03d5faeba5501d449a82b1a058bb39313fef83123852917551f8afdd",
+  "bsp_sha256": "172b705788005dcc2a215a64c586f8faaed673c6a5333faa63990c2ba3d9f06a",
   "render_fraction": 0.9762935638427734,
   "new_placements": 53,
   "validated_modes": [
     "ps"
   ],
-  "validation": "Single-client pilot spawns, landing-pad surface contacts and reloads; FFA definitions unchanged"
+  "validation": "Single-client pilot spawns, landing-pad surface contacts and reloads; FFA definitions unchanged",
+  "release_ready": true,
+  "native_validation": "docs/candidates/apexfiringrange/port-0.6.0/validation.json"
 }

@@ -1,5 +1,12 @@
 # Thunderdome visibility cells — 30 October 2026
 
+> **Withdrawn 5 November 2026.** Cells without portals hide entities outside the camera's cell, not just world
+> objects. On Thermal Station's cells build, ropes in another cell were not drawn, and sending every point to the
+> all-visible cell brought them back. Players are entities, so a player in another cell was very likely invisible.
+> Thunderdome 0.3.0 shipped with these cells; 0.4.0 removes them (`disable_visibility_cells.py`), and the prop
+> pipeline no longer builds them. Cells need portals before they can be used again. See
+> `docs/candidates/lighting-update-2026-11-05.md`.
+
 The conversions draw every world mesh and static prop from one all-visible camera cell. `build_visibility_cells.py`
 replaces it with a kd split of the arena into cells whose access trees hold only what can be seen from them, plus
 one all-visible cell. There are no portals; the single-cell builds already use that format.

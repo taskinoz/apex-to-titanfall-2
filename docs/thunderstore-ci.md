@@ -10,12 +10,12 @@ publication does not add new native gameplay certification.
 | Package | Published version |
 | --- | --- |
 | Phase Runner | 1.7.2 |
-| Drop-Off | 0.10.1 |
-| Firing Range | 0.5.1 |
-| Party Crasher | 0.6.4 |
-| Overflow | 0.4.2 |
-| Thermal Station | 0.1.2 |
-| Thunderdome | 0.3.0 |
+| Drop-Off | 0.11.0 |
+| Firing Range | 0.6.0 |
+| Party Crasher | 0.7.0 |
+| Overflow | 0.5.0 |
+| Thermal Station | 0.2.0 |
+| Thunderdome | 0.4.0 |
 | ApexMaps.UI | 0.2.1 |
 
 The `Publish Northstar maps to Thunderstore` Actions workflow publishes under

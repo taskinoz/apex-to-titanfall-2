@@ -1,0 +1,659 @@
+{
+  "passed": true,
+  "version": "0.5.0",
+  "runtime": "1.31.14",
+  "modes": [
+    {
+      "panels": 0,
+      "objectives": [],
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 12,
+        "info_hardpoint": 0,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 12,
+        "trigger_out_of_bounds": 66,
+        "move_rope": 0,
+        "trigger_hurt": 58
+      },
+      "liveSpawns": [
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4819.5,
+            -4338.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4499.5,
+            -4178.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4819.5,
+            -4178.33642578125,
+            289.9252014160156
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4018.336669921875,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4338.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4178.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3397.5166015625,
+            -4334.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3077.5166015625,
+            -4174.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4014.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4334.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3397.5166015625,
+            -4174.75,
+            289.9252014160156
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4174.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4819.5,
+            -4338.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4499.5,
+            -4178.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4819.5,
+            -4178.33642578125,
+            289.9252014160156
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4018.336669921875,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4338.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4178.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3397.5166015625,
+            -4334.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3077.5166015625,
+            -4174.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4014.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4334.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3397.5166015625,
+            -4174.75,
+            289.9252014160156
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4174.75,
+            289.03125
+          ],
+          "supported": true
+        }
+      ],
+      "mode": "ps",
+      "map": "mp_overflow"
+    },
+    {
+      "panels": 0,
+      "objectives": [],
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 12,
+        "info_hardpoint": 0,
+        "keyframe_rope": 0,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 12,
+        "trigger_out_of_bounds": 66,
+        "move_rope": 0,
+        "trigger_hurt": 58
+      },
+      "liveSpawns": [
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4819.5,
+            -4338.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4499.5,
+            -4178.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4819.5,
+            -4178.33642578125,
+            289.9252014160156
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4018.336669921875,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4338.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4178.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3397.5166015625,
+            -4334.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3077.5166015625,
+            -4174.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4014.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4334.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3397.5166015625,
+            -4174.75,
+            289.9252014160156
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4174.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4819.5,
+            -4338.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4499.5,
+            -4178.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4819.5,
+            -4178.33642578125,
+            289.9252014160156
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4018.336669921875,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4338.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4659.5,
+            -4178.33642578125,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3397.5166015625,
+            -4334.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3077.5166015625,
+            -4174.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4014.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4334.75,
+            289.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3397.5166015625,
+            -4174.75,
+            289.9252014160156
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3237.5166015625,
+            -4174.75,
+            289.03125
+          ],
+          "supported": true
+        }
+      ],
+      "mode": "ffa",
+      "map": "mp_overflow"
+    }
+  ],
+  "both_team_respawns": true,
+  "weapon_fire_exercised": true,
+  "postmatch_lobby": true,
+  "stock_and_converted_reload": true,
+  "mounted_runtime_hash_verified": true,
+  "logs": {
+    "script_errors": [],
+    "native_crashes": []
+  },
+  "reload_capture": {
+    "width": 1280,
+    "height": 720,
+    "sha256": "f287eabddbdc0687d37038d3dce2f9baa6ecfd2f518df84b43073941d0302af9"
+  },
+  "single_client_only": true,
+  "build": {
+    "shadow-weld.json": {
+      "shadow_meshes": 227,
+      "positions_before": 2832867,
+      "positions_after": 658934,
+      "indices": 2832867,
+      "bytes_saved": 26087196,
+      "bsp_bytes_before": 615285380,
+      "bsp_bytes_after": 589198180
+    },
+    "cubemaps.json": {
+      "origins": [
+        [
+          4686.0,
+          -4205.0,
+          369.0
+        ],
+        [
+          2699.0,
+          -4204.0,
+          344.0
+        ],
+        [
+          711.0,
+          -4203.0,
+          504.0
+        ],
+        [
+          -1277.0,
+          -4202.0,
+          344.0
+        ],
+        [
+          -3264.0,
+          -4201.0,
+          369.0
+        ]
+      ],
+      "fov": 106.26,
+      "written": {
+        "cubemaps": 5,
+        "meshes_assigned": 3094,
+        "pakfile_bytes": 2622584
+      }
+    }
+  },
+  "runtime_sha256": {
+    "mod/maps/mp_overflow.bsp": "7f536840d989cfda73c9d78b16a395cf011370bad29809ab8d89441bc82a10cb",
+    "mod/maps/mp_overflow.stbsp": "a7f30c734c0d828202b42c82c4e1e0343f34be74a4a6cdf89a79ef848a70bd7f",
+    "mod/resource/overflow_english.txt": "cff8be50380eb3c2f977901251701dc48db0b63ac49fd686897546eb0dacdd92",
+    "mod/resource/overflow_french.txt": "e888c640f6e56e1a0de174597afb4405dc51f843b2c9fe384f15caa65206b7b7",
+    "mod/resource/overflow_german.txt": "648a4bc52fb09413f3b9a68f555ff8d51559e76d6e6277d560deda3b6bd6583a",
+    "mod/resource/overflow_italian.txt": "f7c2a7ad8f8614ee088d5a6f50b3bb2cd18332de740511912d0b2c8d12fb6dee",
+    "mod/resource/overflow_japanese.txt": "887f6b8fd43bb1a935940f9578fec9c6f9ff8d6d5a63634cddac139795fe43af",
+    "mod/resource/overflow_korean.txt": "f79247b6c88ec844c0aa1a3e756c77a2b5ff9343a071e618722fa909657531c5",
+    "mod/resource/overflow_mspanish.txt": "620663c8ba575b21d3c86c67fd42d56af54c9851982ba0be0f1c5fb9f6cbe3bf",
+    "mod/resource/overflow_polish.txt": "a6826509db0aa57c6cadb4a807f74abefe68efd3f46ed785f0defc7bee1ce1c8",
+    "mod/resource/overflow_portuguese.txt": "0f503c37d2bb23105b7880444532e04ac48c89a46865a9096bf364d3feba29a9",
+    "mod/resource/overflow_russian.txt": "9064199476d3ecfe409176161046156e0967adf5fb43d7b17277ee08c299e6f0",
+    "mod/resource/overflow_schinese.txt": "7baeae131731b8b5df4ec552736b6533173a5afe7ce444b9e64122c804500511",
+    "mod/resource/overflow_spanish.txt": "ccf3e706ed7cc6e1e8cf68ec2e965b85d859a8a38ee422225a840dcbd0a08da5",
+    "mod/resource/overflow_tchinese.txt": "185d8bc85161215b9397dc9b4b846ba11fc34e67662e573ed8e044f8532533ec",
+    "mod/resource/overviews/mp_overflow.txt": "6e7840e18037d2f84e55b6589175e0201d52622b532d1ef97168a91320633cfc",
+    "mod/scripts/vscripts/_overflow.nut": "33546b1c6c286cdbbaaac769d4736248ae5ea2ece9211368e2f600b1a10363bb",
+    "mod.json": "a2415bb46c34350c69b01ff92cb60fab43a4d1523ceb27941babe29406b63a8a",
+    "paks/overflow_presentation.rpak": "39e590eb1a0f9915be1aac1777a0c727bb2b5d26cc3b68ccbcf74e5b3743dc45",
+    "paks/overflow_world.rpak": "47a5938f00e88991fe8d9cec36e90dc8a75704e89e40e5dd3d9a2afbdc39ea41",
+    "paks/rpak.json": "2dd8f8fe0add329b2b1ea69654eaeaf7bb3ad32d06aeaaf7af982278efbf4cbe"
+  }
+}

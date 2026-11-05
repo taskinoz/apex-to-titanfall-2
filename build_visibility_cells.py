@@ -1,5 +1,9 @@
 """Split a converted map's single all-visible camera cell into cells that each draw only what can be seen from them.
 
+Not used for releases: these cells have no portals, and the engine culls entities by cell too, so ropes (and so
+players) outside the camera's cell are not drawn. Thunderdome 0.3.0 shipped with them; 0.4.0 and later run
+disable_visibility_cells.py. Portals between the cells are needed before this can be used again.
+
 The conversions draw every world mesh and static prop from one native cell (repair_camera_visibility.py). Native
 Titanfall 2 culls by camera cell: the engine finds the camera's cell through the cell BSP (0x6A; plane or -1 leaf,
 child 0 the front side, dot >= d) and draws the objects of that cell's access tree (the first len(CELLS) nodes of
@@ -114,10 +118,15 @@ def scene(ident, bsp):
                 walkable=np.concatenate(solid), meshes=meshes, props=props, radius=radius, missing=missing)
 
 
-def viewpoints(ident, s):
-    seeds = [[float(v) for v in e['origin'].split()] for e in json.loads((folder(ident)/'scene.json').read_text())['source_entities']
-             if e.get('classname', '').startswith('info_spawnpoint_human')]
-    seeds = [np.add(o, CONFIG[ident]['offset']) for o in seeds]
+def viewpoints(ident, s, bsp_path):
+    # Flood seeds: the port's own spawn points. Thermal Station's source spawns are World's Edge's, all outside its
+    # bounds after the offset, so source spawns only add seeds inside the bounds.
+    from repair_environment_lighting import entities
+    spawn = lambda e: e.get('classname', '').startswith('info_spawnpoint_human')
+    b = np.asarray(CONFIG[ident]['bounds'], 'f8')
+    source = [np.add([float(v) for v in e['origin'].split()], CONFIG[ident]['offset'])
+              for e in json.loads((folder(ident)/'scene.json').read_text())['source_entities'] if spawn(e)]
+    seeds = [np.asarray([float(v) for v in e['origin'].split()]) for e in entities(bsp_path) if spawn(e)] +         [o for o in source if np.all((o >= b[0]) & (o <= b[1]))]
     _, reach = av.viewpoints(ident, s['tris'], s['walkable'], seeds)
     # Cameras outside the play bounds use the all-visible cell, so only the bounds and the ring of tiles the
     # dilation reads around them are traced (72% of Thunderdome's reachable points are on the stadium ring).
@@ -269,7 +278,7 @@ def build(ident, package):
         raise ValueError('Expected the single all-visible cell of the conversions')
     info = struct.unpack('<4I3f', l[0x7b][:28]); base = (info[2]+63) & ~63
     s = scene(ident, bsp_path); U = s['meshes']+len(s['props'])
-    points, seeds, reach = viewpoints(ident, s)
+    points, seeds, reach = viewpoints(ident, s, bsp_path)
     print(ident, 'triangles', len(s['tris']), 'units', U, 'seeds', seeds, 'reachable', reach, 'viewpoints', len(points), flush=True)
     grid = (math.floor(points[:, 0].min()/TILE)*TILE-TILE, math.floor(points[:, 1].min()/TILE)*TILE-TILE)
     X = int((points[:, 0].max()-grid[0])//TILE)+2; Y = int((points[:, 1].max()-grid[1])//TILE)+2
