@@ -107,7 +107,7 @@ class PackagingTests(unittest.TestCase):
             self.assertIn('artifacts/2/zip', command[-1])
             with zipfile.ZipFile(kwargs['stdout'], 'w') as z:
                 z.writestr('receipts.json', json.dumps([receipt]))
-                z.writestr('Overflow/taskinoz-Overflow-0.4.2.zip', source_zip)
+                z.writestr(f'Overflow/taskinoz-Overflow-{self.package["version"]}.zip', source_zip)
                 z.writestr('downloads/'+self.package['asset'], b'redundant source not extracted')
         with patch.object(ci, 'catalog', return_value=[self.package]), \
                 patch.object(ci.subprocess, 'check_output', side_effect=[run, artifacts]), \

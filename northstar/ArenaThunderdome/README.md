@@ -1,4 +1,4 @@
-# Thunderdome 0.3.0 for Northstar
+# Thunderdome 0.4.0 for Northstar
 
 Close Titanfall 2. Move the old map folder to a backup outside `mods/`, then
 extract `ArenaThunderdome` into `Titanfall2/R2Northstar/mods/`. Replace the old folder
@@ -17,7 +17,7 @@ Launch from the console:
 map mp_thunderdome
 ```
 
-Rebuilds the arena scenery as 6,757 native props from the Apex models, with their original materials, foliage and baked shadows; 3,740 solid props (rocks, buildings, crates, the skull) collide with their drawn shape. The skull, holograms and red seams are coloured again. Visibility cells and fade distances for small props reduce what is drawn when looking across the arena, and collision data is welded, so the map is 170 MB smaller. Tested on Northstar 1.31.14 in single-client PS/FFA: all 96 spawns clear/supported, both teams, weapon fire, postmatch lobby and stock/map reload. Glowing surfaces are lit rather than emissive, the animated stadium screens are absent, and AI is incomplete. CTF is unsupported (missing flag objectives); this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.
+Fixes 0.3.0's visibility cells, which could hide players, ropes and other moving objects in a different part of the arena from the viewer; the cells are removed and small props still fade with distance. 3,344 props now cast real-time sun shadows, so the skull, rocks and buildings shade players and each other. Reflection cubemaps captured in game give metal, glass and wet surfaces something to reflect, and the sun-shadow geometry is welded, so the map file is about 28 MB smaller. Tested on Northstar 1.31.14 in single-client PS/FFA: all 96 spawns clear and supported, both teams, weapon fire, postmatch lobby and stock/map reload; this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.
 
 `screenshot.png` is an in-game capture of this port. Original map assets remain
 the work of their respective creators.

@@ -1,15 +1,23 @@
-# Firing Range 0.5.1
+# Firing Range 0.6.0 for Northstar
 
-Rocks now collide with the shape you see: 329 rocks drawn at coarse detail had full-detail Apex collision, which left invisible rock to bump into and visible rock to fall into. Their collision is now the drawn shape, and spawns that stood on the old shape were moved onto the visible ground. Invisible player clips left around the missing shooting-range targets are removed. Invisible collision across the playable area drops from about 16% to under 3% of collision surface. Includes 0.5.0 blending and rock detail. Weapon stations, targets, foliage and AI navigation remain absent. Restart between previews.
+Close Titanfall 2. Move the old map folder to a backup outside `mods/`, then
+extract `ApexFiringRange` into `Titanfall2/R2Northstar/mods/`. Replace the old folder
+rather than merging; obsolete atlas files must be removed. Enable it in
+Northstar's mod menu and restart. Disable any older copy of the same map.
+Every player needs the same mod version.
 
-## How
+The loading artwork and minimap come from the shared `ApexMaps.UI` companion,
+a separate download (`ApexMaps.UI-<version>-Northstar.zip`). Install it once
+for all five Apex maps and keep the newest version; map archives do not
+include it, so installing a map never replaces your companion.
 
-- `audit_collision_visibility.py` samples the active native collision (brushes and triangle headers) of the playable area against the drawn surfaces. Before: 15.7% of collision surface had no drawn surface within 24 units. After: 2.8%.
+Launch from the console:
 
-- `match_collision_to_render.py` recovers each placement's own collider from the deterministic build order and measures both directions. Coarse-LOD placements over 15% mismatch have their source collider removed from the collision grid (data stays serialized) and get triangle collision made from the exact drawn triangles. Spawn markers not standing on a drawn surface are moved onto the highest drawn surface below them.
+```text
+map mp_apex_firing_range
+```
 
-- `remove_target_clips.py` removes clip-only collision within 250 units of shooting-range target markers that has no drawn surface nearby; Apex scripts spawn the targets there, this port does not.
+Reflection cubemaps captured in game give metal, glass and wet surfaces something to reflect, and the sun-shadow geometry is welded, so the map file is about 28 MB smaller. Geometry, collision and lighting are otherwise unchanged from 0.5.1. Tested on Northstar 1.31.14 in single-client PS/FFA: all 20 spawns clear and supported, both teams, weapon fire, postmatch lobby and stock/map reload; this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.
 
-Validation: 147 binary checks; native traces stop on the drawn rock at 38/40 sampled rocks; 11/12 reported positions fully clean (the rest have one edge ray); all spawns clear and supported, landing-pad contacts, postmatch lobby, stock and map reload.
-
-Rollback: `firing-range/before-collision-match/` and `before-target-clips/` on the build drive.
+`screenshot.png` is an in-game capture of this port. Original map assets remain
+the work of their respective creators.

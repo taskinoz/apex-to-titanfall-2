@@ -8,7 +8,9 @@ From a package with the world rebuilt (Thunderdome: the UV-rescaled 0.2.0, `Aren
      weld           weld_collision_vertices.py: shared positions within each collision header (930 to 759 MB)
   4. overlays       separate_world_overlays.py: world overlay layers lifted off their surfaces
   5. world-materials patch_world_materials.py: fallback-textured overlays and alpha decals in the world RPak
-  6. cells          build_visibility_cells.py: per-cell visible sets
+                    (Thunderdome only)
+  6. cells          not run: build_visibility_cells.py writes no portals, and cells without portals hide entities
+                    (ropes, players) outside the camera's cell (disable_visibility_cells.py, 5 November 2026)
   7. fades          fade_small_props.py: fade distances for small non-foliage props
 
 Each stage refuses a package it has already processed, so a failed run is restarted from the source. Stage
@@ -35,8 +37,8 @@ def stages(ident, source, output, foliage):
             ('collision', ['add_native_prop_collision.py', ident, o]),
             ('weld', ['weld_collision_vertices.py', o]),
             ('overlays', ['separate_world_overlays.py', o]),
-            ('world-materials', ['patch_world_materials.py', ident, o]),
-            ('cells', ['build_visibility_cells.py', ident, o]),
+            # Thunderdome only: it rebuilds thunderdome_world.rpak from repair_thunderdome.py's materials.
+            *([('world-materials', ['patch_world_materials.py', ident, o])] if ident == 'thunderdome' else []),
             ('fades', ['fade_small_props.py', ident, o])]
 
 

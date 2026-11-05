@@ -1,0 +1,2750 @@
+{
+  "passed": true,
+  "version": "0.4.0",
+  "runtime": "1.31.14",
+  "modes": [
+    {
+      "panels": 0,
+      "objectives": [],
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 48,
+        "info_hardpoint": 0,
+        "keyframe_rope": 11,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 48,
+        "trigger_out_of_bounds": 39,
+        "move_rope": 11,
+        "trigger_hurt": 3
+      },
+      "liveSpawns": [
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -6064.0,
+            -936.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            1303.5908203125,
+            3513.854248046875,
+            768.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4893.60791015625,
+            2918.0,
+            895.9199829101562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4799.48828125,
+            2616.80615234375,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4918.6142578125,
+            1925.04931640625,
+            855.9723510742188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4187.48828125,
+            -967.1939086914062,
+            1045.38525390625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2721.92578125,
+            620.0614013671875,
+            1020.9869384765625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3106.337646484375,
+            -3082.120849609375,
+            832.5828857421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3671.39697265625,
+            -2948.2275390625,
+            808.4345703125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4224.0,
+            -2464.0,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4522.16064453125,
+            332.0904235839844,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4811.20849609375,
+            -1788.64453125,
+            799.7432861328125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2187.943359375,
+            2115.76123046875,
+            769.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            245.8546142578125,
+            -3625.8955078125,
+            1060.1181640625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4384.26708984375,
+            1127.303466796875,
+            890.85107421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            5415.724609375,
+            -611.1626586914062,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3231.726806640625,
+            -3477.999267578125,
+            882.4326171875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2965.120849609375,
+            818.10400390625,
+            769.324462890625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -6036.0,
+            -744.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4944.0,
+            -1008.0,
+            848.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            5916.0,
+            2232.0,
+            856.0186157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4762.0029296875,
+            -95.60067749023438,
+            800.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -5044.0,
+            740.0,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            2949.343994140625,
+            -249.31687927246094,
+            609.247314453125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3329.125732421875,
+            102.46186828613281,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2377.389404296875,
+            -340.8232727050781,
+            666.478515625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2561.389404296875,
+            -456.8232727050781,
+            668.6224975585938
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            845.8546142578125,
+            3254.1044921875,
+            768.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4189.59423828125,
+            -2773.961669921875,
+            1053.15673828125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4628.42529296875,
+            -1715.768310546875,
+            1049.8485107421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.3291015625,
+            2154.388427734375,
+            692.9185180664062
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            -39.98251724243164,
+            -3408.988525390625,
+            1061.6427001953125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            5343.66357421875,
+            1683.559814453125,
+            863.6417846679688
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            5359.724609375,
+            -691.1626586914062,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4349.248046875,
+            1029.4237060546875,
+            887.7929077148438
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -5035.22314453125,
+            1063.447509765625,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4537.12060546875,
+            194.10400390625,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            1603.770263671875,
+            -2927.466552734375,
+            1171.5072021484375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -6064.0,
+            -872.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -1240.0001220703125,
+            -3656.000244140625,
+            1082.823486328125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4858.98779296875,
+            826.8819580078125,
+            847.5693359375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -5005.12060546875,
+            234.10400390625,
+            800.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3195.919677734375,
+            2286.7041015625,
+            724.7099609375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4703.48828125,
+            -1847.19384765625,
+            1040.0316162109375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4811.48828125,
+            2624.80615234375,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4625.53857421875,
+            329.0467224121094,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3421.417724609375,
+            -3404.029052734375,
+            861.616455078125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4368.0,
+            -1624.0,
+            798.2244873046875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -6064.0,
+            -936.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            1303.5908203125,
+            3513.854248046875,
+            768.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4893.60791015625,
+            2918.0,
+            895.9199829101562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4799.48828125,
+            2616.80615234375,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4918.6142578125,
+            1925.04931640625,
+            855.9723510742188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4187.48828125,
+            -967.1939086914062,
+            1045.38525390625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2721.92578125,
+            620.0614013671875,
+            1020.9869384765625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3106.337646484375,
+            -3082.120849609375,
+            832.5828857421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3671.39697265625,
+            -2948.2275390625,
+            808.4345703125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4224.0,
+            -2464.0,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4522.16064453125,
+            332.0904235839844,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4811.20849609375,
+            -1788.64453125,
+            799.7432861328125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2187.943359375,
+            2115.76123046875,
+            769.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            245.8546142578125,
+            -3625.8955078125,
+            1060.1181640625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4384.26708984375,
+            1127.303466796875,
+            890.85107421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            5415.724609375,
+            -611.1626586914062,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3231.726806640625,
+            -3477.999267578125,
+            882.4326171875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2965.120849609375,
+            818.10400390625,
+            769.324462890625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -6036.0,
+            -744.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4944.0,
+            -1008.0,
+            848.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            5916.0,
+            2232.0,
+            856.0186157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4762.0029296875,
+            -95.60067749023438,
+            800.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -5044.0,
+            740.0,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            2949.343994140625,
+            -249.31687927246094,
+            609.247314453125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3329.125732421875,
+            102.46186828613281,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2377.389404296875,
+            -340.8232727050781,
+            666.478515625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2561.389404296875,
+            -456.8232727050781,
+            668.6224975585938
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            845.8546142578125,
+            3254.1044921875,
+            768.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4189.59423828125,
+            -2773.961669921875,
+            1053.15673828125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4628.42529296875,
+            -1715.768310546875,
+            1049.8485107421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.3291015625,
+            2154.388427734375,
+            692.9185180664062
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -39.98251724243164,
+            -3408.988525390625,
+            1061.6427001953125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            5343.66357421875,
+            1683.559814453125,
+            863.6417846679688
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            5359.724609375,
+            -691.1626586914062,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4349.248046875,
+            1029.4237060546875,
+            887.7929077148438
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -5035.22314453125,
+            1063.447509765625,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4537.12060546875,
+            194.10400390625,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            1603.770263671875,
+            -2927.466552734375,
+            1171.5072021484375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -6064.0,
+            -872.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -1240.0001220703125,
+            -3656.000244140625,
+            1082.823486328125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4858.98779296875,
+            826.8819580078125,
+            847.5693359375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -5005.12060546875,
+            234.10400390625,
+            800.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3195.919677734375,
+            2286.7041015625,
+            724.7099609375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4703.48828125,
+            -1847.19384765625,
+            1040.0316162109375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4811.48828125,
+            2624.80615234375,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4625.53857421875,
+            329.0467224121094,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3421.417724609375,
+            -3404.029052734375,
+            861.616455078125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4368.0,
+            -1624.0,
+            798.2244873046875
+          ],
+          "supported": true
+        }
+      ],
+      "mode": "ps",
+      "map": "mp_thunderdome"
+    },
+    {
+      "panels": 0,
+      "objectives": [],
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 48,
+        "info_hardpoint": 0,
+        "keyframe_rope": 11,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 48,
+        "trigger_out_of_bounds": 39,
+        "move_rope": 11,
+        "trigger_hurt": 3
+      },
+      "liveSpawns": [
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -6064.0,
+            -936.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            1303.5908203125,
+            3513.854248046875,
+            768.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4893.60791015625,
+            2918.0,
+            895.9199829101562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4799.48828125,
+            2616.80615234375,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4918.6142578125,
+            1925.04931640625,
+            855.9723510742188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4187.48828125,
+            -967.1939086914062,
+            1045.38525390625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2721.92578125,
+            620.0614013671875,
+            1020.9869384765625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3106.337646484375,
+            -3082.120849609375,
+            832.5828857421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3671.39697265625,
+            -2948.2275390625,
+            808.4345703125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4224.0,
+            -2464.0,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4522.16064453125,
+            332.0904235839844,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4811.20849609375,
+            -1788.64453125,
+            799.7432861328125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2187.943359375,
+            2115.76123046875,
+            769.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            245.8546142578125,
+            -3625.8955078125,
+            1060.1181640625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4384.26708984375,
+            1127.303466796875,
+            890.85107421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            5415.724609375,
+            -611.1626586914062,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3231.726806640625,
+            -3477.999267578125,
+            882.4326171875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2965.120849609375,
+            818.10400390625,
+            769.324462890625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -6036.0,
+            -744.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4944.0,
+            -1008.0,
+            848.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            5916.0,
+            2232.0,
+            856.0186157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4762.0029296875,
+            -95.60067749023438,
+            800.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -5044.0,
+            740.0,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            2949.343994140625,
+            -249.31687927246094,
+            609.247314453125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3329.125732421875,
+            102.46186828613281,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2377.389404296875,
+            -340.8232727050781,
+            666.478515625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2561.389404296875,
+            -456.8232727050781,
+            668.6224975585938
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            845.8546142578125,
+            3254.1044921875,
+            768.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4189.59423828125,
+            -2773.961669921875,
+            1053.15673828125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4628.42529296875,
+            -1715.768310546875,
+            1049.8485107421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.3291015625,
+            2154.388427734375,
+            692.9185180664062
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            -39.98251724243164,
+            -3408.988525390625,
+            1061.6427001953125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            5343.66357421875,
+            1683.559814453125,
+            863.6417846679688
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            5359.724609375,
+            -691.1626586914062,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4349.248046875,
+            1029.4237060546875,
+            887.7929077148438
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -5035.22314453125,
+            1063.447509765625,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4537.12060546875,
+            194.10400390625,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            1603.770263671875,
+            -2927.466552734375,
+            1171.5072021484375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -6064.0,
+            -872.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -1240.0001220703125,
+            -3656.000244140625,
+            1082.823486328125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4858.98779296875,
+            826.8819580078125,
+            847.5693359375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -5005.12060546875,
+            234.10400390625,
+            800.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3195.919677734375,
+            2286.7041015625,
+            724.7099609375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4703.48828125,
+            -1847.19384765625,
+            1040.0316162109375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            4811.48828125,
+            2624.80615234375,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4625.53857421875,
+            329.0467224121094,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3421.417724609375,
+            -3404.029052734375,
+            861.616455078125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -4368.0,
+            -1624.0,
+            798.2244873046875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -6064.0,
+            -936.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            1303.5908203125,
+            3513.854248046875,
+            768.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4893.60791015625,
+            2918.0,
+            895.9199829101562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4799.48828125,
+            2616.80615234375,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4918.6142578125,
+            1925.04931640625,
+            855.9723510742188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4187.48828125,
+            -967.1939086914062,
+            1045.38525390625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2721.92578125,
+            620.0614013671875,
+            1020.9869384765625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3106.337646484375,
+            -3082.120849609375,
+            832.5828857421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3671.39697265625,
+            -2948.2275390625,
+            808.4345703125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4224.0,
+            -2464.0,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4522.16064453125,
+            332.0904235839844,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4811.20849609375,
+            -1788.64453125,
+            799.7432861328125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2187.943359375,
+            2115.76123046875,
+            769.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            245.8546142578125,
+            -3625.8955078125,
+            1060.1181640625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4384.26708984375,
+            1127.303466796875,
+            890.85107421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            5415.724609375,
+            -611.1626586914062,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3231.726806640625,
+            -3477.999267578125,
+            882.4326171875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2965.120849609375,
+            818.10400390625,
+            769.324462890625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -6036.0,
+            -744.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4944.0,
+            -1008.0,
+            848.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            5916.0,
+            2232.0,
+            856.0186157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4762.0029296875,
+            -95.60067749023438,
+            800.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -5044.0,
+            740.0,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            2949.343994140625,
+            -249.31687927246094,
+            609.247314453125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3329.125732421875,
+            102.46186828613281,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2377.389404296875,
+            -340.8232727050781,
+            666.478515625
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2561.389404296875,
+            -456.8232727050781,
+            668.6224975585938
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            845.8546142578125,
+            3254.1044921875,
+            768.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4189.59423828125,
+            -2773.961669921875,
+            1053.15673828125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4628.42529296875,
+            -1715.768310546875,
+            1049.8485107421875
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.3291015625,
+            2154.388427734375,
+            692.9185180664062
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -39.98251724243164,
+            -3408.988525390625,
+            1061.6427001953125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            5343.66357421875,
+            1683.559814453125,
+            863.6417846679688
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            5359.724609375,
+            -691.1626586914062,
+            560.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4349.248046875,
+            1029.4237060546875,
+            887.7929077148438
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -5035.22314453125,
+            1063.447509765625,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4537.12060546875,
+            194.10400390625,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            1603.770263671875,
+            -2927.466552734375,
+            1171.5072021484375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -6064.0,
+            -872.0,
+            847.2686157226562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -1240.0001220703125,
+            -3656.000244140625,
+            1082.823486328125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4858.98779296875,
+            826.8819580078125,
+            847.5693359375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -5005.12060546875,
+            234.10400390625,
+            800.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3195.919677734375,
+            2286.7041015625,
+            724.7099609375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4703.48828125,
+            -1847.19384765625,
+            1040.0316162109375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            4811.48828125,
+            2624.80615234375,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4625.53857421875,
+            329.0467224121094,
+            896.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3421.417724609375,
+            -3404.029052734375,
+            861.616455078125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -4368.0,
+            -1624.0,
+            798.2244873046875
+          ],
+          "supported": true
+        }
+      ],
+      "mode": "ffa",
+      "map": "mp_thunderdome"
+    }
+  ],
+  "both_team_respawns": true,
+  "weapon_fire_exercised": true,
+  "postmatch_lobby": true,
+  "stock_and_converted_reload": true,
+  "mounted_runtime_hash_verified": true,
+  "logs": {
+    "script_errors": [],
+    "native_crashes": []
+  },
+  "reload_capture": {
+    "width": 1280,
+    "height": 720,
+    "sha256": "ed14abc14a1e8639c7a07ddb9d8b4bb7bdee8a12efa7361653ec6dfccdbd2288"
+  },
+  "single_client_only": true,
+  "build": {
+    "shadow-weld.json": {
+      "shadow_meshes": 347,
+      "positions_before": 2956071,
+      "positions_after": 663215,
+      "indices": 2956071,
+      "bytes_saved": 27514272,
+      "bsp_bytes_before": 759385716,
+      "bsp_bytes_after": 731871444
+    },
+    "visibility-cells-disabled.json": {
+      "cells": 10,
+      "every_point_in_cell": 9,
+      "previous_cell_bsp_nodes": 43,
+      "reason": "Cells without portals hide entities (ropes, players) outside the camera cell"
+    },
+    "csm-props.json": {
+      "casters": 3344,
+      "nodes": 511,
+      "leaf": 16,
+      "min_radius": 48.0,
+      "skipped": {
+        "small": 942,
+        "ground_cover": 2471,
+        "unknown": 0
+      },
+      "sun": [
+        -0.7077369689941406,
+        -0.21848341822624207,
+        -0.6718432307243347
+      ],
+      "prop_object_base": 3200
+    },
+    "cubemaps.json": {
+      "origins": [
+        [
+          -4522.0,
+          332.0,
+          976.0
+        ],
+        [
+          -4944.0,
+          -1008.0,
+          928.0
+        ],
+        [
+          4799.0,
+          2617.0,
+          976.0
+        ],
+        [
+          4187.0,
+          -967.0,
+          1120.0
+        ],
+        [
+          -40.0,
+          -3409.0,
+          1148.0
+        ],
+        [
+          -3671.0,
+          -2948.0,
+          893.0
+        ],
+        [
+          0.0,
+          0.0,
+          1300.0
+        ]
+      ],
+      "fov": 106.26,
+      "written": {
+        "cubemaps": 7,
+        "meshes_assigned": 3175,
+        "pakfile_bytes": 3671494
+      }
+    },
+    "native-prop-collision.json": {
+      "solid_placements": 3740,
+      "triangles": 2738084,
+      "new_headers": 28522,
+      "headers": 59122,
+      "header_limit": 65535,
+      "previously_active_brushes": 1,
+      "collision_lod_triangles": 1200,
+      "min_radius": 24.0
+    },
+    "visibility-cells.json": {
+      "units": 9932,
+      "meshes": 3175,
+      "props": 6757,
+      "props_without_triangles": 0,
+      "triangles": 6139960,
+      "viewpoints": 109836,
+      "rays_per_viewpoint": 6000,
+      "tile": 512,
+      "grid": {
+        "origin": [
+          -9216,
+          -7168
+        ],
+        "tiles": [
+          36,
+          27
+        ]
+      },
+      "near": 512.0,
+      "cells": 10,
+      "cell_sizes": [
+        5044,
+        3813,
+        4471,
+        7926,
+        6133,
+        6108,
+        6766,
+        7146,
+        7224,
+        9932
+      ],
+      "cell_bsp_nodes": 43,
+      "references": 64563,
+      "access_nodes": 268,
+      "mean_drawn_per_viewpoint": 6834.4,
+      "max_drawn_per_viewpoint": 9932,
+      "mean_drawn_fraction": 0.688,
+      "cell_rects": [
+        {
+          "x": [
+            1024,
+            3072
+          ],
+          "y": [
+            -7168,
+            -1536
+          ],
+          "objects": 5044
+        },
+        {
+          "x": [
+            3072,
+            9216
+          ],
+          "y": [
+            -7168,
+            -1536
+          ],
+          "objects": 3813
+        },
+        {
+          "x": [
+            -9216,
+            -3584
+          ],
+          "y": [
+            -1024,
+            6656
+          ],
+          "objects": 4471
+        },
+        {
+          "x": [
+            -3584,
+            1024
+          ],
+          "y": [
+            -1024,
+            6656
+          ],
+          "objects": 7926
+        },
+        {
+          "x": [
+            4096,
+            9216
+          ],
+          "y": [
+            -1536,
+            6656
+          ],
+          "objects": 6133
+        },
+        {
+          "x": [
+            -9216,
+            -1536
+          ],
+          "y": [
+            -7168,
+            -1024
+          ],
+          "objects": 6108
+        },
+        {
+          "x": [
+            -1536,
+            1024
+          ],
+          "y": [
+            -7168,
+            -1024
+          ],
+          "objects": 6766
+        },
+        {
+          "x": [
+            1024,
+            4096
+          ],
+          "y": [
+            -1536,
+            512
+          ],
+          "objects": 7146
+        },
+        {
+          "x": [
+            1024,
+            4096
+          ],
+          "y": [
+            512,
+            6656
+          ],
+          "objects": 7224
+        }
+      ]
+    },
+    "small-prop-fades.json": {
+      "placements": 6757,
+      "faded": 1748,
+      "max_radius": 80.0,
+      "fade_per_radius": 100.0,
+      "min_fade": 1500.0,
+      "fade_percentiles": [
+        1500.0,
+        4451.0,
+        7678.0
+      ]
+    },
+    "pipeline.json": {
+      "foliage": true,
+      "seconds": {
+        "props": 319.9,
+        "rebake": 595.0,
+        "collision": 42.3,
+        "overlays": 14.8,
+        "world-materials": 94.7,
+        "cells": 1965.5,
+        "fades": 25.2
+      },
+      "total": 3057.4
+    }
+  },
+  "runtime_sha256": {
+    "mod/maps/mp_thunderdome.bsp": "c234addc8884cec22572dc512e7d0eb5fdc152f8dc532f1ee6d22b6f475a6dae",
+    "mod/maps/mp_thunderdome.stbsp": "f9eca2a4ce4862a522e61ca84a3ad0562445e9696331903ef6375c1299ab0fce",
+    "mod/models/apex/thunderdome/ac_unit_dirty_32x64_01_a.mdl": "5c0cbc0995c335780a943c32f0f43731cbbfcb9836638be1ed6c99aa569e3981",
+    "mod/models/apex/thunderdome/air_duct_bracket_01.mdl": "89523d3c4dc0d901b9a4cd27a5304119b210631fdacf3f74cce4f4e683b8a4d9",
+    "mod/models/apex/thunderdome/antenna_01_colony_arm.mdl": "0c3efbb1f454f447a0794360ac6aaa3eec482fb1d4d4cd8cf76848a22caaffcb",
+    "mod/models/apex/thunderdome/antenna_01_colony_electricalboxes.mdl": "05f98ac9fbe2e90d448627da3da68ff8da93dd7ea73ad53176c5d9942c89c011",
+    "mod/models/apex/thunderdome/antenna_03_colony.mdl": "60c838cefeaa48856cff72fbba9e3010fa99f3688cde5ea82da20ec05db34db1",
+    "mod/models/apex/thunderdome/antenna_05_colony.mdl": "d02544c819caa0b85e1df1fab241645ba9cf4adeb04ec80fc710456d99eb86d1",
+    "mod/models/apex/thunderdome/barrel.mdl": "30979d4344a01489612186d13b5c52735e051d2f5f85ee95b9ffec35f6385d8d",
+    "mod/models/apex/thunderdome/beacon_roller_bracket.mdl": "d9f8f83ad981e64dbf64c593d9350bfbdd217a9eb09346dd14d7eba7239349ea",
+    "mod/models/apex/thunderdome/beacon_wire_cluster_01.mdl": "cae85f989b8ee3383ffab4bdb730dc1264ca7f3af1feea4334a0091bf9e39dc6",
+    "mod/models/apex/thunderdome/beacon_wire_cluster_04.mdl": "8730e5e8d796d0a7d9a720ee18c2701d71d2a4d5b7fef00ff6abe253154d6f0c",
+    "mod/models/apex/thunderdome/beacon_wire_ground_coils_03.mdl": "b4faf11ef068953fe68b57eb391635e790ed4efedd63f5fc42e969bf1de37920",
+    "mod/models/apex/thunderdome/beacon_wire_ground_coils_04.mdl": "1081c3e07c5d473235a10e3df2753cd93a2c9557b5769c6ffc21b68d784ea3e1",
+    "mod/models/apex/thunderdome/beacon_wires_ground_coils_01.mdl": "09baf3e1fbd43a0c3fe58b58991bcaeb9ac886aebf6ac00b90d1e669f48d326e",
+    "mod/models/apex/thunderdome/box_cardboard_flat_01.mdl": "2038257f5b09308f78b51eedb528515682503d4a2090fc426bab5d85cf448d05",
+    "mod/models/apex/thunderdome/box_small_01.mdl": "fae495851c66be166ac1dd1f7e15d8174feccf722fa2b1aaeeef635d263d6e27",
+    "mod/models/apex/thunderdome/cables_modular_med_imc_01.mdl": "80647f8c308b2b1d3658ece8b39598a0095ed5e2814119e365f71878b5bf71b5",
+    "mod/models/apex/thunderdome/cables_modular_med_imc_02.mdl": "ea2312cabe7cebf52ee981c3427e389468a3e33a8c71b30ccbb9ae922c14a543",
+    "mod/models/apex/thunderdome/cables_modular_med_imc_03.mdl": "771b0300bd5ddbba5e62ebadd65bec4b2a6f51ac3a21ba277e06b6d03b5a29ea",
+    "mod/models/apex/thunderdome/canyonlands_alien_tree_01.mdl": "0fbf38c86ce4a4f8ce84439b3b4c15efe52ac7cd28cff39a273d14684eb4e533",
+    "mod/models/apex/thunderdome/canyonlands_alien_tree_branch_01.mdl": "a8b18db881e761072d1eb3108a3ebc8c998e760fd3a6cec883c61de8a34a0dcd",
+    "mod/models/apex/thunderdome/canyonlands_alien_tree_branch_02.mdl": "2bea74b396a74f043ecbf59095142342d0ab5fae17bfeb84651a84fdce377d92",
+    "mod/models/apex/thunderdome/canyonlands_bone_custom_01.mdl": "df973566d0f1dcc5c94829f25b408137648d72945e00d92362558bf6c331f283",
+    "mod/models/apex/thunderdome/canyonlands_bone_vertebrae20_01.mdl": "c794fe5e2c22c134c5d6c2d3d6420b485162e87afe2f12d4081df64738adb03b",
+    "mod/models/apex/thunderdome/canyonlands_light_pole_01.mdl": "e6fb4a79121a08f6d80a5124222ef227a5ac60798564c20c4bfc280d92b7cc95",
+    "mod/models/apex/thunderdome/canyonlands_mall_bone_01.mdl": "fb47e0e734e31f484555549daecb39b09382ffd162043eb611fee8da528eae33",
+    "mod/models/apex/thunderdome/canyonlands_mall_bone_02.mdl": "06fe602c677ac9c3f1dacaf6da212eb41cc3ceabf4c746f80b7d7d64f4b74790",
+    "mod/models/apex/thunderdome/cargo_container_imc_01_green.mdl": "2d25271a6fffee54078140363f6d866d6f1e9868dc2f61594d81ac0283a148c3",
+    "mod/models/apex/thunderdome/cargo_container_imc_01_green_open.mdl": "07a752f545b88a95283d4168b724c6f91c055fb2c3de8753ce63b639112547a8",
+    "mod/models/apex/thunderdome/ceiling_vent_metal.mdl": "977162ec7c6e7ea8b26c1a8e55d9f4e8bc146e241ef71bd0c2e54ad90b49aa5d",
+    "mod/models/apex/thunderdome/celebration_banner_01.mdl": "5b4338a0b4fcdef7e694645b8c120f44c9cbdf38d91fdcc75ada4e8708a30a55",
+    "mod/models/apex/thunderdome/celebration_banner_02.mdl": "5f4e762160b93dbb5da2099e4f09263e5f3209b89c5ca85a2b53caf36a85eece",
+    "mod/models/apex/thunderdome/conduit_bend_16_imc_01.mdl": "eae2f9e59ea5977e29501936fe60ca82f91a866abc6910b5ac85122fb441b3b9",
+    "mod/models/apex/thunderdome/conduit_bend_16_imc_02.mdl": "4c9d6d3aae0412a0a58ddc5c93c73871390cfcc9f6acf3e7f1b09ff761c133a1",
+    "mod/models/apex/thunderdome/conduit_bracket_imc_02.mdl": "976b519a0c9eba4df94a0b1f8f2b2f03974050aacca6bd18224e986bce8f8720",
+    "mod/models/apex/thunderdome/conduit_bracket_imc_04.mdl": "e7403f5827ee8137d55594f802814bf63107fe6b14bcc976ad308bd41db18964",
+    "mod/models/apex/thunderdome/conduit_start_imc_01.mdl": "c53396a536dbb70a035cc8df4243c742d0984df8d9cc0a80e2b4a263be0edc85",
+    "mod/models/apex/thunderdome/conduit_str_32_imc_01.mdl": "f74fb90b4fae17ab60d2b855e6d08014c3904f2317f1bec6dc245d3a435f4ec2",
+    "mod/models/apex/thunderdome/conduit_str_32_imc_02.mdl": "ca9cf70c9d058d53cba33bda59738d6f505666f21324c496d7024da83fc5d763",
+    "mod/models/apex/thunderdome/conduit_str_64_imc_01.mdl": "858845f3076d5c34c6448a23e2cbe277b255ec6bbe0cfd7ffa88783f5e908ed2",
+    "mod/models/apex/thunderdome/conduit_str_64_imc_02.mdl": "c1e6e1a07126371cb797a79e7d80d038ceb153854bdeef0e0ef284ef47a6bb9b",
+    "mod/models/apex/thunderdome/construction_bldg_wood_debris_01.mdl": "b6656e7d40e0251121af61b351b8ffb3b82472011e0df5144438c3ee438e4f87",
+    "mod/models/apex/thunderdome/construction_plastic_mat_clear_01.mdl": "b3fdeca775e8ddd18d3e5acbb3b97ea27d7686a89fba2254f5073471bd827558",
+    "mod/models/apex/thunderdome/construction_scaff_128_64_128.mdl": "15777bf679e41f8a5152f83a5916615317f24391fcf5cc7203b42171e88ee911",
+    "mod/models/apex/thunderdome/construction_scaff_128_64_128_02.mdl": "889e4517299066d082791ee0c6f646dd9c4c93172599f212c6d9f844041001a4",
+    "mod/models/apex/thunderdome/construction_scaff_128_64_64.mdl": "67f1cd9f4017d53a07c0667327e37334a81b91a382934ecae8f5f0899fd1eebd",
+    "mod/models/apex/thunderdome/construction_scaff_post_128_01.mdl": "4063a53f1f5b4cd74ca5aa4cb5242d220443f6849592e94038bcf230bed78d4a",
+    "mod/models/apex/thunderdome/desert_rock_cluster_small_01.mdl": "0c00b662f2a6584c88a4f680fb9e21f21aa1b95d71183110d95228ed019499b6",
+    "mod/models/apex/thunderdome/desert_rock_cluster_small_02.mdl": "bf6be317bc77cc366c81a0cc22d1b097519df303e7f28e7c85fa4b42a84c0600",
+    "mod/models/apex/thunderdome/desert_rock_cluster_small_03.mdl": "fc93abef8e27a928eee0546a7c945e462383cb0b8e42d11a1337c5a2bae8335e",
+    "mod/models/apex/thunderdome/desert_rock_cluster_small_04.mdl": "2ab3ffae0eb649da98ab0a1dec9bcbb4a3c6b11d7f827312a6391d2fe1c65f01",
+    "mod/models/apex/thunderdome/desert_rock_cluster_small_05.mdl": "b0b8763205d4790120f0463f0387316a98753e7344bcd1a98aa3bc8e78321ef9",
+    "mod/models/apex/thunderdome/dirty_bowl_single.mdl": "ce87c0bf1bc83a869a9e2c3b32f89409f8f3b63d233e698b25b01c90f7a953f8",
+    "mod/models/apex/thunderdome/dive_bar_beer_glass_01_b.mdl": "955e1f252389fbde4d3d0caa2cbc841f036ff994489c21eb9d68cbb1e853bd86",
+    "mod/models/apex/thunderdome/divide_moon_terraformer_01_locker.mdl": "99be8eda87dba353ad805841301c05ed562804c60a91ff24285d0afcbac9b856",
+    "mod/models/apex/thunderdome/divided_barren_grass_clump_01.mdl": "a8f4afbe891afeded4c88b59829cb1a7515be04cd45718960fe4a21fd53b2bb6",
+    "mod/models/apex/thunderdome/divided_grass_short_01.mdl": "c783b0fe7a4ac7e129364c27c001b3c0440a9a9407e0a0b556ba1fa1899baca5",
+    "mod/models/apex/thunderdome/divided_grass_short_01_skin2.mdl": "a8d930ddebe961afa03a0b26605c4cbe134e584a6f0d02796015f327418a1504",
+    "mod/models/apex/thunderdome/divided_grass_short_02.mdl": "0303b3f39d75b82405f27ee677c4446733696632837d604b5104a0d36aaf491b",
+    "mod/models/apex/thunderdome/divided_grass_tall_01.mdl": "26efeace3660d97d1206b6362e50a8c081d507c9f28ae6a3aa5ede1d84aea4cb",
+    "mod/models/apex/thunderdome/eden_electrical_pole_01.mdl": "d9fc94b8ec068440076203aec80252135c29d7134934b4f50152cac771b4d88e",
+    "mod/models/apex/thunderdome/eden_electrical_transformer_01.mdl": "fe54dd80e88b7e7369844b1bf6cf00e9026a088e3a2b6fb1663bc79e56bf2f63",
+    "mod/models/apex/thunderdome/eden_tree_dry_03.mdl": "77c8fd7d73f9d97cc41cb07d7da076e383592f112650fa21d04c690f7cb0415f",
+    "mod/models/apex/thunderdome/electric_cable_box_medium.mdl": "be76db07bc5c9e37a6a89f8caecc2215fc093d57a4f6e449485a1dae4392198d",
+    "mod/models/apex/thunderdome/exit_sign_03.mdl": "dda7c455c74985d8d4bdf7cea00931701c17e4833cad642148b62b74f359673a",
+    "mod/models/apex/thunderdome/farmland_domicile_hanging_net_01.mdl": "e42a0aac5b2287149eddd9d0753cb556608ee51a886effb873401e46334648f5",
+    "mod/models/apex/thunderdome/farmland_fridge_01.mdl": "640d37913290fb915b40c2c8455ab97dbbc90dc78ddcb32dbb1e79858a96b87f",
+    "mod/models/apex/thunderdome/firing_range_crate_01.mdl": "3ab35888dc1146156dc17d7d3b13ab7bf659251308756e25907733043e53103b",
+    "mod/models/apex/thunderdome/firing_range_crate_01_tease_opened.mdl": "45951509d85533df136da5307d1d35dabcf5adc3ec8e5300969972eee922fb5b",
+    "mod/models/apex/thunderdome/firing_range_kit_window_01a.mdl": "b2a10090ac1a2014ecbc717a50149dbedfb8a2a0d72875085c71c259086618a7",
+    "mod/models/apex/thunderdome/firing_range_kit_window_01a_skin1.mdl": "6803680c0e8d22b1d194484e1fc542eecea74922ffcfd2aef5d360047c559a7c",
+    "mod/models/apex/thunderdome/firing_range_kit_window_01a_skin2.mdl": "b10e71b57bb02051da1fdf02bfacae38df6494ccf6d1b4b22fb76f37c6cc5599",
+    "mod/models/apex/thunderdome/firingrange_mu1_vert_course_pillar_02.mdl": "08eca469baf2fda5d10749186ba9139a9ff3b2ec4db5b6bea9c7298dee65104f",
+    "mod/models/apex/thunderdome/firstgen_barrel_01.mdl": "680e77a684df3f9c536fe908e7aeaa28a4ee9fb0286e6d1afd38713ae920f3de",
+    "mod/models/apex/thunderdome/firstgen_utility_box_01.mdl": "8666fc0a5ddc25b33b80b0d42aeec92958332a4f10fd13668a771a9d4c4de6d8",
+    "mod/models/apex/thunderdome/flowers_ground_01.mdl": "8c22a1674882b1d5d1dd3ee7b29b882433b0863b6c7939f4c520c3459f08ddd5",
+    "mod/models/apex/thunderdome/fusebox.mdl": "205f1e5d4e13f175193f0ba11077e3149850b64e492e0f187b48ae345192c16b",
+    "mod/models/apex/thunderdome/fusebox_redgauges.mdl": "85cf35aa83d4300de5b948f14d23832331896f5487e48f05a68f86533123833f",
+    "mod/models/apex/thunderdome/fusebox_small_a.mdl": "91da86ca0bb85335d21038db9c540e34895eb3916190bde60ac696031aad9058",
+    "mod/models/apex/thunderdome/generator_imc_01.mdl": "a0b127a42d2a8c623e35c1e6ac471558018979be4cb10dbad0826bb10eb819d1",
+    "mod/models/apex/thunderdome/grain_sacks_stacked.mdl": "d5407116855ef5c10d2e33a5b9983cac13415853f28f0477ca7c2ac7bc3c0c59",
+    "mod/models/apex/thunderdome/grass_desert_02.mdl": "7414cb2daa5b977e47eb994ddbe05309199cb0068b047e32c16e65c7b9894365",
+    "mod/models/apex/thunderdome/grass_desert_02_skin1.mdl": "e5ffc5e4514a5137b1093b7b4f272f62642f010535b7e2ad986336ab81653b8b",
+    "mod/models/apex/thunderdome/gun_rack_arm_down.mdl": "9c06eb613acc56ae91e4097751ee5331095c83f99eb779fd3b66957d4747272d",
+    "mod/models/apex/thunderdome/hanging_relic_light_on_2.mdl": "848df739000e3e43d23aebd92f04c0d53e5e11049f27d2374da40efc190f3e06",
+    "mod/models/apex/thunderdome/hut_panel_01.mdl": "07e2290a8cf7f44bbf6c22cd320834ff1edee6af997c890398659627867a4e1b",
+    "mod/models/apex/thunderdome/imc_antenna_02.mdl": "fa6a50a1145e2c7a43a264147d257ca8fbc52aaf0ef3b6f3257c01de5676cbe8",
+    "mod/models/apex/thunderdome/imc_fan_large_case_01_short.mdl": "f0c4175810d75d48676fb2cc04205000c225cc555a0e0b92902bf323a6747f7a",
+    "mod/models/apex/thunderdome/imc_int_fusebox_01.mdl": "b4ab28e4f71bbcf523d7987ebdf789865693197849c815a9ec3ce03a0fb7f0b4",
+    "mod/models/apex/thunderdome/imc_tech_panel_64_01.mdl": "72a9c18447198985ac6da7259aaf54249ddd78d65bd67e8688ac3ae340e8a8de",
+    "mod/models/apex/thunderdome/imc_tech_smallfan_32_06.mdl": "9143be15a4e9e006793959d40e273c161d51a3717a71bc206a9329c4e7d5768f",
+    "mod/models/apex/thunderdome/imc_tech_smallpanel_48_03.mdl": "e8784c84b25b025ffcf59085dbc39988ca03d125470e77d4204966a121ec4d5c",
+    "mod/models/apex/thunderdome/industrial_metal_frame_256x144_01.mdl": "18de1476b79c10896dd7386b8acfed5ad9ac9580922985496fc17b011235f14e",
+    "mod/models/apex/thunderdome/industrial_metal_frame_256x144_02.mdl": "b08552b1e50d476142594d9aecce0fe6ef1440d931f3280f2c3286e6e68ebedd",
+    "mod/models/apex/thunderdome/keypad_01.mdl": "1a6009dfbea88e8edcde1905dfb71ee00e0e171684e92e54bc771d9dbbc568c3",
+    "mod/models/apex/thunderdome/kodai_fb_wires_02.mdl": "00cbea051d82c9403f0f4221f7e245d139dcbc4d66241f4fc956629164ba449e",
+    "mod/models/apex/thunderdome/landing_mat_metal_03.mdl": "ccf0456b958076fedcd36e6036bf440c4f492e22728053804bd83604332bdc30",
+    "mod/models/apex/thunderdome/light_fc.mdl": "32d0ffb07f2a2e52a1ab0c984fdae2bbdbe43bd2f7612394fc872a37a45096af",
+    "mod/models/apex/thunderdome/light_hanging_industrial_lamp_02_on_warm.mdl": "fd63448f50fbc255d8428f4094bb4b947564c8d22ee6635c208477c56eeffcfc",
+    "mod/models/apex/thunderdome/light_hanging_industrial_on.mdl": "1af05a74dc1a58c554f53bea6c40a01905e826dc81ba950099f42d695e396480",
+    "mod/models/apex/thunderdome/live_fire_clamp_white_a.mdl": "80e79bbbb380501e9cfdf1ee77567f6a09b2e83af36efaa8489be802ce870b63",
+    "mod/models/apex/thunderdome/live_fire_clamp_white_a_skin1.mdl": "3ab68122f4db4a4c8cdd941734eb6bd4112f3e4b516f84dabc946c277bcd0e08",
+    "mod/models/apex/thunderdome/live_fire_clamp_white_a_skin2.mdl": "c91dc8cc5eb0e9456b73fecbad52a9387830d4d6010985b8ec609f262428e407",
+    "mod/models/apex/thunderdome/live_fire_col20_pan_37.mdl": "78a45b27b2336d34d072783a28c035fb74adccb4fb1f6c7c67bbaa680ba013b4",
+    "mod/models/apex/thunderdome/live_fire_col20_pan_37_skin1.mdl": "f73a7cc1e18896084216e767ea6d6315ed0b5ec708ab96aef2994ea9b15e530f",
+    "mod/models/apex/thunderdome/live_fire_corner_green_b.mdl": "377d3f8e2587f8471a5eeab0152b3ae2978f2ad34e58fc182b837d1663400b93",
+    "mod/models/apex/thunderdome/live_fire_corner_wide_white_a.mdl": "3cdd64a4322635f123bb8906bb2132ae2ad7b5842f7a0fbc5040569538a3923f",
+    "mod/models/apex/thunderdome/live_fire_corner_wide_white_a_skin1.mdl": "3a0508e3e9f3dacb6e34b09064ab5961df000cea0f0936065871a7afaba6c25b",
+    "mod/models/apex/thunderdome/live_fire_panel_a.mdl": "e7139d9cfe067e66955f3a0d6bbf4e64b987321abd26e78465b023b32eefead4",
+    "mod/models/apex/thunderdome/live_fire_redfrm_dlc_d.mdl": "aea8b63d5e07a793b5ebfdfb1eb22c0a99bc6fa5829d1023a0ef0fd600058d99",
+    "mod/models/apex/thunderdome/live_fire_redfrm_dlc_g.mdl": "6b52e71496d8431b88c6cca914aa40de668322bdad03c78af64e3ea1411517ce",
+    "mod/models/apex/thunderdome/loot_candy_debris_pink.mdl": "a99e3ebe05e6f1abe5a38e835230b073b46d3dc9509d59b274813ca02c1d55b4",
+    "mod/models/apex/thunderdome/metal_floor_panel_vent.mdl": "6f4d8b07db43f5f3daf1b909ebe8a6482971897b1b2299eecfd877a9199cb7ea",
+    "mod/models/apex/thunderdome/meterbox.mdl": "829526699798254f11c7df06753f443f410b10268ff02f67af534db8c42ea4a0",
+    "mod/models/apex/thunderdome/militarybunker_trim_8x128.mdl": "e1c05cd6b1b72e62b1a0f6b073e4ade4b2bd5dac8adc1d91aaf9f577885ddec4",
+    "mod/models/apex/thunderdome/modes_podium_lights_on.mdl": "6b949d2e487b1932d9779a498ad9208c52339acf29c458afbca4276d8043271e",
+    "mod/models/apex/thunderdome/mp_blk_water_exterior_corner_03.mdl": "8762e7df01280cedbea346ff773b83a970588208414996dd49f741a8b3c208cd",
+    "mod/models/apex/thunderdome/outpost_207_vents_01.mdl": "909250080dc78be6d86909f4aad246bea90fd2bcf99679b13f6ac94bcb58c923",
+    "mod/models/apex/thunderdome/pallet_cardboard_box_01.mdl": "a8467a44f61ca2150703949d1e1f86b54f981ac9486fbf8b8adef94849e92e07",
+    "mod/models/apex/thunderdome/pallet_cardboard_box_01_wrap.mdl": "f2a172ee90188b4fd4d8d7981e2372e6a2df00c4aed4776a83dfdf40462a3fa8",
+    "mod/models/apex/thunderdome/pipe_modular_grey_bracket_cap.mdl": "e64666a5e4f3c37d3c864b9f425894fb8e4f3c4e3eee0a9be50be3f568a15915",
+    "mod/models/apex/thunderdome/power_cell_64.mdl": "02d047f0efc6e1d3f5dede59e0a7108b43a8a29430c73531436fefb6ccfd8634",
+    "mod/models/apex/thunderdome/power_cell_64_single_01.mdl": "21df02b7db84ef2d37e75c9085a2fdf421b02c2759b4476274b1649c599b4139",
+    "mod/models/apex/thunderdome/power_gen1.mdl": "da428b3774537607e8ccb17c9c76623ff28ff53be6bfbd1b17a69dc02566acdf",
+    "mod/models/apex/thunderdome/rib_gaint_05.mdl": "76560e26674b75a680c6aaae70a4a07a420f0a16f66f3e61d062bc48514223ab",
+    "mod/models/apex/thunderdome/rib_giant_02_cut.mdl": "9d0aeade6d94db88d3c9eb6d38f1afc9cfd2c09edf70b052101e7e507e3fb398",
+    "mod/models/apex/thunderdome/rib_giant_04_cut.mdl": "7f2b7408536ae35a2765d21e093f141ba265f1fe7ecd7763dd3175789d8a74bd",
+    "mod/models/apex/thunderdome/rib_giant_05.mdl": "be34e5b0100a0104ac72b3cd37982d4cd02fc9a65f9387ed811491eb56f67c83",
+    "mod/models/apex/thunderdome/rib_giant_07.mdl": "96bb189614a12131a6590affba6ac3fdb8a65654f6bc2937c49773e075dd4eff",
+    "mod/models/apex/thunderdome/rock_desert_04.mdl": "0e06fa94c9c02d171d4dd8ba41392165409939817f6d40b3458d64ec1c540329",
+    "mod/models/apex/thunderdome/rock_desert_04_avt.mdl": "7390b43b386026d77b4347149b8ecbdf1e7f1b7ee24a7d8bd7ace85062fec250",
+    "mod/models/apex/thunderdome/rock_desert_06_avt.mdl": "efed6221854738b2f411c8d9eccf92161a702e7b38e8609529e3116d2e3c09ae",
+    "mod/models/apex/thunderdome/rock_tropics_rough_01_skin10.mdl": "3545c278c6421ca6d6892d114a830db24c75b29e063d816ae00219238ef34653",
+    "mod/models/apex/thunderdome/rock_tropics_rough_01_skin11.mdl": "abf37c52e195df0e154497a8e79eb9195b3a6e43b33ec8067df3365d29b2c2c4",
+    "mod/models/apex/thunderdome/rock_tropics_rough_01_skin12.mdl": "418ee3584bec2390ced47a4afbd20dd35fe6f8c4b0dfd4f37a892edd89805a66",
+    "mod/models/apex/thunderdome/rock_tropics_rough_02_skin12.mdl": "87ab5c4cc145c780750c647a7d92fe6b1b48353610b15ecc0a0c8d563524054b",
+    "mod/models/apex/thunderdome/rock_tropics_rough_02_skin13.mdl": "d3899e88b42639909eee5174a57d01ae90f8754cc7128cfb38979124cbdd7c92",
+    "mod/models/apex/thunderdome/rock_tropics_rough_03_skin11.mdl": "aaaad0ac2507bc9d1686ea680aa811a2d572b0697b0c9287e06e4289fe1f420d",
+    "mod/models/apex/thunderdome/rock_tropics_rough_03_skin12.mdl": "8f4e6db9cec16b08f6349755135b44c004157e67c8471ca50d78b2c97c622989",
+    "mod/models/apex/thunderdome/rock_tropics_rough_03_skin13.mdl": "3e15705eee76cf51b7371a90949f2d4a2ee1b5aa8c073742fc328519124fabfb",
+    "mod/models/apex/thunderdome/rock_tropics_rough_03_small_skin11.mdl": "7320ed5b3fa301aa58cfc9f61ee31d48131977cecdb1a85704260adbc795f29e",
+    "mod/models/apex/thunderdome/rock_tropics_rough_03_small_skin12.mdl": "58ff7d854b49e6bdddae49780bfc501455dd6577b1378096a831063c181d0c9c",
+    "mod/models/apex/thunderdome/rock_tropics_rough_03_small_skin13.mdl": "92fa79ce435d36de1e727ab214b9a41c4c89264c274cb7448779697ee7011357",
+    "mod/models/apex/thunderdome/rock_tropics_rough_04_skin12.mdl": "ece58fed797eb06a93cb3a795baa8357c9dcf6220c91ef8401a8c7e7ebff9e12",
+    "mod/models/apex/thunderdome/rock_tropics_rough_04_skin13.mdl": "540a4b54b33591165ce8e1298e0003d2930391a087442dff3290eaf0daa7c574",
+    "mod/models/apex/thunderdome/rock_tropics_rough_04_small_skin13.mdl": "8539f4c2ce7d0036cf419bfaccb4ea93de5259907a2fbcd94cc91603c1d716f1",
+    "mod/models/apex/thunderdome/rock_tropics_rough_04_small_skin14.mdl": "d3734903dd82fdadb6e8cd727eea22c324a90f8f4e950c210330180fede1402a",
+    "mod/models/apex/thunderdome/rock_tropics_rough_05_skin16.mdl": "5b55a4158a02a3adf6ea66bbc51324b22e3ec32398fd4bfc17c1c99672534604",
+    "mod/models/apex/thunderdome/rock_tropics_rough_05_skin17.mdl": "9d5e113c37d870e4726a49a35bae083bbe63493f1f735c32cbbcb59ac11b5768",
+    "mod/models/apex/thunderdome/rock_tropics_rough_06_skin10.mdl": "6a56f18d401c139455ebd793266c2cf355cdf92a74e51ebd70fdfe58c8fdea73",
+    "mod/models/apex/thunderdome/rock_tropics_rough_06_skin11.mdl": "00400838e08c142d32cb064d4b36e981278c45e9c79349cc88a139ed55ec6b0b",
+    "mod/models/apex/thunderdome/rock_tropics_rough_06_skin12.mdl": "39c441b317d9c4a083503e2b2fce66f0fcda8da23e2ad2bef42e76b794198c02",
+    "mod/models/apex/thunderdome/rock_tropics_rough_06_small_skin11.mdl": "770e3f0f2bc16f82131a55d095fcbe8f9d84672c3f739f4fe6e171bb08eb411d",
+    "mod/models/apex/thunderdome/rock_tropics_rough_06_small_skin12.mdl": "ea535d3753c6f8d0417fd07adedbdbd22490cb64870ceb6aad916af08bab935f",
+    "mod/models/apex/thunderdome/rock_tropics_rough_07_skin9.mdl": "f3123415e5ae1bad2bc3a8f0d9d7550a665f8eba35636f60cedffbe6b5da77cc",
+    "mod/models/apex/thunderdome/rock_white_chalk_modular_01.mdl": "c5eb05a83ee02740b8304dd68c1b686e590cb75413bc2a16b515be6edcfe31c0",
+    "mod/models/apex/thunderdome/rock_white_chalk_modular_01_skin1.mdl": "66fa3d9bf130f8a78f839c272e08f3cc9c0e98ddb0dffa505e0cf41663f40d78",
+    "mod/models/apex/thunderdome/rock_white_chalk_modular_large_01_skin1.mdl": "35982175ad0a0b0758803dfb0a3a94a34ac58d38c08c9dbd8bd75c24a11a65e9",
+    "mod/models/apex/thunderdome/rock_white_chalk_modular_large_01_skin2.mdl": "70279366bf283701acce777cbe81f5f3df808d4ca66bf329d8d65d07ff3551b9",
+    "mod/models/apex/thunderdome/roof_vent_small.mdl": "633106e3888877e632c7adf1eb0a66ae09a95e309db91cc880f9cf700579f2cb",
+    "mod/models/apex/thunderdome/rope_tie_figure8.mdl": "74c873c2eac366651d69cec47fbb65d388f0f0ab248bb7ccb7bd2d9fcc4ac116",
+    "mod/models/apex/thunderdome/rope_tie_single_01.mdl": "09ce19a43a82f4ff51db911eb38591927e60f930a8805702aec893134d74ff89",
+    "mod/models/apex/thunderdome/runway_light_2ft_blue_on.mdl": "60e08e880606b5caf344ef59e226db025b39d8cf466be744c139f5c43554352b",
+    "mod/models/apex/thunderdome/security_camera_01.mdl": "2e56c08e62a415b4fe98124c00695c2c9573c530a737b5bf8e659d5f83b76682",
+    "mod/models/apex/thunderdome/security_light_01_off.mdl": "fc59130250a817774ebebc720c91d8d42a10c24d64da10ffac7ad0afc8ef7d10",
+    "mod/models/apex/thunderdome/sewer_grate_01.mdl": "05bfb142d70434419a75c7359029ae7708be36a7c3751bc86a402e2574effff9",
+    "mod/models/apex/thunderdome/sewer_grate_01_32.mdl": "dc6ee848e7fa3352f9b5c8738e05bafce8c020c1574a52cea152731ecb232698",
+    "mod/models/apex/thunderdome/sewer_grate_01_skin1.mdl": "36a38865a9862ab5034af0c2719ee263cd3730b98e3bf7a02c6f322e98d326ff",
+    "mod/models/apex/thunderdome/sewer_grate_clamp_01_128.mdl": "037955dc226c457d575ec38fb692436aee73b4c4a09cd1c61cfd6016f5037551",
+    "mod/models/apex/thunderdome/sewer_grate_clamp_01_128_skin1.mdl": "b1c1cc4b89ee777f5f369943b6b282f7c6accb021fed07a7c720106e9ca3eeb6",
+    "mod/models/apex/thunderdome/sewer_wire_bracket_set_thick_01.mdl": "ce533a4c396edbc8eb75b89e50f53939029557a35b42e300438c6dd4f91815bf",
+    "mod/models/apex/thunderdome/sewer_wires_01.mdl": "d6031af02ae99a8ce4d47bfa4c5cc604e858a343c1765b2bd8210055dc74ad1d",
+    "mod/models/apex/thunderdome/sewer_wires_02.mdl": "3255d846169ae35095ef624fc3f485794c28f94e4ace25bbb0dc4931f88e8d86",
+    "mod/models/apex/thunderdome/sign_caution_red_light_01.mdl": "1d5cf8e060970e6934c66473a5d172329d2336395feee7b6576a33cec1b50d29",
+    "mod/models/apex/thunderdome/sign_plate_c.mdl": "5c4506c7b1358098e048a379e3a464c5df37bb7eb0fd41aee3609efd65747543",
+    "mod/models/apex/thunderdome/solar_water_heater01_40u.mdl": "3deb620d8ea22f52bb3496666025668893d57fc8e3cfddc078caa68d27204fb9",
+    "mod/models/apex/thunderdome/spectre_shack_refactor_01.mdl": "4493e392bcb64aaafc283da4f6a3293fafc4ad2409ff24a15240d9b143beea52",
+    "mod/models/apex/thunderdome/spherical_pressure_tank_lm.mdl": "a53676380098ceee07bf04e3f5345c9050f48749d7904086c923a1169e854067",
+    "mod/models/apex/thunderdome/stasis_light_01_skin4.mdl": "4a37a6601ecfce24a06eb8af55762c2815e75c9ab87861b1c93e2f0fb6b70774",
+    "mod/models/apex/thunderdome/stasis_light_01_warm.mdl": "133edcbee24ffc78dad47345a251834d73c71bde97d8f25390e66b4904eecb5f",
+    "mod/models/apex/thunderdome/survival_modular_flexscreens_04.mdl": "a624f480b3580f380225e97933d8d6f0f72727b10126b2b992979e040c378adf",
+    "mod/models/apex/thunderdome/td2_barrier_01.mdl": "b3c717ea859cf3774584f1e0fe0abc6c6bf3fe99fa605d8f9574d1a4a9c0e1aa",
+    "mod/models/apex/thunderdome/td2_building_cave_entry_01_ext.mdl": "bc9636c16c526480ea0e84237c7683b4e30c366f9d3cccdd657d6924e8cc27dc",
+    "mod/models/apex/thunderdome/td2_building_hut_01_ext.mdl": "fb7f3bb46319697f6e7af7051d927c55aeb8bb4c81f515e8bb9649d77ad0d0c9",
+    "mod/models/apex/thunderdome/td2_building_treehouse_01.mdl": "792fc303ec0d4b3da2a4f056e3bf912b75c106c4f0dbbaf981a1ccd387ddeeca",
+    "mod/models/apex/thunderdome/td2_capsule_01.mdl": "1152a1471937fdc1f2ec77399b1e519354e1660bce65f77f402a1c325f869df2",
+    "mod/models/apex/thunderdome/td2_center_platforms_01.mdl": "9f345bbe752a58d92b6ad37ad15a5f19b3bd2e41319c96acb434b9521eb57b73",
+    "mod/models/apex/thunderdome/td2_corp_bone_ally.mdl": "87a21c461b871acf391db5a8b3938b8621e3c548fe52e89fa6d6bc9714b7fefa",
+    "mod/models/apex/thunderdome/td2_corp_shanty_02.mdl": "baa5dcff97b9ecfe472c394414635f98c65aae03751646cd1c60a2abc144dc47",
+    "mod/models/apex/thunderdome/td2_corp_shanty_02_decal.mdl": "6292e12069874105b1a709482093c8058bd7c7480cec9f2018bfd2eb33f557b9",
+    "mod/models/apex/thunderdome/td2_corp_shanty_decal.mdl": "1de39bffe1d7c4cb1d7b329fa6185376abf45da9d3da6553ae8c39e493ea8045",
+    "mod/models/apex/thunderdome/td2_corp_shanty_lowered.mdl": "1ed588e1a30a597f787f94ba5987824370e901e204e6d6b778aa2fc0bf5a149b",
+    "mod/models/apex/thunderdome/td2_corp_shanty_lowered_decal.mdl": "25ff5f21cbda4e83ebe9f623c50a650569d6d50877850db53f903b51b6b144ac",
+    "mod/models/apex/thunderdome/td2_corp_shanty_skin1.mdl": "07ba7aad087fd1240fa9f01ce0a8b12264456225de0e7b3380b8a4a10634f3a4",
+    "mod/models/apex/thunderdome/td2_crate_01.mdl": "ef3197db57028314c23e4d79ccb4920a52c42920fc93cb0645d96174f5e32ca7",
+    "mod/models/apex/thunderdome/td2_crowd_stadium_ad_screens_01.mdl": "69cc14b3ad517599e1ea047432496afd0052945752cfdae0d72f500d09be9a63",
+    "mod/models/apex/thunderdome/td2_crowd_stadium_stands_01.mdl": "f0b6c0c6c0f1957b5b47d43da691113362fc3274cb790e069a743e9d2aaf9c1c",
+    "mod/models/apex/thunderdome/td2_door_frame_01.mdl": "9cf54b104a3e21bfb4693242f41f04b82882e8aaf9c96dcdda20c9e6c9cc8b8b",
+    "mod/models/apex/thunderdome/td2_elevator_01.mdl": "f2adef3496b9f99c7e53920c3f49854f74d2cb6afd57b34dd1a4bab9f35872d3",
+    "mod/models/apex/thunderdome/td2_elevator_top_01.mdl": "4a9c070b18e0b6390426c05277d3704c40f3889d0670c65be586b6a6054f7a7a",
+    "mod/models/apex/thunderdome/td2_gaite_01.mdl": "9f1949201f561d0d4232cbee73448a4525e8343a8b332754e615c1ecc0f2360e",
+    "mod/models/apex/thunderdome/td2_hangar_ext_wall_side.mdl": "2ff9f571e9a3a70132b59d7715bf439de595d8069c2fd124d92d65f9228e863b",
+    "mod/models/apex/thunderdome/td2_imc_portable_ext_wall_192_01.mdl": "11f879f7de8fd471d0220e761d6de48c46c0d65d483c5ca5bc551795eeb1d1fe",
+    "mod/models/apex/thunderdome/td2_imc_portable_ext_wall_192_half_01b.mdl": "a11954d5fcc7e02aa751b63511d9d20985c3165c742b71ff32b825fa447dafc0",
+    "mod/models/apex/thunderdome/td2_imc_portable_ext_wall_192_lower_01.mdl": "bf7f0f37504ea3282d33f135d101b0169a493feb9fd7286b423a3a0365c5dc6d",
+    "mod/models/apex/thunderdome/td2_imc_portable_ext_wall_192_short_02.mdl": "14cf50b8dd44663fc637e10ab1ca839549d43bf4d73acd462ac362098ba35520",
+    "mod/models/apex/thunderdome/td2_imc_portable_ext_wall_192_window_01.mdl": "b0b99b96ce039afa2e7f4bb554062b3bca014de96d1f37600ad5ac3a7ef1847b",
+    "mod/models/apex/thunderdome/td2_imc_portable_int_wall_192_01.mdl": "3f1b49585639d7304df6e6502ef4eff0b9146da4805e9e11935abde9658d9598",
+    "mod/models/apex/thunderdome/td2_imc_portable_int_wall_192_half_01b.mdl": "b8a48ae8b45762c6f1d03d8f19e539d6c9d348d9a99e6de74a845d25b0c5e4f6",
+    "mod/models/apex/thunderdome/td2_imc_portable_int_wall_192_short_02.mdl": "8184512707d2d4abddae3bf8c82c371367db0ce95353f1bfe362cf315de4b235",
+    "mod/models/apex/thunderdome/td2_imc_portable_int_wall_192_window_01.mdl": "df2858fc5710033f1ee0b78db609fab5692cb57f221faaa3d0a0b2bf53346a34",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_192_xtall_01.mdl": "87048714de32c0cfc08d3f2a01f9e9df46e6c8d847d0b0ac426a4ae86210bdfc",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_192_xtall_01_skin1.mdl": "e21d5c3cae47b96abb3460198b68a168888a88b85ba3be4275f90ade8591f29a",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_24_xtall_01.mdl": "9ddcaa8804706572c5e1daa9c6f170fb5a0baa9a5175783a8060abd94531ddd8",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_24_xtall_01_skin1.mdl": "f99772d0063af447cc80a1870bd6c7d77c67aeab9df5b1d90ce7bc63f417efcb",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_384_xtall_01.mdl": "4cbd28673cf69dfb002783d020f8f17d8b6a9b28e186d2b3d7a8b2c6e722df2d",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_384_xtall_01_skin1.mdl": "1713b02981f05a1a14a918dabc1a1ed46a7f7c2b0ff2c57497beefd55805d252",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_48_xtall_01.mdl": "c139cf572a687dea0cdf108e8288bdd71ee5f239c7535679ca019b4642242d25",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_48_xtall_01_skin1.mdl": "193cdab1462e454277d8c789712e7a3980ba9c6093f201185fb074135be00f48",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_96_xtall_01.mdl": "b6d32888d93df86f9d90b66b2aed73a7819a793b8e3973eadfaa9f315755ccd8",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_96_xtall_01_skin1.mdl": "ad315b6d8ca53d56f717e2f41cf31f0932d0534013da8c7491d24c1a453a4b9d",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_96_xtall_90_01.mdl": "191a2e6c2f601d2424fd13ec54989a85e329c0a3a74e8c771bd24aaa9514cc0a",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_96_xtall_90_01_skin1.mdl": "7ec77316b6f70d5bc47174d749752db7da1f8790d4135d489985ac87b9b4f635",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_96_xtall_90_02.mdl": "ad9705c9bceaa802d9d0aa43711d1719fa0ed4dd1ca5622bf09c242a634808ea",
+    "mod/models/apex/thunderdome/td2_imc_portable_wall_96_xtall_90_02_skin1.mdl": "1a27678fa75acd653fe6b1f2866760ecb1f2c94c62bc3407565f2604ac2e879f",
+    "mod/models/apex/thunderdome/td2_incoave_01.mdl": "0a275211537ba28e9b8e1ff3f45e4d88bace04518d9e4d747504bfb6569bab6f",
+    "mod/models/apex/thunderdome/td2_landing_pad_arm_top.mdl": "641a2269cc7f7f2c52be8e5e9276029409464cb9a0184621f1a670f6ff0694e4",
+    "mod/models/apex/thunderdome/td2_landing_pad_vent_long_01.mdl": "36f6b660d45fba354b378a20ee32c92da0d55fcd7e2e4bd5ed17f46934fe0084",
+    "mod/models/apex/thunderdome/td2_landing_pad_vent_short_01.mdl": "440e7965580e8ab7123ed6801a9501d42588cd0cbe4db192cf499bfacff543db",
+    "mod/models/apex/thunderdome/td2_landingpad_circle_01.mdl": "4ef175b771ae4a2ccafa05c00e66cdedf14349fb8bef86bac9a1cde9c81a9a64",
+    "mod/models/apex/thunderdome/td2_landingpad_hydraulic_01.mdl": "2e3dbc418403c6c49cfa51ee7d008acae8e56fec7c30186873b8b38d5480ea97",
+    "mod/models/apex/thunderdome/td2_landingpad_square_01.mdl": "1de46b98b845c05ddf15d0a3106a473b00d4c477e0a368366402338c56346e3e",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_128x128_b_decal_stripes_01.mdl": "a1fda01affdeca09a71f37f4606ce481a5f4ea2b5ab206d41f77812f2a7b39fd",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_128x128_decal_label_01.mdl": "70824bfb5f9f79ecc4f14ef5b5947331093794de363500d93049adb93d668406",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_128x128_decal_stripes_01.mdl": "b4e9525fddd1531715ef71132a67df39d52308655085eb5d0c16caad0c8559e3",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_256x128_b_decal_label_01.mdl": "ab1ad20c8f064bc7d67853f4f41c8946e435307ebe893c8b631a3aa9a7f2eab8",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_256x128_b_decal_stripes_01.mdl": "e85bea1c93829fb831a02dc9a188016ba9ddcf588fc78c614df126521519f60a",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_256x128_decal_stripes_01.mdl": "5a33984cacc2218ef1484219bc641a4c17533bbe45ad29460ca5aa4f38daab2f",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_256x128_metal_01_a_orange.mdl": "de9606f417ba11e5da9825f4bdeba718eebb3a47adb589e4846ac0c7eb7b4ef8",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_corner_decal_stripes_01.mdl": "7614c0d971b1d613d3a05c1675b2f49883edde46afbf057679a650bb81a1b781",
+    "mod/models/apex/thunderdome/td2_military_fort_wall_corner_decal_stripes_02_skin2.mdl": "2411ef3e03945a0428006f4d30d90e68718e50f0e75c9546f19b88d9f4d783a5",
+    "mod/models/apex/thunderdome/td2_nozzle_metal_01.mdl": "85b836748db940c0969fd190c4b471cbeb366fee16c09bc1a8b0b2993ddccee0",
+    "mod/models/apex/thunderdome/td2_repulsor_tower_01.mdl": "2e75971cb2e9a7607c086139405fa2c0f592d6062b42de70b04d5dc3a434599d",
+    "mod/models/apex/thunderdome/td2_repulsor_tower_platform_01.mdl": "ece93d169eccd3ef120c56d86dc0f51e3713d91a2f72f197fdb1d601f9cf01bc",
+    "mod/models/apex/thunderdome/td2_repulsor_tower_segment_01.mdl": "ef6a241cf0a42eae56d40096120c6af7b6dad1360c390cdf540f6fd257c5a002",
+    "mod/models/apex/thunderdome/td2_repulsor_tower_segment_01_base.mdl": "a15e912154bea5316bb21c1ca00a085f60e539387f325f4b9f3e9e2a534e16ed",
+    "mod/models/apex/thunderdome/td2_repulsor_tower_segment_02.mdl": "60cb536921dbea658fd97ff611be68a8448a42824a7fbed83cd050d8d2fa207d",
+    "mod/models/apex/thunderdome/td2_repulsor_tower_wall_01.mdl": "7f59f68cc62c2d922a6f11d6991495f6b50fc127c4b07d6bb156e403e120ab41",
+    "mod/models/apex/thunderdome/td2_repulsor_tower_wall_02.mdl": "425dbd0d03a38377efd04c31b009ddb3ffa14e5f83058f62f07bde3beff630c8",
+    "mod/models/apex/thunderdome/td2_repulsor_tower_wall_02_decal.mdl": "3145f8786f9a9b9ceb5c7bbb81d6cdbde1c5a9af297ec90d239596660267320e",
+    "mod/models/apex/thunderdome/td2_skull_lights_01.mdl": "cdf544ab057e4a5459637ae15d81b56ee8d93328f540379b09160655ad03e15f",
+    "mod/models/apex/thunderdome/td2_skull_metal_01.mdl": "ea7dba5a0936a9ace0b090cc9ea8694c20b5f3f8e9d527445b1259c3359b65ec",
+    "mod/models/apex/thunderdome/td2_skull_metal_01_decals.mdl": "b75fce0d5da12d709a726e0ddf53c5a16ca35380ba438a5700cedfa334493f98",
+    "mod/models/apex/thunderdome/td2_skull_metal_01_hoses.mdl": "54ac412b7b91b549623ba24f8e28a96c4a99eacbf0d4f25a30c7e8720eae715a",
+    "mod/models/apex/thunderdome/td2_spawn_zone_door_01.mdl": "c8ed6b6c6881d5bc3855130be20f491a5c723754adfb0b258017888da4ceffc0",
+    "mod/models/apex/thunderdome/td2_spawn_zone_elevator_01.mdl": "63cd27a7811ee86452403bab209ccefc1bc1f5f9ba59dc71410da5e9505a719a",
+    "mod/models/apex/thunderdome/td2_spawn_zone_interior_01.mdl": "93d975813bf3dbd571503d16e8e85017952d2af6f3d3be77713a910d785f92bb",
+    "mod/models/apex/thunderdome/td2_structure_grotto_01_dummy_col.mdl": "f423e1e2697021c1a64dce7fcd7fec2d3d1edf70dfdec19a7f3a0fe9dc4b029e",
+    "mod/models/apex/thunderdome/td2_tower_acplatform_01.mdl": "08e9d44a324474fff0cb612206c7fad7193c38c50b927d1e9555abfd5b8e7bf4",
+    "mod/models/apex/thunderdome/td2_tower_wall_01.mdl": "ebdd368a56f1dbf88d2dd01a63e46ed770899c31c70132fdd67c318c654d7fdc",
+    "mod/models/apex/thunderdome/td2_vista_support_beam_01.mdl": "ba0902c0f988d35c63d65e02d60120d79d11ceb3ee136eb7f5f65139357d6ed4",
+    "mod/models/apex/thunderdome/td2_vista_support_beam_01_module.mdl": "7bd88d2fa9d393196e09a35cd29403cb416bedb9b455603bcf696ff11e633d2c",
+    "mod/models/apex/thunderdome/td2_vista_support_beam_01_module_half.mdl": "46546c6056bb94d4d2f593fb0c6337b17d0230cb1d59d7464a26768e3d66e0a8",
+    "mod/models/apex/thunderdome/td2_wallseg_cap_01.mdl": "db20b6ba549cbaabaeb7d647768d0dc9b63c958b9d1647c1bb1be0ef9f375f26",
+    "mod/models/apex/thunderdome/td2_wallseg_top_cap_01.mdl": "458256ae7e885085a79ea8054af8ea8e27031018d32bcc6473f35506b82b4c4c",
+    "mod/models/apex/thunderdome/td2_wallseg_top_cap_03.mdl": "d457879c593af0898c05e57c1ab6502a582ae9899bee47e3776ea90f8f9e4208",
+    "mod/models/apex/thunderdome/td_godray_middle_01.mdl": "b0988fdaa8f939af661ddab3e8816ac3683f5c1d1042c29c131658c6094c98c9",
+    "mod/models/apex/thunderdome/thaw_container_large_skin1.mdl": "c1b7dacde8ac28a55fa7850837079420660786034f39e67739e5449b87dcd8a8",
+    "mod/models/apex/thunderdome/thumper_generator_set_b.mdl": "84fc3528f481ba018e04b73b95e3dd616fa2c3d557968fa52adcacef439d30b9",
+    "mod/models/apex/thunderdome/thumper_signs_03.mdl": "be2c5283fd13aab2d23cfbb798b9b346c293bef5797fd34794378e80c1fb9495",
+    "mod/models/apex/thunderdome/thunderdome_hanging_wire_rings_03.mdl": "d6e571d3a7ea9ad5e19fc49050b3ee7071ebaf58de0e9c1584713af1ecf68d33",
+    "mod/models/apex/thunderdome/thunderdome_screen_tower_01.mdl": "2462b51aeaaff9683bf93f93a599bfb1d3aaffa7c74ad5f5b1e3ef4764e34d87",
+    "mod/models/apex/thunderdome/tool_chest_double.mdl": "da075d14f883a78f826eee9afb2acc94cfb90cd4cce227baa270d345917c3eaf",
+    "mod/models/apex/thunderdome/tree_acacia_small_01.mdl": "407004ee4f130c686db4f454f4f9778036b1b2176ac5f9cce64902ce9abb2b13",
+    "mod/models/apex/thunderdome/tree_green_forest_med_01.mdl": "3e09f4a4bb1c65673fdc03e53a75d1f9ff342bed638f5d46ae7005e565d250aa",
+    "mod/models/apex/thunderdome/tree_kapok_ground_roots_03.mdl": "3372425cbdf971c522b8626074d2e912a43e8a6fecd62774387f73efb088080c",
+    "mod/models/apex/thunderdome/tree_kapok_ground_roots_03_skin6.mdl": "7d141bf2bc0509282408c4506e975a7af278db8c286f7556fff9e80d3591980f",
+    "mod/models/apex/thunderdome/underbelly_cage_framework_512_256_a.mdl": "3c77fe65f56a8b36331a08a08577f494d3397decdd18dc13e71f2c2713d1eaf4",
+    "mod/models/apex/thunderdome/underbelly_cargo_container_128_blue_02.mdl": "05016fd299dddc863787e007899e762e1063df393cfc1896a0e973f75df24e13",
+    "mod/models/apex/thunderdome/underbelly_cargo_container_128_green_02.mdl": "7205fba7cb116cdd75f7feb515759a2e183bd0bd3436be4dfa2d6f155f30ea9d",
+    "mod/models/apex/thunderdome/underbelly_counter_weight_bottom_cheap.mdl": "1a15f2d84b0df630e126b8d877e200cbb24e8d934935a0158c4a0aec04732a20",
+    "mod/models/apex/thunderdome/underbelly_counter_weight_top.mdl": "0d1d60c3183232b3801b24d263ef1675fd670075682d175ac3d4d5e17e53921c",
+    "mod/models/apex/thunderdome/underbelly_counter_weight_wires_04.mdl": "31eb9a298640b8969c405dfcf1106af81bf71a44e3eae9e045023d230028202e",
+    "mod/models/apex/thunderdome/utg_spire.mdl": "fa619479dc9c6312f42b58b9b6391c7d753a0dfdc391ffa331814eef0f3073a7",
+    "mod/models/apex/thunderdome/veh_land_msc_forklift_imc_v2_static.mdl": "e32f0740a5153861ab553943f1c189bdf44428d004beb561142fdba4806e17a2",
+    "mod/models/apex/thunderdome/veh_land_msc_truck_mod_military_lrg_01_closed_static_avt_skin1.mdl": "861d98fccafa58965dce88eecb60aab693f60fdc8df003bcb83210b24bdbd7cb",
+    "mod/models/apex/thunderdome/veh_land_msc_truck_samson_v2_skin4.mdl": "493e78f62f6603d86fd777404c533cc90928a55f59345007f6c03811c8bf3417",
+    "mod/models/apex/thunderdome/vent_roof_03.mdl": "68dc027c7d2cc49a0702339ba74154294e2df191c07c8cdee85b4f46cd02c070",
+    "mod/models/apex/thunderdome/ventilation_duct_hatch_01b_black.mdl": "220943a6b5488adc473fc1edecc6e49b52d09413ce3d08c06c94b13775db1456",
+    "mod/models/apex/thunderdome/ventilation_duct_hatch_02_black.mdl": "40e2b28e1d066f85768498dbc759ea35bab9051c56c86c7171d601918cfcca7f",
+    "mod/models/apex/thunderdome/ventilation_unit_01b_black.mdl": "a1d1de162c55cca807d6e6f976c5675dc5bd04ae05dc8281da36064d198d4ac8",
+    "mod/models/apex/thunderdome/warning_light_on_red.mdl": "899038f31c9703c33b48f4df11273707b816cf2d70addf394877e2cdcc55eca0",
+    "mod/models/apex/thunderdome/water_tower.mdl": "ebdb96e7f5d752f490642fda53c2a48cf0be943992824fe0d88ab2bc97ef93d7",
+    "mod/models/apex/thunderdome/wire_ground_coils_02.mdl": "6fa796553e56bd91abcc21622ca2c80c3a49be5f79cc423b677efdd5be13ed75",
+    "mod/models/apex/thunderdome/wire_ground_coils_03.mdl": "543cc23c48068aed98faaf540d5137ec71fa1d3bcbbb8684c548bcd2f1f98206",
+    "mod/models/apex/thunderdome/wires_ground_coils_01.mdl": "3bac9c5558fdfcce001be9232a75a25cb1095d0d234e79c2c3759b9746f70445",
+    "mod/models/apex/thunderdome/wood_pole_08.mdl": "fd8e4968d542f67237e9dba40520012a34663c9695f1e171b7aecf22bef04e9a",
+    "mod/models/apex/thunderdome/zipline_arm.mdl": "92d6a658ea17f709abe4c5124b91dbd179f9de1ca7445d22981c277acf70c03c",
+    "mod/resource/overviews/mp_thunderdome.txt": "dff6bc1a5da9f2d8fd225e20ba93028cdcb21006e25ebbe7be06f433f52f53a9",
+    "mod/resource/thunderdome_english.txt": "745582b3aa752e7d52a3680837cabf3108b9405c03ae53f35437b28027d8caaa",
+    "mod/resource/thunderdome_french.txt": "a2350181a33f7366b14381f415fa6ee9cf00632836243991778c3b91da87be9c",
+    "mod/resource/thunderdome_german.txt": "d39b6dbd36cdd4d4a8b8284a330fbc9c91862f03e5b9ba69d9b44382cb139c66",
+    "mod/resource/thunderdome_italian.txt": "17555166dbee899598ac07fb8fe6459f44c3ae265ec31de058b6781350f211f2",
+    "mod/resource/thunderdome_japanese.txt": "3cead67790d6dabb346856671aa94231cf6529a257cd03c11c8207a01936bf40",
+    "mod/resource/thunderdome_korean.txt": "84b94dde099e79d227a4c52098618047cbac0df79f96d28d43cddb32b0015d95",
+    "mod/resource/thunderdome_mspanish.txt": "0048bc11f639f8d68e742878d67790e83480f41349db51bb1246ba2db48eb75b",
+    "mod/resource/thunderdome_polish.txt": "22d6468eb70aea12dbf42c236caab3779e10d901d63e0839e554d2ddaa21fac9",
+    "mod/resource/thunderdome_portuguese.txt": "151b3c9abd483ff5b335319a3d585ca1be9269ca227677475a0d7f046a5794ea",
+    "mod/resource/thunderdome_russian.txt": "7de29c8d61546c877420153ccbd1a98915ee9263b142759da1eff4d35ea4df6a",
+    "mod/resource/thunderdome_schinese.txt": "2ec32af29a2268f482825512180527ecf75cb3c043b4a127c6732b207fecd9b4",
+    "mod/resource/thunderdome_spanish.txt": "3200b50fc8ab7bea9cf561f267cb77df7a5a0f21cf811f0611f0097978d0d333",
+    "mod/resource/thunderdome_tchinese.txt": "21cb9ecf0ca205639b5098711c4b108907f021712cc7ff32c9d0bc96f035f8ae",
+    "mod/scripts/vscripts/_thunderdome.nut": "cde7640ddf198cc41dd164bae9a7322dfc7baff9c19b90544414aee721c228e5",
+    "mod.json": "1dca566610d0061aa625b409537e3146345387aaa3c04693dfaa73513a925365",
+    "paks/rpak.json": "239da4265d54475d2506241875e65463a60edea832d1816fb559fcc16f56a7c5",
+    "paks/thunderdome_presentation.rpak": "e87ae12aae59312e1151ab61f9ff597ca794af48e3f2e3585f66103beb9a4717",
+    "paks/thunderdome_props.rpak": "f32ed5922c2e4c7842e499197726eadb8f1b6020e177816673dabb46d6fa8b92",
+    "paks/thunderdome_world.rpak": "82e95acc77a2468fad27fbc0ed468b7a4d1b13e80eb427058b8cf6930371036b"
+  }
+}

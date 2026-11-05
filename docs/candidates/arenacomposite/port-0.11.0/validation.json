@@ -1,0 +1,1479 @@
+{
+  "passed": true,
+  "version": "0.11.0",
+  "runtime": "1.31.14",
+  "modes": [
+    {
+      "panels": 0,
+      "objectives": [],
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 6,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 0,
+        "keyframe_rope": 2,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 24,
+        "trigger_out_of_bounds": 21,
+        "move_rope": 2,
+        "trigger_hurt": 5
+      },
+      "liveSpawns": [
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1400.0,
+            140.92520141601562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1000.0,
+            155.3672637939453
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1400.0,
+            142.73622131347656
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1400.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1400.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1400.0,
+            142.73622131347656
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1400.0,
+            140.92520141601562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1000.0,
+            155.4178009033203
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1400.0,
+            140.92520141601562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1000.0,
+            155.3672637939453
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1400.0,
+            142.73622131347656
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1400.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1400.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1400.0,
+            142.73622131347656
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1400.0,
+            140.92520141601562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1000.0,
+            155.4178009033203
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            4000.0,
+            109.75035858154297
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            2400.0,
+            129.18356323242188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            2000.0,
+            4000.0,
+            192.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2000.0,
+            4000.0,
+            192.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            4000.0,
+            109.75035858154297
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            2400.0,
+            129.18356323242188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            4000.0,
+            109.75035858154297
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            2400.0,
+            129.18356323242188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            2000.0,
+            4000.0,
+            192.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2000.0,
+            4000.0,
+            192.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            4000.0,
+            109.75035858154297
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            2400.0,
+            129.18356323242188
+          ],
+          "supported": true
+        }
+      ],
+      "mode": "ps",
+      "map": "mp_arena_composite"
+    },
+    {
+      "panels": 0,
+      "objectives": [],
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 6,
+        "info_spawnpoint_human_start": 24,
+        "info_hardpoint": 0,
+        "keyframe_rope": 2,
+        "info_spawnpoint_titan_start": 6,
+        "info_spawnpoint_human": 24,
+        "trigger_out_of_bounds": 21,
+        "move_rope": 2,
+        "trigger_hurt": 5
+      },
+      "liveSpawns": [
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1400.0,
+            140.92520141601562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1000.0,
+            155.3672637939453
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1400.0,
+            142.73622131347656
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1400.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1400.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1400.0,
+            142.73622131347656
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1400.0,
+            140.92520141601562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1000.0,
+            155.4178009033203
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1400.0,
+            140.92520141601562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3296.0,
+            1000.0,
+            155.3672637939453
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1400.0,
+            142.73622131347656
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1400.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3104.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1400.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3104.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1400.0,
+            142.73622131347656
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            1000.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1600.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1400.0,
+            140.92520141601562
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1200.0,
+            140.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3296.0,
+            1000.0,
+            155.4178009033203
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            4000.0,
+            109.75035858154297
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            3200.0,
+            2400.0,
+            129.18356323242188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            2000.0,
+            4000.0,
+            192.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -2000.0,
+            4000.0,
+            192.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            4000.0,
+            109.75035858154297
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            2400.0,
+            129.18356323242188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            4000.0,
+            109.75035858154297
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            3200.0,
+            2400.0,
+            129.18356323242188
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            2000.0,
+            4000.0,
+            192.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -2000.0,
+            4000.0,
+            192.03125
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            4000.0,
+            109.75035858154297
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_titan",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3200.0,
+            2400.0,
+            129.18356323242188
+          ],
+          "supported": true
+        }
+      ],
+      "mode": "ffa",
+      "map": "mp_arena_composite"
+    }
+  ],
+  "both_team_respawns": true,
+  "weapon_fire_exercised": true,
+  "postmatch_lobby": true,
+  "stock_and_converted_reload": true,
+  "mounted_runtime_hash_verified": true,
+  "logs": {
+    "script_errors": [],
+    "native_crashes": []
+  },
+  "reload_capture": {
+    "width": 1280,
+    "height": 720,
+    "sha256": "0d111c74a0d96a1b1463ac8f20c41a304b21cfc25472f802383238c5723cb0cd"
+  },
+  "single_client_only": true,
+  "build": {
+    "shadow-weld.json": {
+      "shadow_meshes": 312,
+      "positions_before": 2772958,
+      "positions_after": 706588,
+      "indices": 2939193,
+      "bytes_saved": 24796440,
+      "bsp_bytes_before": 645753936,
+      "bsp_bytes_after": 620957488
+    },
+    "sun-rebake.json": {
+      "receivers": 1016149,
+      "receivers_casting": 979719,
+      "caster_only": 12,
+      "sun_normal": [
+        0.4806830964971248,
+        -0.5140107080661688,
+        -0.7104482759042009
+      ],
+      "previous_sun_normal": [
+        -0.6178957223892212,
+        0.4823191165924072,
+        -0.6209453344345093
+      ],
+      "texels": 6292218,
+      "mean_difference": 24.153928710035157,
+      "within_8": 0.9052787109410386,
+      "changed_over_64": 0.0947212890589614
+    },
+    "sun-probes.json": {
+      "probes": 2907,
+      "sunlit_before": 1246,
+      "sunlit_after": 1212
+    },
+    "cubemaps.json": {
+      "origins": [
+        [
+          -3200.0,
+          1300.0,
+          221.0
+        ],
+        [
+          -1600.0,
+          1300.0,
+          263.0
+        ],
+        [
+          0.0,
+          1300.0,
+          264.0
+        ],
+        [
+          1600.0,
+          1300.0,
+          263.0
+        ],
+        [
+          3200.0,
+          1300.0,
+          221.0
+        ]
+      ],
+      "fov": 106.26,
+      "written": {
+        "cubemaps": 5,
+        "meshes_assigned": 3475,
+        "pakfile_bytes": 2622598
+      }
+    }
+  },
+  "runtime_sha256": {
+    "mod/maps/mp_arena_composite.bsp": "cdfaf6a590c7685d8ea5ca2ae190c4abb9936746abc97824a2fa484e15b3de0f",
+    "mod/maps/mp_arena_composite.stbsp": "3109c0c467900ef8e7a5f66b96aaf88dce0546e5dcde85d8b2447653a17dce24",
+    "mod/resource/composite_english.txt": "1902eafa9e2cf82eb4665c3f9bc2adee4b024fdd3ac88f11384f95c0bedb8f59",
+    "mod/resource/composite_french.txt": "8d2a1e663cbb417298bc74447d8f38b20eed72c4aeaf46a88544c3ca710711b7",
+    "mod/resource/composite_german.txt": "16e127406136d1faee19be4a70ab6929416dec2be33b2cba0e550a1f022fd8d9",
+    "mod/resource/composite_italian.txt": "f0beda0dca3d48bb7564956f682ad089aed8e5a0e6115044bd7460f6d9c407f4",
+    "mod/resource/composite_japanese.txt": "4b6c4e3494086cd73de87b85208336572afc2e1f10502ecf07be59bb7a7e4156",
+    "mod/resource/composite_korean.txt": "e1c6d9ebfb1e4be62e2fe186438bbe3c78c89e26a15970f2db08178714f1acca",
+    "mod/resource/composite_mspanish.txt": "c36c8ac059d34d9aef2830e7110cfc8f6f0e22bfab284508ca563171fa9182fb",
+    "mod/resource/composite_polish.txt": "cb975b3e922ab6e9bb6c0c34a8ca44fa75913f4cae3569bfb2de90a0a6ebe927",
+    "mod/resource/composite_portuguese.txt": "82c011882efa2a155659664bef7e77f4f89792edb248208c065974745a3e9f09",
+    "mod/resource/composite_russian.txt": "dc8b5b2c1c91c6b346114673b475a9e18a0ae8b930c1c7ffbbfa8205c0a6afb2",
+    "mod/resource/composite_schinese.txt": "8ac67e32a32401003210e805cececf140927b32072e821cd09d4158d2a9c8b90",
+    "mod/resource/composite_spanish.txt": "f6e1e7cbe08c8ce592e6deda463cf43a3e1fe63d08b5f322eccc5986e6af3fa7",
+    "mod/resource/composite_tchinese.txt": "a4748ae679e1dcfe2850b2d5815615619bdfe571d27fde31af4492e05302d4a3",
+    "mod/resource/northstar-banner-license.txt": "c3602933b43e5350b06f3cde496d3925ac6792238903ee774215d1681f3f09ca",
+    "mod/resource/overviews/mp_arena_composite.txt": "cb21a97f28c743ea23d74cf2ee5691a41a09a82493c90142df0b724eec92f585",
+    "mod/scripts/vscripts/_arena_composite.nut": "bc57ae1e483a88d5731e516044b4c7488cb7f69ce14226968cfae093d796f3f0",
+    "mod.json": "c682b6506f48b4ec7293fe98d48ceee6d6cfe3db2e38178a1a254aed8c5e5fba",
+    "paks/composite_presentation.rpak": "3377e7d3511d1bbadf4db2d938e3a453117ffd62f9a197a5eac539e25c5d84fa",
+    "paks/composite_world.rpak": "d78beb25473402fb3d00ccc04b4da167de57638496b085fd215eb694635c7701",
+    "paks/drop_off_banner_displays.rpak": "4b1e07a0b477fc6d3686320ca496019e743d1e1f5a86f60a120061bcb6ae20ed",
+    "paks/drop_off_fill.rpak": "1a7779d2f5d22d9b1e30b9528a9c30fef44a08979a6e4b72f5fd111754d5faf7",
+    "paks/drop_off_vertex_paint.rpak": "1d7ae4041d0230ee66fd587208dce4ae0e7adf78a396f3309c064f1a1b15aa83",
+    "paks/rpak.json": "04a29bd3d726a864abaca73cbffa154b131db101b4a61b35087129a36a85b082"
+  }
+}

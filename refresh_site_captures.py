@@ -42,6 +42,8 @@ def plan():
     public=json.loads(CATALOGUE.read_text());config=json.loads((ROOT/'site/maps.json').read_text())
     by_id={m['id']:m for m in config['maps']};summary={}
     for m in public['maps']:
+        if not all('r5r' in shot for snapshot in m['snapshots'] for shot in snapshot['shots']):
+            continue  # port-only galleries (publish_port_gallery.py) have no Apex reference to pair with
         ident=m['id'];root=OUT/ident;gallery=root/'comparison';gallery.mkdir(parents=True,exist_ok=True)
         seen={}
         for snapshot in reversed(m['snapshots']):
@@ -61,14 +63,14 @@ def plan():
             refs[shot['name']]={k:meta[k] for k in ('width','height','captured','sha256')}
             refs[shot['name']]['gallery_path']=dest.name
             route['shots'].append({k:shot[k] for k in ('name','origin','angles','fov')})
-        if ident=='party-crasher':
+        if ident=='party-crasher' and 'northstar-screen' not in {s['name'] for s in route['shots']}:
             from new_arena_ports import folder
             previous=json.loads((folder(ident)/'northstar-screen-v1/runtime-captures.json').read_text())
             cap=next(s for s in previous['captures'] if 'screen-framed-' in s['path'])
             client=cap['state']['contexts']['client']
             route['shots'].append(dict(name='northstar-screen',origin=client['origin'],angles=client['angles'],fov=90))
         write(root/'route.json',route);write(root/'source-references.json',refs)
-        write(ROOT/'r5-harness/routes'/(ident+'-release-survey.json'),route)
+        if OUT.name=='site-refresh-2026-10-18':write(ROOT/'r5-harness/routes'/(ident+'-release-survey.json'),route)
         write(root/'package.json',dict(package=by_id[ident]['package'],version=json.loads((ROOT/'northstar'/by_id[ident]['package']/'mod.json').read_text())['Version']))
         summary[ident]=len(route['shots'])
     write(OUT/'plan.json',summary);print(json.dumps(summary),flush=True)
@@ -92,7 +94,7 @@ def source_screen():
         c.export_logs();r5.stop()
 
 
-def capture(ident,names=None):
+def capture(ident,names=None,package_dir=None):
     root=OUT/ident;route=json.loads((root/'route.json').read_text());package=json.loads((root/'package.json').read_text())
     ns=module('release_native_harness','test-harness/harness.py')
     try:
@@ -102,7 +104,7 @@ def capture(ident,names=None):
         if state['game_running']:raise ValueError('An owned harness game is still running; do not interrupt unrelated testing')
         old.request('/shutdown',{})
     cmd=[sys.executable,str(ROOT/'test-harness/harness.py'),'start','--profile','R2AtlasHarness',
-         '--package',str(ROOT/'northstar'/package['package']),'--extra-package',str(ROOT/'northstar/ApexMaps.UI'),
+         '--package',str(Path(package_dir) if package_dir else ROOT/'northstar'/package['package']),'--extra-package',str(ROOT/'northstar/ApexMaps.UI'),
          '--map',route['target_map'],'--mode','ps','--timeout','240']
     log=root/'launch.log'
     with log.open('w') as f:subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,check=True)
@@ -152,10 +154,11 @@ def capture(ident,names=None):
         c.export_logs();c.request('/shutdown',{})
 
 
-def publish():
+def publish(only=None):
     from publish_comparison_site import export
     config=json.loads((ROOT/'site/maps.json').read_text());overrides={};summary={}
     for m in config['maps']:
+        if only and m['id'] not in only:continue
         ident=m['id'];proof=json.loads((OUT/ident/'validated.json').read_text());route=json.loads((OUT/ident/'route.json').read_text())
         if proof['shots']!=len(route['shots']):raise ValueError('Incomplete native gallery')
         current=json.loads((ROOT/'northstar'/m['package']/'mod.json').read_text())['Version']
@@ -172,15 +175,23 @@ def publish():
             write(OUT/ident/'route.json',route)
             write(ROOT/'r5-harness/routes'/(ident+'-release-survey.json'),route)
         m['comparison']=(OUT/ident/'comparison').relative_to(ROOT).as_posix()
-        m['route']='r5-harness/routes/'+ident+'-release-survey.json';m['notes']=RELEASES[m['package']]['notes']
+        m['route']=(OUT/ident/'route.json').relative_to(ROOT).as_posix() if only else 'r5-harness/routes/'+ident+'-release-survey.json'
+        m['notes']=RELEASES[m['package']]['notes']
         overrides[ident]=m['comparison'];summary[ident]=dict(version=current,shots=proof['shots'])
     write(ROOT/'site/maps.json',config)
-    export(SNAPSHOT,overrides)
-    write(ROOT/'docs/site-image-refresh-2026-10-18.json',dict(snapshot=SNAPSHOT,maps=summary,
+    export(SNAPSHOT,overrides,map_ids=set(only) if only else None)
+    write(ROOT/f'docs/site-image-refresh-{SNAPSHOT[:10]}.json',dict(snapshot=SNAPSHOT,maps=summary,
           all_native_images_recaptured=True,existing_apex_reference_dates_preserved=True,
           native_payloads_and_camera_poses_verified=True,diagnostic_safety_disabled=True,gameplay_validation=False))
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('action',choices=['plan','source-screen','capture','publish']);p.add_argument('map',nargs='?');p.add_argument('--shots',nargs='+')
-    a=p.parse_args();{'plan':plan,'source-screen':source_screen,'capture':lambda:capture(a.map,a.shots),'publish':publish}[a.action]()
+    # A later refresh (5 November 2026: the lighting releases) uses its own snapshot and work folder and publishes
+    # only the maps it recaptured, keeping the others' published snapshots.
+    p.add_argument('--snapshot');p.add_argument('--only',nargs='+')
+    # A same-drive copy of the accepted mod (its bytes are checked against northstar/<mod>) avoids a cross-drive copy.
+    p.add_argument('--package-dir')
+    a=p.parse_args()
+    if a.snapshot:SNAPSHOT=a.snapshot;OUT=ROOT/'output'/('site-refresh-'+a.snapshot[:10])
+    {'plan':plan,'source-screen':source_screen,'capture':lambda:capture(a.map,a.shots,a.package_dir),'publish':lambda:publish(a.only)}[a.action]()

@@ -71,6 +71,8 @@ def alpha_decals(ident, mapping, assets, files):
 
 
 def patch(ident, package):
+    if ident != 'thunderdome':
+        raise ValueError('Builds thunderdome_world.rpak from the Thunderdome repair; no other port has one')
     package = Path(package)
     if (package/REPORT).exists():
         raise ValueError('World materials already patched: '+str(package/REPORT))
