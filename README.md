@@ -37,6 +37,13 @@ runtime files. The older set is `output/releases/maps-beta-2026-10-25/`;
 compatible paths remain in `output/` without duplicating ZIP storage. Older
 distributions are archived separately.
 
+## Local paths
+
+Scripts read machine-specific folders (the conversion work area, the Apex and
+Titanfall 2 installs, the R5Reloaded library) through `local_paths.py`: from
+environment variables, or an untracked `local_paths.json` copied from
+`local_paths.example.json`. Don't commit local folders, usernames or tokens.
+
 ## Earlier progress notes
 
 The separate [Overflow 0.4.2 lava hotfix](https://github.com/taskinoz/apex-to-titanfall-2/releases/tag/overflow-0.4.2)

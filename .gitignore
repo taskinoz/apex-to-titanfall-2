@@ -71,3 +71,6 @@
 # The portable site keeps its native screenshot archives.
 !/site/dist/
 !/site/dist/captures/
+
+# Machine-specific locations (see local_paths.py): the example is shared, local_paths.json stays local.
+!/local_paths.example.json

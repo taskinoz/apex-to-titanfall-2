@@ -35,6 +35,7 @@ import subprocess
 from pathlib import Path
 
 import numpy as np
+import local_paths
 from new_arena_ports import CONFIG, ROOT, folder
 from read_vg_static import load, levels
 from prepare_new_arena_scene import asset_index as _asset_index, foliage
@@ -218,7 +219,7 @@ def convert(src, dest, srgb):
     dest.write_bytes(data)
 
 
-RSX_ROOTS = [Path('D:/Games/ApexToTitanfallWork/apex-current'), *sorted((ROOT/'output').glob('thunderdome-*'))]
+RSX_ROOTS = [local_paths.path('APEX_WORK_ROOT')/'apex-current', *sorted((ROOT/'output').glob('thunderdome-*'))]
 RSX_SEMANTICS = (('0', 'albedo', '_col'), ('1', 'normal', '_nml'), ('2', 'gloss', '_gls'), ('3', 'spec', '_spc'))
 
 
@@ -276,8 +277,8 @@ def rsx_index(work):
 
 RSX_LAYER2, RSX_ILM, RSX_MASK = {}, {}, {}  # filled by rsx_index: base name -> second-layer (slot, semantic, DDS) / (_ilm, _msk) DDS
 RSX_ADDITIVE = set()  # base names whose Apex material is additive
-RSX = Path('D:/Games/ApexToTitanfallWork/rsx-latest/bin/Release_NoGui/rsx.exe')
-APEX_PAKS = Path('D:/Games/Apex/paks/Win64')
+RSX = local_paths.rsx()
+APEX_PAKS = local_paths.apex_paks()
 ASSET_LIST = ROOT/'output/thunderdome-repair-2026-10-29/shared-export/all-assets.csv'  # repair_thunderdome.py --list
 
 

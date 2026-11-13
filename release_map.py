@@ -17,6 +17,7 @@ import time
 from pathlib import Path
 
 from repair_thunderdome import digest, write
+import local_paths
 
 ROOT = Path(__file__).resolve().parent
 RECEIPTS = ('shadow-weld.json', 'visibility-cells-disabled.json', 'sun-rebake.json', 'sun-probes.json', 'csm-props.json', 'cubemaps.json',
@@ -67,7 +68,7 @@ def acceptance(mod, version):
         pass
     command = [sys.executable, str(ROOT/'test-harness/harness.py'), 'start', '--profile', 'R2Anniversary14',
                '--runtime', str(ROOT/'tools/northstar-v1.31.14/runtime/R2Northstar'),
-               '--launcher', 'D:/Games/Titanfall2/NorthstarAnniversaryLauncher.exe', '--package', str(candidate),
+               '--launcher', str(local_paths.path('TITANFALL2_GAME')/'NorthstarAnniversaryLauncher.exe'), '--package', str(candidate),
                '--map', level, '--mode', 'ps', '--timeout', '240', '--extra-package', str(ROOT/'northstar/ApexMaps.UI')]
     with (out/'launch.log').open('w') as log:
         if subprocess.run(command, stdout=log, stderr=subprocess.STDOUT).returncode:
