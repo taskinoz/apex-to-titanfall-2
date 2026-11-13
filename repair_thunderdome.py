@@ -10,11 +10,12 @@ import subprocess
 import sys
 import zipfile
 from pathlib import Path, PurePosixPath
+import local_paths
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT/'output/thunderdome-repair-2026-10-29'
-WORK = Path('D:/Games/ApexToTitanfallWork/new-arena-ports/thunderdome')
-RETAIL = Path('D:/Games/ApexToTitanfallWork/apex-current/mp_rr_thunderdome')
+WORK = local_paths.path('APEX_WORK_ROOT')/'new-arena-ports/thunderdome'
+RETAIL = local_paths.path('APEX_WORK_ROOT')/'apex-current/mp_rr_thunderdome'
 BASE = OUT/'baseline/ArenaThunderdome'
 CANDIDATE = OUT/'candidate/ArenaThunderdome'
 
@@ -74,10 +75,10 @@ def shared_materials():
                 aliases[wanted[int(row['guid'],16)]]=base
         write(OUT/'numeric-material-aliases.json', aliases)
         names = sorted(set(aliases.values()))
-    packs = Path('D:/Games/Apex/paks/Win64')
+    packs = local_paths.apex_paks()
     inputs = [packs/n for n in ('common_early.rpak','common.rpak','common(01).rpak',
                                 'common_mp.rpak','common_mp(01).rpak','mp_rr_thunderdome.rpak')]
-    tool = Path('D:/Games/ApexToTitanfallWork/rsx-latest/bin/Release_NoGui/rsx.exe')
+    tool = local_paths.rsx()
     with (destination/'export.log').open('w') as log:
         result = subprocess.run([str(tool), '-nogui', '-nocachedb', '-export', '-matltextures',
             '--texnames','semantic','--exportformats','txtr=DDS (Highest Mip),matl=Uber (Raw)', '--exporttypes','matl',
@@ -93,10 +94,10 @@ def shared_materials():
 
 def shared_shaders():
     destination=(OUT/'shared-shaders').resolve();destination.mkdir(parents=True,exist_ok=True)
-    packs=Path('D:/Games/Apex/paks/Win64')
+    packs=local_paths.apex_paks()
     inputs=[packs/n for n in ('common_early.rpak','common.rpak','common(01).rpak',
                              'common_mp.rpak','common_mp(01).rpak','mp_rr_thunderdome.rpak')]
-    tool=Path('D:/Games/ApexToTitanfallWork/rsx-latest/bin/Release_NoGui/rsx.exe')
+    tool=local_paths.rsx()
     with (destination/'export.log').open('w') as log:
         subprocess.run([str(tool),'-nogui','-nocachedb','-export','--exporttypes','shdr,shds',
             '--exportformats','shdr=Raw,shds=MSW',*map(str,inputs)],cwd=destination,stdout=log,stderr=subprocess.STDOUT,check=True)
@@ -534,7 +535,7 @@ def install():
     state=subprocess.run(['powershell','-NoProfile','-Command',
         "Get-CimInstance Win32_Process | Where-Object { $_.ExecutablePath -like 'D:\\Games\\Titanfall2\\*.exe' } | Select-Object -ExpandProperty ProcessId"],capture_output=True,text=True,check=True)
     if state.stdout.strip():raise ValueError('A game-directory process remains active; do not replace the installed mod')
-    profile=Path('D:/Games/Titanfall2/R2Northstar').resolve();mods=profile/'mods'
+    profile=(local_paths.path('TITANFALL2_GAME')/'R2Northstar').resolve();mods=profile/'mods'
     target=mods/'ArenaThunderdome'
     if target.resolve().parent!=mods.resolve():raise ValueError('Installed mod escaped named profile')
     for p in __import__('package_player_mods').runtime_files(BASE):

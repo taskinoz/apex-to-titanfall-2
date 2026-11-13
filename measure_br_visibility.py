@@ -29,13 +29,14 @@ import sys
 from pathlib import Path
 
 import numpy as np
+import local_paths
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT/'tools/bsp_tool')); sys.path.insert(0, str(ROOT/'tools/lighting-python'))
 MAP = 'mp_rr_desertlands_mu2'
-SURVEY = Path('D:/Games/ApexToTitanfallWork/poi-survey')/MAP
-WORK = Path('D:/Games/ApexToTitanfallWork/br-visibility')/MAP
-FSDM = Path('D:/Games/R5Reloaded/R5R Library/LIVE/platform/scripts/vscripts/gamemodes/fs_tdm/sh_gamemode_fsdm.nut')
+SURVEY = local_paths.path('APEX_WORK_ROOT')/'poi-survey'/MAP
+WORK = local_paths.path('APEX_WORK_ROOT')/'br-visibility'/MAP
+FSDM = local_paths.path('R5R_LIBRARY')/'LIVE/platform/scripts/vscripts/gamemodes/fs_tdm/sh_gamemode_fsdm.nut'
 CAPACITY = 3145728
 RAYS = 6_000_000
 EYE = 64.

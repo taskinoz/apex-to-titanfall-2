@@ -18,10 +18,11 @@ import time
 from pathlib import Path
 
 from repair_thunderdome import digest, write
+import local_paths
 
 ROOT = Path(__file__).resolve().parent
 VERSION = '0.3.0'
-SOURCE = Path('D:/Games/ApexToTitanfallWork/new-arena-ports/candidates/ArenaThunderdome-uv-props')
+SOURCE = local_paths.path('APEX_WORK_ROOT')/'new-arena-ports/candidates/ArenaThunderdome-uv-props'
 OUT = ROOT/'output'/f'thunderdome-{VERSION}'
 CANDIDATE = OUT/'candidate/ArenaThunderdome'
 DOCS = ROOT/'docs/candidates/thunderdome'/f'port-{VERSION}'
@@ -52,7 +53,7 @@ def acceptance():
         pass
     command = [sys.executable, str(ROOT/'test-harness/harness.py'), 'start', '--profile', 'R2Anniversary14',
                '--runtime', str(ROOT/'tools/northstar-v1.31.14/runtime/R2Northstar'),
-               '--launcher', 'D:/Games/Titanfall2/NorthstarAnniversaryLauncher.exe', '--package', str(CANDIDATE),
+               '--launcher', str(local_paths.path('TITANFALL2_GAME')/'NorthstarAnniversaryLauncher.exe'), '--package', str(CANDIDATE),
                '--map', 'mp_thunderdome', '--mode', 'ps', '--timeout', '240', '--extra-package', str(ROOT/'northstar/ApexMaps.UI')]
     OUT.mkdir(parents=True, exist_ok=True)
     with (OUT/'launch.log').open('w') as log:
