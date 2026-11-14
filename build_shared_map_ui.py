@@ -23,7 +23,7 @@ WORK = Path('D:/Games/ApexToTitanfallWork/new-arena-ports/shared-map-ui')
 SHARED = ROOT/'northstar/ApexMaps.UI'
 PACK = 'apex_maps_ui.rpak'
 COLUMNS = 3
-SIZE = (8192,5376)  # 3 rows of loading art (4320) + one row of minimaps (1024); seven maps
+SIZE = (8192,5376)  # 3 rows of loading art (4320) + one row of minimaps (1024); eight maps (the row's limit)
 SOURCES = {
     'PhaseRunner': (ROOT/'output/phase-runner/presentation', ROOT/'output/minimaps/phase_runner_minimap'),
     'ArenaComposite': (ROOT/'output/composite/presentation', ROOT/'output/minimaps/drop_off_minimap'),
@@ -32,7 +32,25 @@ SOURCES = {
     'ArenaOverflow': (WORK.parent/'overflow/presentation', WORK.parent/'overflow/minimap'),
     'ArenaThermalStation': (WORK.parent/'thermal-station/presentation', WORK.parent/'thermal-station/minimap'),
     'ArenaThunderdome': (WORK.parent/'thunderdome/presentation', WORK.parent/'thunderdome/minimap'),
+    'ArenaSkulltown': (WORK.parent/'skulltown/presentation', WORK.parent/'skulltown/minimap'),
 }
+
+
+def portable(value):
+    """The receipt with local paths written relative to the repository or the port work folder (`new-arena-ports/`)."""
+    if isinstance(value, dict):
+        return {k: portable(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [portable(v) for v in value]
+    if isinstance(value, str) and len(value) > 2 and value[1] == ':':
+        path = Path(value)
+        for base, prefix in ((ROOT, ''), (WORK.parent, 'new-arena-ports/')):
+            try:
+                return prefix+path.relative_to(base).as_posix()
+            except ValueError:
+                pass
+        return path.name
+    return value
 
 
 def repak(manifest, target):
@@ -115,7 +133,7 @@ def build():
         raise ValueError('Shared atlas dimensions/count differ')
     (SHARED/'paks').mkdir(parents=True,exist_ok=True)
     shutil.copy2(built,SHARED/'paks'/PACK)
-    (SHARED/'mod.json').write_text(json.dumps(dict(Name='ApexMaps.UI',Version='0.2.1',LoadPriority=9,
+    (SHARED/'mod.json').write_text(json.dumps(dict(Name='ApexMaps.UI',Version='0.3.0',LoadPriority=9,
         Description='Shared original loading artwork and minimaps for the Apex map conversions.'),indent=2)+'\n')
     (SHARED/'paks/rpak.json').write_text(json.dumps(dict(Postload={PACK:'common.rpak'}),indent=2)+'\n')
     for package, result in loading.items():
@@ -127,15 +145,22 @@ def build():
                 shutil.copy2(old,backup)
             old.unlink()
         config = json.loads((paks/'rpak.json').read_text())
-        config = {'Aliases':config['Aliases'],'Postload':{p.name:'mp_coliseum.rpak' for p in paks.glob('*.rpak')
-                                                           if not p.name.endswith('_presentation.rpak')}}
-        config['Postload'][Path(result['built']).name] = 'common.rpak'
-        (paks/'rpak.json').write_text(json.dumps(config,indent=2)+'\n')
+        # Keep the existing load order (a props pack follows the world pack whose textures it references); drop
+        # removed packs and add new ones after them.
+        present = {p.name for p in paks.glob('*.rpak')}; loading_pack = Path(result['built']).name
+        order = [name for name in config.get('Postload', {}) if name in present]
+        order += sorted(present-set(order))
+        base = next((v for k, v in config['Aliases'].items() if not k.endswith('_loadscreen.rpak')), 'mp_coliseum.rpak')
+        postload = {name: 'common.rpak' if name == loading_pack else config['Postload'].get(name, base)
+                    for name in order}
+        new_config = {'Aliases':config['Aliases'],'Postload':postload}
+        if new_config != config:
+            (paks/'rpak.json').write_text(json.dumps(new_config,indent=2)+'\n')
     receipt = dict(images=images,provenance=provenance,loading=loading,shared_ui_atlases=1,
                    resident_dimensions=list(SIZE),shared_pack_sha256=hashlib.sha256(built.read_bytes()).hexdigest(),
                    native_runtime_verified=False)
     (WORK/'build-proof.json').write_text(json.dumps(receipt,indent=2))
-    (ROOT/'docs/conversion/shared-map-ui.json').write_text(json.dumps(receipt,indent=2))
+    (ROOT/'docs/conversion/shared-map-ui.json').write_text(json.dumps(portable(receipt),indent=2))
     print('Built one shared UI atlas and',len(loading),'atlas-free native loading packs',flush=True)
 
 

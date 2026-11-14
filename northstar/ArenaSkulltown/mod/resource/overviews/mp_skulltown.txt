@@ -1,0 +1,14 @@
+"mp_skulltown"
+{
+    "assets"
+    {
+        "minimap" "overviews/mp_skulltown"
+    }
+    "pos_x" "-18683.9921875"
+    "pos_y" "17256.703125"
+    "scale" "33.32752227783203"
+    "displayDist" "2048"
+    "threatMaxDist" "2500"
+    "threatNearDist" "500"
+    "threatFarDist" "2000"
+}

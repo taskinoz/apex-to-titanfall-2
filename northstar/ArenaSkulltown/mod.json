@@ -1,0 +1,18 @@
+{
+  "Name": "ArenaSkulltown",
+  "Version": "0.1.1",
+  "LoadPriority": 10,
+  "Description": "Skulltown native conversion preview. AI navigation and source gameplay systems are incomplete.",
+  "Scripts": [
+    {
+      "Path": "_skulltown.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "ArenaSkulltown_Init"
+      }
+    }
+  ],
+  "Localisation": [
+    "resource/skulltown_%language%.txt"
+  ]
+}

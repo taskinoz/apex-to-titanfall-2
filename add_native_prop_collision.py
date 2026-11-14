@@ -82,6 +82,11 @@ def morton(points, bits=21):
 
 
 def add(ident, package):
+    global COLLISION_TRIANGLES
+    # A map whose world already holds many headers takes a smaller collision LOD (Skulltown: 1,000; at 1,200 its
+    # 28,819 world headers plus 38,310 prop headers pass the uint16 index).
+    from new_arena_ports import CONFIG
+    COLLISION_TRIANGLES = CONFIG[ident].get('prop_collision_triangles', COLLISION_TRIANGLES); collision_lod.cache_clear()
     package = Path(package); bsp = next((package/'mod/maps').glob('*.bsp'))
     if (package/REPORT).exists():
         raise ValueError('Collision already added: '+str(package/REPORT))

@@ -46,8 +46,9 @@ def package(ident):
         Description=c['name']+' native conversion preview. AI navigation and source gameplay systems are incomplete.',
         Scripts=[dict(Path=script, RunOn='SERVER && MP', ServerCallback={'After':function})],
         Localisation=['resource/'+slug+'_%language%.txt']),indent=2))
-    mounts=dict(Aliases={c['target']+'.rpak':'mp_coliseum.rpak',
-        c['target']+'_loadscreen.rpak':slug+'_presentation.rpak'},Postload={slug+'_world.rpak':'mp_coliseum.rpak'})
+    base=c.get('base_pak','mp_coliseum.rpak')
+    mounts=dict(Aliases={c['target']+'.rpak':base,
+        c['target']+'_loadscreen.rpak':slug+'_presentation.rpak'},Postload={slug+'_world.rpak':base})
     minimap=out/'minimap/build'/(slug+'_minimap.rpak')
     if minimap.exists():
         shutil.copy2(minimap,mod/'paks'/minimap.name);mounts[minimap.name]='^'+c['target']+'$'
@@ -110,7 +111,7 @@ void function @PACKAGE@_KillFloor()
     (mod/'build-status.json').write_text(json.dumps(status,indent=2))
     (mod/'README.md').write_text('# '+c['name']+' conversion preview\n\nMap: `'+c['target']+'`.\n\nThis staged candidate has not yet passed native gameplay and rendering checks.\n')
     from map_pack_lifetime import scope
-    scope(mod/'paks', c['target'])
+    scope(mod/'paks', c['target'], base)
     print('Staged',mod,flush=True)
 
 

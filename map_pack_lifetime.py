@@ -7,10 +7,10 @@ ROOT = Path(__file__).resolve().parent
 MAPS = {'PhaseRunner': 'mp_phase_runner', 'ArenaComposite': 'mp_arena_composite',
         'ApexFiringRange': 'mp_apex_firing_range', 'ArenaPartyCrasher': 'mp_party_crasher',
         'ArenaOverflow': 'mp_overflow', 'ArenaThermalStation': 'mp_thermal_station',
-        'ArenaThunderdome': 'mp_thunderdome'}
+        'ArenaThunderdome': 'mp_thunderdome', 'ArenaSkulltown': 'mp_skulltown'}
 
 
-def scope(paks, map_name):
+def scope(paks, map_name, base='mp_coliseum.rpak'):
     paks = Path(paks)
     if not re.fullmatch(r'mp_[a-z0-9_]+', map_name):
         raise ValueError('Invalid map name')
@@ -24,7 +24,7 @@ def scope(paks, map_name):
                 value.pop(key)
     for name in sorted(names):
         value.pop(name, None)
-        value.setdefault('Postload', {})[name] = ('common.rpak' if name.endswith('_presentation.rpak') else 'mp_coliseum.rpak')
+        value.setdefault('Postload', {})[name] = ('common.rpak' if name.endswith('_presentation.rpak') else base)
     path.write_text(json.dumps(value, indent=2) + '\n')
     return dict(map=map_name, configured_packs=sorted(names), binary_audit_pending=True)
 
@@ -33,6 +33,7 @@ def audit(paks, map_name):
     paks = Path(paks)
     value = json.loads((paks / 'rpak.json').read_text())
     names = sorted(p.name for p in paks.glob('*.rpak'))
+    base = value['Aliases'].get(map_name + '.rpak')  # mp_coliseum.rpak, or a map's own base pack (Skulltown)
     from extract_native_material import NativePak
     for name in names:
         if name.endswith('_minimap.rpak'):
@@ -42,13 +43,13 @@ def audit(paks, map_name):
                 raise ValueError('Loading pack still owns a separate UI atlas: '+name)
             if value.get('Postload', {}).get(name) != 'common.rpak' or name in value:
                 raise ValueError('Atlas-free loading material lifetime changed')
-        elif value.get('Postload', {}).get(name) != 'mp_coliseum.rpak' or name in value:
+        elif value.get('Postload', {}).get(name) != base or name in value:
             raise ValueError('Native world shader ordering changed: ' + name)
     presentation = next(n for n in names if n.endswith('_presentation.rpak'))
     aliases = value['Aliases']
     if aliases.get(map_name + '_loadscreen.rpak') != presentation:
         raise ValueError('Native loading screen alias changed')
-    if aliases.get(map_name + '.rpak') != 'mp_coliseum.rpak':
+    if base not in ('mp_coliseum.rpak', 'mp_coliseum_column.rpak'):
         raise ValueError('Native base map alias changed')
     return dict(map=map_name, packs=names, startup_map_atlases=0,
                 policy='Shared UI companion; atlas-free loading packs and native base-pack world ordering')

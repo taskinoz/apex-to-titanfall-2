@@ -69,7 +69,8 @@ def acceptance(mod, version):
     command = [sys.executable, str(ROOT/'test-harness/harness.py'), 'start', '--profile', 'R2Anniversary14',
                '--runtime', str(ROOT/'tools/northstar-v1.31.14/runtime/R2Northstar'),
                '--launcher', str(local_paths.path('TITANFALL2_GAME')/'NorthstarAnniversaryLauncher.exe'), '--package', str(candidate),
-               '--map', level, '--mode', 'ps', '--timeout', '240', '--extra-package', str(ROOT/'northstar/ApexMaps.UI')]
+               '--map', level, '--mode', 'ps', '--timeout', '600',  # Origin sign-in can take minutes
+                '--extra-package', str(ROOT/'northstar/ApexMaps.UI')]
     with (out/'launch.log').open('w') as log:
         if subprocess.run(command, stdout=log, stderr=subprocess.STDOUT).returncode:
             raise RuntimeError('Native launch failed; see '+str(out/'launch.log'))

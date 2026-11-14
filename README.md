@@ -16,8 +16,9 @@ installed copies before enabling managed copies of the same mod.
 | Party Crasher | 0.7.0 |
 | Overflow | 0.5.0 |
 | Thermal Station | 0.2.0 |
-| Thunderdome | 0.4.0 |
-| ApexMaps.UI | 0.2.1 |
+| Thunderdome | 0.4.1 |
+| Skulltown | 0.1.1 |
+| ApexMaps.UI | 0.3.0 |
 
 Install **ApexMaps.UI once** plus the maps you want. Close the game and replace
 old mod folders rather than merging them. These are preview builds with known

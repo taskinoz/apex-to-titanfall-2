@@ -62,11 +62,18 @@ RELEASES = {
         'notes': 'Adds the 4,628 Apex placements the world budget had left out as native props, among them 4,013 grass, plant and tree pieces, with their shadows baked into the lighting; 615 solid props collide with their drawn shape, 456 cast real-time sun shadows and 607 small ones fade with distance. Reflection cubemaps captured in game give metal, glass and wet surfaces something to reflect, and the sun-shadow geometry is welded, so the map file is about 25 MB smaller. Tested on Northstar 1.31.14 in single-client PS/FFA: all 4 spawns clear and supported, both teams, weapon fire, postmatch lobby and stock/map reload; this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.',
     },
     'ArenaThunderdome': {
-        'version': '0.4.0',
+        'version': '0.4.1',
         'map': 'mp_thunderdome',
         'title': 'Thunderdome',
         'screenshot': 'northstar/ArenaThunderdome/screenshot.png',
-        'notes': "Fixes 0.3.0's visibility cells, which could hide players, ropes and other moving objects in a different part of the arena from the viewer; the cells are removed and small props still fade with distance. 3,344 props now cast real-time sun shadows, so the skull, rocks and buildings shade players and each other. Reflection cubemaps captured in game give metal, glass and wet surfaces something to reflect, and the sun-shadow geometry is welded, so the map file is about 28 MB smaller. Tested on Northstar 1.31.14 in single-client PS/FFA: all 96 spawns clear and supported, both teams, weapon fire, postmatch lobby and stock/map reload; this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.",
+        'notes': "Rebuilt from the November 2026 Apex update: the solar water heaters and stasis lights use Apex's new, more detailed models, and the screen tower, liquid tank, roof tanks, lockers and alien trees take their updated textures. Includes 0.4.0's prop sun shadows, reflection cubemaps and welded sun-shadow geometry. Tested on Northstar 1.31.14 in single-client PS/FFA: all 96 spawns clear and supported, both teams, weapon fire, postmatch lobby and stock/map reload; this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.",
+    },
+    'ArenaSkulltown': {
+        'version': '0.1.1',
+        'map': 'mp_skulltown',
+        'title': 'Skulltown',
+        'screenshot': 'northstar/ArenaSkulltown/screenshot.png',
+        'notes': "Fixes 0.1.0 crashing the game on load when other Apex map ports are installed: Skulltown now mounts its own base pack (mp_coliseum_column), so its 750 MB of map packs load only for Skulltown and loading it no longer loads every other installed port's packs. First release of Skulltown, Apex's team deathmatch Skull Town, converted from the November 2026 Apex update: the town, skull and rib bones, dunes and cliffs, with 16,036 Apex props placed natively (9,774 solid ones collide), baked lighting, 7,276 props casting real-time sun shadows and five reflection cubemaps. Apex's doors, breakable windows and ziplines are not converted (ziplines appear as ropes), and the skyline walls Apex projects around the arena are left open to the sky. Tested on Northstar 1.31.14 in single-client PS/FFA: all 96 spawns clear and supported, both teams, weapon fire, postmatch lobby and stock/map reload; this is not multiplayer certification. Requires ApexMaps.UI 0.3.0.",
     },
 }
 # The shared UI companion ships as its own download (one UI atlas serves all five maps;
@@ -179,8 +186,8 @@ def write_ui_zip(target=None):
     info = json.loads((shared/'mod.json').read_text(encoding='utf-8-sig'))
     target = Path(target or ROOT/'output'/f"{SHARED_UI}-{info['Version']}-Northstar.zip").resolve()
     files = [shared/'mod.json', *sorted(p for p in (shared/'paks').rglob('*') if p.is_file())]
-    text = (f"# {SHARED_UI} {info['Version']} for Northstar\n\nShared loading artwork and minimaps for the seven Apex map conversions "
-            "(Phase Runner, Drop-Off, Firing Range, Party Crasher, Overflow, Thermal Station, Thunderdome). Extract `ApexMaps.UI` into "
+    text = (f"# {SHARED_UI} {info['Version']} for Northstar\n\nShared loading artwork and minimaps for the eight Apex map conversions "
+            "(Phase Runner, Drop-Off, Firing Range, Party Crasher, Overflow, Thermal Station, Thunderdome, Skulltown). Extract `ApexMaps.UI` into "
             "`Titanfall2/R2Northstar/mods/`, replacing any older copy, and enable it. One shared UI atlas serves every map; "
             "keep only the newest version.\n").encode('utf-8')
     temp = target.with_suffix('.zip.packaging'); expected = {}

@@ -195,12 +195,40 @@
       "posY": 4320,
       "width": 1024,
       "height": 1024
+    },
+    {
+      "path": "loadscreens/mp_skulltown",
+      "posX": 2560,
+      "posY": 2880,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "loadscreens/mp_skulltown_widescreen",
+      "posX": 2560,
+      "posY": 2880,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "loadscreens/mp_skulltown_lobby",
+      "posX": 2560,
+      "posY": 2880,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "overviews/mp_skulltown",
+      "posX": 7168,
+      "posY": 4320,
+      "width": 1024,
+      "height": 1024
     }
   ],
   "provenance": {
     "PhaseRunner": [
       {
-        "source": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\phase-runner\\presentation\\assets\\texture\\loadscreens\\mp_phase_runner.dds",
+        "source": "output/phase-runner/presentation/assets/texture/loadscreens/mp_phase_runner.dds",
         "sha256": "b0ea6d2f349a9fe63f85e8f1422cb02af7cfbd0ea03da2150fa9f6d43ed3a9ba",
         "original_size": [
           2560,
@@ -213,7 +241,7 @@
         "resized": false
       },
       {
-        "source": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\minimaps\\phase_runner_minimap\\assets\\texture\\overviews\\mp_phase_runner.dds",
+        "source": "output/minimaps/phase_runner_minimap/assets/texture/overviews/mp_phase_runner.dds",
         "sha256": "64883e533be1183bad7b0ba8394a5b296066ef08717084de90511ee432da00ed",
         "original_size": [
           1024,
@@ -228,7 +256,7 @@
     ],
     "ArenaComposite": [
       {
-        "source": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\composite\\presentation\\assets\\texture\\loadscreens\\mp_arena_composite.dds",
+        "source": "output/composite/presentation/assets/texture/loadscreens/mp_arena_composite.dds",
         "sha256": "3cccd60fef66a77d4d68b5a51f5955f098ff6784614d0186c6bc0fb37801e18d",
         "original_size": [
           2560,
@@ -241,7 +269,7 @@
         "resized": false
       },
       {
-        "source": "C:\\Users\\tristan\\Desktop\\Apex to Titanfall 2\\output\\minimaps\\drop_off_minimap\\assets\\texture\\overviews\\mp_arena_composite.dds",
+        "source": "output/minimaps/drop_off_minimap/assets/texture/overviews/mp_arena_composite.dds",
         "sha256": "4446a4885bdf6bbef5ac9188d5986a89a49c2eb68ac2b63cc2322c43d94da848",
         "original_size": [
           1024,
@@ -256,7 +284,7 @@
     ],
     "ApexFiringRange": [
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\firing-range\\presentation\\assets\\texture\\loadscreens\\mp_apex_firing_range.dds",
+        "source": "new-arena-ports/firing-range/presentation/assets/texture/loadscreens/mp_apex_firing_range.dds",
         "sha256": "05719d9c62333b24a85da93d32c438046356fdf9f0e6fb43acad8026f59d2ee7",
         "original_size": [
           2560,
@@ -269,7 +297,7 @@
         "resized": false
       },
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\firing-range\\minimap\\assets\\texture\\overviews\\mp_apex_firing_range.dds",
+        "source": "new-arena-ports/firing-range/minimap/assets/texture/overviews/mp_apex_firing_range.dds",
         "sha256": "ac38b07f54f70242660bb9877991541da00dce1f19644203f48271c5d555946a",
         "original_size": [
           1024,
@@ -284,7 +312,7 @@
     ],
     "ArenaPartyCrasher": [
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\party-crasher\\presentation\\assets\\texture\\loadscreens\\mp_party_crasher.dds",
+        "source": "new-arena-ports/party-crasher/presentation/assets/texture/loadscreens/mp_party_crasher.dds",
         "sha256": "98acb856dcae19f6cdab6f7a789e77e1e21ab084b95596462bb606b248e7696b",
         "original_size": [
           2560,
@@ -297,7 +325,7 @@
         "resized": false
       },
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\party-crasher\\minimap\\assets\\texture\\overviews\\mp_party_crasher.dds",
+        "source": "new-arena-ports/party-crasher/minimap/assets/texture/overviews/mp_party_crasher.dds",
         "sha256": "a3235a9552f263dc2426f23b66be80b9ad051e075273da43702c3a6c211b51ef",
         "original_size": [
           1024,
@@ -312,7 +340,7 @@
     ],
     "ArenaOverflow": [
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\overflow\\presentation\\assets\\texture\\loadscreens\\mp_overflow.dds",
+        "source": "new-arena-ports/overflow/presentation/assets/texture/loadscreens/mp_overflow.dds",
         "sha256": "aa8be211cf9e829497833516e2472dd28a5eb25e8347fb11acb3cec2aa8833fe",
         "original_size": [
           2560,
@@ -325,7 +353,7 @@
         "resized": false
       },
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\overflow\\minimap\\assets\\texture\\overviews\\mp_overflow.dds",
+        "source": "new-arena-ports/overflow/minimap/assets/texture/overviews/mp_overflow.dds",
         "sha256": "c5229bc223f2c84f667efd4b4bc9d4c1fe23d37a53a441f6e8d5f31b87db7188",
         "original_size": [
           1024,
@@ -340,7 +368,7 @@
     ],
     "ArenaThermalStation": [
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\thermal-station\\presentation\\assets\\texture\\loadscreens\\mp_thermal_station.dds",
+        "source": "new-arena-ports/thermal-station/presentation/assets/texture/loadscreens/mp_thermal_station.dds",
         "sha256": "3035bf5dab32fe2ed195a3dde7260b885107322aebb89d0aeef1346b3196d022",
         "original_size": [
           2560,
@@ -353,7 +381,7 @@
         "resized": false
       },
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\thermal-station\\minimap\\assets\\texture\\overviews\\mp_thermal_station.dds",
+        "source": "new-arena-ports/thermal-station/minimap/assets/texture/overviews/mp_thermal_station.dds",
         "sha256": "f2338d6efb1dc663f50c60bb359746ad3a01db916be85aaaa04dacec75dc516b",
         "original_size": [
           1024,
@@ -368,7 +396,7 @@
     ],
     "ArenaThunderdome": [
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\thunderdome\\presentation\\assets\\texture\\loadscreens\\mp_thunderdome.dds",
+        "source": "new-arena-ports/thunderdome/presentation/assets/texture/loadscreens/mp_thunderdome.dds",
         "sha256": "427a0a00cf3515d9d967c87eed791b0281e28dac13075c2f0adad6ab78defb0d",
         "original_size": [
           1920,
@@ -381,7 +409,7 @@
         "resized": false
       },
       {
-        "source": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\thunderdome\\minimap\\assets\\texture\\overviews\\mp_thunderdome.dds",
+        "source": "new-arena-ports/thunderdome/minimap/assets/texture/overviews/mp_thunderdome.dds",
         "sha256": "3d3110842eeca56ef94ca60bab48ec2dedd2bc3ab2f2741f4c9b619d1f6d9c38",
         "original_size": [
           1024,
@@ -393,48 +421,82 @@
         ],
         "resized": false
       }
+    ],
+    "ArenaSkulltown": [
+      {
+        "source": "new-arena-ports/skulltown/presentation/assets/texture/loadscreens/mp_skulltown.dds",
+        "sha256": "d3889fc44cfcce3e5a82fe4aa3d13399ec2ee5aae643d531aa658cf900020c95",
+        "original_size": [
+          1920,
+          1080
+        ],
+        "position": [
+          2560,
+          2880
+        ],
+        "resized": false
+      },
+      {
+        "source": "new-arena-ports/skulltown/minimap/assets/texture/overviews/mp_skulltown.dds",
+        "sha256": "3905adaf8fa1cd71508d4389ec462f8e4c637edf71ab545a4e4181a628fe503d",
+        "original_size": [
+          1024,
+          1024
+        ],
+        "position": [
+          7168,
+          4320
+        ],
+        "resized": false
+      }
     ]
   },
   "loading": {
     "PhaseRunner": {
-      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\PhaseRunner\\phase_runner_presentation.rpak",
-      "sha256": "00a24109614caa719cb14882632e9cee0fc3ebaffbcf60586c70d6e47d2c3c72",
+      "built": "new-arena-ports/shared-map-ui/loading/PhaseRunner/phase_runner_presentation.rpak",
+      "sha256": "e192800189b1b8dbbe58a13e9220b1f3f4327df7576f5f7e6035997d857c8415",
       "native_materials_unchanged": true,
       "ui_atlases": 0
     },
     "ArenaComposite": {
-      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ArenaComposite\\composite_presentation.rpak",
-      "sha256": "3377e7d3511d1bbadf4db2d938e3a453117ffd62f9a197a5eac539e25c5d84fa",
+      "built": "new-arena-ports/shared-map-ui/loading/ArenaComposite/composite_presentation.rpak",
+      "sha256": "cdbe24b9a22d7017d54d4c7f7aaf0fcc94b7917a8709d915229250294b808ef5",
       "native_materials_unchanged": true,
       "ui_atlases": 0
     },
     "ApexFiringRange": {
-      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ApexFiringRange\\firing_range_presentation.rpak",
-      "sha256": "132923631839490d3409f1a19acbc74506068cefa16c4ab08ce79e144be7b762",
+      "built": "new-arena-ports/shared-map-ui/loading/ApexFiringRange/firing_range_presentation.rpak",
+      "sha256": "e837a01e2df7f19778d72dc74bddbe9694c4072e10fe2e69415d03daf493785e",
       "native_materials_unchanged": true,
       "ui_atlases": 0
     },
     "ArenaPartyCrasher": {
-      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ArenaPartyCrasher\\party_crasher_presentation.rpak",
-      "sha256": "02950b905fc1ea50faad0d2b5f5abeb4b9c8ba5baac0e1cfcdbe88feb95acd54",
+      "built": "new-arena-ports/shared-map-ui/loading/ArenaPartyCrasher/party_crasher_presentation.rpak",
+      "sha256": "a9ceca60e82e3306ca08ce5868e94233c5a6dea310d3beb59062527488186066",
       "native_materials_unchanged": true,
       "ui_atlases": 0
     },
     "ArenaOverflow": {
-      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ArenaOverflow\\overflow_presentation.rpak",
-      "sha256": "bee3cd567a07da2c433f55ab946d6feb7233e27ba98331f2a77af59f7590eae0",
+      "built": "new-arena-ports/shared-map-ui/loading/ArenaOverflow/overflow_presentation.rpak",
+      "sha256": "e5f81efc3390b62623f47924220e75a8490ee59e9901998dcdffd0d65f460d2c",
       "native_materials_unchanged": true,
       "ui_atlases": 0
     },
     "ArenaThermalStation": {
-      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ArenaThermalStation\\thermal_station_presentation.rpak",
-      "sha256": "58ca49beb7afc96532b85a2594bb6e6fc80eda375f3aa44a00aaca3e5769a4f7",
+      "built": "new-arena-ports/shared-map-ui/loading/ArenaThermalStation/thermal_station_presentation.rpak",
+      "sha256": "d0aee7c3594139f338abb8c71a1203cca80bbba11befe2d2a419c14439cb9d29",
       "native_materials_unchanged": true,
       "ui_atlases": 0
     },
     "ArenaThunderdome": {
-      "built": "D:\\Games\\ApexToTitanfallWork\\new-arena-ports\\shared-map-ui\\loading\\ArenaThunderdome\\thunderdome_presentation.rpak",
-      "sha256": "78e3d760d09521e0220c2765200918898c3df53a9892e52c7e4506d3e7118c32",
+      "built": "new-arena-ports/shared-map-ui/loading/ArenaThunderdome/thunderdome_presentation.rpak",
+      "sha256": "425c6f372676f54495e9828f146d2fbd4cd1f07f390679214ab8a8abb18bd0f1",
+      "native_materials_unchanged": true,
+      "ui_atlases": 0
+    },
+    "ArenaSkulltown": {
+      "built": "new-arena-ports/shared-map-ui/loading/ArenaSkulltown/skulltown_presentation.rpak",
+      "sha256": "068a34cf08818355aca13e8d2a92bb2cf1cd5a69005fd90093d8c1cba4bdbe26",
       "native_materials_unchanged": true,
       "ui_atlases": 0
     }
@@ -444,6 +506,6 @@
     8192,
     5376
   ],
-  "shared_pack_sha256": "e6106aada370fee89895d989c3a2142c92f7698dfcdd1c5962be9962f9faf306",
+  "shared_pack_sha256": "857995c2e9f98922a649d411ce21d97e97ed6ffc6b3a2a4eae30f7e43cf84c29",
   "native_runtime_verified": false
 }

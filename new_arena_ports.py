@@ -40,6 +40,20 @@ CONFIG = {
         backdrop=dict(models=('td2_stadium_crowd', 'td2_stadium_post', 'light_tower', 'thunderdome_hanging_wire_rings',
                               'td2_stadium_engine'),  # the hover engines under the platform (z -4529)
                       box=[[-18000, -18000, -5000], [18000, 18000, 9000]])),
+    # Current retail Apex: the team deathmatch Skull Town (docs/candidates/skulltown). The box holds the spawn hull
+    # +- 3000 and the surrounding cliffs (1st-99th percentile of world positions) as the backdrop.
+    'skulltown': dict(name='Skulltown', source='mp_rr_freedm_skulltown', target='mp_skulltown',
+        package='ArenaSkulltown', offset=[0, 0, 0], retail=True,
+        # Its own base pack: every pack keyed to mp_coliseum.rpak loads for every converted map aliased to it, so with
+        # eight maps installed a map load held every map's world (user crash, 14 November 2026). World packs must load
+        # as postloads of the aliased base pack (keyed to the map's patch pack or a map regex they draw pink).
+        base_pak='mp_coliseum_column.rpak',
+        triangle_budget=990000, simplify=dict(min_triangles=200, error=.01), prop_collision_triangles=1000,
+        bounds=[[-11600, -8600, -2500], [7900, 7800, 9400]],
+        # The overhead rail ring and its frame (girders, wall gaskets, panels, hanging lights) seen in the loading art.
+        backdrop=dict(models=('fs_girder_beam', 'grave_wall_gasket', 'live_fire', 'fs_modular_straight',
+                              'construction_light_small'),
+                      box=[[-18000, -18000, -2500], [18000, 19000, 13000]])),
 }
 
 

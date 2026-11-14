@@ -13,7 +13,7 @@ import numpy as np
 
 SKY = {'overflow': 'aqueduct_sky', 'party-crasher': 'party_crasher_night_sky',
        'firing-range': 'canyonlands_hu_sky', 'thermal-station': 'desertlands_sky_mu1',
-       'thunderdome': 'canyonlands_hu_sky'}  # Thunderdome is in Kings Canyon; its skydome is a model material
+       'thunderdome': 'canyonlands_hu_sky', 'skulltown': 'canyonlands_hu_sky'}  # Thunderdome is in Kings Canyon; its skydome is a model material
 
 
 def collisions(ident):
