@@ -1,11 +1,8 @@
 {
   "Aliases": {
-    "mp_skulltown.rpak": "mp_coliseum_column.rpak",
     "mp_skulltown_loadscreen.rpak": "skulltown_presentation.rpak"
   },
   "Postload": {
-    "skulltown_presentation.rpak": "common.rpak",
-    "skulltown_world.rpak": "mp_coliseum_column.rpak",
-    "skulltown_props.rpak": "mp_coliseum_column.rpak"
+    "skulltown_presentation.rpak": "common.rpak"
   }
 }

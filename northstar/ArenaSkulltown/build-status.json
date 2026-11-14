@@ -1,7 +1,7 @@
 {
   "source_map": "mp_rr_freedm_skulltown",
   "map": "mp_skulltown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "render_triangles": 990000,
   "render_repair": {
     "world_meshes": 3181
@@ -159,5 +159,5 @@
   "candidate": true,
   "release_ready": true,
   "bsp_sha256": "29318e38daf9f46b48ca05b347b2970d21cb6630070c9b059c4baa2326ad1623",
-  "native_validation": "docs/candidates/arenaskulltown/port-0.1.1/validation.json"
+  "native_validation": "docs/candidates/arenaskulltown/port-0.1.2/validation.json"
 }

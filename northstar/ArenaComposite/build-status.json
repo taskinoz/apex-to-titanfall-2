@@ -1,7 +1,7 @@
 {
   "source_map": "mp_rr_arena_composite",
   "map": "mp_arena_composite",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "render_triangles": 942146,
   "render_repair": {
     "world_meshes": 2837
@@ -5692,5 +5692,5 @@
   },
   "bsp_sha256": "cdfaf6a590c7685d8ea5ca2ae190c4abb9936746abc97824a2fa484e15b3de0f",
   "release_ready": true,
-  "native_validation": "docs/candidates/arenacomposite/port-0.11.0/validation.json"
+  "native_validation": "docs/candidates/arenacomposite/port-0.11.1/validation.json"
 }

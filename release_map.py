@@ -20,7 +20,7 @@ from repair_thunderdome import digest, write
 import local_paths
 
 ROOT = Path(__file__).resolve().parent
-RECEIPTS = ('shadow-weld.json', 'visibility-cells-disabled.json', 'sun-rebake.json', 'sun-probes.json', 'csm-props.json', 'cubemaps.json',
+RECEIPTS = ('level-pack.json', 'shadow-weld.json', 'visibility-cells-disabled.json', 'sun-rebake.json', 'sun-probes.json', 'csm-props.json', 'cubemaps.json',
             'native-prop-collision.json', 'collision-weld.json', 'visibility-cells.json', 'small-prop-fades.json',
             'pipeline.json')
 PRIVATE = ('source', 'shots', 'path')  # local paths inside receipts

@@ -1,6 +1,6 @@
 {
   "Name": "ArenaSkulltown",
-  "Version": "0.1.1",
+  "Version": "0.1.2",
   "LoadPriority": 10,
   "Description": "Skulltown native conversion preview. AI navigation and source gameplay systems are incomplete.",
   "Scripts": [

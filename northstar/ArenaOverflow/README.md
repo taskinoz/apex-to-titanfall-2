@@ -1,4 +1,4 @@
-# Overflow 0.5.0 for Northstar
+# Overflow 0.5.1 for Northstar
 
 Close Titanfall 2. Move the old map folder to a backup outside `mods/`, then
 extract `ArenaOverflow` into `Titanfall2/R2Northstar/mods/`. Replace the old folder
@@ -17,7 +17,7 @@ Launch from the console:
 map mp_overflow
 ```
 
-Reflection cubemaps captured in game give metal, glass and wet surfaces something to reflect, and the sun-shadow geometry is welded, so the map file is about 26 MB smaller. Geometry, collision and lighting are otherwise unchanged from 0.4.2. Tested on Northstar 1.31.14 in single-client PS/FFA: all 24 spawns clear and supported, both teams, weapon fire, postmatch lobby and stock/map reload; this is not multiplayer certification. Requires ApexMaps.UI 0.2.1.
+Standalone: the map now ships as its own level pack instead of mounting on the stock Coliseum level pack, so it loads only its own assets and no longer loads the packs of every other installed Apex port (with eight ports installed that ran the game out of memory). Reflection cubemaps captured in game give metal, glass and wet surfaces something to reflect, and the sun-shadow geometry is welded, so the map file is about 26 MB smaller. Geometry, collision and lighting are otherwise unchanged from 0.4.2. Tested on Northstar 1.31.14 in single-client PS/FFA: all 24 spawns clear and supported, both teams, weapon fire, postmatch lobby and stock/map reload; this is not multiplayer certification. Requires ApexMaps.UI 0.3.0.
 
 `screenshot.png` is an in-game capture of this port. Original map assets remain
 the work of their respective creators.

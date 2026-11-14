@@ -1,6 +1,6 @@
 {
   "Name": "ArenaPartyCrasher",
-  "Version": "0.7.0",
+  "Version": "0.7.1",
   "LoadPriority": 10,
   "Description": "Party Crasher native conversion preview. AI navigation and source gameplay systems are incomplete.",
   "Scripts": [

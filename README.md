@@ -11,13 +11,13 @@ installed copies before enabling managed copies of the same mod.
 | Map / companion | Packaged version |
 | --- | --- |
 | Phase Runner | 1.7.2 |
-| Drop-Off | 0.11.0 |
-| Firing Range | 0.6.0 |
-| Party Crasher | 0.7.0 |
-| Overflow | 0.5.0 |
-| Thermal Station | 0.2.0 |
-| Thunderdome | 0.4.1 |
-| Skulltown | 0.1.1 |
+| Drop-Off | 0.11.1 |
+| Firing Range | 0.6.1 |
+| Party Crasher | 0.7.1 |
+| Overflow | 0.5.1 |
+| Thermal Station | 0.2.1 |
+| Thunderdome | 0.4.2 |
+| Skulltown | 0.1.2 |
 | ApexMaps.UI | 0.3.0 |
 
 Install **ApexMaps.UI once** plus the maps you want. Close the game and replace

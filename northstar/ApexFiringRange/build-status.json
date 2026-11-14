@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.6.1",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
@@ -12,5 +12,5 @@
   ],
   "validation": "Single-client pilot spawns, landing-pad surface contacts and reloads; FFA definitions unchanged",
   "release_ready": true,
-  "native_validation": "docs/candidates/apexfiringrange/port-0.6.0/validation.json"
+  "native_validation": "docs/candidates/apexfiringrange/port-0.6.1/validation.json"
 }

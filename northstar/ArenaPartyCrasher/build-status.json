@@ -1,5 +1,5 @@
 {
-  "version": "0.7.0",
+  "version": "0.7.1",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
@@ -11,5 +11,5 @@
   "artwork": "art/northstar/party-crasher-northstar-screen-v1.png",
   "world_pack_sha256": "9c98a2a0a6c09572f7f6ab40a7573d352ef536b370b04fa0c1b5152a5a37d68b",
   "release_ready": true,
-  "native_validation": "docs/candidates/arenapartycrasher/port-0.7.0/validation.json"
+  "native_validation": "docs/candidates/arenapartycrasher/port-0.7.1/validation.json"
 }

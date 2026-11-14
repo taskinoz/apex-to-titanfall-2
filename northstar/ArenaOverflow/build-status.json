@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "candidate": false,
   "client_verified": true,
   "initial_preview_ready": true,
@@ -12,5 +12,5 @@
   "render_fraction": 0.9430980682373047,
   "lava_hdr_verified": true,
   "release_ready": true,
-  "native_validation": "docs/candidates/arenaoverflow/port-0.5.0/validation.json"
+  "native_validation": "docs/candidates/arenaoverflow/port-0.5.1/validation.json"
 }

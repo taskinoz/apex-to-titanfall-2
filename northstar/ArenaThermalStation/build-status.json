@@ -1,7 +1,7 @@
 {
   "source_map": "mp_rr_desertlands_mu2",
   "map": "mp_thermal_station",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "render_triangles": 920000,
   "render_repair": {
     "world_meshes": 2845
@@ -159,5 +159,5 @@
   "candidate": true,
   "release_ready": true,
   "bsp_sha256": "917b96e4e6ba4cd6eec066f34727a03a092224ead991f36411864fcf289a8021",
-  "native_validation": "docs/candidates/arenathermalstation/port-0.2.0/validation.json"
+  "native_validation": "docs/candidates/arenathermalstation/port-0.2.1/validation.json"
 }

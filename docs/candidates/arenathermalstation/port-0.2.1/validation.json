@@ -1,0 +1,224 @@
+{
+  "passed": true,
+  "version": "0.2.1",
+  "runtime": "1.31.14",
+  "modes": [
+    {
+      "panels": 0,
+      "objectives": [],
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 2,
+        "info_hardpoint": 0,
+        "keyframe_rope": 22,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 2,
+        "trigger_out_of_bounds": 55,
+        "move_rope": 22,
+        "trigger_hurt": 11
+      },
+      "liveSpawns": [
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            2760.0,
+            -210.0,
+            -43.96876525878906
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3019.0,
+            -28.0,
+            -80.11865234375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            2760.0,
+            -210.0,
+            -43.96876525878906
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3019.0,
+            -28.0,
+            -80.11865234375
+          ],
+          "supported": true
+        }
+      ],
+      "mode": "ps",
+      "map": "mp_thermal_station"
+    },
+    {
+      "panels": 0,
+      "objectives": [],
+      "entities": {
+        "info_spawnpoint_flag": 0,
+        "info_spawnpoint_titan": 0,
+        "info_spawnpoint_human_start": 2,
+        "info_hardpoint": 0,
+        "keyframe_rope": 22,
+        "info_spawnpoint_titan_start": 0,
+        "info_spawnpoint_human": 2,
+        "trigger_out_of_bounds": 55,
+        "move_rope": 22,
+        "trigger_hurt": 11
+      },
+      "liveSpawns": [
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 3,
+          "clear": true,
+          "origin": [
+            2760.0,
+            -210.0,
+            -43.96876525878906
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human_start",
+          "team": 2,
+          "clear": true,
+          "origin": [
+            -3019.0,
+            -28.0,
+            -80.11865234375
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            2760.0,
+            -210.0,
+            -43.96876525878906
+          ],
+          "supported": true
+        },
+        {
+          "classname": "info_spawnpoint_human",
+          "team": 0,
+          "clear": true,
+          "origin": [
+            -3019.0,
+            -28.0,
+            -80.11865234375
+          ],
+          "supported": true
+        }
+      ],
+      "mode": "ffa",
+      "map": "mp_thermal_station"
+    }
+  ],
+  "both_team_respawns": true,
+  "weapon_fire_exercised": true,
+  "postmatch_lobby": true,
+  "stock_and_converted_reload": true,
+  "mounted_runtime_hash_verified": true,
+  "logs": {
+    "script_errors": [],
+    "native_crashes": []
+  },
+  "reload_capture": {
+    "width": 1280,
+    "height": 720,
+    "sha256": "547a67520c99f750b298c711fd4b31be0e8f750e4af8f6fa7de6168a4e1f6195"
+  },
+  "single_client_only": true,
+  "build": {
+    "level-pack.json": {
+      "map": "mp_thermal_station",
+      "level_pack": "mp_thermal_station.rpak",
+      "level_pack_bytes": 661253455,
+      "assets": 1549,
+      "merged_packs": {
+        "thermal_station_props.rpak": {
+          "bytes": 8091312,
+          "project": "new-arena-ports/thermal-station/native-props/materials/build.json"
+        },
+        "thermal_station_world.rpak": {
+          "bytes": 651781724,
+          "project": "new-arena-ports/thermal-station/materials/build.json"
+        }
+      },
+      "coliseum_copies": {
+        "shds": [
+          "shaderset/uberDepthVsm_wld.rpak",
+          "shaderset/uberDepth_wld.rpak",
+          "shaderset/uberSamp2222_wld.rpak"
+        ],
+        "matl": [
+          "material/code_private/depth_prepass_wld.rpak",
+          "material/code_private/depth_shadow_wld.rpak",
+          "material/code_private/depth_vsm_wld.rpak"
+        ]
+      },
+      "asset_ids_match_released": true,
+      "mounting": "level pack, no alias"
+    }
+  },
+  "runtime_sha256": {
+    "mod/maps/mp_thermal_station.bsp": "917b96e4e6ba4cd6eec066f34727a03a092224ead991f36411864fcf289a8021",
+    "mod/maps/mp_thermal_station.stbsp": "80ac993a4a11ac19eca7bbf3cf0d20c20612635e733561e49d3089019feed4ba",
+    "mod/models/apex/thermal-station/barrel.mdl": "376b4ff9d839ff38e4f2fa1e42488a4d2827bcee12467bc661de6c9fde5de6a5",
+    "mod/models/apex/thermal-station/ceiling_vent_metal.mdl": "7ca2548d556b41e8c3071ed15a64fb8ddd83035aff7bc9b34664b6210dd578b0",
+    "mod/models/apex/thermal-station/conduit_bracket_imc_02.mdl": "91e9fdfb191adef3083a1d28e6a1389be280f9fa949f8cec8dcf3b4b9cf007b2",
+    "mod/models/apex/thermal-station/conduit_bracket_imc_04.mdl": "d870b9b66492a51c8c211e2f5afb629c61717443e973a8d0d5abbf9193ba15c1",
+    "mod/models/apex/thermal-station/grass_burnt_yellow_03.mdl": "7d999464c980de6274d62377f4bb5968963478364eecc72cce80992db2f8e4af",
+    "mod/models/apex/thermal-station/grass_icelandic_01.mdl": "bb9d65cd4df0d1fab584a3c03c0fe7b554c8ab6455adcfd4ce41bf26ea2c469a",
+    "mod/models/apex/thermal-station/grass_icelandic_02.mdl": "a5d162289872a12251c2082f1bcc63b5ff2fcd69d00ef81d10681924e5d2ecf1",
+    "mod/models/apex/thermal-station/ground_plant_beacon_03.mdl": "1676000e0c618a3c8e92cc738d50cb503dd553e41c4c695366e23436b2e4dbc8",
+    "mod/models/apex/thermal-station/icelandic_ground_plant_01.mdl": "0a113a99cbfe32377c21924b99e958808e9ede8b489578f2a31973405f5d279f",
+    "mod/models/apex/thermal-station/icelandic_ground_plant_02.mdl": "42497c06731455dbacfbdaa9a1ca7dcae75db21fe7f9500e634bd6baa3352839",
+    "mod/models/apex/thermal-station/icelandic_moss_grass_01.mdl": "db56d348d0fba20cff201f33a4ff7328c36bb5d422db54c5b71c61216d4cc9fa",
+    "mod/models/apex/thermal-station/icelandic_moss_grass_02.mdl": "4b1e69e7e36893fea2e17f6442f584db7f68c39431fab8bb4fc1978ebcf32e4e",
+    "mod/models/apex/thermal-station/icelandic_moss_grass_02_skin1.mdl": "c9d5facde3a3d0beed4ffe97ddf57b75487c6381ca61b010bed5ce7d48c99323",
+    "mod/models/apex/thermal-station/icelandic_moss_grass_02_skin2.mdl": "71589260e137c4fa6ec55ffa9e5c78ec0e67c16014c209d9eb7f1c111be0bc46",
+    "mod/models/apex/thermal-station/plant_icelandic_02.mdl": "252d560828e2add58f2f84bd071adf2290084d2f0becc182256c0592dcaf58a0",
+    "mod/models/apex/thermal-station/sign_plate_c.mdl": "9943bc8042cc5c69b9f620db34c45c26f180f27a9972ef63c5da4650d54d80a8",
+    "mod/models/apex/thermal-station/sign_post_plate_c.mdl": "80f78553174cdb2d0fae8fa1a734d7252553a24b8333958612248009784467be",
+    "mod/models/apex/thermal-station/tree_brush_yellow_large_02.mdl": "239afa495cb003082e01e4597c0951ba2cbfda4031a598159077c7f27099337d",
+    "mod/models/apex/thermal-station/zipline_arm.mdl": "6803a9cbaaac0eac4003a0e5f1312e6286fa2ab96386ede523bdca4e265346a2",
+    "mod/resource/overviews/mp_thermal_station.txt": "dc1c9e10bc71ed3f5d4fc88197a51b2144f5cab8ccc68236af52a40409ea7af1",
+    "mod/resource/thermal_station_english.txt": "02af90ad7275e8cbeed506f26a33278e76fcc55001bdff97c329535acaee845f",
+    "mod/resource/thermal_station_french.txt": "f3035a118c59d424ec254141d64dd34ffab923395326fdd5ed361d2708e03135",
+    "mod/resource/thermal_station_german.txt": "bcec6491fdf5e7988468a782cb8004975c8a64d8eedc139609ced318f574c653",
+    "mod/resource/thermal_station_italian.txt": "8b99776a21bb1cc47af65eebab6d583886add69101203aa0df8bfd8ab4b02ef0",
+    "mod/resource/thermal_station_japanese.txt": "55cbb78d255fc45160f1112c78277ce6e1be540bc65ed91daa80a5072f528bc1",
+    "mod/resource/thermal_station_korean.txt": "abba78cdce61b188d82bb0dfad5c5051abe2bf769e412586aeed73246199e4de",
+    "mod/resource/thermal_station_mspanish.txt": "e734cc44d3e2e2a7a4e123e772002793e08cf0a47fc510ee67c9b75a73470d14",
+    "mod/resource/thermal_station_polish.txt": "ea72dd0ba103d82a8adc48c689e044845b6c90a7cf29c71d2d4d4774fd7a4691",
+    "mod/resource/thermal_station_portuguese.txt": "ae94b256da94e31c2b134ae3670d3c4b94bd3a6929e23b06cf29abf06916cdd6",
+    "mod/resource/thermal_station_russian.txt": "ef1399b8c97b7b0285c2a1d484f9023599b7d31dcfc55dcd3f14c1c943996a82",
+    "mod/resource/thermal_station_schinese.txt": "85141ff5bde6f5b5e0644b847955b86460a3304e85266aed48146e1c1ada708f",
+    "mod/resource/thermal_station_spanish.txt": "27b918eba7cce7035183aaa005d6467fb215c1a064b14a6a490da126f0c7a337",
+    "mod/resource/thermal_station_tchinese.txt": "c008811a46306030bac0e5302110fd49f2114a5eeb1cbf90fbbcfae977ac58ad",
+    "mod/scripts/vscripts/_thermal_station.nut": "b3a4765d3b1da37c3b27627bba9103f53706e132021c04ef292073a3e3796c4f",
+    "mod.json": "57b3b76deb8cc95ca95ffd1157997fcff0570eda4649bdf0156b72e5c9456f0e",
+    "paks/mp_thermal_station.rpak": "6bb0887da11f1c7db41cf3d12dc69f183cf93e3b3d356928eee5fc7f94d4dbe8",
+    "paks/rpak.json": "f098b1f812f370ab804ba5e809feafa9ccd9d1003186e0865348d984c3f1b34c",
+    "paks/thermal_station_presentation.rpak": "58ca49beb7afc96532b85a2594bb6e6fc80eda375f3aa44a00aaca3e5769a4f7"
+  }
+}

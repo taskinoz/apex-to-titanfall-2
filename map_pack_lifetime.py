@@ -33,8 +33,19 @@ def audit(paks, map_name):
     paks = Path(paks)
     value = json.loads((paks / 'rpak.json').read_text())
     names = sorted(p.name for p in paks.glob('*.rpak'))
-    base = value['Aliases'].get(map_name + '.rpak')  # mp_coliseum.rpak, or a map's own base pack (Skulltown)
+    base = value['Aliases'].get(map_name + '.rpak')  # mp_coliseum.rpak (legacy), or a map's own base pack
     from extract_native_material import NativePak
+    if base is None:
+        # Standalone (merge_map_paks.py): the map's own level pack holds every map asset; only the loading pack mounts.
+        presentation = [n for n in names if n.endswith('_presentation.rpak')]
+        if sorted(names) != sorted([map_name+'.rpak', *presentation]) or len(presentation) != 1:
+            raise ValueError('Standalone map must ship exactly its level pack and loading pack: '+', '.join(names))
+        if any(a['type'] == 'uimg' for a in NativePak(paks/presentation[0]).assets):
+            raise ValueError('Loading pack still owns a separate UI atlas: '+presentation[0])
+        if value.get('Postload') != {presentation[0]: 'common.rpak'} or                 value.get('Aliases') != {map_name+'_loadscreen.rpak': presentation[0]}:
+            raise ValueError('Standalone mounting changed')
+        return dict(map=map_name, packs=names, startup_map_atlases=0,
+                    policy='Shared UI companion; standalone level pack, no base-pack alias')
     for name in names:
         if name.endswith('_minimap.rpak'):
             raise ValueError('Standalone minimap atlas must be moved to the shared UI pack')
